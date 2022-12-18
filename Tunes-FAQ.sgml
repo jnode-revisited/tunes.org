@@ -45,7 +45,7 @@ as originally published by
 	name="John Carter">.
 
 Source code is available at
-	<url url="http://tunes.org/Tunes-FAQ.sgml">.
+	<url url="/tunes.org/Tunes-FAQ.sgml">.
 </sect1>
 
 <sect1>Important Note
@@ -65,7 +65,7 @@ In one word, contribute!
 To contribute, please ask questions or give answers on the
 	<tt><htmlurl url="mailto:tunes@tunes.org" name="tunes@tunes.org"></tt>
 mailing-list, or even better, use our
-	<htmlurl url="http://tunes.org/collaboration.html#CVS"
+	<htmlurl url="/tunes.org/collaboration.html#CVS"
 		name="CVS"> system to submit actual modifications.
 </sect1>
 
@@ -81,7 +81,7 @@ If its answers are confusing then ask again.
 <sect1>Other documentation for the TUNES Project
 <p>
 All the TUNES documentation can be accessed on our web server and its mirrors:
-<url url="http://tunes.org/"> (North America),
+<url url="/tunes.org/"> (North America),
 <url url="http://uk.tunes.org/"> (United Kingdom)
 <p>
 Of particular interest is our interactive
@@ -287,7 +287,7 @@ Language-independence and system-independence are myths: whatever the language, 
 <p>
 TUNES is a project for an integrated <htmlurl url="/tunes.org/cliki.tunes.org/Computing System" name="computing system">. We must implement a new language and concept, because we want a system that be more expressive that can be achieved with what exists today. We need implement a new OS infrastructure, because the language must control the whole system so as to be able to reliably enforce its invariants. Moreover, we expect a tight integration of language and OS infrastructure to ultimately yield much enhanced performance, too. Of course, we may achieve a programming language and a low-level OS framework that could be used separately, but we feel that much of the added value of the project resides in the integration of them into a one reflective architecture.
 <p>
-For a rationale behind the TUNES approach, why we feel it is a necessary step in the progress of computing, read the article <url url="http://tunes.org/papers/WhyNewOS/" name="Why a New OS?">.
+For a rationale behind the TUNES approach, why we feel it is a necessary step in the progress of computing, read the article <url url="/tunes.org/papers/WhyNewOS/" name="Why a New OS?">.
 </sect1>
 
 <sect1>What is the Challenge of the TUNES Project?
@@ -328,7 +328,7 @@ Because reflection hasn't been satisfyingly formalized in the past,
 <p>
 Yes and no, depending on what is implied by ``normal''.
 <p>
-If you mean that TUNES be <em>implemented</em> as a user-level process that uses GNU/Linux (or whatever existing OS you prefer) for its I/O, taking over some resources (disk space and CPU) that it manage on its own, then yes, this is conceivable, and this is what the <htmlurl url="http://tunes.org/LLL/OTOP/" name="LLL/OTOP subproject"> is all about.
+If you mean that TUNES be <em>implemented</em> as a user-level process that uses GNU/Linux (or whatever existing OS you prefer) for its I/O, taking over some resources (disk space and CPU) that it manage on its own, then yes, this is conceivable, and this is what the <htmlurl url="/tunes.org/LLL/OTOP/" name="LLL/OTOP subproject"> is all about.
 Now, if you mean that TUNES be <em>expressed</em> as a user-level process in a way that other programs could benefit from the features of TUNES through normal Linux means, then no, this isn't possible.
 <p>
 Even if implemented on top of GNU/Linux,
@@ -389,12 +389,12 @@ make the most of what is possible.
 <p>
 See the
 <htmlurl name="collaboration"
-	url="http://tunes.org/collaboration.html">
+	url="/tunes.org/collaboration.html">
 page on our
-	<url name="web site" url="http://tunes.org/">.
+	<url name="web site" url="/tunes.org/">.
 If you're interested, you may become a
 <htmlurl name="member"
-	url="http://tunes.org/members/">.
+	url="/tunes.org/members/">.
 <p>
 Note that although design and implementation of a computing system
 	is a complex task,
@@ -439,7 +439,7 @@ Everyone is basically free to code what one wants,
 We've succeeded to avoid waste of time on internal disagreements,
 	thanks to a
 	<url name="charter"
-	url="http://tunes.org/legalese/Charter.html">
+	url="/tunes.org/legalese/Charter.html">
 	that defines the mutual relations between members.
 The basic rule is that in case of a disagreement,
 	the one who writes the code ultimately decides
@@ -484,15 +484,15 @@ On the administrative side,
 we're always looking for people and tools
 who can help us
 <htmlurl name="collaborate"
-	url="http://tunes.org/collaboration.html">
+	url="/tunes.org/collaboration.html">
 better and be more productive.
 The <htmlurl name="mailing-list"
-	url="http://tunes.org/collaboration.html#Mail">
+	url="/tunes.org/collaboration.html#Mail">
 and <htmlurl name="CVS tree"
-	url="http://tunes.org/collaboration.html#CVS">
+	url="/tunes.org/collaboration.html#CVS">
 are well-integrated into
 the <htmlurl name="web server"
-	url="http://tunes.org/">,
+	url="/tunes.org/">,
 but we'd like further integrate the web site into an interactive
 database of version structured documents (especially the Review subproject).
 <p>
@@ -500,22 +500,22 @@ As far as theory goes, I (Far�) am working
 	on the theorical foundations of
 <url name="reflection" url="/tunes.org/cliki.tunes.org/Reflection">.
 We're also following progress from people like
-<url name="Brian Rice" url="http://tunes.org/~water/">.
+<url name="Brian Rice" url="/tunes.org/~water/">.
 Otherwise, we're following general progress in CS research through our
 <url name="Review subproject" url="/tunes.org/cliki.tunes.org/Review">.
 <p>
 Implementation of the system goes in two parallel ways:
 <p>
 On the one hand,
-<htmlurl name="Tril" url="http://tunes.org/~dem/">
+<htmlurl name="Tril" url="/tunes.org/~dem/">
 is building a prototype for
-	the <htmlurl name="HLL" url="http://tunes.org/HLL/">,
+	the <htmlurl name="HLL" url="/tunes.org/HLL/">,
 and 
 <htmlurl name="Far�" url="http://fare.tunes.org/">
 ought to be writing an open compiler for a Lisp dialect.
 <p>
 On the other hand
-<htmlurl name="tcn" url="http://tunes.org/~tcn/">
+<htmlurl name="tcn" url="/tunes.org/~tcn/">
 is implementing in i386 assembly and FORTH
 <htmlurl name="retro" url="http://retro.tunes.org/">,
 a first sketch of the low-level bricks needed for an OS.
@@ -932,7 +932,7 @@ that does not preclude said long-term utility.
 <label id="Q:logo">
 <p>
 Currently, we have the 100% pure HTML virtual reflective
-<htmlurl url="http://tunes.org/logo.html" name="logo">
+<htmlurl url="/tunes.org/logo.html" name="logo">
 that you can see on our page.
 People have suggested or submitted eye-candy logo pictures,
 and we have been queueing these suggestions and submissions;

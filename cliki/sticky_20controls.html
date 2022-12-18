@@ -1,6 +1,6 @@
 <!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
 <HTML><HEAD><TITLE>CTO : Sticky controls</TITLE
-><LINK REL="alternate" TYPE="application/rss+xml" TITLE="Recent Changes" HREF="http://tunes.org/cliki/recent-changes.rdf.html"><LINK REL="stylesheet" HREF="admin/cliki.css"></HEAD
+><LINK REL="alternate" TYPE="application/rss+xml" TITLE="Recent Changes" HREF="/tunes.org/cliki/recent-changes.rdf.html"><LINK REL="stylesheet" HREF="admin/cliki.css"></HEAD
 ><BODY><DIV ID="banner"><A TITLE="CTO" CLASS="logo" HREF="sticky_20controls.html">CTO</A
 > <SPAN>CLiki for the TUNES project</SPAN
 ></DIV
@@ -10,13 +10,22 @@
 > </DIV
 ><DIV ID="main"><H1>Sticky controls</H1
 >Sticky controls are what I would define as "up to a certain degree, having the system remember how a user wants to do things".
-<p>I will explain using the well known GUI. You have your basical window, possibly a menu bar, and when selecting functions, you can have things like buttons, checkboxes, drop-down lists, etc.
-<p>When the user selects an option that can be turned on or off, it is useful when the system 'remembers' the selected state between invocations of the application. Take for example a browser. Suppose it has a button bar, and the user selects 'buttonbar: off'. Now, after closing and restarting the browser, the buttonbar is still off.
-<p>In short, when you start an application (or say, a particular piece of the user interface), the system doesn't use default settings, but a set of defaults, from which some attributes persist until the application is used again.
-<p>Another good example are the familiar 'most recently opened files'-lists.
-<p>For all this, you can read 'application', 'user', 'setting' in a as broad a sense as you wish. The 'user' could be a network-distributed component co-operating with the system on some task, the 'application' could be a system service, hardware device, etc. And 'setting' could go as far as re-using a piece of firmware that was used earlier to work with the same hardware device.
-<p>What to remember, and what not? What 'settings' to keep persistent? In short: that, which is useful. For an application, those behaviour attributes that make a user feel familiar with the system. For small footprint systems, those things that are easy to store in between, and requiring little overhead to re-use. No more, no less.
-<p>Another way of describing a 'sticky control': having some properties of a system, as they are controlled by a user, stick between that user and the system.
-<p>This might be system-wide for some properties, or on a per-user basis for other properties.
-<p>Sticky controls are a particular, simple case, of <a class="internal" href="interfaces_20that_20learn.html" >interfaces that learn</a>.
+
+<p>I will explain using the well known GUI. You have your basical window, possibly a menu bar, and when selecting functions, you can have things like buttons, checkboxes, drop-down lists, etc.
+
+<p>When the user selects an option that can be turned on or off, it is useful when the system 'remembers' the selected state between invocations of the application. Take for example a browser. Suppose it has a button bar, and the user selects 'buttonbar: off'. Now, after closing and restarting the browser, the buttonbar is still off.
+
+<p>In short, when you start an application (or say, a particular piece of the user interface), the system doesn't use default settings, but a set of defaults, from which some attributes persist until the application is used again.
+
+<p>Another good example are the familiar 'most recently opened files'-lists.
+
+<p>For all this, you can read 'application', 'user', 'setting' in a as broad a sense as you wish. The 'user' could be a network-distributed component co-operating with the system on some task, the 'application' could be a system service, hardware device, etc. And 'setting' could go as far as re-using a piece of firmware that was used earlier to work with the same hardware device.
+
+<p>What to remember, and what not? What 'settings' to keep persistent? In short: that, which is useful. For an application, those behaviour attributes that make a user feel familiar with the system. For small footprint systems, those things that are easy to store in between, and requiring little overhead to re-use. No more, no less.
+
+<p>Another way of describing a 'sticky control': having some properties of a system, as they are controlled by a user, stick between that user and the system.
+
+<p>This might be system-wide for some properties, or on a per-user basis for other properties.
+
+<p>Sticky controls are a particular, simple case, of <a class="internal" href="interfaces_20that_20learn.html" >interfaces that learn</a>.
 <hr><p><b>This page is linked from: </b> <a class="internal" href="interfaces_20that_20learn.html" >interfaces that learn</a> &nbsp; </DIV></BODY></HTML>

@@ -1,6 +1,6 @@
 <!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
 <HTML><HEAD><TITLE>CTO : Linda</TITLE
-><LINK REL="alternate" TYPE="application/rss+xml" TITLE="Recent Changes" HREF="http://tunes.org/cliki/recent-changes.rdf.html"><LINK REL="stylesheet" HREF="admin/cliki.css"></HEAD
+><LINK REL="alternate" TYPE="application/rss+xml" TITLE="Recent Changes" HREF="/tunes.org/cliki/recent-changes.rdf.html"><LINK REL="stylesheet" HREF="admin/cliki.css"></HEAD
 ><BODY><DIV ID="banner"><A TITLE="CTO" CLASS="logo" HREF="linda.html">CTO</A
 > <SPAN>CLiki for the TUNES project</SPAN
 ></DIV
@@ -10,13 +10,17 @@
 > </DIV
 ><DIV ID="main"><H1>Linda</H1
 >Linda is a <a class="internal" href="programming_20language.html" >programming language</a> from David Gelernter at Yale for parallel programming. The main idea is decoupling communication from effective presence of communicating <a class="internal" href="actor.html" >Actor</a>s by defining a global tuple space where <a class="internal" href="actor.html" >Actor</a>s may publish tuples. Tuples are persistently retained in the space, and are freely accessible by all the <a class="internal" href="actor.html" >Actor</a>s, which have primitives to read and extract tuples from the space by <a class="internal" href="pattern-matching.html" >pattern-matching</a>.
-<p>The idea seems nice, but it's basically a very very particular case of what the <a class="internal" href="pi_20calculus.html" >pi calculus</a> in its asynchronous variant allows. The original Linda semantics has been proved underspecified in [1] by Busi, Gorrieri and Zavattaro at University of Bologna, as it is not clearly stated whether the emitting <a class="internal" href="actor.html" >Actor</a> may continue before the tuple becomes visible to other <a class="internal" href="actor.html" >Actor</a>s, or not. The difference is meaningful since <strong>the first semantics (named unordered) is not <a class="internal" href="turing_20machine.html" >Turing-complete</a>, while the second (named ordered) is</strong>.
-<p>Many implementations are available of the Linda <a class="internal" href="paradigm.html" >paradigm</a>, named "generative communication". The most relevant are IBM's TSpaces and Sun's JavaSpaces, in <a class="internal" href="java.html" >Java</a>. The latter is also integrated in Jini. These also introduce reactive operations, whose semantics has been investigated at University of Bologna. Many extensions have been proposed to overcome the limits of having a global shared dataspace, like KLAIM and Lime. These introduce multiple tuple spaces and primitives for distributed tuple access (KLAIM) and transient sharing (Lime).
-<p><ol class="links"><h4>Bibliography</h4>
+
+<p>The idea seems nice, but it's basically a very very particular case of what the <a class="internal" href="pi_20calculus.html" >pi calculus</a> in its asynchronous variant allows. The original Linda semantics has been proved underspecified in [1] by Busi, Gorrieri and Zavattaro at University of Bologna, as it is not clearly stated whether the emitting <a class="internal" href="actor.html" >Actor</a> may continue before the tuple becomes visible to other <a class="internal" href="actor.html" >Actor</a>s, or not. The difference is meaningful since <strong>the first semantics (named unordered) is not <a class="internal" href="turing_20machine.html" >Turing-complete</a>, while the second (named ordered) is</strong>.
+
+<p>Many implementations are available of the Linda <a class="internal" href="paradigm.html" >paradigm</a>, named "generative communication". The most relevant are IBM's TSpaces and Sun's JavaSpaces, in <a class="internal" href="java.html" >Java</a>. The latter is also integrated in Jini. These also introduce reactive operations, whose semantics has been investigated at University of Bologna. Many extensions have been proposed to overcome the limits of having a global shared dataspace, like KLAIM and Lime. These introduce multiple tuple spaces and primitives for distributed tuple access (KLAIM) and transient sharing (Lime).
+
+<p><ol class="links"><h4>Bibliography</h4>
 <li><em>Nadia Busi, Roberto Gorrieri, Gianluigi Zavattaro</em>,<A HREF="http://cs.unibo.it/%7Ezavattar/Publication/infcomp00.ps">On the Expressiveness of Linda Coordination Primitives</A
 > (.<a class="internal" href="ps.html" >ps</a>),  Information and Computation, 156(1/2):90-121, Academic Press, 2000
 </ol>
-<p><ul class="links">
+
+<p><ul class="links">
 <li><A HREF="http://www.cs.yale.edu/Linda/linda.html">The Linda Group</A
 > at Yale</li>
 <li><A HREF="http://www.almaden.ibm.com/cs/TSpaces/">TSpaces</A

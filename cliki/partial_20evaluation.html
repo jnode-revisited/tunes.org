@@ -1,6 +1,6 @@
 <!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
 <HTML><HEAD><TITLE>CTO : Partial Evaluation</TITLE
-><LINK REL="alternate" TYPE="application/rss+xml" TITLE="Recent Changes" HREF="http://tunes.org/cliki/recent-changes.rdf.html"><LINK REL="stylesheet" HREF="admin/cliki.css"></HEAD
+><LINK REL="alternate" TYPE="application/rss+xml" TITLE="Recent Changes" HREF="/tunes.org/cliki/recent-changes.rdf.html"><LINK REL="stylesheet" HREF="admin/cliki.css"></HEAD
 ><BODY><DIV ID="banner"><A TITLE="CTO" CLASS="logo" HREF="partial_20evaluation.html">CTO</A
 > <SPAN>CLiki for the TUNES project</SPAN
 ></DIV
@@ -10,19 +10,31 @@
 > </DIV
 ><DIV ID="main"><H1>Partial Evaluation</H1
 >A <a class="internal" href="term.html" >term</a> for the metaprogramming technique that consists in <a class="internal" href="program_20transformation.html" >program transformation</a> into simpler programs specialized for execution in an environment where some information is known as compared to a generic environment. Typically, a function that takes many arguments is partially evaluated considering as known the values of some of the arguments (the static arguments) while some other arguments are still to be determined (the dynamic arguments).
-<p>See also <a class="internal" href="partial_20evaluation_20101.html" >Partial Evaluation 101</a>.
-<p><hr><style type="text/css">code { font-size: large; text-align: center; }</style>
-<p>Partial evaluation of a function <code>&lambda;s d &rarr; FOO</code> with a known value <code>BAR</code> for <code>s</code> is really just like optimizing function <code>&lambda;d &rarr; FOO</code> considering that known value. The most simple way of doing partial evaluation is to keep around partially curried closures, doing no optimization. Conversely, knowing how to partially evaluate a function automatically leads to optimization techniques in presence of same known information.
-<p>People like <A HREF="http://www.brics.dk/~andrzej/">Andrzej Filinski</A
+
+<p>See also <a class="internal" href="partial_20evaluation_20101.html" >Partial Evaluation 101</a>.
+
+<p><hr><style type="text/css">code { font-size: large; text-align: center; }</style>
+
+<p>Partial evaluation of a function <code>&lambda;s d &rarr; FOO</code> with a known value <code>BAR</code> for <code>s</code> is really just like optimizing function <code>&lambda;d &rarr; FOO</code> considering that known value. The most simple way of doing partial evaluation is to keep around partially curried closures, doing no optimization. Conversely, knowing how to partially evaluate a function automatically leads to optimization techniques in presence of same known information.
+
+<p>People like <A HREF="http://www.brics.dk/~andrzej/">Andrzej Filinski</A
 > have used suitable type-systems to give nice formal models of what can be automatically partially-evaluated.
-<p>The Futamura projections explain how to build a compiler for a language <code>L</code> written in language <code>M</code>, out of a specific interpreter of language <code>L</code> in language <code>M</code>, and a partial evaluator for language <code>M</code>, as well as other such tricks.
-<p>Partial evaluation is instrumental in allowing efficient implementation of deep <code>meta^n</code>-level descriptions of systems, by folding together all the statically known levels into a one interpreter or compiler.
-<p>Most computing systems do only static partial evaluation during compilation. People at project <a class="internal" href="compose_20group.html" >COMPOSE</a> also do partial evaluation at runtime from templates obtained at compile-time.
-<p>We at the <a class="internal" href="tunes_20project.html" >TUNES project</a> would like to provide <a class="internal" href="dynamic.html" >dynamic</a> partial evaluation. Because we manipulate semantical objects, and thus have no such thing as "compile time". Instead, the user may explicitly and programmatically request some partial evaluation whenever he thinks it should be done.
-<p>Partial Evaluation is better understood in a framework of Staged Evaluation (that can be formalized with modal logics), wherein total/traditional evaluation of programs is conceptually executed in several stages, the last of these stages being the final user-visible "run-time" (which obviously depends on who the users are, and what are their points of views).
-<p>Another way to look at it is that instead of simplifying programs using some kind of total generic single-minded reduction strategy, a more cunning strategy would be used. Now, even usual partial evaluation then looks like some kind of single-metaminded reduction, that only consists in single-minded binding analysis and inlining taking into account only one (very powerful, but still) kind of static information, statically determined by the partial evaluator (actually, software like the partial evaluators from <a class="internal" href="compose_20group.html" >COMPOSE</a> allow -- and require -- quite of bit of user parametrization of the PE). Instead of having a one static partial evaluator, it could be imagined that metaprograms be grown to manipulate and optimize other programs until they automatically solve problems at hands with minimal user concern for efficiency. The task is certainly daunting, and most everyone would say it's impossible but there is no reason to believe it is as stupid an ambition as some would pretend.
-<p>Indeed, this reminds me a Chinese story with Mister Smart, Mister Stupid, and the Mountain to move. Basically, there's a big mountain that is a real inconvenience to everybody; someday, Mr Smart sees Mr Stupid hitting the mountain with a pick, and asks him why he does it. Mr Stupid explains that everyday after his work, he does attack the mountain, so as to get rid of it. Hence Mister Smart laughs at Mr Stupid, finally, he tries to convince Mister Stupid that what he does is useless and wasteful, and will never succeed. But then, Mister Stupid replies that surely he'll never be able to see the end of this work personally. But after his death, his son eldest son would replace him, and so on, until the mountain would be vanquished.
-<p><ul class="links">
+
+<p>The Futamura projections explain how to build a compiler for a language <code>L</code> written in language <code>M</code>, out of a specific interpreter of language <code>L</code> in language <code>M</code>, and a partial evaluator for language <code>M</code>, as well as other such tricks.
+
+<p>Partial evaluation is instrumental in allowing efficient implementation of deep <code>meta^n</code>-level descriptions of systems, by folding together all the statically known levels into a one interpreter or compiler.
+
+<p>Most computing systems do only static partial evaluation during compilation. People at project <a class="internal" href="compose_20group.html" >COMPOSE</a> also do partial evaluation at runtime from templates obtained at compile-time.
+
+<p>We at the <a class="internal" href="tunes_20project.html" >TUNES project</a> would like to provide <a class="internal" href="dynamic.html" >dynamic</a> partial evaluation. Because we manipulate semantical objects, and thus have no such thing as "compile time". Instead, the user may explicitly and programmatically request some partial evaluation whenever he thinks it should be done.
+
+<p>Partial Evaluation is better understood in a framework of Staged Evaluation (that can be formalized with modal logics), wherein total/traditional evaluation of programs is conceptually executed in several stages, the last of these stages being the final user-visible "run-time" (which obviously depends on who the users are, and what are their points of views).
+
+<p>Another way to look at it is that instead of simplifying programs using some kind of total generic single-minded reduction strategy, a more cunning strategy would be used. Now, even usual partial evaluation then looks like some kind of single-metaminded reduction, that only consists in single-minded binding analysis and inlining taking into account only one (very powerful, but still) kind of static information, statically determined by the partial evaluator (actually, software like the partial evaluators from <a class="internal" href="compose_20group.html" >COMPOSE</a> allow -- and require -- quite of bit of user parametrization of the PE). Instead of having a one static partial evaluator, it could be imagined that metaprograms be grown to manipulate and optimize other programs until they automatically solve problems at hands with minimal user concern for efficiency. The task is certainly daunting, and most everyone would say it's impossible but there is no reason to believe it is as stupid an ambition as some would pretend.
+
+<p>Indeed, this reminds me a Chinese story with Mister Smart, Mister Stupid, and the Mountain to move. Basically, there's a big mountain that is a real inconvenience to everybody; someday, Mr Smart sees Mr Stupid hitting the mountain with a pick, and asks him why he does it. Mr Stupid explains that everyday after his work, he does attack the mountain, so as to get rid of it. Hence Mister Smart laughs at Mr Stupid, finally, he tries to convince Mister Stupid that what he does is useless and wasteful, and will never succeed. But then, Mister Stupid replies that surely he'll never be able to see the end of this work personally. But after his death, his son eldest son would replace him, and so on, until the mountain would be vanquished.
+
+<p><ul class="links">
 <li><A HREF="http://partial-eval.org/">An Online Bibliography of Partial Evaluation</A
 >.
 <li><A HREF="http://citeseer.nj.nec.com/hatcliff97computational.html">A Computational Formalization for Partial Evaluation</A

@@ -1,6 +1,6 @@
 <!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
 <HTML><HEAD><TITLE>CTO : process migration</TITLE
-><LINK REL="alternate" TYPE="application/rss+xml" TITLE="Recent Changes" HREF="http://tunes.org/cliki/recent-changes.rdf.html"><LINK REL="stylesheet" HREF="admin/cliki.css"></HEAD
+><LINK REL="alternate" TYPE="application/rss+xml" TITLE="Recent Changes" HREF="/tunes.org/cliki/recent-changes.rdf.html"><LINK REL="stylesheet" HREF="admin/cliki.css"></HEAD
 ><BODY><DIV ID="banner"><A TITLE="CTO" CLASS="logo" HREF="process_20migration.html">CTO</A
 > <SPAN>CLiki for the TUNES project</SPAN
 ></DIV
@@ -10,7 +10,9 @@
 > </DIV
 ><DIV ID="main"><H1>process migration</H1
 >A <a class="internal" href="term.html" >term</a> for the ability of a <a class="internal" href="distributed.html" >distributed</a> <a class="internal" href="operating_20system.html" >operating system</a> to move processes from one workstation or subsystem to another around the network, automatically, according to demand.
-<p>Only a fully <a class="internal" href="distributed.html" >distributed</a> <a class="internal" href="operating_20system.html" >operating system</a> can support this functionality, since each process <em>must</em> see exactly the same environment on every subsystem it might be migrated to.
+
+<p>Only a fully <a class="internal" href="distributed.html" >distributed</a> <a class="internal" href="operating_20system.html" >operating system</a> can support this functionality, since each process <em>must</em> see exactly the same environment on every subsystem it might be migrated to.
 <span class="comment">This requirement seems really debatable and misleading, <strong>especially for TUNES</strong>: when a process migrates from a source system to a target system is sufficient to recreate enough <a class="internal" href="context.html" >context</a> on the target so that the process can run. How much context is enough it depends from some selected arbitrarily criteria such as efficiency, security and so on. -- <a class="internal" href="mad70.html" >MaD70</a></span>
-<p>Process migration allows a <a class="internal" href="distributed.html" >distributed</a> system to take advantage of idle subsystems, from moment to moment, in order to maximise usage of the processing resources of the network. This is a form of network-wide <a class="internal" href="load_20balancing.html" >load balancing</a>.
+
+<p>Process migration allows a <a class="internal" href="distributed.html" >distributed</a> system to take advantage of idle subsystems, from moment to moment, in order to maximise usage of the processing resources of the network. This is a form of network-wide <a class="internal" href="load_20balancing.html" >load balancing</a>.
 <hr><p><b>This page is linked from: </b> <a class="internal" href="distributed.html" >Distributed</a> &nbsp; </DIV></BODY></HTML>

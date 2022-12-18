@@ -1,6 +1,6 @@
 <!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
 <HTML><HEAD><TITLE>CTO : Block Editor</TITLE
-><LINK REL="alternate" TYPE="application/rss+xml" TITLE="Recent Changes" HREF="http://tunes.org/cliki/recent-changes.rdf.html"><LINK REL="stylesheet" HREF="admin/cliki.css"></HEAD
+><LINK REL="alternate" TYPE="application/rss+xml" TITLE="Recent Changes" HREF="/tunes.org/cliki/recent-changes.rdf.html"><LINK REL="stylesheet" HREF="admin/cliki.css"></HEAD
 ><BODY><DIV ID="banner"><A TITLE="CTO" CLASS="logo" HREF="block_20editor.html">CTO</A
 > <SPAN>CLiki for the TUNES project</SPAN
 ></DIV
@@ -10,7 +10,8 @@
 > </DIV
 ><DIV ID="main"><H1>Block Editor</H1
 >A <a class="internal" href="block_20editor.html" >Block Editor</a> is one of the key components in a <a class="internal" href="forth.html" >FORTH</a> implementation. Here is the code for two different ones.
-<p>
+
+<p>
 <a class="internal" href="retro.html" >Retro</a>Forth's Block Editor:
 <pre>
 | Line oriented block editor written by Charles Childers
@@ -45,7 +46,8 @@ variable blk
 <hr>
 <pre>
 VIBE: VI-like Block Editor
-<p>\
+
+<p>\
 \ VIBE Release 2.0
 \ Copyright (c) 2001-2003 Samuel A. Falvo II
 \ All Rights Reserved.
@@ -61,9 +63,11 @@ VIBE: VI-like Block Editor
 \ the variables at load-time with no overhead.  Stole this idea from a7r
 \ in the #Forth IRC channel.
 \
-<p>
+
+<p>
 WARNINGS OFF
-<p>( Editor Constants )
+
+<p>( Editor Constants )
 \ I don't like this technique; should have used a bitmap.  Will fix later.
 CHAR i CONSTANT 'i   \ Insert mode
 CHAR r CONSTANT 'r   \ Replace mode
@@ -72,14 +76,17 @@ CHAR y CONSTANT 'y
 CHAR n CONSTANT 'n
 CHAR A CONSTANT 'A
 CHAR Z CONSTANT 'Z
-<p>( Editor State )
+
+<p>( Editor State )
  1 CREATE scr ,   \ Current block
  0 CREATE x ,     \ Cursor X position 0..63
  0 CREATE y ,     \ Cursor Y position 0..15
 'c CREATE mode ,  \ Change to bitmap later.
-<p>\ GForth-specific 
+
+<p>\ GForth-specific 
 CREATE wordname 5 C, '$ C, '$ C, 0 C, 0 C, 0 C,
-<p>( Editor Display )
+
+<p>( Editor Display )
 : mode. 63 0 AT-XY mode @ EMIT ;
 : scr. 0 0 AT-XY ." Block: " scr @ . ."      " ;
 : header scr. mode. ;
@@ -93,7 +100,8 @@ CREATE wordname 5 C, '$ C, '$ C, 0 C, 0 C, 0 C,
 : card 0 1 AT-XY border 16lines border ;
 : cursor x @ 1+ y @ 2 + AT-XY ;
 : screen header card cursor ;
-<p>( Editor State Control )
+
+<p>( Editor State Control )
 : insert 'i mode ! ;
 : replace 'r mode ! ;
 : cmd 'c mode ! ;
@@ -101,7 +109,8 @@ CREATE wordname 5 C, '$ C, '$ C, 0 C, 0 C, 0 C,
 : prevblock -2 scr +! bounds ;
 : nextblock  2 scr +! bounds ;
 : toggleshadow 1 scr @ XOR scr ! ;
-<p>
+
+<p>
 ( Editor Cursor Control )
 : flushLeft 0 x ! ;
 : boundX x @ 0 MAX 63 MIN x ! ;
@@ -114,7 +123,8 @@ CREATE wordname 5 C, '$ C, '$ C, 0 C, 0 C, 0 C,
 : beep 7 EMIT ;
 : nextline y @ 15 < IF flushLeft down THEN ;
 : next x @ 63 = IF nextline EXIT THEN right ;
-<p>
+
+<p>
 ( Editor Insert/Replace Text )
 : 64* 2* 2* 2* 2* 2* 2* ;
 : where scr @ BLOCK SWAP 64* + SWAP + ;
@@ -126,7 +136,8 @@ CREATE wordname 5 C, '$ C, '$ C, 0 C, 0 C, 0 C,
 : openRight -eol? IF openr THEN ;
 : inserting? mode @ 'i = ;
 : chr inserting? IF openRight THEN place ;
-<p>
+
+<p>
 ( Editor Commands: Quit, cursor, block, et. al. )
 : $$c51 0 20 AT-XY R> R> DROP >R ; \ Q -- quits main loop
 : $$c30 flushLeft ;             \ 0
@@ -141,13 +152,15 @@ CREATE wordname 5 C, '$ C, '$ C, 0 C, 0 C, 0 C,
 : $$c5B prevblock ;             \ [
 : $$c5C toggleshadow ;          \ \
 : $$c5D nextblock ;             \ ]
-<p>( Editor Backspace/Delete )
+
+<p>( Editor Backspace/Delete )
 : padding 32 eol C! UPDATE ;
 : del wh DUP 1+ SWAP 63 x @ - MOVE ;
 : delete -eol? IF del THEN padding ;
 : bs left delete ;
 : backspace x @ 0 > IF bs THEN ;
-<p>( Editor Carriage Return )
+
+<p>( Editor Carriage Return )
 : nextln eol 1+ ;
 : #chrs scr @ BLOCK 1024 + nextln - 64 - ;
 : copydown y @ 14 < IF nextln DUP 64 + #chrs MOVE THEN ;
@@ -158,7 +171,8 @@ CREATE wordname 5 C, '$ C, '$ C, 0 C, 0 C, 0 C,
 : splitline opendown splitdown blankrest ;
 : retrn inserting? IF splitline THEN flushleft nextline ;
 : return y @ 15 < IF retrn THEN ;
-<p>( Editor Wipe Block )
+
+<p>( Editor Wipe Block )
 : msg 0 20 AT-XY ." Are you sure? (Y/N) " ;
 : valid? DUP 'n = OVER 'y = OR ;
 : uppercase? DUP 'A >= SWAP 'Z <= AND ;
@@ -168,7 +182,8 @@ CREATE wordname 5 C, '$ C, '$ C, 0 C, 0 C, 0 C,
 : no? msg validkey clrmsg 'n = ;
 : ?confirm no? IF R> DROP THEN ;
 : wipe ?confirm scr @ BLOCK 1024 32 FILL UPDATE 0 x ! 0 y ! ;
-<p>( Editor Commands: backspace, delete, et. al. )
+
+<p>( Editor Commands: backspace, delete, et. al. )
 : $$i04 delete ;                    \ CTRL-D
 : $$i08 backspace ;                 \ (bs)
 : $$i7F backspace ;                 \ DEL -- for Unix
@@ -176,14 +191,16 @@ CREATE wordname 5 C, '$ C, '$ C, 0 C, 0 C, 0 C,
 : $$c5A wipe ;                      \ Z
 : $$c6F opendown down $$c49 ;       \ o
 : $$c4F opendown ;                  \ O
-<p>( Editor Keyboard Handler )
+
+<p>( Editor Keyboard Handler )
 \ Word name key: $ $ _ _ _
 \                    | | |
 \ c = command mode --+ | |
 \ i = ins/repl mode    | |
 \                      | |
 \ Key code (hex#) -----+-+
-<p>: keyboard KEY ;
+
+<p>: keyboard KEY ;
 : cmd? mode @ 'c = ;
 : ins? mode @ 'i = mode @ 'r = OR ;
 : mode! ins? 'i AND cmd? 'c AND OR wordname 3 + C! ;

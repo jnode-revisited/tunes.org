@@ -1,6 +1,6 @@
 <!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
 <HTML><HEAD><TITLE>CTO : Supercompilation</TITLE
-><LINK REL="alternate" TYPE="application/rss+xml" TITLE="Recent Changes" HREF="http://tunes.org/cliki/recent-changes.rdf.html"><LINK REL="stylesheet" HREF="admin/cliki.css"></HEAD
+><LINK REL="alternate" TYPE="application/rss+xml" TITLE="Recent Changes" HREF="/tunes.org/cliki/recent-changes.rdf.html"><LINK REL="stylesheet" HREF="admin/cliki.css"></HEAD
 ><BODY><DIV ID="banner"><A TITLE="CTO" CLASS="logo" HREF="supercompilation.html">CTO</A
 > <SPAN>CLiki for the TUNES project</SPAN
 ></DIV
@@ -10,25 +10,33 @@
 > </DIV
 ><DIV ID="main"><H1>Supercompilation</H1
 >Or Supervised Compilation (<a class="internal" href="scp.html" >SCP</a>) is a <a class="internal" href="program_20transformation.html" >program transformation</a> technique by <a class="internal" href="valentin_20f._20turchin.html" >Valentin F. Turchin</a> which he applied originally to the <a class="internal" href="programming_20language.html" >programming language</a> <a class="internal" href="refal.html" >REFAL</a>.
-<p><ul class="links">
+
+<p><ul class="links">
 <li>An excerpt from <A HREF="http://www.supercompilers.com/white_paper.shtml">Supercompiling Java Programs</A
 > by Ben Goertzel, Andrei Klimov, Arkady Klimov, April 2002, <A HREF="http://www.supercompilers.com/">SuperCompilers, LCC</A
 > - White Paper:
 <blockquote>
 <b>Partial evaluation vs. Supercompilation</b>
-<p>We discussed above the global program optimization technique known as <a class="internal" href="partial_20evaluation.html" >partial evaluation</a> or <a class="internal" href="partial_20evaluation.html" >partial evaluation</a>[sic]. It is best to consider this simpler approach, not as an alternative to supercompilation, but rather as a special case of supercompilation, important yet severely limited in scope.
-<p>In essence, the difference between <a class="internal" href="partial_20evaluation.html" >partial evaluation</a> and supercompilation is that the former requires a purely <a class="internal" href="static.html" >static</a> analysis to decide which parts of code will be optimized out at specialization time, whereas the latter, via the process of metacomputation, makes decisions using a much larger information set, including information perceivable only during the course of execution. <a class="internal" href="partial_20evaluation.html" >Partial evaluation</a> is dependent upon a type of program analysis called <i>Binding Time Analysis</i> (BTA), which has no access to the concrete values taken on by local variables in a program as it executes, and hence does not use the maximum information available at a given point in the execution of a program.
-<p>Specifically, in practice, BTA performs separation of program code into two types of fragments:
+
+<p>We discussed above the global program optimization technique known as <a class="internal" href="partial_20evaluation.html" >partial evaluation</a> or <a class="internal" href="partial_20evaluation.html" >partial evaluation</a>[sic]. It is best to consider this simpler approach, not as an alternative to supercompilation, but rather as a special case of supercompilation, important yet severely limited in scope.
+
+<p>In essence, the difference between <a class="internal" href="partial_20evaluation.html" >partial evaluation</a> and supercompilation is that the former requires a purely <a class="internal" href="static.html" >static</a> analysis to decide which parts of code will be optimized out at specialization time, whereas the latter, via the process of metacomputation, makes decisions using a much larger information set, including information perceivable only during the course of execution. <a class="internal" href="partial_20evaluation.html" >Partial evaluation</a> is dependent upon a type of program analysis called <i>Binding Time Analysis</i> (BTA), which has no access to the concrete values taken on by local variables in a program as it executes, and hence does not use the maximum information available at a given point in the execution of a program.
+
+<p>Specifically, in practice, BTA performs separation of program code into two types of fragments:
 <ul>
 	<li>Those which can be executed based on variable values known at specialization time (these are annotated S, for  <a class="internal" href="static.html" >static</a> )
 	<li>Those which cannot be thus executed, and which are therefore left in the residual program, the part of the program that is not modified by the <a class="internal" href="partial_20evaluation.html" >partial evaluation</a> process (these are annotated D, for dynamic)
 </ul>
-<p>In the case of complex real-world programs, only a very small percentage of code can be specialized in this manner, which means that <a class="internal" href="partial_20evaluation.html" >partial evaluation</a> in and of itself is often of relatively limited utility.
-<p>On the other hand, the essence of supercompilation is driving performed without knowing any information in advance (besides the program code itself). The only information required by supercompilation is that which is created dynamically via configuration analysis (though some a priori information on method properties may be useful in certain cases). Driving works perfectly well with program fragments that cannot be specialized with  <a class="internal" href="static.html" >static</a> ally separated binding times.
-<p>The step from <a class="internal" href="partial_20evaluation.html" >partial evaluation</a> to supercompilation is a large one: on the one hand, a purely  <a class="internal" href="static.html" >static</a>  analysis of variable-value relationships; on the other, a full-on metacomputation framework in which a program is executed by another program, keeping records and making analyses as it goes along. So far, however, nobody has found any significant intermediate forms of global program optimization. A few small simplifications of supercompilation may be identified, but by and large, if one wants to go beyond the simple analyses obtainable through partial evaluation, one has to pass through the metasystem transition to supercompilation.
+
+<p>In the case of complex real-world programs, only a very small percentage of code can be specialized in this manner, which means that <a class="internal" href="partial_20evaluation.html" >partial evaluation</a> in and of itself is often of relatively limited utility.
+
+<p>On the other hand, the essence of supercompilation is driving performed without knowing any information in advance (besides the program code itself). The only information required by supercompilation is that which is created dynamically via configuration analysis (though some a priori information on method properties may be useful in certain cases). Driving works perfectly well with program fragments that cannot be specialized with  <a class="internal" href="static.html" >static</a> ally separated binding times.
+
+<p>The step from <a class="internal" href="partial_20evaluation.html" >partial evaluation</a> to supercompilation is a large one: on the one hand, a purely  <a class="internal" href="static.html" >static</a>  analysis of variable-value relationships; on the other, a full-on metacomputation framework in which a program is executed by another program, keeping records and making analyses as it goes along. So far, however, nobody has found any significant intermediate forms of global program optimization. A few small simplifications of supercompilation may be identified, but by and large, if one wants to go beyond the simple analyses obtainable through partial evaluation, one has to pass through the metasystem transition to supercompilation.
 </blockquote>
 </ul>
-<p>Some other relevant papers:
+
+<p>Some other relevant papers:
 <ul class="links">
   <li>"Introduction to Supercompilation"
     <ul>
@@ -52,4 +60,5 @@
 ></li>
     </ul>
 </ul>
-<p><hr><p><b>This page is linked from: </b> <a class="internal" href="scp.html" >SCP</a> &nbsp; <a class="internal" href="valentin_20f._20turchin.html" >Valentin F. Turchin</a> &nbsp; </DIV></BODY></HTML>
+
+<p><hr><p><b>This page is linked from: </b> <a class="internal" href="scp.html" >SCP</a> &nbsp; <a class="internal" href="valentin_20f._20turchin.html" >Valentin F. Turchin</a> &nbsp; </DIV></BODY></HTML>

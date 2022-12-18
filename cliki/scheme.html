@@ -1,6 +1,6 @@
 <!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
 <HTML><HEAD><TITLE>CTO : Scheme</TITLE
-><LINK REL="alternate" TYPE="application/rss+xml" TITLE="Recent Changes" HREF="http://tunes.org/cliki/recent-changes.rdf.html"><LINK REL="stylesheet" HREF="admin/cliki.css"></HEAD
+><LINK REL="alternate" TYPE="application/rss+xml" TITLE="Recent Changes" HREF="/tunes.org/cliki/recent-changes.rdf.html"><LINK REL="stylesheet" HREF="admin/cliki.css"></HEAD
 ><BODY><DIV ID="banner"><A TITLE="CTO" CLASS="logo" HREF="scheme.html">CTO</A
 > <SPAN>CLiki for the TUNES project</SPAN
 ></DIV
@@ -10,9 +10,12 @@
 > </DIV
 ><DIV ID="main"><H1>Scheme</H1
 >Scheme is a <a class="internal" href="functional.html" >functional</a> <a class="internal" href="programming_20language.html" >programming language</a>, dialect of <a class="internal" href="lisp.html" >Lisp</a> with two distinguishing features: it is small and tries to be clean.
-<p>Its language definition (latest being R5RS), including formal semantics, is about 50 pages long. This is good and bad. A good thing is that it is easy to implement, which makes it good for experimentation and learning in general, or as a core language to extend in a domain-specific way. It is also relatively easy to learn and master or to metaprogram (the <a class="internal" href="tube.html" >Tube</a> is a case in point). A bad thing is that it there the language definition has so few features that every implementation has to add its own to provide a useful programming environment, and that there are zillions of implementations that each does things in its own different, incompatible way. There now exist a process to harmonize such extensions, SRFIs. However, no such thing as a module system or a namespace management system has been standardized, which makes all these extensions a big mess.
-<p>It tries to be clean in the sense that it is not constrained much by backwards compatibility as is <a class="internal" href="common_20lisp.html" >Common Lisp</a>, but instead attemps to provide simple semantics. (It has been said that Scheme is a <a class="internal" href="lisp.html" >Lisp</a> that tries to become <a class="internal" href="ml.html" >ML</a>). Among notable differences with respect traditional Lisp: Scheme has a single namespace for functions and variables (it is a "Lisp-1"); Scheme has first-class reentrant continuations (which implies lots of "interesting" problems for implementations); R5RS added a stripped-down special purpose <a class="internal" href="macro.html" >macro</a> system (though most Scheme implementations also have a full-blown defmacro-like macros).
-<p><ul class="links">
+
+<p>Its language definition (latest being R5RS), including formal semantics, is about 50 pages long. This is good and bad. A good thing is that it is easy to implement, which makes it good for experimentation and learning in general, or as a core language to extend in a domain-specific way. It is also relatively easy to learn and master or to metaprogram (the <a class="internal" href="tube.html" >Tube</a> is a case in point). A bad thing is that it there the language definition has so few features that every implementation has to add its own to provide a useful programming environment, and that there are zillions of implementations that each does things in its own different, incompatible way. There now exist a process to harmonize such extensions, SRFIs. However, no such thing as a module system or a namespace management system has been standardized, which makes all these extensions a big mess.
+
+<p>It tries to be clean in the sense that it is not constrained much by backwards compatibility as is <a class="internal" href="common_20lisp.html" >Common Lisp</a>, but instead attemps to provide simple semantics. (It has been said that Scheme is a <a class="internal" href="lisp.html" >Lisp</a> that tries to become <a class="internal" href="ml.html" >ML</a>). Among notable differences with respect traditional Lisp: Scheme has a single namespace for functions and variables (it is a "Lisp-1"); Scheme has first-class reentrant continuations (which implies lots of "interesting" problems for implementations); R5RS added a stripped-down special purpose <a class="internal" href="macro.html" >macro</a> system (though most Scheme implementations also have a full-blown defmacro-like macros).
+
+<p><ul class="links">
 <li><A HREF="http://www.schemers.org/">Schemers.org</A
 >.</li>
 <li><A HREF="http://library.readscheme.org/">Bibliography of Scheme-related Research</A
@@ -43,7 +46,8 @@
 <li><A HREF="http://schematics.sourceforge.net/">Schematics</A
 > a project devoted to the construction of high quality libraries for Scheme and PLT Scheme in particular.</li>
 </ul>
-<p><ul class="links"><h4>Alternative syntaxes</h4>
+
+<p><ul class="links"><h4>Alternative syntaxes</h4>
 <li><A HREF="http://www.accesscom.com/~darius/">indent</A
 > a Python/Haskell-like syntax for Scheme, using indentation in place of parentheses.</li>
 <li><A HREF="http://www.accesscom.com/~darius/">mlish</A
@@ -55,7 +59,8 @@
 <li><A HREF="http://redhog.org/Projects/Programming/Current/Sugar/">Sugar</A
 > adds indentation-sensitive syntax to the LISP reader of scheme.</li>
 </ul>
-<p><ul class="links"><h4>Applications</h4>
+
+<p><ul class="links"><h4>Applications</h4>
 <li><A HREF="http://www.siag.nu/">Siag Office</A
 > Scheme In A Grid, a free office package for <a class="internal" href="unix.html" >Unix</a>.</li>
 <li><A HREF="http://groupscheme.sourceforge.net/">The Groupscheme Project</A
@@ -63,7 +68,8 @@
 <li><A HREF="http://www.shiro.dreamhost.com/scheme/wiliki/wiliki.cgi?l=en">WiLiKi</A
 >, yet another Wiki clone written in Scheme.</li>
 </ul>
-<p><ul class="links"><h4>Books</h4>
+
+<p><ul class="links"><h4>Books</h4>
 <li><A HREF="http://www.htus.org">How To Use Scheme</A
 >.</li>
 <li><A HREF="http://www.scheme.com/tspl2d/">The Scheme Programming Language, 2nd edition</A
@@ -76,7 +82,8 @@
 <li><A HREF="http://www.htdp.org/">How to Design Programs An Introduction to Computing and Programming </A
 >.</li>
 </ul>
-<p><ul class="implementations"><h4>Compilers</h4>
+
+<p><ul class="implementations"><h4>Compilers</h4>
 <strong>Note</strong>: in the <a class="internal" href="lisp.html" >Lisp</a> tradition some Scheme compilers have a <a class="internal" href="repl.html" >REPL</a> and compile every new definition incrementally. Other have a separate interpreter and few are batch only.
 <li><a name="bigloo"></a>
   <A HREF="http://www-sop.inria.fr/mimosa/fp/Bigloo">Bigloo</A
@@ -100,7 +107,8 @@
 <li><A HREF="http://citeseer.ist.psu.edu/117391.html">VLISP: A Verified Implementation of Scheme</A
 >.</li>
 </ul>
-<p><ul class="links"><h4>Document Processing</h4>
+
+<p><ul class="links"><h4>Document Processing</h4>
 <li><A HREF="http://brl.sourceforge.net/">BRL - the Beautiful Report Language</A
 > a dialect of Scheme.</li>
 <li><A HREF="http://www.jaked.org/hack/hpp/">hpp: an HTML preprocessor</A
@@ -122,7 +130,8 @@
 <li><A HREF="http://youpou.lip6.fr/queinnec/WWW/l2t.html">l2t</A
 > a literate programming utility that allows easy insertions of program source snippets towards TeX files.</li>
 </ul>
-<p><ul class="implementations"><h4>Embeddable</h4>
+
+<p><ul class="implementations"><h4>Embeddable</h4>
 <li><A HREF="http://www.shiro.dreamhost.com/scheme/vault/escm.html">escm</A
 > Embedded SCheme processor.</li>
 <li><a class="internal" href="guile.html" >Guile</a>.
@@ -139,7 +148,8 @@
 <li><A HREF="http://tinyscheme.sourceforge.net">TinyScheme</A
 > a lightweight Scheme interpreter that implements as large a subset of R5RS.</li>
 </ul>
-<p><ul class="links"><h4>Embeddings of other languages features into Scheme (excluding <a class="internal" href="oo.html" >OO</a>, see below)</h4>
+
+<p><ul class="links"><h4>Embeddings of other languages features into Scheme (excluding <a class="internal" href="oo.html" >OO</a>, see below)</h4>
 <li><A HREF="http://youpou.lip6.fr/queinnec/WWW/Icslas.html">Icslas</A
 > - a Scheme distributed extension.</li>
 <li><A HREF="http://www.cs.indiana.edu/~chaynes/infer.html">Infer</A
@@ -161,7 +171,8 @@
 > a paper from <A HREF="http://www.usenix.org/publications/library/proceedings/dsl99/">USENIX Domain-Specific Languages 99</A
 >.</li>
 </ul>
-<p><ul class="implementations"><h4>Interpreters</h4>
+
+<p><ul class="implementations"><h4>Interpreters</h4>
 <li><A HREF="http://www.stripedgazelle.org/joey/src/dream/dream.html">Dream</A
 > a tiny (24Kb) and nearly R4RS compliant Scheme interpreter written entirely in x86 assembly for Linux</li>
 <li><A HREF="http://www.nightmare.com/~rushing/lunacy/">Lunacy</A
@@ -212,7 +223,8 @@
 <li><A HREF="http://shrewm.net/wscheme/">WScheme</A
 > <a class="internal" href="aka.html" >aka</a>  World Scheme, a non-compliant Scheme interpreter.</li>
 </ul>
-<p><ul class="implementations"><h4><a class="internal" href="java.html" >Java</a> based implementations</h4>
+
+<p><ul class="implementations"><h4><a class="internal" href="java.html" >Java</a> based implementations</h4>
 <li><A HREF="http://www.cs.brandeis.edu/~tim/jscheme/mainwebpage.html">The Jscheme Web Programming Project</A
 >, (<A HREF="http://www.norvig.com/jscheme.html">also</A
 > by Peter Norvig) Scheme in <a class="internal" href="java.html" >Java</a>.</li>
@@ -226,7 +238,8 @@
 <li><A HREF="http://www.alphaworks.ibm.com/formula/skij/">Skij</A
 > small Scheme interpreter, written in and running in <a class="internal" href="java.html" >Java</a>, has extensions that allow interactively creation, inspection, and manipulation of arbitrary <a class="internal" href="java.html" >Java</a> objects.</li>
 </ul>
-<p><ul class="links"><h4><a class="internal" href="mud.html" >MUD</a>s</h4>
+
+<p><ul class="links"><h4><a class="internal" href="mud.html" >MUD</a>s</h4>
 <li><A HREF="http://www.cubik.org/mirrors/cm203_mud/">The CM203 MUD</A
 > (<A HREF="http://agora.cubik.org/wiki/view/Main/CM203MUD">Agora</A
 > <a class="internal" href="wiki.html" >Wiki</a>) a <a class="internal" href="mud.html" >MUD</a> in Scheme.</li>
@@ -237,7 +250,8 @@
 <li><A HREF="http://world.dv8.org">World</A
 > a secure-shellable ASCII-based graphical MUD in WScheme.</li>
 </ul>
-<p><ul class="links"><h4><a class="internal" href="oo.html" >OO</a> and related</h4>
+
+<p><ul class="links"><h4><a class="internal" href="oo.html" >OO</a> and related</h4>
 <li><A HREF="http://www.ai.mit.edu/~gregs/ref-dyn-patterns.html">GLOS</A
 > Greg's Little Object System.</li>
 <li><A HREF="http://youpou.lip6.fr/queinnec/WWW/Meroon.html">Meroon</A
@@ -261,7 +275,8 @@
 <li><A HREF="http://www.cs.cornell.edu/eli/Swindle/">Swindle</A
 > PLT SCheme with many additional features, the main is a CLOS-like object system based on Tiny-CLOS from Xerox.</li>
 </ul>
-<p><ul class="links"><h4><a class="internal" href="partial_20evaluation.html" >Partial Evaluator</a>s</h4>
+
+<p><ul class="links"><h4><a class="internal" href="partial_20evaluation.html" >Partial Evaluator</a>s</h4>
 <li><A HREF="http://www.research.microsoft.com/~daniel/fuse-memos/README.html">fuse</A
 > a fully automatic <a class="internal" href="partial_20evaluation.html" >partial evaluator</a> for the <a class="internal" href="functional.html" >functional</a> subset of <a class="internal" href="scheme.html" >Scheme</a>.</li>
 <li><A HREF="http://www.informatik.uni-freiburg.de/proglang/software/pgg/">The Program Generator Generator PGG</A
@@ -271,7 +286,8 @@
 <li><A HREF="http://www.diku.dk/topps/activities/similix.html">Similix</A
 > an autoprojector (self-applicable partial evaluator) for a large higher-order subset of Scheme.</li>
 </ul>
-<p><ul class="links"><h4>Translators from/to Scheme to/from other languages and related</h4>
+
+<p><ul class="links"><h4>Translators from/to Scheme to/from other languages and related</h4>
 <li><a name="chicken"></a>
   <A HREF="http://www.call-with-current-continuation.org/chicken.html">chicken</A
 > a Scheme-to-C compiler.</li>
@@ -296,7 +312,8 @@
 <li><A HREF="http://www.is.s.u-tokyo.ac.jp/~sumii/pub/">sml2scm</A
 > a source-to-source translator from core S<a class="internal" href="ml.html" >ML</a> (S<a class="internal" href="ml.html" >ML</a> without modules) to Scheme.</li>
 </ul>
-<p><ul class="links"><h4>Other</h4>
+
+<p><ul class="links"><h4>Other</h4>
 <li><A HREF="http://www.cs.hmc.edu/~fleck/envision/envision.html">Envision: scheme with pictures</A
 > an extension of Scheme to program computer vision (<a class="internal" href="ai.html" >AI</a>) applications.</li>
 <li><A HREF="http://www.red-bean.com/~craig/grover/">Grover</A
@@ -320,7 +337,8 @@
 <li><A HREF="http://nocrew.org/software-shoe.html">Shoe</A
 >.</li>
 </ul>
-<p><ul class="implementations"><h4>Other languages implemented in Scheme</h4>
+
+<p><ul class="implementations"><h4>Other languages implemented in Scheme</h4>
 <li><A HREF="http://www.iro.umontreal.ca/~boucherd/idyl.html">Idyl</A
 > - a <a class="internal" href="dylan.html" >Dylan</a> interpreter in Scheme.</li>
 <li>Ian Bicking's <A HREF="http://www.cs.earlham.edu/~bickiia/logo-scheme/">Logo in Scheme</A
@@ -330,7 +348,8 @@
 <li><A HREF="http://www-2.cs.cmu.edu/~music/nyquist/">Nyquist</A
 >, <em>A Sound Synthesis and Composition Language</em>, implemented in XLisp.</li>
 </ul>
-<p><ul class="links"><h4>Standards and related</h4>
+
+<p><ul class="links"><h4>Standards and related</h4>
 <li><A HREF="http://swissnet.ai.mit.edu/~jaffer/Scheme.html">RnRS</A
 > - Revised^n Report on the Algorithmic Language Scheme.</li>
 <li><A HREF="http://www.cs.indiana.edu/scheme-repository/R4RS/r4rs_toc.html">R4RS</A
@@ -344,7 +363,8 @@
 <li><A HREF="http://srfi.schemers.org/">Scheme Requests for Implementation</A
 > (SRFI).
 </ul>
-<p><ul class="links"><h4>Unsorted</h4>
+
+<p><ul class="links"><h4>Unsorted</h4>
 <li><A HREF="http://www.bloodandcoffee.net/campbell/html/scheme-irc.html">#Scheme</A
 > <a class="internal" href="irc.html" >IRC</a> channel on the <A HREF="http://www.freenode.net">FreeNode</A
 > network. <A HREF="http://www.tunes.org/~nef/logs/scheme/">Clog's #scheme logs</A

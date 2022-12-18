@@ -1,6 +1,6 @@
 <!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
 <HTML><HEAD><TITLE>CTO : Exokernel</TITLE
-><LINK REL="alternate" TYPE="application/rss+xml" TITLE="Recent Changes" HREF="http://tunes.org/cliki/recent-changes.rdf.html"><LINK REL="stylesheet" HREF="admin/cliki.css"></HEAD
+><LINK REL="alternate" TYPE="application/rss+xml" TITLE="Recent Changes" HREF="/tunes.org/cliki/recent-changes.rdf.html"><LINK REL="stylesheet" HREF="admin/cliki.css"></HEAD
 ><BODY><DIV ID="banner"><A TITLE="CTO" CLASS="logo" HREF="exokernel.html">CTO</A
 > <SPAN>CLiki for the TUNES project</SPAN
 ></DIV
@@ -15,11 +15,13 @@
 <br><strong>An exokernel eliminates the notion that an <a class="internal" href="operating_20system.html" >operating system</a> should provide <a class="internal" href="abstraction.html" >abstraction</a>s on which applications are built</strong>. Instead, it concentrates solely on <a class="internal" href="security.html" >securely</a> multiplexing the raw hardware: from basic hardware primitives, application-level libraries and servers can directly implement traditional operating system abstractions, specialized for appropriateness and speed.
 <br>...
 </blockquote>
-<p><ul class="implementations">
+
+<p><ul class="implementations">
 <li><A HREF="http://www.pdos.lcs.mit.edu/exo.html">MIT Exokernel Operating System</A
 >
 </ul>
-<p><ul class="links"><h4>Relevant documentation</h4>
+
+<p><ul class="links"><h4>Relevant documentation</h4>
 <li><A HREF="http://www.pdos.lcs.mit.edu/papers/hotos-jeremiad.ps">Exterminate all operating system abstractions</A
 > (.ps): this paper introduce the key concept of exokernels
 <li><A HREF="http://amsterdam.lcs.mit.edu/exo/docs.html">documentation</A
@@ -27,13 +29,17 @@
 <li>PDOS Publications, <A HREF="http://amsterdam.lcs.mit.edu/PDOS-papers.html#Exokernels">Exokernels</A
 >
 </ul>
-<p><hr>
+
+<p><hr>
 What follow was the old, inadequate definition of exokernel: someway, during the transition to <a class="internal" href="cliki.html" >Cliki</a>, our awareness regarding exokernels was not adequately reported.
-<p><blockquote>
+
+<p><blockquote>
 A <a class="internal" href="microkernel.html" >microkernel</a> <a class="internal" href="os.html" >OS</a> project from MIT, which seems to have the most features divorced from its core of all of them.
-<p><span class="comment">An exokernel is not a <a class="internal" href="microkernel.html" >microkernel</a>.  It is a fundamentally different architecture, whereby the <a class="internal" href="kernel.html" >kernel</a> is predominently monolithic in nature, but the services normally offered by a monolithic kernel to applications are pushed up into user-space libraries, called library operating systems. This is how an exokernel achieves flexibility and performance gains; applications need only use the parts of the OS that are necessary, rather than being forced to deal with all the abstractions that are normally enforced by monolithic kernels, including microkernels.
+
+<p><span class="comment">An exokernel is not a <a class="internal" href="microkernel.html" >microkernel</a>.  It is a fundamentally different architecture, whereby the <a class="internal" href="kernel.html" >kernel</a> is predominently monolithic in nature, but the services normally offered by a monolithic kernel to applications are pushed up into user-space libraries, called library operating systems. This is how an exokernel achieves flexibility and performance gains; applications need only use the parts of the OS that are necessary, rather than being forced to deal with all the abstractions that are normally enforced by monolithic kernels, including microkernels.
 <br>-- <a class="internal" href="a_20n_20other.html" >A N Other</a></span>
-<p><span class="comment">The debate <strong>monolithic <a class="internal" href="kernel.html" >kernel</a>s</strong> <em>vs</em> <strong><a class="internal" href="microkernel.html" >microkernel</a>s</strong> is uninteresting for <a class="internal" href="tunes.html" >Tunes</a>, which is about <a class="internal" href="no-kernel.html" >No-Kernel</a> systems.
+
+<p><span class="comment">The debate <strong>monolithic <a class="internal" href="kernel.html" >kernel</a>s</strong> <em>vs</em> <strong><a class="internal" href="microkernel.html" >microkernel</a>s</strong> is uninteresting for <a class="internal" href="tunes.html" >Tunes</a>, which is about <a class="internal" href="no-kernel.html" >No-Kernel</a> systems.
 <br>-- <a class="internal" href="mad70.html" >MaD70</a></span>
 </blockquote>
 <hr><p><b>This page is linked from: </b> <a class="internal" href="microkernel_20debate.html" >Microkernel Debate</a> &nbsp; </DIV></BODY></HTML>

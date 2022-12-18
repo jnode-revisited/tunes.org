@@ -1,6 +1,6 @@
 <!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
 <HTML><HEAD><TITLE>CTO : Garbage Collection</TITLE
-><LINK REL="alternate" TYPE="application/rss+xml" TITLE="Recent Changes" HREF="http://tunes.org/cliki/recent-changes.rdf.html"><LINK REL="stylesheet" HREF="admin/cliki.css"></HEAD
+><LINK REL="alternate" TYPE="application/rss+xml" TITLE="Recent Changes" HREF="/tunes.org/cliki/recent-changes.rdf.html"><LINK REL="stylesheet" HREF="admin/cliki.css"></HEAD
 ><BODY><DIV ID="banner"><A TITLE="CTO" CLASS="logo" HREF="garbage_20collection.html">CTO</A
 > <SPAN>CLiki for the TUNES project</SPAN
 ></DIV
@@ -10,12 +10,14 @@
 > </DIV
 ><DIV ID="main"><H1>Garbage Collection</H1
 >The <a class="internal" href="term.html" >term</a> for automated <a class="internal" href="memory.html" >memory</a>-management and reclamation, one of the many <a class="internal" href="methods_20of_20migration.html" >methods of migration</a>.
-<p><style type="text/css">p.r {text-align: right; font-size: small}</style>
+
+<p><style type="text/css">p.r {text-align: right; font-size: small}</style>
 <p class="r">
 <cite><a class="internal" href="gc.html" >GC</a> is not a generic solution for <a class="internal" href="memory.html" >memory</a> leaks, but a (correct) <a class="internal" href="gc.html" >GC</a> is a generic solution for '<strong>dangling pointers</strong>'. Just as there is no general solution for 'loops' (due to undecidability), there is no general solution for 'leaks'.</cite>
 <br>-- <a class="internal" href="henry_20baker.html" >Henry Baker</a>
 </p>
-<p><ul class="links">
+
+<p><ul class="links">
 <li><A HREF="http://www.cs.ukc.ac.uk/people/staff/rej/gc.html"><em>the</em> Garbage Collection page</A
 > by Richard Jones with extensive links and bibliography.
 <li><A HREF="http://www.cs.utexas.edu/users/wilson/">Paul R. Wilson</A
@@ -32,7 +34,8 @@
 <li>Another <A HREF="http://www.wildcard.demon.co.uk/dev/gc.html">Garbage Collection</A
 > page.
 </ul>
-<p><ul class="links"><h4>Papers</h4>
+
+<p><ul class="links"><h4>Papers</h4>
 <li><a class="internal" href="andrew_20appel.html" >Andrew W. Appel</a>. <A HREF="http://www.cs.princeton.edu/~appel/papers/45.ps">Garbage collection can be faster than stack allocation</A
 > (.<a class="internal" href="ps.html" >ps</a>). <em>Information Processing Letters</em> 25(4):275-279, 17 June 1987.
 <li>Miller, James S. and Guillermo J. Rozas. <A HREF="ftp://publications.ai.mit.edu/ai-publications/1000-1499/AIM-1462.ps.Z">Garbage Collection is Fast, But a Stack is Faster</A
@@ -40,12 +43,13 @@
 >). MIT AI Lab. AIM-1462. March 1994.
 <li>A study of <A HREF="ftp://ftp.cs.colorado.edu/pub/techreports/zorn/CU-CS-665-93.ps.Z">Memory Allocation Costs in Large C and C++ Programs</A
 > (.<a class="internal" href="ps.html" >ps</a>.Z) compares <strong>conservative <a class="internal" href="gc.html" >GC</a></strong> and various <a class="internal" href="memory.html" >memory</a> allocation techniques.
-<li>Damien Doligez's <A HREF="http://para.inria.fr/~doligez/caml-guts/Doligez95.ps.gz">Conception, réalisation et certification d'un glaneur de cellules concurrent</A
+<li>Damien Doligez's <A HREF="http://para.inria.fr/~doligez/caml-guts/Doligez95.ps.gz">Conception, rï¿½alisation et certification d'un glaneur de cellules concurrent</A
 > (.<a class="internal" href="ps.html" >ps</a>.gz) Ph.D. thesis (in French) about proving correct the concurrent <a class="internal" href="gc.html" >GC</a> he wrote for <a class="internal" href="ocaml.html" >OCAML</a> and other <A HREF="http://para.inria.fr/~doligez/caml-guts/">relevant papers</A
 >.
 <li><a class="internal" href="henry_20baker.html" >Henry G. Baker</a> has a good <a class="internal" href="gc.html" >GC</a> papers.
 </ul>
-<p><ul class="links"><h4>Surveys</h4>
+
+<p><ul class="links"><h4>Surveys</h4>
 <li>Paul R. Wilson's <A HREF="http://www.cs.utexas.edu/users/oops/papers.html#gcsurvey">Uniprocessor Garbage Collection Techniques</A
 > (<A HREF="ftp://ftp.cs.utexas.edu//pub/garbage/gcsurvey.ps">.ps</A
 >) and the <A HREF="http://www.cs.utexas.edu/users/oops/papers.html#bigsurv">draft of much expanded version</A
@@ -53,16 +57,18 @@
 >).
 <li>Paul R. Wilson, Mark S. Johnstone, Michael Neely, and David Boles <A HREF="ftp://ftp.cs.utexas.edu/pub/garbage/allocsrv.ps">Dynamic Storage Allocation: A Survey and Critical Review</A
 > (.<a class="internal" href="ps.html" >ps</a>).
-<li>David Plainfossé's and Marc Shapiro's <A HREF="http://www-sor.inria.fr/publi/SDGC_iwmm95.html">Survey of Distributed Garbage Collection techniques</A
+<li>David Plainfossï¿½'s and Marc Shapiro's <A HREF="http://www-sor.inria.fr/publi/SDGC_iwmm95.html">Survey of Distributed Garbage Collection techniques</A
 >.
 </ul>
-<p><ul class="links"><h4>Random pointers about <a class="internal" href="gc.html" >GC</a></h4>
+
+<p><ul class="links"><h4>Random pointers about <a class="internal" href="gc.html" >GC</a></h4>
 <li><A HREF="http://sunland.gsfc.nasa.gov/info/elisp/Garbage_Collection.html">Emacs GC</A
 >.
 <li><A HREF="http://www.cs.rice.edu/CS/PLT/packages/doc/mzembed/node43.html">MzScheme GC</A
 >.
 </ul>
-<p><ul class="implementations">
+
+<p><ul class="implementations">
 <li>The Boehm-Demers-Weiser <A HREF="http://www.hpl.hp.com/personal/Hans_Boehm/gc/index.html">conservative GC</A
 > for C/C++.
 <li><A HREF="http://research.sun.com/projects/gcspy/">GCspy</A

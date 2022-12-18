@@ -1,6 +1,6 @@
 <!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
 <HTML><HEAD><TITLE>CTO : Charity</TITLE
-><LINK REL="alternate" TYPE="application/rss+xml" TITLE="Recent Changes" HREF="http://tunes.org/cliki/recent-changes.rdf.html"><LINK REL="stylesheet" HREF="admin/cliki.css"></HEAD
+><LINK REL="alternate" TYPE="application/rss+xml" TITLE="Recent Changes" HREF="/tunes.org/cliki/recent-changes.rdf.html"><LINK REL="stylesheet" HREF="admin/cliki.css"></HEAD
 ><BODY><DIV ID="banner"><A TITLE="CTO" CLASS="logo" HREF="charity.html">CTO</A
 > <SPAN>CLiki for the TUNES project</SPAN
 ></DIV
@@ -10,11 +10,15 @@
 > </DIV
 ><DIV ID="main"><H1>Charity</H1
 >A lazy <a class="internal" href="higher-order.html" >higher-order</a> <a class="internal" href="functional.html" >functional</a> <a class="internal" href="programming_20language.html" >programming language</a> based on the concepts of <a class="internal" href="category_20theory.html" >category theory</a>. It supports both inductive and co-inductive type definitions, and is terminating with the exception of pending inputs (this means it is not Turing-complete, but it is still useful and safe in that respect).
-<p><p class="comment">The following came from a <A HREF="http://lambda.weblogs.com/discuss/msgReader$2307?y=2003&m=8&d=22">discussion</A
+
+<p><p class="comment">The following came from a <A HREF="http://lambda.weblogs.com/discuss/msgReader$2307?y=2003&m=8&d=22">discussion</A
 > on <a class="internal" href="ltu.html" >LtU</a>:</p>
-<p>It's based on a core language (categorical combinators) which is easy to prove termination for but, instead of adding recursion and sugar, they only added sugar, so all Charity programs terminate except when blocking on input.
-<p>In Charity, strong constraints on the construction of data and the operators associated with them are the critical characteristic; all operations definable are total <a class="internal" href="morphism.html" >morphism</a>s. (Algebraic) datatype definitions in Charity are not very different from ones in <a class="internal" href="haskell.html" >Haskell</a>, but whereas Charity has a fold construct for each datatype, Haskell forces you to define it for yourself using recursion. So Charity short-circuits the step where you get a proof obligation for termination. Of course, you can do non-well-founded recursion in Haskell also, which is what gives the extra power and the possibility of divergence.
-<p><ul class="links">
+
+<p>It's based on a core language (categorical combinators) which is easy to prove termination for but, instead of adding recursion and sugar, they only added sugar, so all Charity programs terminate except when blocking on input.
+
+<p>In Charity, strong constraints on the construction of data and the operators associated with them are the critical characteristic; all operations definable are total <a class="internal" href="morphism.html" >morphism</a>s. (Algebraic) datatype definitions in Charity are not very different from ones in <a class="internal" href="haskell.html" >Haskell</a>, but whereas Charity has a fold construct for each datatype, Haskell forces you to define it for yourself using recursion. So Charity short-circuits the step where you get a proof obligation for termination. Of course, you can do non-well-founded recursion in Haskell also, which is what gives the extra power and the possibility of divergence.
+
+<p><ul class="links">
 <li>The <A HREF="http://www.cpsc.ucalgary.ca/Research/charity/home.html">home page</A
 >.
 </ul></DIV></BODY></HTML>

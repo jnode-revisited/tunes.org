@@ -1,6 +1,6 @@
 <!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
 <HTML><HEAD><TITLE>CTO : Forth OSes</TITLE
-><LINK REL="alternate" TYPE="application/rss+xml" TITLE="Recent Changes" HREF="http://tunes.org/cliki/recent-changes.rdf.html"><LINK REL="stylesheet" HREF="admin/cliki.css"></HEAD
+><LINK REL="alternate" TYPE="application/rss+xml" TITLE="Recent Changes" HREF="/tunes.org/cliki/recent-changes.rdf.html"><LINK REL="stylesheet" HREF="admin/cliki.css"></HEAD
 ><BODY><DIV ID="banner"><A TITLE="CTO" CLASS="logo" HREF="forth_20oses.html">CTO</A
 > <SPAN>CLiki for the TUNES project</SPAN
 ></DIV
@@ -10,8 +10,10 @@
 > </DIV
 ><DIV ID="main"><H1>Forth OSes</H1
 >The idea for a modern <a class="internal" href="forth.html" >Forth</a> <a class="internal" href="os.html" >OS</a> has been kicking around since maybe 1995. It's popular with folks who want a simple, understandable <a class="internal" href="os.html" >OS</a>. Anyway, feel free to add your ideas here (see <a class="internal" href="text_20formatting.html" >Text Formatting</a> for info on TUNES CLiki formatting rules).
-<p>Traditionally Forth <a class="internal" href="os.html" >OS</a>es are <a class="internal" href="no-kernel.html" >no-kernel</a> systems, but recent incarnations are integrated with "modern" <a class="internal" href="os.html" >OS</a>es <a class="internal" href="kernel.html" >kernel</a>s and so they have usual <a class="internal" href="protection.html" >protection</a> barriers.
-<p>Projects:
+
+<p>Traditionally Forth <a class="internal" href="os.html" >OS</a>es are <a class="internal" href="no-kernel.html" >no-kernel</a> systems, but recent incarnations are integrated with "modern" <a class="internal" href="os.html" >OS</a>es <a class="internal" href="kernel.html" >kernel</a>s and so they have usual <a class="internal" href="protection.html" >protection</a> barriers.
+
+<p>Projects:
 <ul class="implementations"><h4>IBM PC (Intel Architecture)</h4>
   <li><a class="internal" href="retro.html" >RetroForth/Native</a>.
   <li><a class="internal" href="bootos.html" >BootOS</a> (<A HREF="http://mak.chat.ru">old</A
@@ -36,7 +38,8 @@
   <li><A HREF="http://members.bellatlantic.net/~vze22t92/www/diesel.html">Diesel</A
 >.
 </ul>
-<p><ul class="implementations"><h4>Non-PC</h4>
+
+<p><ul class="implementations"><h4>Non-PC</h4>
   <li><A HREF="http://www.ultratechnology.com/aha.htm">Aha</A
 > Jeff Fox's project for the F21 processor.
   <li><A HREF="http://jpb.forth.free.fr/Anglais/encadrement.html">JPB Forth</A
@@ -50,12 +53,14 @@
   <li>Color Vision Systems <A HREF="http://www.cvs.cx/uCForth.php">uCForth</A
 >, COLDFORTH on top of <a class="internal" href="linux.html" >uCLinux</a>.
 </ul>
-<p><ul class="implementations"><h4>Project Proposals</h4>
+
+<p><ul class="implementations"><h4>Project Proposals</h4>
   <li><A HREF="http://www.forth.org/svfig/osf.html">OS/Forth</A
 > a proposal at SVFIG <A HREF="http://twister.pp.ru:8100/tech/OS4th/">old mirror</A
 >.
 </ul>
-<p><ul class="implementations"><h4>Missing in Action (<a class="internal" href="mia.html" >MIA</a>)</h4>
+
+<p><ul class="implementations"><h4>Missing in Action (<a class="internal" href="mia.html" >MIA</a>)</h4>
   <li><A HREF="http://www.itvc.com/Technology/4os.htm">4os</A
 > proprietary <a class="internal" href="os.html" >OS</a> intended to run on <a class="internal" href="misc.html" >MISC</a>-based set-top-box. <A HREF="http://web.archive.org/web/19991022233047/www.itvc.com/Technology/4os.htm">Mirror</A
 >
@@ -63,7 +68,8 @@
 >. <A HREF="http://web.archive.org/web/19991105181444/http://www.lysator.liu.se/~mc/oldhacks.html">Mirror</A
 >
 </ul>
-<p>Goals for a basic <a class="internal" href="forth.html" >Forth</a> <a class="internal" href="os.html" >OS</a>:
+
+<p>Goals for a basic <a class="internal" href="forth.html" >Forth</a> <a class="internal" href="os.html" >OS</a>:
 <ul>
   <li>Boot up in a split second.
   <li>Use a small portion of a floppy.
@@ -71,7 +77,8 @@
   <li><a class="internal" href="block_20editor.html" >Block Editor</a>, etc.. for a complete development environment.
   <li>Simple, efficient
 </ul>
-<p>Additional goals for a more powerful <a class="internal" href="forth.html" >Forth</a> <a class="internal" href="os.html" >OS</a>:
+
+<p>Additional goals for a more powerful <a class="internal" href="forth.html" >Forth</a> <a class="internal" href="os.html" >OS</a>:
 <ul>
   <li>Support common hardware (hard/cd/floppy drives, usb, video, etc)
   <li>Graphical interface
@@ -79,7 +86,8 @@
   <li>Web browser/email
   <li>Other applications
 </ul>
-<p>Blocks vs. Filesystems?
+
+<p>Blocks vs. Filesystems?
 <ul>
 <li>Do both? Say, 240 blocks on a floppy, 1200k for files.
 <li>Just using BLOCKS would be simpler and easier to implement, though it would be incompatible with other OSes.

@@ -1,6 +1,6 @@
 <!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
 <HTML><HEAD><TITLE>CTO : Syntax in Lisp</TITLE
-><LINK REL="alternate" TYPE="application/rss+xml" TITLE="Recent Changes" HREF="http://tunes.org/cliki/recent-changes.rdf.html"><LINK REL="stylesheet" HREF="admin/cliki.css"></HEAD
+><LINK REL="alternate" TYPE="application/rss+xml" TITLE="Recent Changes" HREF="/tunes.org/cliki/recent-changes.rdf.html"><LINK REL="stylesheet" HREF="admin/cliki.css"></HEAD
 ><BODY><DIV ID="banner"><A TITLE="CTO" CLASS="logo" HREF="syntax_20in_20lisp.html">CTO</A
 > <SPAN>CLiki for the TUNES project</SPAN
 ></DIV
@@ -10,12 +10,16 @@
 > </DIV
 ><DIV ID="main"><H1>Syntax in Lisp</H1
 >Symbolic Expressions (or S-expressions) are the <a class="internal" href="lisp.html" >Lisp</a> <a class="internal" href="syntax.html" >syntax</a> for list data, as parentheses-delimited lists of space-separated S-expressions, recursively. Code is represented in S-expressions, with the first element of a list being the function to be called or special form to be evaluated.
-<p>Lisp's grammar is incredibly simple in comparison to most:
+
+<p>Lisp's grammar is incredibly simple in comparison to most:
 <ol>
 <li>A reader function takes in a stream of character objects and dispatches on those characters according to a modifiable table, which refers to further functions called <em>reader-macros</em> - even the parentheses in lisp syntax are implemented in this way.
 <li>These functions often take in some part of the rest of the stream and collect them into objects (usually with list container structure), recursively.
 <li>The resulting object is then passed to the evaluator, which can act in varying ways on that.
 </ol>
-<p>This enables an incredibly simple way to create <a class="internal" href="domain-specific_20language.html" >domain-specific language</a> extensions to Lisp's syntax, and since the grammar is of recursive-descent and the reader functions may act arbitrarily, grammars of sub-expressions in some domain language are not even required to be recursive-descent in their type.
-<p>Even the standard Lisp languages use these to define, say, keyword symbols which evaluate to themselves (and they also cannot be bound), so that function parameters may be passed with name instead of by their position within the function form.
-<p>Lisp's list-shaped syntax and its list-manipulation functions allow for processing even between read-time and compile-time, by <a class="internal" href="macro.html" >macro</a>s, which are syntax-expanders that act in the full compile-time environment and language. Macro calls are recursively-expanded, until all remaining calls are core language functions. The final output is passed to the evaluator (an interpreter or compiler).</DIV></BODY></HTML>
+
+<p>This enables an incredibly simple way to create <a class="internal" href="domain-specific_20language.html" >domain-specific language</a> extensions to Lisp's syntax, and since the grammar is of recursive-descent and the reader functions may act arbitrarily, grammars of sub-expressions in some domain language are not even required to be recursive-descent in their type.
+
+<p>Even the standard Lisp languages use these to define, say, keyword symbols which evaluate to themselves (and they also cannot be bound), so that function parameters may be passed with name instead of by their position within the function form.
+
+<p>Lisp's list-shaped syntax and its list-manipulation functions allow for processing even between read-time and compile-time, by <a class="internal" href="macro.html" >macro</a>s, which are syntax-expanders that act in the full compile-time environment and language. Macro calls are recursively-expanded, until all remaining calls are core language functions. The final output is passed to the evaluator (an interpreter or compiler).</DIV></BODY></HTML>

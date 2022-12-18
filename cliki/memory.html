@@ -1,6 +1,6 @@
 <!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
 <HTML><HEAD><TITLE>CTO : Memory</TITLE
-><LINK REL="alternate" TYPE="application/rss+xml" TITLE="Recent Changes" HREF="http://tunes.org/cliki/recent-changes.rdf.html"><LINK REL="stylesheet" HREF="admin/cliki.css"></HEAD
+><LINK REL="alternate" TYPE="application/rss+xml" TITLE="Recent Changes" HREF="/tunes.org/cliki/recent-changes.rdf.html"><LINK REL="stylesheet" HREF="admin/cliki.css"></HEAD
 ><BODY><DIV ID="banner"><A TITLE="CTO" CLASS="logo" HREF="memory.html">CTO</A
 > <SPAN>CLiki for the TUNES project</SPAN
 ></DIV
@@ -10,12 +10,18 @@
 > </DIV
 ><DIV ID="main"><H1>Memory</H1
 >The computer <a class="internal" href="term.html" >term</a> for the maximum amount of <a class="internal" href="information.html" >information</a> it can handle, as measured in <a class="internal" href="bit.html" >bit</a>s.
-<p>The total amount of memory in a system bounds the amount of useful information that the system can manage. However, the size in bits of computer representations of objects is often far greater than the actual useful information in them, as there is often a lot of redundancy in them, as made necessary by requirements of processing speed. Hence memory is not used to its full information capacity, but rather according to tradeoffs in a famous compromise between processing time and space.
-<p>Nowadays, computer memories are organized in various layers, from very fast and volatile, but very few 1-word registers, to very big but permanent, but somehow slow multi-gigabyte disks. In between are various levels of hardware- or software- managed caches, made in various technologies (SRAM, DRAM), as progressive intermediate buffers between very fast but small central processors and very big but slow disks.
-<p>As these different layers of memories have quite different time and space constraints, different layer-specific representations and tradeoffs are to be used to efficiently adapt to layer-specific constraints, hence the growing need for more and more complex algorithms for compression, decompression, caching and flushing, hashing and looking up, etc.
-<p>As things grow in complexity, we at the TUNES project feel that there is a call for <a class="internal" href="metaprogramming.html" >metaprogramming</a> techniques, so as to automatically generate code to efficiently interface between those different object spaces.
-<p><ul class="links">
+
+<p>The total amount of memory in a system bounds the amount of useful information that the system can manage. However, the size in bits of computer representations of objects is often far greater than the actual useful information in them, as there is often a lot of redundancy in them, as made necessary by requirements of processing speed. Hence memory is not used to its full information capacity, but rather according to tradeoffs in a famous compromise between processing time and space.
+
+<p>Nowadays, computer memories are organized in various layers, from very fast and volatile, but very few 1-word registers, to very big but permanent, but somehow slow multi-gigabyte disks. In between are various levels of hardware- or software- managed caches, made in various technologies (SRAM, DRAM), as progressive intermediate buffers between very fast but small central processors and very big but slow disks.
+
+<p>As these different layers of memories have quite different time and space constraints, different layer-specific representations and tradeoffs are to be used to efficiently adapt to layer-specific constraints, hence the growing need for more and more complex algorithms for compression, decompression, caching and flushing, hashing and looking up, etc.
+
+<p>As things grow in complexity, we at the TUNES project feel that there is a call for <a class="internal" href="metaprogramming.html" >metaprogramming</a> techniques, so as to automatically generate code to efficiently interface between those different object spaces.
+
+<p><ul class="links">
 <li><A HREF="http://www.memorymanagement.org/">MemoryManagement.Org</A
 >
 </ul>
-<p><hr><p><b>This page is linked from: </b> <a class="internal" href="bit.html" >Bit</a> &nbsp; <a class="internal" href="constructor_20and_20destructor.html" >Constructor and Destructor</a> &nbsp; <a class="internal" href="garbage_20collection.html" >Garbage Collection</a> &nbsp; <a class="internal" href="language_20implementation.html" >Language Implementation</a> &nbsp; <a class="internal" href="linear_20logic.html" >Linear Logic</a> &nbsp; <a class="internal" href="memory-pool_20system.html" >Memory-Pool System</a> &nbsp; <a class="internal" href="tal.html" >TAL</a> &nbsp; <a class="internal" href="tradition.html" >Tradition</a> &nbsp; </DIV></BODY></HTML>
+
+<p><hr><p><b>This page is linked from: </b> <a class="internal" href="bit.html" >Bit</a> &nbsp; <a class="internal" href="constructor_20and_20destructor.html" >Constructor and Destructor</a> &nbsp; <a class="internal" href="garbage_20collection.html" >Garbage Collection</a> &nbsp; <a class="internal" href="language_20implementation.html" >Language Implementation</a> &nbsp; <a class="internal" href="linear_20logic.html" >Linear Logic</a> &nbsp; <a class="internal" href="memory-pool_20system.html" >Memory-Pool System</a> &nbsp; <a class="internal" href="tal.html" >TAL</a> &nbsp; <a class="internal" href="tradition.html" >Tradition</a> &nbsp; </DIV></BODY></HTML>

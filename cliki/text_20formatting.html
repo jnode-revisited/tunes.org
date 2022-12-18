@@ -1,6 +1,6 @@
 <!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
 <HTML><HEAD><TITLE>CTO : Text Formatting</TITLE
-><LINK REL="alternate" TYPE="application/rss+xml" TITLE="Recent Changes" HREF="http://tunes.org/cliki/recent-changes.rdf.html"><LINK REL="stylesheet" HREF="admin/cliki.css"></HEAD
+><LINK REL="alternate" TYPE="application/rss+xml" TITLE="Recent Changes" HREF="/tunes.org/cliki/recent-changes.rdf.html"><LINK REL="stylesheet" HREF="admin/cliki.css"></HEAD
 ><BODY><DIV ID="banner"><A TITLE="CTO" CLASS="logo" HREF="text_20formatting.html">CTO</A
 > <SPAN>CLiki for the TUNES project</SPAN
 ></DIV
@@ -15,7 +15,7 @@
 CLiki links are case-insensitive. "CLiki" will point to the same node as "cliki". However, node names are case-sensitive, and may show up in searches among topics, etc. So keep your node names uniform to the elements of the same category. For example, <a class="internal" href="term.html" >term</a> nodes should be capitalized, as well as topics.
 /cliki
 <p><h4>Avoid <code>P</code> tags</h4>
-As a convenience, text is assumed to start a new paragraph -- will be rendered preceded by a <code>P</code> tag -- if preceded by a blank line and not starting with a left-angle bracket. This seems to work passably well unless you want to start a paragraph with marked-up text. You'll just have to add the <code>P</code> tag yourself in that case. <strong>Don't use a <code>P</code> tag (or, in general, any other tag) at the beginning of an entry because it causes problems with topic-listing</strong> (see <A HREF="http://tunes.org/cliki.tunes.org/Text%20Formatting#Searches">Searches</A
+As a convenience, text is assumed to start a new paragraph -- will be rendered preceded by a <code>P</code> tag -- if preceded by a blank line and not starting with a left-angle bracket. This seems to work passably well unless you want to start a paragraph with marked-up text. You'll just have to add the <code>P</code> tag yourself in that case. <strong>Don't use a <code>P</code> tag (or, in general, any other tag) at the beginning of an entry because it causes problems with topic-listing</strong> (see <A HREF="/tunes.org/cliki.tunes.org/Text%20Formatting#Searches">Searches</A
 > below).
 
 <p><h4>Markup</h4>
@@ -55,17 +55,17 @@ To avoid quoting nightmares, <strong>on this page I have inserted an extra space
   </dt>
   <dd>
     <dl>
-    <dt>tipically, you want the possibility to link directly to an item in a list of links (for an example see <A HREF="http://tunes.org/cliki.tunes.org/Scheme#chicken">http://tunes.org/cliki.tunes.org/Scheme#chicken</A
+    <dt>tipically, you want the possibility to link directly to an item in a list of links (for an example see <A HREF="/tunes.org/cliki.tunes.org/Scheme#chicken">/tunes.org/cliki.tunes.org/Scheme#chicken</A
 >).
     <dt>This is the <b>wrong</b> way (just in case):/cliki
-      <dd><code>&#95;(<em>name="LLL"</clikin"|http://tunes.org/subprojects.html)</code>
+      <dd><code>&#95;(<em>name="LLL"</clikin"|/tunes.org/subprojects.html)</code>
     <dt>This is the <b>correct</b> way to insert a link with an anchor (named LLL):
-      <dd><code>&#95;("here the link to LLL"|http://tunes.org/subprojects.html<em>" name="LLL</em>)</code>
+      <dd><code>&#95;("here the link to LLL"|/tunes.org/subprojects.html<em>" name="LLL</em>)</code>
         <br>which render as <A HREF="../subprojects.html" name="LLL">here the link to LLL</A
 > (this link go directly to a page on the main <a class="internal" href="tunes_20project.html" >Tunes project</a> site).
         <br>Now you can jump directly in the middle of this same page, at the link just stated, with:
-        <br><code>&#95;("go to the link to LLL in this page"|http://tunes.org/cliki.tunes.org/Text%20Formatting<em>#LLL</em>)</code>
-        <br>which render as <A HREF="http://tunes.org/cliki.tunes.org/Text%20Formatting#LLL">go to the link to LLL in this page</A
+        <br><code>&#95;("go to the link to LLL in this page"|/tunes.org/cliki.tunes.org/Text%20Formatting<em>#LLL</em>)</code>
+        <br>which render as <A HREF="/tunes.org/cliki.tunes.org/Text%20Formatting#LLL">go to the link to LLL in this page</A
 >.
     </dl>
   </dd>
@@ -135,12 +135,12 @@ Look at the other sections, and cross-reference when it's useful and possible.
     <li>When the links are about <strong>implementations</strong> put a <code>class="implementations"</code> attribute.
       <br><em>Example with an Ordered List:</em>
 <pre><code>&lt;ol class="implementations"&gt;
-  &lt;li&gt;&#95;("1st implementation"|http://tunes.org/cliki.tunes.org/Text%20Formatting)
-  &lt;li&gt;&#95;("2nd implementation"|http://tunes.org/cliki.tunes.org/Text%20Formatting)
+  &lt;li&gt;&#95;("1st implementation"|/tunes.org/cliki.tunes.org/Text%20Formatting)
+  &lt;li&gt;&#95;("2nd implementation"|/tunes.org/cliki.tunes.org/Text%20Formatting)
 &lt;/ol&gt;</code></pre>/cliki
       <em>Render as:</em>/cliki
       <ol class="implementations">
-        <li><A HREF="http://tunes.org/cliki.tunes.org/Text%20Formatting">1st implementation</A
+        <li><A HREF="/tunes.org/cliki.tunes.org/Text%20Formatting">1st implementation</A
 >
         <li><A HREF="/tunes.org/cliki.tunes.org/Text%20Formatting">2nd implementation</A
 >
@@ -148,14 +148,14 @@ Look at the other sections, and cross-reference when it's useful and possible.
     <li>When the links are <strong>informative</strong> put a <code>class="links"</code> attribute.
       <br><em>Example with an Unordered List:</em>
 <pre><code>&lt;ul class="links"&gt;
-  &lt;li&gt;&#95;("A link"|http://tunes.org/cliki.tunes.org/Text%20Formatting)
-  &lt;li&gt;&#95;("Another link"|http://tunes.org/cliki.tunes.org/Text%20Formatting)
+  &lt;li&gt;&#95;("A link"|/tunes.org/cliki.tunes.org/Text%20Formatting)
+  &lt;li&gt;&#95;("Another link"|/tunes.org/cliki.tunes.org/Text%20Formatting)
 &lt;/ul&gt;</code></pre>
       <em>Render as:</em>
       <ul class="links">
-        <li><A HREF="http://tunes.org/cliki.tunes.org/Text%20Formatting">A link</A
+        <li><A HREF="/tunes.org/cliki.tunes.org/Text%20Formatting">A link</A
 >
-        <li><A HREF="http://tunes.org/cliki.tunes.org/Text%20Formatting">Another link</A
+        <li><A HREF="/tunes.org/cliki.tunes.org/Text%20Formatting">Another link</A
 >
       </ul>
   </ul>

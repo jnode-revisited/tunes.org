@@ -1,6 +1,6 @@
 <!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
 <HTML><HEAD><TITLE>CTO : Code Generation</TITLE
-><LINK REL="alternate" TYPE="application/rss+xml" TITLE="Recent Changes" HREF="http://tunes.org/cliki/recent-changes.rdf.html"><LINK REL="stylesheet" HREF="admin/cliki.css"></HEAD
+><LINK REL="alternate" TYPE="application/rss+xml" TITLE="Recent Changes" HREF="/tunes.org/cliki/recent-changes.rdf.html"><LINK REL="stylesheet" HREF="admin/cliki.css"></HEAD
 ><BODY><DIV ID="banner"><A TITLE="CTO" CLASS="logo" HREF="code_20generation.html">CTO</A
 > <SPAN>CLiki for the TUNES project</SPAN
 ></DIV
@@ -10,19 +10,26 @@
 > </DIV
 ><DIV ID="main"><H1>Code Generation</H1
 >The <a class="internal" href="term.html" >term</a> for the last phase of a compiler that emits code in the target language.
-<p>Once the <a class="internal" href="operating_20system.html" >operating system</a> has read an <a class="internal" href="object.html" >object</a> and understood what to do with it, it has to produce the "code" that the hardware will run to evaluate the <a class="internal" href="object.html" >object</a>. We at the <a class="internal" href="tunes.html" >TUNES</a> project are convinced that code generation should be based on meta-programmable <a class="internal" href="partial_20evaluation.html" >partial evaluation</a>.
-<p>The simplest solutions for code generation are to write an interpreter that directly evaluates the internal encoding of <a class="internal" href="object.html" >object</a>s, or an interpreter for an intermediate machine that is a compromise between the <a class="internal" href="low-level.html" >low-level</a> hardware computing model and the <a class="internal" href="high-level.html" >high-level</a> computing model. These solutions should be used as the default one in <a class="internal" href="tunes.html" >TUNES</a>. But as some <a class="internal" href="object.html" >object</a>s get used frequently (or are intended to be used frequently), the partial evaluator triggers and tries to <a class="internal" href="optimize.html" >optimize</a> these <a class="internal" href="object.html" >object</a>s, spending no more time optimizing than is expected to be saved by the optimizations.
-<p>The <a class="internal" href="user.html" >user</a>, as always, can give more or less explicit and thorough hints about where to focus code generation efforts, and how to try to generate good code; they will associate code to be optimized and tactics to optimize code with, or give hints about such association for the system to look for automatically. Such tactics could look like:
-<p><ul>
+
+<p>Once the <a class="internal" href="operating_20system.html" >operating system</a> has read an <a class="internal" href="object.html" >object</a> and understood what to do with it, it has to produce the "code" that the hardware will run to evaluate the <a class="internal" href="object.html" >object</a>. We at the <a class="internal" href="tunes.html" >TUNES</a> project are convinced that code generation should be based on meta-programmable <a class="internal" href="partial_20evaluation.html" >partial evaluation</a>.
+
+<p>The simplest solutions for code generation are to write an interpreter that directly evaluates the internal encoding of <a class="internal" href="object.html" >object</a>s, or an interpreter for an intermediate machine that is a compromise between the <a class="internal" href="low-level.html" >low-level</a> hardware computing model and the <a class="internal" href="high-level.html" >high-level</a> computing model. These solutions should be used as the default one in <a class="internal" href="tunes.html" >TUNES</a>. But as some <a class="internal" href="object.html" >object</a>s get used frequently (or are intended to be used frequently), the partial evaluator triggers and tries to <a class="internal" href="optimize.html" >optimize</a> these <a class="internal" href="object.html" >object</a>s, spending no more time optimizing than is expected to be saved by the optimizations.
+
+<p>The <a class="internal" href="user.html" >user</a>, as always, can give more or less explicit and thorough hints about where to focus code generation efforts, and how to try to generate good code; they will associate code to be optimized and tactics to optimize code with, or give hints about such association for the system to look for automatically. Such tactics could look like:
+
+<p><ul>
 <li>"try to implement these two functions as arrays, to interleave those two arrays (with possibly other arrays, too), to achieve power-of-two element size in the merged array, while wasting as few bytes as possible, to align the beginning of the array, properly offset, to a 64KB boundary (or better, put it at address 0)", so that access to the array will be as fast as possible.
 <li>"try to use a barrel-shift register instead of an arithmetical counter for this bit-mask loop"
 <li>"transform incremental counting into decremental counting to skip a compare instruction"
 <li>"try these megafast implementations under various known contexts (CPU, calling convention, or any restrictive predicate)", or even 
 <li>"send that informal code specification down the usual trail to the company that offers commercial coding services and support, so they make great computer code out of this stuff".
 </ul>
-<p>Such tactics would prove much easier to use, much more portable, much surer as for efficiency (if tactic fails to yield better code, it can be semi-automatically ignored) and much faster to tweak (when a proper library is available) than any <a class="internal" href="low-level.html" >low-level</a> coding, while bringing the same expressive power as this <a class="internal" href="low-level.html" >low-level</a> coding; more importantly, they wouldn't tie code to old hardware or software hacks, and could be managed dynamically.
-<p>See also <a class="internal" href="run-time_20code_20generation.html" >Run-Time Code Generation</a>.
-<p><ul class="links">
+
+<p>Such tactics would prove much easier to use, much more portable, much surer as for efficiency (if tactic fails to yield better code, it can be semi-automatically ignored) and much faster to tweak (when a proper library is available) than any <a class="internal" href="low-level.html" >low-level</a> coding, while bringing the same expressive power as this <a class="internal" href="low-level.html" >low-level</a> coding; more importantly, they wouldn't tie code to old hardware or software hacks, and could be managed dynamically.
+
+<p>See also <a class="internal" href="run-time_20code_20generation.html" >Run-Time Code Generation</a>.
+
+<p><ul class="links">
 <li><A HREF="http://www.codegeneration.net/">Code Generation Network</A
 >.
 </ul>

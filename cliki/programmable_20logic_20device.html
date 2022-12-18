@@ -1,6 +1,6 @@
 <!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
 <HTML><HEAD><TITLE>CTO : programmable logic device</TITLE
-><LINK REL="alternate" TYPE="application/rss+xml" TITLE="Recent Changes" HREF="http://tunes.org/cliki/recent-changes.rdf.html"><LINK REL="stylesheet" HREF="admin/cliki.css"></HEAD
+><LINK REL="alternate" TYPE="application/rss+xml" TITLE="Recent Changes" HREF="/tunes.org/cliki/recent-changes.rdf.html"><LINK REL="stylesheet" HREF="admin/cliki.css"></HEAD
 ><BODY><DIV ID="banner"><A TITLE="CTO" CLASS="logo" HREF="programmable_20logic_20device.html">CTO</A
 > <SPAN>CLiki for the TUNES project</SPAN
 ></DIV
@@ -10,17 +10,28 @@
 > </DIV
 ><DIV ID="main"><H1>programmable logic device</H1
 >A PLD (<a class="internal" href="acronym.html" >acronym</a> for programmable logic device) is an electronic component used to build digital circuits. Unlike a logic gate, which has a fixed function, a PLD has an undefined function at the time of manufacture. Before the PLD can perform in a circuit it must be programmed.
-<p>The first programmable logic devices were called PALs, for programmable array logic. The programmable array contains logic gates, themselves fixed in function, with programmable interconnections between them. The array has a number of inputs and outputs, and can create any Boolean function of a selection of the inputs at any of its outputs. A single PAL can replace a circuit containing a large number, perhaps a few hundred, of fixed logic gates
-<p>In a PAL the logic gates are arranged as a sum-of-products array. In Boolean terms, this means a number of AND gates whose outputs feed into a large OR gate that drives one output. By selecting which inputs drive each AND gate, and which AND gates drive the OR gate, any Boolean function can be created. It can be shown that any Boolean function can be reduced to a sum of products, and can therefore be created by a sufficiently large PAL. 
-<p>A PAL is programmed by fitting it into a machine called a PAL programmer. PAL programmers are usually general-purpose machines that can program all types of PLD from all manufacturers. A PAL may be programmed only once. 
-<p>The PAL programmer must be supplied with a description of the PAL's desired configuration. This is usually in the form of a computer text file with a standard format defined by the <A HREF="http://www.jedec.org/">Joint Electron Device Engineering Council</A
+
+<p>The first programmable logic devices were called PALs, for programmable array logic. The programmable array contains logic gates, themselves fixed in function, with programmable interconnections between them. The array has a number of inputs and outputs, and can create any Boolean function of a selection of the inputs at any of its outputs. A single PAL can replace a circuit containing a large number, perhaps a few hundred, of fixed logic gates
+
+<p>In a PAL the logic gates are arranged as a sum-of-products array. In Boolean terms, this means a number of AND gates whose outputs feed into a large OR gate that drives one output. By selecting which inputs drive each AND gate, and which AND gates drive the OR gate, any Boolean function can be created. It can be shown that any Boolean function can be reduced to a sum of products, and can therefore be created by a sufficiently large PAL. 
+
+<p>A PAL is programmed by fitting it into a machine called a PAL programmer. PAL programmers are usually general-purpose machines that can program all types of PLD from all manufacturers. A PAL may be programmed only once. 
+
+<p>The PAL programmer must be supplied with a description of the PAL's desired configuration. This is usually in the form of a computer text file with a standard format defined by the <A HREF="http://www.jedec.org/">Joint Electron Device Engineering Council</A
 > 
-<p>Generic array logic device, or GAL, has the same logical properties as the PAL but can be erased and reprogrammed. The GAL is very useful in the prototyping stage of a design, when any bugs in the logic can be corrected by reprogramming. GALs are programmed and reprogrammed using a PAL programmer.
-<p>PALs and GALs are available only in small sizes, equivalent to a few hundred logic gates. For bigger logic circuits, complex PLDs or CPLDs can be used. These contain the equivalent of several PALs linked by programmable interconnections, all in one integrated circuit. CPLDs can replace thousands, or even hundreds of thousands, of logic gates. 
+
+<p>Generic array logic device, or GAL, has the same logical properties as the PAL but can be erased and reprogrammed. The GAL is very useful in the prototyping stage of a design, when any bugs in the logic can be corrected by reprogramming. GALs are programmed and reprogrammed using a PAL programmer.
+
+<p>PALs and GALs are available only in small sizes, equivalent to a few hundred logic gates. For bigger logic circuits, complex PLDs or CPLDs can be used. These contain the equivalent of several PALs linked by programmable interconnections, all in one integrated circuit. CPLDs can replace thousands, or even hundreds of thousands, of logic gates. 
 Some CPLDs are programmed using a PAL programmer, but this method becomes inconvenient for devices with hundreds of pins. A second method of programming is to solder the device to its printed circuit board, then feed it with a serial data stream from a personal computer. The CPLD contains a circuit that decodes the data stream and configures the CPLD to perform its specified logic function. 
-<p>Each manufacturer has a proprietary name for this programming system
-<p>While PALs were busy developing into GALs and CPLDs, a separate stream of development was happening. This type of device is based on gate-array technology and is called the field-programmable gate array or <a class="internal" href="fpga.html" >FPGA</a>. 
-<p><a class="internal" href="fpga.html" >FPGA</a>s and CPLDs are often equally good choices for a particular task. Sometimes the decision is more an economic one than a technical one, or may depend on the engineer's personal preference and history
-<p>JEDEC files are usually too complex to create by hand, so a computer program is used to generate them. This program is called a logic compiler, and is analogous to a software compiler. The <a class="internal" href="language.html" >language</a>s used as source code for logic compilers are called <a class="internal" href="hardware_20description_20language.html" >hardware description language</a>s, or HDLs. 
-<p>ABEL and <a class="internal" href="vhdl.html" >VHDL</a> are two such languages
+
+<p>Each manufacturer has a proprietary name for this programming system
+
+<p>While PALs were busy developing into GALs and CPLDs, a separate stream of development was happening. This type of device is based on gate-array technology and is called the field-programmable gate array or <a class="internal" href="fpga.html" >FPGA</a>. 
+
+<p><a class="internal" href="fpga.html" >FPGA</a>s and CPLDs are often equally good choices for a particular task. Sometimes the decision is more an economic one than a technical one, or may depend on the engineer's personal preference and history
+
+<p>JEDEC files are usually too complex to create by hand, so a computer program is used to generate them. This program is called a logic compiler, and is analogous to a software compiler. The <a class="internal" href="language.html" >language</a>s used as source code for logic compilers are called <a class="internal" href="hardware_20description_20language.html" >hardware description language</a>s, or HDLs. 
+
+<p>ABEL and <a class="internal" href="vhdl.html" >VHDL</a> are two such languages
 <hr><p><b>This page is linked from: </b> <a class="internal" href="fccm.html" >FCCM</a> &nbsp; <a class="internal" href="hardware_20description_20language.html" >Hardware description language</a> &nbsp; <a class="internal" href="openhw.html" >OpenHW</a> &nbsp; </DIV></BODY></HTML>

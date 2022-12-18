@@ -1,6 +1,6 @@
 <!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
 <HTML><HEAD><TITLE>CTO : Quotienting</TITLE
-><LINK REL="alternate" TYPE="application/rss+xml" TITLE="Recent Changes" HREF="http://tunes.org/cliki/recent-changes.rdf.html"><LINK REL="stylesheet" HREF="admin/cliki.css"></HEAD
+><LINK REL="alternate" TYPE="application/rss+xml" TITLE="Recent Changes" HREF="/tunes.org/cliki/recent-changes.rdf.html"><LINK REL="stylesheet" HREF="admin/cliki.css"></HEAD
 ><BODY><DIV ID="banner"><A TITLE="CTO" CLASS="logo" HREF="quotienting.html">CTO</A
 > <SPAN>CLiki for the TUNES project</SPAN
 ></DIV
@@ -10,12 +10,17 @@
 > </DIV
 ><DIV ID="main"><H1>Quotienting</H1
 >A <a class="internal" href="term.html" >term</a> from <a class="internal" href="logic.html" >logic</a> for a type of <a class="internal" href="abstraction.html" >abstraction</a> which takes a class of <a class="internal" href="object.html" >object</a>s according to some set of rules, providing new identities for objects that are identical <em>according to those rules</em>. This can also be restated to say that it takes one domain and an equivalence relation over it and produces a new domain from the collections of objects unified by the relation.
-<p>For example, if you want to describe the Rational numbers while knowing only the Integers, you can take:
-<p>"All answers to the equation <code>a * x = b</code> for any Integers <var>a</var> and <var>b</var>."
-<p>as describing <em>quotients</em> of Integers. This is, in fact, the origin of the term. The Rationals then are described as a domain of new (derived) objects, each of which is the set of equations which describe some equivalent or isomorphic concept. Specifically, the object we call "5/3" is an equivalence class of equations such as <code>x * 3 = 5</code>, <code>x * 6 = 10</code>, and so forth. So the quotienting is happening on pairs of Integers with this
+
+<p>For example, if you want to describe the Rational numbers while knowing only the Integers, you can take:
+
+<p>"All answers to the equation <code>a * x = b</code> for any Integers <var>a</var> and <var>b</var>."
+
+<p>as describing <em>quotients</em> of Integers. This is, in fact, the origin of the term. The Rationals then are described as a domain of new (derived) objects, each of which is the set of equations which describe some equivalent or isomorphic concept. Specifically, the object we call "5/3" is an equivalence class of equations such as <code>x * 3 = 5</code>, <code>x * 6 = 10</code>, and so forth. So the quotienting is happening on pairs of Integers with this
 equation, <code>(3,5)</code> , <code>(6,10)</code> , <code>(21,35)</code>, etc. Note that "5/3" as an object is an <em>abstraction</em>, and it is not universal that a quotienting suggests an immediate <em>implementation</em> as this one's name suggests a pair of Integers. A name like that for rationals is possible because there is a uniform concept of <em>normalization</em>: a single simplest representations with all other representations inductively derivable from it.
-<p>This is generally part of the mathematical tradition of forming inductive definitions from primitive axioms to describe higher-level concepts, but <strong>the point with Tunes is that we <em>don't</em> care which parts are core (<em>primitive</em>) and which are derived</strong>: we want to be able to implement some concepts and translate back and forth across an isomorphism as we need to. We deliberately do <em>not</em> want to care about implementation decisions after they are made.
-<p><ul class="links">
+
+<p>This is generally part of the mathematical tradition of forming inductive definitions from primitive axioms to describe higher-level concepts, but <strong>the point with Tunes is that we <em>don't</em> care which parts are core (<em>primitive</em>) and which are derived</strong>: we want to be able to implement some concepts and translate back and forth across an isomorphism as we need to. We deliberately do <em>not</em> want to care about implementation decisions after they are made.
+
+<p><ul class="links">
 <li>A <A HREF="http://www.nuprl.org/documents/Construct_Formal_AT/title/subsection3_5_3.html">formal but concise and informative overview</A
 > from the <a class="internal" href="nuprl.html" >NuPrl</a> paper <A HREF="http://www.nuprl.org/documents/Construct_Formal_AT/title/title.html">Formalizing Automata Theory I: Finite Automata</A
 > (<A HREF="http://www.nuprl.org/documents/Construct_Formal_AT/title.ps">.ps</A

@@ -1,6 +1,6 @@
 <!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
 <HTML><HEAD><TITLE>CTO : Forth is NOT intrinsically slow</TITLE
-><LINK REL="alternate" TYPE="application/rss+xml" TITLE="Recent Changes" HREF="http://tunes.org/cliki/recent-changes.rdf.html"><LINK REL="stylesheet" HREF="admin/cliki.css"></HEAD
+><LINK REL="alternate" TYPE="application/rss+xml" TITLE="Recent Changes" HREF="/tunes.org/cliki/recent-changes.rdf.html"><LINK REL="stylesheet" HREF="admin/cliki.css"></HEAD
 ><BODY><DIV ID="banner"><A TITLE="CTO" CLASS="logo" HREF="forth_20is_20not_20intrinsically_20slow.html">CTO</A
 > <SPAN>CLiki for the TUNES project</SPAN
 ></DIV
@@ -10,102 +10,158 @@
 > </DIV
 ><DIV ID="main"><H1>Forth is NOT intrinsically slow</H1
 >An <a class="internal" href="essay.html" >essay</a>.
-<p>From the <a class="internal" href="small_20c.html" >Small C</a> node:
+
+<p>From the <a class="internal" href="small_20c.html" >Small C</a> node:
 <ul class="links">
   <li>
 <A HREF="http://bespin.org/~tom/retro/retro.conclusions.txt">A paper</A
-><p><A HREF="http://bespin.org/~tom/writings/retro.conclusions.txt">(old link)</A
+>
+<p><A HREF="http://bespin.org/~tom/writings/retro.conclusions.txt">(old link)</A
 >
 by <a class="internal" href="tom_20novelli.html" >Tom Novelli</a> describing the deficiencies of <a class="internal" href="forth.html" >Forth</a> and how Small C is intrinsically faster. -- <a class="internal" href="seaslug.html" >Seaslug</a></li>
 </ul>
-<p>This conclusion is amazing. I want to cite here 2 fragments of <a class="internal" href="tom_20novelli.html" >Tom Novelli</a>'s paper:
-<p><blockquote>
+
+<p>This conclusion is amazing. I want to cite here 2 fragments of <a class="internal" href="tom_20novelli.html" >Tom Novelli</a>'s paper:
+
+<p><blockquote>
   [..] In the course of my parser studies, I came across Small C.  The compiler is the size of a simple <a class="internal" href="forth.html" >Forth</a>, inherently faster, and it produces tighter code. The concept is simple: the parser methodically translates infix formulas into postfix, stack-based, assembly/machine code -- basically it translates to Forth!
-<p>  [..] Since <a class="internal" href="c_20language.html" >C</a> translates directly to <a class="internal" href="forth.html" >Forth</a>, Forth can never win the race. [..]
+
+<p>  [..] Since <a class="internal" href="c_20language.html" >C</a> translates directly to <a class="internal" href="forth.html" >Forth</a>, Forth can never win the race. [..]
 </blockquote>
-<p>Evidently a non sequitur. Prescinding from the accuracy of the above description, how one can conclude that <em><a class="internal" href="c_20language.html" >C</a> is faster than <a class="internal" href="forth.html" >Forth</a></em>?? Where does this paper <em>demonstrate</em> that <a class="internal" href="forth.html" >Forth</a> compilers cannot produce fast code as (at least) <a class="internal" href="c_20language.html" >C</a> compilers?
-<p>What are these Forth features impossible to implement efficiently? The double stack architecture? Nonsense. With a <em>simple</em> technique (to implement and to understand) is possible to cache in registers both the data stack and the return address stack. This technique, at least for caching data stack items in registers, is documented in:
-<p><ul class="links">
+
+<p>Evidently a non sequitur. Prescinding from the accuracy of the above description, how one can conclude that <em><a class="internal" href="c_20language.html" >C</a> is faster than <a class="internal" href="forth.html" >Forth</a></em>?? Where does this paper <em>demonstrate</em> that <a class="internal" href="forth.html" >Forth</a> compilers cannot produce fast code as (at least) <a class="internal" href="c_20language.html" >C</a> compilers?
+
+<p>What are these Forth features impossible to implement efficiently? The double stack architecture? Nonsense. With a <em>simple</em> technique (to implement and to understand) is possible to cache in registers both the data stack and the return address stack. This technique, at least for caching data stack items in registers, is documented in:
+
+<p><ul class="links">
   <li>Peter J. Knaggs' Ph.D. thesis, <A HREF="http://decweb.bournemouth.ac.uk/staff/pknaggs/thesis/index.html">Practical and Theoretical Aspects of Forth Software Development</A
 >, 5.6 "Optimisation using a Stack image".</li>
 </ul>
-<p>This is needed on register machines, of course. But what is so great about register machines? I suggest to have a look at this book, now on-line:
-<p><ul class="links">
+
+<p>This is needed on register machines, of course. But what is so great about register machines? I suggest to have a look at this book, now on-line:
+
+<p><ul class="links">
   <li>Philip J. Koopman, Jr., <A HREF="http://www.ece.cmu.edu/~koopman/stack_computers/index.html">Stack Computers: the new wave</A
 >.</li>
 </ul>
-<p>Professor Koopman is the designer of <a class="internal" href="tigre.html" >TIGRE</a>.
-<p>There are no technical obstacles to appling more aggressive optimizations when compiling Forth programs (the above mentioned papers shows, for example, how to apply type inference to Forth programs). For reference see various papers by M. Anton Ertl and others about aggressive optimizations (but <strong>not</strong> about type systems, he is skeptic on this matter):
-<p><ul class="links">
-  <li><A HREF="http://www.complang.tuwien.ac.at/projects/forth.html">Forth Research at Institut für Computersprachen</A
+
+<p>Professor Koopman is the designer of <a class="internal" href="tigre.html" >TIGRE</a>.
+
+<p>There are no technical obstacles to appling more aggressive optimizations when compiling Forth programs (the above mentioned papers shows, for example, how to apply type inference to Forth programs). For reference see various papers by M. Anton Ertl and others about aggressive optimizations (but <strong>not</strong> about type systems, he is skeptic on this matter):
+
+<p><ul class="links">
+  <li><A HREF="http://www.complang.tuwien.ac.at/projects/forth.html">Forth Research at Institut fï¿½r Computersprachen</A
 >.</li>
 </ul>
-<p>Besides all this, the paper by <a class="internal" href="tom_20novelli.html" >Tom Novelli</a> misses a fundamental point about <a class="internal" href="forth.html" >Forth</a>: its background philosophy of simplicity and minimalism without which <a class="internal" href="forth.html" >Forth</a> is really much less interesting. Given his dedication and effort with <a class="internal" href="retro.html" >Retro</a> this come as a great surprise to me.
-<p>The only thing I could agree is the fact that these days <a class="internal" href="forth.html" >Forth</a> is a minority "language" (<a class="internal" href="forth.html" >Forth</a> originated as a complete environment, see <A HREF="http://ultratechnology.com/4th_1970.html">FORTH - A Language for Interactive Computing</A
+
+<p>Besides all this, the paper by <a class="internal" href="tom_20novelli.html" >Tom Novelli</a> misses a fundamental point about <a class="internal" href="forth.html" >Forth</a>: its background philosophy of simplicity and minimalism without which <a class="internal" href="forth.html" >Forth</a> is really much less interesting. Given his dedication and effort with <a class="internal" href="retro.html" >Retro</a> this come as a great surprise to me.
+
+<p>The only thing I could agree is the fact that these days <a class="internal" href="forth.html" >Forth</a> is a minority "language" (<a class="internal" href="forth.html" >Forth</a> originated as a complete environment, see <A HREF="http://ultratechnology.com/4th_1970.html">FORTH - A Language for Interactive Computing</A
 >) and is quite different from mainstream languages (but not so different from <a class="internal" href="lisp.html" >Lisp</a> for example) so there much less research into Forth optimizing compilers.
-<p>Nonetheless at least both main commercial <a class="internal" href="forth.html" >Forth</a> providers, <A HREF="http://www.forth.com">Forth, Inc.</A
+
+<p>Nonetheless at least both main commercial <a class="internal" href="forth.html" >Forth</a> providers, <A HREF="http://www.forth.com">Forth, Inc.</A
 > and <A HREF="http://www.mpeltd.demon.co.uk/">MPE, Ltd.</A
 >, invest substantial effort into native code optimizing compilers.
-<p>Finally, Forth's inventor, <a class="internal" href="chuck_20moore.html" >Chuck Moore</a>, worth a mention: he is totally against <em>complex automatic</em> optimizations, he is against compilers in a certain sense (to long to explain here: his rational needs a lot of context).
-<p>-- <a class="internal" href="mad70.html" >Mad70</a>
-<p><hr>
-<p>In retrospect, it was somewhat thoughtless of me to say that one language was intrinsically faster than another, since this is rarely the case. I think Tom mixed up the idea of "faster" with "easier to optimize." It's pretty clear to me that a language like <a class="internal" href="small_20c.html" >Small C</a> where types are explicit would be easier to optimize than a language like <a class="internal" href="forth.html" >Forth</a>. The other, small, probably wrong argument I could make in favor of <a class="internal" href="tcn.html" >tcn</a> is that <a class="internal" href="forth.html" >Forth</a> is a more dynamic language than <a class="internal" href="small_20c.html" >Small C</a>, which definitely <b>does</b> have an effect on the performance of output code.
+
+<p>Finally, Forth's inventor, <a class="internal" href="chuck_20moore.html" >Chuck Moore</a>, worth a mention: he is totally against <em>complex automatic</em> optimizations, he is against compilers in a certain sense (to long to explain here: his rational needs a lot of context).
+
+<p>-- <a class="internal" href="mad70.html" >Mad70</a>
+
+<p><hr>
+
+<p>In retrospect, it was somewhat thoughtless of me to say that one language was intrinsically faster than another, since this is rarely the case. I think Tom mixed up the idea of "faster" with "easier to optimize." It's pretty clear to me that a language like <a class="internal" href="small_20c.html" >Small C</a> where types are explicit would be easier to optimize than a language like <a class="internal" href="forth.html" >Forth</a>. The other, small, probably wrong argument I could make in favor of <a class="internal" href="tcn.html" >tcn</a> is that <a class="internal" href="forth.html" >Forth</a> is a more dynamic language than <a class="internal" href="small_20c.html" >Small C</a>, which definitely <b>does</b> have an effect on the performance of output code.
 I apologize for the lack of thought I put into the <a class="internal" href="small_20c.html" >Small C</a> node.
-<p>-- <a class="internal" href="seaslug.html" >seaslug</a>
-<p>I bet the Small C compiler already does some optimizing whereas most Forths don't
-<p>-- <a class="internal" href="futhin.html" >futhin</a>
-<p>Though Forth is a dynamic <i>environment</i>, the language is as static as C.  Look at the code output from a Forth compiler, and compare against C's output -- neither invoke routines to interpret anything (unless you explicitly call EVALUATE in Forth, or yyparse() in C).
-<p>-- KC5TJA
-<p><hr>
-<p>Well, I want to make clear that your comment was a pretext to write this essay but my only intention was and is to address some <em>common</em> misconceptions about <a class="internal" href="forth.html" >Forth</a>, not to stigmatize you or Tom (this remains for me a strictly technical discussion).
-<p><ul>
+
+<p>-- <a class="internal" href="seaslug.html" >seaslug</a>
+
+<p>I bet the Small C compiler already does some optimizing whereas most Forths don't
+
+<p>-- <a class="internal" href="futhin.html" >futhin</a>
+
+<p>Though Forth is a dynamic <i>environment</i>, the language is as static as C.  Look at the code output from a Forth compiler, and compare against C's output -- neither invoke routines to interpret anything (unless you explicitly call EVALUATE in Forth, or yyparse() in C).
+
+<p>-- KC5TJA
+
+<p><hr>
+
+<p>Well, I want to make clear that your comment was a pretext to write this essay but my only intention was and is to address some <em>common</em> misconceptions about <a class="internal" href="forth.html" >Forth</a>, not to stigmatize you or Tom (this remains for me a strictly technical discussion).
+
+<p><ul>
 <li>About "<em>one language is intrinsically faster than another</em>" being a thoughtless statement in general:
-<p>I am not from the school of "all languages are made equal" (the argument of Turing equivalence especially is a nonsense, see the thread "<em>so-called Turing-Equivalence</em>" by <a class="internal" href="fare.html" >Fare</a> from <A HREF="http://lists.tunes.org/archives/tunes/1999-August/thread.html">1999-August Archives</A
+
+<p>I am not from the school of "all languages are made equal" (the argument of Turing equivalence especially is a nonsense, see the thread "<em>so-called Turing-Equivalence</em>" by <a class="internal" href="fare.html" >Fare</a> from <A HREF="http://lists.tunes.org/archives/tunes/1999-August/thread.html">1999-August Archives</A
 > of the Tunes mailing-list). So, for me, inquiries about the possibility, for a given language, to implement a reasonable efficient translator (interpreter and/or compiler) are absolutely legitimate.
-<p>In particular, I expect that languages with <a class="internal" href="abstraction_20inversion.html" >abstraction inversion</a>, where you are forced to express primitive concepts in terms of more complex, are intrinsically difficult to optimize (but remember that "primitive" is not an absolute concept, see <a class="internal" href="quotienting.html" >Quotienting</a>).
+
+<p>In particular, I expect that languages with <a class="internal" href="abstraction_20inversion.html" >abstraction inversion</a>, where you are forced to express primitive concepts in terms of more complex, are intrinsically difficult to optimize (but remember that "primitive" is not an absolute concept, see <a class="internal" href="quotienting.html" >Quotienting</a>).
 </li>
 <li>About dynamism of <a class="internal" href="forth.html" >Forth</a>: yes and no. Forth as language (opposed to Forth as environment, see above mentioned essay: "<em>FORTH - A Language for Interactive Computing</em>") retains the ability to load and interpret/compile source code during run-time. This ability is not extensively used these days, for what I can see in sources published on Internet (I don't know about commercial, closed source code). So in this sense is certainly more dynamic than <a class="internal" href="small_20c.html" >Small C</a>.
-<p>But, as counterbalance, is necessary to consider also that these small fragments of code are intended to be developed with <A HREF="http://colorforth.com/binding.html">a philosophy of early binding</A
+
+<p>But, as counterbalance, is necessary to consider also that these small fragments of code are intended to be developed with <A HREF="http://colorforth.com/binding.html">a philosophy of early binding</A
 >, as stated by <a class="internal" href="chuck_20moore.html" >Chuck Moore</a>.
 </li>
 </ul>
-<p>I think this is enough for now.
-<p>-- <a class="internal" href="mad70.html" >Mad70</a>
-<p><hr>
-<p>Another quote from <a class="internal" href="tom_20novelli.html" >Tom Novelli</a>'s paper is:
-<p><blockquote>
+
+<p>I think this is enough for now.
+
+<p>-- <a class="internal" href="mad70.html" >Mad70</a>
+
+<p><hr>
+
+<p>Another quote from <a class="internal" href="tom_20novelli.html" >Tom Novelli</a>'s paper is:
+
+<p><blockquote>
   [..] As an intermediate language, such as the proposed TUNES LLL, Forth is a poor choice.  It does little to abstract the differences between hardware
 platforms [..]
 </blockquote>
-<p>I disagree.  Forth doesn't come out of the box with hardware abstractions, but that doesn't mean it can't abstract the differences between hardware platforms easily.  It can.  It is easy to add new words to Forth's vocabulary that abstract the hardware layer out.  
-<p>Look at EMIT, a common Forth word for sending a character to the screen; is it not an abstraction?  It can be implemented for all the different hardware platforms.  It will behave the same way.  Similar words to EMIT can easily be made for any other hardware abstractions you desire such as accessing files, memory, or using the fpu vs. floating-point implemented in software.
-<p>The fact is, Forth encourages abstractions.  Coding in Forth is all about how well you can abstract and factor out your code.  It provides all the tools that a programmer needs to abstact his code quickly and easily.
-<p>Looking at it in a different way, a minimal Forth can be implemented for each architecture in less than 5KB (2KB-3KB is possible).  Each Forth could contain all the primitives necessary to run an entire OS ontop of it.  A programmer with a decent grasp of assembly could implement a simple, minimal Forth for any architecture within a few days.
-<p>Because of the ease in implementing a Forth for a new architecture, I like to say that Forth is the most portable language out there.  As long as all the Forth implementations have the same wordset and as long as Forth programs don't delve into assembly, there is no issue about the portability of the code.
-<p>The nice thing about this kind of portability is that the machine is still accessible.  A hardware platform with 3d graphics can be fully utilized, whereas for other platforms, the 3d graphics support is implemented in software.
-<p>-- <a class="internal" href="thin.html" >thin</a>
-<p>ANY language can access the raw hardware, if the OS lets it.  Forth is handy
+
+<p>I disagree.  Forth doesn't come out of the box with hardware abstractions, but that doesn't mean it can't abstract the differences between hardware platforms easily.  It can.  It is easy to add new words to Forth's vocabulary that abstract the hardware layer out.  
+
+<p>Look at EMIT, a common Forth word for sending a character to the screen; is it not an abstraction?  It can be implemented for all the different hardware platforms.  It will behave the same way.  Similar words to EMIT can easily be made for any other hardware abstractions you desire such as accessing files, memory, or using the fpu vs. floating-point implemented in software.
+
+<p>The fact is, Forth encourages abstractions.  Coding in Forth is all about how well you can abstract and factor out your code.  It provides all the tools that a programmer needs to abstact his code quickly and easily.
+
+<p>Looking at it in a different way, a minimal Forth can be implemented for each architecture in less than 5KB (2KB-3KB is possible).  Each Forth could contain all the primitives necessary to run an entire OS ontop of it.  A programmer with a decent grasp of assembly could implement a simple, minimal Forth for any architecture within a few days.
+
+<p>Because of the ease in implementing a Forth for a new architecture, I like to say that Forth is the most portable language out there.  As long as all the Forth implementations have the same wordset and as long as Forth programs don't delve into assembly, there is no issue about the portability of the code.
+
+<p>The nice thing about this kind of portability is that the machine is still accessible.  A hardware platform with 3d graphics can be fully utilized, whereas for other platforms, the 3d graphics support is implemented in software.
+
+<p>-- <a class="internal" href="thin.html" >thin</a>
+
+<p>ANY language can access the raw hardware, if the OS lets it.  Forth is handy
 for testing new OSes and embedded systems, I'll give you that - mainly
 because it reduces upload/reboot cycles.  I'm actually working on Retro
 again.. but I don't see Forth playing a central role in the future.
-<p>For the record, I only said a Small C COMPILER is inherently faster than a
+
+<p>For the record, I only said a Small C COMPILER is inherently faster than a
 Forth COMPILER.  Forth does a dictionary search on every token, and the
 dictionary is bigger than in C.  All other things being equal, of course. 
 The Forth Philosophy (tm) is great.  C is a generally a better language,
 though.
-<p>I stand by my conclusions.  And by the way, I'm making good progress
+
+<p>I stand by my conclusions.  And by the way, I'm making good progress
 improving the user interface & managability of Linux.
-<p>-- <a class="internal" href="tom_20novelli.html" >Tom Novelli</a>
-<p>Forth's speed compared to C depends entirely on the CPU type. On many CPUs, an unoptimized Forth will compete, if not outperform, some optimizing C compilers. The opposite may be true on others, but the former seems to be the more common case.
-<p>On another note, Forth can usually handle more subroutine calls than C, referring to both speed and memory. A Forth with good register assignments can have the minimal amount of call overhead the CPU allows. For example, on x86 using STC, when using the hardware stack as the return stack, just CALL and RET are needed for each call. No "stack frame" or the like needs to be set up at the beginning of each word, and destroyed at the end. Additionally, no information needs to be saved before a call. 
-<p>-- Arke
-<p>... although the execution of RET/CALL instruction chains under the Intel cause quite severe stalls.  As <A HREF="http://www.azillionmonkeys.com/qed/pentopt.html">Agner Fog</A
+
+<p>-- <a class="internal" href="tom_20novelli.html" >Tom Novelli</a>
+
+<p>Forth's speed compared to C depends entirely on the CPU type. On many CPUs, an unoptimized Forth will compete, if not outperform, some optimizing C compilers. The opposite may be true on others, but the former seems to be the more common case.
+
+<p>On another note, Forth can usually handle more subroutine calls than C, referring to both speed and memory. A Forth with good register assignments can have the minimal amount of call overhead the CPU allows. For example, on x86 using STC, when using the hardware stack as the return stack, just CALL and RET are needed for each call. No "stack frame" or the like needs to be set up at the beginning of each word, and destroyed at the end. Additionally, no information needs to be saved before a call. 
+
+<p>-- Arke
+
+<p>... although the execution of RET/CALL instruction chains under the Intel cause quite severe stalls.  As <A HREF="http://www.azillionmonkeys.com/qed/pentopt.html">Agner Fog</A
 > explains:
-<p><blockquote>
+
+<p><blockquote>
    [..] jump instructions, calls, and returns are not fully pipelined. You cannot execute a new jump in the first clock cycle after a preceding jump. So the maximum throughput for jumps, calls, and returns is one for every two clocks.
 </blockquote>
-<p>Due to Forth style, there tend to be a lot more small routines than say, c, and those 4 clock penalties <i>do</i> add up.  As Arke explains however, we are neither worrying about a stack frame, or wasting cycles duplicating values up and down the stack.  Adding stack simulation and inlining to a compiler seem to remove most of these performance problems outright anyway (at the expense of a more complex compiler).  I would argue that Forth is NOT intrinsically slow, moreover that it is significantly easier to write an extremely efficient optimizing native compiler for, it's just that people don't.  Forth has had a hard time because the system as usually described draws on so much of the traditional (outdated) implementation details of the language and the happy hack-factor days of FIGForth.  Like Lisp in the 80's, most Forth compilers are dragging their heels compared to the mainstream, which is a pity, since unlike Lisp, Forth promises both simplicity <i>and</i> efficiency, although perhaps at the expense of some readability.
-<p>
+
+<p>Due to Forth style, there tend to be a lot more small routines than say, c, and those 4 clock penalties <i>do</i> add up.  As Arke explains however, we are neither worrying about a stack frame, or wasting cycles duplicating values up and down the stack.  Adding stack simulation and inlining to a compiler seem to remove most of these performance problems outright anyway (at the expense of a more complex compiler).  I would argue that Forth is NOT intrinsically slow, moreover that it is significantly easier to write an extremely efficient optimizing native compiler for, it's just that people don't.  Forth has had a hard time because the system as usually described draws on so much of the traditional (outdated) implementation details of the language and the happy hack-factor days of FIGForth.  Like Lisp in the 80's, most Forth compilers are dragging their heels compared to the mainstream, which is a pity, since unlike Lisp, Forth promises both simplicity <i>and</i> efficiency, although perhaps at the expense of some readability.
+
+<p>
 -- Matt Seddon
-<p>This of course assumes that all forth words are invoked as subroutines.  No modern forth is implemented this way.
-<p>-- chuck<hr><p><b>This page is linked from: </b> <a class="internal" href="forth.html" >Forth</a> &nbsp; <a class="internal" href="small_20c.html" >Small C</a> &nbsp; </DIV></BODY></HTML>
+
+<p>This of course assumes that all forth words are invoked as subroutines.  No modern forth is implemented this way.
+
+<p>-- chuck<hr><p><b>This page is linked from: </b> <a class="internal" href="forth.html" >Forth</a> &nbsp; <a class="internal" href="small_20c.html" >Small C</a> &nbsp; </DIV></BODY></HTML>

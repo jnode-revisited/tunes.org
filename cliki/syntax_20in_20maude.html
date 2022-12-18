@@ -1,6 +1,6 @@
 <!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
 <HTML><HEAD><TITLE>CTO : Syntax in Maude</TITLE
-><LINK REL="alternate" TYPE="application/rss+xml" TITLE="Recent Changes" HREF="http://tunes.org/cliki/recent-changes.rdf.html"><LINK REL="stylesheet" HREF="admin/cliki.css"></HEAD
+><LINK REL="alternate" TYPE="application/rss+xml" TITLE="Recent Changes" HREF="/tunes.org/cliki/recent-changes.rdf.html"><LINK REL="stylesheet" HREF="admin/cliki.css"></HEAD
 ><BODY><DIV ID="banner"><A TITLE="CTO" CLASS="logo" HREF="syntax_20in_20maude.html">CTO</A
 > <SPAN>CLiki for the TUNES project</SPAN
 ></DIV
@@ -10,7 +10,8 @@
 > </DIV
 ><DIV ID="main"><H1>Syntax in Maude</H1
 >About <a class="internal" href="syntax.html" >syntax</a> in <a class="internal" href="maude.html" >Maude</a>: from the parsing section (se below) in the Maude manual can be had many insights about Maude's syntax and the reasoning behind it. It notably references some work done on <a class="internal" href="asf_2bsdf.html" >ASF+SDF</a> in this area.
-<p>The constraints in mind for the language based on the semantics:
+
+<p>The constraints in mind for the language based on the semantics:
 <ul>
 <li>Interpreted parsing: languages are user-definable.
 <li>Full Context-Free Grammars (CFG), and not only LALR models.
@@ -19,11 +20,16 @@
 <li>Techniques for error detection and error recovery must be supported.
 <li>Efficiency is a main goal, as the parser is the surface of the rest of the system, especially in <var><a class="internal" href="meta-level.html" >META-LEVEL</a></var> computations.
 </ul>
-<p>Essentially, the <a class="internal" href="maude.html" >Maude</a> grammar (the meta-parsing system) allows the definition of terms in a mixfix fashion with precedence-ordering hints.
-<p>This allows infix, prefix, postfix, and generalized context-free grammar templates (even <code>IF _ THEN _ ELSE _ END</code> is supported), which allows you to adapt the maude syntax to someone else's notion of natural syntax much more easily.
-<p>Maude's very strong module system also means that these syntaxes can be very location-specific, and only imported on demand, so the conflict frequency of differing syntaxes for similar operations is minimized naturally.
-<p>All of these combine to make an effective modelling and execution framework for <a class="internal" href="domain-specific_20language.html" >domain-specific language</a>s, with specification modules supporting the desired object/semantics model.
-<p><ul class="links">
+
+<p>Essentially, the <a class="internal" href="maude.html" >Maude</a> grammar (the meta-parsing system) allows the definition of terms in a mixfix fashion with precedence-ordering hints.
+
+<p>This allows infix, prefix, postfix, and generalized context-free grammar templates (even <code>IF _ THEN _ ELSE _ END</code> is supported), which allows you to adapt the maude syntax to someone else's notion of natural syntax much more easily.
+
+<p>Maude's very strong module system also means that these syntaxes can be very location-specific, and only imported on demand, so the conflict frequency of differing syntaxes for similar operations is minimized naturally.
+
+<p>All of these combine to make an effective modelling and execution framework for <a class="internal" href="domain-specific_20language.html" >domain-specific language</a>s, with specification modules supporting the desired object/semantics model.
+
+<p><ul class="links">
 <li>The <A HREF="http://maude.cs.uiuc.edu/maude2-manual/html/node34.html">parsing</A
 > section in the Maude manual.
 </ul>

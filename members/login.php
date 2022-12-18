@@ -5,7 +5,7 @@
   <td align="center" width="50%">
 
   Sign in to edit your member info:
-  <form action="http://tunes.org/members/edit.php" method="POST">
+  <form action="/tunes.org/members/edit.php" method="POST">
   <table border="0">
     <tr>
       <td>Alias (case sensitive):</td>
@@ -24,7 +24,7 @@
   <td align="center" width="50%">
 
   Forgot password?
-  <form action="http://tunes.org/members/mailpw.php" method="POST">
+  <form action="/tunes.org/members/mailpw.php" method="POST">
   <table border="0">
   <tr>
     <td>Alias (case sensitive):</td>

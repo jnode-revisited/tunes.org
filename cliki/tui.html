@@ -1,6 +1,6 @@
 <!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
 <HTML><HEAD><TITLE>CTO : TUI</TITLE
-><LINK REL="alternate" TYPE="application/rss+xml" TITLE="Recent Changes" HREF="http://tunes.org/cliki/recent-changes.rdf.html"><LINK REL="stylesheet" HREF="admin/cliki.css"></HEAD
+><LINK REL="alternate" TYPE="application/rss+xml" TITLE="Recent Changes" HREF="/tunes.org/cliki/recent-changes.rdf.html"><LINK REL="stylesheet" HREF="admin/cliki.css"></HEAD
 ><BODY><DIV ID="banner"><A TITLE="CTO" CLASS="logo" HREF="tui.html">CTO</A
 > <SPAN>CLiki for the TUNES project</SPAN
 ></DIV
@@ -10,13 +10,17 @@
 > </DIV
 ><DIV ID="main"><H1>TUI</H1
 >An <a class="internal" href="acronym.html" >acronym</a> for both <strong>Text</strong> and <strong>Textual</strong> <a class="internal" href="user_20interface.html" >User Interface</a>.
-<p>In the first meaning is used to denote a <a class="internal" href="user_20interface.html" >user interface</a> that simply mimes a <a class="internal" href="gui.html" >GUI</a>. An example is:
-<p><ul class="links">
+
+<p>In the first meaning is used to denote a <a class="internal" href="user_20interface.html" >user interface</a> that simply mimes a <a class="internal" href="gui.html" >GUI</a>. An example is:
+
+<p><ul class="links">
   <li><A HREF="http://tvision.sourceforge.net/">Turbo Vision port to the GNU compiler</A
 >.</li>
 </ul>
-<p>In the second meaning, <strong>Textual</strong> <a class="internal" href="ui.html" >UI</a>, its peculiarity is the ability to embed, into an ordinary <em>text</em> precisely, commands which can be executed at user wish, usually positioning the cursor onto a word, which correspond to a command, and tapping a special key on the keyboard or clicking on it with a mouse (like an hypertextual link).
-<p>The <a class="internal" href="output.html" >output</a> of this command could be shown in another frame/window or near the word/command itself. In the latter case you can think to a TUI as a free-form spreadsheet which evaluate on demand.
+
+<p>In the second meaning, <strong>Textual</strong> <a class="internal" href="ui.html" >UI</a>, its peculiarity is the ability to embed, into an ordinary <em>text</em> precisely, commands which can be executed at user wish, usually positioning the cursor onto a word, which correspond to a command, and tapping a special key on the keyboard or clicking on it with a mouse (like an hypertextual link).
+
+<p>The <a class="internal" href="output.html" >output</a> of this command could be shown in another frame/window or near the word/command itself. In the latter case you can think to a TUI as a free-form spreadsheet which evaluate on demand.
 Examples of TUI are:
 <!--
 <a class="internal" href="cosy.html" >CoSy</a> NoteComputing Environment, which was based on <a class="internal" href="apl.html" >APL</a> and now on <a class="internal" href="k.html" >K</a> and <em>probably</em> <a class="internal" href="the_20humane_20environment.html" >The Humane Environment</a> by <a class="internal" href="jef_20raskin.html" >Jef Raskin</a>, based on <a class="internal" href="python.html" >Python</a> and the <a class="internal" href="oberon.html" >Oberon</a> <a class="internal" href="ui.html" >UI</a>).
@@ -28,20 +32,27 @@ Examples of TUI are:
 ><LI><a class="internal" href="vital.html" >Vital</a> - A <a class="internal" href="tui.html" >TUI</a>-based (document-centered <a class="internal" href="user_20interface.html" >user interface</a>) implementation of <a class="internal" href="haskell.html" >Haskell</a> which features: <cite>document-centered presentation of <a class="internal" href="haskell.html" >Haskell</a> programs and results, demand-driven evaluation of expressions, <a class="internal" href="diagram.html" >diagram</a>matic representation of data structures and ADTs using styles, graphics (including animation and interaction), direct manipulation of data structures and of abstract datatype values, <a class="internal" href="persistence.html" >persistence</a></cite></LI
 ><LI><a class="internal" href="wily.html" >Wily</a> - Wily is a <a class="internal" href="tui.html" >TUI</a> style of <a class="internal" href="user_20interface.html" >user interface</a> for <a class="internal" href="unix.html" >Unix</a>-like <a class="internal" href="os.html" >OS</a>es inspired by the <a class="internal" href="plan9.html" >Plan9</a> Acme <a class="internal" href="tui.html" >TUI</a></LI
 ></UL
-><p>
+>
+<p>
 See, from the <a class="internal" href="oberon.html" >Oberon</a> <a class="internal" href="faq.html" >FAQ</a>:
 <ul class="links">
   <li><A HREF="http://www.oberon.ethz.ch/cli.html">CLI compared to TUI</A
 >.</li>
 </ul>
-<p>Here is a fragment of their quote from <strong>comp.lang.oberon</strong>:
-<p><blockquote>[..] At the base level a <a class="internal" href="cli.html" >CLI</a> offers absolutely nothing over a TUI (Textual User Interface). What do I mean by "base level"? Does anybody here, besides me, go back far enough to remember <a class="internal" href="cp_2fm.html" >CP/M</a>? That's a "base level" <a class="internal" href="cli.html" >CLI</a>. It has little, if any, scripting, no piping or redirection, etc. A <a class="internal" href="cli.html" >CLI</a> means that when you press "ENTER" the command is executed. With a TUI you can do pretty much the same thing, except that the command isn't executed until you click on it. Someone raised the issue of "when" can you type in a command in a TUI. Answer? Anytime you feel like it! <strong>You don't have to open up a "blank window" and type your new command in.</strong> You don't have to put the new command into the log. <strong>You can put it in any document you happen to be working on.</strong> Say if you're editing a module and you want to test a new command. Just type it in and click on in the that same window. It's just that simple. Sure, it takes more to type in:
-<p><code>System.DeleteFiles file1.txt file2.txt file3.txt ~</code>
-<p>than:
-<p><BR><code>del file1.txt</code>
+
+<p>Here is a fragment of their quote from <strong>comp.lang.oberon</strong>:
+
+<p><blockquote>[..] At the base level a <a class="internal" href="cli.html" >CLI</a> offers absolutely nothing over a TUI (Textual User Interface). What do I mean by "base level"? Does anybody here, besides me, go back far enough to remember <a class="internal" href="cp_2fm.html" >CP/M</a>? That's a "base level" <a class="internal" href="cli.html" >CLI</a>. It has little, if any, scripting, no piping or redirection, etc. A <a class="internal" href="cli.html" >CLI</a> means that when you press "ENTER" the command is executed. With a TUI you can do pretty much the same thing, except that the command isn't executed until you click on it. Someone raised the issue of "when" can you type in a command in a TUI. Answer? Anytime you feel like it! <strong>You don't have to open up a "blank window" and type your new command in.</strong> You don't have to put the new command into the log. <strong>You can put it in any document you happen to be working on.</strong> Say if you're editing a module and you want to test a new command. Just type it in and click on in the that same window. It's just that simple. Sure, it takes more to type in:
+
+<p><code>System.DeleteFiles file1.txt file2.txt file3.txt ~</code>
+
+<p>than:
+
+<p><BR><code>del file1.txt</code>
 <BR><code>del file2.txt</code>
 <BR><code>del file3.txt</code>
-<p>But if that's all you can see, you're missing the point. Names in typical <a class="internal" href="cli.html" >CLI</a>s are short (and cryptic) because you're likely to type them again, and again, and again. The <a class="internal" href="oberon.html" >Oberon</a> TUI saves on typing, hence command names can be longer and more meaningful. [..]
+
+<p>But if that's all you can see, you're missing the point. Names in typical <a class="internal" href="cli.html" >CLI</a>s are short (and cryptic) because you're likely to type them again, and again, and again. The <a class="internal" href="oberon.html" >Oberon</a> TUI saves on typing, hence command names can be longer and more meaningful. [..]
 <br>-- J. M. Drake 
 </blockquote>
 <hr><p><b>Pages in this topic: </b> <a class="internal" href="archy.html" >Archy</a> &nbsp; <a class="internal" href="cosy.html" >CoSy</a> &nbsp; <a class="internal" href="oberon.html" >Oberon</a> &nbsp; <a class="internal" href="plan9.html" >Plan9</a> &nbsp; <a class="internal" href="vital.html" >Vital</a> &nbsp; <a class="internal" href="wily.html" >Wily</a> &nbsp; <hr><p><b>Also linked from: </b> <a class="internal" href="cli.html" >CLI</a> &nbsp; </DIV></BODY></HTML>

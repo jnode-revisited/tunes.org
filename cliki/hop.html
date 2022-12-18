@@ -1,6 +1,6 @@
 <!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
 <HTML><HEAD><TITLE>CTO : hOp</TITLE
-><LINK REL="alternate" TYPE="application/rss+xml" TITLE="Recent Changes" HREF="http://tunes.org/cliki/recent-changes.rdf.html"><LINK REL="stylesheet" HREF="admin/cliki.css"></HEAD
+><LINK REL="alternate" TYPE="application/rss+xml" TITLE="Recent Changes" HREF="/tunes.org/cliki/recent-changes.rdf.html"><LINK REL="stylesheet" HREF="admin/cliki.css"></HEAD
 ><BODY><DIV ID="banner"><A TITLE="CTO" CLASS="logo" HREF="hop.html">CTO</A
 > <SPAN>CLiki for the TUNES project</SPAN
 ></DIV
@@ -11,12 +11,16 @@
 ><DIV ID="main"><H1>hOp</H1
 >A <a class="internal" href="microkernel.html" >microkernel</a> <a class="internal" href="os.html" >OS</a> based on the Run Time System (RTS) of GHC, an <a class="internal" href="haskell.html" >Haskell</a> implementation.
 From its home page (see below):
-<p><blockquote>
+
+<p><blockquote>
 [..] It is meant to enable people to experiment with writing device drivers in <a class="internal" href="haskell.html" >Haskell</a>. Currently, hOp is still very hackish, and IA32-specific. Contributions are welcome!
-<p>The RTS of GHC is truly an amazing piece of software. By removing the system-specific bits, and just adding a few lines of <a class="internal" href="c_20language.html" >C</a> and <a class="internal" href="assembly.html" >assembly</a> code, it turns into a standalone micro-kernel that can be extended in our favorite language, <a class="internal" href="haskell.html" >Haskell</a>.
-<p>All functions from the base hierarchical library outside of the System module is available. This includes threads and communication primitives and the foreign interface, which means experimenting with writing drivers in <a class="internal" href="haskell.html" >Haskell</a> should be reasonably easy. [..]
+
+<p>The RTS of GHC is truly an amazing piece of software. By removing the system-specific bits, and just adding a few lines of <a class="internal" href="c_20language.html" >C</a> and <a class="internal" href="assembly.html" >assembly</a> code, it turns into a standalone micro-kernel that can be extended in our favorite language, <a class="internal" href="haskell.html" >Haskell</a>.
+
+<p>All functions from the base hierarchical library outside of the System module is available. This includes threads and communication primitives and the foreign interface, which means experimenting with writing drivers in <a class="internal" href="haskell.html" >Haskell</a> should be reasonably easy. [..]
 </blockquote>
-<p><ul class="implementations">
+
+<p><ul class="implementations">
 <li><A HREF="http://www.macs.hw.ac.uk/~sebc/hOp/">hOp home page</A
 >.
 </ul>

@@ -1,6 +1,6 @@
 <!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
 <HTML><HEAD><TITLE>CTO : M4</TITLE
-><LINK REL="alternate" TYPE="application/rss+xml" TITLE="Recent Changes" HREF="http://tunes.org/cliki/recent-changes.rdf.html"><LINK REL="stylesheet" HREF="admin/cliki.css"></HEAD
+><LINK REL="alternate" TYPE="application/rss+xml" TITLE="Recent Changes" HREF="/tunes.org/cliki/recent-changes.rdf.html"><LINK REL="stylesheet" HREF="admin/cliki.css"></HEAD
 ><BODY><DIV ID="banner"><A TITLE="CTO" CLASS="logo" HREF="m4.html">CTO</A
 > <SPAN>CLiki for the TUNES project</SPAN
 ></DIV
@@ -13,13 +13,15 @@
 program designed as a preprocessor to more stubborn <a class="internal" href="programming_20language.html" >programming language</a>s.
 It's ugly, but it's fairly standard, and available on most platforms,
 including a fine <a class="internal" href="gnu.html" >GNU</a> version.
-<p>The semantics of m4 are bad. it uses back-door evaluation in a
+
+<p>The semantics of m4 are bad. it uses back-door evaluation in a
 dynamically-bound global environment as the only way to program, without
 any way to safely quote text (not to speak about quasiquotation).
 Thus, users who want to do complex things often find they must compile
 manually to continuation passing style with manual fluid-bindings. Avoid
 m4 but for quick hacks, and when the environment has already been setup
 for it (e.g. FvwmM4, sendmail configuration, etc).
-<p><UL CLASS="implementations">
+
+<p><UL CLASS="implementations">
 <LI><A HREF="http://www.gnu.org/software/m4/m4.html">GNU M4</A></LI>
 </UL></DIV></BODY></HTML>

@@ -1,6 +1,6 @@
 <!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
 <HTML><HEAD><TITLE>CTO : MetaOS</TITLE
-><LINK REL="alternate" TYPE="application/rss+xml" TITLE="Recent Changes" HREF="http://tunes.org/cliki/recent-changes.rdf.html"><LINK REL="stylesheet" HREF="admin/cliki.css"></HEAD
+><LINK REL="alternate" TYPE="application/rss+xml" TITLE="Recent Changes" HREF="/tunes.org/cliki/recent-changes.rdf.html"><LINK REL="stylesheet" HREF="admin/cliki.css"></HEAD
 ><BODY><DIV ID="banner"><A TITLE="CTO" CLASS="logo" HREF="metaos.html">CTO</A
 > <SPAN>CLiki for the TUNES project</SPAN
 ></DIV
@@ -10,12 +10,16 @@
 > </DIV
 ><DIV ID="main"><H1>MetaOS</H1
 >An <a class="internal" href="os.html" >OS</a> model. From its home page (see below):
-<p><blockquote>
+
+<p><blockquote>
 MetaOS is an object-oriented system model, based on meta-levels, meta-spaces, meta-objects, and meta-interfaces, that allows applications to securely customize their run-time environment on the fly. Furthermore, it allows applications to share customizations with other applications, allows different types of security schemes to be implemented, and permits secure, remote troubleshooting of software.
-<p>In MetaOS, meta-levels allow for a coarse-grained separation between application-customizable system services and low-level-customizable system services. Meta-spaces act as firewalls that prevent their customizations from affecting neighboring meta-spaces. Meta-objects help to modularize meta-spaces into smaller, easier-to-maintain components. Finally, meta-interfaces provide the heart of the secure customization mechanism.
-<p>Meta-interfaces are strictly divided into declarative and imperative interfaces, to give meta-objects a basis on which to distinguish between local-effect and meta-space-wide-effect calls. By limiting access to meta-space-wide-effect declarative calls and imperative calls, but giving free access to local-effect calls, a basic balance between flexibility and secure customization can be struck. Flexibility then is furthermore enhanced by allowing imperative changes to be exported as local-effect declarative options, by permitting untrusted applications to negotiate changes with trusted meta-space managers, and by allowing untrusted applications to migrate to cloned meta-spaces and alter them as necessary.
+
+<p>In MetaOS, meta-levels allow for a coarse-grained separation between application-customizable system services and low-level-customizable system services. Meta-spaces act as firewalls that prevent their customizations from affecting neighboring meta-spaces. Meta-objects help to modularize meta-spaces into smaller, easier-to-maintain components. Finally, meta-interfaces provide the heart of the secure customization mechanism.
+
+<p>Meta-interfaces are strictly divided into declarative and imperative interfaces, to give meta-objects a basis on which to distinguish between local-effect and meta-space-wide-effect calls. By limiting access to meta-space-wide-effect declarative calls and imperative calls, but giving free access to local-effect calls, a basic balance between flexibility and secure customization can be struck. Flexibility then is furthermore enhanced by allowing imperative changes to be exported as local-effect declarative options, by permitting untrusted applications to negotiate changes with trusted meta-space managers, and by allowing untrusted applications to migrate to cloned meta-spaces and alter them as necessary.
 </blockquote>
-<p><ul class="links">
+
+<p><ul class="links">
 <li><A HREF="http://panda.csc.uvic.ca/projects/metaprotocol.shtml">Designing Meta-Interfaces for Operating Systems</A
 >.
 </ul>

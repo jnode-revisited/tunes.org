@@ -1,6 +1,6 @@
 <!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
 <HTML><HEAD><TITLE>CTO : Bootstrap</TITLE
-><LINK REL="alternate" TYPE="application/rss+xml" TITLE="Recent Changes" HREF="http://tunes.org/cliki/recent-changes.rdf.html"><LINK REL="stylesheet" HREF="admin/cliki.css"></HEAD
+><LINK REL="alternate" TYPE="application/rss+xml" TITLE="Recent Changes" HREF="/tunes.org/cliki/recent-changes.rdf.html"><LINK REL="stylesheet" HREF="admin/cliki.css"></HEAD
 ><BODY><DIV ID="banner"><A TITLE="CTO" CLASS="logo" HREF="bootstrap.html">CTO</A
 > <SPAN>CLiki for the TUNES project</SPAN
 ></DIV
@@ -10,12 +10,17 @@
 > </DIV
 ><DIV ID="main"><H1>Bootstrap</H1
 >A <a class="internal" href="term.html" >term</a> for the issue of, or for a specific technique for, bringing a system in a desired state by means of a (simple, rough, ad-hoc) subsystem which can perform the task with no external aid, and which is usually discarded as the global desired state has been reached. 
-<p>The most typical example of bootstrapping is about loading in memory the program loader of a conventional operating system. As the program loader cannot load itself (if it is not in memory it cannot run, if it is in memory it has no need to load itself as it already is arrived at its destination) a much simpler special-purpose loader hardcoded in memory is used. This loader brings, perhaps in more than one stage, the program loader in memory. Once loaded and executed, the program loader can load in memory any part of the operating system not already loaded by the bootstrap loader, which is no longer used. 
-<p>Another example comes from compilers. Writing a compiler for a Turing-complete programming language <code>L</code> in the same language <code>L</code> has an advantage. If a new version <code>x + 1</code> of the compiler becomes available, it can be compiled with its previous version <code>x</code> a first time, and then the result can be used to compile it again. The resulting version <code>x + 1</code> compiler for <code>L</code> has the very desirable property that its features does not depend on those of the version <code>x</code> compiler used to bootstrap its compilation. This two-step procedure is also used to build the version <code>0</code> compiler by means of a compiler for <code>L</code> written in some other language, say <code>L</code>, for which we have a third party compiler. As before, the features of the version <code>0</code> compiler do not depend neither on those of the third party <code>L</code> compiler, nor on those of the bootstrap compiler for <code>L</code>, given that both are semantically correct.
-<p>A third example is about learning a new (natural) language, a task which is usually performed first by using your mothertongue, until you know enough of the language to learn directly in it. The mothertongue must therefore be used as a bootstrap language, an issue which is closely related to that of establishing a common ontological committment (see the voice <a class="internal" href="ontology.html" >ontology</a>).
-<p>The expression seemingly derives from "pulling yourself up by your own bootstraps", an expression meaning to leverage yourself to success from a small begin, at least according to <A HREF="http://whatis.techtarget.com/">whatis.com</A
+
+<p>The most typical example of bootstrapping is about loading in memory the program loader of a conventional operating system. As the program loader cannot load itself (if it is not in memory it cannot run, if it is in memory it has no need to load itself as it already is arrived at its destination) a much simpler special-purpose loader hardcoded in memory is used. This loader brings, perhaps in more than one stage, the program loader in memory. Once loaded and executed, the program loader can load in memory any part of the operating system not already loaded by the bootstrap loader, which is no longer used. 
+
+<p>Another example comes from compilers. Writing a compiler for a Turing-complete programming language <code>L</code> in the same language <code>L</code> has an advantage. If a new version <code>x + 1</code> of the compiler becomes available, it can be compiled with its previous version <code>x</code> a first time, and then the result can be used to compile it again. The resulting version <code>x + 1</code> compiler for <code>L</code> has the very desirable property that its features does not depend on those of the version <code>x</code> compiler used to bootstrap its compilation. This two-step procedure is also used to build the version <code>0</code> compiler by means of a compiler for <code>L</code> written in some other language, say <code>L</code>, for which we have a third party compiler. As before, the features of the version <code>0</code> compiler do not depend neither on those of the third party <code>L</code> compiler, nor on those of the bootstrap compiler for <code>L</code>, given that both are semantically correct.
+
+<p>A third example is about learning a new (natural) language, a task which is usually performed first by using your mothertongue, until you know enough of the language to learn directly in it. The mothertongue must therefore be used as a bootstrap language, an issue which is closely related to that of establishing a common ontological committment (see the voice <a class="internal" href="ontology.html" >ontology</a>).
+
+<p>The expression seemingly derives from "pulling yourself up by your own bootstraps", an expression meaning to leverage yourself to success from a small begin, at least according to <A HREF="http://whatis.techtarget.com/">whatis.com</A
 >.
-<p><ul class="links">
+
+<p><ul class="links">
 <li><a class="internal" href="andrew_20appel.html" >Andrew W. Appel</a>, <A HREF="http://ncstrl.cs.princeton.edu/expand.php?id=TR-451-94">Axiomatic Bootstrapping: A Guide for Compiler Hackers</A
 >, <em>ACM Trans. on Prog. Lang. and Systems</em> 16(6) 1699-1718, November 1994.
 <br><strong>Abstract</strong>
@@ -23,10 +28,11 @@
 The Standard <a class="internal" href="ml.html" >ML</a> of New Jersey compiler is written in Standard <a class="internal" href="ml.html" >ML</a>. Thus, <a class="internal" href="ml.html" >SML/NJ</a> can compile itself. This should be simple and obvious. There are some complications. The compiler produces binary files that contain both {it executable code} and {it static environments} (mapping identifiers to structures, signatures, and types). Normal binary files are intended to be loaded into a running <a class="internal" href="ml.html" >SML/NJ</a> system, where the static environment enhances the environment already available in that system, and the code is loaded and run. Some new version of the compiler may make different assumptions about the format of static environments, and its executing code may not be compatible with the existing interactive system. Thus, there can be a severe ``bootstrap'' problem: how can the old version of the compiler compile and bootstrap the new version? Here I attempt an axiomatic clarification of the bootstrapping technique. This should be useful to implementors of any self-applicable compiler with nontrivial object-file and runtime-system compatibility problems.
 </blockquote>
 </ul>
-<p><ul class="links"><h4>Some refernces at <a class="internal" href="researchindex.html" >ResearchIndex</a></h4>
+
+<p><ul class="links"><h4>Some refernces at <a class="internal" href="researchindex.html" >ResearchIndex</a></h4>
 <li><A HREF="http://citeseer.ist.psu.edu/itoi01personal.html">Personal Secure Booting</A
 >.
 <li><A HREF="http://citeseer.ist.psu.edu/arbaugh97secure.html">A Secure and Reliable Bootstrap Architecture</A
 >.
 </ul>
-<hr><p><b>This page is linked from: </b> <a class="internal" href="java.html" >Java</a> &nbsp; <a class="internal" href="kurt_20godel.html" >Kurt Gödel</a> &nbsp; <a class="internal" href="non-well-founded.html" >Non-Well-Founded</a> &nbsp; <a class="internal" href="ontology.html" >Ontology</a> &nbsp; <a class="internal" href="open_20firmware.html" >Open Firmware</a> &nbsp; </DIV></BODY></HTML>
+<hr><p><b>This page is linked from: </b> <a class="internal" href="java.html" >Java</a> &nbsp; <a class="internal" href="kurt_20godel.html" >Kurt Gï¿½del</a> &nbsp; <a class="internal" href="non-well-founded.html" >Non-Well-Founded</a> &nbsp; <a class="internal" href="ontology.html" >Ontology</a> &nbsp; <a class="internal" href="open_20firmware.html" >Open Firmware</a> &nbsp; </DIV></BODY></HTML>

@@ -1,6 +1,6 @@
 <!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
 <HTML><HEAD><TITLE>CTO : CLIM</TITLE
-><LINK REL="alternate" TYPE="application/rss+xml" TITLE="Recent Changes" HREF="http://tunes.org/cliki/recent-changes.rdf.html"><LINK REL="stylesheet" HREF="admin/cliki.css"></HEAD
+><LINK REL="alternate" TYPE="application/rss+xml" TITLE="Recent Changes" HREF="/tunes.org/cliki/recent-changes.rdf.html"><LINK REL="stylesheet" HREF="admin/cliki.css"></HEAD
 ><BODY><DIV ID="banner"><A TITLE="CTO" CLASS="logo" HREF="clim.html">CTO</A
 > <SPAN>CLiki for the TUNES project</SPAN
 ></DIV
@@ -10,13 +10,18 @@
 > </DIV
 ><DIV ID="main"><H1>CLIM</H1
 >CLIM is an <a class="internal" href="acronym.html" >acronym</a> for <a class="internal" href="common_20lisp.html" >Common Lisp</a> Interface Manager.
-<p>CLIM is a framework for designing portable but also platform-specific interfaces. While the concepts underlying CLIM are <a class="internal" href="user_20interface.html" >user interface</a> <a class="internal" href="paradigm.html" >paradigm</a> independent, current implementations lean towards <a class="internal" href="wimp.html" >WIMP</a>s, but still support <a class="internal" href="cli.html" >CLI</a>s. It is very notable for being an extreme application of <a class="internal" href="object-oriented.html" >object-oriented</a> thought to user interface design, in that all of the abstractions have classes, and all of the core functionality is implemented by <a class="internal" href="clos.html" >CLOS</a> methods.
-<p>The architecture provides several useful abstractions for dealing with these issues:
-<p><dl>
+
+<p>CLIM is a framework for designing portable but also platform-specific interfaces. While the concepts underlying CLIM are <a class="internal" href="user_20interface.html" >user interface</a> <a class="internal" href="paradigm.html" >paradigm</a> independent, current implementations lean towards <a class="internal" href="wimp.html" >WIMP</a>s, but still support <a class="internal" href="cli.html" >CLI</a>s. It is very notable for being an extreme application of <a class="internal" href="object-oriented.html" >object-oriented</a> thought to user interface design, in that all of the abstractions have classes, and all of the core functionality is implemented by <a class="internal" href="clos.html" >CLOS</a> methods.
+
+<p>The architecture provides several useful abstractions for dealing with these issues:
+
+<p><dl>
 <dt>Medium</dt>
 <dd>A specific drawing target or context, such as the Macintosh medium, a terminal medium, or the X medium, etc. It gives programmers access to these unportable objects, but also to a portable layer of abstraction called a "sheet", which is a cartesian plane in the truest sense. It then provides the code to render a sheet using a medium. This allows developers to design portable interfaces, yet provide platform-specific extensions to this interface.
-<p>It's not hard to imagine a (conceptually) simple extension to CLIM which, instead of 2D sheets, provides 3D worlds, or even 4D temporal worlds.
-<p><dt>Gadget</dt>
+
+<p>It's not hard to imagine a (conceptually) simple extension to CLIM which, instead of 2D sheets, provides 3D worlds, or even 4D temporal worlds.
+
+<p><dt>Gadget</dt>
 <dd>Tying in with media and sheets are gadgets, which are ways to substitute platform-specific implementations and looks for controls and decorations. This concept was developed before the Macintosh, Windows, and other systems became a hegemony, and the designers allowed for anything to be a gadget for a specific part of an application's interface and appearance. So, it's not just a pre-defined widget set, although there are parts of the specification which give the very common examples needed.
 <dt>Regions and Designs</dt>
 <dd>CLIM takes a very abstract point of view about general drawing, using regions as geometric figures for clipping and bounding, and designs as possibly arbitrary kinds of graphics. The important part is that the common things like solid colors and transparencies, can be <em>composed</em> with any other design or region, either statically or dynamically.
@@ -26,12 +31,16 @@
 <dd>These are records of input, considered as events or collections of events, which can also be replayed and are stored.
 <dt>Presentation</dt>
 <dd>Perhaps the most powerful concept is the presentation, which depends on the preceding concepts. Presentations are basically a way to structure concepts and use them as objects right on the display screen, without <em>any application support</em> except for constructing them. In short, presentations are class mixins for output records (which could be the echo of an input as well), which have methods for changing their display format, a default click action, other actions available in a menu, and are extensible for other purposes.
-<p>The most visible difference about presentations is that they know their type, and will respond to mouse-over's by highlighting themselves dynamically based on the context that the user is in.
-<p><dt>Commands</dt>
+
+<p>The most visible difference about presentations is that they know their type, and will respond to mouse-over's by highlighting themselves dynamically based on the context that the user is in.
+
+<p><dt>Commands</dt>
 <dd>This is totally disjoint from the previous concepts in <em>other</em> user interface architectures. In CLIM, commands are both within graphical menus and on command-lines pervasively. Furthermore, the command-line can actually parse the input for acceptance as a new presentation, and commands themselves parse into presentations once recognized. Commands also involve the notion of a dialog with options, which can be either embedded on the command-line (pseudo-graphically) or in a separate dialog window. Commands furthermore have a notion of what types of arguments they can accept, so being in a position to type a command argument also puts the user in a context where presentations of that type will be highlighted on mouse-over, and used in that argument position when clicked upon. Commands once executed also have a "replay" default action for their presentation.
 </dl>
-<p>As a whole, CLIM is unique because it provides means for instant accessibility to the meaning of a thing represented, a verb-object and object-verb integrated grammar, and a general object-based approach to abstraction. A particular feature of it is that "applications" in CLIM can amount to just a domain-specific vocabulary: a new set of nouns and verbs which can act on them, possibly with some representational translations. Once installed, this new application's features are instantly available as possible within any CLIM context.
-<p><ul class="links">
+
+<p>As a whole, CLIM is unique because it provides means for instant accessibility to the meaning of a thing represented, a verb-object and object-verb integrated grammar, and a general object-based approach to abstraction. A particular feature of it is that "applications" in CLIM can amount to just a domain-specific vocabulary: a new set of nouns and verbs which can act on them, possibly with some representational translations. Once installed, this new application's features are instantly available as possible within any CLIM context.
+
+<p><ul class="links">
 <li>For reference, see <A HREF="http://www.cliki.net/CLIM">Cliki.net's CLIM node</A
 >.
 <li>MIT AITR-794, <A HREF="ftp://publications.ai.mit.edu/ai-publications/pdf/AITR-794.pdf">PRESENTATION BASED USER INTFERFACES</A

@@ -1,6 +1,6 @@
 <!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
 <HTML><HEAD><TITLE>CTO : Escape</TITLE
-><LINK REL="alternate" TYPE="application/rss+xml" TITLE="Recent Changes" HREF="http://tunes.org/cliki/recent-changes.rdf.html"><LINK REL="stylesheet" HREF="admin/cliki.css"></HEAD
+><LINK REL="alternate" TYPE="application/rss+xml" TITLE="Recent Changes" HREF="/tunes.org/cliki/recent-changes.rdf.html"><LINK REL="stylesheet" HREF="admin/cliki.css"></HEAD
 ><BODY><DIV ID="banner"><A TITLE="CTO" CLASS="logo" HREF="escape.html">CTO</A
 > <SPAN>CLiki for the TUNES project</SPAN
 ></DIV
@@ -10,8 +10,13 @@
 > </DIV
 ><DIV ID="main"><H1>Escape</H1
 >A <a class="internal" href="term.html" >term</a> for a way to exit the current or normal <a class="internal" href="context.html" >context</a>. When quoting text, special character sequences may be used to make the difference between what is part of the text being quoted, and what part of the text quoting it.
-<p><a class="internal" href="terminal.html" >Terminal</a>s use escape sequences to indicate things other than usual text, such as moving the cursor, changing the color of the text, etc. 
-<p>A <a class="internal" href="reference.html" >reference</a> to an object is said to escape a <a class="internal" href="scope.html" >scope</a> if some objects outside of this scope may access it (for instance, because this reference was passed to an external procedure that may have had the side-effect of storing it). 
-<p>An object is said to escape a <a class="internal" href="scope.html" >scope</a> when at least one reference to this object escapes the scope.
-<p>Many program transformations including <a class="internal" href="garbage_20collection.html" >garbage collection</a> and various optimizations, depend on the ability to prove that some objects do not escape. 
-<p>For instance, an efficient implementation for non-escaping objects would be to allocate them in a stack, and pop them out of existence when the function exits. Escaping objects, on the other hand, would require more expensive heap-allocation, with sophisticated garbage collection techniques.</DIV></BODY></HTML>
+
+<p><a class="internal" href="terminal.html" >Terminal</a>s use escape sequences to indicate things other than usual text, such as moving the cursor, changing the color of the text, etc. 
+
+<p>A <a class="internal" href="reference.html" >reference</a> to an object is said to escape a <a class="internal" href="scope.html" >scope</a> if some objects outside of this scope may access it (for instance, because this reference was passed to an external procedure that may have had the side-effect of storing it). 
+
+<p>An object is said to escape a <a class="internal" href="scope.html" >scope</a> when at least one reference to this object escapes the scope.
+
+<p>Many program transformations including <a class="internal" href="garbage_20collection.html" >garbage collection</a> and various optimizations, depend on the ability to prove that some objects do not escape. 
+
+<p>For instance, an efficient implementation for non-escaping objects would be to allocate them in a stack, and pop them out of existence when the function exits. Escaping objects, on the other hand, would require more expensive heap-allocation, with sophisticated garbage collection techniques.</DIV></BODY></HTML>

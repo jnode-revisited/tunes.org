@@ -1,6 +1,6 @@
 <!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
 <HTML><HEAD><TITLE>CTO : Concurrency-Oriented</TITLE
-><LINK REL="alternate" TYPE="application/rss+xml" TITLE="Recent Changes" HREF="http://tunes.org/cliki/recent-changes.rdf.html"><LINK REL="stylesheet" HREF="admin/cliki.css"></HEAD
+><LINK REL="alternate" TYPE="application/rss+xml" TITLE="Recent Changes" HREF="/tunes.org/cliki/recent-changes.rdf.html"><LINK REL="stylesheet" HREF="admin/cliki.css"></HEAD
 ><BODY><DIV ID="banner"><A TITLE="CTO" CLASS="logo" HREF="concurrency-oriented.html">CTO</A
 > <SPAN>CLiki for the TUNES project</SPAN
 ></DIV
@@ -10,8 +10,10 @@
 > </DIV
 ><DIV ID="main"><H1>Concurrency-Oriented</H1
 >A <a class="internal" href="term.html" >term</a> describing a <a class="internal" href="programming_20language.html" >programming language</a> <a class="internal" href="paradigm.html" >paradigm</a> where independent parts of the problem can be represented as independent computations. This requires that concurrency should be easy, with language support, that to some level concurrency be transparent, and that the implementation should ensure it is cheap.
-<p>The two major inspirations for this term are <a class="internal" href="mozart_2foz.html" >Mozart/Oz</a>, which has declarative concurrency, and <a class="internal" href="erlang.html" >Erlang</a>, which has message-passing <a class="internal" href="concurrency.html" >concurrency</a> (also referred to as the <a class="internal" href="actor.html" >Actor</a> model), but any language marked here as <a class="internal" href="concurrent.html" >concurrent</a> is similar to one of these two.
-<p>The basic properties seem to be (as outlined by Joe Armstrong - see his papers below):
+
+<p>The two major inspirations for this term are <a class="internal" href="mozart_2foz.html" >Mozart/Oz</a>, which has declarative concurrency, and <a class="internal" href="erlang.html" >Erlang</a>, which has message-passing <a class="internal" href="concurrency.html" >concurrency</a> (also referred to as the <a class="internal" href="actor.html" >Actor</a> model), but any language marked here as <a class="internal" href="concurrent.html" >concurrent</a> is similar to one of these two.
+
+<p>The basic properties seem to be (as outlined by Joe Armstrong - see his papers below):
 <ol>
 <li>Concurrency-Oriented languages must support processes. A process can be thought of as a self-contained virtual machine.
 <li>Several processes operating on the same machine must be strongly isolated.  A fault in one process should not adversely affect another process, unless such interaction is explicitly programmed. Two processes operating on the same machine must be as independent as if they ran on physically separated machines.
@@ -26,7 +28,8 @@
 </ul>
 <li>It should be possible for one process to detect failure in another process.  We should also know the reason for faiure.
 </ol>
-<p>He also outlines some essential requirements:
+
+<p>He also outlines some essential requirements:
 <dl>
 <dt>Concurrency</dt><dd>The computational effort needed to create or destroy a concurrent process should be very small, and there should be no penalty for creating large numbers (explained elsewhere as hundreds of thousands) of concurrent processes.</dd>
 <dt>Error encapsulation</dt><dd>Errors occurring in one process must not be able to damage other processes in the system.</dd>
@@ -35,7 +38,8 @@
 <dt>Code upgrade</dt><dd>There should exist mechanisms to change code as it is executing and without stopping the system.</dd>
 <dt>Persistence</dt><dd>We need to store data in a manner which survives a system crash.  More precisely, we need to store <em>selected</em> data in a manner which survives a system crash.</dd>
 </dl>
-<p><ul class="links">
+
+<p><ul class="links">
 <li>Various papers by <A HREF="http://www.sics.se/~joe/">Joe Armstrong</A
 > who developed the idea.
 <li>A <A HREF="http://lambda-the-ultimate.org/classic/message9289.html">discussion on it</A

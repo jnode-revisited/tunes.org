@@ -1,6 +1,6 @@
 <!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
 <HTML><HEAD><TITLE>CTO : EUMEL</TITLE
-><LINK REL="alternate" TYPE="application/rss+xml" TITLE="Recent Changes" HREF="http://tunes.org/cliki/recent-changes.rdf.html"><LINK REL="stylesheet" HREF="admin/cliki.css"></HEAD
+><LINK REL="alternate" TYPE="application/rss+xml" TITLE="Recent Changes" HREF="/tunes.org/cliki/recent-changes.rdf.html"><LINK REL="stylesheet" HREF="admin/cliki.css"></HEAD
 ><BODY><DIV ID="banner"><A TITLE="CTO" CLASS="logo" HREF="eumel.html">CTO</A
 > <SPAN>CLiki for the TUNES project</SPAN
 ></DIV
@@ -10,12 +10,16 @@
 > </DIV
 ><DIV ID="main"><H1>EUMEL</H1
 ><strong>E</strong>xtendable multi<strong>U</strong>ser <strong>M</strong>icroprocessor <strong>EL</strong>an system, was an <a class="internal" href="os.html" >OS</a> by Jochen Liedtke, with <a class="internal" href="orthogonal_20persistence.html" >persistent</a> processes and data spaces, built to offer a standalone environment for the educational programming language ELAN. In the words of Roland McGrath:
-<p><blockquote>
+
+<p><blockquote>
 "...EUMEL, was based on two simple principles: <a class="internal" href="orthogonal_20persistence.html" >persistent</a> processes and data spaces. All data of the entire system including process control blocks and data space descriptors were contained in these data spaces. They could be copied efficiently and atomically using copy on write and <a class="internal" href="garbage_20collection.html" >garbage collection</a> techniques. By copying the "data space of data spaces" every few minutes, a complete copy of the entire system state was taken and lazily written out to disk. Thus, process persistence came for free (at least conceptually). Sending around data spaces in synchronous messages was the only means of process interaction which made it easy to build a simple distributed EUMEL system.  The paging device was a floppy disk (what else on a cheap computer at that time)."
 </blockquote>
-<p>Later evolutions of EUMEL comprise the L3 and <a class="internal" href="l4.html" >L4</a> OSes.
-<p><span class="comment">The following paper is also relevant: it shows this interesting system, which was in use in the so called "real-world", completely forgotten in favor of the <a class="internal" href="c_20language.html" >C</a>/<a class="internal" href="unix.html" >Unix</a> (presumed) <a class="internal" href="portability.html" >portability</a> or <a class="internal" href="c_20language.html" >C</a>/<a class="internal" href="microsoft_20windows.html" >Microsoft Windows</a> (presumed) <em>easy of use</em> (they are both crap, if you ask me). This tells all about the power of corporations (in this case: AT&T/Bell Labs, Microsoft, IBM, ...). -- <a class="internal" href="mad70.html" >MaD70</a></span>
-<p><ul class="links">
+
+<p>Later evolutions of EUMEL comprise the L3 and <a class="internal" href="l4.html" >L4</a> OSes.
+
+<p><span class="comment">The following paper is also relevant: it shows this interesting system, which was in use in the so called "real-world", completely forgotten in favor of the <a class="internal" href="c_20language.html" >C</a>/<a class="internal" href="unix.html" >Unix</a> (presumed) <a class="internal" href="portability.html" >portability</a> or <a class="internal" href="c_20language.html" >C</a>/<a class="internal" href="microsoft_20windows.html" >Microsoft Windows</a> (presumed) <em>easy of use</em> (they are both crap, if you ask me). This tells all about the power of corporations (in this case: AT&T/Bell Labs, Microsoft, IBM, ...). -- <a class="internal" href="mad70.html" >MaD70</a></span>
+
+<p><ul class="links">
 <li><A HREF="http://os.inf.tu-dresden.de/papers_ps/jochen/iwooos-3.ps">A Persistent System in Real Use - Experiences of the First 13 Years</A
 > (.ps 184 KB).
 <blockquote><h5>Abstract</h5>
