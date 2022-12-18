@@ -11,16 +11,16 @@
 
 <h2>Applying Functions</h2>
     <ul>
-      <li>As in <a href="http://cliki.tunes.org/Self">Self</a> or <a href="http://cliki.tunes.org/Lisp">Lisp</a>, the basic constructor will be applying an attribute/function to an object.</li>
-      <li>As in <a href="http://cliki.tunes.org/Scheme">Scheme</a> or <a href="http://cliki.tunes.org/ML">ML</a>, and unlike Self or Lisp, the attribute/function is not a <a href="http://cliki.tunes.org/Meta-Level">meta-level</a> symbol, but a zero-level (first-class) object. In other words, functions will be used and bound according to the same protocols as ordinary objects.</li>
+      <li>As in <a href="/cliki.tunes.org/Self">Self</a> or <a href="/cliki.tunes.org/Lisp">Lisp</a>, the basic constructor will be applying an attribute/function to an object.</li>
+      <li>As in <a href="/cliki.tunes.org/Scheme">Scheme</a> or <a href="/cliki.tunes.org/ML">ML</a>, and unlike Self or Lisp, the attribute/function is not a <a href="/cliki.tunes.org/Meta-Level">meta-level</a> symbol, but a zero-level (first-class) object. In other words, functions will be used and bound according to the same protocols as ordinary objects.</li>
     </ul>
 
 <h2>Abstracting terms</h2>
-    <p>The next basic constructor is typed <a href="http://cliki.tunes.org/Abstraction">abstraction</a> on any sub-object of an expression, using any <a href="http://cliki.tunes.org/Type System">type system</a>, which allows the creation of new functions, i.e. lambda-expressions, from an arbitrarily (but strongly) typed lambda calculus, which gives something like:<br>
+    <p>The next basic constructor is typed <a href="/cliki.tunes.org/Abstraction">abstraction</a> on any sub-object of an expression, using any <a href="/cliki.tunes.org/Type System">type system</a>, which allows the creation of new functions, i.e. lambda-expressions, from an arbitrarily (but strongly) typed lambda calculus, which gives something like:<br>
       <code>lambda (x).sin(2*x+1)</code><br>
-      <code>method (x) ; sin(2*x+1) ; end method ;</code> (using <a href="http://cliki.tunes.org/Dylan">Dylan</a> syntax)<br>
-      <code>fun x -&gt; sin(2. *. x +. 1.)</code> (using <a href="http://cliki.tunes.org/OCAML">OCAML</a> syntax)<br>
-      <code>[x:Real] sin(2.0 *. x +. 1.0)</code> (using <a href="http://cliki.tunes.org/Coq">Coq</a> syntax)<br>
+      <code>method (x) ; sin(2*x+1) ; end method ;</code> (using <a href="/cliki.tunes.org/Dylan">Dylan</a> syntax)<br>
+      <code>fun x -&gt; sin(2. *. x +. 1.)</code> (using <a href="/cliki.tunes.org/OCAML">OCAML</a> syntax)<br>
+      <code>[x:Real] sin(2.0 *. x +. 1.0)</code> (using <a href="/cliki.tunes.org/Coq">Coq</a> syntax)<br>
     </p>
 
 <h2>Defining typed constructors</h2>
@@ -29,7 +29,7 @@
 	<p>For example, if you have access to the type of terms for programs and data, then you can use standard "compilers" that construct objects from tools; among them are creations of inductive definitions and such or (if you're trusted enough in the context), you can associate low-level objects to a high-level specification without a proof.</p>
       </li>
       <li>Standard constructors (including all the previous) can be selectively trusted, so that contexts can be very limited (e.g. only applying functions among those from a list), or very open (trusting all the inherently secure constructors plus a list of axioms/trustees)</li>
-      <li>Inductive definitions (as in <a href="http://cliki.tunes.org/Coq">Coq</a>) may be used as a secure way to construct new types.</li>
+      <li>Inductive definitions (as in <a href="/cliki.tunes.org/Coq">Coq</a>) may be used as a secure way to construct new types.</li>
     </ul>
 
 <h2>Evaluation strategy</h2>

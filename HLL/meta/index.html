@@ -19,8 +19,8 @@
     <p>It is much more than an "interface" between languages, which would be just some way to cross-quote sentences from one language into another, though such an interface is useful for the translation.</p>
 
 <H2 name="goal">Goal</H2>
-    <p>Provide a <B>meta</B>-translator, that is, some collection of software that facilitates designing translators between languages of the highest <a href="http://cliki.tunes.org/Abstraction Level">level of abstraction</a>. The meta-translator project will also deal with program manipulators, which are a generalization of translators, that go from one language to itself, with irreversible or undeterministic changes in the context or meta-context.</p>
-    <p>Perhaps "Generic Meta-Program", or "Reflective Semantic-based Program Manipulator" would be more accurate. See our resources on <a href="http://cliki.tunes.org/Program Transformation">program transformation on our Wiki</a>.</p>
+    <p>Provide a <B>meta</B>-translator, that is, some collection of software that facilitates designing translators between languages of the highest <a href="/cliki.tunes.org/Abstraction Level">level of abstraction</a>. The meta-translator project will also deal with program manipulators, which are a generalization of translators, that go from one language to itself, with irreversible or undeterministic changes in the context or meta-context.</p>
+    <p>Perhaps "Generic Meta-Program", or "Reflective Semantic-based Program Manipulator" would be more accurate. See our resources on <a href="/cliki.tunes.org/Program Transformation">program transformation on our Wiki</a>.</p>
 
 <H3>Subjects of Translation</H3>
     <p>The meta-translator will be used to compile the HLL into the LLL, to translate any language (particularly widely used languages like C or Lisp) into our HLL, and perhaps even to translate subsets of human "natural" languages into computer languages or other human languages.</p>
@@ -35,7 +35,7 @@
     <p>Hence, the right way to achieve a fully automatic and generic translator is to try an AI approach, and fallback to a stubborn embedding approach when the AI does not yield satisfactory results.</p>
     <p>Happily, at any moment, we needn't something fully automatic and generic, because we want to apply it to a particular program, and because when maintainable code is needed, then human interaction is to be involved anyway, so better take advantage of it during the translation.</p>
     <p>In the end, the overall intrinsic difficulty of the problem is less than that of the (undecidable) problem of proving correctness of programs; and there are environment for doing program proofs semi-automatically, i.e. using existing automatic tactics when possible, and relying on human help when not. Hence, writing a successful translator is a doable task.</p>
-    <p>For many common tasks, however, <a href="http://cliki.tunes.org/Partial Evaluation">partial evaluation</a> of various kinds as well as operating on <a href="http://cliki.tunes.org/Abstract Syntax Tree">abstract syntax</a> and denotational models should provide more than enough tractability. There is also more recent work in <a href="http://cliki.tunes.org/Haskell">Haskell</a> on the use of <a href="http://cliki.tunes.org/Monad">monads</a> to build modular interpreters easily, and perform some transformation of them into compilers.</p>
+    <p>For many common tasks, however, <a href="/cliki.tunes.org/Partial Evaluation">partial evaluation</a> of various kinds as well as operating on <a href="/cliki.tunes.org/Abstract Syntax Tree">abstract syntax</a> and denotational models should provide more than enough tractability. There is also more recent work in <a href="/cliki.tunes.org/Haskell">Haskell</a> on the use of <a href="/cliki.tunes.org/Monad">monads</a> to build modular interpreters easily, and perform some transformation of them into compilers.</p>
 
 <h3>Interaction</h3>
     <p>The translator can be guided by a human, who will inform the translator so that it would efficiently translate the particular program. This knowledge could be very specific (in that exact case, do that), but could and would be progressively be refined itself, and separated into a generic abstract part and specific details.</p>
@@ -54,7 +54,7 @@
 <h3>Incremental translation</h3>
     <p>Now, because the original text may evolve, the translation tools should allow to keep the translated text up-to-date without the human having to retranslate everything from scratch.</p>
     <p>This is another reason why a translator should be written as part of a reflective architecture: modifications at all levels of the code must be first-class objects, so they can be analyzed, manipulated, and propagated through the series of reversible changes that was recorded. Modifications themselves can be understood and factored into abstract idea and concrete realization.</p>
-    <p><a href="http://cliki.tunes.org/Persistence">Persistence</a> and <a href="http://cliki.tunes.org/Tactic">tactics</a> take their full value, as they allow tactics that were intended but previously proved unsuccessful to be tried again without further work where they will prove successful. Work is not lost; it combines.</p>
+    <p><a href="/cliki.tunes.org/Persistence">Persistence</a> and <a href="/cliki.tunes.org/Tactic">tactics</a> take their full value, as they allow tactics that were intended but previously proved unsuccessful to be tried again without further work where they will prove successful. Work is not lost; it combines.</p>
     <p>Of course, in most cases, new modifications involve lots of change in the translated code, sometimes major changes, that cannot be automatically done in an efficient way. Again, that's where human interaction intervenes. The humanonly needs to do the minimal necessary work, and is relieved by all that the system has been taught to do.</p>
 
 <h3>Important Note:</h3>
@@ -64,9 +64,9 @@
 <h2 name="resources">Resources</h2>
     <p>See also:</p>
     <ul>
-      <li>Programs and projects on semantic-based program manipulation (for now, see our <a href="http://cliki.tunes.org/Methods of Reflection">Reflection Review section</a> under "Partial Evaluation").</li>
-      <li>Books and articles on <a href="http://cliki.tunes.org/Semantics">semantics</a> of <a href="http://cliki.tunes.org/Programming Languages">programming languages</a></li>
-      <li><a href="http://cliki.tunes.org/Appetizers">Douglas Hofstadter's "Goedel, Escher, Bach"</a></li>
+      <li>Programs and projects on semantic-based program manipulation (for now, see our <a href="/cliki.tunes.org/Methods of Reflection">Reflection Review section</a> under "Partial Evaluation").</li>
+      <li>Books and articles on <a href="/cliki.tunes.org/Semantics">semantics</a> of <a href="/cliki.tunes.org/Programming Languages">programming languages</a></li>
+      <li><a href="/cliki.tunes.org/Appetizers">Douglas Hofstadter's "Goedel, Escher, Bach"</a></li>
     </ul>
 
 <H2 name="examples">Examples</H2>
@@ -74,12 +74,12 @@
 <p>See the <a href="../examples/sieve.html">Sieve of Eratosthene</a> for examples.</p>
 
 <h3>Object-Oriented and Functional Programming</h3>
-    <p>"<a href="http://cliki.tunes.org/Object-Oriented">Object-Oriented</a> Programming" and "<a href="http://cliki.tunes.org/Functional">Functional</a> Programming" are currently dominant programming "<a href="http://cliki.tunes.org/Paradigm">Paradigms</a>". OOP is very faddy, and most people use it without really understanding what it is about; confusion is king in the OOP world. FP, though it is not free from fads, is a much more seriously studied and understood paradigm.</p>
-    <p>OOP and FP can be typed, which corresponds to OO classes and functional types, or there may be no differentiation of types between objects (besides their observational behavior) (see <A HREF="http://cliki.tunes.org/Self">Self</a> and <A HREF="http://cliki.tunes.org/Lisp">Lisp</A>).</p>
+    <p>"<a href="/cliki.tunes.org/Object-Oriented">Object-Oriented</a> Programming" and "<a href="/cliki.tunes.org/Functional">Functional</a> Programming" are currently dominant programming "<a href="/cliki.tunes.org/Paradigm">Paradigms</a>". OOP is very faddy, and most people use it without really understanding what it is about; confusion is king in the OOP world. FP, though it is not free from fads, is a much more seriously studied and understood paradigm.</p>
+    <p>OOP and FP can be typed, which corresponds to OO classes and functional types, or there may be no differentiation of types between objects (besides their observational behavior) (see <A HREF="/cliki.tunes.org/Self">Self</a> and <A HREF="/cliki.tunes.org/Lisp">Lisp</A>).</p>
     <p>In OOP, you send messages. Note that in both cases, computations can be pure or impure (with or without side-effects).</p>
-    <p>In advanced OOP, methods are <a href="http://cliki.tunes.org/Dispatch">dispatch</a>ed not only according to their first arguments, but to all their arguments. Likely, in advanced FP, functions take more than one argument, and are <a href="http://cliki.tunes.org/Dispatch">dispatch</a>ed according to all these.</p>
+    <p>In advanced OOP, methods are <a href="/cliki.tunes.org/Dispatch">dispatch</a>ed not only according to their first arguments, but to all their arguments. Likely, in advanced FP, functions take more than one argument, and are <a href="/cliki.tunes.org/Dispatch">dispatch</a>ed according to all these.</p>
 
-    <p>One initial aspect of <a href="http://cliki.tunes.org/Metaprogramming">metaprogramming</a> is <A HREF="quotation.html">quotation</A>.</p>
+    <p>One initial aspect of <a href="/cliki.tunes.org/Metaprogramming">metaprogramming</a> is <A HREF="quotation.html">quotation</A>.</p>
 
 
 <H3>To Do</H3>
@@ -102,7 +102,7 @@
       <LI>What about taking a <tt>/etc/termcap</tt> or <tt>terminfo</tt> entry, and producing an emulator for said terminal?</li>
     </UL>
 <hr>
-<p>Annotate this on the <a href="http://cliki.tunes.org/TUNES Meta-Translator">CLiki</a>.</p>
+<p>Annotate this on the <a href="/cliki.tunes.org/TUNES Meta-Translator">CLiki</a>.</p>
     <!--#include virtual="/footer.html" -->
   </body>
 </html>

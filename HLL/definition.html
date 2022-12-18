@@ -26,13 +26,13 @@
       <li>So annotation mechanism depends on: the annotation object, the annotated object, and the context meta-object. Some aspect of the context chooses the implementation of the object based on a combination of convenience of this decision's computation as well as the foreseeable uses of the object. If an object only gets used once, there's no justification in spending run-time resources to calculate anything but a dead-simple representation.</li>
 	<li>It seems that somehow, the system should (dynamically) differentiate coarse-interfaced objects (including single integers that are being watched by external humans) from lightly interfaced ones. The former would have an "annotation" field, while the latter would have a more expensive mechanism for annotation (e.g. using hashed association tables), or would have to be annotated through a coarse-object wrapping. So some combination of compile-time and run-time heuristics and architecture would be of use in handling each object differently.</li>
       <li>If annotations are annotated, the simple and naive solution is to make the first notation a fuller object instead of a simplified encoding. It is also possible that some simple recursive system could be encoded with a minimal tree-encoding. In general, many things are possible, and this could be subjected to the Tunes system general data structure system.</li>
-      <li>We must have some efficient implementation to track dependencies when there is <a href="http://cliki.tunes.org/Partial Evaluation">partial evaluation</a>, so that no invalidated code is run. Note that this could encompass any kind of system-building ("make") utility, and is much better, as it supports a fine grain and exact semantics.</li>
+      <li>We must have some efficient implementation to track dependencies when there is <a href="/cliki.tunes.org/Partial Evaluation">partial evaluation</a>, so that no invalidated code is run. Note that this could encompass any kind of system-building ("make") utility, and is much better, as it supports a fine grain and exact semantics.</li>
     </ul>
     <h3>Keeping Proofs Tractable</h3>
     <ul>
-      <li>Most importantly, all objects should be defined clearly in an abstract context that shows the "limits" of the object: an object is a term made with implicit and explicit parameters. Though some implicit parameters may be instantiated, they can be migrated; though explicit parameters may be <a href="http://cliki.tunes.org/Future">future</a> values, they cannot be migrated. These concepts naturally extend to all meta-objects for a considered object.
+      <li>Most importantly, all objects should be defined clearly in an abstract context that shows the "limits" of the object: an object is a term made with implicit and explicit parameters. Though some implicit parameters may be instantiated, they can be migrated; though explicit parameters may be <a href="/cliki.tunes.org/Future">future</a> values, they cannot be migrated. These concepts naturally extend to all meta-objects for a considered object.
 	<p>Now, we want to be able to say things about the constructors that an object was made with. We want to be able to determine a superlist of constructors used to make an object, and/or to say that the object can be expressed in a theory that does not include some constructor.</p>
-	<p>The problem is when we use meta-constructors that can be eliminated (by e.g. beta-conversion, inference, or more generally <a href="http://cliki.tunes.org/Higher-Order">higher-order</a> term <a href="http://cliki.tunes.org/Rewrite">rewrite</a>), but that we don't want to be actually eliminated. Such meta-constructors are part of the implicitly instanciated, migratable meta-constructors for the object. Typical example: though we define "true" natural integers by Peano's axioms, we want to use usual logarithmical size representation to manipulate them. So even if we discuss about a type <code>Nat=0|S:Nat-&gt;Nat</code>, we can manipulate usual system integers, and other such types.</p>
+	<p>The problem is when we use meta-constructors that can be eliminated (by e.g. beta-conversion, inference, or more generally <a href="/cliki.tunes.org/Higher-Order">higher-order</a> term <a href="/cliki.tunes.org/Rewrite">rewrite</a>), but that we don't want to be actually eliminated. Such meta-constructors are part of the implicitly instanciated, migratable meta-constructors for the object. Typical example: though we define "true" natural integers by Peano's axioms, we want to use usual logarithmical size representation to manipulate them. So even if we discuss about a type <code>Nat=0|S:Nat-&gt;Nat</code>, we can manipulate usual system integers, and other such types.</p>
       </li>
     </ul>
 
@@ -40,7 +40,7 @@
 <h2>To merge:</h2>
 
 <h3><a name="choice">Choice</a></h3>
-    <p>The system must provide as part of language semantics access to a choice axiom concept, similar to the <a href="http://cliki.tunes.org/Epsilon Calculus">epsilon calculus</a>. We explain this choice axiom:
+    <p>The system must provide as part of language semantics access to a choice axiom concept, similar to the <a href="/cliki.tunes.org/Epsilon Calculus">epsilon calculus</a>. We explain this choice axiom:
     <ul>
       <li>The language must require as few redundancies as possible: a programmer may want to give enough information to the system to specify the program or desired result. The system or interface context should be capable of filling in missing <em>redundant</em> information all by itself. Further hints may be requested from the user and provided to extend this.</li>
       <li>There is a mechanism for that, which is the use of a "choice" construct, or implicitness construct. When such a construct is used, the system must somehow provide an object fulfilling the requirements, if there exists one, or else issue an exception.</li>
@@ -55,12 +55,12 @@
 <h3>Abstraction &amp; Migration</h3>
 <ul>
       <li>Is this an example of abstraction: taking an integer addition function and abstracting it to work with floats?
-	<p>If the addition function is used in a context such that the fact that the numbers are integers rather than float does not intervene, then it is a valid to abstract the number type into something more general than integers. You reapply the said abstracted object to the float number type, but the result is not the abstraction itself; If the overall abstract semantics of the new object are the same as those of the original one (i.e. you were doing computations on integers, and are now using the FPU to speed them up), then it is what I called a <a href="http://cliki.tunes.org/Migration">migration</a> of the original object.</p>
+	<p>If the addition function is used in a context such that the fact that the numbers are integers rather than float does not intervene, then it is a valid to abstract the number type into something more general than integers. You reapply the said abstracted object to the float number type, but the result is not the abstraction itself; If the overall abstract semantics of the new object are the same as those of the original one (i.e. you were doing computations on integers, and are now using the FPU to speed them up), then it is what I called a <a href="/cliki.tunes.org/Migration">migration</a> of the original object.</p>
       </li>
     </ul>
 
 <h3>References considered Harmful</h3>
-    <p>It seems to me that references are not a good concept in a <a href="http://cliki.tunes.org/Distributed">distributed</a> system. Communication Channels, Linear objects, and projects seem to do more than references, in more precise ways:</p>
+    <p>It seems to me that references are not a good concept in a <a href="/cliki.tunes.org/Distributed">distributed</a> system. Communication Channels, Linear objects, and projects seem to do more than references, in more precise ways:</p>
     <ul>
       <li>For variable value holders in immediate computations, linear objects seem good.</li>
       <li>For communication, channels of increasing information seem better.</li>

@@ -7,7 +7,7 @@ sgml2html -c latin Tunes-FAQ.sgml
 
 <title>Tunes FAQ
 </title>
-<author>François-René Rideau <tt>&lt;fare@tunes.org&gt;</tt>
+<author>Franï¿½ois-Renï¿½ Rideau <tt>&lt;fare@tunes.org&gt;</tt>
 	and David Manifold <tt>&lt;dem@tunes.org&gt;</tt>
 </author>
 <date>Tunes-FAQ.sgml,v 1.34 2003/06/09 02:22:30 tril Exp
@@ -33,7 +33,7 @@ about the TUNES Project for a Free Reflective Computing System.
 
 <sect1>Legal Blurb
 <p>
-Copyright &copy; 1998-2002 by François-René Rideau and David Manifold.
+Copyright &copy; 1998-2002 by Franï¿½ois-Renï¿½ Rideau and David Manifold.
 
 This document is free software;
 you can redistribute it and/or modify it
@@ -86,10 +86,10 @@ All the TUNES documentation can be accessed on our web server and its mirrors:
 <p>
 Of particular interest is our interactive
 	<url name="CLiki"
-		url="http://cliki.tunes.org/">
+		url="/cliki.tunes.org/">
 and its
 	<htmlurl name="Learning Lounge"
-		url="http://cliki.tunes.org/Learning%20Lounge">
+		url="/cliki.tunes.org/Learning%20Lounge">
 </sect1>
 
 
@@ -237,7 +237,7 @@ of current computing systems that standardize things from the low-level on,
 as the legacy of systems designed first for resource-poor computers,
 then under the constraints of proprietary software.
 <p>
-For instance, we want to replace filesystems with <url url="http://cliki.tunes.org/Orthogonal Persistence" name="orthogonal persistence"> of objects, compilation and administration of program binaries with automatic consistency management of dynamically optimized code, <htmlurl url="http://cliki.tunes.org/User-Interface-Driven" name="user-interface-driven programming"> with structure-driven user-interfacing, explicit manual networking with implicit automatic distribution. See <ref id="S:Features" name="below"> if you like feature lists.
+For instance, we want to replace filesystems with <url url="/cliki.tunes.org/Orthogonal Persistence" name="orthogonal persistence"> of objects, compilation and administration of program binaries with automatic consistency management of dynamically optimized code, <htmlurl url="/cliki.tunes.org/User-Interface-Driven" name="user-interface-driven programming"> with structure-driven user-interfacing, explicit manual networking with implicit automatic distribution. See <ref id="S:Features" name="below"> if you like feature lists.
 <p>
 The common point about these features is that they consist not in something more that the user/programmer can do with some more work (implementing such "do" features is a "simple matter of programming", and requires no a priori system support besides the basic device drivers); they consist in the user/programmer being able <em>not</em> to do, about his not having to care, yet still achieve all that he does care about; they consist in relieving the human from work by letting the machine handle it for him, which is the essence of progress.
 <p>
@@ -251,11 +251,11 @@ these are what the reflective design is all about.
 <sect1>What is Metaprogramming? What is Reflection? Why are they so important?
 <label id="Q:reflection">
 <p>
-<htmlurl url="http://cliki.tunes.org/Metaprogramming" name="Metaprogramming"> is the activity of manipulating programs that in turn manipulate programs. It is the most general technique whereby the programming activity can be automated, enhanced, and made "to go where no programming has gone before" (sic).
+<htmlurl url="/cliki.tunes.org/Metaprogramming" name="Metaprogramming"> is the activity of manipulating programs that in turn manipulate programs. It is the most general technique whereby the programming activity can be automated, enhanced, and made "to go where no programming has gone before" (sic).
 <p>
-<htmlurl url="http://cliki.tunes.org/Reflection" name="Reflection"> is the ability of systems to know enough about themselves so as to dynamically metaprogram their own behavior, so as to adapt themselves to changing circumstances, so as to relieve programmers and administrators from so many tasks that currently need to be done manually.
+<htmlurl url="/cliki.tunes.org/Reflection" name="Reflection"> is the ability of systems to know enough about themselves so as to dynamically metaprogram their own behavior, so as to adapt themselves to changing circumstances, so as to relieve programmers and administrators from so many tasks that currently need to be done manually.
 <p>
-These notions are explained in my article, <url url="http://fare.tunes.org/articles/ll99/index.en.html" name="Metaprogramming and Free Availability of Sources">, that also explains why a reflective system <em>must</em> be Free Software. You may also consult the <url url="http://cliki.tunes.org/Methods of Reflection" name="Reflection"> section of the <htmlurl url="http://cliki.tunes.org/Review" name="TUNES Review subproject">.
+These notions are explained in my article, <url url="http://fare.tunes.org/articles/ll99/index.en.html" name="Metaprogramming and Free Availability of Sources">, that also explains why a reflective system <em>must</em> be Free Software. You may also consult the <url url="/cliki.tunes.org/Methods of Reflection" name="Reflection"> section of the <htmlurl url="/cliki.tunes.org/Review" name="TUNES Review subproject">.
 <p>
 Reflection is important because it is the essential feature
 that allows for dynamic extension of system infrastructure.
@@ -279,13 +279,13 @@ Reflection is a deep technical benefit, but also a deep psycho-social requiremen
 <sect1>Is TUNES a programming language, an operating system, or what?
 <label id="Q:TUNESlangOSwhat">
 <p>
-We feel that the distinction between <htmlurl url="http://cliki.tunes.org/Programming Language" name="programming language"> and <htmlurl url="http://cliki.tunes.org/Operating System" name="operating system"> is most unwelcome, and mostly a lie:
+We feel that the distinction between <htmlurl url="/cliki.tunes.org/Programming Language" name="programming language"> and <htmlurl url="/cliki.tunes.org/Operating System" name="operating system"> is most unwelcome, and mostly a lie:
 <p>
 one never programs in a programming language independently from an operating system, or in a operating system independently from a language (be it universal or limited to end-user interaction).
 <p>
 Language-independence and system-independence are myths: whatever the language, to communicate with other people and programs, it will have to go through the only services provided by the system, with the sole mutual invariants that are expressible in the standard system-interfacing language.
 <p>
-TUNES is a project for an integrated <htmlurl url="http://cliki.tunes.org/Computing System" name="computing system">. We must implement a new language and concept, because we want a system that be more expressive that can be achieved with what exists today. We need implement a new OS infrastructure, because the language must control the whole system so as to be able to reliably enforce its invariants. Moreover, we expect a tight integration of language and OS infrastructure to ultimately yield much enhanced performance, too. Of course, we may achieve a programming language and a low-level OS framework that could be used separately, but we feel that much of the added value of the project resides in the integration of them into a one reflective architecture.
+TUNES is a project for an integrated <htmlurl url="/cliki.tunes.org/Computing System" name="computing system">. We must implement a new language and concept, because we want a system that be more expressive that can be achieved with what exists today. We need implement a new OS infrastructure, because the language must control the whole system so as to be able to reliably enforce its invariants. Moreover, we expect a tight integration of language and OS infrastructure to ultimately yield much enhanced performance, too. Of course, we may achieve a programming language and a low-level OS framework that could be used separately, but we feel that much of the added value of the project resides in the integration of them into a one reflective architecture.
 <p>
 For a rationale behind the TUNES approach, why we feel it is a necessary step in the progress of computing, read the article <url url="http://tunes.org/papers/WhyNewOS/" name="Why a New OS?">.
 </sect1>
@@ -348,7 +348,7 @@ it cannot be merely a ``normal'' GNU/Linux application.
 <sect1>What is the relationship between TUNES and AI?
 <label id="Q:TUNESvsAI">
 <p>
-Sometimes, people wonder how TUNES relate to works in <htmlurl url="http://cliki.tunes.org/Artificial Intelligence" name="Artificial Intelligence">,
+Sometimes, people wonder how TUNES relate to works in <htmlurl url="/cliki.tunes.org/Artificial Intelligence" name="Artificial Intelligence">,
 since TUNES promote having machines develop programs,
 which is a typical "intelligent" human undertaking.
 But there is not much more than that to add about TUNES and AI.
@@ -401,22 +401,22 @@ Note that although design and implementation of a computing system
 	you don't need have all the knowledge before you join:
 you may begin by participating into the
 	<htmlurl name="Review subproject"
-	url="http://cliki.tunes.org/Review">
+	url="/cliki.tunes.org/Review">
 that strives to detect and isolate the best of what Computer Science
 	has to offer on the subject.
 <p>
 You can start by browsing and enhancing the
 	<url name="Tunes CLiki"
-		url="http://cliki.tunes.org/">,
+		url="/cliki.tunes.org/">,
 with the
 	<htmlurl name="Learning Lounge"
-		url="http://cliki.tunes.org/Learning%20Lounge">
+		url="/cliki.tunes.org/Learning%20Lounge">
 being a good place where to learn, and
 where to help other people learn by contributing your feedback.
 <p>
 Other places to learn (not part of our project) include
 	<url name="LAMBDA, the Ultimate weblog"
-		url="http://cliki.tunes.org/LtU">
+		url="/cliki.tunes.org/LtU">
 and <url name="the Open Directory Project"
 		url="http://dmoz.org/">.
 </sect1>
@@ -465,7 +465,7 @@ Now, we're currently trying to startup a company
 that would be a haven for TUNES development.
 If you feel you can help,
 	<url url="mailto:fare@tunes.org"
-	name="contact Faré"> by e-mail.
+	name="contact Farï¿½"> by e-mail.
 We're also intending to setup a not-for-profit organization
 	(foundation or institute) that would foster development
 	of TUNES and reflective free software systems in general;
@@ -477,7 +477,7 @@ We're also intending to setup a not-for-profit organization
 <label id="Q:whereefforts">
 <p>
 As a short answer, you should consult our
-<url url="http://cliki.tunes.org/Activities" name="Activities"> page
+<url url="/cliki.tunes.org/Activities" name="Activities"> page
 for up-to-date information.
 <p>
 On the administrative side,
@@ -496,13 +496,13 @@ the <htmlurl name="web server"
 but we'd like further integrate the web site into an interactive
 database of version structured documents (especially the Review subproject).
 <p>
-As far as theory goes, I (Faré) am working
+As far as theory goes, I (Farï¿½) am working
 	on the theorical foundations of
-<url name="reflection" url="http://cliki.tunes.org/Reflection">.
+<url name="reflection" url="/cliki.tunes.org/Reflection">.
 We're also following progress from people like
 <url name="Brian Rice" url="http://tunes.org/~water/">.
 Otherwise, we're following general progress in CS research through our
-<url name="Review subproject" url="http://cliki.tunes.org/Review">.
+<url name="Review subproject" url="/cliki.tunes.org/Review">.
 <p>
 Implementation of the system goes in two parallel ways:
 <p>
@@ -511,7 +511,7 @@ On the one hand,
 is building a prototype for
 	the <htmlurl name="HLL" url="http://tunes.org/HLL/">,
 and 
-<htmlurl name="Faré" url="http://fare.tunes.org/">
+<htmlurl name="Farï¿½" url="http://fare.tunes.org/">
 ought to be writing an open compiler for a Lisp dialect.
 <p>
 On the other hand
@@ -546,57 +546,57 @@ TUNES is a project
 to replace existing Operating Systems, Languages, and User Interfaces
 by a completely rethought Computing System,
    based on a fully
-     <htmlurl url="http://cliki.tunes.org/Reflection"
+     <htmlurl url="/cliki.tunes.org/Reflection"
 	name="reflective"> architecture.
 <p>
 Proeminent features built around this
-     <htmlurl url="http://cliki.tunes.org/Reflection"
+     <htmlurl url="/cliki.tunes.org/Reflection"
 	name="reflective"> architecture will include
-     <htmlurl url="http://cliki.tunes.org/Unified"
+     <htmlurl url="/cliki.tunes.org/Unified"
 	name="unification">
 	of system abstractions,
-     <htmlurl url="http://cliki.tunes.org/Security"
+     <htmlurl url="/cliki.tunes.org/Security"
 	name="security">
 	based on formal proofs from explicit negociated axioms
 	as controlled by capabilities,
-     <htmlurl url="http://cliki.tunes.org/Higher-Order"
+     <htmlurl url="/cliki.tunes.org/Higher-Order"
 	name="higher-order"> functions,
-     <htmlurl url="http://cliki.tunes.org/Self-extensible"
+     <htmlurl url="/cliki.tunes.org/Self-extensible"
 	name="self-extensible">
 	syntax,
-     <htmlurl url="http://cliki.tunes.org/Grain"
+     <htmlurl url="/cliki.tunes.org/Grain"
 	name="fine-grained"> composition,
-     <htmlurl url="http://cliki.tunes.org/Distributed"
+     <htmlurl url="/cliki.tunes.org/Distributed"
 	name="distributed"> networking,
-     <htmlurl url="http://cliki.tunes.org/Orthogonal Persistence"
+     <htmlurl url="/cliki.tunes.org/Orthogonal Persistence"
 	name="orthogonally persistent"> storage,
-     <htmlurl url="http://cliki.tunes.org/Fault-Tolerant"
+     <htmlurl url="/cliki.tunes.org/Fault-Tolerant"
 	name="fault-tolerant">
 	computation,
-     <htmlurl url="http://cliki.tunes.org/Version-Aware"
+     <htmlurl url="/cliki.tunes.org/Version-Aware"
 	name="version-aware">
 	identification,
-     <htmlurl url="http://cliki.tunes.org/Decentralized"
+     <htmlurl url="/cliki.tunes.org/Decentralized"
 	name="decentralized (no-kernel)"> communication,
-     <htmlurl url="http://cliki.tunes.org/Dynamic"
+     <htmlurl url="/cliki.tunes.org/Dynamic"
 	name="dynamic"> code (re)generation,
-     <htmlurl url="http://cliki.tunes.org/High-Level"
+     <htmlurl url="/cliki.tunes.org/High-Level"
 	name="high-level"> models of encapsulation,
-     <htmlurl url="http://cliki.tunes.org/Hardware-Independent"
+     <htmlurl url="/cliki.tunes.org/Hardware-Independent"
 	name="hardware-independent">
 	exchange of code,
-     <htmlurl url="http://cliki.tunes.org/Migration"
+     <htmlurl url="/cliki.tunes.org/Migration"
 	name="migratable">
-     <htmlurl url="http://cliki.tunes.org/Actor"
+     <htmlurl url="/cliki.tunes.org/Actor"
 	name="actors">,
 	yet (eventually) a
-     <htmlurl url="http://cliki.tunes.org/Performance"
+     <htmlurl url="/cliki.tunes.org/Performance"
 	name="highly-performant">
 	set of dynamic compilation tools
 	(phew).
 <p>
 You may find precise definitions of these features in the TUNES
-     <url url="http://cliki.tunes.org/Glossary"
+     <url url="/cliki.tunes.org/Glossary"
 	name="Glossary">
 (if it lacks a definition you need, please tell, so we should add it;
 contributions welcome).
@@ -604,11 +604,11 @@ contributions welcome).
 
 <sect1>Are these buzzwords or what?
 <p>
-These are NOT <htmlurl url="http://cliki.tunes.org/Buzzword"
+These are NOT <htmlurl url="/cliki.tunes.org/Buzzword"
 	name="buzzwords">.
 These are <em>technical terms</em>,
 and, again, you may find precise definitions in the TUNES
-     <url url="http://cliki.tunes.org/Glossary"
+     <url url="/cliki.tunes.org/Glossary"
 	name="Glossary">.
 <p>
 We do not choose the above terms because they are flashy or anything;
@@ -675,7 +675,7 @@ However, compatibility with a given system being but
 	<ref id="Q:when-functionality"
 		name="when some functionality will be available in TUNES">.
 <p>
-Now, TUNES is so much different from existing <htmlurl url="http://cliki.tunes.org/Low-Level" name="low-level"> systems,
+Now, TUNES is so much different from existing <htmlurl url="/cliki.tunes.org/Low-Level" name="low-level"> systems,
 that the generic answer should be:
 no, TUNES won't be compatible with given system.
 However, TUNES will nonetheless strive
@@ -724,13 +724,13 @@ as a way to explicitly handle persistence and exchange of data
 in explicitly defined low-level formats;
 in contrast, native TUNES code will have
 	<htmlurl
-		url="http://cliki.tunes.org/Orthogonal Persistence"
+		url="/cliki.tunes.org/Orthogonal Persistence"
 		name="orthogonal persistence">
 	or high-level data-structures,
 and hence, no need for such a low-level concept as a "file",
 	no ubiquity of sequences of bytes.
 <p>
-Finally, we do intend to use free <htmlurl url="http://cliki.tunes.org/Unix" name="Unices"> (Linux, *BSD) as both cross-development and underlying run-time environments until TUNES is mature enough to fully replace them, so that we will rather have a TUNES-over-Unix compatibility layer than a Unix-over-TUNES compatibility adapter.
+Finally, we do intend to use free <htmlurl url="/cliki.tunes.org/Unix" name="Unices"> (Linux, *BSD) as both cross-development and underlying run-time environments until TUNES is mature enough to fully replace them, so that we will rather have a TUNES-over-Unix compatibility layer than a Unix-over-TUNES compatibility adapter.
 </sect1>
 
 <sect1>Will TUNES be compatible with Windows?
@@ -776,13 +776,13 @@ We know of no system that has the general feel of what we want TUNES to be.
 However, we can have get a rough idea from former or surviving
 integrated development systems where the source code is dynamically available.
 Such systems include those used on the
-<url url="http://cliki.tunes.org/Lisp%20Machine" name="Lisp Machines"> of old
+<url url="/cliki.tunes.org/Lisp%20Machine" name="Lisp Machines"> of old
 (some of them also Smalltalk machines),
-or <url url="http://cliki.tunes.org/Squeak" name="Squeak">
+or <url url="/cliki.tunes.org/Squeak" name="Squeak">
 (free software implementations of Smalltalk),
-or maybe some <url name="Self" url="http://cliki.tunes.org/Self">
-or <url name="Forth" url="http://cliki.tunes.org/Forth"> or
-<url name="Oberon" url="http://cliki.tunes.org/Oberon"> systems
+or maybe some <url name="Self" url="/cliki.tunes.org/Self">
+or <url name="Forth" url="/cliki.tunes.org/Forth"> or
+<url name="Oberon" url="/cliki.tunes.org/Oberon"> systems
 or <url url="http://www.pliant.cx/" name="Pliant">.
 In these systems, program code is "live";
 incremental modifications take immediate effect.
@@ -813,7 +813,7 @@ transactional object database).
 <p>
 See the above question and answer for a general response.
 More specifically, key features
-in which TUNES will differ from <url url="http://cliki.tunes.org/Lisp%20Machine" name="Lisp Machine"> systems of old are:
+in which TUNES will differ from <url url="/cliki.tunes.org/Lisp%20Machine" name="Lisp Machine"> systems of old are:
 <itemize>
 <item>
 Most importantly, logical virtualization of computation.
@@ -869,13 +869,13 @@ but they do not constitute the heart of the project.
 <p>
 <sect1>Will TUNES be Lisp-based?
 <p>
-You'll have to be more specific about your question. What do you mean "Lisp-based"? If you mean built on top of <url url="http://cliki.tunes.org/Lisp" name="Lisp">, then yes, the one Tril is writing now is on top of Common Lisp. Faré also wants to write TUNES starting with a dialect of Lisp. The finished TUNES won't necessarily be like Lisp, but you will be able to run Lisp, as well as many other languages, in TUNES.
+You'll have to be more specific about your question. What do you mean "Lisp-based"? If you mean built on top of <url url="/cliki.tunes.org/Lisp" name="Lisp">, then yes, the one Tril is writing now is on top of Common Lisp. Farï¿½ also wants to write TUNES starting with a dialect of Lisp. The finished TUNES won't necessarily be like Lisp, but you will be able to run Lisp, as well as many other languages, in TUNES.
 </sect1>
 
 <sect1>What is the initial plan to bootstrap TUNES?
 <p>
 If you're asking about what I should be writing first as part of TUNES,
-then I guess the answer, to me, is some open infrastructure for code transformation based on <url url="http://cliki.tunes.org/Rewrite Logic" name="rewrite logic">. This infrastructure would get bootstrapped from <url url="http://cliki.tunes.org/Common Lisp" name="Common Lisp">: a Lisp processor would transform rewrite rules into some Lisp, and then, this same transformation would be rewritten using rewrite rules; macros can help factorize things a lot to minimize this bootstrap. Once the basic infrastructure is bootstrapped, we'll use the rewrite rules to transform a suitable Lisp dialect into some intermediate representation then into some annotated assembly and finally into binary. The Lisp dialect would have some kind of linear Lisp subdialect which would allow for explicit memory management, which in turn would be used to implement memory management (including GC and persistence) for the rest of the system.
+then I guess the answer, to me, is some open infrastructure for code transformation based on <url url="/cliki.tunes.org/Rewrite Logic" name="rewrite logic">. This infrastructure would get bootstrapped from <url url="/cliki.tunes.org/Common Lisp" name="Common Lisp">: a Lisp processor would transform rewrite rules into some Lisp, and then, this same transformation would be rewritten using rewrite rules; macros can help factorize things a lot to minimize this bootstrap. Once the basic infrastructure is bootstrapped, we'll use the rewrite rules to transform a suitable Lisp dialect into some intermediate representation then into some annotated assembly and finally into binary. The Lisp dialect would have some kind of linear Lisp subdialect which would allow for explicit memory management, which in turn would be used to implement memory management (including GC and persistence) for the rest of the system.
 <p>
 So at the end of the bootstrap phase, we'd mostly have some Lisp dialect with rewrite rules; but more than that, we'd also have a code transformation infrastructure that we can work toward making generic, instead of specializing it toward compiling just one Lisp dialect. Actually, we WOULD be specializing it, but not manually; rather, we would try to systematically develop metaprogramming tools that would automate the specialization out of declarative descriptions and specialization hints.
 
