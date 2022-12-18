@@ -1,0 +1,33 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<HTML><HEAD><TITLE>CTO : Reflective Programming Languages</TITLE
+><LINK REL="alternate" TYPE="application/rss+xml" TITLE="Recent Changes" HREF="http://tunes.org/cliki/recent-changes.rdf.html"><LINK REL="stylesheet" HREF="admin/cliki.css"></HEAD
+><BODY><DIV ID="banner"><A TITLE="CTO" CLASS="logo" HREF="reflective_20programming_20languages.html">CTO</A
+> <SPAN>CLiki for the TUNES project</SPAN
+></DIV
+><DIV ID="navbar"><A CLASS="internal" HREF="index.html">Home</A
+>  <A CLASS="internal" HREF="cliki.html">About CLiki</A
+> <A CLASS="internal" HREF="text_20formatting.html">Text Formatting</A
+> </DIV
+><DIV ID="main"><H1>Reflective Programming Languages</H1
+><dl>
+<dt><a class="internal" href="common_20lisp.html" >Common Lisp</a></dt>
+<dd>The state of the art. It has a standard builtin metaprogramming interface, by having a standard representation of code as data. It has a standard way to absorb new language constructs, with its standard syntactic macro system, and a standard way to extend the language syntax with "reader macros". This language extension is powerful enough to allow the implementation of arbitrary sublanguages, including new object systems, logic programming, etc. However, as far as object systems are concerned, Common Lisp already has the most sophisticated one, that is also customizable through a <a class="internal" href="meta-object_20protocol.html" >Meta-Object Protocol</a>. Very powerful, standardized, high-level, etc.</dd>
+<dt><a class="internal" href="forth.html" >Forth</a></dt>
+<dd>It has always been an open meta-system. The standard allows for arbitrary absorption control with a very open compiler, but does not cover any standard reification. Note, however, that Forth is much too low-level for most purposes.</dd>
+<dt><a class="internal" href="scheme.html" >Scheme</a></dt>
+<dd>Is another language in the Lisp family, with the same standard representation of code as data. Most Scheme implementations have Lisp-like macros (but not "reader macros"), but they are not standardized (only a limited flavor of "hygienic" syntactic macros is standardized). Standard Scheme is not very reflective, except that you may dynamically load files your metaprograms output (but then, the standard gives no guarantees on file access). The interest of Scheme for reflection is that it is a simple, consistent, language core, that can be (and is) used as the basis for reflective systems, by using non-standard extensions.
+<p>An example reflective extension is <a class="internal" href="moostrap.html" >Moostrap</a>.</dd>
+<p><dt><a class="internal" href="smalltalk.html" >Smalltalk</a></dt>
+<dd></dd>
+<dt><a class="internal" href="self.html" >Self</a></dt>
+<dd>Self objects have all of their abstraction-breaking protocols provided by the system in "mirror" objects which <em>reflect</em> on the objects.</dd>
+<dt><a class="internal" href="napier88.html" >Napier88</a></dt>
+<dt><a class="internal" href="agora.html" >Agora</a></dt>
+<dt><a class="internal" href="abcl.html" >ABCL/R</a></dt>
+<dt><a class="internal" href="poplog.html" >Poplog</a></dt>
+<dt><a class="internal" href="aspectj.html" >AspectJ</a></dt>
+<dt><a class="internal" href="crml.html" >CRML</a></dt>
+<dd>A Compile-Time Reflective variant of ML.</dd>
+<dt><a class="internal" href="upper_2fmute.html" >Upper/Mute</a></dt>
+<dt><a class="internal" href="python.html" >Python</a></dt>
+</dl><hr><p><b>This page is linked from: </b> <a class="internal" href="methods_20of_20reflection.html" >Methods of Reflection</a> &nbsp; </DIV></BODY></HTML>

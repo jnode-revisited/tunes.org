@@ -1,0 +1,49 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<HTML><HEAD><TITLE>CTO : CLiki Bugs</TITLE
+><LINK REL="alternate" TYPE="application/rss+xml" TITLE="Recent Changes" HREF="http://tunes.org/cliki/recent-changes.rdf.html"><LINK REL="stylesheet" HREF="admin/cliki.css"></HEAD
+><BODY><DIV ID="banner"><A TITLE="CTO" CLASS="logo" HREF="cliki_20bugs.html">CTO</A
+> <SPAN>CLiki for the TUNES project</SPAN
+></DIV
+><DIV ID="navbar"><A CLASS="internal" HREF="index.html">Home</A
+>  <A CLASS="internal" HREF="cliki.html">About CLiki</A
+> <A CLASS="internal" HREF="text_20formatting.html">Text Formatting</A
+> </DIV
+><DIV ID="main"><H1>CLiki Bugs</H1
+>Describe any issues you have with the CLiki below the line. Try not to duplicate any of the known bugs at <A HREF="http://www.cliki.net/CLiki%20Bugs">Cliki.net's bug-report page</A
+>.
+<p><hr>
+<p>The CTO server is more stable now that it uses an apache <code>reverse-proxy</code> like the maintainer of araneida himself does. Please tell me immediately about any problem you experience.
+<br>-- <a class="internal" href="fare.html" >Fare</a> 2004-05-25
+<p><hr>
+<p>The history mechanism doesnt't show the first version at the bottom of the page (version 0: see for example the node <a class="internal" href="pattern-matching.html" >Pattern-Matching</a>. Anyway, you can access the first version appending a <A HREF="http://cliki.tunes.org/Pattern-Matching?v=0">?v=0</A
+> at the node URI.
+<br>-- <a class="internal" href="mad70.html" >MaD70</a> 2004-10-16
+<p><hr>
+<p>The link to the node <a class="internal" href="word_20processors_3a_20stupid_20and_20inefficient.html" >Word Processors: Stupid and Inefficient</a>, although rendered correctly with escaped characters, when followed results in a 502 Proxy Error.
+<br>-- <a class="internal" href="mad70.html" >MaD70</a> 2004-05-26
+<p>Titles which include '/'s such as <a class="internal" href="cp_2fm.html" >CP/M</a> are 404s.
+<br>-- <a class="internal" href="hcf.html" >hcf</a> 2004-06-08
+<p><b>Solved at last:</b>
+apache mod_proxy's ProxyPass feature was badly broken. See problems and fix in  <A HREF="http://issues.apache.org/bugzilla/show_bug.cgi?id=29554">Apache bug 29554</A
+>...
+-- <a class="internal" href="fare.html" >Faré</a> 2004-06-16
+<p><i>Is this really solved? The <a class="internal" href="cp_2fm.html" >CP/M</a> link still fails, as do <a class="internal" href="pl_2fi.html" >PL/I</a> and <a class="internal" href="mozart_2foz.html" >Mozart/Oz</a></i>
+<p>Well, we had failed to recompile a patched mod_proxy when upgrading apache for security reasons. It's fixed (again) now. -- <a class="internal" href="fare.html" >Faré</a> 2004-09-28
+<p><hr>
+<p><ul>
+<li>There is a spurious <b>ol</b> tag in the generated listing of <a class="internal" href="term.html" >Term</a>s just before Aspect-Oriented Programming entry.
+<br><b>Solved:</b> <a class="internal" href="artificial_20intelligence.html" >Artificial Intelligence</a> term had an <b>ol</b> tag at the beginning.
+<li>The final part of <a class="internal" href="text_20formatting.html" >Text Formatting</a> seems cutted in correspondence of this search:
+<br>/ ("Lisp" :attribute :title :match :substring :case-sensitive nil)
+<br>-- <a class="internal" href="mad70.html" >MaD70</a> 2004-05-31
+<br><b>Solved</b>: in view.lisp 1.59, <code>legacy-search-result</code> was dying on page placeholders with NIL first sentence. Dan upstream has a fix.
+<br>-- <a class="internal" href="fare.html" >Faré</a> 2004-06-01
+</ul>
+<p><hr>
+<p>Sometimes editing a node leaving the Summary box blank does not avoid making another Recent Changes entry. See for example <a class="internal" href="cape.html" >CAPE</a> recently added.
+<br>-- <a class="internal" href="mad70.html" >MaD70</a> 2004-06-11
+<p><b>Solved?</b> There was a thinko in my cliki patch's save-page. Hopefully fixed without introducing a new bug... -- <a class="internal" href="fare.html" >Faré</a> 2004-06-16
+<p><hr>
+<p>The hyperlinked question mark at the end of the sentence: "If you intend to deface this site please at least read here?" on the main index page (close to the bottom) is horribly broken with what appears to be content in the link itself.
+<b>Nevermind...</b> I see that the index page has potentially been defaced. See version 8 for a good one)
+<hr><p><b>This page is linked from: </b> <a class="internal" href="index.html" >index</a> &nbsp; <a class="internal" href="past_20news.html" >Past news</a> &nbsp; <a class="internal" href="sand_20box.html" >Sand Box</a> &nbsp; </DIV></BODY></HTML>

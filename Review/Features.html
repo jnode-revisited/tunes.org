@@ -1,0 +1,97 @@
+<!doctype html public "-//W3C//DTD HTML 4.01 Transitional//EN">
+<HTML>
+  <HEAD>
+    <!--#include virtual="/head.html" -->
+    <title>Features of Tunes</title>
+  </head>
+  <body>
+<H1>Features of TUNES</H1>
+    <!--#include file="header.html" -->
+    <p>Herein, we present examples of conceptual differences which make Tunes a completely different system from existing ones. See also the <a href="http://cliki.tunes.org/Examples">Examples</a> page for concrete interaction examples with the TUNES system.</p>
+
+    <h3>TUNES will be:</h3>
+<h2><a href="http://cliki.tunes.org/Grain">Fine-Grained</a></h2>
+    <ul>
+      <li>Imagine you have a beautiful, perfect, database, but you're using text with a non-standard encoding (specialized ASCII extension, with specialized fonts).
+	<p>On existing systems, you're stuck, because the database will get mixed-up between ASCII control characters and your encoding, and even if your encoding doesn't use these, you won't be able to sort your entries according to the usual order from your encoding. Input and output will be a pain, and mixing ASCII and your encoding in data fields will be impossible.</p>
+	<p>Using TUNES, it's not a whole monolithic database application being provided (sold/given/whatever) to you, but a set generic database object, that manage the database-specific stuff, but are completely parametrizable as for the kind of managed data. Thus, you can manage usual ASCII text as data, but also any kind of raw data with any kind of manipulation properties, any kind of sorting orders on it, etc. Standard multiplexers will allow you to mix different kind of data in one data field, etc.</p></li>
+
+      <li>Imagine that you've just made your own data-acquisition hardware for some specific job you're doing.
+	<p>On existing OSes, you'll have to also rewrite all the software from scratch, or pay very expensively some company to integrate support for your hardware in their software product; in any case it'll cost you lots of time and money, and you'll be stuck to the specific package you choose, unless you're ready to pay again the same large investment all again.</p>
+	<p>In TUNES, you'd just write just a generic driver, that would run on just any software package you'll ever have, because they are generic, and really take as an input any module that provides the good basic operations.</p></li>
+
+      <li>Imagine you really need just a small little feature to be added to some software you have.
+	<p>Existing systems are coarse-grained: you cannot isolate this feature from lots and lots of other features you don't need. Either you choose to write your own software, and need reimplement all the existing features of the software you already have before you can add your own; or you buy some new software, and will have to buy not only just your feature, but many features you don't need, which not only will cost you money, but also occupy memory, thus slow down your computer as well as prevent you from installing other useful features. The whole world is a victim, as this forces people to waste lots of computer hardware to manage lots of useless features, the economical and ecological cost of this being tremendous.</p>
+	<p>By providing fine grain, TUNES will enable people to have just the feature they need, which will greatly reduce the cost of software for the individual as well as the global environment. This would lessen the price of hardware required for some software, of a software package, making software development easier. It would also reduce all these monetary prices as well as provider and consumer human time and pollution.</p></li>
+    </ul>
+    <p>All that is possible because TUNES allow fine-grained modules to be delivered, not huge coarse-grained "applications".</p>
+
+<h2><A HREF="http://cliki.tunes.org/Decentralized">Decentralized</A></h2>
+    <UL>
+      <li>Imagine that you want to access directly some computer capability, because the standard services won't allow you do so.
+	<p>Then, even though what you want is directly accessing the I/O ports, traditional system kernels will add a penalty at each access, by first intercepting each of them. Sometimes, the penalty is so large that you just can't do it; then, you must create a big security hole by modifying the kernel, or allowing direct, uncontrolled access to the I/O ports; in either case, this means no "normal user" can do it.</p>
+	<p>Using TUNES, you can access directly any visible object; either you cannot see the I/O ports you need, or see them wrapped in secure software layers, or you see them directly; every single object can be visible independently from the others. Hence, you may well see, say, the serial I/O port, and use it, without your needing be super user and have access to all other ports, and without a system kernel intercepting all your accesses. You just see it and access it directly. If some access combinations may endanger the system, you can either see the I/O directly wrapped by an adapted combo detector (based on actual dangers, not user-access rights that are independent from the user being able to use the port properly), or statically <EM>prove</EM> that all your accesses will be all right.</p>
+	<p>In either case, your performance is quite better than that of a kernel, and you have a much more secure system, as you're not filtered by a static, unadapted kernel, but by dynamically adapting tools. The system isn't trying to conform reality to arbitrary bureaucratic layering, but adapting security to actual hardware and software requirements.</p>
+      </li>
+    </ul>
+
+<h2><a href="http://cliki.tunes.org/distributed">Distributed</a></h2>
+    <ul>
+      <li>Computer power is expensive. In today's computer networks, it is wasted: most of the time, most computers stay idle. Though using the full power of the network is theoretically possible today, existing programming languages and tools are designed to run on a single computer, the one on which the user is logged. To take advantage of the computer horsepower on the network, a user has to explicitly write his program for that, for which he can find little to no help. Moreover for security reasons, he most idle computer won't accept to work for him, and he will have to manually manage all the possible failures of the network.</p>
+	<p>With TUNES, computer power could be fully used: the system is built to automatically distribute code over the network, in a way that conserves security for both the one who furnishes the power and the one who uses it. Users don't <EM>have to</EM> rewrite everything from scratch, though they still <EM>can</EM> modify the details of everything to suit their needs. Thus, computer power is must less wasted, which leads to cheaper computers for higher effective horsepower.</p></li>
+      <li>Data integrity is important. In existing systems, you have only stubborn slow unadaptable centralized architecture.</p>
+	<p>With TUNES, you could distribute copies of data accross the network so access it quick, yet have the same security, and be much more maintainable (see notably the <a href="http://cliki.tunes.org/Amoeba">Amoeba</a> stuff).</p></li>
+      <li>In existing systems, you must manually provide all the modules a program you install needs. Being painful, unadaptable, it leads to huge systems with lots of redundant modules, everyone being painful to install and maintain, and slow module upgrades. Moreover, you have absolutely no <a href="http://cliki.tunes.org/Security">security</a> on the modules you use.
+	<p>In TUNES, the system may automatically fetch the modules you need, and ensure that no one may cause harm through proof systems and trust systems, while keeping saving all the data the human user manually approved of.</p></li>
+      <li>In existing systems, you must manually give all references to the computer so that it does specific actions on a specific computer. It leads to awkward system interaction, and waste of both human and computer resources, as human must give trivial details, and do not have time to manually schedule computer activity, nor proficiency to do it efficiently.
+	<p>With TUNES, the system may automatically dispatch the information flow among the computers, according to general human defined constraints so as <span class="comment">(Finish this!)</span></p></li>
+      <li>In existing systems, humans must manage completely manually software installation on their computer: updating applications from the outside world, merging software from various sources, all that is done by the human user, clumsily and at his own risk, whereas it could be done by the machine. Users must also explicitly manage which software to transfer over floppies, disks, tapes, and other slow communication media. Because applications are coarse grained and there is no automatic mechanism that allows to trust required external packages to be present, communication and storage media are wasted, and transfer speed is slow. Installation software exists, but cease to be of any utility at the first problem, and then everything must be reinstalled from scratch, after the human being left alone to solve the problem.
+	<p>With TUNES, the entire world is considered as virtually being a distributed system, with links being variously interesting, fast and trustworthy. New software is automatically taken into account; the system automatically manages transfer through slow human-aided media (floppies and such), so that it be as fast as possible by transfering just the needed data, but transfering it reliably; transfers are much faster because fine-grain and automatic module management greatly reduces the amount of information to be passed; merging is done non-destructively, and while the human is relieved from stubborn tasks, everything stays under his full control.</p>
+      </li>
+    </UL>
+
+<h2><a href="http://cliki.tunes.org/Orthogonal Persistence">Persistent</a></h2>
+    <UL>
+      <li>In existing systems, you have to explicitly save. How many times have work been lost because it wasn't automatically saved, whereas the computer was shutdown, or crashed, or there was a power shortage?
+	<p>In TUNES, everything is automatically saved.</p></li>
+
+      <li>In existing systems, all changes are irreversible, so you always fear: that is, the latent context is that of doubt, which clouds the user's judgement and impedes smooth workflow.
+	<p>TUNES will save a log of changes at a fine grain, so they be reversible. Saving will be adapted to the objects, not added on far away layers of the system, so they will reflect actual changes more efficiently, with much less memory consumption.</p></li>
+    </UL>
+
+<h2><a href="http://cliki.tunes.org/unified">Unified</a></h2>
+    <UL>
+      <li>In existing systems, you must learn tons of different specific completely different languages, each having its powers and its flaws, and not being able to communicate easily with other languages. When something lacks in existing languages, there is no way it could be dynamically amended or extended in any efficient way.
+	<p>With TUNES, only one language system is enough, which may be dynamically and seamlessly adapted to any existing syntax or semantics. Mixing programming styles becomes a trifle, and the system being one, efficiency is made possible by the absence of slow interfaces between the various sublanguages.</p></li>
+      <li>In existing systems, objects are defined according to their syntax, their external appearance. Having separately developped objects interact thus becomes a challenge, while storing and loading objects is expensive.
+	<p>With TUNES, objects are defined according to their semantics, to what they actually mean, to their meaning, the way they interact with other objects. Thus having separately developped objects interact is easy, and storing or retrieving objects is cheap.</p></li>
+    </UL>
+
+<h2><a href="http://cliki.tunes.org/Security">Secure</a></h2>
+    <UL>
+      <li>In existing systems, you are forced to trust blindly or not use. Users trust software only according to their origin, and big software firms dictate their whim the non-technicians. Competition is flawed, being based on subjective arguments and lies; natural selection works very badly.
+	<p>With TUNES, software may come with proofs of their correctness, and feedback from users about the software and competing products is freely available, not hidden from the customer. Competition will be fair, being based on objective information; natural selection will work very well.</p></li>
+    </UL>
+
+<h2><a href="http://cliki.tunes.org/resilient">Resilient</a> to network failures</h2>
+    <ul>
+      <li>In existing systems, you're never sure what happens when a hardware (particularly power or network) failure occurs, but you're sure than it will eventually occur, and crash your system with all its data.
+	<p>With TUNES, all objects are failure-aware, and the user may define failure-recovery policies; that is, people can be confident that even after a hardware failure, the software will be able to start again at the point just before the hardware failed. Users and programmers needn't unnecessarily worry, and lose their time and money at preventing an eventual crash and recovering data.</p></li>
+    </ul>
+
+<h2>Conclusion</h2>
+
+<p>We believe that all these features are linked. <span class="comment">(This has needed updating and expansion for some time.)</span></p>
+
+<h2>To Do:</h2>
+<ul>
+<li>Add lots and lots of examples.</li>
+<li>See the <a href="http://cliki.tunes.org/Examples">other examples pages</a>.</li>
+<li>Find a suitable format for OS comparisons.</li>
+<li>Point from example points to theoretical points, and conversely.</li>
+<li>See the <a href="../papers/WhyNewOS/index.html">Why a New OS</a> article.</li>
+<li>Unity.</li>
+</ul>
+    <!--#include virtual="/footer.html" -->
+  </body>
+</html>

@@ -1,0 +1,961 @@
+<!doctype linuxdoc system>
+<!--
+Compile with the sgml-tools:
+sgml2html -c latin Tunes-FAQ.sgml
+-->
+<article>
+
+<title>Tunes FAQ
+</title>
+<author>François-René Rideau <tt>&lt;fare@tunes.org&gt;</tt>
+	and David Manifold <tt>&lt;dem@tunes.org&gt;</tt>
+</author>
+<date>Tunes-FAQ.sgml,v 1.34 2003/06/09 02:22:30 tril Exp
+</date>
+
+<abstract>
+This is the Tunes FAQ
+
+This document gives answers to frequent questions
+about the TUNES Project for a Free Reflective Computing System.
+
+<em>keywords</em>:
+	TUNES, reflective, reflection, computing system,
+	operating system, free software
+
+</abstract>
+
+<toc>
+
+
+<sect>Introduction
+<p>
+
+<sect1>Legal Blurb
+<p>
+Copyright &copy; 1998-2002 by François-René Rideau and David Manifold.
+
+This document is free software;
+you can redistribute it and/or modify it
+under the terms of the
+<htmlurl url="legalese/bugroff.html"
+	name="bugroff license">
+as originally published by
+<htmlurl url="http://www.geocities.com/SoHo/Cafe/5947/"
+	name="John Carter">.
+
+Source code is available at
+	<url url="http://tunes.org/Tunes-FAQ.sgml">.
+</sect1>
+
+<sect1>Important Note
+<p>
+This is an interactively evolving document:
+you are especially invited
+to ask questions,
+to answer to questions,
+to correct given answers,
+to add new FAQ answers,
+to give pointers to other software,
+to point the current maintainer to bugs or deficiencies in the pages.
+If you're motivated, you could even
+<em>take over the maintenance of this FAQ</em>.
+In one word, contribute!
+<p>
+To contribute, please ask questions or give answers on the
+	<tt><htmlurl url="mailto:tunes@tunes.org" name="tunes@tunes.org"></tt>
+mailing-list, or even better, use our
+	<htmlurl url="http://tunes.org/collaboration.html#CVS"
+		name="CVS"> system to submit actual modifications.
+</sect1>
+
+
+<sect1>Foreword
+<p>
+This document will be filled with answers when questions come.
+If it doesn't answer your question, then ask.
+If its answers are confusing then ask again.
+</sect1>
+
+
+<sect1>Other documentation for the TUNES Project
+<p>
+All the TUNES documentation can be accessed on our web server and its mirrors:
+<url url="http://tunes.org/"> (North America),
+<url url="http://uk.tunes.org/"> (United Kingdom)
+<p>
+Of particular interest is our interactive
+	<url name="CLiki"
+		url="http://cliki.tunes.org/">
+and its
+	<htmlurl name="Learning Lounge"
+		url="http://cliki.tunes.org/Learning%20Lounge">
+</sect1>
+
+
+<sect1>FAQ History
+<p>
+<itemize>
+<item>Tunes-FAQ.sgml,v
+<item>Revision 1.34  2003/06/09 02:22:30  tril
+<item>removed French mirror, it's been down for a long time
+<item>
+<item>Revision 1.33  2003/02/25 18:17:33  fare
+<item>linked to Activities page
+<item>remove problem with url in a section title.
+<item>
+<item>Revision 1.32  2003/02/05 09:31:19  water
+<item>Fixed some links and adjusted the paragraphs to be smaller within some
+<item>explanations of Tunes plans.
+<item>
+<item>Revision 1.31  2003/02/05 05:15:54  water
+<item>Re-committed the FAQ changes due to a CVS interaction issue.
+<item>
+<item>Revision 1.30  2003/01/27 08:58:49  water
+<item>Directed every term and Glossary reference to the right Cliki node.
+<item>
+<item>Revision 1.29  2003/01/18 02:51:16  fare
+<item>Pointing to our new CLiki instead of Wiki
+<item>
+<item>Revision 1.28  2002/08/13 00:30:55  tril
+<item>Removed all the members from members.html
+<item>Put link to new dynamic members/ directory from in members.html
+<item>
+<item>Changed references to members.html to members/
+<item>
+<item>Added note about mirroring on the members/index.php
+<item>
+<item>Revision 1.27  2002/06/07 14:10:03  tril
+<item>updated retro link
+<item>
+<item>Revision 1.26  2002/05/31 18:40:26  fare
+<item>Typo fix, small clarifications.
+<item>Using additional glossary entries.
+<item>
+<item>Revision 1.25  2002/05/03 07:35:36  fare
+<item>Places to learn. Pointers to other systems.
+<item>
+<item>Revision 1.24  2002/04/19 23:56:31  fare
+<item>Split the question about Tunes implementation strategy.
+<item>typo fixes ; s/LISP/Lisp/ ; insist on Wiki in intro.
+<item>moved around the incorporation question.
+<item>
+<item>Revision 1.23  2002/04/19 09:02:18  fare
+<item>Put the "how to help" question on top of its section,
+<item>and added the Wiki and TLL in it.
+<item>Cleanup and updates.
+<item>
+<item>Revision 1.22  2001/07/12 16:36:37  fare
+<item>
+<item>Revision 1.21  2001/05/06 01:30:41  fare
+<item>License change to bugroff.
+<item>Lots of minor changes.
+<item>Section "TUNES Trivia" created with questions about name and logo moved to it.
+<item>Moved answer about importance of Reflection together with answer on its nature.
+<item>Added Q&amp;A about similarity with other systems and LispM's in particular.
+<item>Added question about short- mid- and long- term implementation plans.
+<item>
+<item>Revision 1.20  2000/11/11 12:15:32  fare
+<item>
+<item>Revision 1.19  2000/08/04 08:29:54  fare
+<item>Reordered some questions.
+<item>
+<item>Revision 1.18  2000/07/28 00:23:37  fare
+<item>More on reflection.
+<item>
+<item>Revision 1.17  2000/07/12 15:21:00  fare
+<item>Starting up a company?
+<item>
+<item>Revision 1.16  2000/05/19 10:53:58  fare
+<item>syntax fix
+<item>
+<item>Revision 1.15  2000/05/18 01:18:29  fare
+<item>Tunes cannot be a normal Linux application.
+<item>
+<item>Revision 1.14  2000/04/23 16:34:24  fare
+<item>Fix URLs
+<item>
+<item>Revision 1.13  2000/03/18 00:23:23  fare
+<item>bzip2 moved; refined FAQ about the link between features and reflection.
+<item>
+<item>Revision 1.12  2000/02/01 16:14:20  fare
+<item>FAQ: Is the TUNES Project incorporated?
+<item>
+<item>Revision 1.11  2000/01/23 22:28:45  fare
+<item>New FAQ about Tunes logo.
+<item>Modified URLs.
+<item>
+<item>Revision 1.10  1999/08/20 18:16:31  fare
+<item>
+<item>Revision 1.9  1999/06/30 21:32:20  fare
+<item>Split questions on TUNES name vs TUNES nature,
+<item>and on joining TUNES vs project organization.
+<item>Added a question on the Importance of Reflection.
+<item>Did utter the name of our GNU/Linux emulator.
+<item>
+<item>Revision 1.8  1999/06/07 19:29:02  dem
+<item>Added the question "Will TUNES be Lisp-based?" in a new section "TUNES
+<item>Implementation."  Other FAQs for this section should be easy to find.
+<item>
+<item>Revision 1.7  1999/06/06 21:08:50  fare
+<item>TUNES is more than either a language or an OS.
+<item>Added a part on TUNES Status.
+<item>
+<item>Revision 1.6  1999/05/28 12:06:18  fare
+<item>
+<item>Revision 1.5  1999/05/28 11:57:56  fare
+<item>The TUNES Challenge.
+<item>
+<item>Revision 1.4  1999/05/13 13:30:52  fare
+<item>found a name for the (distant?) future GNU/Linux emulator under TUNES
+<item>
+<item>Revision 1.3  1998/12/30 17:10:21  fare
+<item>
+<item>Revision 1.2  1998/12/02 01:40:12  fare
+<item>Features vs buzzwords.
+<item>
+<item>Revision 1.1.1.1  1998/11/26 04:10:47  tunes
+<item>Imported reshaped, post-0.0.0.36 sources
+<item>
+</itemize>
+</sect1>
+</sect>
+
+
+<sect>What is TUNES?
+
+<sect1>What is the TUNES Project?
+<label id="Q:nature">
+<p>
+The TUNES Project is a project to develop
+a <em>free software computing system based on a reflective design</em>,
+which system as a whole is also to be named
+"<ref id="Q:name" name="TUNES">".
+<p>
+We want to get rid of the obsolete or plain misdesigned idiosyncrasies
+of current computing systems that standardize things from the low-level on,
+as the legacy of systems designed first for resource-poor computers,
+then under the constraints of proprietary software.
+<p>
+For instance, we want to replace filesystems with <url url="http://cliki.tunes.org/Orthogonal Persistence" name="orthogonal persistence"> of objects, compilation and administration of program binaries with automatic consistency management of dynamically optimized code, <htmlurl url="http://cliki.tunes.org/User-Interface-Driven" name="user-interface-driven programming"> with structure-driven user-interfacing, explicit manual networking with implicit automatic distribution. See <ref id="S:Features" name="below"> if you like feature lists.
+<p>
+The common point about these features is that they consist not in something more that the user/programmer can do with some more work (implementing such "do" features is a "simple matter of programming", and requires no a priori system support besides the basic device drivers); they consist in the user/programmer being able <em>not</em> to do, about his not having to care, yet still achieve all that he does care about; they consist in relieving the human from work by letting the machine handle it for him, which is the essence of progress.
+<p>
+The ability to let the machine automatically do things that could
+previously be done only by manual interaction (which include typing programs),
+the ability to specify what one cares about and what doesn't care about
+and trusts the computer to handle all by itself,
+these are what the reflective design is all about.
+</sect1>
+
+<sect1>What is Metaprogramming? What is Reflection? Why are they so important?
+<label id="Q:reflection">
+<p>
+<htmlurl url="http://cliki.tunes.org/Metaprogramming" name="Metaprogramming"> is the activity of manipulating programs that in turn manipulate programs. It is the most general technique whereby the programming activity can be automated, enhanced, and made "to go where no programming has gone before" (sic).
+<p>
+<htmlurl url="http://cliki.tunes.org/Reflection" name="Reflection"> is the ability of systems to know enough about themselves so as to dynamically metaprogram their own behavior, so as to adapt themselves to changing circumstances, so as to relieve programmers and administrators from so many tasks that currently need to be done manually.
+<p>
+These notions are explained in my article, <url url="http://fare.tunes.org/articles/ll99/index.en.html" name="Metaprogramming and Free Availability of Sources">, that also explains why a reflective system <em>must</em> be Free Software. You may also consult the <url url="http://cliki.tunes.org/Methods of Reflection" name="Reflection"> section of the <htmlurl url="http://cliki.tunes.org/Review" name="TUNES Review subproject">.
+<p>
+Reflection is important because it is the essential feature
+that allows for dynamic extension of system infrastructure.
+Without Reflection, you have to recompile a new system and reboot
+everytime you have to change your infrastructure,
+you must manually convert data when you extend the infrastructure,
+you cannot mix and match programs developed using different infrastructures,
+you cannot communicate and collaborate with people with different background.
+At the technical level, all these mean interruption of service,
+unreliability of service, denial of service,
+and unawareness of progress;
+but at the psycho-social level, lack of reflection also means
+that people will have to make irreversible static infrastructural choices
+	and close their mind to infrastructural change,
+and will not communicate with people
+	having made different infrastructural choices.
+<p>
+Reflection is a deep technical benefit, but also a deep psycho-social requirement, that allows individual progress despite historical choices by evolution of the conceptual infrastructure, and community progress despite variety of individual and unshared backgrounds by unification of infrastructures.
+</sect1>
+
+<sect1>Is TUNES a programming language, an operating system, or what?
+<label id="Q:TUNESlangOSwhat">
+<p>
+We feel that the distinction between <htmlurl url="http://cliki.tunes.org/Programming Language" name="programming language"> and <htmlurl url="http://cliki.tunes.org/Operating System" name="operating system"> is most unwelcome, and mostly a lie:
+<p>
+one never programs in a programming language independently from an operating system, or in a operating system independently from a language (be it universal or limited to end-user interaction).
+<p>
+Language-independence and system-independence are myths: whatever the language, to communicate with other people and programs, it will have to go through the only services provided by the system, with the sole mutual invariants that are expressible in the standard system-interfacing language.
+<p>
+TUNES is a project for an integrated <htmlurl url="http://cliki.tunes.org/Computing System" name="computing system">. We must implement a new language and concept, because we want a system that be more expressive that can be achieved with what exists today. We need implement a new OS infrastructure, because the language must control the whole system so as to be able to reliably enforce its invariants. Moreover, we expect a tight integration of language and OS infrastructure to ultimately yield much enhanced performance, too. Of course, we may achieve a programming language and a low-level OS framework that could be used separately, but we feel that much of the added value of the project resides in the integration of them into a one reflective architecture.
+<p>
+For a rationale behind the TUNES approach, why we feel it is a necessary step in the progress of computing, read the article <url url="http://tunes.org/papers/WhyNewOS/" name="Why a New OS?">.
+</sect1>
+
+<sect1>What is the Challenge of the TUNES Project?
+<label id="Q:challengeTUNES">
+<p>
+The <ref id="S:Functionality"
+	name="functionality that we want TUNES to provide">
+	could be considered a challenge in itself.
+However, every single feature that we propose
+	has been successfully implemented somewhere by somebody,
+	although in complete separation from other features.
+So the real challenge about TUNES
+	is not to implement difficult or impossible features;
+	it is to build a system
+	that can consistently coordinate
+	separately developed features
+	that each tackle very different aspects of computing
+		with respect to the other features.
+And this is precisely what
+	a High-Level Language capable of both
+		logical reasoning (including quotients) and
+		computational reflection
+	is all about:
+	being able to specify, implement, and verify
+	arbitrarily complex a posteriori relationships
+	between separate software components.
+The TUNES challenge is thus in achieving the core reflective system
+	above which currently impossible (because over-complex)
+	combinations of features can be built.
+Because reflection hasn't been satisfyingly formalized in the past,
+	our challenge includes academic research
+	on the theoretical foundations of reflection
+	as well as an implemention effort towards a full-featured system.
+</sect1>
+
+<sect1>Couldn't TUNES be just a normal application running atop Linux or whatever?
+<label id="Q:RunningAsApplication">
+<p>
+Yes and no, depending on what is implied by ``normal''.
+<p>
+If you mean that TUNES be <em>implemented</em> as a user-level process that uses GNU/Linux (or whatever existing OS you prefer) for its I/O, taking over some resources (disk space and CPU) that it manage on its own, then yes, this is conceivable, and this is what the <htmlurl url="http://tunes.org/LLL/OTOP/" name="LLL/OTOP subproject"> is all about.
+Now, if you mean that TUNES be <em>expressed</em> as a user-level process in a way that other programs could benefit from the features of TUNES through normal Linux means, then no, this isn't possible.
+<p>
+Even if implemented on top of GNU/Linux,
+the functionality that TUNES provides
+can only be available to applications written in TUNES and for TUNES,
+and only if no other Linux process tampers with TUNES data
+without going through a normal TUNES request.
+These restrictions greatly bound both the applicability and the reliability
+of such TUNES implementation.
+This is why TUNES can unleash its full potential
+only by taking over the whole machine (or a private part of it)
+either as a well isolated set of daemons and file hierarchies,
+or as a standalone kernel;
+it cannot be merely a ``normal'' GNU/Linux application.
+</sect1>
+
+<sect1>What is the relationship between TUNES and AI?
+<label id="Q:TUNESvsAI">
+<p>
+Sometimes, people wonder how TUNES relate to works in <htmlurl url="http://cliki.tunes.org/Artificial Intelligence" name="Artificial Intelligence">,
+since TUNES promote having machines develop programs,
+which is a typical "intelligent" human undertaking.
+But there is not much more than that to add about TUNES and AI.
+TUNES does not pretend or strive to be AI technology,
+and does not depend on the existence of such technology.
+We do claim that we will automate some of the programming work
+currently done by humans, but precisely in as much as this work we automate
+isn't as intelligent as is too often presumed to be;
+of course, some AI researchers will say, the field "AI" is precisely about
+pushing back the limits of what can be automated and no more considered
+"intelligent"; however such is actually the goal of any and all technology,
+so we are not specifically AI-like in this respect.
+<p>
+Actually, if TUNES has any specific tie to AI in any respect,
+as compared to technologies of the same kind,
+this tie is our enabling many previously impossible new developments,
+including "AI" kinds of developments, but far from exclusively so,
+thanks to our reflective infrastructure.
+All in all, TUNES is upstream to AI developments;
+we <em>will</em> use expert system technology,
+declarative programming style, etc,
+but we do not consider that AI or AI research in itself,
+but rather as reuse of useful paradigms previously developed by AI researchers.
+Now, we're also convinced that a system such as TUNES
+will be a great tool for AI researchers.
+If AI is possible, we hope that TUNES will help toward reaching it;
+If it isn't, well, we hope that TUNES will help
+make the most of what is possible.
+</sect1>
+</sect>
+
+
+<sect>TUNES Project Status
+<p>
+
+<sect1>How can I join, help or learn?
+<label id="Q:joinhelp">
+<p>
+See the
+<htmlurl name="collaboration"
+	url="http://tunes.org/collaboration.html">
+page on our
+	<url name="web site" url="http://tunes.org/">.
+If you're interested, you may become a
+<htmlurl name="member"
+	url="http://tunes.org/members/">.
+<p>
+Note that although design and implementation of a computing system
+	is a complex task,
+	you don't need have all the knowledge before you join:
+you may begin by participating into the
+	<htmlurl name="Review subproject"
+	url="http://cliki.tunes.org/Review">
+that strives to detect and isolate the best of what Computer Science
+	has to offer on the subject.
+<p>
+You can start by browsing and enhancing the
+	<url name="Tunes CLiki"
+		url="http://cliki.tunes.org/">,
+with the
+	<htmlurl name="Learning Lounge"
+		url="http://cliki.tunes.org/Learning%20Lounge">
+being a good place where to learn, and
+where to help other people learn by contributing your feedback.
+<p>
+Other places to learn (not part of our project) include
+	<url name="LAMBDA, the Ultimate weblog"
+		url="http://cliki.tunes.org/LtU">
+and <url name="the Open Directory Project"
+		url="http://dmoz.org/">.
+</sect1>
+
+<sect1>How are TUNES developers organized?
+<label id="Q:joinhelp">
+<p>
+We don't currently have anything like management,
+	or a development process, or anything.
+Everyone is basically free to code what one wants,
+	with the basic constraints that
+<itemize>
+<item>everything is public for peer review
+	(you get to hear the complaints of everyone else)
+<item>there be continuity of service
+	(you mustn't remove a feature
+	unless there is <em>already</em> a fully working replacement).
+</itemize>
+<p>
+We've succeeded to avoid waste of time on internal disagreements,
+	thanks to a
+	<url name="charter"
+	url="http://tunes.org/legalese/Charter.html">
+	that defines the mutual relations between members.
+The basic rule is that in case of a disagreement,
+	the one who writes the code ultimately decides
+	(if you want things your way, and the coder disagrees,
+	just write your own version).
+The result is that people who still have strong disagreements just
+	leave the project as freely as they joined,
+	possibly splitting a new project out of the same free software base.
+Since everything published by the project is freely available,
+	no one loses anything at joining and leaving.
+</sect1>
+
+<sect1>Is the TUNES Project incorporated?
+<label id="Q:incorporation">
+<p>
+No, we're not incorporated in any country.
+We are just an informal free association of persons over the Internet.
+We do not have any official existence, as recognized by any government.
+On the other hand, we do not officially recognize any government, either,
+so we're mostly even with them.
+<p>
+Now, we're currently trying to startup a company
+that would be a haven for TUNES development.
+If you feel you can help,
+	<url url="mailto:fare@tunes.org"
+	name="contact Faré"> by e-mail.
+We're also intending to setup a not-for-profit organization
+	(foundation or institute) that would foster development
+	of TUNES and reflective free software systems in general;
+	<url url="mailto:dem@tunes.org"
+	name="contact Tril"> by e-mail if you want to help.
+</sect1>
+
+<sect1>Where are efforts currently being spent?
+<label id="Q:whereefforts">
+<p>
+As a short answer, you should consult our
+<url url="http://cliki.tunes.org/Activities" name="Activities"> page
+for up-to-date information.
+<p>
+On the administrative side,
+we're always looking for people and tools
+who can help us
+<htmlurl name="collaborate"
+	url="http://tunes.org/collaboration.html">
+better and be more productive.
+The <htmlurl name="mailing-list"
+	url="http://tunes.org/collaboration.html#Mail">
+and <htmlurl name="CVS tree"
+	url="http://tunes.org/collaboration.html#CVS">
+are well-integrated into
+the <htmlurl name="web server"
+	url="http://tunes.org/">,
+but we'd like further integrate the web site into an interactive
+database of version structured documents (especially the Review subproject).
+<p>
+As far as theory goes, I (Faré) am working
+	on the theorical foundations of
+<url name="reflection" url="http://cliki.tunes.org/Reflection">.
+We're also following progress from people like
+<url name="Brian Rice" url="http://tunes.org/~water/">.
+Otherwise, we're following general progress in CS research through our
+<url name="Review subproject" url="http://cliki.tunes.org/Review">.
+<p>
+Implementation of the system goes in two parallel ways:
+<p>
+On the one hand,
+<htmlurl name="Tril" url="http://tunes.org/~dem/">
+is building a prototype for
+	the <htmlurl name="HLL" url="http://tunes.org/HLL/">,
+and 
+<htmlurl name="Faré" url="http://fare.tunes.org/">
+ought to be writing an open compiler for a Lisp dialect.
+<p>
+On the other hand
+<htmlurl name="tcn" url="http://tunes.org/~tcn/">
+is implementing in i386 assembly and FORTH
+<htmlurl name="retro" url="http://retro.tunes.org/">,
+a first sketch of the low-level bricks needed for an OS.
+</sect1>
+
+<sect1>When will TUNES be ready?
+<label id="Q:whenTUNES">
+<p>
+We don't have a well-defined language specification, even less a compiler,
+	so <em>Don't hold your breath(TM)</em>.
+<p>
+Still then, we hope all the good ideas that we have accumulated
+are already an interesting reading
+	to those who want to implement a new system.
+And of course, feel free to help TUNES become a reality!
+</sect1>
+
+</sect>
+
+<sect>TUNES Functionality
+<label id="S:Functionality">
+<p>
+<sect1>What are the main features of TUNES?
+<label id="S:Features">
+<p>
+   To sum up the main features in technical terms,
+TUNES is a project
+to replace existing Operating Systems, Languages, and User Interfaces
+by a completely rethought Computing System,
+   based on a fully
+     <htmlurl url="http://cliki.tunes.org/Reflection"
+	name="reflective"> architecture.
+<p>
+Proeminent features built around this
+     <htmlurl url="http://cliki.tunes.org/Reflection"
+	name="reflective"> architecture will include
+     <htmlurl url="http://cliki.tunes.org/Unified"
+	name="unification">
+	of system abstractions,
+     <htmlurl url="http://cliki.tunes.org/Security"
+	name="security">
+	based on formal proofs from explicit negociated axioms
+	as controlled by capabilities,
+     <htmlurl url="http://cliki.tunes.org/Higher-Order"
+	name="higher-order"> functions,
+     <htmlurl url="http://cliki.tunes.org/Self-extensible"
+	name="self-extensible">
+	syntax,
+     <htmlurl url="http://cliki.tunes.org/Grain"
+	name="fine-grained"> composition,
+     <htmlurl url="http://cliki.tunes.org/Distributed"
+	name="distributed"> networking,
+     <htmlurl url="http://cliki.tunes.org/Orthogonal Persistence"
+	name="orthogonally persistent"> storage,
+     <htmlurl url="http://cliki.tunes.org/Fault-Tolerant"
+	name="fault-tolerant">
+	computation,
+     <htmlurl url="http://cliki.tunes.org/Version-Aware"
+	name="version-aware">
+	identification,
+     <htmlurl url="http://cliki.tunes.org/Decentralized"
+	name="decentralized (no-kernel)"> communication,
+     <htmlurl url="http://cliki.tunes.org/Dynamic"
+	name="dynamic"> code (re)generation,
+     <htmlurl url="http://cliki.tunes.org/High-Level"
+	name="high-level"> models of encapsulation,
+     <htmlurl url="http://cliki.tunes.org/Hardware-Independent"
+	name="hardware-independent">
+	exchange of code,
+     <htmlurl url="http://cliki.tunes.org/Migration"
+	name="migratable">
+     <htmlurl url="http://cliki.tunes.org/Actor"
+	name="actors">,
+	yet (eventually) a
+     <htmlurl url="http://cliki.tunes.org/Performance"
+	name="highly-performant">
+	set of dynamic compilation tools
+	(phew).
+<p>
+You may find precise definitions of these features in the TUNES
+     <url url="http://cliki.tunes.org/Glossary"
+	name="Glossary">
+(if it lacks a definition you need, please tell, so we should add it;
+contributions welcome).
+</sect1>
+
+<sect1>Are these buzzwords or what?
+<p>
+These are NOT <htmlurl url="http://cliki.tunes.org/Buzzword"
+	name="buzzwords">.
+These are <em>technical terms</em>,
+and, again, you may find precise definitions in the TUNES
+     <url url="http://cliki.tunes.org/Glossary"
+	name="Glossary">.
+<p>
+We do not choose the above terms because they are flashy or anything;
+at the time this description was written down,
+none of them had any particular hype-value.
+We chose these terms because they describe in concise ways
+	the features we want for TUNES;
+you sure wouldn't like them to be replaced
+	by fully expanded definitions in layman terms!
+<p>
+If you're not convinced, you may compare to the pitiful
+list of real buzzwords below, that could sadly be applied
+to many an existing proprietary commercial operating system:
+<p>
+"A proven 32-bit cutting-edge state-of-the-art industrial-strength
+Y2K-compliant zero-administration plug-and-play industry-standard
+Java-enabled internet-ready multimedia professional personal-computer
+Operating System that is even newer and faster yet compatible,
+with a user-friendly object-oriented 3D graphical user interface,
+amazing inter-application communication and plug-in capability,
+an enhanced filesystem, full integration into Enterprise networks,
+an exclusive way to deploy distributed components,
+seamless network sharing of printers and files." (yuck)
+</sect1>
+
+<sect1>When will TUNES have functionality <em>&lt;FOO&gt;</em>?
+<label id="Q:when-functionality">
+<p>
+The TUNES project being in very early development state,
+it would be ridiculous to give a time-scale for the availability
+of some functionality or another.
+<p>
+However, TUNES being a
+	<htmlurl
+		url="http://www.gnu.org/philosophy/"
+		name="Free Software">
+	(aka <htmlurl
+		url="http://www.opensource.org/"
+		name="Open Source(TM)">)
+	project,
+people who feel the need for some functionality whatsoever
+are free to go ahead and write a TUNES module implementing this functionality,
+or otherwise wrap an existing implementation for use inside TUNES.
+</sect1>
+</sect>
+
+<sect>TUNES Compatibility and Similarity
+<p>
+<sect1>Will TUNES be compatible with system <em>&lt;BAR&gt;</em>?
+<p>
+This is a generic answer as of compatibility of TUNES
+with existing systems and standards in general.
+<p>
+We are committed to embracing established standards when they exist.
+When we deem these standards unfit,
+	which will no doubt often be the case,
+we will strive to provide a replacement,
+	as well as an upgrade path,
+	through dynamic emulation and/or static code conversion.
+<p>
+However, compatibility with a given system being but
+	some particular kind of functionality,
+	see the above question about
+	<ref id="Q:when-functionality"
+		name="when some functionality will be available in TUNES">.
+<p>
+Now, TUNES is so much different from existing <htmlurl url="http://cliki.tunes.org/Low-Level" name="low-level"> systems,
+that the generic answer should be:
+no, TUNES won't be compatible with given system.
+However, TUNES will nonetheless strive
+	to run programs designed for existing systems
+through a combination of binary emulation and source conversion packages.
+Both binary emulation and source conversion
+are widely known and used techniques,
+and there are lots of programs running on e.g. GNU/Linux
+to emulate other architectures or operating systems,
+or convert programs written for different languages/environments.
+</sect1>
+
+<sect1>Will TUNES be compatible with GNU/Linux and other Unices?
+<p>
+Alan Perlis once said:
+"A programming language is low level
+when its programs require attention to the irrelevant."
+We think the Unix API in particular,
+	and actually the whole of current computing systems,
+are much too low-level,
+and unfit for general programming of high-level communicating agents.
+<p>
+However, we do acknowledge that
+an enormous mass of useful free (and unfree) software
+has been written (and is still being written) on top of this API,
+so that, until all this software is reengineered to work with better APIs,
+and even afterwards for the sake of retro-computing,
+we will provide compatibility with as much of this API as possible.
+<p>
+This compatibility will be achieved in two complementary ways,
+as described in the generic answer.
+The first, shorter term, way, is to support
+binary emulation of Linux programs inside paranoid isolation boxes
+(whereas native TUNES code runs without such boxes),
+by developing our PIG subsystem (PIG IS GNU).
+The second way is to develop a source analyzer for C code
+that will allow to decompile C code into higher level code
+that can integrate with the TUNES system in smoother ways
+as well as detect and remove such bugs as buffer overruns et al.
+<p>
+Now, "native" TUNES code won't use anything
+	remotely resembling the Unix API.
+For instance, a large part of Unix deals with meddling with files
+and otherwise manipulating raw sequences of bytes,
+as a way to explicitly handle persistence and exchange of data
+in explicitly defined low-level formats;
+in contrast, native TUNES code will have
+	<htmlurl
+		url="http://cliki.tunes.org/Orthogonal Persistence"
+		name="orthogonal persistence">
+	or high-level data-structures,
+and hence, no need for such a low-level concept as a "file",
+	no ubiquity of sequences of bytes.
+<p>
+Finally, we do intend to use free <htmlurl url="http://cliki.tunes.org/Unix" name="Unices"> (Linux, *BSD) as both cross-development and underlying run-time environments until TUNES is mature enough to fully replace them, so that we will rather have a TUNES-over-Unix compatibility layer than a Unix-over-TUNES compatibility adapter.
+</sect1>
+
+<sect1>Will TUNES be compatible with Windows?
+<p>
+We do hate Windows and similar
+	misdesigned bad quality low-level proprietary software;
+we particularly hate the constraint of binary and hardware compatibility
+	induced by their business model,
+	that is maybe the main brake to progress in the computer industry.
+But even then, we have hopes that, in the long run,
+TUNES would support compatibility with even the lowliest existing systems,
+	including Windows, if there is any use for it
+(which might not be the case anymore by the time we're ready to handle it).
+<p>
+It seems that shortest path to such support
+would be "simply" to run
+	<url url="http://www.linpro.no/wine/" name="WINE">
+inside our PIG subsystem (GNU/Linux wrapper);
+further integration of it into TUNES would be achieved
+by patching (or otherwise metaprogramming) WINE and/or the subsystem.
+<p>
+We have no desire to write such a compatibility layer ourselves from scratch,
+and considering the huge size of the bloated legacy Win32 API,
+we see no interest in wasting resources in efforts redundant with WINE.
+If what you want is free software Windows compatibility,
+	do have a look at
+	<url url="http://www.winehq.com/" name="WINE">.
+In case there be something in the WINE project you dislike,
+	you may improve it by contributing to WINE,
+	which is a free software project.
+And in case the WINE people ignore your contributions (why would they?)
+	you may split their project,
+	since their software is free!
+In any case, people who claim to reimplement Win32 compatibility
+	without even citing the project WINE
+	and giving reasons not to just collaborate with it
+	are just being ridiculous.
+</sect1>
+
+<sect1>Will TUNES look like any existing system?
+<p>
+We know of no system that has the general feel of what we want TUNES to be.
+However, we can have get a rough idea from former or surviving
+integrated development systems where the source code is dynamically available.
+Such systems include those used on the
+<url url="http://cliki.tunes.org/Lisp%20Machine" name="Lisp Machines"> of old
+(some of them also Smalltalk machines),
+or <url url="http://cliki.tunes.org/Squeak" name="Squeak">
+(free software implementations of Smalltalk),
+or maybe some <url name="Self" url="http://cliki.tunes.org/Self">
+or <url name="Forth" url="http://cliki.tunes.org/Forth"> or
+<url name="Oberon" url="http://cliki.tunes.org/Oberon"> systems
+or <url url="http://www.pliant.cx/" name="Pliant">.
+In these systems, program code is "live";
+incremental modifications take immediate effect.
+Software is not "dead" in files that must be statically compiled
+and executed from scratch everytime.
+<p>
+Now, the goal for TUNES differ notably from the above systems:
+firstly, all these systems were mostly centered around having
+a one global language, a one image, a one environment, etc.
+This means that as far as metaprogramming goes,
+these systems are mostly autistic;
+they have no support for multiple nested computational systems,
+computing or reasoning on well-defined closed subsystems.
+Now, such well-defined closed subsystems are necessary
+for managing multiple users, for security concerns,
+for mixing real-time and usual computations,
+for proving meaningful whole-system program properties,
+etc.
+Also, none of these systems (except experimental ones that were never used,
+or the good old deceased Eumel) are or were orthogonally persistent -
+you can have variables persist, but you must dump images explicitly,
+which is a very costly operation
+(however the Lisp Machine did have a nicely integrated
+transactional object database).
+</sect1>
+
+<sect1>Will TUNES be similar to Lisp Machines?
+<p>
+See the above question and answer for a general response.
+More specifically, key features
+in which TUNES will differ from <url url="http://cliki.tunes.org/Lisp%20Machine" name="Lisp Machine"> systems of old are:
+<itemize>
+<item>
+Most importantly, logical virtualization of computation.
+Lisp Machines had a one computation universe at a time
+(you could always restart with a new image, of course);
+TUNES will be able to have sub-universes running inside other ones.
+This can happen through physical virtualization of computation,
+as in existing low-level operating systems (UNIX variants, etc),
+but this is a logical property of computations, that can be implemented
+in more efficient ways (through static typing at compile time),
+when high-level programs are considered.
+Virtualization is the essential principle on top of which
+safe multi-user systems can be built,
+except that by making it user-programmable,
+we can have elaborate structures of virtual worlds,
+and not just a flat collection as with GNU/Linux.
+Persistence, distribution, etc., are also built
+on top of logical virtualization.
+<item>
+Lisp Machine systems had mostly traditional file systems,
+albeit versioned ones,
+(and there were packages for orthogonally persistent CLOS data objects).
+TUNES will provide orthogonal persistence by default to all objects,
+code as well as data.
+<item>
+Lisp Machine systems had basic tools
+for programmers to develop and manage programs that run over networks.
+TUNES will go further and will manage coherent distributed computing
+over multiple hosts.
+<item>
+Last but not least, Lisp Machine systems
+were proprietary software that required specialized hardware.
+TUNES will be free software, and will have ubiquitous hardware support,
+running on whatever desktop, palmtop, laptop computer makes economical sense,
+and even embedded devices or supercomputers.
+</itemize>
+<p>
+Also, there are lots of nifty features and applications
+that Lisp Machine systems had
+that we will not dare try to implement for quite some time,
+from the windowing interface to MACSYMA,
+from the 3D software to the documentation tools.
+We do hope that we will eventually have some of these,
+and that someone somewhere will implement such things on top of TUNES;
+we might even develop skeletons of such software, for our own purpose,
+or interface to third party such software;
+but they do not constitute the heart of the project.
+</sect1>
+</sect>
+
+
+<sect>TUNES Implementation
+<p>
+<sect1>Will TUNES be Lisp-based?
+<p>
+You'll have to be more specific about your question. What do you mean "Lisp-based"? If you mean built on top of <url url="http://cliki.tunes.org/Lisp" name="Lisp">, then yes, the one Tril is writing now is on top of Common Lisp. Faré also wants to write TUNES starting with a dialect of Lisp. The finished TUNES won't necessarily be like Lisp, but you will be able to run Lisp, as well as many other languages, in TUNES.
+</sect1>
+
+<sect1>What is the initial plan to bootstrap TUNES?
+<p>
+If you're asking about what I should be writing first as part of TUNES,
+then I guess the answer, to me, is some open infrastructure for code transformation based on <url url="http://cliki.tunes.org/Rewrite Logic" name="rewrite logic">. This infrastructure would get bootstrapped from <url url="http://cliki.tunes.org/Common Lisp" name="Common Lisp">: a Lisp processor would transform rewrite rules into some Lisp, and then, this same transformation would be rewritten using rewrite rules; macros can help factorize things a lot to minimize this bootstrap. Once the basic infrastructure is bootstrapped, we'll use the rewrite rules to transform a suitable Lisp dialect into some intermediate representation then into some annotated assembly and finally into binary. The Lisp dialect would have some kind of linear Lisp subdialect which would allow for explicit memory management, which in turn would be used to implement memory management (including GC and persistence) for the rest of the system.
+<p>
+So at the end of the bootstrap phase, we'd mostly have some Lisp dialect with rewrite rules; but more than that, we'd also have a code transformation infrastructure that we can work toward making generic, instead of specializing it toward compiling just one Lisp dialect. Actually, we WOULD be specializing it, but not manually; rather, we would try to systematically develop metaprogramming tools that would automate the specialization out of declarative descriptions and specialization hints.
+
+<sect1>What are longer-term plans when TUNES is bootstrapped?
+<p>
+Our mid-term goals would be to work out the initial bootstrapped system into such a generic metaprogramming platform that can be used not just to dynamically compile itself into binary, but to do arbitrary meta-level manipulations of arbitrary structures into arbitrary other structures. On the syntactic front, we'd begin manipulating lowly HTML and XML, then jump on to more arbitrary grammars, including subsets of other programming languages, as well as any ad-hoc stuff we need to interoperate with the external world.
+<p>
+This could be the basis for semi-automatically interfacing with code from other systems, or even semi-automatically stealing it, starting with the nicer ones and moving toward more complexity (Scheme, Haskell, CAML, Mercury, Common Lisp, Java, etc., culminating with C; C++ is too horrid to ever salvage its code into TUNES).
+<p>
+On the semantic front, we'd develop (or port) graph manipulation libraries, with systems and metasystems for giving semantics to graphs: computed vs inherited attributes, type systems (abstract interpreters), combination of higher-order modules or rewrite systems; then we can investigate type-directed transformation techniques, deforestation, partial-evaluation, and other well-known algorithmic optimization techniques.
+<p>
+On the heuristic front, we'd develop expertises for declaring multiple implementation tactics for given concepts, then specifying combinations of them as a way to compile code; on the one hand, this would lead to declarative compiler traces that can be used by many metaprograms (invariant checkers, interface extractors, automatic code instrumentators for GC or debugging, etc.). Then there would remain to develop expertises to automatically select best implementation techniques according for a given structure, to cost models and usage constraints (e.g. even for a "same" abstract concept of array, it would choose different algorithms to handle 16KB chunks of real-time data, 1MB of interactive gaming stuff, or 1GB worth of symbol-crunching databases).
+<p>
+We'd then develop some performance introspection technique, so the (manual and automatic) decisions can be based on actual measurements instead of some semi-educated guess of a model. Actually, models are of course both useful and unavoidable, but we should eventually be extracting better cost models from actual dynamic measurements and rough meta-models. Due to resource limitations, in the mid-term, we'd only develop proof-of-concepts and/or kluges for all these, as we need them; but keeping in mind that the goal is to clean them eventually, at the cost of time-compatibility (who cares about time-compatibility when you have the whole-system source to metaprogram into a new coherent version and recompile?).
+<p>
+At the same time in the mid-term, we'd also have to make the system an expedient choice for everyday programming, by interfacing with legacy code: we'd provide outside programmers with a robust persistent dynamic object system that they can use over the network as an "intelligent database", while we'd develop wrappers around existing libraries, to be able to reuse the wealth of existing code (from picture/sound/animation/PostScript/TeX/HTML/whatever viewers to bignum/linear algebra/cryptography/X-window interface libraries to games or foreign platform emulators).
+<p>
+The result of such an effort would be to have a system that could integrate the functionality of Linux in a coherent way, where functionality is wrapped into subprocesses with well-declared semantics, so that the reflective TUNES infrastructure can do whole-system invariant enforcement, automatic robustification of libraries (putting them into isolated subprocesses; intercepting system interaction and doing additional safety checks; detecting failure and restarting them; etc.). This can bring a great incremental improvement to Unices, and lead Unicians to move to TUNES first as a way to better manage their whole systems or just subsystems (instead of having the horrid mess in <tt>/etc/*</tt> and <tt>~/.*</tt>).
+<p>
+In the long term, well, we'd have to fully develop and seamlessly integrate all the ideas and techniques that have been proposed as mid-term goals. Continuing on that trend, we'd get the system to be based on generic declarative descriptions, and to be self-compiled through a series of keener and keener expertises, based on dynamically obtained measures automatically taken according to profiling expertises, using heuristics such as genetic algorithms, constraint propagation (a la constraint-based logic programming), dynamic monitoring to detect deadlocks or optimization opportunities, etc.
+<p>
+Actually, by properly developing the meta-level expertises, we could have a seed proto-AI that would be expert in developing programs, and could be used to incrementally improve on itself until it is able to fully rewrite itself and maybe move toward more AI. Other directions for improvement would be to engineer into the system such things various as checkable formal program proofs, integration of the whole toolchain into both a proof system and a symbolic mathematical manipulation system, use of formal knowledge about programs in program transformations, decompilation of human-maintained low-level C programs into high-level TUNES programs, making the system self-hosted and stand-alone (no more dependency on C legacy), running on bare hardware by stealing or converting C drivers for Unices, compiling to (D)FPGA, automatically extracting man-machine interfaces (GUI-style as well as voice-based, text-based, or anything that suits the needs of the user) from a dynamic combination of program structure, interface declarations, and measurement of actual use, etc.
+<p>
+There are just so many things I'd like to experiment with TUNES! As you see, TUNES does not ambition per se to do things that have not been done in the past. It ambitions to do them in a new way, that hopefully allows them to seamlessly integrate different points of view. My general wish is that in computer science, it becomes true, as it is true in mathematics, that abstract theorems proved once by someone somewhere can thereafter be used by anyone anywhere with finite one-time cost. This is not true due to programs being tied to low-level considerations, and there being no metaprogram to automatically adapt programs from one low-level context to another, even less ones to reason about programs and manipulate them with any kind of dynamically enriched sense of intelligence and obviousness. In other words, there will always be more than one way to do things, but you should be able to prove and the the system should be able to understand that they are about the same thing, and that one way can be replaced by another, depending on what suits the context best.
+</sect1>
+</sect>
+
+<sect>TUNES Trivia
+<p>
+
+<sect1>What does the name "TUNES" stand for?
+<label id="Q:name">
+<p>
+The name "TUNES" is a recursive acronym, which stands for
+"TUNES is a Useful, Nevertheless Expedient, System".
+The name demonstrates our commitment to build a computing system
+according to long-term concerns about how computing should be,
+as well as practical requirements and opportunities of today's computing.
+<p>
+Actually, the "N" used to stand for "Not",
+meaning that we conspicuously do not strive toward expediency
+in the restricted meaning of "being good in the short term
+with overwhelming bad side-effects in the long run".
+It was transformed into "Nevertheless", to insist on the fact that
+despite our being attached to long-term implications of our system,
+we are conscious that to live and survive,
+we must be strong on short term issues,
+so that we aim not only long-term utility,
+but also short-term expediency, in its extended meaning
+that does not preclude said long-term utility.
+</sect1>
+
+<sect1>What about the TUNES logo?
+<label id="Q:logo">
+<p>
+Currently, we have the 100% pure HTML virtual reflective
+<htmlurl url="http://tunes.org/logo.html" name="logo">
+that you can see on our page.
+People have suggested or submitted eye-candy logo pictures,
+and we have been queueing these suggestions and submissions;
+but we won't even consider changing logo until we have
+an actual serious code base we can be proud of,
+that could honestly bear a logo.
+Otherwise, the project would be all fluff and no stuff.
+<!--
+The way I see it, our mascot would be some kind of cartoon-style music note
+(a cute quaver), and the logo would have it blowing some kind of trumpet,
+whence other small notes come out, themselves playing various instruments,
+and so on recursively, from left to right, down to up.
+-->
+</sect1>
+
+<!--
+Q: How can I help?
+A: Give answers depending on abilities and commitment level of requester:
+  investor, coder (at multiple levels), documenter, webmaster,
+  system administrator, evangelist, etc.
+  Even if you have no required proficiency,
+	you can learn and come back afterwards.
+-->
+</sect>
+
+</article>

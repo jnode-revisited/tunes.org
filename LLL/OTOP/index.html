@@ -1,0 +1,28 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+  <head>
+    <!--#include virtual="/head.html" -->
+    <title>The TUNES Subproject</title>
+  </head>
+  <body>
+    <H1>The TUNES O'TOP Subproject</H1>
+    <!--#include file="header.html" -->
+
+<h2><a name="#goals" href="goals.html">Goals</a></h2>
+<h2><a name="#packages" href="packages.html">Packages</a></h2>
+<h2><a name="#implementation ideas" href="ideas.html">Implementation Ideas</a></h2>
+<h2><a name="#issues" href="issues.html">Technical Issues</a></h2>
+<h2><a name="bibliography">Bibliography</a></h2>
+
+<p>Here is a list of sources of inspiration to write the O'TOP project:
+    <ul>
+      <li>Sources of various portable implementations of <a href="http://cliki.tunes.org/Programming Languages">languages</a>, particularly <a href="http://cliki.tunes.org/OCAML">Objective CAML</a> and <a href="http://cliki.tunes.org/Forth">PFE</a> or <a href="http://cliki.tunes.org/Forth">Gforth</a>.</li>
+      <li><a href="http://cliki.tunes.org/GNU">GNU</a>/<a href="http://cliki.tunes.org/Linux">Linux</a>.</li>
+    </ul>
+
+<H2>To Do</H2>
+    <p>Use fsync() and fdatasync() to be sure that the mmap()ed memory image file is well updated on disk. The file should always contain two states, a current one and a synchronized one see persistency.</p>
+    <p>Talk about the way we can use Tunes to build wrappers around POSIX emulator, so as to achieve better, more finely-grained configurable black-boxen than a Unix kernel can ever achieve?</p>
+    <!--#include virtual="/footer.html" -->
+  </body>
+</html>

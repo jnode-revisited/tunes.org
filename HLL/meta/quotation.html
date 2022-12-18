@@ -1,0 +1,213 @@
+<!doctype html public "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+  <head>
+    <!--#include virtual="/head.html" -->
+    <TITLE>Quotation in TUNES</TITLE>
+  </head>
+  <body>
+<H1>Quotation in TUNES</H1>
+    <!--#include file="header.html" -->
+
+<H2>What is quotation ?</H2>
+
+<P>
+So that we manipulate programs written in a language
+from another language (possibly the same), the meta-language,
+we need an embedding of base-level source as data for the meta-level system.
+This embedding may be more or less flexible:
+it may be dynamically invoked at runtime, or only at compile-time;
+it may allow for wide range of manipulations,
+or be but an indirection level before evaluation,
+without any possibility to effect sensible manipulations on code.
+In any case, such embedding is called "quoting",
+and is a very important topic in reflective systems.
+Indeed, quoting raises the fundamental question in a reflective system:
+what are the limits of an object? what are the limits of the system?
+what is to be explicit? what is to be implicit?
+
+<P>
+In Lisp, depending on what you need to preserve through kwoting,
+you have lots of variants of <KBD>write</KBD>,
+or just <KBD>(lambda (x) `',x)</KBD>.
+Perl strings and regexp have the quotemeta function for that.
+
+<P>
+As far a theory goes, a very insightful account of the subject is made in
+Jean Goubault's papers about his computational interpretation of the S4
+modal logic in terms of an lambda-eval-quote calculus, where naturally
+appear QUOTE, EVAL, KWOTE, QUASIQUOTE, UNQUOTE.
+Each plays its role, and the "quoting mechanism" is not complete
+if deprived of any one of them. Even then, you only have basic support
+for a one-minded quoting mechanism.
+
+<P>
+<PRE>
+@TechReport{GoubaultJ:S4,
+        Author={Jean Goubault},
+        Title={{O}n {C}omputational {I}nterpretations
+                of the {M}odal {L}ogic {S4}},
+        Institution={University of Karlsruhe},
+        Year={1996},
+        Note={\myurl{<A HREF="http://hypatia.dcs.qmw.ac.uk/data/G/GoubaultJ/S4/}}"
+	>http://hypatia.dcs.qmw.ac.uk/data/G/GoubaultJ/S4/</A>}}
+}
+</PRE>
+
+<P>
+<KBD>QUOTE</KBD> is the syntactic meta-operator (or source code constructor)
+that embeds source code into representation of source code
+(a monomorphism from source code into data values).
+It is evaluated at parse/compile-time, not run-time.
+
+<P>
+<KBD>EVAL</KBD> is a base-level operator from values that are valid source code
+into values that coincides with external metatheoretic evaluation,
+i.e. <KBD>EVAL</KBD> is a function (not a special form)
+such that its application to
+<KBD>(QUOTE ~X)</KBD> is same as evaluation of <KBD>~X</KBD>,
+for any source text <KBD>~X</KBD>.
+Things actually get more complex with context, i.e., with state
+at the meta-level. Only purely combinatorial languages
+like Church's combinatory logic, unlambda, Joy, and more suches,
+needn't such meta-state. In categorical such pure combinatorial language,
+EVAL is a value the application of which is an endomorphism of
+the value space that coincides with external evaluation.
+
+<P>
+<KBD>KWOTE</KBD> is a base-level operator that yields a valid source code
+for a given object, such that for any value <KBD>X</KBD>,
+<KBD>(EVAL (KWOTE X))</KBD> = <KBD>X</KBD>.
+
+<P>
+<KBD>QUASIQUOTE</KBD> and <KBD>UNQUOTE</KBD> are syntactic meta-operators
+to build partial expressions, higher-order expression builders, etc.
+
+<P>
+Jean Goubault's work, beyond the technical issue of confluence
+that constitutes the academic aspect of the papers, shows
+the expressive importance of <KBD>QUASIQUOTE</KBD> and <KBD>UNQUOTE</KBD>.
+Without such a mechanism,
+<KBD>QUOTE</KBD>/<KBD>KWOTE</KBD> and <KBD>EVAL</KBD>
+would be but boxing and unboxing;
+it would be impossible to dynamically build any interesting expression;
+<KBD>QUASIQUOTE</KBD> and <KBD>UNQUOTE</KBD>
+allow for non-trivial use of source code.
+
+<P>
+However, I think that we can and must go beyond the insight that JG brings:
+conversely, there needs be a mechanism to deconstruct source expressions,
+whether made by <KBD>QUOTE</KBD>, <KBD>KWOTE</KBD>, <KBD>QUASIQUOTE</KBD>,
+or whatever, or else, the only thing you can do with source code
+is <KBD>EVAL</KBD>uate it within a <KBD>`(context ,[])</KBD>;
+that is, you end up with write-only metaprogramming:
+indeed, if source-code cannot be pattern-matched,
+it becomes a blackbox that can only be assembled into bigger blackboxes
+nd ultimately evaluated or discarded.
+Any code "reading", any analysis and making sense of code,
+any use of code as first-class argument to a metaprogram
+cannot happen on <KBD>QUOTE</KBD>d text;
+it must happen on an upstream encoding.
+If this source code encoding isn't a standard part of the language,
+inter-metaprogrammer cooperation is prevented
+as each metaprogrammer rolls his own ad-hoc source code encoding.
+And if it becomes a standard part of the language,
+then the former <KBD>QUOTE</KBD> is but overhead
+and the upstream encoding is the real useful
+<KBD>QUOTE</KBD>d text representation.
+
+<P>
+Lisp solves the problem by standardizing on source expressions
+as <KBD>CONS</KBD>-lists,
+that you can arbitrarily construct and deconstruct,
+so you can build <KBD>QUASIQUOTE</KBD>, <KBD>UNQUOTE</KBD>,
+and source deconstructors from lower-level primitives.
+The downside is said low-levelness, which might (or not) get in the way,
+depending on what you're trying to do.
+In any case, let's say that SEXP as <KBD>CONS</KBD>-lists
+are sometimes not adapted to source-code representation
+(they don't track line-numbers/origin/foo
+for debugging/reverse analysis purpose; they are sometimes not fit for
+optimized domain-specific representations; etc).
+Absence of <KBD>KWOTE</KBD> in modern Lisps
+(well, some CL allow to write not only circular structures, but also functions)
+means that even then, the last step of a metaprogram (running)
+is also write-only.
+
+<P>
+I feel that the "right abstraction level" would be to standardize
+on <KBD>QUASIQUOTE</KBD>/<KBD>UNQUOTE</KBD>/<KBD>QUOTE</KBD>
+so as to construct code
+<EM>and</EM> to have have pattern-matching of quasiquoted patterns
+for deconstruction of source code.
+My
+<a href="http://www.cliki.net/fare-matcher">pattern-matcher package for CL</a>
+and corresponding QUASIQUOTE reimplementation allows for that.
+
+<P>
+m4 can dynamically change quote characters,
+but has no KWOTE function, which is particularly horrible
+since its evaluation mechanism will dynamically parse function definitions
+with whatever quote character is current, so that in practice, you may not
+lightly mix functions defined with different quote sets.
+Lexical quasiquotation is also hell to achieve since you never know
+how many times a given text will be parsed, and will have a hell of a time
+making dynamic computations on strings that include quote characters
+(it is nonetheless possible).
+AFAIK, only REBOL is braindead enough to dynamically parse function text
+like m4 does!
+
+<P>
+Lisp with macros and reader macros,
+Forth with input buffer access from <KBD>IMMEDIATE</KBD> words,
+have mechanisms not just for arbitrary user-defined quoting
+(as opposed to kwoting), but also for syntactical extension
+and general metaprogramming at compile time;
+plus compile time can be dynamic.
+But code inspection, while possible <KBD>(INSPECT) SEE</KBD>
+has no standardized result in any way.
+
+<P>
+Fortran with Hollerith-strings, Shells, Perl, and more,
+with <KBD>&lt;&lt;</KBD>,
+all have mechanisms for quoting arbitrary text into strings,
+which can in term be used to transform source code into a crude
+representation of it in a constant (well ok, actually logarithmic) number
+of character insertions at two places. Shells and Perl can arbitrarily
+manipulate such strings and eval them. I've done much too much
+metaprogramming with zsh myself.
+
+<P>
+Quoting is all about building a way to name an object that will be
+understood in a different context that doesn't share all the knowledge
+of the current context. It is a form of reification.
+Obviously, deeply related to the notion of quotation is that of what
+context is preserved in such reification: what parts of the system state
+are to be considered implicit, external, and what parts of the system state
+are to be considered explicit, internal, that require visible reification.
+
+<P>
+"Quoting" so as to communicate with an interactive debugger on same host
+is not the same as "quoting" so as to communicate with another equal node
+on a distributed system, which is not the same as serializing for use on
+an unknown untrusted and untrusting host external to the system.
+Modalities of quoting can get hairier if you're developing meta^n-tools
+with complex sharing of knowledge or lack thereof between various systems
+and metasystems (e.g. building a dynamic banking system with
+trust-preserving protocols that involves various embedded computers
+in terminals, cards, etc).
+
+<P>
+The only correct base-level equation I know about quotation is:
+        <KBD>(EVAL (KWOTE X))</KBD> = <KBD>X</KBD>
+As for the meta-level equations (looking inside the quoted text),
+they are but the denotational semantics for EVAL
+as expressed in terms of the quote-compatible source structure, e.g.:
+        <KBD>(EVAL (CONS X Y))</KBD> = <KBD>(APPLY (EVAL X) (MAP EVAL Y))</KBD>
+(the above equations, for the sake of simplificity, assume the context
+of a pure functional 1-Lisp with a total <KBD>KWOTE</KBD> function).
+Maybe we can have just <KBD>EVAL</KBD> = <KBD>UNQUOTE</KBD>,
+as is suggested by Jean Goubault's paper.
+    </p>
+    <!--#include virtual="/footer.html" -->
+  </body>
+</html>

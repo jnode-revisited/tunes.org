@@ -1,0 +1,174 @@
+<!doctype html public "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+  <head>
+    <!--#include virtual="/head.html" -->
+    <title>The TUNES LLL Subproject</title>
+  </head>
+  <body>
+    <h1>The TUNES LLL Subproject</h1>
+    <!--#include file="header.html" -->
+    <p>Some notes up front:</p>
+    <ul>
+      <li>Our <a href="generic.html">generic implementation</a> of the LLL.</li>
+      <li>There is a page about the low-level issues of <a href="storage.html">Storage</a>: garbage collection, persistency, etc.</li>
+      <li>There are two <a href="../subprojects.html#LLL"><b>sub-subprojects</b></a> below the LLL: the <a href="i386/index.html"><b>i386</b></a> and the <a href="OTOP/index.html"><b>O'TOP</b></a> subprojects.</li>
+      <li>A list of <a href="http://cliki.tunes.org/Resource"><b>programming resources</b></a> available to build upon or translate.</li>
+    </ul>
+    <p class="comment">Relocate these to more appropriate places.</p>
+    <p><em>NOTE:</em> existing code and corresponding technical comments lie in directory <tt>src/LLL</tt> of the source distribution.
+    <p>You may also want to look at the what <a href="http://cliki.tunes.org/Review">Review</a> subproject said about implementations of other systems.</p>
+
+<h2><a href="goals.html">Goals</a></h2>
+<h2><a name="principles">Principles</a></h2>
+    <p>LLL objects are exactly those defined to assist in implementing <em>arbitrary</em> Tunes objects, whether high-level or low-level. This is the defining principle of the scope of the LLL subproject.</p>
+    <p>See also the <a href="../HLL/principles.html">HLL Principles</a>, since it guides the principles of all Tunes system objects.</p>
+    <ul>
+      <li>Portability (<em>not</em> interoperability or complete compatibility) across different architectures.</li>
+      <li>Suited both to implement and to use transparently an elaborate memory management system, with GC for persistent objects, and weak pointers.</li>
+    </ul>
+
+<h2><a name="semantics">Semantics</a></h2>
+    <p>At the core of the LLL, all the computation words of ANS <a href="http://cliki.tunes.org/Forth">Forth</a>, excluding all that have to do with parsing, I/O and defining words; our version for these will be specialized. Above that, the LLL system provides some mechanism to do the memory management.</p>
+
+<h3>Low-level objects</h3>
+    <p>Objects must be uniquely identifiable in some way.</p>
+    <p>The typical system for handling this issue:</p>
+    <ul>
+      <li>Objects in the local address space are identified by their 32 bit CPU address (perhaps with an implementation-dependent offset).</li>
+      <li>Objects outside it are accessed using descriptors/handles inside it, so need not be considered as special objects with respect to the Low-Level memory system.</li>
+      <li>Objects in a same address space must trust each other anyway, so let them have a cooperative GC and multithreading.</li>
+      <li>Communication between address spaces happens directly through space-dependent drivers.</li>
+    </ul>
+
+<h3>Annotations</h3>
+    <p>Collect the standard mechanisms for annotations and their resolution.</p>
+    <p>Every annotation may have its own implementation, be it a hashtable of object-to-value associations, or an array of values, or some executable code. We can implement lazy evaluation and <a href="http://cliki.tunes.org/Future">future</a>s, typing, UI interface, scoping through annotations. For example, an object's concrete type (relative to the GC mechanism) may be determined from bits in its address, whether statically or dynamically.</p>
+    <p>These goals require a framework to be developed to systematize this approach.
+
+<h2><a name="Issues">Issues</a></h2>
+
+<p>See <a href="../HLL/index.html#Issues">HLL issues</a>.</p>
+
+<h3><a name="hardware independence">Hardware independence</a></h3>
+    <UL>
+      <LI>At what level shall word size be decided?</li>
+      <LI>How can objects migrate back and forth between machines with different bytesize with <EM>no loss</EM> in information, yet while taking full advantage of available hardware?</li>
+    </UL>
+
+<h3><a name="garbage collection">Garbage Collection</a></h3>
+    <p>Infix pointers (that do not point at some globally constant offset to the beginning of an allocation unit) greatly complicate the GC. They should be forbidden whenever possible, and replaced with their simulation by segment-offset pairs, with an aligned pointer and an offset inside the segment. Alternatively, efficient segment-offset infix pointer simulationscould use a cache of the single infix pointer, when in tight loops, as long as the cache is properly invalidated when objects move.</p>
+    <p>The GC may have to accept infix pointers for code return addresses, or else the calling convention may become grossly unefficient. This calls for some kind of static or dynamic typing accessible to the GC so as to treat return addresses specially without having to pay for ubiquitous special checks. An obvious way to do things is to segregate code in separate heaps from data, and distinguish code addresses by addresses, using a static or dynamic BIBOP technique.</p>
+    <p>Once it has been determined that a pointer is infix, usual techniques apply to find the head of the corresponding object: infix-pointable objects are grouped into pages (say 4K or 8K hardware pages), and you associate to every page, either on-page or off-page, enough information to track down object heads on the page (naive way: a linked list; more advanced: a binary tree; more efficient: just the size of objects, assuming they all have the same size). If the information is on-page, it means that objects may not cross page boundaries.</p>
+
+    <p><em>Big problem:</em> how to <b>efficiently</b> differentiate pointers from numbers, etc.? Structural differentiation is powerful, but may slow the GC considerably, unless descriptors are simple (can be just an integer for length of a pointer array, for most objects), and forbids dynamic differentiation, mixing integers and pointers in an array (e.g. simple unframed stack), etc. That's why we'll use a simple bit pattern to differentiate integers (raw data) from pointers (structured data), and different kind of pointers from each other (that's a BIg Bunch Of Pages kind of GC). Full system integers can still be accessed if properly boxed or framed. This leads to slow interpretation, but interpretation is slow, anyway, and compiled code need pay {,un}{box,fram}ing only at enter and exit, not in tight loops.</p>
+
+    <p><em>Question:</em> will integers be stripped of their low bit, which would simplify overflow testing code to naught, and make the implementation portable, but make a little harder doing pointer arithmetics and mixing of true integers with 31 bit ones. Or stripping them from their overflow bit, which makes integer overflows to generate GC-readjustable pointers, rather than providing flat modulo arithmetics, but allows easy pointer arithmetics and mixing of 31-bit integers and 32-bit ones?</p>
+
+    <p>If we tag the low bits, we must choose between integers having low bit set or low bit cleared. Having it set (and thus having bit cleared for pointers) may allow faster pointer access on RISC machines, but slows any arithmetics. Having bit set for pointers allow easier arithmetics, but forces the use of an offset for all memory accesses.</p>
+
+    <p>We shall meta-implement all the ways, and compare actual execution time and code space measurements! <span class="comment">Tongue in cheek, perhaps?</span></p>
+
+    <p>A high-level page directory is used to determine the GC type of objects according to the page it is in. It is a multi-level hashed structure that may evolve with the GC code, so that it may allow to find quickly the type of objects. Typically a mix between arrays and balanced binary trees to recognize bit patterns.</p>
+
+    <p>The GC type of an object, as determined by its address gives us routines to update the object during a GC, to destroy the object when it is not accessed anymore, etc.</p>
+
+    <p>The GC type of a page chunk allows us to track down the beginning of individual objects pointed to on the page (in case infix pointers are used), also gives us the policy to follow when swapping out the page (which may be copying the page to disk, sending it to the network, or compressing it to memory for possible further actual swapping out of memory, etc).</p>
+
+<h3><a name="persistence">Persistence</a></h3>
+    <ul>
+      <li>Be careful with distributed persistence: always remember previous states until all transactions using it are finished and confirmed.</li>
+      <li>Real-Time persistent objects will have to time-allocate the copying of their data into buffers for synchronized persistent store, even though this operation may be done only once in a while.</li>
+    </ul>
+
+<h2><a name="plan">Plan</a></h2>
+
+<h3><a name="implementation language">Implementation language</a></h3>
+    <ul>
+      <li>We shall use Scheme (or later our own HLL) to produce assembly source files for all our different target processors from mostly the same meta-source.</li>
+      <li>We shall use C as though it were a mostly-regular assembler, with labels, jumps, etc, so the same meta-source also produces the C source files. Hey, wasn't C called a portable assembler?</li>
+      <li>Actually, we may even depend on some properties of a particular C implementation with particular optimization flags so as to make assumptions on the generated C code, and be able to cut it in parts that allow for garbage collection, run-time code generation, or whatelse.</li>
+    </ul>
+
+<h3><a name="modules">Modules</a></h3>
+<UL>
+<LI>modules have some install/uninstall annotation fields explaining how to restore/resume the object from the state log as gotten from persistent store. In general, this will be a call to a standard trusted high-level module. However, this can be low-level code in the very first bootstrapping modules.</li>
+<LI>This scheme can be used for migration in general: persistence, garbage collection, dynamic linking, etc.</li>
+</UL>
+
+<h3><a name="multithreading">Mixed cooperative/preemptive multithreading:</a></h3>
+    <h4>Cooperation vs. Pre-emption</h4>
+    <p>Preemption is necessary for real-time response as well as for unsecure tasks; but cooperation allows <em>far</em> better context switch time (on the i386, compare saving some 5 registers to saving the whole CPU+FPU+MMU state), not to talk about trivial implementation of mutual exclusion, and all kinds of similar system-wide assumptions, such as those needed for a garbage collector.</p>
+    <p>In simpler terms, cooperative multithreading is faster since the compiler performs the tasks of determining how to defer and save the computation, instead of providing a generic solution at run-time which has no access to the structure of the code, and therefore must act in as conservative manner as possible.</p>
+    <h4>Solutions</h4>
+    <p>Allow the HLL to be preemptively-multithreaded (or rather, it will manage seamlessly-concurrent objects), while the LLL is cooperatively-multithreaded.</p>
+    <p>Actually, if we define cooperation by the fact that you may rely on some software properties of code, and preemption by the fact that a thread may yield execution without having to poll the scheduler, then the two techniques are <em>not</em> incompatible, as we intend to show in <a href="http://cliki.tunes.org/Preemption and Cooperation">this essay</a>.</p>
+
+<h2><a name="types">Modules to implement</a></h2>
+    <h3>Foundational Object Types</h3>
+    <p>This outlines the general collection of object types relevant to the LLL in its role as an implementational foundation:</p>
+    <dl>
+      <dt><a href="http://cliki.tunes.org/Bit">Bit</a></dt>
+      <dt>Machine-Word</dt> <dd>Bit-field parametrized by size, and usually constant per architecture.</dd>
+      <dt>Processor</dt> <dd>"Abstract" description of processing units, describing the instruction sets, internal state (all the registers), internal re-scheduling semantics (if any), and relation to the memory architecture.</dd>
+      <dt><a href="http://cliki.tunes.org/Memory">Memory</a></dt> <dd>An abstraction over some piece of hardware which has some kind of performance and persistence semantics. For example,<br>
+	<ul>
+	  <li>CPU cache</li>
+	  <li>RAM</li>
+	  <li>ROM</li>
+	  <li>"flash"able RAM</li>
+	  <li>floppy disks</li>
+	  <li>hard disk drives</li>
+	  <li>compact disks of various kinds</li>
+	</ul>
+	<p>Or abstractions over this such as:</p>
+	<ul>
+	  <li>Memory pages</li>
+	  <li>Memory-protection spaces</li>
+	  <li>Memory-mappings and memory addressing modes</li>
+	</ul>
+      <dt><a href="http://cliki.tunes.org/Channel">Channel</a></dt> <dd>An abstraction over communications or input/output channels, which have state and modes, utilizing some cooperating concepts:<br>
+	<dl>
+	  <dt>Signal</dt> <dd>Information propagation and verification basics.</dd>
+	  <dt><a href="http://cliki.tunes.org/Bus">Bus</a></dt> <dd>Shared resource for communication, which have state as well.</dd>
+	</dl>
+      </dd>
+      <dt><a href="http://cliki.tunes.org/Thread">Thread</a></dt> <dd>A voucher for a share of processor resources. This optionally contains additional aspects such as execution state and scheduling state. This definition is intentionally left abstract, so that there are various models that it can be extended into. In fact, this may turn into a specification for separate sub-object types.</dd>
+    </dl>
+    <h3>Generic Memory-Management</h3>
+    <p>Here are some grand end-point goals:</p>
+    <ul>
+      <li>A generic generational garbage collector with full support for persistence (checkpointing and restarting of objects).</li>
+      <li>A generic module for inter-heap (perhaps distributed) synchronized persistent garbage collector.</li>
+      <li>A generic module for back-reference unsynchronized persistent conservative garbage collector.</li>
+      <li>Generic support for chunks of executable binary code.</li>
+      <li>Mechanisms for the migration manager (from the <a href="http://tunes.org/Migration">Migration subproject</a>) to use: swapping to disk, to a compressed RAM zone, to another host, etc.</li>
+    </ul>
+    <h3>Direct Management of User Interface Hardware</h3>
+    <p>Here are some basic needed drivers for interfaces:</p>
+    <ul>
+      <li>A console adapter for text-mode.</li>
+      <li>a text-mode adapter for serial consoles (perhaps just use the ncurses package).</li>
+      <li>A screen windowing multiplexer for text-mode screens.</li>
+      <li>A generic output-synchronizing input multiplexer.</li>
+      <li>A standard combination of the previous two.</li>
+      <li>A fast graphics library.</li>
+    </ul>
+    <h3>File formats</h3>
+    <ul>
+      <li>A partition manager, that multiplexes hard disks according to standard partitioning methods.</li>
+      <li>Support for various existing file systems: MS-DOS FAT FS (and WindowsNT or Linux UMSDOS extensions), Linux EXT2 FS, etc.</li>
+      <li>Graphic file formats: GIF, JPEG, PCX, TIFF, etc.</li>
+      <li>Various Audio file formats for sound samples.</li>
+    </ul>
+
+<h2>Why GC</h2>
+<p class="comment">This essay has been moved <a href="http://cliki.tunes.org/Why GC">to the Wiki</a>.</p>
+
+<H2>To Do</H2>
+<UL>
+<li>Find out how multiple architectures can be made interoperable.</li>
+<li>Open a "Store" subproject about encodings and algorithms for the dynamically and actively annotable, distributed, persistent, garbage-collected store. Actually, distribution, persistence, and garbage-collection could be obtained by proper active annotations.</li>
+</UL>
+    <!--#include virtual="/footer.html" -->
+  </body>
+</html>

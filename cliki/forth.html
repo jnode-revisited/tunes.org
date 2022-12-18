@@ -1,0 +1,112 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en" dir="ltr">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=latin1" />
+    <meta name="KEYWORDS" content="Forth" />
+<meta name="robots" content="index,follow" />
+<link rel="shortcut icon" href="../favicon.ico" />
+    <title>Forth - TunesWiki</title>
+    <style type="text/css" media="screen,projection">/*<![CDATA[*/ @import "skins/monobook/main.css"; /*]]>*/</style>
+    <link rel="stylesheet" type="text/css" media="print" href="skins/common/commonPrint.css" />
+    <!--[if lt IE 5.5000]><style type="text/css">@import "skins/monobook/IE50Fixes.css";</style><![endif]-->
+    <!--[if IE 5.5000]><style type="text/css">@import "skins/monobook/IE55Fixes.css";</style><![endif]-->
+    <!--[if gte IE 6]><style type="text/css">@import "skins/monobook/IE60Fixes.css";</style><![endif]-->
+    <!--[if IE]><script type="text/javascript" src="skins/common/IEFixes.js"></script>
+    <meta http-equiv="imagetoolbar" content="no" /><![endif]-->
+        <script type="text/javascript" src="skins/common/wikibits.js"></script>
+    <style type="text/css">/*<![CDATA[*/
+
+
+/*]]>*/</style>              </head>
+  <body                 class="ns-0">
+    <div id="globalWrapper">
+      <div id="column-content">
+	<div id="content">
+	  <a name="top" id="top"></a>
+	  	  <h1 class="firstHeading">Forth</h1>
+	  <div id="bodyContent">
+	    <h3 id="siteSub">From TunesWiki</h3>
+	    <div id="contentSub"></div>
+	    	    	    <!-- start content -->
+	    <p>A <a href="low-level.html" title="low-level">low-level</a> functional programming language, mostly concatenative, with imperative features, for a stack-based <a href="vm.html" title="VM">VM</a> model, invented by <a href="chuck_20moore.html" title="Chuck Moore">Chuck Moore</a>. It is a very interesting language to study, both for its achievements and its shortcomings.
+<span class="comment">The writer won't list those shortcomings of Forth here, and he doesn't list any of its achievements either. You'll just have to guess what he must have been thinking.
+-- <a  class="new" title="A N Other">A N Other</a></span>
+</p><p>Central to Forth is the notion of a "word", corresponding to a function in other languages. A Forth program, after parsing, is nothing but a list of words, executed consecutively by the "inner interpreter", the core of Forth.
+</p><p>Forth is fully reflective and self-containing; the Forth parser (the so-called "outer interpreter") is written in Forth and can be modified at any time. It has also a set of words to access the input buffer (see for example the word <code>PARSE</code>). Thus, at least potentially, Forth can have any syntax.
+</p><p>Forth is usually untyped, much in the same way that <a href="assembly.html" title="Assembly">Assembly</a> is (though see strongForth below). More generally, Forth is a very low-level language, with manual management of memory, fixed-size buffers, pointer manipulation; but reflection makes it a remarkably powerful language among low-level languages.
+</p><p>See also <a href="forth_20oses.html" title="Forth OSes">Forth OSes</a>, <a href="forth_20is_20not_20intrinsically_20slow.html" title="Forth is NOT intrinsically slow">Forth is NOT intrinsically slow</a>.
+</p>
+<ul class="links">
+<li><a href="http://www.forth.org/" class='external text' title="http://www.forth.org/" rel="nofollow">"forth.org"</a>, <a href="ftp://ftp.forth.org/" class='external text' title="ftp://ftp.forth.org/" rel="nofollow">"FTP Site"</a>, <a href="ftp://ftp.uni-bremen.de/pub/languages/programming/forth/Taygeta-Archive" class='external text' title="ftp://ftp.uni-bremen.de/pub/languages/programming/forth/Taygeta-Archive" rel="nofollow">"German FTP Mirror"</a>.
+<li><a href="http://www.forth.com/Content/History/History1.htm" class='external text' title="http://www.forth.com/Content/History/History1.htm" rel="nofollow">"The Evolution of Forth"</a>, a Forth history by <a href="chuck_20moore.html" title="Chuck Moore">Charles H. Moore</a>, Elizabeth D. Rather, Donald R. Colburn.
+<li><a href="http://www.ultratechnology.com/4th_1970.html" class='external text' title="http://www.ultratechnology.com/4th 1970.html" rel="nofollow">"FORTH - A Language for Interactive Computing"</a>: the original FORTH paper by <a href="chuck_20moore.html" title="Chuck Moore">Chuck Moore</a>.
+<li><a href="http://www.colorforth.com/HOPL.html" class='external text' title="http://www.colorforth.com/HOPL.html" rel="nofollow">"Forth - The Early Years"</a> another Forth history from its inventor.
+<li><a href="http://www.taygeta.com/forth/dpans.html" class='external text' title="http://www.taygeta.com/forth/dpans.html" rel="nofollow">"Draft ANS Forth"</a> the standard.
+<li><a href="http://wiki.forthfreak.net/" class='external text' title="http://wiki.forthfreak.net/" rel="nofollow">"The ForthFreak Wiki"</a>
+<li><a href="http://www.taygeta.com/forth_intro/stackflo.html" class='external text' title="http://www.taygeta.com/forth intro/stackflo.html" rel="nofollow">"An Introduction to Forth Using StackFlow"</a>.
+<li><a href="http://www.faqs.org/faqs/computer-lang/forth-faq/" class='external text' title="http://www.faqs.org/faqs/computer-lang/forth-faq/" rel="nofollow">"FAQ"</a> written by the good people at comp.lang.forth.
+<li><a href="http://www.cera2.com/softd/forth.htm" class='external text' title="http://www.cera2.com/softd/forth.htm" rel="nofollow">"cera2.com"</a> and <a href="http://www.eg3.com/softd/forth.htm" class='external text' title="http://www.eg3.com/softd/forth.htm" rel="nofollow">"eg3.com"</a>.
+<li><a href="http://www.ece.cmu.edu/~koopman/stack_computers/index.html" class='external text' title="http://www.ece.cmu.edu/~koopman/stack computers/index.html" rel="nofollow">"Stack Computers: the new wave"</a>: a freely available online book by <a href="philip_20koopman.html" title="Philip Koopman">"Philip J. Koopman, Jr."</a>
+<li><a href="http://home.iae.nl/users/mhx/" class='external text' title="http://home.iae.nl/users/mhx/" rel="nofollow">"Starting Forth"</a>, Leo Brodie's classic introductory book is now available on-line (from Marcel Hendrix's home page).
+<li><a href="http://www.complang.tuwien.ac.at/anton/home.html" class='external text' title="http://www.complang.tuwien.ac.at/anton/home.html" rel="nofollow">"M. Anton Ertl's WWW site"</a>.
+<li><a href="http://dmoz.org/Computers/Programming/Languages/Forth/" class='external text' title="http://dmoz.org/Computers/Programming/Languages/Forth/" rel="nofollow">"Forth entry in the Open Directory Project"</a>: a comprehensive list of Forth related links
+<li><a href="http://www.zetetics.com/bj/papers/index.html" class='external text' title="http://www.zetetics.com/bj/papers/index.html" rel="nofollow">"Moving Forth: a series on writing Forth kernels"</a>: is a collection of papers by Brad Rodriguez, including Design Decisions in the Forth Kernel (various threading techniques)
+</ul>
+<ul class="links">
+<li><a href="http://www.colorforth.com/" class='external text' title="http://www.colorforth.com/" rel="nofollow">"colorForth"</a>: <a href="chuck_20moore.html" title="Chuck Moore">Chuck Moore</a>'s colorForth Homepage
+<li><a href="http://www.ultratechnology.com/" class='external text' title="http://www.ultratechnology.com/" rel="nofollow">"UltraTechnology.com"</a>: Jeff Fox's UltraTechnology Homepage
+<li><a href="http://www.forth.com/" class='external text' title="http://www.forth.com/" rel="nofollow">"Forth, Inc."</a>: founded by the original developers of Forth.
+<li><a href="http://www.taygeta.com/" class='external text' title="http://www.taygeta.com/" rel="nofollow">"Taygeta Scientific Incorporated"</a>.
+<li><a href="http://www.ptsc.com/" class='external text' title="http://www.ptsc.com/" rel="nofollow">"Patriot Scientific Corp."</a>: FORTH chip maker.
+</ul>
+<ul class="links">
+<li><a href="http://home.pipeline.com/~hbaker1/ForthStack.html" class='external text' title="http://home.pipeline.com/~hbaker1/ForthStack.html" rel="nofollow">"Linear Logic and Permutation Stacks--The Forth Shall Be First"</a> (<a href="http://home.pipeline.com/~hbaker1/ForthStack.ps.gz" class='external text' title="http://home.pipeline.com/~hbaker1/ForthStack.ps.gz" rel="nofollow">".ps.gz"</a>), a paper by <a href="henry_20baker.html" title="Henry Baker">Henry Baker</a>
+<br /><strong>Abstract</strong>:
+<blockquote>Girard's <a  class="new" title="linear logic">linear logic</a> can be used to model programming languages in which each bound variable name has exactly one "occurrence"--i.e., no variable can have implicit "fan-out"; multiple uses require explicit duplication. Among other nice properties, "linear" languages need no garbage collector, yet have no dangling reference problems. We show a natural equivalence between a "linear" programming language and a stack machine in which the top items can undergo arbitrary permutations. Such permutation stack machines can be considered <a  class="new" title="combinator">combinator</a> abstractions of Moore's Forth programming language.</blockquote>
+</ul>
+<ul class="implementations"><a name="Implementations"></a><h4>Implementations</h4>
+<li><a href="http://www.jwdt.com/~paysan/gforth.html" class='external text' title="http://www.jwdt.com/~paysan/gforth.html" rel="nofollow">"Gforth"</a>: GNU Forth.
+<li><a href="http://www.powermops.org/" class='external text' title="http://www.powermops.org/" rel="nofollow">"Mops"</a>: A superb public domain FORTH with <a href="oo.html" title="OO">OO</a> extensions for Mac OS X. (An older version for "Classic" Mac OS can be found on the <a href="ftp://ftp.powermops.org/" class='external text' title="ftp://ftp.powermops.org/" rel="nofollow">"Mops FTPsite"</a>.)
+<li><a href="ftp://ftp.taygeta.com/pub/Forth/" class='external text' title="ftp://ftp.taygeta.com/pub/Forth/" rel="nofollow">"PFE"</a>.
+<li><a href="http://home.vr-web.de/stephan.becher/forth/index.htm" class='external text' title="http://home.vr-web.de/stephan.becher/forth/index.htm" rel="nofollow">"strongForth Homepage"</a>, by <a href="http://home.vr-web.de/stephan.becher/" class='external text' title="http://home.vr-web.de/stephan.becher/" rel="nofollow">"Dr. Stephan Becher"</a> (<a href="http://home.t-online.de/home/s.becher/forth/" class='external text' title="http://home.t-online.de/home/s.becher/forth/" rel="nofollow">"old strongForth Homepage"</a> [[[MIA]]] <a href="http://web.archive.org/web/20040207010925/http://home.t-online.de/home/s.becher/forth/" class='external text' title="http://web.archive.org/web/20040207010925/http://home.t-online.de/home/s.becher/forth/" rel="nofollow">"archived"</a> at <a href="search_20facilities.html" title="Search Facilities">Internet Archive</a>) (<a href="http://www.egroups.com/group/strongforth/" class='external text' title="http://www.egroups.com/group/strongforth/" rel="nofollow">"strongForth Yahoo! group"</a> [[[MIA]]]) an ANS FORTH with strong compile-time typechecking. See also discussions in <a href="concatenative.html" title="concatenative">concatenative</a> Yahoo! group.
+<li><a href="http://www.hcsw.org/frugal/" class='external text' title="http://www.hcsw.org/frugal/" rel="nofollow">"Frugal"</a> - HardCore SoftWare's Forth system.
+<li><a href="http://www.elilabs.com/~rj/dreams/" class='external text' title="http://www.elilabs.com/~rj/dreams/" rel="nofollow">"Dreams"</a> - a Forth <a href="object-oriented.html" title="object-oriented">object-oriented</a> programming extension.
+<li><a href="http://www.perl.com/CPAN/modules/by-authors/id/PETERGAL/" class='external text' title="http://www.perl.com/CPAN/modules/by-authors/id/PETERGAL/" rel="nofollow">"Pgforth"</a> - a Forth interpreter in <a href="perl.html" title="Perl">Perl</a>.
+<li><a href="http://isforth.clss.net" class='external text' title="http://isforth.clss.net" rel="nofollow">"IsForth"</a> - a 32 bit Direct Threaded <a href="linux.html" title="Linux">Linux</a> Forth compiler.
+<li><a href="http://www.fourmilab.ch/atlast/" class='external text' title="http://www.fourmilab.ch/atlast/" rel="nofollow">"Atlast"</a> - Autodesk Threaded Language Application System Toolkit, a <a href="programming_20language.html" title="programming language">programming language</a> based on FORTH-83.
+<li><a href="http://www.xs4all.nl/~thebeez/4tH/" class='external text' title="http://www.xs4all.nl/~thebeez/4tH/" rel="nofollow">"4th"</a> compiler.
+<li><a href="http://www.complang.tuwien.ac.at/projects/forth.html#gforth" class='external text' title="http://www.complang.tuwien.ac.at/projects/forth.html#gforth" rel="nofollow">"Gforth"</a> system.
+
+<li>For various implementations see <a href="http://forth.sourceforge.net/" class='external text' title="http://forth.sourceforge.net/" rel="nofollow">"comp.lang.forth.repository"</a>.
+</ul>
+<ul class="links"><a name="Unsorted"></a><h4>Unsorted</h4>
+<li><a href="http://home.netsurf.de/helge.horch/hype.html" class='external text' title="http://home.netsurf.de/helge.horch/hype.html" rel="nofollow">"Hype"</a> - a simple <a href="object-oriented.html" title="object-oriented">object-oriented</a> Forth.
+<li><a href="http://coldstore.sourceforge.net/chaos/chaos.html" class='external text' title="http://coldstore.sourceforge.net/chaos/chaos.html" rel="nofollow">"Coldstore's Chaos"</a> - a Forth-like <a href="programming_20language.html" title="programming language">programming language</a>. Also <a href="http://coldstore.sourceforge.net/wiki/index.php?page=Chaos" class='external text' title="http://coldstore.sourceforge.net/wiki/index.php?page=Chaos" rel="nofollow">"Chaos's wiki page"</a>.
+<li><a href="http://www.compusmart.ab.ca/rc/Timbre/timbre.htm" class='external text' title="http://www.compusmart.ab.ca/rc/Timbre/timbre.htm" rel="nofollow">"Timbre"</a> - a script driven translator engine.
+<li><a href="http://www.zetetics.com/bj/papers/oofs.htm" class='external text' title="http://www.zetetics.com/bj/papers/oofs.htm" rel="nofollow">"A Survey of Object-Oriented Forths"</a>.
+<li><a href="http://www.theforthsource.com" class='external text' title="http://www.theforthsource.com" rel="nofollow">"The Forth Source"</a>.
+<li><a href="http://www.fortunecity.com/skyscraper/coding/396/" class='external text' title="http://www.fortunecity.com/skyscraper/coding/396/" rel="nofollow">"Common Forth homepage"</a>.
+<li><a href="http://dec.bournemouth.ac.uk/forth/" class='external text' title="http://dec.bournemouth.ac.uk/forth/" rel="nofollow">"Forth Research page"</a>.
+<li><a href="http://home.iae.nl/users/mhx/" class='external text' title="http://home.iae.nl/users/mhx/" rel="nofollow">"iForth, tForth, eForth, mxForth, benchmarks, and links"</a>.
+<li>Various Forth link collections <a href="http://dec.bournemouth.ac.uk/forth/links.html" class='external text' title="http://dec.bournemouth.ac.uk/forth/links.html" rel="nofollow">"here"</a> <a href="http://www.albany.net/~hello/links.htm#Forth" class='external text' title="http://www.albany.net/~hello/links.htm#Forth" rel="nofollow">"here"</a> and <a href="http://angg.twu.net/forth.html" class='external text' title="http://angg.twu.net/forth.html" rel="nofollow">"here"</a>.
+<li><a href="http://qualdan.homeip.net:5000/svn/fpos/" class='external text' title="http://qualdan.homeip.net:5000/svn/fpos/" rel="nofollow">"Fpos"</a> - a native PPC ColorForth. <a href="mia.html" title="MIA">MIA</a>
+<li><a href="http://www.icdc.com/~mghughes18/sources/" class='external text' title="http://www.icdc.com/~mghughes18/sources/" rel="nofollow">"Fcvm"</a> - Forth Code <a href="virtual_20machine.html" title="Virtual Machine">Virtual Machine</a>. <a href="mia.html" title="MIA">MIA</a>
+<li> <a href="http://factorcode.org/" class='external text' title="http://factorcode.org/" rel="nofollow">"Factor"</a> - An interesting Forth-like language. It's blog <a href="http://factor-language.blogspot.com/" class='external text' title="http://factor-language.blogspot.com/" rel="nofollow">"here"</a>.
+</ul>
+
+<!-- Saved in parser cache with key tuneswiki:pcache:idhash:2284-0!1!0!0!!en!2 and timestamp 20070727170452 -->
+
+	    <div id="catlinks"><p class='catlinks'><a href="http://tunes.org/wiki/index.php?title=Special:Categories&amp;article=Forth" title="Special:Categories">Categories</a>: <a  class="new" title="Category:functional">functional</a> | <a  class="new" title="Category:programming language">programming language</a> | <a  class="new" title="Category:concatenative">concatenative</a> | <a  class="new" title="Category:imperative">imperative</a></p></div>	    <!-- end content -->
+	    <div class="visualClear"></div>
+	  </div>
+	</div>
+      </div>
+
+      <div class="visualClear"></div>
+      <div id="footer">
+    		<ul id="f-list">
+	  <li id="f-lastmod"> This page was last modified 11:56, 3 January 2006.</li></ul>
+      </div>
+    </div>
+    <!-- Served by bespin.org in 0.40 secs. -->  </body>
+</html>

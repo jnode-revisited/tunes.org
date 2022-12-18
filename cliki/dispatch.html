@@ -1,0 +1,29 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<HTML><HEAD><TITLE>CTO : Dispatch</TITLE
+><LINK REL="alternate" TYPE="application/rss+xml" TITLE="Recent Changes" HREF="http://tunes.org/cliki/recent-changes.rdf.html"><LINK REL="stylesheet" HREF="admin/cliki.css"></HEAD
+><BODY><DIV ID="banner"><A TITLE="CTO" CLASS="logo" HREF="dispatch.html">CTO</A
+> <SPAN>CLiki for the TUNES project</SPAN
+></DIV
+><DIV ID="navbar"><A CLASS="internal" HREF="index.html">Home</A
+>  <A CLASS="internal" HREF="cliki.html">About CLiki</A
+> <A CLASS="internal" HREF="text_20formatting.html">Text Formatting</A
+> </DIV
+><DIV ID="main"><H1>Dispatch</H1
+>The <a class="internal" href="term.html" >term</a> and <a class="internal" href="topic.html" >topic</a> of a <a class="internal" href="programming_20language.html" >programming language</a>'s method of choosing a definition to use to evaluate some expression. This notion generalizes over several more commonly-known methods that are often not distinguished from evaluation itself. In this sense, dispatch is complementary to <a class="internal" href="rewrite.html" >rewrite</a>.
+<p>A function definition is a fairly common part of many programming languages. However, the rules for how definitions are composed into a whole vary widely. The following spectrum is arrayed in increasing range of expressiveness:
+<ol>
+<li>Lexically-scoped procedural languages in general will require exactly one definition per name of a function, possibly allowing for lexically-scoped overriding of the definition.
+<li><a class="internal" href="object-oriented.html" >Object-oriented</a> programming languages have a variety of arranged schemes for polymorphic dispatch, depending on the object model:
+<ul>
+<li>Single-dispatch versus multiple-dispatch: whether the first argument or all the arguments are consulted for dispatch.
+<li>Single inheritance versus multiple inheritance or mixin-based overrides.
+<li>Dispatch on classes versus instances.
+<li>Predicate dispatch (only really deployed in <a class="internal" href="cecil.html" >Cecil</a>).
+<li>Various forms of combination options for functions, whether termed <em>inner</em> calls, <em>super</em> calls, <em>resends</em>, <em>before/after</em>-calls, or <em>around</em> calls.
+</ul>
+<li><a class="internal" href="functional.html" >Functional</a> programming languages use <a class="internal" href="pattern-matching.html" >pattern-matching</a> to identify the applicable evaluation result. The advantage is that the expression value defined recursively is fully-available for inspection. Such languages can usually dispatch on types, structure, and value of their arguments.
+<li>Logical programming languages generally specify a set of rules in an arbitrary sense which apply, and often define a strategy for traversing these rules which hopefully results in a terminating or at least manageable program. This process is often known as <a class="internal" href="unification.html" >unification</a> as distinguished from pattern-matchers.
+</ol>
+<p>Each of these can generally express the previous one without emulation, but also requires a more sophisticated algorithm to manage efficiently.
+<p>Of final note is that the specification of the traversal order of the functions is also included within this concept, through a meta-level protocol concerning the function definitions or the context within which the function definitions are entered.
+<hr><p><b>This page is linked from: </b> <a class="internal" href="c_2b_2b.html" >C++</a> &nbsp; <a class="internal" href="multijava.html" >MultiJava</a> &nbsp; <a class="internal" href="needle.html" >Needle</a> &nbsp; </DIV></BODY></HTML>

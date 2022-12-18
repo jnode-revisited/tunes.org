@@ -1,0 +1,47 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<HTML><HEAD><TITLE>CTO : CLiki Todo</TITLE
+><LINK REL="alternate" TYPE="application/rss+xml" TITLE="Recent Changes" HREF="http://tunes.org/cliki/recent-changes.rdf.html"><LINK REL="stylesheet" HREF="admin/cliki.css"></HEAD
+><BODY><DIV ID="banner"><A TITLE="CTO" CLASS="logo" HREF="cliki_20todo.html">CTO</A
+> <SPAN>CLiki for the TUNES project</SPAN
+></DIV
+><DIV ID="navbar"><A CLASS="internal" HREF="index.html">Home</A
+>  <A CLASS="internal" HREF="cliki.html">About CLiki</A
+> <A CLASS="internal" HREF="text_20formatting.html">Text Formatting</A
+> </DIV
+><DIV ID="main"><H1>CLiki Todo</H1
+><h2>Appearance</h2>
+<p>Modify the CSS and/or source to have a better appearance.</p>
+<p>Re-defun the functions that use the original with-page-surround macro instead of our patched version.</p>
+<h2>Backups</h2>
+<p>Enter the files into Tunes' CVS.</p>
+<h2>Infobot Integration</h2>
+An access function is already implemented as "cto $foo". What remains:
+<ul>
+<li>Import rest of the relevant <A HREF="../~nef/abi/factoids.txt">the factoids</A
+>.
+<li>Add an interface to the search function, perhaps showing the returned values directly instead of printing the URL equivalent.
+<li>Add a way to summarize any node, using topic annotations and external links. The key function is a summary, which may just have to be the first line of the node or some extra annotation. <span class="comment">Using a SPAN tag with class "summary" is an option, but it requires too much manual work and extra storage.</span> <span class="comment" style="color: DarkGreen">Another option is to use <A HREF="http://www.usemod.com/cgi-bin/mb.pl?SectionedPage">sectioned pages</A
+></span>
+</ul>
+<h2>CLiki</h2>
+<ul>
+<li>Modify Araneida to use PAServe's url-parsing logic... basically, fix it.
+<li>Make sure that any characters that are not proper file name characters are URL-escaped. Also, be sure to reverse-translate the escaping.
+<li>Track (con-)current edits with hidden form values and merge them with a diff-style system.
+<li>Add the simplest authentication scheme possible.
+<li>Automate the backup system, and eventually include a reversion mechanism.
+<li>Add a web interface for controlling the Foo.titles file contents.
+<li>Fix up the page-creation routines so that all of the previous references to that page that were broken get counted in its references table.
+<li>Adjust the all-pages display so that it shows the Foo.titles variants. It currently shows duplicates.
+<li>Show a link that displays the edit history, if not the revisions, for the current page. <span class="comment">Implemented, but only shows up to 60 results; any more requires some logic adjustments.</span> (Lost in the merge with Cliki CVS - has to be ported from water's source.)
+<li>Sort the list of "Pages in this topic"
+<li>Provide a text links database URL so that cliki can be browsed using <a href="http://touchgraph.sourceforge.net/">TouchGraph</a> <a href="http://prdownloads.sourceforge.net/touchgraph/TGWB_102.zip">WikiBrowser</a>.
+The format of a line in the links database is:
+<pre>node-name [node-linked-to ...] [url-linked-to ...]
+</pre>
+</ul>
+<h2>Content</h2>
+<ul>
+<li>Finish moving over and verifying the ad hoc information on the Tunes Review for Languages, Reflection, and Migration methods.
+<li>Make sure people know how to use the <a class="internal" href="topic.html" >topic</a>s properly, and keep the set of topics understandable and small (help!! They're growing!).
+</ul><hr><p><b>This page is linked from: </b> <a class="internal" href="cliki.html" >CLiki</a> &nbsp; <a class="internal" href="sand_20box.html" >Sand Box</a> &nbsp; </DIV></BODY></HTML>

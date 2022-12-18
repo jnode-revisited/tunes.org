@@ -1,0 +1,35 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<HTML><HEAD><TITLE>CTO : Sprint</TITLE
+><LINK REL="alternate" TYPE="application/rss+xml" TITLE="Recent Changes" HREF="http://tunes.org/cliki/recent-changes.rdf.html"><LINK REL="stylesheet" HREF="admin/cliki.css"></HEAD
+><BODY><DIV ID="banner"><A TITLE="CTO" CLASS="logo" HREF="sprint.html">CTO</A
+> <SPAN>CLiki for the TUNES project</SPAN
+></DIV
+><DIV ID="navbar"><A CLASS="internal" HREF="index.html">Home</A
+>  <A CLASS="internal" HREF="cliki.html">About CLiki</A
+> <A CLASS="internal" HREF="text_20formatting.html">Text Formatting</A
+> </DIV
+><DIV ID="main"><H1>Sprint</H1
+>TODO: move any useful information about the Sprints from
+<A HREF="http://www2.tunes.org/cgi-bin/TunesWiki?browse=TunesSprint">the old Wiki page</A
+><p>
+Ok, so once in a while, we'll organize a Tunes Sprint so as to speed up development by bringing together the focused attention of many <a class="internal" href="contributor.html" >contributor</a>s on some hot subject. 
+<p>First sprint is sunday 2002-09-01 (that's today). It will start at 09:30 French time (07:30 UTC, 00:30 US/Pacific time), and finish 12 hours from then. This page will show progress, and so will IRC logs from #tunes on irc.openprojects.net. 
+<p>Armin and I (<a class="internal" href="fare.html" >Faré</a>) are both in Paris, and we intend to define some core for the <a class="internal" href="metaprogramming.html" >metaprogramming</a> infrastructure: a <a class="internal" href="mop.html" >MOP</a> for defining and using <a class="internal" href="linear_20graph_20reduction.html" >Linear Graph Reduction</a> virtual machines. Ideally, the specification will result in a test suite that can be used to check the (partial) correctness of the implementation that we intend to do in the coding sprint, beginning two weeks afterwards.
+<p>See these notes by Armin: <A HREF="http://bespin.org/~arigo/">http://bespin.org/~arigo/</A
+>.
+<p>Additional notes by <a class="internal" href="fare.html" >Faré</a>: Need to distinguish between compile-time meta-level and run-time meta-level. Two different prefixes should be used instead of the same "meta". The "ultimate" compile-time meta-level ought to be a reflective framework. The "ultimate" run-time meta-level is the bare underlying hardware. 
+<p><a class="internal" href="water.html" >Water</a> suggests to consider <a class="internal" href="ap5.html" >AP5</a> for relational specifications, <a class="internal" href="maude.html" >Maude</a> and <a class="internal" href="bobj.html" >BOBJ</a> for rewrite logic, <a class="internal" href="tigre.html" >TIGRE</a> for <a class="internal" href="graph_20reduction.html" >Graph Reduction</a> implementation, and more... Maybe merging Maude and BOBJ already gives most of what we need? Read the Maude book "Reflection in Rewriting Logic". 
+<p><a class="internal" href="fare.html" >Faré</a>: for a runtime <a class="internal" href="mop.html" >MOP</a>, a few things we want to see: 1) active graphs can be stopped at the proper runtime metalevel 2) stopped graphs can be manipulated in the following ways 
+<p><ol>
+<li>synchronize to some state that is meaningful for interpretation as a higher-level graph (as specified by the source code) 
+<li>"serialization" or otherwise interpretation into actual data structures interpretable at the higher abstraction level 
+<li>enumerating the "ports" of the graph, i.e. links between internal nodes and external graphs 
+<li>applying some evaluation rules (internal transformations and communication) 
+<li>reactivating the graph with some given strategy using the above rules 
+<li>listing invariants of the graph (preconditions and postconditions) 
+<li>listing "variants" of the graph (i.e. some rules that constrain the way the graph must progress from now to further observable stops) 
+</ol>
+<p>1,2, and 3 are completely related to allowing meta-level compile-time correspondances, without having to stop compilation at some virtual machine that hardwires the abstraction level to a given graph representation. 
+<p>Armin: one of the goals is to be able to specify integers as Peano integers, yet have an efficient bignum implementation, in a way that allows for reasoning to take place at the Peano level. <a class="internal" href="fare.html" >Faré</a>: i.e. as was done in Weyrauch's FOL.
+<p>The summary of what we came up with at the sprints is at <A HREF="http://bespin.org/~arigo/notes2.html">http://bespin.org/~arigo/notes2.html</A
+>.<hr><p><b>This page is linked from: </b> <a class="internal" href="activities.html" >Activities</a> &nbsp; <a class="internal" href="tunes_20specification.html" >TUNES Specification</a> &nbsp; </DIV></BODY></HTML>

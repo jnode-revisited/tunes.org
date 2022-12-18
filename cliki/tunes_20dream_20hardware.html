@@ -1,0 +1,18 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<HTML><HEAD><TITLE>CTO : TUNES Dream Hardware</TITLE
+><LINK REL="alternate" TYPE="application/rss+xml" TITLE="Recent Changes" HREF="http://tunes.org/cliki/recent-changes.rdf.html"><LINK REL="stylesheet" HREF="admin/cliki.css"></HEAD
+><BODY><DIV ID="banner"><A TITLE="CTO" CLASS="logo" HREF="tunes_20dream_20hardware.html">CTO</A
+> <SPAN>CLiki for the TUNES project</SPAN
+></DIV
+><DIV ID="navbar"><A CLASS="internal" HREF="index.html">Home</A
+>  <A CLASS="internal" HREF="cliki.html">About CLiki</A
+> <A CLASS="internal" HREF="text_20formatting.html">Text Formatting</A
+> </DIV
+><DIV ID="main"><H1>TUNES Dream Hardware</H1
+>A short descriptive <a class="internal" href="essay.html" >essay</a> by <a class="internal" href="fare.html" >Fare</a> about the hardware configuration that would suit a Tunes system the best:
+<p>It would be a cheap parallel system, based on clusters of <a class="internal" href="misc.html" >MISC</a> chips with on-chip memory (might be DRAM, SRAM, persistent SRAM, and/or ROM, FlashROM, etc) and some among various optional coprocessors (like a builtin multiplier, a good A/D or D/A converter, an external RAM access bus, a video output, etc) 
+The Tunes OS would allow all the chips to auto-configure themselves in network (I dunno how easy/uneasy it would be to include unique hardware numbering onchip; but else, a software solution based on a one specially configured chip per cluster is ok).
+<p>Because such systems come with everything on one chip, they needn't any bus to communicate, hence minimizing the number of pins, and high-speed serial networkish links could be used to communicate between chips.
+<p>I can even imagine hardware packaging going into standardized cubes where you'd just clip together as many cubes as you'd like, and it would autoconfigure to make the best out of it (including taking into account dissymetries, particular features of some chips, etc).
+<p>The great advantage of such an architecture would be that it maximize the horsepower/buckratio, both at purchase-time (see retailer price) and run-time (see electric consumption, maintenance, etc), while being a scaleable approach to computing (just add chips and let the reflective software distribute). And this is precisely what we're all looking for, ain't it?
+</DIV></BODY></HTML>

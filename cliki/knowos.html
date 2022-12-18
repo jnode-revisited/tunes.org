@@ -1,0 +1,133 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en" dir="ltr">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=latin1" />
+    <meta name="KEYWORDS" content="KnowOS,OS,Collection-Oriented,Common Lisp,DBMS,Declarative,Dynamic,Imperative,OO,PDF" />
+<meta name="robots" content="index,follow" />
+<link rel="shortcut icon" href="../favicon.ico" />
+    <title>KnowOS - TunesWiki</title>
+    <style type="text/css" media="screen,projection">/*<![CDATA[*/ @import "skins/monobook/main.css"; /*]]>*/</style>
+    <link rel="stylesheet" type="text/css" media="print" href="skins/common/commonPrint.css" />
+    <!--[if lt IE 5.5000]><style type="text/css">@import "skins/monobook/IE50Fixes.css";</style><![endif]-->
+    <!--[if IE 5.5000]><style type="text/css">@import "skins/monobook/IE55Fixes.css";</style><![endif]-->
+    <!--[if gte IE 6]><style type="text/css">@import "skins/monobook/IE60Fixes.css";</style><![endif]-->
+    <!--[if IE]><script type="text/javascript" src="skins/common/IEFixes.js"></script>
+    <meta http-equiv="imagetoolbar" content="no" /><![endif]-->
+        <script type="text/javascript" src="skins/common/wikibits.js"></script>
+    <style type="text/css">/*<![CDATA[*/
+
+
+/*]]>*/</style>              </head>
+  <body                 class="ns-0">
+    <div id="globalWrapper">
+      <div id="column-content">
+	<div id="content">
+	  <a name="top" id="top"></a>
+	  	  <h1 class="firstHeading">KnowOS</h1>
+	  <div id="bodyContent">
+	    <h3 id="siteSub">From TunesWiki</h3>
+	    <div id="contentSub"></div>
+	    	    	    <!-- start content -->
+	    <p><i>Knowledge Operating System</i> (KnowOS) is a project for a Dynamic system with persistent objects. It is written on <a href="common_20lisp.html" title="Common Lisp">Common Lisp</a> by Mike Travers, JP Massar, and Jeff Shrager as an underlying framework tool for <a href="http://nostoc.stanford.edu/" class='external text' title="http://nostoc.stanford.edu/" rel="nofollow">BioBike</a>. See <a href="http://nostoc.stanford.edu/Docs/KnosILCAbstract.htm" class='external text' title="http://nostoc.stanford.edu/Docs/KnosILCAbstract.htm" rel="nofollow">ILC 2005 Paper</a>.
+</p><p><br />
+</p>
+<table id='toc' class='toc'><tr><td><div id='toctitle'><h2>Contents</h2></div>
+<ul>
+<li class='toclevel-1'><a href="knowos.html#Intro_to_comments"><span class="tocnumber">1</span> <span class="toctext">Intro to comments</span></a></li>
+<li class='toclevel-1'><a href="knowos.html#Confusion:_relations_vs_relationships"><span class="tocnumber">2</span> <span class="toctext">Confusion: relations vs relationships</span></a></li>
+<li class='toclevel-1'><a href="knowos.html#On_the_flatness_of_relations"><span class="tocnumber">3</span> <span class="toctext">On the flatness of relations</span></a></li>
+<li class='toclevel-1'><a href="knowos.html#On_chasing_pointers_in_networks_of_complex_objects"><span class="tocnumber">4</span> <span class="toctext">On chasing pointers in networks of complex objects</span></a></li>
+<li class='toclevel-1'><a href="knowos.html#On_representing_graphs_with_relations"><span class="tocnumber">5</span> <span class="toctext">On representing graphs with relations</span></a></li>
+<li class='toclevel-1'><a href="knowos.html#Supporting_evidence"><span class="tocnumber">6</span> <span class="toctext">Supporting evidence</span></a>
+<ul>
+<li class='toclevel-2'><a href="knowos.html#A_pure_mathematical_theory_of_data"><span class="tocnumber">6.1</span> <span class="toctext">A pure mathematical theory of data</span></a></li>
+<li class='toclevel-2'><a href="knowos.html#Other_papers_on_graphs_and_trees_in_RDBMSs"><span class="tocnumber">6.2</span> <span class="toctext">Other papers on graphs and trees in RDBMSs</span></a></li>
+</ul>
+</li>
+</ul>
+</td></tr></table>
+<p><script type="text/javascript"> if (window.showTocToggle) { var tocShowText = "show"; var tocHideText = "hide"; showTocToggle(); } </script>
+</p>
+<a name="Intro_to_comments"></a><h2> Intro to comments </h2>
+<p>Good intentions, but they repeat the usual <b>bullshit</b> about <i>RDBMSs</i> that come from <a href="oo.html" title="OO">OO</a>-<a href="dbms.html" title="DBMS">DBMS</a> proponents.
+</p>
+<a name="Confusion:_relations_vs_relationships"></a><h2> Confusion: relations vs relationships </h2>
+<p>Citing from ILC 2005 Paper:
+</p>
+<blockquote> An Oracle instance is a virtual machine that allows users to interact with <b>tables and relations</b> as if these were persistent basic elements, and provides many of the above-described services to application programs that operate on <b>tables and relations</b>. </blockquote>
+<p>Tables <b>are</b> a 2D representation of relations, so speaking about tables <b>and</b> relations is nonsense. Probably, they are speaking about realations (tables) and <i>relationships</i> (one-to-one [1:1], many-to-one [M:1] and many-to-many [M:M]), represented in the database by <i>foreign key</i>-<i>primary key</i> <b>referential integrity constraints</b>.
+</p>
+<a name="On_the_flatness_of_relations"></a><h2> On the <i>flatness</i> of relations </h2>
+<blockquote> [..] and so that it becomes part of the persistent storage space - the files or tables. We feel that this is needlessly myopic; if one wants to work with complex, structured knowledge, one should not have to create it from <b>flat representations</b> [..] </blockquote>
+<p>I feel this is needlessly stupid. Again, tables are a 2D <b>representation</b> of relations; a relation is a <b>variable</b> which can assume as value <b>sets of points in a <i>n-</i>dimensional discrete space</b> (where <i>n</i> is the number of relation attributes), <a href="aka.html" title="aka">aka</a> <b>sets of tuples</b>. What does it mean for a <b><i>n-</i>dimensional discrete space</b> to be <b>flat</b>??
+</p><p><b>Note:</b> Wikipedia has an article on <i>flatness</i>, in particular the section <a href="http://en.wikipedia.org/wiki/Flatness#Flatness_in_mathematics" class='external text' title="http://en.wikipedia.org/wiki/Flatness#Flatness in mathematics" rel="nofollow">Flatness in mathematics</a> seems relevant. Apparently (to me at least) there is no way that the concept can be stretched so that the phrase "<i>relations are flat</i>" can be meaningful. (Please, <a href="http://tunes.org/wiki/Talk:KnowOS" title="Talk:KnowOS">discuss</a> this if you know better).
+</p>
+<a name="On_chasing_pointers_in_networks_of_complex_objects"></a><h2> On <a href="http://www.catb.org/jargon/html/C/chase-pointers.html" class='external text' title="http://www.catb.org/jargon/html/C/chase-pointers.html" rel="nofollow">chasing pointers</a> in <i>networks of complex objects</i> </h2>
+<blockquote> Whereas classical operating systems provide these services for simple data objects (files or tables), a KnowOS provides them for <b>networks of complex objects</b>.</blockquote>
+<p>.. and ..
+</p>
+<blockquote> Threading is the way that <b>pointers</b> are maintained between complex objects that have their own first-class status;</blockquote>
+<p>They miss completely the fact that the <i>relational data model</i> (<i><b>rdm</b></i>) was invented to <b>overcame</b> the deficiencies of hierarchical and network DBMSs (re-proposed in "modern" form as XML-DBMSs and OO-DBMSs). RDBMSs can cope with hierarchies and networks (graphs) better, in a more <b><a href="dynamic.html" title="Dynamic">dynamic</a></b> way, because they are <b>not</b> limited by a <b><a href="static.html" title="Static">static</a></b> representation of these structures as a <b>web of pointers</b><sup>1</sup>.
+</p><p>The main difference is this: a RDBMS manages graphs in a <a href="declarative.html" title="Declarative">declarative</a> way, with relational algebra or calculi which are <a href="collection-oriented.html" title="Collection-Oriented">collection-oriented</a> (<a href="aka.html" title="aka">aka</a> <i>data parallel</i> or <i>set-oriented</i>); hierarchical and network DBMSs manage it <a href="imperative.html" title="Imperative">procedurally</a><sup>2</sup> iterating node by node, instead. Also the <b>integrity</b> of such graphs are mantained <a href="declarative.html" title="Declarative">declaratively</a> by RDBMSs by integrity constraints (again, to express these constraints you have all the power of relational algebra/calculi at your disposal).
+</p>
+<hr />
+<ul><li> <sup>1)</sup> Codd's intent was to ban pointers from <b>data management</b>, on purpose (of course, I am speaking about the <b>logical</b> level, with which the <i><b>rdm</b></i> is concerned; at the <b>physical (implementation)</b> level pointers are admissible, if not necessary on conventional hardware).
+</li><li> <sup>2)</sup> About XQuery see <a href="tunes_20vs_20the_20www.html#XQuery" title="TUNES vs the WWW">this discussion</a> in <a href="tunes_20vs_20the_20www.html" title="TUNES vs the WWW">TUNES vs the WWW</a>.
+</li></ul>
+<a name="On_representing_graphs_with_relations"></a><h2> On representing graphs with relations </h2>
+<p>Citing again from ILC 2005 Paper:
+</p>
+<blockquote> If one wants to work with complex, structured knowledge, one should not have to create it from <b>flat</b> representations [..]. Instead, complex objects should constitute the basic persistent storage entities that are the domain of the operating system. </blockquote>
+<p><i><b>rdm</b></i> has no problems in representing, managing and assuring the integrity of such complex structures; on the contrary, it was invented exactly to <b>overcame</b> the deficiencies of hierarchical and network DBMSs (although SQL DBMSs, violating <i><b>rdm</b></i> theory, cause some problems in supporting graphs, above all admitting duplicates).
+</p>
+<a name="Supporting_evidence"></a><h2> Supporting evidence </h2>
+<a name="A_pure_mathematical_theory_of_data"></a><h3> A pure mathematical theory of data </h3>
+<p>(<b>Note:</b> in a preceding version, this was <b>point 4.</b> cited in my e-mail <a href="http://lists.tunes.org/archives/tunes/2005-June/003939.html" class='external text' title="http://lists.tunes.org/archives/tunes/2005-June/003939.html" rel="nofollow">Re: Google Summer of Code</a>)
+</p><p>The following projects show clearly that <i><b>rdm</b></i> is a <b>pure mathematical theory of data</b>, with no connection whatsoever with a specific implementation; the equations:
+</p>
+<dl><dd> <code>relations = files</code>
+</dd></dl>
+<p>and
+</p>
+<dl><dd> <code>tuples = records</code>
+</dd></dl>
+<p><b>ARE NONSENSE</b>.
+</p><p>Here program <b>graphs</b> (for program analysis) are represented as relations at the <b>logical</b> level and as (RO)<a href="http://en.wikipedia.org/wiki/Binary_decision_diagram" class='external text' title="http://en.wikipedia.org/wiki/Binary decision diagram" rel="nofollow">BDD</a>s (Reduced Ordered Binary Decision Diagrams) at the <b>physical (implementation)</b> level:
+</p>
+<ol><li> <a href="http://www.regularmodelchecking.com/software/docs/stable/gbdd/" class='external text' title="http://www.regularmodelchecking.com/software/docs/stable/gbdd/" rel="nofollow">GBDD - A package for representing relations with BDDs</a>, from <a href="http://www.regularmodelchecking.com/" class='external text' title="http://www.regularmodelchecking.com/" rel="nofollow">Regular Model Checking</a> framework.
+</li><li> <a href="http://www.sable.mcgill.ca/jedd/" class='external text' title="http://www.sable.mcgill.ca/jedd/" rel="nofollow">Jedd: Java Extension for Decision Diagrams</a> project and this example paper <a href="http://www.sable.mcgill.ca/publications/papers/#pldi2004" class='external text' title="http://www.sable.mcgill.ca/publications/papers/#pldi2004" rel="nofollow">Jedd: A BDD-based Relational Extension of Java</a>: <cite>whole program analyses based on BDDs; Jedd language abstracts BDDs as database-style relations and operations on relations, and provides Static type rules to ensure that relational operations are used correctly.</cite> Citing from this paper: <blockquote> In developing our approach, <b>it soon became apparent that a simple strategy of providing a Java wrapper to interface with a BDD library was not a good solution</b>, for many reasons. First, we found that the interface provided by the existing BDD libraries is very low level, and <b>as we attempted to express several complex interrelated analyses, understanding and maintaining our code became difficult</b>. Moreover, <b>programming at such a low level was error prone, and errors in our code led to either the BDD library aborting, or worse, to incorrect results</b> <span class="comment">[shortcomings of <a href="imperative.html" title="Imperative">procedural</a> programming]</span>. The implicit nature of the BDD representation made these errors difficult to track down. Furthermore, we found that it is quite difficult to match the memory management in Java with the reference-counter-based schemes employed in the BDD packages. Finally, we found that tuning a BDD-based algorithm requires profiling information about the size and shape of the underlying BDDs at each program step. We had previously developed some ad-hoc methods for visualizing this information, but a more automated approach was needed. <br /><b>Our solution</b>, and the topic of this paper, <b>was the development of</b>: (1)<b>Jedd</b>, a language extension to Java, which provides a <b>high-level way of programming BDD-based algorithms based on relations and operations on relations</b> <span class="comment">[advantages of <a href="declarative.html" title="Declarative">declarative</a> programming]</span>; (2) an associated translator which automatically translates Jedd to Java code that efficiently interacts with back-end solvers; and (3) run-time support for memory management, debugging and profiling of BDD operations. </blockquote>
+</li><li> <a href="http://suif.stanford.edu/bddbddb/" class='external text' title="http://suif.stanford.edu/bddbddb/" rel="nofollow">bddbddb - A BDD-Based Deductive DataBase</a> project: <cite>a tool for easily and efficiently specifying and querying program analyses, specified as programs in Datalog, a standard Declarative language for reasoning about relations.</cite><br />Also this example application paper <a href="http://www.stanford.edu/~jwhaley/papers/pldi04.pdf" class='external text' title="http://www.stanford.edu/~jwhaley/papers/pldi04.pdf" rel="nofollow">Cloning Based Context Sensitive Pointer Alias Analysis Using Binary Decision Diagrams</a> (.<a href="pdf.html" title="PDF">PDF</a>) by <a href="http://www.stanford.edu/~jwhaley/" class='external text' title="http://www.stanford.edu/~jwhaley/" rel="nofollow">John Whaley</a>: <cite>this paper shows that <b>pointer analysis, and many other queries and algorithms, can be described succinctly and declaratively using Datalog</b>, a logic programming language [equivalent to <i>Relational Algebra</i> under some assumptions -- again, advantages of <a href="declarative.html" title="Declarative">declarative</a> programming].</cite>
+</li><li> <a href="http://mtc.epfl.ch/~beyer/CrocoPat/" class='external text' title="http://mtc.epfl.ch/~beyer/CrocoPat/" rel="nofollow">CrocoPat: A Tool for Simple and Efficient Relational Computation</a>.
+</li></ol>
+<a name="Other_papers_on_graphs_and_trees_in_RDBMSs"></a><h3> Other papers on graphs and trees in RDBMSs </h3>
+<ol><li> In <a href="http://www.dbdebunk.com/books.html" class='external text' title="http://www.dbdebunk.com/books.html" rel="nofollow">PRACTICAL ISSUES IN DATABASE MANAGEMENT</a>, by <a href="http://www.dbdebunk.com/" class='external text' title="http://www.dbdebunk.com/" rel="nofollow">Fabian Pascal</a>, Chapter 7, <i>Climbing Trees in SQL: Data Hierarchies</i>.
+</li><li> <a href="http://www.dbdebunk.com/page/page/1490192.htm" class='external text' title="http://www.dbdebunk.com/page/page/1490192.htm" rel="nofollow">TREE-STRUCTURED DATA: A RELATIONAL PERSPECTIVE</a> by C. J. Date.
+</li><li> Oracle documentation, from <a href="http://www.oracle.com/technology/industries/life_sciences/index.html" class='external text' title="http://www.oracle.com/technology/industries/life sciences/index.html" rel="nofollow">Oracle Life Sciences Platform</a> (even biological applications, the same target as KnowOS) and <a href="http://www.oracle.com/technology/products/spatial/index.html" class='external text' title="http://www.oracle.com/technology/products/spatial/index.html" rel="nofollow">Oracle Spatial, Locator, and Location-Based Services</a>:
+<ol><li> <a href="http://www.oracle.com/technology/products/spatial/pdf/10g_network_model_twp.pdf" class='external text' title="http://www.oracle.com/technology/products/spatial/pdf/10g network model twp.pdf" rel="nofollow">Network Data Model White Paper</a> (.<a href="pdf.html" title="PDF">PDF</a>); don't be deceived by Oracle terminology: networks are represented as relations (nodes, links and paths relations).
+</li><li> <a href="http://www.oracle.com/technology/industries/life_sciences/presentations/biopathways704_graph_modeling.pdf" class='external text' title="http://www.oracle.com/technology/industries/life sciences/presentations/biopathways704 graph modeling.pdf" rel="nofollow">Graph Modeling and Analysis in Oracle</a> (.<a href="pdf.html" title="PDF">PDF</a>)
+</li><li> <a href="http://www.oracle.com/technology/industries/life_sciences/presentations/ls_eseminar_31mar05_ntwk_data_model_cytoscape.pdf" class='external text' title="http://www.oracle.com/technology/industries/life sciences/presentations/ls eseminar 31mar05 ntwk data model cytoscape.pdf" rel="nofollow">Access and Analyze graphs in Oracle Spatial Network Data Model using Cytoscape</a> (.<a href="pdf.html" title="PDF">PDF</a>)
+</li><li> <a href="http://www.oracle.com/technology/industries/life_sciences/pdf/ls_ieee_graph.pdf" class='external text' title="http://www.oracle.com/technology/industries/life sciences/pdf/ls ieee graph.pdf" rel="nofollow">Graph Data Representation in Oracle Database 10g: Case Studies in Life Sciences</a> (.<a href="pdf.html" title="PDF">PDF</a>)
+</li></ol>
+</li><li> <a href="http://tfs.cs.tu-berlin.de/grabats/Final04/varro.pdf" class='external text' title="http://tfs.cs.tu-berlin.de/grabats/Final04/varro.pdf" rel="nofollow">Graph Transformation in Relational Databases</a> (.<a href="pdf.html" title="PDF">PDF</a>) presented at <a href="http://tfs.cs.tu-berlin.de/grabats/GraBaTs%2704%20Programme.html" class='external text' title="http://tfs.cs.tu-berlin.de/grabats/GraBaTs'04 Programme.html" rel="nofollow">GraBaTs'04</a>.
+</li><li> <a href="http://domino.research.ibm.com/tchjr/journalindex.nsf/a3807c5b4823c53f85256561006324be/152e3e79918497f285256bfa0067f64e?OpenDocument" class='external text' title="http://domino.research.ibm.com/tchjr/journalindex.nsf/a3807c5b4823c53f85256561006324be/152e3e79918497f285256bfa0067f64e?OpenDocument" rel="nofollow">Storing and evaluating Horn-clause rules in a relational database</a> (<a href="http://www.research.ibm.com/journal/rd/301/ibmrd3001H.pdf" class='external text' title="http://www.research.ibm.com/journal/rd/301/ibmrd3001H.pdf" rel="nofollow">.pdf</a>), about representing terms as trees in a RDBMS.
+</li><li> <a href="http://klud.ics.upjs.sk/~gursky/papers/2004dateso.pdf" class='external text' title="http://klud.ics.upjs.sk/~gursky/papers/2004dateso.pdf" rel="nofollow">Storage and Retrieval of First Order Logic Terms in a Database</a> (.<a href="pdf.html" title="PDF">PDF</a>) by <a href="http://klud.ics.upjs.sk/~gursky/?lang=en" class='external text' title="http://klud.ics.upjs.sk/~gursky/?lang=en" rel="nofollow">Peter Gursky</a>. <blockquote><b>Abstract.</b> In this paper we present <b>a storage method for sets of first order logic terms in a relational database</b> using function symbols based indexing method of <b>Discrimination trees</b>. This is an alternative method to a published one, based on attribute indexing. This storage enables effective implementation of several <b>retrieval operations</b>: <b><a href="unification.html" title="Unification">unification</a>, generalization, instantation and variation of a given query term in the language of first order predicate calculus</b>. In our solution each term has unique occurrence in the database. This is very useful when we need to store a large set of terms that have identical many subterms. </blockquote>
+</li><li> <a href="http://www.comp.nus.edu.sg/~wongls/projects/ies-sql/index.html" class='external text' title="http://www.comp.nus.edu.sg/~wongls/projects/ies-sql/index.html" rel="nofollow">Maintaining Transitive Closure of Graphs in SQL</a>: notable, in this paper, the idea of Icremental Evaluation System (IES) that increases the expressive power of Relational Algebra, a pleasant theoretical  result with pratical application (a good theory <b>is</b> pratical). <blockquote>... Coming back to transitive closure, it cannot be expressed in relational databases using SQL <i>without incremental evaluation</i> but can be expressed in relational databases using SQL <i>in the setting of an incremental evaluation system</i>. In other words, avoidance of the cost of recomputation is not even the issue here, for the query is not even do-able in SQL without incremental evaluation in the first place! ...</blockquote>
+</li><li> <a href="http://e-hrc.net/pubs/abstract/RP-CP-GD-KR-incr-maint-short-dist-trans-clos-logic-sql.htm" class='external text' title="http://e-hrc.net/pubs/abstract/RP-CP-GD-KR-incr-maint-short-dist-trans-clos-logic-sql.htm" rel="nofollow">Incremental Maintenance of Shortest Distance and Transitive Closure in First Order Logic and SQL</a>
+</li></ol>
+<p><br />
+--<a href="http://tunes.org/wiki/User:MaD70" title="User:MaD70">MaD70</a>
+</p>
+	    <div id="catlinks"><p class='catlinks'><a href="http://tunes.org/wiki/index.php?title=Special:Categories&amp;article=KnowOS" title="Special:Categories">Categories</a>: <a  class="new" title="Category:OS">OS</a></p></div>	    <!-- end content -->
+	    <div class="visualClear"></div>
+	  </div>
+	</div>
+      </div>
+
+      <div class="visualClear"></div>
+      <div id="footer">
+    		<ul id="f-list">
+	  <li id="f-lastmod"> This page was last modified 17:21, 21 March 2007.</li></ul>
+      </div>
+    </div>
+    <!-- Served by bespin.org in 3.17 secs. -->  </body>
+</html>

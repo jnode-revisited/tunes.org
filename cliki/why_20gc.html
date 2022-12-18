@@ -1,0 +1,38 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<HTML><HEAD><TITLE>CTO : Why GC</TITLE
+><LINK REL="alternate" TYPE="application/rss+xml" TITLE="Recent Changes" HREF="http://tunes.org/cliki/recent-changes.rdf.html"><LINK REL="stylesheet" HREF="admin/cliki.css"></HEAD
+><BODY><DIV ID="banner"><A TITLE="CTO" CLASS="logo" HREF="why_20gc.html">CTO</A
+> <SPAN>CLiki for the TUNES project</SPAN
+></DIV
+><DIV ID="navbar"><A CLASS="internal" HREF="index.html">Home</A
+>  <A CLASS="internal" HREF="cliki.html">About CLiki</A
+> <A CLASS="internal" HREF="text_20formatting.html">Text Formatting</A
+> </DIV
+><DIV ID="main"><H1>Why GC</H1
+>An <a class="internal" href="essay.html" >essay</a> concerning why <a class="internal" href="garbage_20collection.html" >garbage collection</a> is essential to the Tunes project:
+<p>Garbage collection is just <em>needed</em> in a dynamical system (like for instance a distributed multi-user multi-tasking interactive development system). You can't escape it because there's <em>no way</em> to manually or statically determining when an arbitrary word will no longer be used. Surely on a non-interactive, non-development single-threaded embedded system, GC can be done manually and statically. This is just not the general case, that TUNES claims to handle. The Tunes compiler should be able to strip down GC when producing standalone code that does not need it; but the "main" reflexive development system just <em>has to</em> implement it.
+<p>See the <a class="internal" href="garbage_20collection.html" >GC FAQ</a> or the GC introduction text from Smalltalk/X for more insight.
+<p>It's important to realize that GC exists independently from the way it is implemented:
+<ul>
+<li>All GC techniques exist independently from their being done manually or automatically, with or without compiler help, in a language that can express the higher-order nature of GC constructs or that force one to manually transcribe it in an error-prone way, etc.
+<li>Particularly, all the manual memory management techniques traditionally used in the particularly inexpressive assembly, C, and C++ languages <em>are</em> some kind of GC techniques, though considerably much slower, less efficient, and more error-prone, both for development time and execution time, than the automatic techniques that expressive languages allow compilers to generate.
+</ul>
+<p>Qualities of a GC:
+<ul>
+<li>The most important quality for a GC is that it be <em>Safe</em>, that is, it won't free memory from objects still in use.
+<li>Next, a GC is all the more <em>Lively</em> than it can safely survive arbitrary kind of allocation pattern with higher amounts of live memory (from needed objects) being used for a longer period.
+<li>A sound GC that cannot guarantee the same liveliness as a one that would keep only reachable referenced objects is called "conservative".
+<li>A GC where the allocatability of a new objects depend only on the type/sizes of the live objects and new objects, not on the history of allocations of live and dead objects, is said to be immune to the "swiss cheese" syndrom. Other GCs are said to be all the more subject to this syndrom than the history prevent new objects from being allocated. Particularly, all conservative GCs are subject to it.
+<li>Finally, a GC is hard-real-time if it can guarantee a bound on the time spent during the allocation of a new object that is proportional to the size of the new object.
+</ul>
+<p>The main GC techniques:
+<ul>
+<li>Freeing no memory is called the "trivial GC". It's sound, hard-real-time, but the least lively GC that does not waste memory on purpose.
+<li>Building all memory freeing operations statically in the program, without maintaining any dynamic information about cross-references; this is called "static GC", but if you can only free what you statically know, so it is not maximally lively. It can be lively only when you can allocate everything on a tree, and cut eventually cut all dead branches.
+<li>Automatic compiler-generated stack allocation <em>is</em> a limited kind of such GC, particularly efficient when not using a single-threaded model without data sharing, but not very sound or lively in the general case.</li>
+<li>Counting the number of references to heap-allocated objects <em>is</em> some kind of GC, called "reference counting". It is not lively, because it won't remove circular references (see circular or doubly linked structures, that are so essential to many efficient algorithms).
+<li>Having back-references for all references instead of just counting them <em>is</em> some kind of GC technique, called "reference listing". It is a useful technique for sound GC in an asynchronous distributed environment; but if not used in conjunctions with other techniques, it has the same liveliness as reference counting on local GCs.
+<li>Tracing live objects as those reachable from a set of "roots" is the ultimate GC technique <em>in the general case</em>; used in cunjunction with a moving technique (copying or compacting), only it can solve the swiss-cheese syndrom.
+<li>Linear objects have a trivial implementation of reference-listing: if you ever reach such an object, then you just used the only reference to it, hence you don't need consult any "backpointer" to find that reference.
+</ul>
+</DIV></BODY></HTML>

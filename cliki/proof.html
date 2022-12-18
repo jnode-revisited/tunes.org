@@ -1,0 +1,29 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<HTML><HEAD><TITLE>CTO : Proof</TITLE
+><LINK REL="alternate" TYPE="application/rss+xml" TITLE="Recent Changes" HREF="http://tunes.org/cliki/recent-changes.rdf.html"><LINK REL="stylesheet" HREF="admin/cliki.css"></HEAD
+><BODY><DIV ID="banner"><A TITLE="CTO" CLASS="logo" HREF="proof.html">CTO</A
+> <SPAN>CLiki for the TUNES project</SPAN
+></DIV
+><DIV ID="navbar"><A CLASS="internal" HREF="index.html">Home</A
+>  <A CLASS="internal" HREF="cliki.html">About CLiki</A
+> <A CLASS="internal" HREF="text_20formatting.html">Text Formatting</A
+> </DIV
+><DIV ID="main"><H1>Proof</H1
+>A <a class="internal" href="term.html" >term</a> for the process of checking that a belief holds in some context.
+<p>Contrary to common belief, it is possible and would be relatively easy to prove programs correct <em>if only proper programming languages are used</em>.
+<p>This makes it possible to check software, to not launch a $10 billion rocket before you're sure the software is perfect, and to only trust software that comes with satisfying proofs.
+<p>Anything that can be formally specified about a program (like the fact that the program will terminate or not, or that such variable will not overflow) could be provable for a program designed with this proof in mind.
+<p>Of course, proofs do not remove the need for human checking. Firstly, proving the compliance of a program with respect to a formal specification does not make the formal specification adequate for the intended informal purpose.
+<p>Also of course, proving being an undecidable task in the general case, or at least an arbitrarily hard semi-decidable task, there will always be the need for humans to invent new methods for finding proofs, even though machines might do more and more of the task automatically.
+<p>Existing proof systems make it very difficult to have programs that are both proven correct and efficiently implemented. This is because provability and efficiency are opposite requirements for program representation, and existing systems can only manage a one representation for an object, not being able to consistently manage several of them. Hence the need for the choice of a compromise representation.
+<p>Tunes will remove the need of such compromise, by empowering the programmer with the ability to consistently manage multiple representations for a same abstract program, having at the same time a provable representation, efficiently implemented optimized versions, and the insurance that all these versions all strictly have the same behavior as for proven properties.
+<p>Some people who think they are clever will raise the above theoretical points about proof-finding not being possible in general. Of course proof-finding is not possible in general. Indeed, most programs are <em>wrong</em> and no amount of trying, manual or automated, could ever prove them right. But the purpose of proofs has never been and never will be to prove a random property for a general program taken at random out of the blue. On the contrary, the programs that are usefully proven correct are programs designed for a specific purpose, and architected in a certain way precisely because the programmer has an idea of how the program should be to fulfill said purpose correctly. In other words, for every intendedly correct program being developed, there is the informal proof of the correctness of said program (as it would be, if debugged) in the head of the programmer. And the purpose of a safe programming language for is to make it easy for the programmer to express not just the program, but also the proof of its correctness.
+<p>
+All fine and dandy until someone actually derives a proof. Once any proof has been derived the above falls apart. In at least once instance a proof has been derived.
+<p><ul class="links">
+<li><A HREF="http://www.comlab.ox.ac.uk/archive/formal-methods.html">Formal methods</A
+> for correct programming.
+<li><A HREF="http://www.cs.cmu.edu/afs/cs.cmu.edu/user/wls/www/sbpm.html">Semantics-Based Program Analysis and Manipulation</A
+>.
+</ul>
+<hr><p><b>This page is linked from: </b> <a class="internal" href="coq.html" >Coq</a> &nbsp; <a class="internal" href="correctness.html" >Correctness</a> &nbsp; <a class="internal" href="logic.html" >Logic</a> &nbsp; <a class="internal" href="tactic.html" >Tactic</a> &nbsp; </DIV></BODY></HTML>

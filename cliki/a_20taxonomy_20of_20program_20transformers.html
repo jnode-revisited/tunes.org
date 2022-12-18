@@ -1,0 +1,127 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<HTML><HEAD><TITLE>CTO : A taxonomy of program transformers</TITLE
+><LINK REL="alternate" TYPE="application/rss+xml" TITLE="Recent Changes" HREF="http://tunes.org/cliki/recent-changes.rdf.html"><LINK REL="stylesheet" HREF="admin/cliki.css"></HEAD
+><BODY><DIV ID="banner"><A TITLE="CTO" CLASS="logo" HREF="a_20taxonomy_20of_20program_20transformers.html">CTO</A
+> <SPAN>CLiki for the TUNES project</SPAN
+></DIV
+><DIV ID="navbar"><A CLASS="internal" HREF="index.html">Home</A
+>  <A CLASS="internal" HREF="cliki.html">About CLiki</A
+> <A CLASS="internal" HREF="text_20formatting.html">Text Formatting</A
+> </DIV
+><DIV ID="main"><H1>A taxonomy of program transformers</H1
+>See the <A HREF="http://www.cs.uu.nl/wiki/Pt/CourseSlides">course slides</A
+> <A HREF="http://www.cs.uu.nl/docs/vakken/pt/slides/PT03-Taxonomy.pdf">Taxonomy of Program Transformation</A
+> given and a follow-up paper <A HREF="http://www.cs.uu.nl/~visser/ftp/Vis03-survey.pdf">Program Transformation Mechanics. A Classification of Mechanisms for Program Transformation with a Survey of Existing Transformation Systems</A
+> by <a class="internal" href="eelco_20visser.html" >Eelco Visser</a>.
+<p>From <A HREF="http://citeseer.ist.psu.edu/uck96roadmap.html">A Roadmap to Metacomputation by Supercompilation</A
+>:
+<p><table border=1>
+  <caption>A taxonomy of transformers.</caption>
+<!-- first level header -->
+  <tr>
+    <th rowspan=2>transformer</th>
+    <th rowspan=2>information propagation</th>
+    <th rowspan=2>evaluation strategy</th>
+  <!----><th colspan=2>control restruct.</th>
+    <th rowspan=2>KMP test</th>
+    <th rowspan=2>elim struct.</th>
+  </tr>
+<!-- second level header -->
+  <tr><th>variant</th><th>genetic</th></tr>
+<!-- row 1 -->
+  <tr>
+    <td><a class="internal" href="partial_20evaluation.html" >Partial Evaluation</a> (PE)</td>
+    <td>constant</td>
+    <td>in-out</td>
+    <td>poly</td>
+    <td>mono</td>
+    <td>-</td>
+    <td>-</td>
+  </tr>
+<!-- row 2 -->
+  <tr>
+    <td>Deforestation</td>
+    <td>constant</td>
+    <td>out-in</td>
+    <td>poly</td>
+    <td>poly</td>
+    <td>-</td>
+    <td>+</td>
+  </tr>
+<!-- row 3 -->
+  <tr>
+    <td>Partial deduction</td>
+    <td>unification</td>
+    <td>unspecified</td>
+    <td>poly</td>
+    <td>mono</td>
+    <td>+</td>
+    <td>-</td>
+  </tr>
+<!-- row 4 -->
+  <tr>
+    <td>Positive <a class="internal" href="scp.html" >SCP</a></td>
+    <td>unification</td>
+    <td>out-in</td>
+    <td>poly</td>
+    <td>poly</td>
+    <td>+</td>
+    <td>+</td>
+  </tr>
+<!-- row 5 -->
+  <tr>
+    <td>Perfect <a class="internal" href="scp.html" >SCP</a></td>
+    <td>constraint</td>
+    <td>out-in</td>
+    <td>poly</td>
+    <td>poly</td>
+    <td>+</td>
+    <td>+</td>
+  </tr>
+<!-- row 6 -->
+  <tr>
+    <td>GPC</td>
+    <td>constraint</td>
+    <td>out-in</td>
+    <td>poly</td>
+    <td>poly</td>
+    <td>+</td>
+    <td>+</td>
+  </tr>
+</table>
+<p><ul>
+  <lh>Legenda</lh>
+  <li><strong>information propagation</strong>
+    <dl>
+      <dt>constant propagation:</dt>          <dd>the outcome of tests are ignored;</dd>
+      <dt>unification-based propagation:</dt> <dd>substitutions into the transformed terms are used to represent the outcome of tests;</dd>
+      <dt>constraint-based propagation:</dt>  <dd>the transformer explicitly maintains sets of constraints recording previous tests (restrictions). Depending on the programming language other abstract properties may be propagated;</dd>
+    </dl>
+  </li>
+  <li><strong>evaluation strategy</strong>
+    <ul>
+      <li>inside-out (or call-by-value or applicative order);</li>
+      <li>outside-in (or call-by-name or normal-order);</li>
+    </ul>
+  </li>
+  <li><strong>control restructuring</strong>
+    <dl>
+      <dt>monovariant:</dt> <dd>any program point in the subject program gives rise to zero or one program point in the residual program;</dd>
+      <dt>polyvariant:</dt> <dd>any program point in the subject program can give rise to one or more program points in the residual program;</dd>
+      <dt>monogenetic:</dt> <dd>any program point in the residual program is produced from a single program point of the subject program;</dd>
+      <dt>polygenetic:</dt> <dd>any program point in the residual program may be produced from one or more program points of the subject program;</dd>
+    </dl>
+  </li>
+  <li><strong>KMP test</strong>
+    <ul>  
+      <li>- : doesn't pass the test;</li>
+      <li>+ : pass the test;</li>
+    </ul> 
+  </li><li><strong>eliminate date structures</strong>
+    <ul>  
+      <li>- : doesn't eliminate;</li>
+      <li>+ : eliminate;</li>
+    </ul> 
+  </li>
+</ul>
+<hr><p><b>This page is linked from: </b> <a class="internal" href="program_20transformation.html" >Program Transformation</a> &nbsp; </DIV></BODY></HTML>

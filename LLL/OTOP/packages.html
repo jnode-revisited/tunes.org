@@ -1,0 +1,51 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+  <head>
+    <!--#include virtual="/head.html" -->
+    <title>O'TOP Packages to Implement</title>
+  </head>
+  <body>
+    <h1>O'TOP Packages to Implement</h1>
+    <!--#include file="header.html" -->
+    <p>The basic idea is to support as much of the underlying architecture as possible, and allow low-level access to it; but offer our own, standardize interface, implemented on top of it.</p>
+
+<h2>Basic I/O</h2>
+    <p>Just interface the system with the usual POSIX file mechanisms, so we can deal with I/O terminals. Access can be done through a low-level object, but several views of files as more sympathetic abstractions (arrays, list, sequence, input or output channels, etc.) are needed.</p>
+    <p>To allow multithreaded I/O, we'll have to use <tt>select</tt>.</p>
+
+<h2>Dynamic code loading</h2>
+    <p>We should support dynamic loading of modules, and if possible modules in shared memory. We should also support (as far as possible) importing of standard low-level system modules. Have a look at how ELF works under Linux.
+
+<h2>Threads</h2>
+    <p>We shall port our usual TUNES thread system to POSIX, and use <tt>SIGVTALRM</tt> to time-schedule our cooperative threads.</p>
+    <p>See <a href="http://www.humanfactor.com/pthreads/">this forum and resource site</a>.</p>
+
+<h2>PTY handling</h2>
+    <p>This is a very useful package, and not only to TUNES: once it's done, we automatically obtain the capability to dynamically combine and recombine inputs and outputs of pty's:
+    <ul>
+      <li>Choose I/O channels <em>independently</em>.</li>
+      <li>remap.</li>
+      <li>split.</li>
+      <li>join.</li>
+      <li>merge.</li>
+      <li>filter.</li>
+      <li>cook.</li>
+      <li>buffer.</li>
+      <li>use low-level to high-level and converse translations between them.</li>
+      <li>arbitrarily process them before passing them.</li>
+    </ul>
+    <p>This is <em>much</em> better than what, say, screen does, because we can independently remap input and output, and combine them in infinitely many useful ways. Because we can control pty's, we can fully control Unix programs, and allow these programs to interface TUNES nicely. With this, we can automatically have powerful text window systems and subsystems under Unix.</p>
+    <p>Of course, all that depends on there being some reliable pty daemon; until TUNES is very stable, a particular session can be dedicated to that (as TUNES is fine grained, there's no memory problem); most probably, separate from others (communicating by messages as usual).</p>
+    <p><em>Information:</em> <tt>man tty</tt>, <tt>man pty</tt>, <tt>man select</tt>, more /usr/include/**/*.h, read <tt>emacs info</tt> pages, etc.
+
+<h2>X Windowing</h2>
+    <p>Reuse some existing X toolkit package and interface it to TUNES.</p>
+    <p>Candidates: Tk, GTk.</p>
+
+<h2>Other</h2>
+    <p>More generally than the above <tt>SIGVTALRM</tt>, we should support provide a standard TUNES interface to signals.</p>
+    <p>All the <tt>fork</tt>, <tt>popen</tt>, etc. primitives, should be available too, in a straightforward way. Processes are viewed as multiple TUNES "hosts" in a distributed system; as of performance, it should be made clear that forking won't increase the total machine speed (though it may increase the share we have!), so there is no reason to migrate <em>on the same machine</em> unless it eases communication. Merging servers into a one active and another one asleep may be good, unless there are security or time-share competition reasons.</p>
+    <p>Provide network communication via sockets. Apart from their low security/efficiency performances, they are the same as any other TUNES communication subsystem.</p>
+    <!--#include virtual="/footer.html" -->
+  </body>
+</html>

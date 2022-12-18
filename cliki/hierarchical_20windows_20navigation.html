@@ -1,0 +1,31 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<HTML><HEAD><TITLE>CTO : hierarchical windows navigation</TITLE
+><LINK REL="alternate" TYPE="application/rss+xml" TITLE="Recent Changes" HREF="http://tunes.org/cliki/recent-changes.rdf.html"><LINK REL="stylesheet" HREF="admin/cliki.css"></HEAD
+><BODY><DIV ID="banner"><A TITLE="CTO" CLASS="logo" HREF="hierarchical_20windows_20navigation.html">CTO</A
+> <SPAN>CLiki for the TUNES project</SPAN
+></DIV
+><DIV ID="navbar"><A CLASS="internal" HREF="index.html">Home</A
+>  <A CLASS="internal" HREF="cliki.html">About CLiki</A
+> <A CLASS="internal" HREF="text_20formatting.html">Text Formatting</A
+> </DIV
+><DIV ID="main"><H1>hierarchical windows navigation</H1
+>I would guess this is an already known model, with some links on the net
+somewhere. Anyway, as I begin to hate the way windows navigation works under
+current implementations, I'd like to really suggest people facing the task
+of choosing a way use to navigate through windows a simple way.
+<p>In fact,I think I hate windows in the first place and that they should be
+removed and that we should use full-screen windows. Anyway, I think my model
+could be use with current windows interfaces too.
+<p>Like I said, I say my model, because I don't know people that have described
+it before, even if I guess it already exist.
+<p>I suggest that the windowing system have two kind of creation:
+create_sister_window and create_child_window. And that all childs of a
+windows, be linked in a circular linked-list. That way, one would have a
+previous key, and a next key to go through the childs windows. What need
+to ne added is an up key to go to the parent window, and I guess a close-window
+key would be nice too.
+<p>That's it, nothing more complicated than that!
+<p>I also believe that for each windows created, one would choose if the
+underlying process must continue, or be stopped when the windows lost
+focus.
+<p>That is so simple, that I feel stupid to write a node to suggest this.<hr><p><b>This page is linked from: </b> <a class="internal" href="windowing_20system.html" >windowing system</a> &nbsp; </DIV></BODY></HTML>

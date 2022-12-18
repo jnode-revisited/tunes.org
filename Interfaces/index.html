@@ -1,0 +1,156 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+  <head>
+    <!--#include virtual="/head.html" -->
+    <title>The Tunes Interfaces Subproject</title>
+  </head>
+  <body>
+    <h1 align="center">The TUNES Interfaces Subproject</h1>
+    <!--#include file="header.html" -->
+<h2>Goals</h2>
+    <ul>
+      <li>Design an interface architecture that supports Tunes' principles in the most general way. This should cover the computer-computer relation as the ever-problematic human-computer interaction issues; in general, the former can be taken as a broad generalization of the relation between software agents, so they are related inasmuch as that metaphor applies.</li>
+      <li>Specify a group of standards as part of this architecture.</li>
+      <li>Recommendations for new standards in terminal-types (interaction media at the hardware level) may be inferred from our recommendations, but those escape the scope of this subproject.</li>
+    </ul>
+
+<h2>Principles</h2>
+<h3>Terminal-Independance</h3>
+    <p>An essential feature that Tunes will provide is Terminal Independance: the fact that programmers need not worry in any way about how the information is communicated with the human: be it text, 2d or 3d GUI, braille, voice, morse, telepathy, or whatever technology will make possible. This seems ridiculous, but it's possible as long as there are protocols which deal with the nature of information and its various means and modes of exchange, and eventually their consequences, separately from the implementations of these ideas.</p>
+    <p>In contrast, current systems enforce dependance on a worst possible terminal:</p>
+    <ul>
+      <li>With Unix and mainframe systems, this has been a primitive <tt>tty</tt> (text grid and ASCII keyboard on a serial line). Between software, the further rule has been communication via byte-streams, with input, output, and error channels. The latter is significant in that persistent storage (the file system) only records or provides that effectively; advances to the storage semantics such as in the Plan 9 operating system have only taken this bare minimum to its logical limit. One limit that has appeared historically has been due to the practical desire to ensure that these media are human-readable through trivial programs: this is a very worthwhile goal, but historically has spawned a lot of unnecessary complexity.</li>
+      <li>Since the advent of the Apple MacIntosh, the rule has become a WIMPish GUI (Windows, Icons, Menus, Pulldown menus), which is better, but an enormous waste of hardware and software resources. More importantly, it still is a very limited way to communicate, lacking the serializability and "replayability" of the Unix systems' metaphors. It also does not adapt to computing by people not sitting in front of a desk (blind people, people having physical activities, people moving, etc.).</li>
+      <li>Later systems have promoted the idea of "object-oriented" (say, CORBA) or recursive name-attribute-laden media (XML, Schema, XSLT, DAML/OIL, Ontologies), but unfortunately using a very poor model of object and attribute which is often very wasteful and requires extra effort on both sides of the medium (not just computationally, but for the designers / specifiers as well). Generally, recent solutions have had this flavor of reducing both sides to a less-efficient and less-expressive medium at the computational and definitional cost to both sides.</li>
+    </ul>
+    <p>In contrast to these approaches, the Tunes principle of interfaces is to standardize on media which are logical or algebraic and still capable of expressing low-level types as needed. The further principle of allowing these systems and media to be able to adapt to new, specialized media means that programs which are more related to each other, therefore more likely to communicate, could adapt to each other and re-negociate their means of implementation and communication to <em>increase</em> their performance and adaptability in communicating, rather than requiring new hurdles to jump through to accomplish their fundamental task.</p>
+    <p>Naturally, some common, easy to use media will be needed as a common denominator, but the system components should be expressed in a way that allows the compilation system to build new encodings dynamically. Naturally, this is an <em>unproven</em> idea within computer science, and will be a major point of development for some time.</p>
+
+<h3>Facilitates Programming through Use</h3>
+    <p>A very important goal is that the interface architecture should allow re-programming or extension of behavior through directly-visible and non-disjoint interfaces. That is, there should be a very smooth transition from use to programming, and that a good deal of programming can be accomplished without loss of efficiency through directly accessible tools.</p>
+
+<h3>Abstraction</h3>
+<p>
+As always, reflection is essential as to allow terminal independence:
+it allows the abstract meaning of computations to be kept abstract,
+and to consistently concretize it afterwards.
+Concretizing an abstract meaning into input/output to a terminal
+is exactly what an interface is all about.
+<p>
+The goal of the Interface subproject will thus be to build such interfaces.
+However, objects are constructed in a rich algebra,
+and constantly building new interfaces for every new constructed object
+is a tedious task;
+reflectivity is again the solution, as it allows the interfacing objects
+to follow and wrap the structure of objects;
+interfacing is thus made a particular case of representing,
+and can use all the richness of the reflective algebra;
+hence, instead of building terminal interfaces for every terminal object,
+several interface constructors are built for every object constructor.
+This allows for automatic, generic, modular, and incremental interfaces
+instead of only manual, specific, bloated, and inextensible interfaces.
+Abstract programs see implicitly interfaced objects,
+achieving independence from the concrete interface.
+Another side effect is that just any object can be dynamically interfaced,
+instead of just a few objects statically choosen by the initial developer
+(of course, objects that will have been given more care will look better).
+<p>
+Defining such abstract interfaces is to do in tight cooperation
+with the HLL subproject, that defines the algebra in which
+such abstract interfaces are built.
+However, Interfaces subproject will not substitute to the HLL subproject:
+it will use the algebra provided by the HLL subproject,
+giving back useful feedback, suggestions and proposals,
+from a priviledged position, but it will not design the algebra itself.
+<P>
+
+<h3>Concrete Aspects</h3>
+<p>
+Concurrently with the definition and specification of abstract interfaces,
+the Interfaces subproject will develop concrete interfaces:
+concrete ways for humans and abstract programs to interact.
+This would begin with textual syntactical representations of abstract programs;
+then, output on a two-dimensional display would be added,
+be it with text grids or a graphic screen;
+interactive timely input, "event programming"
+(as opposed to raw sequences of data) will be added,
+be it from keyboard, mouse, joystick, eyemove-tracker.
+<p>
+We would then have equalled the stupid GUI interfaces of today,
+and could begin to explore forward, using reflection to seamlessly integrate
+our improvements to existing and future software:
+voice recognition and synthesis, input anticipation,
+only our imagination will be the limit.
+<P>
+
+<h3>Adaptiveness</h3>
+<p>
+Users should be able to learn from their interaction with the system
+(didactic interface, that teaches), and the system should be able
+to learn from its interaction with users
+(apprentice interface, that learns).
+<p>
+New users should be able to learn fast,
+through a self-documenting interface
+with playable examples that are copy-on-write-ly customizable.
+It should be possible to dynamically draw an interface
+separating the "frontend" from the "backend" of the system,
+and observe the events that happen there,
+in the form of program instructions
+of some dynamically user-defined abstraction level,
+so that the user may replay, script, generalize, refactor, etc.,
+his previous manual actions on the interface.
+The instructions might themselves be kept in a more detailed way
+than they are shown by default to the user, so as to keep additional
+details that help faithful replay
+(such as annotations for environment, time, etc.).
+<p>
+Analyzing the logs of previous interaction,
+the interface may in turn learn from previous newbies
+what might be the concerns of future newbies.
+Classifying people according to their interests so as to propose them
+targeted services is a difficult topic, but a promiseful one;
+it can serve to boost productivity of technicians
+by predicting their next move and providing better choice,
+yet might find funding through its potential
+in advertising toward non-technicians.
+
+<h2>Specific Domains</h2>
+
+<p><a href="ingen.html">Automatic Interface Generation</a></p>
+<p><a href="wp.html">Word Processing</a></p>
+<p><a href="games.html">Games</a></p>
+<p><a href="tunesvswww.html">Distributed Hypertext Systems (the WWW)</A></p>
+<p><a href="worlds.html">Worlds</a></p>
+
+<h2>Plan</h2>
+    <p>The Slate project graphical interface has the design goal of merging the features of CLIM and Morphic into one clean architecture, and to develop as many of the applications of Tunes Interface principles upon that. When the HLL system is ready, the architecture and developments will then be further extended to take advantage of Tunes language semantics.</p>
+
+<h2>HLL Support</h2>
+    <ul>
+      <li>Design a straightforward language syntax.
+	<ul>
+	  <li>We need construction, and annotation, with a way to reflectively transform between annotation into construction. (<em>Editor's Note:</em> Why?)</li>
+	  <li>LISP or ML look like a good start.</li>
+	  <li>See how Guile does multi-syntax support, for more human-friendly syntaxes.</li>
+	  <li>See how POP, ILU, or Maude do it.</li>
+	</ul>
+      <li>Design interactive input methods
+	<ul>
+	  <li>Get inspiration from <a href="http://www.emacs.org">Emacs</a> and CLIM's presentation types and input-accepting and completion facilities for basic edition.</li>
+	  <li>See how Centaur does it, for <em>structured</em> object handling (not all object are made of sequences of text lines).</li>
+	  <li>Remember that the input needn't be a straightforward representation of the output -- completion is good; move redundancy where it is needed.</li>
+	  <li>Make it easy to invoke or not invoke heuristics for completion, translation, etc.</li>
+	</ul>
+      </li>
+    </ul>
+
+<h2>To Do:</h2>
+    <ul>
+      <li></li>
+    </ul>
+    <hr>
+    <p>Annotate this on the <a href="http://cliki.tunes.org/TUNES Interfaces">CLiki</a>.</p>
+    <!--#include virtual="/footer.html" -->
+  </body>
+</html>

@@ -1,0 +1,87 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+  <head>
+    <!--#include virtual="/head.html" -->
+    <title>HLL Specifications</title>
+  </head>
+  <body>
+    <h1>The TUNES HLL Specifications</h1>
+    <!--#include file="header.html" -->
+    <h2><a href="general.html">General Concepts</a></h2>
+    <h2><a href="safety.html">Safety and Security Issues</a></h2>
+    <h2><a href="primitives.html">Standard Basic Constructors</a></h2>
+    <h2><a href="architecture.html">Meta-Level Architecture</a></h2>
+    <h2><a href="syntax.html">Standard Syntax</a></h2>
+    <h2>Standard Library of language extensions</h2>
+
+    <p>This should consist of instances of meta-level architecture components, and uses of these to provide some convenient environment for expressing enough of present-day idioms (such as shell syntax) for the purpose of retaining the conveniences they serve. Gradually these should be incorporated into a larger, regularized framework.</p>
+
+    <hr>
+<h2><A NAME="Issues">Issues</A></h2>
+    <h3>Implementing Annotations</h3>
+    <ul>
+      <li>There is the problem of the efficiency of dynamic annotations, all the more when it comes to annotating light objects: the mechanisms to annotate terminal ("leaf node" or "immediate-value") objects.
+	<p>Reserving an annotation list for each object would be quite too costly (and bloated), and should be reserved for objects that are more often manipulated by humans than used in actual computations (<em>i.e.</em> the objects nearest to the human user).</p>
+      </li>
+      <li>So annotation mechanism depends on: the annotation object, the annotated object, and the context meta-object. Some aspect of the context chooses the implementation of the object based on a combination of convenience of this decision's computation as well as the foreseeable uses of the object. If an object only gets used once, there's no justification in spending run-time resources to calculate anything but a dead-simple representation.</li>
+	<li>It seems that somehow, the system should (dynamically) differentiate coarse-interfaced objects (including single integers that are being watched by external humans) from lightly interfaced ones. The former would have an "annotation" field, while the latter would have a more expensive mechanism for annotation (e.g. using hashed association tables), or would have to be annotated through a coarse-object wrapping. So some combination of compile-time and run-time heuristics and architecture would be of use in handling each object differently.</li>
+      <li>If annotations are annotated, the simple and naive solution is to make the first notation a fuller object instead of a simplified encoding. It is also possible that some simple recursive system could be encoded with a minimal tree-encoding. In general, many things are possible, and this could be subjected to the Tunes system general data structure system.</li>
+      <li>We must have some efficient implementation to track dependencies when there is <a href="http://cliki.tunes.org/Partial Evaluation">partial evaluation</a>, so that no invalidated code is run. Note that this could encompass any kind of system-building ("make") utility, and is much better, as it supports a fine grain and exact semantics.</li>
+    </ul>
+    <h3>Keeping Proofs Tractable</h3>
+    <ul>
+      <li>Most importantly, all objects should be defined clearly in an abstract context that shows the "limits" of the object: an object is a term made with implicit and explicit parameters. Though some implicit parameters may be instantiated, they can be migrated; though explicit parameters may be <a href="http://cliki.tunes.org/Future">future</a> values, they cannot be migrated. These concepts naturally extend to all meta-objects for a considered object.
+	<p>Now, we want to be able to say things about the constructors that an object was made with. We want to be able to determine a superlist of constructors used to make an object, and/or to say that the object can be expressed in a theory that does not include some constructor.</p>
+	<p>The problem is when we use meta-constructors that can be eliminated (by e.g. beta-conversion, inference, or more generally <a href="http://cliki.tunes.org/Higher-Order">higher-order</a> term <a href="http://cliki.tunes.org/Rewrite">rewrite</a>), but that we don't want to be actually eliminated. Such meta-constructors are part of the implicitly instanciated, migratable meta-constructors for the object. Typical example: though we define "true" natural integers by Peano's axioms, we want to use usual logarithmical size representation to manipulate them. So even if we discuss about a type <code>Nat=0|S:Nat-&gt;Nat</code>, we can manipulate usual system integers, and other such types.</p>
+      </li>
+    </ul>
+
+<hr>
+<h2>To merge:</h2>
+
+<h3><a name="choice">Choice</a></h3>
+    <p>The system must provide as part of language semantics access to a choice axiom concept, similar to the <a href="http://cliki.tunes.org/Epsilon Calculus">epsilon calculus</a>. We explain this choice axiom:
+    <ul>
+      <li>The language must require as few redundancies as possible: a programmer may want to give enough information to the system to specify the program or desired result. The system or interface context should be capable of filling in missing <em>redundant</em> information all by itself. Further hints may be requested from the user and provided to extend this.</li>
+      <li>There is a mechanism for that, which is the use of a "choice" construct, or implicitness construct. When such a construct is used, the system must somehow provide an object fulfilling the requirements, if there exists one, or else issue an exception.</li>
+      <li>Exactly how an object is chosen should be completely human-controllable, but not necessarily human-controlled. There is no decidable algorithm to fulfill <em>any</em> constraints, but some domains are easy to deal with, and in any case, <em>something</em> can be inferred about the object. This human-assisted control is done through annotations and contextual information, which would be the usual means; this information could be statically or dynamically bound, and presumably with more degrees of freedom. Obviously this kind of freedom would be stripped or assumed to be impossible to optimize a run-time process.</li>
+      <li>This <em>is</em> how the user interface is implemented: when a program needs some data to be provided, it calls the choice axiom as part of its inference. An object is created with only the annotation that it satisfies the need and that it exists. An inference system then works out if enough information exists to infer enough about the object so that the system need not ask the user for the remainder. Obviously, if this fails, a request is posed to the user for the missing information. The user provides some information, tells the system that they have given enough, and the system proceeds to work out what has been provided and whether that is enough or even consistent, at which point the dialog may continue or the initiating process could take the given object and proceed beyond the dialog.</li>
+    </ul>
+    <p>One way to understand programming with epsilons (Epsilon stands for Hilbert's epsilon symbol for a witness for an existential predicate) is to view them as goals in the classical paradigm of higher-order logic programming (see languages like Prolog, Mercury, Lambda Prolog, Goedel, <em>Maude</em>); an epsilon is a hole in the well-founded construction of a computable object; the system thus uses tactics to fill the hole; these tactics are made of rules that may include holes themselves, hence generating filling of the subholes as subgoals.</p>
+    <p>The main differences of Tunes epsilon calculus with classical logic programming is that tactics can be dynamically defined from existing tactic constructs and libraries, and they are first-class objects, themselves subject to manipulation, etc. Also, there is a guaranteed constraint that should they succeed, they should return an object that rigorously matches the requested specification; hence, whereas Prolog programs only have a global semantics that can only be deduced from the totality of rules, Tunes tactics can have a nice local semantics with local definitions.</p>
+    <p>If <tt>O</tt> is an object with a free variable <tt>e</tt>, then <tt>O[E/e]</tt> where <tt>E</tt> is a compliant tactic to fill 'hole' <tt>e</tt> is a valid object and specialization for <tt>O</tt>. <tt>E</tt> may dynamically generate holes itself, etc.</p>
+    <p>The tactics are constrained to return a result that respect the specification for the requested object, instead of being pure arbitrary tactics in a program with global semantics only.</p>
+
+<h3>Abstraction &amp; Migration</h3>
+<ul>
+      <li>Is this an example of abstraction: taking an integer addition function and abstracting it to work with floats?
+	<p>If the addition function is used in a context such that the fact that the numbers are integers rather than float does not intervene, then it is a valid to abstract the number type into something more general than integers. You reapply the said abstracted object to the float number type, but the result is not the abstraction itself; If the overall abstract semantics of the new object are the same as those of the original one (i.e. you were doing computations on integers, and are now using the FPU to speed them up), then it is what I called a <a href="http://cliki.tunes.org/Migration">migration</a> of the original object.</p>
+      </li>
+    </ul>
+
+<h3>References considered Harmful</h3>
+    <p>It seems to me that references are not a good concept in a <a href="http://cliki.tunes.org/Distributed">distributed</a> system. Communication Channels, Linear objects, and projects seem to do more than references, in more precise ways:</p>
+    <ul>
+      <li>For variable value holders in immediate computations, linear objects seem good.</li>
+      <li>For communication, channels of increasing information seem better.</li>
+      <li>For shared, evolving, information, the notion of monotonically evolving <em>projects</em> seems interesting: projects are a special kind of "objects" (only reified at a higher-level of abstraction than usual code), that are repository for information. Such projects evolve, for divergent and convergent versions; several may be merged into one; one may be split into several. Split parts may be recombined with other projects, etc.</li>
+      <li>All in all, references look like a very low-level concept that may be rid of in most (which?) cases.</li>
+    </ul>
+
+<hr>
+<h3>To Do:</h3>
+    <ul>
+      <li>Detail the rules to prove programs.</li>
+      <li>Find out how multiple type systems can be made compatible.</li>
+      <li>Separate annotation mechanisms from annotation resolving policies.</li>
+      <li>Find out how to separate or merge the "useful/administrative" or "in context/out of context" information. This would be a protocol for context meta-objects.</li>
+    </ul>
+    <ul>
+      <li>Explain why, taking <em>interaction</em> into account, reflective languages are more expressive than non-reflective ones, and why the ability to write reflective interpreters in non-reflective languages brings a <em>significant</em> constant performance factor hit (both in space and time) in reflective execution. (See game theory, alternating Turing machines, etc.)
+	<p>If <em>minimal</em> cost of emulating one "reflective" operation on a non-reflective language is <tt>a*l+b</tt> (where <var>l</var> is length of history) then <em>minimal</em> cost of n reflective operations is <tt>a^n+...+n*b</tt>. And that's best-case behavior. Even in the worst case, reflective wins.</p>
+	<p>Plus there's the <em>human</em> cost behind dealing with separate meta-levels that can't be automatically unified and differenciated.</p>
+      </li>
+    </ul>
+    <!--#include virtual="/footer.html" -->
+  </body>
+</html>

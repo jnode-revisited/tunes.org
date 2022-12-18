@@ -1,0 +1,40 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+  <head>
+    <!--#include virtual="/head.html" -->
+    <title>Tunes Migration Goals</title>
+  </head>
+  <body>
+    <h1>Tunes Migration Goals</h1>
+    <!--#include file="header.html" -->
+    <p>Find, study, and implement existing or new techniques that allow to take full advantage of distribution in a computing system, through the concept of dynamic migration of fine-grained objects.</p>
+    <h2>Definition</h2>
+    <p>Migration is when an object gets abstracted from its current context and applied to another context. There is a conceptual and implementational <a href="http://cliki.tunes.org/Migration Comparison"><b>comparison</b></a> between Migration and more traditional concepts. See also the <a href="http://cliki.tunes.org/Migration">Glossary entry for migration</a>.</p>
+    <p>Migration involves 3 phases:</p>
+    <dl>
+      <dt>Reification</dt>
+      <dd>The object has to be separated from its current context. Knowledge of the target context is required even at this stage, even if incomplete knowledge. Also, the limitations of the means of transport affects what is required of this stage: a single batch distribution with no opportunity for interaction before the other context must have this distribution running certainly imposes more constraints on what must happen during reification.</dd>
+      <dt>Communication</dt>
+      <dd>Whatever is separated has to be encoded for transport according to a published medium which both the supplier and consumer support. The publisher of the medium does not have to be an independent or global party. In fact, specializing a globally-published medium for localized conditions is encouraged as long as a bootstrap to implement this localized medium. <span class="comment">Whether reversibility of this bootstrap is required here or elsewhere is not specified yet.</span></dd>
+      <dt>Absorption</dt>
+      <dd>The object is installed into the target context. What is possible here is again dependent on the nature of the communication medium, due to varying natures of installation. For example, dependencies on other versioned objects or meta-objects may be necessary; if those versions are not present on the target machine, they need to be communicated and expressed from <em>some</em> party within the same or another medium, one that is available directly to the context.</dd>
+    </dl>
+    <p>Concurrent with these phases is an aspect of translation, handling the semantic and environment differences in various ways. In this respect, this subproject delegates to the <a href="http://tunes.org/HLL/Meta/">HLL Meta-Translator subproject</a>. The translation applies both upon encoding and decoding from the communications phase, and in as often of a case as possible, would be trivial.</p>
+    <h2>Applications</h2>
+    <dl>
+      <dt>Dynamic Load-balancing</dt>
+      <dd>...over a pool of resource providers. The system shall automatically dispatch objects across a distributed system. The goal is to improve performance, by reducing overall resources wasted (including being idle, administrating, migrating, and running unoptimized code), while respecting the human user's constraints (response time, total computation time).</dd>
+      <dt>Providing Orthogonal Persistence</dt>
+      <dd>
+      <dt>Upgrading Modules</dt>
+      <dd>Fixing bugs, extending, removing features, re-factoring features, and versioning/identification at various levels, including the handling of branching and merging.</dd>
+      <dt>Managing Mobile Users</dt>
+      <dd>Moving users who are logging in on moving places in a computer network.</dd>
+      <dt>Managing Terminals</dt>
+      <dd>Detaching and reattaching objects to different I/O devices, terminals, or whatever. Some of this involves session-management and development for the terminal itself.</dd>
+    </dl>
+    <p>All the migration scheduling will be under full user control, be it direct, indirect, remote, purely potential, or freezed to some compile-time behavior.</p>
+    <p>Migration is a very important feature in the TUNES system, that no other known system provides at all (but in its most primitive, non parametrizable form: swapping raw chunks of memory between memory and harddisk).</p>
+    <!--#include virtual="/footer.html" -->
+  </body>
+</html>

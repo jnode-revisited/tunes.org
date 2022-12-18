@@ -1,0 +1,31 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<HTML><HEAD><TITLE>CTO : VHDL</TITLE
+><LINK REL="alternate" TYPE="application/rss+xml" TITLE="Recent Changes" HREF="http://tunes.org/cliki/recent-changes.rdf.html"><LINK REL="stylesheet" HREF="admin/cliki.css"></HEAD
+><BODY><DIV ID="banner"><A TITLE="CTO" CLASS="logo" HREF="vhdl.html">CTO</A
+> <SPAN>CLiki for the TUNES project</SPAN
+></DIV
+><DIV ID="navbar"><A CLASS="internal" HREF="index.html">Home</A
+>  <A CLASS="internal" HREF="cliki.html">About CLiki</A
+> <A CLASS="internal" HREF="text_20formatting.html">Text Formatting</A
+> </DIV
+><DIV ID="main"><H1>VHDL</H1
+><A HREF="http://en.wikipedia.org/wiki/VHSIC">VHSIC</A
+> <a class="internal" href="hardware_20description_20language.html" >Hardware Description Language</a>
+<p>VHDL or <A HREF="http://en.wikipedia.org/wiki/VHSIC">VHSIC</A
+> Hardware Description <a class="internal" href="language.html" >Language</a>, is commonly used as a design-entry language for <a class="internal" href="fpga.html" >FPGA</a>s and ASICs in electronic design automation. 
+<p>VHDL was originally developed at the behest of the US Department of Defense in order to document the behaviour of the ASICs that supplier companies were including in equipment. That is to say, VHDL was developed as a alternative to huge, byzantine manuals which are subject to implementation specific minutiae. 
+<p>The idea of being able to simulate this behaviour was so obviously attractive that logic simulators were developed that could read the VHDL files. The next step was the development of logic synthesis tools that read the VHDL, and output a definition of the physical implementation of the circuit. Modern synthesis tools can extract RAM, counter, and arithmetic blocks out of the code, and implement them according to what user specifies. Thus, the same VHDL code could be synthezied differently for lowest cost, most power efficient, highest speed, etc
+<p>The initial version of VHDL, to standard IEEE 1076-1987, included a wide range of data types, including numerical (integer and real), logical (bit and boolean), character and time, plus arrays of bit called bit_vector and of character called string. 
+<p>A problem not solved by this edition, however, was "multi-valued logic", where a signal's drive strength (none, weak or strong) and unknown values are also considered. This required IEEE standard 1164, which defined the 9-value std_logic. 
+<p>The second issue of IEEE 1076, in 1993, made the syntax more consistent, allowed more flexibility in naming, extended the character type to match the full 8-bit ASCII definition, added the xnor operator, etc. 
+<p>More recently, the language has been extended by introducing signed and unsigned types to facilitate arithmetical operations; 
+analog and mixed-signal circuit design extensions; 
+VITAL (VHDL Initiative Towards ASIC Libraries); 
+microwave circuit design extensions
+<p>VHDL has a syntax similar to <a class="internal" href="pascal.html" >Pascal</a> and <a class="internal" href="ada.html" >Ada</a>, thus being a descendant of <a class="internal" href="algol.html" >Algol</a>. VHDL is case insensitive. 
+<p><ul class="links">
+  <li><A HREF="http://www.eda.org/">EDA.org</A
+> contains lots of useful information including a FAQ 
+  <li><A HREF="news://comp.lang.vhdl">The FAQ of news://comp.lang.vhdl</A
+>
+</ul><hr><p><b>This page is linked from: </b> <a class="internal" href="confluence.html" >Confluence</a> &nbsp; <a class="internal" href="fpga.html" >FPGA</a> &nbsp; <a class="internal" href="hardware_20description_20language.html" >Hardware description language</a> &nbsp; <a class="internal" href="programmable_20logic_20device.html" >programmable logic device</a> &nbsp; </DIV></BODY></HTML>

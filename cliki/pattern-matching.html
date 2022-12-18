@@ -1,0 +1,29 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<HTML><HEAD><TITLE>CTO : Pattern-Matching</TITLE
+><LINK REL="alternate" TYPE="application/rss+xml" TITLE="Recent Changes" HREF="http://tunes.org/cliki/recent-changes.rdf.html"><LINK REL="stylesheet" HREF="admin/cliki.css"></HEAD
+><BODY><DIV ID="banner"><A TITLE="CTO" CLASS="logo" HREF="pattern-matching.html">CTO</A
+> <SPAN>CLiki for the TUNES project</SPAN
+></DIV
+><DIV ID="navbar"><A CLASS="internal" HREF="index.html">Home</A
+>  <A CLASS="internal" HREF="cliki.html">About CLiki</A
+> <A CLASS="internal" HREF="text_20formatting.html">Text Formatting</A
+> </DIV
+><DIV ID="main"><H1>Pattern-Matching</H1
+>A <a class="internal" href="term.html" >term</a> used to describe a family of programs operating over compound, structured data, usually trees or graphs. Pattern matching programs verify whether a data item complies with a pattern, i.e. an abstract structural description, and usually bind one or more variables with points in the data structure. Bindings are specified in the pattern. 
+<p>Adapted and extended from <A HREF="http://wombat.doc.ic.ac.uk/foldoc/foldoc.cgi?query=pattern-matching">FOLDOC's definition</A
+>:
+<p>A function is defined to take arguments of a particular type, form or value. When applying the function to its actual arguments it is necessary to match the type, form or value of the actual arguments against the formal arguments in some definition. For example, the function:
+<p><code>length []     = 0
+length (x:xs) = 1 + length xs</code>
+<p>uses pattern matching in its argument to distinguish a null list from a non-null one.
+<p>There are well known algorithm for translating pattern matching into conditional expressions such as <code>if</code> or <code>case</code>. E.g. the above function could be transformed to
+<p><code>length l = case l of
+           []   -> 0
+           x:xs -> 1 : length xs</code>
+<p>Pattern matching is usually performed in textual order though there are languages which match more specific patterns before less specific ones.
+<p>The Tunes correspondent to this can be more general, in that specification of a non-deterministic or partially-deterministic order of traversal of function definitions can be given. The fact that code can be specified in a non-linear shape contributes to making this possible, as well as reflective specification of the traversal order.
+<p><ul class="links">
+<li><A HREF="http://www.cs.ucr.edu/~stelo/pattern.html">Pattern Matching Pointers</A
+>.
+</ul>
+<hr><p><b>This page is linked from: </b> <a class="internal" href="alan_20bundy.html" >Alan Bundy</a> &nbsp; <a class="internal" href="bla.html" >Bla</a> &nbsp; <a class="internal" href="c_2b_2b.html" >C++</a> &nbsp; <a class="internal" href="cliki_20bugs.html" >CLiki Bugs</a> &nbsp; <a class="internal" href="dispatch.html" >Dispatch</a> &nbsp; <a class="internal" href="fare-matcher.html" >fare-matcher</a> &nbsp; <a class="internal" href="forklift.html" >Forklift</a> &nbsp; <a class="internal" href="godiva.html" >Godiva</a> &nbsp; <a class="internal" href="linda.html" >Linda</a> &nbsp; <a class="internal" href="ml.html" >ML</a> &nbsp; <a class="internal" href="moby.html" >Moby</a> &nbsp; <a class="internal" href="qi.html" >Qi</a> &nbsp; <a class="internal" href="scala.html" >Scala</a> &nbsp; <a class="internal" href="sheep.html" >Sheep</a> &nbsp; <a class="internal" href="txl.html" >TXL</a> &nbsp; <a class="internal" href="unification.html" >Unification</a> &nbsp; </DIV></BODY></HTML>

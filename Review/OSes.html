@@ -1,0 +1,1113 @@
+<!doctype html public "-//W3C//DTD HTML 4.01 Transitional//EN">
+<HTML>
+  <HEAD>
+    <!--#include virtual="/head.html" -->
+    <TITLE>Review of Operating Systems</TITLE>
+  </head>
+  <body>
+<H1>Review of Operating Systems</H1>
+    <!--#include file="header.html" -->
+<p>This page has been superceded by the <a href="http://cliki.tunes.org/Operating Systems">project Wiki OS Review area</a>.</p>
+
+<A NAME="Original_Free_OS_Projects"></A>
+<H2>Original Free OS Projects</H2>
+
+<UL>
+
+<LI><A NAME="SPINE"></A><A NAME="2K"></A>
+	<A HREF="http://choices.cs.uiuc.edu/2k"
+	>2K</A> (formerly known as SPINE) is
+	a distributed, reflective, component-based, adaptable operating system
+        being built by researchers at the Systems Software Research Group
+	from the University of Illinois at Urbana-Champaign
+	and the Systems and Communications Group
+	from the Universidad Carlos III - Madrid.
+
+<LI><A NAME="Aegis"></A><A NAME="Exokernel"></A>
+	<A HREF="http://www.pdos.lcs.mit.edu/exo.html">Aegis</A>
+        (developed at MIT's Parallel and Distributed OSes group)
+	is an OS based upon the idea of an "ExoKernel"
+	(much like the NoKernel idea behind Tunes:
+	there is no more runtime kernel in the OS,
+	which yields up to 10000% performance gain).
+	Also see <A HREF="http://www.pdos.lcs.mit.edu/~engler/"
+	>D. Engler's page</A>, and the various
+	<A HREF="http://www.pdos.lcs.mit.edu/PDOS-papers.html"
+		>Exokernel and networking papers</A>.
+
+<A NAME="Express"></A>
+<LI>
+	Olin Shivers'
+	<A HREF="http://www.ai.mit.edu/projects/express/">Express</A> project
+	at MIT developed ML/OS, an OS in ML,
+	by combining SML/NJ with the <A HREF="OSes.html#Flux">Flux OS Kit</A>,
+	reusing the web server from the <A HREF="OSes.html#Fox">Fox</A> project.
+
+<A NAME="Flux"></A>
+<A NAME="Fluke"></A>
+<LI>
+	The <A HREF="http://www.cs.utah.edu/projects/flux/">Flux project</A>
+	at university of Utah has been developing
+	an <A HREF="ftp://flux.cs.utah.edu/flux/oskit/">OS toolkit</A>
+	(mirrored in <A HREF="ftp://minnie.cs.adfa.edu.au/pub/oskit/"
+		>Australia</A>),
+	now release 0.97,
+	so anyone can make their own OS from bricks.
+	It is also developing its own Fluke microkernel on top.
+
+<LI><A NAME="Hope"></A>
+        <A HREF="http://www.cse.ogi.edu/~crispin/hope.html">HOPE</A>
+        at the Oregon Institute of Science and Technology, a set of
+        primitives on top of a virtual machine, for optimistic programming,
+        i.e. guessing the result of operations in order to increase
+        parallelism.
+</UL>
+
+
+<A NAME="yoctix"></A>
+<LI><A HREF="mailto:g@dd.chalmers.se">Anders Gavare</A>'s
+<A HREF="http://www.dd.chalmers.se/~f98anga/projects/yoctix/">Yoctix</A>
+is an emerging operating system very much inspired by BSD Unix, but
+implemented fully from scratch and following its own path. Anders' goal
+is to educate himself and to come up with a full documentation, written as
+he progresses, of how to write such a thing. After only 6 months of work,
+Yoctix boots /sbin/init. Even cutting corners as he did, this is very
+impressive. Definitely worth a look.
+
+</UL>
+
+<A NAME="Join"></A>
+<H2>Free OS projects in early stages of development</H2>
+</A>
+
+<LI>
+<A HREF="mailto:josh@isa.net.au">"Joker" Josh MacDonald</A>'s
+<A HREF="http://os-dev.isa.net.au/">OSDEV</A>
+
+<A NAME="osdvl"></A>
+<LI><A HREF="http://milkyway.isa.net.au/os-dev/index2.html"
+	>OS-DeViLs</A> project (with an hardware independence page
+        <A HREF="http://www.geocities.com/SiliconValley/Pines/7674/osdev.html"
+        >here</A>),
+	is a federation of people hacking new OSes,
+	so they can debate ideas,
+
+<LI>
+<A HREF="mailto:gerhards@michael.net">Michael Gerhards</A>'
+<A HREF="http://come.to/UniqueOS">UniqueOS</A> plans to make
+an OS based on no fixed data structures, using a technique
+called tag items, borrowed from AmigaOS. More information
+and documentation can be found on the site. A few sources
+can be downloaded.
+
+<LI>
+<A HREF="mailto:wejo@alb.de">Jascha Wetzel</A>'s
+<A HREF="http://free.prohosting.com/~xos/">XOS</A> aims at being an
+object-oriented, distributed, preemptively multitasked/threaded,
+message-passing based system. While this would sound like pretty
+standard marketroid talk, the site contains very interesting,
+detailed and clear documentation about what the author has in
+mind, an object-oriented microkernel where every part of the
+system does one thing and does it well, without any of the other
+parts knowing the details; a definite plus for scalability and
+future expansion. The author also cares to define the concepts
+he uses, so have a look at it even if you don't do C++ in your
+sleep. The actual implementation hasn't started yet, but definitely
+a spot to watch.
+
+</UL>
+<P>
+
+<A NAME="Dead"></A>
+<H2>Apparently dead OS projects</H2>
+</A>
+
+The following OS projects seem to be dead, as in not having been
+upgraded for years. However, they are still worth mentioning, as
+learning tools, and also in the hope that maybe someone will want
+to pick up the work where it stopped.
+
+<UL>
+<LI>
+<A HREF="http://home.onestop.net/kinfira/">Kinfira</A>'s
+<A HREF="http://home.onestop.net/kinfira/antares/antares.ftml"
+>Antares OS</A> for x86 PCs, that seems pretty much dependent
+on x86. Intended to become a microkernel type of design;
+left dead at function loader and draft filesystem stage.
+
+<LI>
+<A NAME="EOS"></A>
+<A HREF="http://www.public.usit.net/lsellers/eos/">EOS</A>
+(ask <A HREF="mailto:cleo@wintokens.com">Cleo Saulnier</A>) was an operating
+system specially designed to run games under. The project looks
+like it has been abandoned. If you're interested in such a project,
+probably the best would be to mail Cleo and see if you can profit
+from what has already been done.
+
+<LI>
+<A HREF="http://www.niksula.cs.hut.fi/~jberlin/los/">LOS</A> was meant
+to be another OS for gamers, like <A HREF="OSes.html#EOS">EOS</A>. However, this
+one booted and worked, and there were a few games for it (like an
+arkanoid clone).
+
+<LI>
+<A HREF="http://pages.infinit.net/quadid/sqos/">SQOS</A>
+is a completely conventional OS that was being written entirely in assembler
+by two teenagers as a programming challenge (much like <A HREF="OSes.html#kos">KOS</A>
+or <A HREF="OSes.html#littleos">LittleOS</A>). They seem to have got fed up with
+it though.;
+
+<LI>
+<A HREF="mailto:bart@sgh.waw.pl">Bart Sekura</A>'s
+<A HREF="http://www.geocities.com/SiliconValley/Haven/2934/tinos.html"
+>TINOS</A>
+aimed at making a small, multipurpose OS that could be used as a learning
+tool for the author and anyone else that cared to use it. However it has
+been last updated in march of 1998.
+</UL>
+
+<A NAME="Educational"></A>
+<H2>Educational OSes</H2>
+</A>
+
+These are instructional OSes developed and used in some Universities
+for their OS courses. They are freely available, and have some docs, too.
+In portable C, unless stated otherwise.
+<UL>
+
+<A NAME="NachOS"></A>
+<LI><A HREF="http://http.cs.berkeley.edu/~tea/nachos"
+	>NachOS</A>
+	from Berkeley,
+	demonstrates the principles of the traditional unix-like model.
+
+<A NAME="Xinu"></A>
+<LI><A HREF="http://willow.canberra.edu.au/~chrisc/xinu.html">Xinu</A>,
+a widely respected "vehicle for teaching Operating System design concepts".
+It supports most modern OS functionality, including message passing,
+tcp/ip, and an independent shell.
+</UL>
+
+<A NAME="Commercial"></A>
+<H2>Popular Commercial OSes and their clones</H2>
+</A>
+
+<P>
+<A NAME="Orig_Commercial"></A>
+<H3>Original contributions from Commercial systems</H3>
+
+
+<UL>
+
+<A NAME="OS2"></A>
+<A NAME="OS/2"></A>
+<LI>IBM's <A HREF="http://www-4.ibm.com/software/os/warp/">OS/2 Warp</A>
+is one branch of what was originally a joint development between
+<A HREF="http://www.microsoft.com">Microsoft</A> and
+<A HREF="http://www.ibm.com">IBM</A>, the other branch being known today as
+Microsoft Windows NT. It can run most DOS and Win 3.x programs seamlessly,
+as well as some Win9x software.
+<BR>
+While not abandoned by IBM, it is not very actively marketed by them anymore.
+However, a company has licensed the right to market
+an up-to-date OEM version of OS/2:
+<a href="http://www.ecomstation.com">eComStation</a>.
+Also, OS/2 has long been actively supported
+by a legion of developer-users and enthusiasts,
+and good development information is available on the
+<A HREF="http://www.teamos2.org/apps/development.html">Team OS/2</A> and
+<a href="http://www.seaos2.org/refs/develop.html">Seattle OS/2 users group</a>
+sites.
+<BR>
+FTP sites for OS/2 software:
+<A HREF="ftp://hobbes.nmsu.edu">Hobbes</A>,
+<A HREF="ftp://ftp-os2.cdrom.com">FTP-OS/2</A>
+
+<A NAME="TAOS"></A>
+<A NAME="Tao"></A>
+<A NAME="Tao_OS"></A>
+<LI><A HREF="http://www.tao.co.uk/2/tao/index.html">Tao OS</A>
+        (now called Elate)
+	is the only OS that currently can distribute code on heterogeneous
+	underlying networks
+	(<A HREF="mailto:tantric@cix.compulink.co.uk"
+	>here</A> their internet contact,
+	and an old
+	<A HREF="http://www.cs.bham.ac.uk/~nsd/intro.html">introduction</A>
+	to Tao OS).
+	Was renamed Tao OS from TAOS because of legal problems.
+
+
+
+<LI>The <A HREF="http://www.taligent.com/">Taligent</A> company
+	is the result of some counter-nature cross between Apple and IBM ;-)
+it worked on a brand new operating system,
+the CommonPoint application system,
+that attempted to change the basic programming paradigm,
+and which has been released on top of AIX in summer '95.
+To know more about it, you can browse the first two chapters of
+the book <A HREF="http://www.taligent.com/itt.html"
+>Inside Taligent Technology</A> by
+<A HREF="mailto:Sean.Cotter@eworld.com">Sean Cotter</A>.
+All in all, it looks like yet another failure due to C++
+introducing unmanageable complexity throughout the system.
+
+</UL>
+<P>
+
+<A NAME="Embedded_Systems"</A>
+<H3>Operating system for embedded devices</H3>
+
+As embedded systems (PDAs, cellphones, point-of-sale devices,
+VCRs, industrial robot control, or even your toaster)
+become more complex hardware-wise with every generation,
+and more features are put into them by the day,
+applications they run require more and more
+to run on actual operating system code
+in order to keep the development time reasonable.
+<P>
+The good:
+<UL>
+
+<A NAME="cygnus"></A>
+<LI>Many other free software embedded systems
+	are also available at
+	<A HREF="ftp://ftp.cygnus.com/pub/embedded/"
+		>Cygnus' ftp site</A> or on their
+        <A HREF="http://sourceware.cygnus.com/sourcecode.html">
+        sourcecode</A> page.
+</UL>
+
+<LI>Nexus'
+<A HREF="http://www.nexus.co.uk/conix/index.html">coniX</A>
+small romable embedded operating system for ARM processors.
+
+<LI><A NAME="JavaOS"></A>Sun's
+<A HREF="http://www.sun.com/javaos/">JavaOS</A>
+(with a more technical page at
+<A HREF="http://www.javasoft.com/products/javaos/index.html">JavaSoft</A>)
+was a standalone virtual machine not running on top of any other OS;
+mainly targetted at embedded systems. Proprietary project dropped.
+
+<A NAME="palmos"></A>
+<LI>Palm Computing's <A HREF="http://www.palm.com/devzone/docs/palmos/">
+PalmOS</A> for the Palm Pilot and soon a flurry of other mobile
+products. Currently the leader OS for PDAs, has many applications and
+supporting companies.
+
+<LI>Microsoft's attempts at fitting a large unstable desktop-PC
+operating system, with a hammer, into the stringent requirements
+of embedded systems are here:
+<A HREF="http://www.microsoft.com/windowsce/default.asp">Windows CE</A>
+(which is about to lose its 'CE' part so as to confuse people a bit more)
+and their latest monster,
+<A HREF="http://www.microsoft.com/presspass/press/1999/feb99/beempr.htm"
+>Windows NT Embedded 4.0</A>.
+</UL>
+<P>
+
+
+<A NAME="Commercial_Unix"></A>
+<H3>Commercial Unices and beyond</H3>
+
+Lots of commercial vendors base their system
+on the Unix family of design, as standardized in POSIX.
+<BR>
+The existence of <A HREF="OSes.html#Unix">free Unix systems</A>
+like the great <A HREF="OSes.html#Linux">Linux</A>
+forces them to find justifications for charging so much
+for systems that were so bad;
+hence, recently, significant OS research has been done
+by commercial companies, even though the benefit
+for users and developers is not obvious,
+as "protected" research is by definition not beneficial to people.
+
+<UL>
+
+<LI><A HREF="http://www.sunlabs.com/research/solaris-mc"
+		>Solaris-MC</A>:
+	Sun is working in making a distributed OS out of Unix.
+		
+
+<A NAME="Spring"></A>
+<LI>Sun's
+	<A HREF="http://www.sun.com/tech/projects/spring/"
+	>Spring</A>
+	System (hmm, dead link at the moment).
+
+
+</UL>
+<P>
+
+
+<A NAME="DOS"></A>
+<H3>DOS-class systems and extensions</H3>
+
+Because DOS has been such a phenomenon in OS history,
+that it ought to have a place here,
+despite its absolute nullity
+(the only service of it that is used rather than worked around
+is the filesystem, which is the worst piece of junk ever implemented).
+
+<UL>
+
+<A NAME="MS-DOS"></A>
+<A NAME="MSDOS"></A>
+<LI>A well-known company in Seattle has produced and mismaintained
+	the most crappy OS ever, known as DOS.
+	The dreaded name need not be mentioned here.
+
+<A NAME="DOSEMU"></A>
+<LI>Of course, there exist lots of DOS emulators
+	for lots of non-DOS systems.
+	<BR>
+	For instance,
+	<A HREF="OSes.html#Linux">Linux</A> has
+	quite a good free
+	<A HREF="ftp://tsx-11.mit.edu/pub/linux/ALPHA/dosemu/"
+		>DOS emulator</A>
+ 	running on i386 architectures (also runs under *BSD).
+	But it is actually a hardware emulator,
+ 	and requires that you use an actual DOS software
+ 	(e.g. OpenDOS or FreeDOS) to run on top of the virtualized hardware.
+	Newer versions of DOSEMU will be released as a bundle with FreeDOS.
+
+<LI>Other commercial DOS clones include:
+<UL>
+
+<LI>I've also been told about
+	<A HREF="http://www.bluebird.com/superdos/">SuperDOS</A>,
+	<A HREF="http://www.datalight.com/">ROM-DOS</A>,
+	<A HREF="http://www.imsltd.com/">Real32</A>,
+	<A HREF="http://www.conctrls.com/">Multiuser DOS</A>.
+</UL>
+</UL>
+
+<A NAME="Lose"></A>
+<H3>Losedoze-class systems</H3>
+
+The same company consistently produces the worst wimpy OS,
+hence this section...
+
+<UL>
+<LI>The <A HREF="http://sourceware.cygnus.com/cygwin/"
+		>The Cygnus GNU-Win32 library</A>
+	allows you to simulate a GNU system on top of Win32,
+	thanks to the cygwin32.dll
+
+<LI>Here are links to the unnamed horrors:
+	<A HREF="http://www.microsoft.com/ntworkstation/default.asp"
+		>*NT Workstation</A> and
+	<A HREF="http://www.microsoft.com/ntserver/default.asp"
+		>*NT Server</A>;
+	<A HREF="http://www.microsoft.com/windows95/default.asp">*95</A>.
+
+<LI><A HREF="http://www.linpro.no/wine/"
+	>WINE</A> <EM>free</EM> WINdows Emulator for Unices
+	(also <A HREF="http://www.winehq.com/">here</A>).
+
+<LI><A HREF="mailto:jasonfilby@yahoo.com">Jason Filby</A>'s
+	<A HREF="http://www.reactos.com//"
+	>ReactOS project</A>, aiming to produce a free Windows NT 4.0
+        clone distributed under the GPL license. The developers of
+        the project keep a low profile, however they are making big
+        strides. ReactOS is now able to boot and start simple
+        win32 console-based applications. Best luck to them for the
+        rest of the immense work.
+
+<LI>Note that there also exist commercial clones,
+	among which the Sun WABI that runs 16-bit Windows apps
+	(soon 32-bit apps too, they say)
+	on your X/Unix workstation.
+	Also exists for Linux, as commercialized by
+	<A HREF="http://www.caldera.com">Caldera</A>.
+
+</UL>
+
+<P>
+</UL>
+
+
+
+
+<P><HR><P>
+<A NAME="Related"></A>
+<H2>OS Related Pointers</H2>
+
+<UL>
+
+<A NAME="Indices"></A>
+<LI>Indices about OSes and related subjects:
+<UL>
+<LI>The	<A HREF="http://www.best.com/~bos/os-faq">FAQ</A>
+	from the
+	<A HREF="news:comp.os.research"
+	>comp.os.research</A>
+	newsgroup;
+	also its
+	<A HREF="ftp://ftp.cse.ucsc.edu/pub/comp.os.research/"
+	>archive</A>;
+	it is a good FAQ,
+	and anyone interested in OS implementation should have read it.
+
+<LI><A HREF="http://www.500mhz.net/ndx.html">500mhz.net</A>'s
+        operating systems index, sorted by date of discovery (not
+        updated in a while).
+
+<LI><A HREF="mailto:bradapp@enteract.com">Brad Appleton</A>'s
+    <A HREF="http://www.enteract.com/~bradapp/links/os-links.html">links</A>
+     to operating systems news sites and development resources.     
+<LI><A HREF="http://home.t-online.de/home/Sven.Paas/">Sven Paas</A>'
+	comprehensive <!--exhaustif-->
+    <A HREF="http://home.t-online.de/home/Sven.Paas/os.htm"
+	>german page</A> (in English).
+	Now moving <A HREF="http://www.osweb.8m.com/">here</A> ?
+<LI><A HREF="http://www.cs.arizona.edu/people/bridges/index.html"
+	>Patrick Bridges'</A>
+	<A HREF="http://www.cs.arizona.edu/people/bridges/oses.html"
+	>arizonian page</A>
+<LI><A HREF="mailto:cbbrowne@hex.net">Christopher Browne</A>'s
+    <A HREF="http://www.hex.net/~cbbrowne/osnovel.html"
+    >Novel OS work</A>, featuring a detailed description of
+    several operating system projects.
+<LI><A HREF="http://tunes.org/Review/www.osfaq.com">The OS Faq</A> site has a lot of
+interesting pointers to operating system projects, and answers
+a lot of questions on which OS programmers usually bump, covering
+topics such as filesystems, GUIs, device drivers, and existing
+OSes such as Linux or Windows NT. Thanks to Cory Rauch for the link.        
+<LI><A HREF="mailto:vjcahill@dsg.cs.tcd.ie">Vinny Cahill</A>'s
+    <A HREF="http://www.dsg.cs.tcd.ie/research/os_relwork.html"
+	>[MIA] irish page</A>
+
+<LI><A HREF="http://glory.kaist.ac.kr/~hglee/"
+		>Hyogun Lee</A>'s own
+	<A HREF="http://glory.kaist.ac.kr/~hglee/os.html"
+		>OS page</A>.
+<LI><A HREF="mailto:sikang@rtlab.kaist.ac.kr"
+                >Kang Sung</A>'s OS page in
+                <A HREF="http://casaturn.kaist.ac.kr/~sikang/os/">
+                korea</A>.
+                
+<LI>OGI's
+	<A HREF="http://www.cse.ogi.edu/DISC/projects/synthetix/related.html"
+		>oregonian page</A>
+
+<LI><A HREF="http://www.gsyc.inf.uc3m.es/~nemo/os.html">Nemo</A>'s
+        <A HREF="http://www.gsyc.inf.uc3m.es/~nemo/os.html">OSes links</A>
+
+<LI><A HREF="http://www.ifi.unizh.ch/groups/ailab/links/embedded.html"
+        >Embedded</A> and Real-Time OSes.
+
+<LI><A HREF="mailto:pgunn@magnus.acs.ohio-state.edu"
+	>Patrick Gunn</A>'s
+        <A HREF="http://junior.apk.net/~qc/os/index.html">OS page</A>
+        and <A HREF="http://junior.apk.net/~qc/osring/index.html"
+	>webring</A>.
+
+<LI>Seoul national university OS labs
+	<A HREF="http://oslab.snu.ac.kr/os/os.html"
+		>operating systems links</A>
+
+<LI>SIGOPS <A HREF="http://www.acm.uiuc.edu/sigops/roll_your_own/"
+		>Create your own OS</A> tutorial, describing the
+                basic steps involved in writing an operating system,
+                if you don't know where to start.
+
+<LI><A HREF="http://members.xoom.com/_XOOM/xorcoders/">XOR coders</A>
+OS development pages and tutorials. The information there isn't very
+deep yet, but might be a good source of information for beginning
+future torvalds.
+
+<LI><A HREF="http://www.yahoo.com/">Yahoo</A>'s
+	<A HREF="http://www.yahoo.com/Computers/Operating_Systems"
+	>page about Operating Systems</A>
+
+<LI><A HREF="http://users.erols.com/johnfine/">John Fine's home page</A>
+contains excellent information for helping starting developers get
+over the bootstrap phase on x86 archiecture, by providing numerous well-done
+explanations and sourcecode about protected and v86 mode, linking kernels,
+reading them from bootstrap (even directly from a file) etc. Pretty
+much a must read if you start a project on x86.
+
+<LI><A HREF="mailto:gzamboni@com.uncor.edu">Gustavo Zamboni</A>'s
+<A HREF="http://dns.uncor.edu/links/siteos.htm">
+computer architectures and OSs on the web</A>, a very comprehensive
+list of links, sorted by the platform they relate to. No description
+is made of what you will find in any of them (besides the site name),
+but the list is very large and interesting.
+
+<LI><A HREF="http://www.altos.org.uk">AltOS</A>, "practical alternatives
+to microsoft operating systems". A guide of all 'alternative'
+systems like MacOS, Linux, BeOS, with screenshots and descriptions.
+
+<LI><A HREF="http://www.tu-chemnitz.de/~fachat/csa/osa/index.html">OS/A65</A>
+is an insane (and functional project): a multitasking operating system
+for old CBM computers like the C64, with TCP/IP and all. Not useful for
+much, but still worth mentioning.
+
+<LI><A HREF="ftp://ftp.funet.fi/pub/OS/doc">OS doc at ftp.funet.fi</A>
+
+<LI><A HREF="http://www.mpi-sb.mpg.de/~tsigas/DISAS/"
+		>Distributed Algorithms &amp; Systems</A>
+
+<LI><A HREF="http://www.iti.mu-luebeck.de/~petri/pbeamrefs.html"
+		>Process Migration & Load Balancing</A>
+
+<LI><A HREF="http://warp.dcs.st-and.ac.uk/warp/systems/checkpoint"
+		>Checkpointing</A>
+
+<LI><A HREF="http://i44www.info.uni-karlsruhe.de/~gaul/ANDF.html">ANDF</A>,
+an object format that allows for executables that can be run on any
+architecture, by translating the code blocks to actual opcodes at load
+time, rather than at compile time. Structure information is still
+retained (as opposed to bytecode where this vital data is lost) so the
+created code still runs at C speed. This excellent format is notably used by
+the <A HREF="http://alph.dra.hmg.gb/TenDRA/html/GettingStarted.html">Tendra</A>
+compiler.
+
+</UL>
+<P>
+
+<A NAME="Memory"></A>
+<LI>Here is some information on memory management issues and common policies:
+    <UL>
+    <LI>People working on <A HREF="Languages.html#GC">Garbage Collection</A>
+	have a LOT to teach us on memory management.
+    <LI>A <A HREF="http://cne.gmu.edu/modules/VM/">Virtual memory</A>
+    tutorial, describing the motivations behind that common technique in
+    modern OS'es, its theory and potential problems, and actual
+    implementation issues.
+    <LI>Proposal for a
+    <A HREF="http://humbolt.geo.uu.nl/~riel/zone-alloc.html">Zone allocator
+    </A> for Linux, and the homepage for Linux
+    <A HREF="http://humbolt.geo.uu.nl/Linux-MM/">memory management</A>, by
+    Rik Van Riel. Quite informative about how kernel memory allocation works
+    in an OS used for real-life applications outside of the testing lab,
+    some problems with its current scheme and potential solutions.
+    <LI><A HREF="http://www.dent.med.uni-muenchen.de/~wmglo/malloc-slides.html"
+    >Dynamic memory allocation</A> implementation in userspace under Linux/
+    glibc. Different policies than what the kernel does.
+    <LI>The <A HREF="http://www.fourmilab.ch/bget/">BGET</A> memory
+    allocator; another set of policies for userspace memory management
+    and their implementation.
+    <LI><A HREF="http://www.freebsd.org">FreeBSD</A>'s
+    <A HREF="http://www.freebsd.org/doc/papers/newvm.html">newvm</A>, the
+    new memory manager for that free BSD/Unix clone. Another
+    design and implementation for a real-world system, worth a look
+    for anyone developing a memory manager for their OS.
+    </UL>
+    <P>
+
+<A NAME="Labs"></A>
+<LI>Here are <EM>some</EM> research laboratories interested in
+	operating systems (send me more addresses):
+	<UL>
+	<LI><A HREF="http://www.parc.xerox.com/projects.html"
+		>Xerox PARC</A>
+	<LI><A HREF="http://www.csl.sony.co.jp/"
+		>Sony</A>'s
+	Computer Science Laboratory
+
+	<LI><A HREF="http://www.cs.washington.edu/"
+		>University of Washington</A> CSE department
+
+	<LI><A HREF="http://www.cse.ogi.edu/PacSoft/"
+		>Oregon Graduate Institute</A>
+	CSE research topics and groups
+
+	<LI><A HREF="http://www.sunlabs.com"
+		>Sun Microsystems Inc.</A> laboratories (ex-SMI
+                Technology and Research).
+
+	<LI><A HREF="http://www.opengroup.org/RI/"
+		>The Open Group</A>
+		Research Institute and their OS group
+                in <A HREF="http://www.gr.opengroup.org/os/">
+                Grenoble, France</A>.
+
+	<LI>The IEEE Computer Society's
+		<A HREF="http://www.cs.odu.edu/~mukka/tcos/tcos.html">TCOS</A>
+		(Technical Commitee on Operating Systems)
+
+	</UL>
+	<P>
+
+<A NAME="Code"></A>
+<LI>Here is some code that you can link into your OS
+	and relieve you from the hassles of blindly getting it to boot,
+	by providing you boot software and basic I/O:
+	<UL>
+
+<LI>
+<A HREF="http://www.slug.org.au/etherboot/">Etherboot</A> and its successor
+<A HREF="http://www.nilo.org">NILO</A> allow x86 PCs to boot an operating
+system across the network; they include code and tools for producing
+EPROMS that can be placed on the corresponding network card sockets so
+that diskless PCs can download and start an operating system kernel, using
+standard protocols (bootp, dhcp, tftp). They can boot systems like Linux
+this way, but are easily adaptable to your own.
+
+	<LI>
+	The <A HREF="http://www.cs.utah.edu/projects/flux/">Flux project</A>'s
+	<A HREF="ftp://flux.cs.utah.edu/flux/oskit/">OS toolkit</A>.
+	<BR>
+	The Flux OS kit is a complete modular infrastructure
+	that provides all the bricks needed to easily build an OS,
+	focusing on what interests you, and reusing components for the rest.
+	Newbies have reportedly transformed Unix programs into
+	standalone OSes in a matter of hours, using it.
+
+	<LI><A HREF="http://www.uruk.org/grub/">GRUB</A>
+		the grand unified boot loader for PC and compatibles.
+        Originally written by
+        <A HREF=""http://www.uruk.org/~erich/">Erich Boleyn</A>, it
+        has been taken over by the <A HREF="http://www.gnu.org">GNU</A>
+        project, as Erich didn't have any more time for it, but GNU
+        depend on it for the HURD. The original (with documentation,
+        and also specification of the multiboot standard) could be
+        found <A HREF="http://www.uruk.org/grub/">here</A>; the new
+        GNU GRUB is <A HREF="http://www.gnu.org/software/grub/">here</A>
+        with even more impressive functionality.
+	<BR>
+		As mentioned, GRUB is used by the <A HREF="OSes.html#HURD">HURD</A>,
+	and it can also boot *BSD, Linux, DOS, and more.
+	It's got facilities for accessing the filesystem at boot time,
+	so you can safely write your loader as just another 32-bit process.
+
+        <A NAME="DolphinBoot"></A>
+        <LI><A HREF="http://www.dolphin.openprojects.net/Bootsector">
+        Dolphin bootsector</A> is a bootsector primarily designed to
+        boot Dolphin, as the name says, but the author is nice enough to
+        have written documentation about how to boot your own OS project
+        from it; it handles all protected mode and paging setup for you;
+        the whole thing fits in 1 KB so it could be useful when you don't
+        have much room, like on a floppy.
+
+<A NAME="SOLO"></A>
+	<LI><A HREF="http://www.csh.rit.edu/~shaggy/software.html"
+		>SOLO</A>
+		the ShagOS boot loader,
+		includes useful x86 debugging features.
+	<BR>
+	SOLO not only includes boot-time filesystem access,
+	but extended IO and debugging facilities;
+	might be great to hack your kernel.
+	Its license is now unrestricted,
+	so that you can now freely use it and distribute it with your code.
+	SOLO is definitely worth a look.
+	</UL>
+	<P>
+
+<A NAME="Inspiration"></A>
+<LI>Here are some sources of inspiration for people developping
+	a 32-bit OS on PC's:
+	<UL>
+	<LI>DOS extenders in the
+	<A HREf="ftp://x2ftp.oulu.fi/pub/msdos/programming/pmode"
+	>x2ftp archive</A>
+	(some interesting docs around, too, particularly the PCGPE)
+
+	<LI>Free Embedded systems from 
+	<A HREF="ftp://www.cygnus.com/pub/embedded/"
+	>Cygnus FTP</A>
+
+	<LI>Some 32-bit FORTH systems from the
+	<A HREF="ftp://forth.org/pub/Forth/"
+	>taygeta archive</A>
+
+	<LI>The <A HREF="http://www.paranoia.com/~vax/boot.html">
+        Guide to x86 bootstrapping</A> describes the operations
+        performed by a PC compatible computer BIOS at boot time. Useful
+        for writing OS boot loaders, boot managers and such.
+
+	<LI>
+	<A HREF="http://members.tripod.com/~ladsoft/oindex.htm"
+	>David Lindauer's</A> software 
+
+        <LI><A HREF="http://incolor.inetnebr.com/guardian/boot-cd.shtml">
+        FAQ</A> about how to create bootable CD's for PC in the
+        "El torito" format. Useful when you'll have written an OS
+        large enough to fill a CD..
+        
+	<LI><A HREF="http://os-dev.isa.net.au/"
+	>os-dev</A> page for the intel architecture
+        
+        <LI><A HREF="http://www.500mhz.net/resources.html"
+        >500mhz.net</A> operating system development resources
+
+	<LI>The Linux
+	<A HREF="http://metalab.unc.edu/LDP/HOWTO/Assembly-HOWTO.html"
+	>Assembly-HOWTO</A>
+	about better (more portable, maintainable, seamlessly integrated)
+	ways to include assembly code in your projects
+	(shameless plug for Fare).
+
+        <LI><A HREF="mailto:gaz@athene.co.uk">Gareth Owen</A>'s
+        <A HREF="http://www.gaztek.co.uk">Gaztek</A> site, which contains
+        a lot of information on OS development and programming the PC
+        hardware, as well as a gimmick OS (GazOS) and even a small
+        webserver (ghttpd).
+        
+	<LI>and of course, the code for all the
+	<A HREF="OSes.html#Original_Free_OS_Projects">free OSes</A> above,
+	including <A HREF="http://tunes.org/Files.html">Tunes</A>.
+
+	</UL>
+	<P>
+
+<A NAME="PC-hardware"></A>
+<LI>PC hardware information
+<BR>
+Efficiency-aware OS implementors must have some idea
+of how the underlying hardware behaves.<BR>
+The cheapest bang/buck for a complete system currently is
+available through old or new PC-compatible computers.
+
+<UL>
+<LI>OS programmers might be interested to get the CPU specs
+directly from the chip builders:
+
+	<A HREF="http://www.intel.com/design/pentium/manuals/"
+		>Pentium</A>,
+        <A HREF="http://developer.intel.com/design/pentiumii/xeon/manuals/"
+                >Pentium II</A>, and
+        <A HREF="http://developer.intel.com/design/pentiumiii/manuals/"
+                >Pentium III</A> manuals</A>,
+	as well as other documentation from
+		<A HREF="http://developer.intel.com/">Intel</A>,
+		<A HREF="http://www.cyrix.com/">Cyrix</A>, and
+		<A HREF="http://www.amd.com/">AMD</A>.
+
+<LI>Unofficial CPU information
+        Very extensive information (including undocumented features)
+        on the x86 family of processors is available at
+        Robert Collins' famous <A HREF="http://www.x86.org">x86</A> site
+        and Christian Ludloff's <A HREF="http://www.sandpile.org">sandpile</A>.
+
+<LI>A great source of information, and a useful tool
+	for building and testing x86-based OSes is
+	<A HREF="http://www.bochs.com/">Bochs</A>
+	that fully emulates in software the 386+ PC hardware,
+	on any 32-bit+ machine. Able to boot Linux, FreeBSD, Win95,
+        Roadrunner and many other operating systems.
+
+<LI>Hardware and low-level programming information on common PC motherboard
+components is available from
+<A HREF="mailto:cpeacock@senet.com.au">Craig Peacock</A>'s
+<A HREF="http://www.senet.com.au/~cpeacock/">Interfacing the
+PC</A> series : parallel port (
+<A HREF="http://www.geocities.com/SiliconValley/Bay/8302/parallel.htm">
+standard</A>,
+<A HREF="http://www.geocities.com/SiliconValley/Bay/8302/epp.htm">
+enhanced</A>), 
+<A HREF="http://www.geocities.com/SiliconValley/Bay/8302/serial.htm">
+serial UARTs</A>,
+<A HREF="http://www.geocities.com/SiliconValley/Bay/8302/keybrd.htm">
+keyboard</A>, and the
+<A HREF="http://www.geocities.com/SiliconValley/Bay/8302/interupt.htm">
+Programmable Interrupt Controller</A>.
+
+<LI>There is an impressive amount of documentation on PC architecture
+and associated peripherals (NICs, ATAPI/IDE, VGA, mouse, Flash
+memory.. and also higher level like all network RFCs) at the
+<A HREF="http://members.xoom.com/da96roni/site.html">Ronis</A> site.
+A definite good starting point if you need documentation for writing your
+own system.
+
+<LI>PC demo coders have also gathered information about the
+underlying hardware, for instance on cdrom.com's demo coding
+<A HREF="ftp://ftp.cdrom.com/pub/demos/code/hardware/">hardware pages</A>,
+or Cubic's very extensive
+<A HREF="http://www.cubic.org/source/archive/hardware/index.htm">
+hardware archive</A>.
+
+</UL>
+<BR>
+
+<A NAME="hardware"></A>
+<LI>Other hardware
+
+<UL>
+
+<LI>Another widely used (albeit nowhere as much as x86) is the
+    PowerPC. Motorola provides programming documentation
+    in Adobe PDF format on their
+    <A HREF="http://www.mot.com/SPS/PowerPC/teksupport/teklibrary/index.html#PowerPC CPUs_group">
+    tech support site.</A>, as well as documentation of their new
+    MMX-alike
+    <A HREF="http://www.mot.com/SPS/PowerPC/teksupport/teklibrary/index.html#AltiVec_group">
+    AltiVec</A> technology.
+    You can find some more programming info (also in PDF) at
+    <A HREF="http://passaic.cs.miami.edu/arch/PowerPC/">this place</A>.
+
+<LI>The
+<A HREF="http://ebus.mot-sps.com/ProdCat/psp/0,1250,MC68328~934310090795,00.html">
+MC 68328</A>, also known as the Motorola Dragonball microprocessor,
+the heart of Palm Pilot PDAs for example, is also of interest as it is
+a very decent mobile platform for running a modern OS.
+
+<LI>The <A HREF="http://infopad.eecs.berkeley.edu/CIC/"
+	>CPU Info Center</A>
+	covers all mainstream CPUs in the current competition.
+
+<A NAME="MISC"></A>
+<LI><A HREF="http://www.m-i-s-c.net/">MISC</A>
+	technology is not mainstream yet,
+	though very promising, and already the best
+	computation-horse-power/electric-power-consumption ratio.
+	See
+	<A HREF="http://www.value.net/~ut/">Jeff Fox's page</A>
+	(also <A HREF="http://www.ultratechnology.com/">Ultra Technology</A>?)
+	the
+	<A HREF="http://pisa.rockefeller.edu:8080/MISC/"
+	>MISC mailing list</A>
+	(also at
+	<A HREF="http://eli.elilabs.com/list-arcs.html"
+	>Elijah labs</A>)
+	or <A HREF="http://www.itvc.com">iTvc</A>'s page.
+	(the
+	<A HREF="http://www.orbweavers.com/sisc312/">SISC312</A>
+	seems around the same design, too).
+	If you're interested in CPU design, Jeff Fox sells a
+        <A HREF="http://www.ultratechnology.com/fpgakit.htm">DYOP</A>
+	(Do Your Own Processor) kit based on FPGA...
+
+
+<LI>The	<A HREF="http://www.xs4all.nl/~ganswijk/chipdir/"
+	>Chip Directory</A>
+	talks about chips in general, CPU included,
+	but not exclusively
+<LI>For a historical point of view,
+	check this page about
+	<A HREF="http://www.cs.uregina.ca/~bayko/cpu.html"
+	>Great Microprocessors of the Past and Present</A>
+</UL>
+<P>
+
+<A NAME="Other"></A>
+<LI>Other OS-related pages
+<UL>
+<LI>The Tunes Review page on <A HREF="VMs.html">Virtual Machines</A>
+
+<LI>Loughborough University
+	<A HREF="http://hill.lut.ac.uk/DS-Archive/"
+	>high-performance networking and distributed systems archive</A>
+
+<LI><A HREF="ftp://ftp.ms.uky.edu/pub/tech-reports/UK/cs/vade.mecum.2.ps.gz"
+	>An Operating System Vade Mecum</A> by Raphael Finkel
+
+<LI><A HREF="http://www.cybervillage.co.uk/acorn/emulation/dynrcomp.htm"
+        >Dynamic recompilation resources</A>: good introductory papers
+        and concrete applications on dynamic code generation (ie. in
+        reflective sytems) and recompilation (ie. in emulators that
+        need to dynamically translate emulated code to native opcodes,
+        for speed).
+
+<LI>About UNIX:
+<UL>
+<LI><A HREF="http://www.eecs.nwu.edu/unix.html"
+	>UNIX Reference Desk</A>
+<LI>An overview of the
+        <A HREF="http://www.pasc.org/abstracts/posix.htm">POSIX</A> standard.
+<LI>A nice article about
+	<A HREF="http://www.performancecomputing.com/features/9809of1.shtml"
+		>UNIX literacy</A>
+<LI><A NAME="Unix Haters"></A>
+	<A HREF="http://www.mindspring.com/~blackhart/"
+	>Unix Haters</A>
+	are many, who could experience how life
+	used to be better with other systems,
+	and had to use Unix as these systems died commercially.
+	Of course, Unix has made progress since the early 1990's,
+	so not all of the critique still applies;
+	but there is something to be learnt from ancient lore.
+	The
+	<A HREF="http://www.research.microsoft.com/~daniel/preface.html"
+	>Unix Haters Handbook</A>
+	is a book meant to explain the worst of Unix.
+	From what the webpage shows, the book doesn't seem to do much justice
+	to modern Unices, although it shows that what is presented as
+	"great innovation" in the Unix world is but getting on par
+	with decades-old systems.
+</UL>
+<LI>How reliable is your OS?
+	How good is its support?
+	How fast are dangerous bugs fixed?
+	Check the
+	<A HREF="http://chemibm1.chemie1.uni-rostock.de/mlalk/ping/
+	">ping o' death</A>
+	page to see...
+
+<LI>
+<A HREF="http://www.scs.ryerson.ca/~dmason/common/how_to_write_systems_paper.ps"
+	>How to write a systems paper</A>
+	(get a text version by sending body "send advice papers" to
+	<A HREF="mailto:info@usenix.org">info@usenix.org</A>)
+</UL>
+
+</UL>
+
+
+
+<P><HR><P>
+<H3>More netsurfing</H3>
+<UL>
+<LI>The <A HREF="../index.html">TUNES project</A> that hosts this page
+	may interest you,
+<LI>as well as its <A HREF="index.html">Review</A>
+	<A HREF="../subprojects.html#Review">subproject</A>.
+</UL>
+<P>
+
+
+
+<P><HR><P>
+<H3>To Do on this page</H3>
+<UL>
+<LI>Write reviews of these OSes where missing.
+<LI>Talk about the open development model, as used in Linux.
+<LI>Send a note to all the OS pages that do not cite us.
+<LI>Differentiate full OSes from OS-less kernels,
+	putting two entries when the kernel could be used without the OS,
+	even though only one OS currently exists over it.
+<LI>Still have to add these...
+<UL>
+<LI>
+<A HREF="http://www.honeycomb.net/os/index.html"
+	>Server OS Technical Comparison</A>
+<LI><A HREF="http://www.cs.vu.nl/~steen/globe/"
+	>GLOBE</A>
+	as well as to all pages pointed in various OS indexes...
+
+<LI>bibliographic pointers from the OS FAQ:
+<A HREF="http://cs-tr.cs.cornell.edu/Info/cstr.html">cstr</A>,
+<A HREF="http://liinwww.ira.uka.de/bibliography/index.html">German Bib</A>,
+<A HREF="http://glimpse.cs.arizona.edu/1994/bib">Arizonian Bib</A>,
+<A HREF="ftp://ftp.cs.umanitoba.ca/pub/bibliographies">bibliographies</A>,
+<A HREF="http://www.base.com/gordoni/ufs93.html">UFS 93</A>.
+
+
+	<LI><A HREF="ftp://ftp.cse.ucsc.edu/pub/refdbms/refdbms.README.html"
+		>refdbms</A>
+
+
+<LI>FTP sites with OS-related stuff: in
+	<A HREF="ftp://ftp.lip6.fr/pub/">France</A>,
+	<A HREF="ftp://sunsite.doc.ic.ac.uk/">England</A>,
+	<A HREF="ftp://earth.csie.ntu.edu.tw/pub/">Taiwan</A>.
+
+<LI>FTP pointers from the OS FAQ:
+<A HREF="ftp://helios.cc.gatech.edu/pub/papers">Clouds</A>,
+<A HREF="ftp://pineapple.bbn.com/doc">Cronus</A>,
+<A HREF="ftp://ftp.imag.fr/pub/GUIDE/doc">Guide</A>,
+<A HREF="ftp://ftp.cs.cornell.edu/pub/Horus">Horus</A>,
+<A HREF="ftp://ftp.cse.ucsc.edu/pub/bib/isis.bib">Isis</A>
+	(also <A HREF="ftp://ftp.cs.cornell.edu/pub">here</A>),
+<A HREF="ftp://cs.arizona.edu/pub/xkernel">X kernel</A>.
+
+<LI>
+Rumor, a user-level version of Ficus, an optimistically
+replicated file system (see
+<A HREF="http://www.isi.edu/~johnh/WORK/index.html#ficus_replication"
+>a summary of Ficus</A> and <A HREF="http://www.cs.ucla.edu/ficus/rumor/"
+>a description of Rumor</A>).
+Unfortunately, Rumor is not yet being distributed.
+
+<LI>Books:
+<UL>
+<LI>
+"OS Concepts and design" by Milan Milenkovic
+<LI>Silverxxx
+<li><a href="http://home.pacbell.net/sauerman/osbook.html"
+	>Realtime Operating Systems -- 
+	Concepts and Implementation of Microkernels for Embedded Systems</a>
+	by Melanie Thelen, Alexander Langer, Dr. Jürgen Sauermann
+</UL>
+
+<LI><A HREF="http://www.research.att.com/orgs/ssr/people/douglis/papers/ccache.ps.gz"
+	>at AT&amp;T, Mr Douglis' CCache paper (?)</A>
+
+<LI><A HREF="http://www.cs.washington.edu:80/homes/bershad"
+		>Brian Bershad</A> or
+		<A HREF="http://www.cse.ogi.edu/DISC/people/calton.html"
+		>Calton Pu</A>
+
+<LI><A HREF="http://www.realtime-os.com/"
+		>Doug Jensen</A>:
+	dynamic real-time distributed computer systems
+
+<LI>Neutrino: POSIX in 64K (see QNX)
+
+<LI><A HREF="http://www.inetcan.net/~dreamer">oslr2</A>
+	is an idea of an OS much like IBM's VM/CMS:
+	provide people with a low-level
+	virtual hardware abstraction facility
+	that multitasks by spawning itself.
+
+<LI><A HREF="mailto:bansod@edm.net">Aditya Bansod</A>'s
+ <A HREF="http://www.edm.net/~bansod/oss.phtml">OSS</A> and
+ <A HREF="http://www.edm.net/~bansod/oss-2.phtml">OSS2</A>
+ are operating system simulators for Windows
+ that implement their own OS ontop,
+ and provide abstraction for local processes.
+
+<LI>Dave Hudson's
+<A HREF="http://www.humbug.demon.co.uk/dave/misc/artemis/artemis.html"
+	>Artemis</A>,
+and now,
+<A HREF="http://www.humbug.demon.co.uk/dave/constellation/constellation.html"
+	>Constellation</A>
+<li>
+<a href="http://cadcdev.sourceforge.net">KallistiOS</a>, an OS for Sega Dreamcast, fully functional.
+<li>
+<a href="http://geekos.sourceforge.net/">GeekOS</a>
+<li>
+<a href="http://quickos.sourceforge.net/">QuickOS</a>
+<LI>
+Nicklaus Wirth's
+<A HREF="Languages.html#Oberon">Oberon</A>
+is not only a language, but also an OS...
+	<LI><A HREF="http://starship.skyport.net/crew/gandalf/DNET/dvm"
+		>DVM</A>
+	<LI><A HREF="http://www.spies.com/aek/alto/index.html">Alto</A>
+	<LI><A HREF="http://www.tis.com"
+		>Trusted Information Systems offers information on</A>
+	Trusted Mach, a B3 certified Mach, and Triad, an experimental
+	distributed, real-time, trusted operating system based on Trusted Mach.
+	<LI><A HREF="http://www.opengroup.org/tech/dce/"
+		>The Open Group is concerned with security</A>
+	in the context of its DCE
+	<LI><A HREF="http://www.osf.org/RI/OS/index.htm">the MK++ kernel</A>
+	Another project aiming at Mach compatibility and security is DTOS
+	<LI><A HREF="http://www.camb.opengroup.org/RI/PubProjPgs/formal.html"
+		>application of formal methods towards the MK++ microkernel.</A>
+	<LI><A HREF="http://www.sctc.com/randt/HTML/dtos.html"
+		>Distributed Trusted OS</A>
+	<LI><A HREF="http://www.realtime-info.be/encyc/market/rtos/rtos_form.htm"
+		>RTOS form</A>
+	<LI><A HREF="http://cq-pan.cqu.edu.au/rcos/">RCOS.java</A>
+	<LI><A HREF="ftp://ftp.dcs.glasgow.ac.uk/pub/fide/reports/fide_95_121.ps.gz"
+		>fide-95-121</A>
+	<LI><A HREF="http://www.theos-software.com">theos software</A>
+	<LI><A HREF="http://electriclichen.com/linux/srom.html"
+		>OS Sucks-Rules-O-Meter</A>
+	<LI><A HREF="http://www.alink.net/~avg/index.html"
+		>Grail</A>
+	<LI><A HREF="http://www.essenceos.net/index.html">EssenceOS</A>
+	<LI><A HREF="http://mailhost.integritysi.com/mailman/listinfo/schema"
+		>schema</A>
+	<LI><A HREF="http://tunes.org/Review/somewhere@ibm.com"
+		>WorkPlace OS</A>: rewrite IBM's OSes atop a Mach-derived uK.
+		But couldn't usefully separate the system into
+		(composable) components.
+		Also see the glossary entry on uK.
+	<li><a href="http://www.osdev.org/"
+		>osdev</A> web ring
+	<li>A good book: <a href="http://www.bell-labs.com/topic/books/os-book/"
+		>Operating System Concepts</A> 
+		by Silberschatz &amp; Galvin.
+</UL>
+</UL>
+    <!--#include virtual="/footer.html" -->
+  </body>
+</html>

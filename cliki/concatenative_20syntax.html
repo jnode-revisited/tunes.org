@@ -1,0 +1,20 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<HTML><HEAD><TITLE>CTO : Concatenative Syntax</TITLE
+><LINK REL="alternate" TYPE="application/rss+xml" TITLE="Recent Changes" HREF="http://tunes.org/cliki/recent-changes.rdf.html"><LINK REL="stylesheet" HREF="admin/cliki.css"></HEAD
+><BODY><DIV ID="banner"><A TITLE="CTO" CLASS="logo" HREF="concatenative_20syntax.html">CTO</A
+> <SPAN>CLiki for the TUNES project</SPAN
+></DIV
+><DIV ID="navbar"><A CLASS="internal" HREF="index.html">Home</A
+>  <A CLASS="internal" HREF="cliki.html">About CLiki</A
+> <A CLASS="internal" HREF="text_20formatting.html">Text Formatting</A
+> </DIV
+><DIV ID="main"><H1>Concatenative Syntax</H1
+>About <a class="internal" href="syntax.html" >syntax</a> in (the prime example) <a class="internal" href="joy.html" >Joy</a>:
+<p>Concatenative syntax provides an alternative formulation of <a class="internal" href="functional.html" >functional</a> programming expressions. Functional programming languages can be expressed in a form where they consume one argument and output a value to be consumed by another. Multiple inputs are essentially aggregated together for this process to really work conceptually; naturally this does not have to happen in practice.
+<p>Function composition of this kind is a binary, associative operator, much like addition or multiplication in basic math, and it is expressed in much the same way in most programming languages with the option for infix syntax. These languages are "applicative" syntax languages, in that most expressions frame the application of functions to arguments, in some positional framework, usually with the function name placed before the arguments, called "Cambridge notation".
+<p>Concatenative notation, by comparison, reverses this and creates a new way to read programs. Data are programs with no inputs, and functions and data are placed side-by-side to show data-flow direction. An aggregating syntactic operator is required, of course. A consequence of this is that the abstraction of syntax becomes a concatenation of symbols (into an expression, not into another symbol), which logically has the same type as a list. In Joy, this is the particular form of quotation: the same notation as is used for aggregating arguments for input to a function.
+<p><ul class="links">
+<li><A HREF="http://www.latrobe.edu.au/philosophy/phimvt/joy/j02maf.html">Mathematical foundations of Joy</A
+>.
+</ul>
+<hr><p><b>This page is linked from: </b> <a class="internal" href="joy.html" >Joy</a> &nbsp; </DIV></BODY></HTML>

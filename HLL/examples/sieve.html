@@ -1,0 +1,162 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+  <HEAD>
+    <!--#include virtual="/head.html" -->
+    <TITLE>The Sieve of Eratosthene</TITLE>
+  </head>
+  <body>
+<H1>The Sieve of Eratosthene</H1>
+    <!--#include virtual="header.html" -->
+<H2>Some history</H2>
+    <p>One of the oldest and simplest yet interesting algorithm that involves arbitrary large data is the sieve of Eratosthene.</p>
+    <p>Eratosthene (Cyrene circa 284 BC - Alexandria circa 192 BC) was a great greek mathematician. He was the very first to accurately compute the circumference of Earth, and he invented this clever algorithm to find prime numbers.</p>
+    <p>In the computing world, this algorithm was once used as a speed "benchmark" for languages and compilers (which is stupid both in the first case,	because by inlining arbitrary many steps of the sieve, you could speed the whole thing arbitrarily anyway, and in the second case, as the sieve would eventually be specifically recognized by compilers to speed up benchmarks).</p>
+    <p>Here we use it not to benchmark speed, but to illustrate language expressiveness.</p>
+
+<H2>The Mathematical Idea</H2>
+
+    <p>Some definitions:</p>
+    <ul>
+      <LI>A natural number <KBD>m</KBD> is a multiple of some natural number <KBD>n</KBD> if and only if there is a natural number <KBD>k</KBD> such that <KBD>m=kn</KBD>. We then say that <KBD>n</KBD> divides <KBD>m</KBD>, or that <KBD>m</KBD> is divisible by <KBD>n</KBD>, or that <KBD>n</KBD> is a divisor of <KBD>m</KBD>. We also call <KBD>k</KBD> the multiplicity factor.</li>
+      <LI>A natural number is said to be <EM>prime</EM> if and only if it has precisely two distinct divisors, namely 1 and itself (which must then be different). Thus a natural number <KBD>m</KBD> is not a prime if and only if it is 1, or it is divisible by a natural number strictly greater than 1 and strictly lesser than <KBD>m</KBD>.</li>
+    </ul>
+
+    <p>Then we have these preliminary lemmas:</p>
+    <ul>
+      <LI>The multiple of a multiple of a number is a multiple of this number, and conversely, the divisor of a divisor of a number is a divisor of this same number; a number is a multiple and divisor of itself, and is the only number so: divisibility defines a partial order on natural numbers.</li>
+      <LI>All the multiples of a natural number, but itself and zero, are strictly greater than it: divisibility defines among non-null natural integers a partial order included in the natural order, while zero is greater than any other number with respect to divisibility.</li>
+      <LI>Primes are thus minimal elements with respect to this order.</li>
+      <LI>Any number has a prime divisor: consider all numbers from 2 to that number, and the least to divide it will be a prime (possibly itself).</li>
+      <LI>Unless the number is prime, the square of its least prime divisor is not greater than the number itself: when you divide the number by the prime divisor, you obtain a new number stricly lesser than the original whose divisors will also divide the original one; hence the least one will be greater than or equal to the least prime divisor of the original number.</li>
+    </ul>
+    <p>Thus here is the algorithm invented by Eratosthene:</p>
+    <ul>
+      <LI>To find all primes lesser than some large (well, not too large either) number <KBD>N</KBD>, just consider every number between <KBD>2</KBD> and <KBD>N</KBD> included, and eliminate all the multiples of each considered number. Those that remain will be the primes.</li>
+      <LI>Now, if we consider numbers in their natural order, instead than some arbitrary other one, we can simplify things greatly: anytime we reach a number, either it is already marked as a multiple of some lesser number, thus is not a prime, and all its multiples are already marked as multiples of that lesser number; or it isn't marked yet, and cannot be marked later, because all further numbers will be strictly greater than it and thus not possibly divisors of it, thus is prime, and we shall mark all its multiples.</li>
+      <LI>We also see that when a prime <KBD>p</KBD> is reached, all its multiples below its square are already marked, as the multiplicity factor<KBD>k</KBD> being lesser than <KBD>p</KBD>, it will already be marked as a multiple of <KBD>k</KBD>'s least prime divisor.</li>
+      <LI>Thus, we can also stop marking when the square of the considered number is greater than <KBD>N</KBD>.</li>
+      <LI>If we have some clever way to mark integers without any limit <KBD>N</KBD>, by remembering the list of found primes in their natural order instead of marking numbers from <KBD>2</KBD> to <KBD>N</KBD>, we can yield the indefinite list of primes (that we know as being infinite from Euclide).</li>
+    </ul>
+
+<H2>Programming the sieve</H2>
+
+    <p>The idea of the sieve is relatively simple; but even then, you can write infinitely many programs based on this idea. Existing computer languages would require you to rewrite each from scratch. But in the same way as a human doesn't re-learn the sieve from scratch each time he sees it, we can and should have computers understand it once and for all. Here is how we could do:</p>
+    <UL>
+      <LI>Take the program's most generic form, that should work in <EM>any</EM> context.</li>
+      <LI>Tell the computer how to specialize this form into efficient ones according to the context.</li>
+    </UL>
+
+<H3>The sieve program in various programming languages and paradigms</H3>
+
+<H4><a name="c">Lame C-language Version</a></H4>
+<PRE>
+char * sieve (int max)
+{
+  int n, n2, m;
+  char * sieved ;
+
+  /* malloc'ing */
+  sieved = malloc(max) ;
+  assert(sieved) ;
+  memset(sieved,0,max) ;
+
+  /* loop */
+  for (n = 2, n2 = 4; n2&lt;=max ; n2+=(n++&lt;&lt;1)+1 ) {
+      if (!sieved[n]) {
+        out(n) ;
+        for (m=n2; m &lt;= max ;m+=n) sieved[m] = 1 ;
+    }
+  }
+  return sieved ;
+}
+</PRE>
+    <P>Here are many reasons why C is a disadvantage, that we can see in this program:</p>
+    <UL>
+      <LI>In this example, the only parameter is the upper bound of a range to sieve to find which integers inside are primes. Instead, we could have used the very same algorithm to compute the indefinite list of prime numbers, a function that associates its lowest prime factor to each integer in a range, or an indefinite sieving function. But in C, these mean complete rewrite of the function.</li>
+      <LI>The caller must know the low-level implementation of the result structure to use it.</li>
+      <LI>Every type or function definition being global in C, object-oriented style is made difficult, as the programmer must manually resolve name clash, and/or add indirection levels; this wastes the programmer's time and leads to inefficient code. In C++, the problem is only partially solved, as classes are still global, statically bound, and never value-dependent.</li>
+      <LI>The preprocessor could be used to increase the genericity of the function, but its use is heavy, very unpowerful, static, and especially horrible if multiple instances of the preprocessed function are to be used.</li>
+      <LI>If you want time or space efficiency, you must <EM>explicitly</EM> inline the sieving function for a correctly-small quantity of small prime numbers needed to achieve efficiency, and pack/unpack data from the array. Furthermore, this will depend on the particular compilation target.</li>
+      <LI>Allocating memory is painful; either the caller or the callee must do it. If the caller does it, it can sometimes be optimized, but is painful everytime. If the callee does it, it's painful only once (unless there's an exception mechanism, but this would be <EM>extremely</EM> painful), but it can't be optimized, and the caller must know the internals anyway, to have a consistent deallocation policy.</li>
+      <LI>You must <EM>explicitly</EM> give the low-level implementation of arrays, lists, inlined code, allocation procedure. You can't let the system optimize them according to the way the function will actually be used.</li>
+      <LI>In this example, we assumed that <code>out()</code> was a function to call whenever a prime number is detected. Using data-driven style in the program that uses this information would require either complete rewrite of the program, or explicit forking (or use of threads).</li>
+    </UL>
+
+<p>To conclude, it's impossible to express efficiently the generic algorithm in a one C program.</p>
+
+<H4>Side-Effecting Message-Passing Version</H4>
+<PRE>
+var	n : int = 2 ;
+	sieved : int->bool = function x|->false ;
+fun step () =
+  if not sieved (n) then
+    begin
+      out(n) ;
+      sieved := function x|-> (old sieved x) or (n divides x)
+    end ;
+loop
+  begin
+    step () ;
+    increment(n)
+  end ;
+</PRE>
+<P>
+
+<H4>Pure lazy functional version</H4>
+<PRE>
+let Eratosthene's_Sieve =
+   let rec step n sieved =
+      let next_num = n+1 in
+	 if not (sieved num)
+	   then
+	      let new_sieved m = (sieved m) or (n divides m) in
+		 cons_stream n (step next_num new_sieved)
+	   else step next_num sieved in
+   prime_stream = step 2 (fun x->false)
+</PRE>
+
+<H4>"Natural language" version</H4>
+<PRE>
+Consider knowing a natural number n to not be a prime as being false.
+Consider number two.
+A sieve step is
+  if the considered natural number is not known to not be a prime,
+    then
+	say that the considered natural number is prime, and
+	consider knowing a natural number not to be a prime as
+	  previously knowing that and the considered natural number
+	   not dividing this one.
+To sieve is to loop on the sieve step, each time considering the next number.
+Recursively export the verb to sieve.
+</PRE>
+    <p>Less capable natural language interpreters may require a more thorough quoting, parenthesing, annotating and explicit typing than otherwise.</p>
+
+<H2>Variations on the sieve</H2>
+    <p>Here are things we could tell the system so it can enhance the implementation of the sieve:</p>
+    <P>Efficiency annotations:</p>
+    <UL>
+      <LI>Eliminate multiples only from the square of the prime on, thus stopping when the square exceeds the numbers to sieve.</li>
+      <LI>Use a well-known egregious identity to compute the square of a number together with it by doing only additions, not multiplications, and hardware where multiplication is much more expensive than additions.</li>
+      <LI>Statically or dynamically limit (and change) the precision of integer computations as needed.</li>
+      <LI>Use an array to implement the variable sieving function if a low enough bound is (locally) known to the sieve.</li>
+      <LI>Otherwise, use the list of previously-known primes as a parameter for the sieving function instead of dynamically producing (pseudo- or real) code to test each new prime.</li>
+      <LI>Arbitrarily-dynamic combinations of the former methods.
+      <LI>Expand the first steps of the sieve (i.e. inline primes up to 2,3,5, or 7, etc) to speed up the whole thing: typical programs only inline the first step to gain a factor two on space (when using arrays) and time; another factor two may be gained by inlining the four first steps instead; for growing zones, this factor can be dynamically increased, etc.</li>
+      <LI>Fit the loops and buffers in instruction and data caches.</li>
+    </UL>
+    <P>Input/Output annotations</p>
+    <UL>
+      <LI>The <code>out()</code> (or "say") input procedure defines what to do with a number known to be prime.</li>
+      <LI>The function may be executed step-by-step, or prime-by-prime, or continuously as needed.</li>
+      <LI>The sieve results may be buffered or not; the buffer may be shared or not between smaller or larger sets of programs and running instantiations of a same persistent interrupted program. If needed results are not available, a sieve would of course be re-run.</li>
+      <LI>A proof that the sieve actually yields the prime numbers shall be included, exported, and this fact pointed to in the standard list of algorithms, so that this algorithm will be automatically used by whoever wants prime numbers without explicitly programming.</li>
+    </UL>
+
+    <H2>To Do:</H2>
+    <ul>
+      <LI>Add more annotations, particularly about generating all primes below N or factorizing N.</li>
+      <LI>Show how the real program would look like on our HLL.</li>
+    </ul>
+    <!--#include virtual="/footer.html" -->
+  </body>
+</html>

@@ -1,0 +1,24 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<HTML><HEAD><TITLE>CTO : GO!</TITLE
+><LINK REL="alternate" TYPE="application/rss+xml" TITLE="Recent Changes" HREF="http://tunes.org/cliki/recent-changes.rdf.html"><LINK REL="stylesheet" HREF="admin/cliki.css"></HEAD
+><BODY><DIV ID="banner"><A TITLE="CTO" CLASS="logo" HREF="go!.html">CTO</A
+> <SPAN>CLiki for the TUNES project</SPAN
+></DIV
+><DIV ID="navbar"><A CLASS="internal" HREF="index.html">Home</A
+>  <A CLASS="internal" HREF="cliki.html">About CLiki</A
+> <A CLASS="internal" HREF="text_20formatting.html">Text Formatting</A
+> </DIV
+><DIV ID="main"><H1>GO!</H1
+>An <a class="internal" href="os.html" >OS</a>, by Greg Law, based on the idea of building an entire <a class="internal" href="operating_20system.html" >Operating System</a> from software components (based on <a class="internal" href="corba.html" >CORBA</a> and its ORB) that can be replaced and recycled; it also introduces an x86-specific <a class="internal" href="security.html" >security</a> model based on <b>segmentation</b> and <b>code scanning</b> (an example of a <a class="internal" href="no-kernel.html" >no-kernel</a> system).
+<p><ul class="implementations">
+<li><A HREF="http://goos.sourceforge.net/">GO! homepage</A
+>
+</ul>
+<p><hr>
+<p><span class="comment">
+It seems as if code scanning can be reduced to the "Halt problem" and is therefore not determinable. In this context, that actually means you can always write a program which will make the code scanner run forever or if it stops at some point, execute a "illegal" instruction.
+<br>-- Dante</span>
+<p><span class="comment">
+Your is a strong statement without a proof. It seems you are artificially complicating the issue: <i>code scanning</i> here simply means to search for occurrences of protect-mode instruction opcodes (regarding, in particular, segment registers). Other <a class="internal" href="security.html" >security</a> mechanisms are implemented in the Object Request Broker (ORB). Also it is sensible to combine </i>code scanning</i> with other techniques: for example, Typed Assembly Language (<a class="internal" href="tal.html" >TAL</a>), <a class="internal" href="language-based_20security.html" >Language-Based Security</a>, <a class="internal" href="information-flow_20security.html" >Information-Flow Security</a>, <a class="internal" href="capability.html" >Capability</a> and so on.
+<br>-- <a class="internal" href="mad70.html" >MaD70</a></span>
+<hr><p><b>This page is linked from: </b> <a class="internal" href="microkernel_20debate.html" >Microkernel Debate</a> &nbsp; </DIV></BODY></HTML>

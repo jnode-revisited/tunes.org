@@ -1,0 +1,192 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 3.2 Final//EN">
+<HTML>
+<HEAD>
+ <META NAME="GENERATOR" CONTENT="LinuxDoc-Tools 0.9.8.1">
+ <TITLE>Specifications for the T3P -- Tunes Package Publishing Protocol: TS3P -- Tunes Stream Package Publishing Protocol</TITLE>
+ <LINK HREF="T3P-3.html" REL=next>
+ <LINK HREF="T3P-1.html" REL=previous>
+ <LINK HREF="T3P.html#toc2" REL=contents>
+</HEAD>
+<BODY>
+<A HREF="T3P-3.html">Next</A>
+<A HREF="T3P-1.html">Previous</A>
+<A HREF="T3P.html#toc2">Contents</A>
+<HR>
+<H2><A NAME="s2">2.</A> <A HREF="T3P.html#toc2">TS3P -- Tunes Stream Package Publishing Protocol</A></H2>
+
+
+
+<H2><A NAME="ss2.1">2.1 Purpose and Applicability</A>
+</H2>
+
+<P>The TS3P is a generic protocol applicable
+to arbitrary stream-based communication model,
+where information is passed as a substratum sequence of elements.</P>
+<P>We'll define the TS3P as a functor,
+taking as parameter all the objects that we'll need during this definition,
+and yielding a protocol to encode high-level Tunes objects.</P>
+<P>In this early version,
+we're ready to make lots of assumptions
+about the available low-level protocol,
+as long as most current hardware architecture provide them.</P>
+<P>The protocol could be adapted to work under more generic circumstances,
+but this isn't needed right now, so to save our precious time,
+we'll postpone such generalization to whenever it's needed.
+Surely we do not allow ourselves to discard such generalization.</P>
+<P>This protocol is defined in terms of constructing tactics
+that can be recursively combined.</P>
+<P>The operations involved are typically of the form
+"deconstructing the sequence in some context
+into an object of some known type and a rest of sequence".
+This makes the TS3P some kind of LL(infinity) generic protocol.</P>
+
+
+<H2><A NAME="ss2.2">2.2 Standard External Structure</A>
+</H2>
+
+<P>These are to uniquely unambiguously define the context
+of objects taken "out of the blue" from uncontrolled low-level channels.</P>
+
+
+<H3>Header</H3>
+
+<P>A header will uniquely identify the protocol, its flavor, and its version.</P>
+<P>The rest of the stream will be defined in a flavor and version-dependent way.</P>
+
+
+<H3>Meta-Object Identifier</H3>
+
+<P>Once a sequence is identified as carrying TS3P-encoded data,
+a TS3P decoder will look for a label or number
+identifying the sub-protocol meta-object to be used,
+for the global registry.</P>
+<P>The meta-object will take control, using sub-subprotocols, etc,
+as appropriate.</P>
+
+
+<H2><A NAME="ss2.3">2.3 Basic encoding</A>
+</H2>
+
+<P>Let's say a few things on how to encode basic low-level data objects.</P>
+
+<H3>Information Elements</H3>
+
+<P>To simplify, we're ready to assume
+that the low-level communication channels
+allow all elements to yield the same amount of information.</P>
+<P>We require that a standard representation of an element
+be defined as an integer between 0 included and NMAX excluded.</P>
+<P>For instance, a typical channel will allow to pass 8-bit bytes.
+A lesser channel will pass only some of the possible values
+for a byte (for instance, stripping the 8th bit,
+doing wierd things if given some control characters, etc).</P>
+<P>Assuming the constraints are known,
+we can if we're not satisfied,
+reconsider such a system that has constraints on passed elements
+either as passing normalized integer values,
+or as passing the full unrestricted values,
+through a standard escape sequence mechanism.</P>
+<P>To simplify things further,
+we're even ready to assume when needed that NMAX be a power of two.</P>
+
+
+<H3>Integers</H3>
+
+<P>Given a normalized communication channel,
+we can encode natural integers with an already known bound
+as their decimal little- or big-endian expansion
+in basis NMAX.</P>
+<P>Conversely, several numbers x1...xn varying each between 0 and Ni excluded
+can be encoded as a number between 0 and the products of Ni's excluded.</P>
+<P>All this can be done recursively, so that for instance,
+on a channel passing bytes, we can encode numbers</P>
+<P>Integers of size unknown are encoded as a known guessed size,
+with an escape value meaning that the rest of the sequence will
+encode the integer with a higher guess size;
+multiple escape values can give some information about the integer,
+and the rest of the sequence would only encode the rest of the integer.</P>
+<P>Another way is to divide the available values into valid and invalid ones,
+and consider that the longest uninterrupted sequence of valid ones
+define the integer value, once normalized.</P>
+<P>Relative integers of between -N included and N excluded
+can be encoded in 2N's complement notation.</P>
+<P>Example: Some encoding could encode numbers over ASCII channels as
+their hexadecimal 4 bit development,
+or a 6 bit development (like uuencode),
+instead of their normalized 6.56 bit development,
+especially when speed at decoding is useful.
+Remaining values then can serve as end-of-number markers.</P>
+
+
+<H3>Low-level Data Structures</H3>
+
+<P>If we're to encode objects from a known finite set,
+the standard way to do that is to encode the object
+into its integer index into that set using a standard mapping,
+then encode that integer into a sequence of elements
+in the standard way as above.</P>
+<P>Cartesian products and records of known types
+can be encoded as the concatenation of the encodings
+of the individual elements.</P>
+<P>This works for dependent products and records as well as independent ones,
+where the type of the tail of the product or record
+can be determined from the value of its head.</P>
+<P>As a particular case of the former, arbitrary-length structures
+like strings can be encoded either as length-prefixed structures.
+They might also be encoded as terminated strings,
+when not all the available values of information elements are needed.</P>
+
+
+<H2><A NAME="ss2.4">2.4 Encoding High-Level constructs</A>
+</H2>
+
+<P>This all needs to be thought up.
+At least, we need primitives from lambda-calculus
+with first-class environments.</P>
+
+<H3>Recursive Structures</H3>
+
+<P>They can be expressed in terms of non-recursive structures:
+with help of standard fix-points and sharing combinators,
+we can express any graph with a tree,
+that itself can be just flattened in prefix or postfix way,
+by using only operators of implicitly or explicitly fixed/given arity.</P>
+
+<H3>Types and Reflective Objects</H3>
+
+<P>They can be expressed in terms of non-recursive structures,
+with help of standard reflective operators.</P>
+
+<H3>Attributes</H3>
+
+<P>Attributes that are external to an object's representation
+can be made internal with a proper meta-operator on representations.</P>
+<P>As an example of the use of attributes,
+signatures (cryptographic or not)
+that identify the author of the objects,</P>
+
+
+<H3>Functions and Code</H3>
+
+<P>Code can be viewed as data once a meta-object is defined.
+No special technique are needed, only conventions for standard meta-objects.</P>
+
+<H3>Sorts</H3>
+
+<P>For compression purpose, it might be interesting to split
+objects into separate substreams
+according to their "type" under some typesystem.
+Each substream will have an appropriate compressed encoding.
+Of course, these means that we have
+random access to the stream representation,
+which is generally not compatible with real-time/real-space handling,
+unless there is a known small bound
+to the total size of the substreams to co-decode.</P>
+
+
+<HR>
+<A HREF="T3P-3.html">Next</A>
+<A HREF="T3P-1.html">Previous</A>
+<A HREF="T3P.html#toc2">Contents</A>
+</BODY>
+</HTML>

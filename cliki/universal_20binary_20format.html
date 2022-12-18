@@ -1,0 +1,43 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<HTML><HEAD><TITLE>CTO : Universal Binary Format</TITLE
+><LINK REL="alternate" TYPE="application/rss+xml" TITLE="Recent Changes" HREF="http://tunes.org/cliki/recent-changes.rdf.html"><LINK REL="stylesheet" HREF="admin/cliki.css"></HEAD
+><BODY><DIV ID="banner"><A TITLE="CTO" CLASS="logo" HREF="universal_20binary_20format.html">CTO</A
+> <SPAN>CLiki for the TUNES project</SPAN
+></DIV
+><DIV ID="navbar"><A CLASS="internal" HREF="index.html">Home</A
+>  <A CLASS="internal" HREF="cliki.html">About CLiki</A
+> <A CLASS="internal" HREF="text_20formatting.html">Text Formatting</A
+> </DIV
+><DIV ID="main"><H1>Universal Binary Format</H1
+>A <a class="internal" href="programming_20language.html" >programming language</a> for transporting and describing complex data structures across a network (<a class="internal" href="aka.html" >aka</a> <a class="internal" href="marshalling.html" >marshalling</a>).
+<blockquote>
+It has three components:
+<p><ul>
+<li>UBF(A) is a data transport format, roughly equivalent to well-formed <a class="internal" href="xml.html" >XML</a>.
+<li>UBF(B) is a programming langauge for describing types in UBF(A) and protocols between clients and servers. UBF(B) is roughly equivalent to to Verified <a class="internal" href="xml.html" >XML</a>, <a class="internal" href="xml.html" >XML</a>-schemas, SOAP and WDSL.
+<li>UBF(C) is a meta-level protocol between used between UBF servers.
+</ul>
+<p>While the <a class="internal" href="xml.html" >XML</a> series of languages had the goal of having a human readable format the UBF languages take the opposite view and provide a "machine friendly" format.
+<p>UBF is designed to be easy to implement. As a proof of concept - UBF drivers for <a class="internal" href="erlang.html" >Erlang</a>, <a class="internal" href="mozart_2foz.html" >Oz</a>, <a class="internal" href="java.html" >Java</a> and <a class="internal" href="tcl.html" >TCL</a> can be found in the download area. [..]
+<p>UBF is designed to be "language neutral" - UBF(A) defines a language neutral binary format for transporting data across a network. UBF(B) is a type system for describing client/server interactions which use UBF(A).
+<p><h4>Programming by Contract</h4>
+<p>Central to UBF is the idea of a "contract" which regulates the set of legal conversations that can take place between a client and a server.
+<p>A software component (the contract checker) is place between a client and server which checks that all interactions between thew client and server are legal.
+<p>[..]
+</blockquote>
+<p><ul class="implementations">
+<li><A HREF="http://www.sics.se/~joe/ubf/site/home.html">UBF homepage</A
+>.
+<li><A HREF="http://www.sics.se/~joe/">Joe Armstrong SICS home page</A
+>, its author.
+<li><A HREF="http://www.sics.se/~joe/ubf/site/white.html">White paper</A
+> excerpt:
+<blockquote>
+<h4>What is the relationship between UBF and <a class="internal" href="xml.html" >XML</a>?</h4>
+<p>Both UBF and <a class="internal" href="xml.html" >XML</a> have similar goals and similar structure. <a class="internal" href="xml.html" >XML</a> has a <strong>supposedly</strong> human friendly syntax and is <strong>supposed</strong> to be self describing. UBF is programmer friendly and is designed to be efficient and easy to implement.
+<p><h4>Why is UBF parsing efficient</h4>
+<p><strong>UBF(A) terms are actually little programs which the decoder executes.</strong> When reconstructing a UBF(A) term the decoder just executes the program. No grammar checking or parsing is actually involved.
+<p>UBF(A) encoded terms are also much more compact than the equivalent <a class="internal" href="xml.html" >XML</a> terms. Since parsing an import stream involves looking at every character on the input UBF parsing is intrinsically much more efficient than <a class="internal" href="xml.html" >XML</a> parsing. A UBF(A) encoder can also make intelligent use of the caching optimization to further improve efficiency.
+</blockquote>
+</ul>
+</DIV></BODY></HTML>

@@ -1,0 +1,17 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<HTML><HEAD><TITLE>CTO : Abstraction Inversion</TITLE
+><LINK REL="alternate" TYPE="application/rss+xml" TITLE="Recent Changes" HREF="http://tunes.org/cliki/recent-changes.rdf.html"><LINK REL="stylesheet" HREF="admin/cliki.css"></HEAD
+><BODY><DIV ID="banner"><A TITLE="CTO" CLASS="logo" HREF="abstraction_20inversion.html">CTO</A
+> <SPAN>CLiki for the TUNES project</SPAN
+></DIV
+><DIV ID="navbar"><A CLASS="internal" HREF="index.html">Home</A
+>  <A CLASS="internal" HREF="cliki.html">About CLiki</A
+> <A CLASS="internal" HREF="text_20formatting.html">Text Formatting</A
+> </DIV
+><DIV ID="main"><H1>Abstraction Inversion</H1
+>A <a class="internal" href="term.html" >term</a> for what happens when program designers try to build simple things on top of complex "primitives" instead of building the complex things on top of simple primitives. (Complexity here is understood with respect to an implicit underlying framework; when speaking of software, this framework is the computer hardware on which to implement the software.)
+<p>The original example was the original <a class="internal" href="ada.html" >Ada</a> rendezvous primitive, upon which Ada programmers built other synchronization mechanisms, whereas the simpler primitives to implement are semaphores; so that when programmers actually wanted portable semaphores, instead of getting a simple and cheap implementation of a simple concept, they got a complex and expensive implementation of it in terms of rendezvous!
+<p>Another example of it is the very concept of <a class="internal" href="microkernel.html" >microkernel</a>, that inverts the high-level concurrent <a class="internal" href="actor.html" >actor</a> programming model with the low-level hardware resource management implementation.
+<p>The term was introduced to us in an article by <a class="internal" href="henry_20baker.html" >Henry Baker</a> in <A HREF="http://www.pipeline.com/~hbaker1/CritLisp.html">A Critique of DIN Kernel LISP</A
+>.
+<p>NB: Henry Hazlitt in his 1964 <a href="http://www.hazlitt.org/e-texts/morality/ch5.html">"Foundations of Morality"</a> reports the use of the term "hysteron-proteron" for "an inversion of the true order of logical dependence, a reversal of cause and effect", or in other words <em>putting the cart before the horse</em>.<hr><p><b>This page is linked from: </b> <a class="internal" href="forth_20is_20not_20intrinsically_20slow.html" >Forth is NOT intrinsically slow</a> &nbsp; <a class="internal" href="microkernel.html" >Microkernel</a> &nbsp; <a class="internal" href="microkernel_20debate.html" >Microkernel Debate</a> &nbsp; </DIV></BODY></HTML>

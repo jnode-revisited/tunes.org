@@ -1,0 +1,36 @@
+<!doctype html public "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+  <head>
+    <!--#include virtual="/head.html" -->
+    <TITLE>Generic implementation of the TUNES LLL</TITLE>
+  </head>
+  <body>
+    <H1>Generic implementation of the TUNES LLL</H1>
+    <!--#include file="header.html" -->
+
+<H2>Contents</H2>
+
+<h3><a href="generic.html#Goals">Goals and Requirements</a></h3>
+<h3><a href="generic.html#Principles">Principles chosen</a></h3>
+<h3><a href="generic.html#Difficulties">Issues</a></h3>
+<h3><a href="generic.html#GenMod">Generic modules provided</a></h3>
+<h3><a href="generic.html#SpecMod">Specific modules needed</a></h3>
+<P>
+<h3>The current specific mappings being worked on are for the
+	<a href="i386/index.html">i386</a> and
+	<a href="OTOP/index.html">O'TOP</a> subprojects.</h3>
+
+<hr>
+<h2><a name="Goals">Goals and Requirements</a></h2>
+    <p>Define once and for all all the logic common to all implementations of the LLL upon any platform. Define and implement a low-level language that will fulfill all the requirements to be used as a basis for the TUNES system, including self-extending into the full TUNES HLL, etc.</p>
+    <p>A first, original version should be written using widely available existing tools, and not bother about speed efficiency of generated code. It can use dirty hacks of all kinds.</p>
+    <p>The definitive version will be written using the own TUNES language system; it will be as clean as can be, and rely on all our usual TUNES tools to produce "<a href="http://cliki.tunes.org/Optimize">optimized</a>" code.</p>
+    <p>It should map to our currently-possible targets as well as future ones.</p>
+
+<h2>To Do:</h2>
+<ul>
+<li>Document the current implementation.
+</ul>
+    <!--#include virtual="/footer.html" -->
+  </body>
+</html>

@@ -1,0 +1,72 @@
+<!doctype html public "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+  <head>
+    <!--#include virtual="/head.html" -->
+    <title>The Tunes Interfaces Subproject -- Games</title>
+  </head>
+  <body>
+    <h1>The TUNES Interfaces Subproject</h1>
+    <!--#include file="header.html" -->
+    <h2>Games Considerations</h2>
+    <p>All reasonable, modern OSs support games, and Tunes should not be an exception.  The trick with games is how to provide an API that is quick and portable enough to be used reasonably, while being reasonably consistant and friendly with the rest of the OS.</p>
+
+<h2>Tunes' Gaming Goals</h2>
+
+<ul>
+    <li>speed
+    <li>3D and 2D support
+    <li>safe -- rest of system should not be compromised by a game
+    <li>same/similar api as "normal" apps
+</ul>
+
+<h2>Thoughts from TUNESers</h2>
+
+Chris ponders:
+<blockquote>
+One of the interface project's goals is to automate, to some reasonable
+extent, the creation of the UI, so the programmer is freed from much of the
+burden.  However, taking away this "burden" from a game programmer is, in
+essence, taking away the ability to write a game.  Therefore, in addition
+to the higher-level, more automatic libraries, we must allow reasonably direct
+access to the screen, and other hardware.<p>
+
+It is my hope that Tunes will be able to provide low-level libraries, with
+sufficiently speedy (yet portable) line/arc/polygon drawing, bit transfer,
+and maybe some 3D things, that a game written for Tunes will be able to
+function, with decent speed, on any Tunes platform with pixel-based video
+hardware, be this hardware a 386 VGA Screen, whatever they have on Indys (evil
+grin), or an X Window.
+</blockquote>
+
+Matthew Gruenke suggested:
+<blockquote>
+Date: Tue, 19 Dec 1995 15:45:35 -0600 (CST)<br>
+From: Matthew Gruenke <mgruenke@sound.net><br>
+Subject: Re: INT: Project Alive!<p>
+
+I like games.  I'll port all of my games (numbering 0, right now) to this
+OS, if I possibly can!!  It is my belief that what would be most optimal would
+be something similar to what Windows 3.x does with WinG.  WinG, if you don't
+happen to know, allows for direct bit-plane access (as a 2D array in memory).
+A simple call can be used to x-fer this bit-plane to the gfx hardware for
+displaying.  Graphics should be able to be directed straight to the screen, or
+to such a frame-buffer in main-mem.  The graphics-drawing functions (i.e.
+DrawLine, DrawPoly, etc. should be able to function in EITHER case, and should
+be fast enough for some reasonable 3D gaming!!   As a matter of fact, I think
+it would be nice to include a 3D gfx lib  (which could either utilize the 2D
+functions, to a degree, or if they're not high-performance enough, could cut
+them outta the chain)!)  I think it's important to allow for at least this 
+amount of flexibility, if not more, in order to make the platform graphics-
+friendly!  I also think it's important to allow parts of the GUI to be easily
+re-written or replaced (possible to allow for some expirementation with 3D 
+GUI's, or atleast a good deal of customization).  Normal applications should
+NOT ever be able to take complete control of the system.  The OS MUST remain
+capable of doing comm-access, ftp x-fers, etc. in the background w/o causing
+errors, due to some poorly written (but possibly fun) game!!  EVERYTHING
+should be able to multi-task!!
+</blockquote>
+
+<p>Fare concludes: a Good Thing (TM) would be to port <A HREF="http://cliki.tunes.org/GGI">GGI</A> to Tunes.</p>
+    <!--#include virtual="/footer.html" -->
+  </body>
+</html>

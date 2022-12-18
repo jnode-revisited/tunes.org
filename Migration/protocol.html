@@ -1,0 +1,55 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+  <head>
+    <!--#include virtual="/head.html" -->
+    <title>TUNES Migration Protocol</title>
+  </head>
+  <body>
+    <h1>TUNES Migration Protocol</h1>
+    <!--#include file="header.html" -->
+    <p>We must develop some universal protocol to migrate information.</p>
+    <p>That protocol must work on any media and developed for use on any transfer mode, such as e-mail, floppies, and serial line transfer. These are relatively cheap media, but they are used heterogenously, because there are only inconsistent low-level tools to package and extract information from them.</p>
+    <p>This will be the <em>T3P: Tunes Package Publishing Protocol</em>:</p>
+    <ul>
+      <li>Basically, <em>packages</em> are chunks of meaningful information with enough conventional meta-information to identify what it means. More precisely, it needs to identify its dependencies and meta-level dependencies: what other packages are needed to provide what it uses, and what grammars or evaluation models are needed to understand the expressions themselves. Presumably, the former may be used to imply the latter, but there is no foreseeable guarantee for this.</li>
+      <li>The protocol must have some way to express identity in a distributed space over time, so that requirements are non-ambiguous. If this were not so, the semantics would not be reliable.</li>
+      <li>When two systems interactively communicate modules, they may negociate to only actually transfer what's needed. Unless the link latency is much higher than the throughput, at which point negociating costs more than sending the whole thing. (<em>Note:</em> these should be abstracted as strategies, to affect any data chunk transfer when possible.)</li>
+    </ul>
+    <p>We may thus define several flavors of the protocol; it will actually include a meta-protocol, allowing to dynamically build protocols fit for various purposes, out of basic bricks and constructors. In this sense, there's a grammar suited for the purpose of building protocols. <a href="http://www.beepcore.org">The BEEP protocol framework</a> is a start towards this.</p>
+    <p>Because every medium has its own characteristics, the protocol should be modular and open, so that what signature method will be used to identify the message or its author, what error-detection and error-correction sub-protocol will be used, what compressed or depressed data encoding will be used, etc., can be independently varied.</p>
+    <p>Unlike many other protocols, T3P does not leave data interpretation undefined. (Of course "raw byte" data types would still exist.) Instead, every single object will be typed and/or tagged, and the type system extensible by the transmitted packages themselves, so that multiple extra protocols for specific domains would not need to be layered. Domain-specific uses would then only require preludes that specify the types employed, possibly included as a part of the meta-level requirements.</p>
+    <p>For sequential/serial channels, a major flavor of the T3P will be the <em>TS3P: Tunes Stream-based Package Publishing Protocol</em>:</p>
+    <ul>
+      <li>Packed-into/contained-in streams of raw data.</li>
+      <li>Packets may be numbered/ordered. If synchronization is needed for packets from multiple machines, dating servers can authoritatively order packets. Those servers will be ordered in a tree-like fashion, so if a local server ain't enough, it will automatically ask for numbering to a more authoritative server.</li>
+      <li>Authoritative Servers, used for authentification, synchronization, etc, will be organized in a hierarchy, so that there is always a server near the requester, but all authority conflicts can be solved.</li>
+      <li>So that authority be exerted efficiently, the servers with more authority would most often delegate their authority to local servers that would minimize packet trip, whenever a conflict is to be settled between a limited number of requesters.</li>
+      <li>The delegating server can be informed of whatever decision the deputy takes, and it keeps control over what the deputy does, can preempt whatever decision the deputy may have taken, can reclaim back the reclaimed authority: deputy may have to handle the delegated authority back to the main server with all information needed for the main server or a new deputy to successfully continue the job.</li>
+      <li>Of course, the choice of a deputy is a crucial security choice, because the authoritative decisions are often irreversible, or very very hard to partially reverse. Hence, a server should be chosen only if all parties trust it enough for the task undertaken.</li>
+      <li>This poses the problem of central authorities ultimately referred by everyone, in case of trouble. A global authority needn't exist, but many things can't be done if there ain't any commonly acknowledged authority.</li>
+      <li>Packets may be accepted or not according to the signature, to the media from where they were sent, to the nature of the data in the packet, to the date of the packet, etc. Accepted packets can themselves be a media to transport packets recursively, etc. From now on, we interest only in accepted packets.</li>
+      <li>Competing and intercommunicating agencies of well-known addresses will provide a directory of datahandlers according to their type/tags, so that anyone who finds an object one doesn't know can automagically download the right handler from whoever publishes it.</li>
+      <li>Of course, automagic downloaders will by default be configured with severe security requirements, anti-memory-overflow and other fool-proofing, queueing unsecure messages for manual handling.</li>
+      <li>A T3P packet must be able to identify the end of the information stream independently from the underlying media.</li>
+      <li>Unreliable broadcast packets, such as those in e-mails and floppies, will have some (hopefully) uniquely identifying number.</li>
+      <li>Packet handlers may have an ID number database, so as to treat (or discard) packets according to what one already knows about these packets.</li>
+      <li>Packets may be signed and ordered by the sender.</li>
+      <li>If synchronization is important, a time server will also sign the packet with a time stamp.</li>
+    </ul>
+
+<h2>Specifications</h2>
+<ul>
+<li>We'll co-bootstrap the protocol specification
+with the rest of the system:
+early versions of the system will need early versions of the protocol.
+<li>Because the system and protocol will evolve so much,
+versioning must be built deep into the protocol.
+<li>To begin with, we'll have trivial versioning,
+with every message including a header
+uniquely identifying the protocol.
+Identifying individual sub-objects will come later.
+      <li>See file <kbd>$TUNES/src/Migration/T3P.*</kbd> from the unpacked source distribution, or <a href="T3P.html">the online copy</a>.</li>
+</ul>
+    <!--#include virtual="/footer.html" -->
+  </body>
+</html>

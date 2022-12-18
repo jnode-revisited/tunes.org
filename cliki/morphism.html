@@ -1,0 +1,31 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<HTML><HEAD><TITLE>CTO : Morphism</TITLE
+><LINK REL="alternate" TYPE="application/rss+xml" TITLE="Recent Changes" HREF="http://tunes.org/cliki/recent-changes.rdf.html"><LINK REL="stylesheet" HREF="admin/cliki.css"></HEAD
+><BODY><DIV ID="banner"><A TITLE="CTO" CLASS="logo" HREF="morphism.html">CTO</A
+> <SPAN>CLiki for the TUNES project</SPAN
+></DIV
+><DIV ID="navbar"><A CLASS="internal" HREF="index.html">Home</A
+>  <A CLASS="internal" HREF="cliki.html">About CLiki</A
+> <A CLASS="internal" HREF="text_20formatting.html">Text Formatting</A
+> </DIV
+><DIV ID="main"><H1>Morphism</H1
+>A <a class="internal" href="term.html" >term</a> related to <a class="internal" href="category_20theory.html" >category theory</a> describing a map between two objects in an abstract category. Morphisms can have varying properties, but can generally be considered <em>mappings</em>, analogous to functions. 
+<p>There are several types of basic morphisms, all relative to the categories <em>that they belong to</em>:
+<dl>
+<dt>Homomorphism</dt><dd>A general morphism.</dd>
+<dt>Monomorphism</dt><dd>A morphism f such that <tt>fu = fv</tt> implies <tt>u = v</tt>. In the category of sets, where morphisms are functions, it is equivalent to injectivity of the function.
+<dt>Epimorphism</dt><dd>A morphism f such that <tt>uf = vf</tt> implies <tt>u = v</tt>. In the category of sets this is equivalent to surjectivity of the function. 
+<dt>Isomorphism</dt><dd>This is a morphism which can be inverted. In the category of sets this is equivalent to say that the morphism is both a mono- and epi- morphism, i.e. a bijection, but while any isomorphism is always both mono and epi, <em>not</em> in every category the vice versa is true. Alternately, it can be described as a map which preserves sets and relations among elements.</dd>
+<dt>Endomorphism</dt><dd>A homomorphism from one object to itself.</dd>
+<dt>Automorphism</dt><dd>An isomorphism from one object to itself.</dd>
+</dl>
+<p>These are very abstract. They relate to TUNES in that these are concepts which describe high-level logical properties of functions. These logical properties can be used to form and use strategies about how to evaluate programs without involving the specification of the program. Although, some meta-level annotations on the program may involve strategies.
+<p>From some of the papers in our <a class="internal" href="category_20theory_20101.html" >category theory 101</a> course, some more specific morphism types (of the category of algebras or co-algebras) that would be more relevant to programming are:
+<dl>
+<dt>Catamorphism</dt><dd>A "downwards" morphism: one that maps from some structured object to some object which is the subject of the structure. Any function which accumulates some value from a structure (such as <tt>fold</tt> or <tt>reduce</tt>) fits this concept. By being abstract, this can also cover program structures.</dd>
+<dt>Anamorphism</dt><dd>The dual to a catamorphism, this type of morphism constructs a structure.</dd>
+<dt>Hylomorphism</dt><dd>Basically, the composition of a cata- and ana- morphism, which transforms between data structures in some way.</dd>
+<dt>Apomorphism</dt><dd>A variation on anamorphisms describing functions with <a class="internal" href="induction_20and_20co-induction.html" >co-inductively-defined</a> target types (streams, graphs, etc.).</dd>
+</dl>
+<p>The meaning of the fact that these are part of algebraic categories means that they apply to programs which can be algebraically-described. See the papers of Martin Erwig, particularly <A HREF="http://cs.oregonstate.edu/~erwig/papers/abstracts.html#AMAST98">Categorial Programming with Abstract Data Types</A
+>, which describes abstract data types as bi-algebras <span class="comment">(This is hardly easy to read. Please add some easier explanation here)</span>.<hr><p><b>This page is linked from: </b> <a class="internal" href="category_20theory_20101.html" >Category Theory 101</a> &nbsp; <a class="internal" href="charity.html" >Charity</a> &nbsp; <a class="internal" href="diagram.html" >Diagram</a> &nbsp; <a class="internal" href="initiality_20and_20finality.html" >Initiality and finality</a> &nbsp; </DIV></BODY></HTML>

@@ -1,0 +1,32 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+  <head>
+    <!--#include virtual="/head.html" -->
+    <title>The TUNES HLL Subproject</title>
+  </head>
+  <body>
+    <h1 align="center">The TUNES HLL Subproject</h1>
+    <!--#include file="header.html" -->
+    <h2>Goals</h2>
+    <ul>
+      <li>Find/design a <em>High-Level Language</em> that will fulfill all the semantical <a href="principles.html">principles</a> to be followed as the standard language for TUNES;</li>
+      <li>Implement the specified language.</li>
+      <li>Support that language and its implementations.</li>
+      <li>Write tools and documentation to help that language develop.</li>
+    </ul>
+    <h2>Implementation Plan</h2>
+    <ol>
+      <li>The HLL-, a restricted version of the HLL, will first be implemented as an s-exp interpreter written in Scheme. <em>(See directory <tt>src/HLL/scm</tt> in the Tunes distribution.)</em></li>
+      <li>An HLL- compiler will be written in HLL-, to produce binary output for the target platforms, linkable to what the LLL project produces.</li>
+      <li>Eventually, all of the LLL code will be integrated inside the HLL code as "inline assembly" and such, to ease manipulation, and compile from Tunes to Tunes.</li>
+    </ol>
+    <p>This plan allows the HLL and LLL efforts to be led independently until they can help each other.</p>
+    <h2><a href="principles.html">Principles</a> to Support</h2>
+    <h2><a href="definition.html">Definition</a> Chosen</h2>
+    <h2>Motivating <a href="examples/index.html">examples</a></h2>
+    <h2><a href="../subprojects.html#HLL">Sub-Subprojects</a> of the HLL</h2>
+    <hr>
+    <p>Annotate this on the <a href="http://cliki.tunes.org/TUNES HLL">CLiki</a>.</p>
+    <!--#include virtual="/footer.html" -->
+  </body>
+</html>

@@ -1,0 +1,23 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+  <head>
+    <!--#include virtual="/head.html" -->
+    <title>HLL Standard Library Plan</title>
+  </head>
+  <body>
+    <h1>HLL Standard Library Plan</h1>
+    <!--#include file="header.html" -->
+    <p>Here are the first components to provide:</p>
+    <ul>
+      <li>A basic interface to text-based video and keyboard consoles.</li>
+      <li>Exchange between an implicit persistent store.</li>
+    </ul>
+    <p>Of course, during their development, other more abstract objects from the below lists will be codeveloped:</p>
+    <ul>
+      <li>Standard libraries from languages like <a href="http://cliki.tunes.org/OCAML">OCaml</a>, <a href="http://cliki.tunes.org/Common Lisp">Common Lisp</a>, <a href="http://cliki.tunes.org/Scheme">Scheme</a>, <a href="http://cliki.tunes.org/Haskell">Haskell</a>, <a href="http://cliki.tunes.org/Java">Java</a>, <a href="http://cliki.tunes.org/C language">C</a>, <a href="http://cliki.tunes.org/C%2B%2B">C++</a>, etc, must be systematically plundered for the interesting functions that may lie in them.</li>
+      <li>All the data structures, algorithms, proofs, and proof techniques from Donald Knuth's "The Art of Computer Programming" and similar well-known books should eventually make it to the standard library.</li>
+      <li>The standard library items should be polymorphic however possible, so that they can be used interchangeably where the abstract type is the same. Ideally, the evaluator system should be able to choose these independently of the code specification, but there should also be a reflective communication system to override the default behavior of that mechanism. See <a href="http://cliki.tunes.org/AP5">AP5</a>.</li>
+    </ul>
+    <!--#include virtual="/footer.html" -->
+  </body>
+</html>

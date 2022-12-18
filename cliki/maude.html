@@ -1,0 +1,37 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<HTML><HEAD><TITLE>CTO : Maude</TITLE
+><LINK REL="alternate" TYPE="application/rss+xml" TITLE="Recent Changes" HREF="http://tunes.org/cliki/recent-changes.rdf.html"><LINK REL="stylesheet" HREF="admin/cliki.css"></HEAD
+><BODY><DIV ID="banner"><A TITLE="CTO" CLASS="logo" HREF="maude.html">CTO</A
+> <SPAN>CLiki for the TUNES project</SPAN
+></DIV
+><DIV ID="navbar"><A CLASS="internal" HREF="index.html">Home</A
+>  <A CLASS="internal" HREF="cliki.html">About CLiki</A
+> <A CLASS="internal" HREF="text_20formatting.html">Text Formatting</A
+> </DIV
+><DIV ID="main"><H1>Maude</H1
+>A <a class="internal" href="reflection.html" >reflective</a> equational <a class="internal" href="rewrite.html" >rewrite</a> <a class="internal" href="logic.html" >logic</a> <a class="internal" href="programming_20language.html" >programming language</a> in the <a class="internal" href="obj_20family.html" >OBJ Family</a> of executable specification languages.
+<p>Maude programs consist of modules which specify a set of term types, equations that should hold within the module over those types along with some annotations, and declarations that explain what manner of relations (such as importing) the module has with other modules. The equational reductions that Maude specifies are <a class="internal" href="concurrent.html" >concurrent</a> in that they can be applied in any order.
+<p>However, Maude is even more interesting because the rewriting theory that it uses is <em>universal</em>. That is, it can express the reduction strategy of any other logic, including itself. The way this is done is that the default reduction strategy is contained within the strategy <em>meta-module</em>, and there can be further such modules that provide modified forms of it. Maude's (relatively complicated) form of expression quotation allows the possibility of modifying this in small ways without the full overhead of a static meta-module specification. This means that "backtracking" and other procedural hacks in logical languages are avoided in favor of a direct manipulation of the language as needed, so it will most often be totally transparent to the program (which is a specification, so this is important to keep out the "how" elements).
+<p><ul class="links">
+<li>The <A HREF="http://maude.cs.uiuc.edu">home page</A
+>, moved from SRI to UIUC.
+<li>The <A HREF="http://maude.cs.uiuc.edu/manual/">Maude Manual</A
+>.
+<li><A HREF="http://www.csl.sri.com/users/duran/">Some Papers on Maude and Rewriting Logic</A
+>.
+<li><A HREF="http://www.ifi.uio.no/inf220/">A course using Maude</A
+> to analyze distributed systems with <A HREF="http://www.ifi.uio.no/inf220/Examples/">example Maude code</A
+> and a <A HREF="http://www.ifi.uio.no/inf220/pensum.html">tutorial on Maude</A
+>.
+<li>Another course using Maude has <A HREF="http://www-compsci.swan.ac.uk/~csneal/MaudeCourse/">a few tutorials</A
+>.
+<li>An <A HREF="http://www.wv.inf.tu-dresden.de/~kai/MaudeMode/">XEmacs editing and interaction mode</A
+>.
+</ul>
+<p><UL><LI><a class="internal" href="mobilemaude.html" >MobileMaude</a> - A prototype of a <a class="internal" href="migration.html" >Mobile</a> <a class="internal" href="maude.html" >Maude</a> system, written by Carolyn Talcott, it is very similar to the <a class="internal" href="tube.html" >Tube</a></LI
+><LI><a class="internal" href="real-time_20maude.html" >Real-Time Maude</a> - A <a class="internal" href="programming_20language.html" >programming language</a> and tool, based on <a class="internal" href="maude.html" >Maude</a>, supporting the formal specification and analysis of <a class="internal" href="real-time.html" >real-time</a> and hybrid systems, with an execution environment for a real-time extension of the <a class="internal" href="actor.html" >Actor</a> model</LI
+><LI><a class="internal" href="reflection_20in_20maude.html" >Reflection in Maude</a> - About <a class="internal" href="reflection.html" >reflection</a> in <a class="internal" href="maude.html" >Maude</a>: <span class="comment">Talk about the universal rewrite theory, how this is used to model and operate any inference system, the quotation system, the meta-level modules defined, and how to modify and extend them</span></LI
+><LI><a class="internal" href="syntax_20in_20maude.html" >Syntax in Maude</a> - About <a class="internal" href="syntax.html" >syntax</a> in <a class="internal" href="maude.html" >Maude</a>: from the parsing section (se below) in the Maude manual can be had many insights about Maude's syntax and the reasoning behind it</LI
+></UL
+>
+<hr><p><b>Pages in this topic: </b> <a class="internal" href="mobilemaude.html" >MobileMaude</a> &nbsp; <a class="internal" href="real-time_20maude.html" >Real-Time Maude</a> &nbsp; <a class="internal" href="reflection_20in_20maude.html" >Reflection in Maude</a> &nbsp; <a class="internal" href="syntax_20in_20maude.html" >Syntax in Maude</a> &nbsp; <hr><p><b>Also linked from: </b> <a class="internal" href="adate.html" >ADATE</a> &nbsp; <a class="internal" href="algebraic_20specification.html" >Algebraic Specification</a> &nbsp; <a class="internal" href="cafeobj.html" >CafeOBJ</a> &nbsp; <a class="internal" href="jose_20meseguer.html" >José Meseguer</a> &nbsp; <a class="internal" href="metalogical_20reflection.html" >Metalogical Reflection</a> &nbsp; <a class="internal" href="methods_20of_20reflection.html" >Methods of Reflection</a> &nbsp; <a class="internal" href="rewrite_20logic_20101.html" >Rewrite Logic 101</a> &nbsp; <a class="internal" href="sprint.html" >Sprint</a> &nbsp; <a class="internal" href="tactic.html" >Tactic</a> &nbsp; <a class="internal" href="trotskyite_20tunes.html" >Trotskyite Tunes</a> &nbsp; </DIV></BODY></HTML>

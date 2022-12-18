@@ -1,0 +1,200 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<HTML><HEAD><TITLE>CTO : Block Editor</TITLE
+><LINK REL="alternate" TYPE="application/rss+xml" TITLE="Recent Changes" HREF="http://tunes.org/cliki/recent-changes.rdf.html"><LINK REL="stylesheet" HREF="admin/cliki.css"></HEAD
+><BODY><DIV ID="banner"><A TITLE="CTO" CLASS="logo" HREF="block_20editor.html">CTO</A
+> <SPAN>CLiki for the TUNES project</SPAN
+></DIV
+><DIV ID="navbar"><A CLASS="internal" HREF="index.html">Home</A
+>  <A CLASS="internal" HREF="cliki.html">About CLiki</A
+> <A CLASS="internal" HREF="text_20formatting.html">Text Formatting</A
+> </DIV
+><DIV ID="main"><H1>Block Editor</H1
+>A <a class="internal" href="block_20editor.html" >Block Editor</a> is one of the key components in a <a class="internal" href="forth.html" >FORTH</a> implementation. Here is the code for two different ones.
+<p>
+<a class="internal" href="retro.html" >Retro</a>Forth's Block Editor:
+<pre>
+| Line oriented block editor written by Charles Childers
+| * This program is released into the public domain *
+| ------------------------------------------------------------
+ forth
+here $30000 + constant buffer
+variable blk
+: row dup 64 type 64 + ;
+: header s" Block:" type blk @ . cr ;
+: across space 64 repeat '- emit until cr ;
+: line '| emit row '| emit cr ;
+: lines 16 repeat >r line r> until ;
+: block blk @ 1024 * buffer + ;
+: v clear header across block lines across drop ;
+: s blk ! v ;
+: i 64 * block + swap cmove v ;
+: d 64 * block + 64 32 fill v ;
+: x block 1024 32 fill v ;
+: e block 1024 eval ;
+| ------------------------------------------------------------
+| Addons
+| ------------------------------------------------------------
+: edit-help
+  s" block#      s :: Select block" type cr
+  s" text line#  i :: Insert text into line#" type cr
+  s" line#       d :: Delete text on line#" type cr
+  s"             v :: View current block" type cr
+  s"             x :: Delete the current block" type cr
+  s"             e :: Evaluate the block" type cr ;
+</pre>
+<hr>
+<pre>
+VIBE: VI-like Block Editor
+<p>\
+\ VIBE Release 2.0
+\ Copyright (c) 2001-2003 Samuel A. Falvo II
+\ All Rights Reserved.
+\
+\ Highly portable block editor -- works under nearly every ANS Forth
+\ I can think of, and with only a single screenful of words, will
+\ work under Pygmy and FS/Forth too.
+\
+\ USAGE: vibe ( n -- ) Edits block 'n'.  Sets SCR variable to 'n'.
+\        ed ( -- ) From Pygmy.  Re-edits last edited block.
+\
+\ I use CREATE instead of VARIABLE because I can statically initialize
+\ the variables at load-time with no overhead.  Stole this idea from a7r
+\ in the #Forth IRC channel.
+\
+<p>
+WARNINGS OFF
+<p>( Editor Constants )
+\ I don't like this technique; should have used a bitmap.  Will fix later.
+CHAR i CONSTANT 'i   \ Insert mode
+CHAR r CONSTANT 'r   \ Replace mode
+CHAR c CONSTANT 'c   \ Command mode
+CHAR y CONSTANT 'y
+CHAR n CONSTANT 'n
+CHAR A CONSTANT 'A
+CHAR Z CONSTANT 'Z
+<p>( Editor State )
+ 1 CREATE scr ,   \ Current block
+ 0 CREATE x ,     \ Cursor X position 0..63
+ 0 CREATE y ,     \ Cursor Y position 0..15
+'c CREATE mode ,  \ Change to bitmap later.
+<p>\ GForth-specific 
+CREATE wordname 5 C, '$ C, '$ C, 0 C, 0 C, 0 C,
+<p>( Editor Display )
+: mode. 63 0 AT-XY mode @ EMIT ;
+: scr. 0 0 AT-XY ." Block: " scr @ . ."      " ;
+: header scr. mode. ;
+: 8-s ." --------" ;
+: 64-s 8-s 8-s 8-s 8-s 8-s 8-s 8-s 8-s ;
+: border SPACE 64-s CR ;
+: row DUP 64 TYPE 64 + ;
+: line ." |" row ." |" CR ;
+: 4lines line line line line ;
+: 16lines scr @ BLOCK 4lines 4lines 4lines 4lines DROP ;
+: card 0 1 AT-XY border 16lines border ;
+: cursor x @ 1+ y @ 2 + AT-XY ;
+: screen header card cursor ;
+<p>( Editor State Control )
+: insert 'i mode ! ;
+: replace 'r mode ! ;
+: cmd 'c mode ! ;
+: bounds scr @ 0 MAX 65535 MIN scr ! ;
+: prevblock -2 scr +! bounds ;
+: nextblock  2 scr +! bounds ;
+: toggleshadow 1 scr @ XOR scr ! ;
+<p>
+( Editor Cursor Control )
+: flushLeft 0 x ! ;
+: boundX x @ 0 MAX 63 MIN x ! ;
+: boundY y @ 0 MAX 15 MIN y ! ;
+: bounds boundX boundY ;
+: left -1 x +! bounds ;
+: right 1 x +! bounds ;
+: up -1 y +! bounds ;
+: down 1 y +! bounds ;
+: beep 7 EMIT ;
+: nextline y @ 15 < IF flushLeft down THEN ;
+: next x @ 63 = IF nextline EXIT THEN right ;
+<p>
+( Editor Insert/Replace Text )
+: 64* 2* 2* 2* 2* 2* 2* ;
+: where scr @ BLOCK SWAP 64* + SWAP + ;
+: wh x @ y @ where ;
+: eol 63 y @ where ;
+: place wh C! UPDATE next ;
+: -eol? x @ 63 < ;
+: openr wh DUP 1+ 63 x @ - MOVE ;
+: openRight -eol? IF openr THEN ;
+: inserting? mode @ 'i = ;
+: chr inserting? IF openRight THEN place ;
+<p>
+( Editor Commands: Quit, cursor, block, et. al. )
+: $$c51 0 20 AT-XY R> R> DROP >R ; \ Q -- quits main loop
+: $$c30 flushLeft ;             \ 0
+: $$c69 insert ;                \ i
+: $$c49 flushLeft insert ;      \ I
+: $$c52 replace ;               \ R
+: $$i1B cmd ;                   \ (escape)
+: $$c68 left ;                  \ h
+: $$c6A down ;                  \ j
+: $$c6B up ;                    \ k
+: $$c6C right ;                 \ l
+: $$c5B prevblock ;             \ [
+: $$c5C toggleshadow ;          \ \
+: $$c5D nextblock ;             \ ]
+<p>( Editor Backspace/Delete )
+: padding 32 eol C! UPDATE ;
+: del wh DUP 1+ SWAP 63 x @ - MOVE ;
+: delete -eol? IF del THEN padding ;
+: bs left delete ;
+: backspace x @ 0 > IF bs THEN ;
+<p>( Editor Carriage Return )
+: nextln eol 1+ ;
+: #chrs scr @ BLOCK 1024 + nextln - 64 - ;
+: copydown y @ 14 < IF nextln DUP 64 + #chrs MOVE THEN ;
+: blankdown nextln 64 32 FILL UPDATE ;
+: splitdown wh nextln 2DUP SWAP - MOVE ;
+: blankrest wh nextln OVER - 32 FILL ;
+: opendown copydown blankdown ;
+: splitline opendown splitdown blankrest ;
+: retrn inserting? IF splitline THEN flushleft nextline ;
+: return y @ 15 < IF retrn THEN ;
+<p>( Editor Wipe Block )
+: msg 0 20 AT-XY ." Are you sure? (Y/N) " ;
+: valid? DUP 'n = OVER 'y = OR ;
+: uppercase? DUP 'A >= SWAP 'Z <= AND ;
+: lowercase DUP uppercase? IF $20 XOR THEN ;
+: validkey BEGIN KEY lowercase valid? UNTIL ;
+: clrmsg 0 20 AT-XY 64 SPACES ;
+: no? msg validkey clrmsg 'n = ;
+: ?confirm no? IF R> DROP THEN ;
+: wipe ?confirm scr @ BLOCK 1024 32 FILL UPDATE 0 x ! 0 y ! ;
+<p>( Editor Commands: backspace, delete, et. al. )
+: $$i04 delete ;                    \ CTRL-D
+: $$i08 backspace ;                 \ (bs)
+: $$i7F backspace ;                 \ DEL -- for Unix
+: $$i0D return ;                    \ (cr)
+: $$c5A wipe ;                      \ Z
+: $$c6F opendown down $$c49 ;       \ o
+: $$c4F opendown ;                  \ O
+<p>( Editor Keyboard Handler )
+\ Word name key: $ $ _ _ _
+\                    | | |
+\ c = command mode --+ | |
+\ i = ins/repl mode    | |
+\                      | |
+\ Key code (hex#) -----+-+
+<p>: keyboard KEY ;
+: cmd? mode @ 'c = ;
+: ins? mode @ 'i = mode @ 'r = OR ;
+: mode! ins? 'i AND cmd? 'c AND OR wordname 3 + C! ;
+: >hex DUP 9 > IF 7 + THEN '0 + ;
+: h! DUP $F0 AND 2/ 2/ 2/ 2/ >hex wordname 4 + C! ;
+: l! $0F AND >hex wordname 5 + C! ;
+: name! mode! h! l! ;
+: nomapping DROP ['] beep cmd? AND ['] chr ins? AND OR ;
+: handlerword name! wordname FIND IF ELSE nomapping THEN ;
+: handler DUP handlerword EXECUTE ;
+: editor BEGIN keyboard handler screen AGAIN ;
+: ed page screen editor ;
+: vibe scr ! ed ;
+</pre><hr><p><b>This page is linked from: </b> <a class="internal" href="forth_20oses.html" >Forth OSes</a> &nbsp; </DIV></BODY></HTML>

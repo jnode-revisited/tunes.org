@@ -1,0 +1,68 @@
+body {
+  font-size-adjust: 0.58;
+  letter-spacing: normal;
+  word-spacing: normal;
+  text-indent: 0;
+  text-transform: none;
+  white-space: normal;
+  color: black;
+  background-color: white;
+}
+
+h1, h2 { text-align: center }
+h3, h4, h5, h6 { font-weight: normal }
+
+h2 {
+  background: black;
+  color: white;
+  font-weight: bold;
+  width: 100%;
+}
+
+h2 a { color: white }
+h2 a:visited { color: yellow }
+
+h3 {
+  font-variant: small-caps;
+  background-color: #ddddff;
+}
+
+a:focus {
+  background: black;
+  color: white;
+  text-decoration: None;
+}
+
+/* CLIM-style highlighting */
+
+A       { border: 0px; margin: 1px }
+A:hover { border: 1px solid black; margin: 0px; text-decoration: None }
+
+address {
+  clear: both;
+  margin: 1em 0;
+  padding-top: 1em;
+}
+
+/* Padding block-level elements so backgrounds and borders won't touch the content of these elements */
+
+blockquote {
+  margin: 0.5em 2em;
+}
+
+blockquote.callout {
+  border: thin solid;
+  font-style: italic;
+  font-weight: bold;
+  font-size: larger;
+  padding: 0.5em;
+  text-align: center;
+}
+
+caption {
+  text-align: center;
+}
+
+code, kbd, pre, samp, tt {
+  font-family: monospace, sans-serif;
+}

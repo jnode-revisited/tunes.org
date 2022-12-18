@@ -1,0 +1,2836 @@
+<HTML><!-- -*-fundamental-*- -->
+<HEAD>
+<TITLE>Why a New OS ? -- Draft </TITLE>
+</HEAD>
+<BODY>
+
+
+<A NAME="Draft">
+<H1>[Draft]</H1>
+</A>
+<I>
+Nota Bene:
+This file contains many ideas to insert in
+the text as it is rewritten.
+The ideas are in no particular order
+(not even order of chronological appearance),
+having been put at random places in the file
+as they came, or were moved from the written text,
+since late january 1995 when redacting this article began.
+</I><P><BR>
+
+
+<P><HR><P>
+<A NAME="Meta"></A>
+<H2>About the whole article</H2>
+<UL>
+
+<!------------------------------------------------------------------------->
+
+<LI>I put lots of things into the Part III draft,
+	that could be put elsewhere
+<P>
+<BR>
+
+<!------------------------------------------------------------------------->
+
+<LI>Some of this draft should be moved to other Tunes documentation files.
+<P>
+<BR>
+
+<!------------------------------------------------------------------------->
+
+<LI>
+Should the article start from the current state of things
+and try to see what fails, which is the historical approach,
+how ideas slowly came into my mind, how I started the article ?
+<BR>
+Or shouldn't the article rather present the result of this slow
+meditation process, which is a completely different approach,
+where the reasons preexist to the the current state of things,
+where opinions do not overlap and correct each other,
+but make a consistent whole, which is how I'm rewriting the article ?
+<P>
+<BR>
+
+<!------------------------------------------------------------------------->
+
+</UL>
+
+<P><HR><P>
+<A NAME="P1"></A>
+<H2>Part I</H2>
+<UL>
+
+
+
+<!------------------------------------------------------------------------->
+
+
+<LI>Part I would:
+<UL>
+<P>
+<LI>Show that OS utility lies in its influence on dynamic CS behavior
+<LI>The OS is not as much the software as the <em>protocols</em>	
+<LI>Show that this influence is in the way the common background
+	allows to increase signal/noise ratio,
+	that is to give meaning to observable data,
+	to provide expressive languages using the obsersable world as
+	substratum
+<LI>The role of the "kernel" is to provide some central authority
+	as a ultimate resource to arbitrate conflicts
+	and guarantee consistency.
+<LI>Constraints of an Operating System:
+	<UL>
+	<LI>
+	it may contains only a tiny fraction of the total information
+	in the CS, as its information is bounded by what one computer
+	can know, whereas the system is bounded by what N computers can know.
+	<LI>
+	evolves slowly, in a conservative way
+	so that dataflow can rely on it.
+	<LI>
+	</UL>
+
+
+<LI>(old stuff)
+<UL>
+<LI>
+	[evolution]
+		computing is a recent art
+		whose evolution is well-known
+
+<LI>
+	[latest] multimedia is the latest OS slogan;
+		when we see through this veil of illusion,
+		we find
+<LI>
+
+	[tradition] the trend is toward adding new functions
+		to the OS.
+		  and the trend in which they evolve
+<LI>
+
+	[u vs p] show that they fail
+<LI>
+
+<UL>
+	[u vs p]
+<LI>
+		see what is their approach,
+<LI>
+		 see why it fails
+<LI>
+
+		 The essence of an OS is no more
+		 in a kernel that would supervise
+		 all forms of communication between objects,
+		 than the essence of civilization
+		 lies in a central administration
+		 that would supervise
+		 all forms of communication between humans.
+		 The essence of an OS
+		 is in the abstract property of
+		 allowing objects to communicate,
+		 through any possible decentralized means;
+		 it is in its utility as a general context for communication,
+		 much as civilization is an intangible
+		 set of said or unsaid traditions and rules,
+		 that allow humans to rely on each other.
+</UL>
+<LI>
+
+	[multiplex] focus on what they should do,
+		not on what they do
+		(what defines a place setting
+		is not its having the shape of a fork or that of a spoon,
+		but its ability to ease lunch activity,
+		that is, its function, not its implementation).
+		(xref to PartII: centralize)
+</UL>
+</UL>
+<P><BR>
+
+
+<!------------------------------------------------------------------------->
+
+<LI>Part I:
+<UL>
+<LI>(I.10 ?)
+
+utility -- correlation to static ou dynamic features
+
+[current OSes]
+informational basis that gives meaning
+to the flux of raw information;
+dynamical structure
+
+<LI>(I.11 ?)
+kernel,
+centralism,
+authority
+
+<LI>(I.12 ?) The ultimate source of meta(n)-information: Man
+</UL>
+
+<P><BR>
+
+
+<!------------------------------------------------------------------------->
+
+
+<LI>
+Security is being able to devise arbitrary contracts,
+and have the guarantee that if agreed upon,
+the contract will be fulfilled.
+<BR>
+   Systems that don't allow you to express the contract you want
+are stupid unsecure systems.
+<BR>
+   Systems that do allow you to express the contract you want,
+but have no way to enforce it (e.g. literate programming)
+are ineffective unsecure systems.
+<BR>
+   Systems that enforce contracts that you don't want
+are fascist unfree systems.
+<P>
+
+
+
+<!------------------------------------------------------------------------->
+<LI>
+<UL>
+
+
+
+<P>
+and only such information can eventually and enrich the whole system.
+ basis of any reliable information upon which new information can be built
+that will enrich the whole system;
+   when this information eventually settles, it enriches in turn the OS,
+and can serve as a universal basis for even further enhancements.
+   That is the utility of Operating Systems.
+<P>
+
+<!--.....-->
+   That's why the power and long-term utility of an OS
+mustn't be measured according to what the OS does currently allow to do,
+but according to how easily it can be extended
+so that more and more people share more and more complex software.
+   That is, the power of an OS
+is not expressed in terms of services it <EM>statically</EM> provide,
+but in terms of services it can <EM>dynamically</EM> manage;
+intelligence is expressed not in terms of knowledge,
+but in terms of evolutivity toward more knowledge.
+   A culture with a deep knowledge
+but that would prevent or considerably slowdown further innovations,
+like the ancient chinese civilization, would indeed be quite harmful.
+   An OS providing lots of services,
+but not allowing its user to evolve
+would likewise be harmful.
+
+Utility lies in new, <EM>original</EM> information;
+a large body of acquired information is a sign of <EM>past</EM> utility,
+but quite independent from <EM>current</EM> utility.
+
+<P>
+   Again, we find the obvious analogy with human culture
+for which the same stands;
+   the analogy is not fallacious at all,
+as the primary goal of an operating system
+is allowing <EM>humans</EM>
+to communicate with computers more easily to achieve better software.
+   So an operating system <EM>is</EM> a part of <EM>human</EM> culture,
+though a part that involves computers<!-- those that run under this OS-->.
+<P>
+<!--.....-->
+
+
+<P>
+   Multiplying the actual services provided by an operating system
+may be an expedient way to solve computer problems,
+in the same way that multiplying welfare institutions
+may be an expedient way to solve the everyday problems of a human system;
+the progress of the system ultimately means that those services
+will actually be multiplied in the long run.
+   However, from the point of view of utility,
+what counts is not any the objective state of the system at any given moment,
+and its ephemeral advantages,
+but the dynamic project of the system across time,
+and its smaller, but growing, long-standing advantages.
+<!--hence, particular care should be taken to not neglect... -->
+<!--sacrificing the latter for the former is a bad choice.-->
+<P>
+the information in an OS is virtually (not forcibly physically)
+duplicated at each node.
+Hence growing the OS for ever more feature is harmful,
+as it would involve an ever increased waste of resources
+duplicated at each node, instead of letting each node develop
+original information in a way adapted to its immediate environment.
+
+<P>
+<BR>
+
+<A NAME="U are P"></A>
+<H3><LI>Users <EM>are</EM> Programmers</H3>
+
+   The only source of information in the UCS that we can directly act upon,
+hence what counts with respect to utility, is the Humans.
+   Therefore, Operating Systems should structure the Computing System
+so that the fullest possible human creativity is promoted.
+<P>
+.....
+<P>
+
+   The deepest flaw in computer design
+is this idea that there is a fundamental difference
+between system programming and usual programming,
+between usual programming and "mere" using.
+The previous point shows how false is this conception.
+<BR>
+   The truth is any computer user, whether a programming guru or a novice
+user, is somehow trying to communicate with the machine. The easier
+the communication, the quicker better larger the work is getting done.
+<BR>
+   Of course, there are different kinds of use;
+actually, there are infinitely many.
+You can often say that such kind of computer use is
+much more advanced and technical than such other;
+but you can never find a clear limit,
+and that's the important point
+(in mathematics, we'd say the space of kinds of computing is connected).
+<BR>
+   Of course also,
+any given computer object has been created by some user(s),
+who programmed it above a given system,
+and is being used by other (or the same) user(s),
+who program using it, above the thus enriched system.
+   That is, there are computer object providers and consumers.
+But anyone can provide some objects and consume other objects;
+providing objects without using some is unimaginable,
+while using objects without providing any is pure useless waste.
+The global opposition between users and programmers that roots
+the computer industry is thus inadequate;
+instead, there is a local complementarity between providers and consumers
+of every kind of objects.
+
+<P>
+   Some say that common users are too stupid to program;
+that's only despising them;
+most of them don't have <EM>time</EM> and <EM>mind</EM>
+to learn all the subtleties of advanced programming;
+   Most of the time, such subtleties shouldn't be really needed,
+and learning them is thus a waste of time
+but they often do manually emulate macros,
+and if shown once how to do it,
+are very eager to use or even write their own macros or aliases.
+<BR>
+   Others fear that encouraging people to use a powerful programming
+language is the door open to piracy and system crash,
+and argue that programming languages are too complicated anyway.
+Well, if the language library has such security holes and cryptic syntax,
+then it is clearly misdesigned;
+and if the language doesn't allow the design of a secure, understandable
+library, then the language itself is misdesigned (e.g. "C").
+Whatever was misdesigned, it should be redesigned, amended or replaced
+(as should be "C").
+If you don't want people to cross an invisible line, just do not draw roads
+that cross the line, write understandable warning signs, then hire an army of
+guards to shoot at people trying to trespass or walk out of the road.
+If you're really paranoid, then just don't let people near the line:
+don't have them use your computer. But if they have to use your computer,
+then make the line appear, and abandon these ill-traced roads and fascist
+behavior.
+<P>
+   So as for those who despise higher-order and user-customizability,
+I shall repeat that there is <EM>NO</EM> frontier
+between using and programming.
+Programming <EM>is</EM> using the computer
+while using a computer <EM>is</EM> programming it.
+Which does not mean there is no difference between various users-programmers;
+but creating an arbitrary division in software
+between "languages" for "programmers" and "interfaces" for mere "users"
+is asking reality to comply to one's sentences
+instead of having one's sentences reflect reality:
+one ends with plenty of unadapted, inefficient, unpowerful tools,
+stupefies all computer users
+with a lot of unuseful ill-conceived, similar but different languages,
+and wastes a considerable lot of human and computer resources,
+writing the same elementary software again and again.
+<P>
+<BR>
+
+
+
+
+
+<A NAME="OS Kernel"></A>
+<H3><LI>Operating System Kernel</H3>
+In traditional OS design,
+the kernel is some central piece of software through which any
+communication between first-class system objects is done...
+<P>
+But this accounts only for centralized design;
+it appears that what system acknowledge as first-class objects
+are actually very coarse-grained information concepts,
+and that a meaningful study of information flow should take into
+account much finer-grained information,
+that such system just do no consider at all,
+hence being unadapted to the actual use that is done of them.
+<P>
+How does this design generalize to arbitrary OSes?
+What do OS kernels provide that is essential to all OSes,
+and what do they do that is costly noise?
+<BR>
+To answer such questions, we must depart from the traditional
+OS point of view that we know is flawed,
+and see how are OSes doing, that we recognized as such,
+that traditional design refuses to consider this way,
+and what the analogy to human systems lead to.
+<P>
+Thus, we see that of course, centralization of the information flow
+through the kernel is not needed:
+hence, information most often is much more efficiently passed directly
+from object to object without any intermediate.
+Also, 
+
+<P>
+To conclude, we'll say that the kernel is the central authority
+used to coordinate software components,
+and solve conflicts, in a computer system.
+
+
+
+
+<P>
+<BR>
+
+
+
+<A NAME="OS Current"></A>
+<H3><LI>Current state of System software</H3>
+   It is remarkable that
+while since their origins,
+computer hardware have grown in power and speed
+at a constant exponential rate,
+system software only slowly evolved in comparison.
+It does not offer any new tools
+to master the increasing power of hardware,
+but only enhancements of obsolete tools,
+and new "device drivers" to access new kinds of hardware as they appear.
+   System software becomes fatware (a.k.a. hugeware),
+as it tries to cope differently
+with all the different users' different but similar problems.
+<BR>
+   It is also remarkable that
+while new standard libraries arise,
+they do not lead to reduced code size
+for programs of same functionality,
+but to enhanced code size for them,
+so that they take into account all the newly added capabilities.
+<P>
+   As a blatant example
+of the lack of evolution of system software quality
+is the fact that
+the most popular system software in the world (MS-DOS)
+is a fifteen-year old thing that does not allow the user
+to do either simple tasks, or complicated ones,
+thus being a no-operating system,
+and forces programmers to rewrite low-level tasks
+everytime they develop any non-trivial program,
+while not even providing trivial programs.
+<BR>
+   This industry-standard has always been designed
+as a least sub-system possible for the Unix system,
+which itself is a least subsystem of Multics
+made of features assembled in undue ways
+on top of only two basic abstractions,
+the raw sequence of bytes ("files"),
+and the ASCII character string.
+<P>
+   As these abstractions proved not enough to express adequately
+the semantics of new hardware and software that appeared,
+Unix has had a huge number of ad-hoc "system calls" added,
+to extend the operating system in special ways.
+   Hence, what was an OS meant to fit the tiny memory of
+then available computers,
+has grown into a tentaculous monster with ever growing pseudopods,
+that wastes without counting the resources of the most powerful workstations.
+   And <EM>this</EM>, renamed as POSIX,
+is the new industry standard OS to come,
+whose promoters crown as the traditional, if not natural, way
+to organize computations.
+<P>
+   Following the same tendency, widespread OSes are
+found upon a large number of human interface services,
+video and sound.
+   This is known as the "multi-media" revolution,
+which basically just means that your computer produces
+high-quality graphics and sound.
+   All that is fine:
+it means that your system software
+grants you access to your actual hardware,
+which is the least it can do!
+<BR>
+   But software design, a.k.a. programming,
+is not made simpler for that;
+it is even made quite harder:
+while a lot of new primitives are made available,
+no new combinatorials are provided
+that could ease their manipulation;
+worse, even the old reliable software is made obsolete
+by the new interface conventions.
+   Thus you have computers with beautiful interfaces
+that waste lots of resources,
+but that cannot do anything new;
+   to actually do interesting things,
+you must constantly rewrite everything from almost scratch,
+which leads to very expensive low-quality slowly-evolving software.
+<P>
+
+
+<A NAME=""></A>
+<H3><LI>An Ancien Régime</H3>
+<P>
+[= most of the energy is wasted in a fight for supremacy
+between monopolies]<BR>
+
+   The current computing world is anything but a failure.
+So many things are now done by computers that relieve people
+from stupid repetitive work, and so many things are done that
+just could not be done without computers,
+that nobody can deny the utility of today's computers
+relatively to the implicit reference being the absence of computers.
+<BR>
+   But somehow, programming techniques are finding their limits
+as programs reach the size beyond which
+no human can fully understand the whole of one.
+   And the current OS trend, by generating code bloat,
+makes those limits reached much faster than they should,
+while wasting lots of human resources.
+   It is thus necessary to see
+why current programming techniques lead to code bloat,
+and how this trend can be slowed down, set back, or reversed.
+<P>
+   Of course, we easily can diagnose about the "multimedia revolution"
+that it stems from the cult of external look, of the container,
+to the detriment of the internal being, the contents;
+such cult is inevitable whenever non-technical people have
+to choose without any objective guide among technical products,
+so that the most seductive wins.
+   So this general phenomenon,
+which goes beyond the scope of this paper,
+though it does harm to the computing world,
+and must be fought there as well as elsewhere,
+is a sign that computing spreads and benefits to a large public;
+by its very nature, it may waste a lot of resources,
+but it won't compromise the general utility of operating systems.
+   Hence, if there is some flaw to find in current OS design,
+it must be looked for deeper.
+<P>
+   Computing is a recent art, and somehow,
+it left its Antiquity for its Ancien Régime.
+Its world is dominated by a few powerful companies,
+that wage a perpetual war to each other,
+where
+At the same time, there are heavens where computists
+can grow in art while freely benefitting
+.....
+isn't the deeply rooted
+.....
+<P>
+   Actually, the
+.....
+the informational status of the computer world
+is quite remindful of the political status of
+.....
+<P>
+
+
+
+<A NAME="Computists">
+<H3><!--LI Computists--></H3>
+</A>
+
+
+<A NAME="Analyze OS">
+<H3><LI>Contents of an Operating System</H3>
+</A>
+
+   What are the characteristic components of an operating system ?
+<P>
+   Well, firstly, we may like to find some underlying structure of mind
+in terms of which everything else would be expressed,
+and that we would call "kernel".
+   Most existing OSes, at least, all those software that claim to be an OS,
+are conceived this way.
+   Then, over this "kernel" that statically provides most basic services,
+"standard libraries" and "standard programs" are provided
+that should be able to do all that is needed in the system,
+that would contain all the system knowledge,
+while standard "device drivers" would provide
+complementary access to the external world.
+<P>
+   We already see why such a conception may fail:
+it could perhaps be perfect for a finite unextensible static system,
+but we feel it may not be able to express a dynamically evolving system.
+   However, a solid argument
+why it shouldn't be able to do so is not so obvious at first sight.
+   The key is that like any complex enough systems,
+like human beings, computer have some self-knowledge.
+   The fact becomes obvious when you see a computer being used
+as a development system for programs that will run on the same computer.
+   And indeed the exceptions to that "kernel" concept are
+those kind of dynamic languages and systems
+that we call "reflective", that is,
+that allow dynamical manipulation of the language constructs themselves:
+FORTH and LISP (or Scheme) development systems,
+which can be at the same time editors, interpreters, debuggers and compilers,
+even if those functionalities are available separately,
+are such reflective systems.
+so there is no "kernel" design,
+but rather an integrated OS.
+<P>
+   And then, we see that if the system is powerful enough
+(that is, reflective),
+any knowledge in the system can be applied to the system itself;
+any knowledge is also self-knowledge; so it can express system structure.
+As you discover more knowledge,
+you also discover more system structure,
+perhaps better structure than before,
+and certainly structure that is more efficiently represented directly
+than through stubborn translation to those static kernel constructs.
+So you can never statically settle once and for all the structure
+of the system without ampering the system's ability to evolve toward a better
+state;
+any structure that cannot adapt, even those you trust the most,
+<EM>may</EM> eventually (though slowly) become a burden as new meta-knowledge
+is available. Even if it actually <EM>won't</EM>, you can never be sure of it,
+and can expect only refutation, never confirmation of any such assumption.
+<P>
+   The conclusion to this is that you cannot truly separate a "kernel"
+from a "standard library" or from "device drivers";
+   in a system that works properly, all have to be integrated
+into the single concept, the system itself as a whole.
+   Any clear cut distinction inside the system is purely arbitrary,
+and harmful if not done due to strong reasons of necessity.
+<P>
+<BR>
+
+
+<A NAME="Toward a unified system">
+<H3><LI>Toward a Unified System</H3>
+</A>
+
+   From what was previously said, what can we deduce about how
+an OS should be behaved for real utility ?
+<BR>
+   Well, we have seen that an OS' utility is not defined in terms
+of static behavior, or standard library functionality; that it
+should be optimally designed for dynamic extensibility, that it
+shall provide a <A HREF="http://tunes.org/papers/papers/Glossary/index.html#unified">unified</A>
+interface to all users, without enforcing arbitrary layers
+(or anything arbitrary at all). That is, an OS should be primarily
+<A HREF="http://tunes.org/papers/papers/Glossary/index.html#open">open</A> and
+<A HREF="http://tunes.org/papers/papers/Glossary/index.html#rational">rational</A>.
+<P>
+But then, what kind of characteristics are these ? They are features
+of a computing language. We defined an OS by its observational semantics,
+and thus logically ended into a good OS being defined by a good way to
+communicate with it and have it react.
+<BR>
+People often boast about their OS being "language independent", but what
+does it actually mean ?
+Any powerful-enough (mathematicians say universal/Turing-equivalent)
+computing system is able to emulate any language, so this is no valid argument.
+Most of the time, this brag only means that they followed no structured plan
+as for their OS semantics, which will lead to some horrible inconsistent
+interface, or voluntarily limited their software to interface with the
+least powerful language.
+<P>
+So before we can say how an OS should be, we must study computer languages,
+what they are meant to, how to compare them, how they should be or not.
+<P>
+
+
+
+
+
+<!------------------------------------------------------------------------->
+<LI>
+Comparing computers and cars:
+<UL>
+<LI>
+ people say that computers, like cars,
+ should have everything done by the machine,
+ with the user never having to modify anything.
+<LI>
+ but cars are rarely creative objects
+ Most people use cars to move from some place to another,
+ which they don't consider as a piece of art,
+ as a work they produce.
+ They rather feel it's some inevitable noise,
+ that should be reduced as much as possible.
+<LI>
+ cars are merely tools to relieve people from the burden of displacement,
+ and even then, we don't forbid people from repairing their car themselves,
+ or adding something to it, or making it.
+ Of course, there are laws about how cars should or should not be done,
+ that these persons should follow like all manufacturers,
+ for security reasons.
+<LI>
+ Thus, in so far as computers are tools that people are not developing,
+ everything should be made to relieve people from the hassle of using
+ the computer, to hide all the nasty details,
+ to provide everything possible to make their daily computer usage
+ easy and secure, fool-proof, etc,
+ to the detriment of raw performance,
+ and even of some "liberties" that bring only chaos
+ (like the liberty to drive on either side of the road would be).
+<LI>
+ This is a sign that Computing as a project evolves,
+ and the obtained computerware are objects that this project leaves
+ behind it; the more advanced the project, the more elaborate these
+ objects indeed.
+<LI>
+ Now, information technology, under its particular form of computers
+ as well as all of its forms, is precisely not a complete project,
+ but a project in continuous development.
+<LI>
+ Surely, people should not have to worry about completed parts,
+ (though they should not be prevented to worry about them either).
+<LI>
+ but more importantly, they should be able to freely contribute to
+ the project.....
+</UL>
+
+
+<!------------------------------------------------------------------------->
+
+
+<LI>
+ The problem is that the society as it is does not regard
+ meta-information as more powerful than terminal information;
+ it tends to judge things according to their cost instead
+ of judging them according to their value.
+<BR> 
+ as if only a class of people should learn to read,
+ and do all the work of reading in place of other
+ People
+ butis precisely an art that is ever-developing.
+ It could be said that what the
+ are not in development anymore,
+ that become more and more objects,
+<P>
+
+
+<!------------------------------------------------------------------------->
+
+
+<LI>
+Defining an OS as a set of low-level abstractions:
+If freight technology had been left to similar companies and academies,
+they would have put the horse as the only basic abstraction on which to
+build...
+They could have made a new standard when it would have been obvious
+that steam engines should have been adopted twenty years ago,
+and similarly for all newer technologies...
+In any case, it doesn't directly tackle the real problem,
+which is reliable transport of goods;
+it just forces to people to use standard technology,
+however it be obsolete,
+and prevents them from developping structures
+that would survive this technology.
+<P>
+Also see the disaster of State managing services.
+<P>
+<BR>
+
+<!------------------------------------------------------------------------->
+
+<LI>
+Under a free programming system,
+independent software modules are made independently for independent purposes.
+Under current bound programming systems,
+software are not modular, not independent,
+and if you can't convince an established company
+that your purpose does match that
+of enough ready-to-pay people (money-wise),
+you just can't write it at all.
+<BR>
+Hence Free software means that more software will be written,
+that it will have more feedback, hennce will be better in turn, etc.
+<P>
+<BR>
+
+<!------------------------------------------------------------------------->
+
+<LI>
+See the failure of the french <!--brazilian ?--> industry,
+because of its illusory policy of developing their "own standard"
+(i.e. not a standard, as they're not strong enough to impose it by force)
+in a way bot internally centralized and externally isolated (!!!);
+such an industry can survive only by constantly stealing the taxpayers,
+and that's exactly what it has been doing for decades.
+
+<P>
+<BR>
+
+<!------------------------------------------------------------------------->
+
+
+<LI>
+Let's use the limited metaphor of the computing system as a human society:
+<UL>
+<LI>
+<LI>
+at its basis is a Constitution,
+which has the double role of
+acknowledging the few informal rules
+that are found as universal requirements for a just society,
+and of settling arbitrary general settings as an agreed-upon frame
+in which those requirements can be provided.
+<LI>
+then are laws, bills, and conventions,
+that are arbitrary binding but renegociable contracts,
+made whenever a common solution is needed to some shared problem.
+<LI>
+then are the executives,
+who must do the minimal work
+of verifying that the legal constraints are always respected,
+that information does flow freely,
+and that noise and disinformation are discouraged.
+</UL>
+<P>
+Well, then
+<UL>
+<LI>the operating system "kernel" is like State
+-- it regulates interaction between objects;
+<LI>the very basics of the system are like the constitution
+-- a set of informal rules that explains the
+general principles of the system and establish a common arbitration.
+<LI>Standard protocols are like Laws and Rules
+-- they provide common features at the expense of common constraints,
+that defines the way object interact.
+<LI>
+Laws et al should include arbitrary decisions
+insofar as and as long as the fact that an arbitrary decision is made
+itself is not arbitrary:
+see the classical problem of everyone driving on the same side of the roads;
+whether everyone should drive on the right side or on the left side
+of the road is essentially arbitrary;
+that everyone should either drive on the right side or on the left side
+of the road is not.
+<LI>
+The most common error about State and Operating systems
+is to believe that either should actually MANAGE
+the system and ultimately do or have do everything about it.
+That's completely WRONG.
+They should <EM>regulate</EM> things
+and
+<LI>
+States are the skeleton of Societies.
+if the skeleton was all that counted in a man,
+men would be ... skeletal!
+Surely the skeleton is important,
+but it is not it that will make the man move;
+it will only serve as a background that supports the move.
+
+<LI>
+As an example, the Académie Française,
+meant to represent France's most proeminent litterary authors,
+is NOT meant to write all possible french litterature,
+or to sum it up, or to establish what litterature should be or not.
+Instead, it will be an authority as to what are the rules of the french
+language and litterature, and keep a standard of it,
+not <EM>inventing</EM> it but rather making a synthesis of what exists,
+so that people speaking french do have a common reference.
+<LI>
+Similarly, the OS authorities should not provide the ONE TRUE PROGRAMS
+that will perform each single task in the system,
+but instead will maintain a public, open reference
+of how people are meant to communicate,
+and should be required to communicate whenever
+a disagreement appears that cannot be otherwise fairly settled.
+<LI>
+There need not be a single administration that would
+manage all laws and regulations.
+Instead, it is much better that various specialized administrations
+made of proficient people each manage the fields where their members
+are proficient.
+<LI>
+<LI>
+Choosing people in each of these specialized administration is not
+harder than choosing people in a one centralized administration:
+specialization restricts the choice of potential nominees,
+and should also modify the weight of voters according to
+their expected knowledge about how to judge proficiency on the
+specialized subject.
+<LI>
+Of course, there need be a constitutional means
+to settle disagreements <!-- les différends -->,
+and this means eventually there is a ultimate authority
+(because all ultrafilters on finite sets are principal);
+but central arbitration doesn't mean central management at all.
+A central arbitration would not take any initiative by itself,
+and would not rule anything,
+only judge between alternative when asked to.
+Refering to it should be an exceptional event;
+when a submitted case clearly matches a field
+for which an established authority already exists,
+the central authority would always follow
+the opinion of the competent authority,
+so that people wouldn't argue over and over when
+the competent authority decided something.
+<LI>
+If privacy was one of the constitutional principles,
+then laws can't uselessly constraining the private behavior of objects.
+<LI>the protection-handling or proof-checking "microkernel"
+	is like the executive
+-- it enforces the respect of the rules of the system.
+</UL>
+<P>
+Seeing how existing human States and computer kernels fail
+to do their job is left as an exercise to the reader.
+<P>
+The point is that all this infrastructure is meant to help
+objects (people) communicate with each other in fair terms,
+so that the global communication is faster, safer, and more accurate,
+with less noise, while consuming less resources.
+It should make the objects nearer to each other.
+<P>
+The role of State id to allow people to communicate.
+<P>
+To stay politically as neutral as possible
+(after all, this is a technical paperr),
+the paper should try to not explicitly use a reference to State, if possible.
+Instead, it would conclude with a note according to which
+the very same argument would hold when applied to human societies
+as similar dynamical systems.
+
+<P>
+<BR>
+
+<!------------------------------------------------------------------------->
+<LI>
+Contrarily to the socialists,
+who say that a state-ruled society is the End of History,
+the Authentic Liberals do not say that a free, fair, market
+is the end of history;
+on the contrary, they say that a free, fair, market,
+is the beginning of history;
+it is a prerequisite for information to pass well,
+for behaviors to adapt,
+for changes to operate,
+for history to exist.
+The freer, fairer the market, the more history.
+<P>
+<BR>
+
+<!------------------------------------------------------------------------->
+
+<LI>
+   It may be said that computing has been doing quantitative leaps,
+but has not done any comparable qualitative leap;
+   computing grows in extension, but does not evolve toward intelligence;
+it sometimes rather becomes more largely stupid.
+   This is the problem of operating systems not having
+a good conceptual kernel:
+however large and complete their standard library,
+their utility will be essentially restricted to the direct use of the library.
+<P><BR>
+
+<!------------------------------------------------------------------------->
+<A NAME="Newest OS">
+<H3><LI>Newest Operating Systems: the so-called "Multimedia revolution"</H3>
+</A>
+
+
+   This phenomenon can also be explained by the fact that programmers,
+long used to software habits from the heroic times
+when computer memories were too tight
+to contain more than just the specific software you needed
+(when they even could),
+do not seem to know how to fill today computers' memory,
+but with pictures of gorgeous women and digitized music
+(which <EM>is</EM> the so-called multimedia revolution).
+Computer hardware capabilities evolved much quicker
+than human software capabilities;
+thus humans find it simpler to fill computers
+with raw data (or almost raw data) than with intelligence.
+<P>
+   Those habits, it must be said,
+were especially encouraged by the way information
+could not spread and augment the common <EM>public</EM> background,
+since because of lack of theory and practice of what a freely
+communicating world could or should be,
+only big companies enforcing "proprietary" label could
+up to now broadcast their software;
+people who would develop original software
+thus had (and sadly still have) to rewrite everything from almost scratch,
+unless they could afford a very high price for every piece of software
+they may want to build upon,
+without having much control on the contents of such software.
+<P>
+<BR>
+
+
+<!------------------------------------------------------------------------->
+
+
+<LI>The role of the OS infrastructure in the computer world
+is much like that of the State in human societies:
+it should provide justice by guaranteeing,
+by force if needs be, that contracts will be fulfilled, and nothing more.
+In the case of computer software,
+this means that it will guarantee that contracts passed between
+objects will be fulfilled,
+that objects should fulfill each other's requirements
+before they can connect.
+When there is no Justice, there is no society/OS, but only chaos.
+<P><BR>
+
+
+<!------------------------------------------------------------------------->
+<LI>Because it ain't in the Kernel doesn't mean it ain't done.
+[Because the government doesn't do it doesn't mean nobody does it].
+<P><BR>
+
+
+<!------------------------------------------------------------------------->
+<LI>
+The Kernel is there as a warrant that voluntarily agreed
+contracts between objects be respected:
+if function F is ready to trade a golden coin from some quantity of
+gold powder, the kernel will see that people trading with F
+will actually provide the right amount of gold powder,
+whereas F will actually return a gold coin.
+<P>
+<BR>
+
+<!------------------------------------------------------------------------->
+
+</UL>
+
+<P><HR><P>
+<A NAME="P2"></A>
+<H2>Part II</H2>
+<UL>
+
+
+<!------------------------------------------------------------------------->
+
+<LI>Part II would discuss programming language utility,
+	stating the key concepts about it.
+<UL>
+<LI>Any reuse includes some rewrite, which is to minimize.
+	Similarly, when we "rewrite",
+	we often reuse a lot of the formal and informal ideas from
+	existing code,
+	and even when we reinvent,
+	we reuse the inspiration,
+	or sometimes feedback from people already inspired.
+
+<LI>Notably after discussing how to be able to construct as
+	many new concepts as possible,
+	it should explain that the key to concept expressivity
+	(that reflectivity cannot indefinitely postpone)
+	is their separation power,
+	and thus the capability to affirm one of multiple alternatives,
+	to express different things, to negate and deny things.
+</UL>
+<P><BR>
+
+<!------------------------------------------------------------------------->
+
+<LI>Literate Programming, and D.E. Knuth's attempts with WEB and C/WEB
+  (see this <A HREF="http://www.clbooks.com/nbb/knuth.html"
+		>interview of D.E. Knuth</A>)
+  are actually ways to pass more information about programs.
+  To pass information that programming languages themselves
+  don't/can't/can't_efficiently pass,
+  through well-organized human-readable documentation.
+  This is <EM>A GOOD THING</EM>,
+  because there will <EM>ALWAYS</EM> be things that
+  humans can (already) express that machines cannot express (yet).
+  But this is <EM>NOT THE PANACEA</EM>,
+  because there <EM>ARE</EM> things that the machines
+  <EM>ACTUALLY COULD</EM> express with high-level languages,
+  that pure literate programming over low-level languages
+  require the human to not only to write, but to check,
+  when a computer is much better suited to check them.
+  Knuth completely ignores the meta- capabilities of computers.
+<P><BR>
+
+<!------------------------------------------------------------------------->
+
+<LI>
+Each independent part is subject to the limit of a one-man's understanding
+so it be reliable.
+Existing systems are coarse-grained,
+which means that independent parts or large portions of programs,
+so that a complete program is made of few independent parts,
+and that total program complexity is limited to the sum of a few
+direct human understandings.
+
+<LI>
+Tunes will be fine-grained and reflective,
+so that a complete program is made of arbitrarily many limited parts,
+and can arbitrarily grow in complexity.
+
+<LI>
+Paradoxically, while their user-interface abstractions
+are coarse-grained and "high-level" (in a complex),
+current OSes only provide a very low-level set of programming abstractions
+to combine at a fine-grained level for any reliability/efficiency.
+There is double-speach here,
+and both users and programmers are hindered.
+
+
+<P><BR>
+
+
+
+<!------------------------------------------------------------------------->
+
+<LI>
+If safety criteria are not expressible by the computer system,
+then to be safe, programs must be understandable by men.
+And because it is not essentially harder to express the
+criteria to the machine than to another man,
+this most likely means that  a one man.
+Because that man won't ever be there to maintain code,
+because armies of "maintainers" won't replace him,
+because there is no tool to safely adapt old programs to new points of views,
+then every so often, code must go to the dust bin.
+No wonder why software evolves so slowly:
+only some small human experience remains,
+and even then,
+because there is no way to express what that experience is,
+it cannot spread in technology fast ways,
+but only man to man.
+<P>
+<BR>
+
+<!------------------------------------------------------------------------->
+
+
+<LI>
+   Having generic programs instead of just specific ones is
+exactly the main point that we saw about having a good grammar to introduce
+new generic objects, instead of just an increasing number of terminal,
+first order objects, that actually do specific things (i.e. extending the
+vocabulary).
+<P>
+<BR>
+
+
+<!------------------------------------------------------------------------->
+
+<LI>
+   What is really useful is a higher-order grammar, that allows to manipulate
+any kind of abstraction that does any kind of things at any level. We call
+level 0 the lowest kind of computer abstraction (e.g. bits, bytes, system
+words, or to idealize, natural integers). Level one is abstractions of these
+objects (i.e. functions manipulating them). More generally, level n+1 is made
+of abstractions of level n objects. We see that every level is a useful
+abstraction as it allows to manipulate objects that would not be possible
+to manipulate otherwise.
+<P>
+   But why stop there ? Everytime we have a set of level, we can define a new
+level by having objects that arbitrarily manipulate any lower object (that's
+ordinals); so we have objects that manipulate arbitrary objects of finite
+level, etc. There is an unbounded infinity of abstraction levels. To have the
+full power of abstraction, we must allow the use of any such level; but why
+not allow manipulating such full-powered systems ? Any logical limit you put
+on the system may be reached one day, and this day, the system would become
+completely obsolete;
+
+that's why any system to last must <EM>potentially</EM> contain
+(not in a subsystem) any single feature that may be needed one day.
+<P>
+   The solution is not to offer any bounded level of abstraction, but
+unlimited abstracting mechanisms; instead of offering only terminal operators
+(BASIC), or first level operators (C), or even finite-order
+offer combinators of arbitrary order.
+<P>
+<P>
+offer a grammar with an embedding of itself as an object. Of course, a simple
+logical theorem says that there is no consistent <EM>internal</EM> way of saying
+that the manipulated object is indeed the system itself, and the system state
+will always be much more complicated than it allows the system to understand
+about itself; but the system implementation may be such that the manipulated
+object indeed is the system.
+   This is having a deep model of the system inside itself; and this is quite
+useful and powerful. This is what I call a higher-order grammar -- a grammar
+defining a language able to talk about something it believes be itself.
+   And this way only can full genericity be achieved: allowing absolutely
+anything that can be done about the system, from inside, or from outside
+(after abstracting the system itself).
+<P>
+<BR>
+
+
+.....
+   First, we see that the same algorithm can apply to arbitrarily complex data
+structures; but a piece of code can only handle a finitely complex data
+structure; thus to write code with full genericity, we need use code as
+parameters, that is, <EM>second order</EM>. In a low-level language (like "C"),
+this is done using function pointers.
+<P>
+   We soon see problems that arise from this method, and solutions for them.
+The first one is that whenever we use some structure, we have to explicitly
+give functions together with it to explain the various generic algorithm
+how to handle it. Worse even, a function that doesn't need some access method
+about an the structure may be asked to call other algorithms which will
+turn to need know this access method; and which exact method it needs may not
+be known in advance (because what algorithm will eventually be called is not
+known, for instance, in an interactive program). That's why explicitly passing
+the methods as parameters is slow, ugly, inefficient; moreover, that's code
+propagation (you propagate the list of methods associated to the structure --
+if the list changes, all the using code changes). Thus, you mustn't pass
+<EM>explicitly</EM> those methods as parameters. You must pass them implicitly;
+when using a structure, the actual data and the methods to use it are embedded
+together. Such a structure including the data and methods to use it is
+commonly called an <EM>object</EM>; the constant data part and the methods,
+constitute the <EM>prototype</EM> of the object; objects are commonly grouped into
+<EM>classes</EM> made of objects with common prototype and sharing common data.
+<EM>This</EM> is the fundamental technique of <I>Object-Oriented</I>
+programming; Well,
+some call it that Abstract Data Types (ADTs) and say it's only part of the
+"OO" paradigm, while others don't see anything more in "OO". But that's only
+a question of dictionary convention. In this paper, I'll call it only ADT,
+while "OO" will also include more things. But know that words are not settled
+and that other authors may give the same names to different ideas and vice
+versa.
+<P>
+   BTW, the same code-propagation argument explains why side-effects are an
+especially useful thing as opposed to strictly functional programs (see pure
+ML :); of course side effects complicate very much the semantics of
+programming, to a point that ill use of side-effects can make a program
+impossible to understand or debug -- that's what not to do, and such
+possibility is the price to pay to prevent code propagation. Sharing
+<EM>mutable</EM>
+data (data subject to side effects) between different embeddings (different
+<EM>users</EM>) for instance is something whose semantics still have to be
+clearly settled (see below about object sharing).
+<P>
+<BR>
+
+  The second problem with second order is that if we are to provide functions
+other functions as parameter, we should have tools to produce such functions.
+Methods can be created dynamically as well as "mere" data, which is all the
+more frequent as a program needs user interaction. Thus, we need a way to
+have functions not only as parameters, but also as result of other functions.
+This is <EM>Higher order</EM>, and a language which can achieve this has a
+<EM>reflective</EM> semantics. Lisp and ML are such languages; FORTH also, whereas
+standard FORTH memory management isn't conceived for a largely dynamic use of
+such feature in a persistent environment. From "C" and such low-level
+languages that don't allow a direct portable implementation of the
+higher-order paradygm through the common function pointers (because low-level
+code generation is not available as in FORTH), the only way to achieve
+higher-order is to build an interpreter of a higher-order language such as
+LISP or ML (usually much more restricted languages are actually interpreted,
+because programmers don't have time to elaborate their own user customization
+language, whereas users don't want to learn a new complicated language for
+each different application and there is currently no standard user-friendly
+small-scale higher-order language that everyone can adopt -- there are just
+plenty of them, either very imperfect or too heavy to include in every
+single application).
+<P>
+  With respect to typing, Higher-Order means the target universe of the
+language is reflective -- it can talk about itself.
+<P>
+  With respect to Objective terminology, Higher-Order consists in having
+classes as objects, in turn being groupable in <EM>meta-classes</EM>. And we
+then see
+that it _does_ prevent code duplication, even in cases where the code concerns
+just one user as the user may want to consider concurrently two -- or more --
+different instanciations of a same class (i.e. two <EM>sub-users</EM> may need toe
+have distinct but mostly similar object classes). Higher-Order is somehow
+allowing to be more than one computing environment: each function has its own
+independant environment, which can in turn contain functions.
+<P>
+<BR>
+
+
+  To end with genericity, here is some material to feed your thoughts about
+the need of system-builtin genericity: let's consider multiplexing.
+  For instance, Unix (or worse, DOS) User/shell-level programs are ADTs,
+but with only one exported operation, the "C" main() function per executable
+file. As such "OS" are huge-grained, with ultra-heavy inter-executable-file
+(even inter-same-executable-file-processes) communication semantics no one can
+afford one executable per actual operation exported. Thus you'll group
+operations into single executables whose main() function will multiplex those
+functionalities.
+<P>
+  Also, communication channels are heavy to open, use, and maintain, so you
+must explicitly pass all kind of different data &amp; code into single
+channels by
+manually multiplexing them (the same for having heavy multiple files or a
+manually multiplexed huge file).
+<P>
+  But the system cannot provide builtin multiplexing code for each single
+program that will need it. It does provide code for multiplexing the hardware,
+memory, disks, serial, parallel and network lines, screen, sound. POSIX
+requirements grow with things a compliant system oughta multiplex; new
+multiplexing programs ever appear. So the system grows, while it will never
+be enough for user demands as long as <EM>all</EM> possible multiplexing won't have
+been programmed, and meanwhile applications will spend most of their time
+manually multiplexing and demultiplexing objects not yet supported by the
+system.
+<P>
+  Thus, any software development on common OSes is hugeware. Huge in hardware
+resource needed (=memory - RAM or HD, CPU power, time, etc), huge in resource
+spent, and what is the most important, huge in programming time.
+<P>
+  The problem is current OSes provide no genericity of services. Thus they can
+never do the job for you. That why we really NEED <EM>generic</EM> system
+multiplexing, and more generally genericity as part of the system. If one
+generic multiplexer object was built, with two generic specializations
+for serial channels or flat arrays and some options for real-time behaviour
+and recovery strategy on failure, that would be enough for all the current
+multiplexing work done everywhere.
+<P>
+<BR>
+
+  So this is for Full Genericity: Abstract Data Types and Higher Order.
+Now, if this allows code reuse without code replication -- what we wanted --
+it also raises new communication problems: if you reuse objects especially
+objects designed far away in space or time (i.e. designed by other
+people or an other, former, self), you must ensure that the reuse is
+consistent, that an object can rely upon a used object's behaviour. This is
+most dramatic if the used object (e.g. part of a library) comes to change
+and a bug (that you could have been aware of -- a quirk -- and already have
+modified your program accordingly) is removed or added. How to ensure object
+combinations' consistency ?
+<P>
+  Current common "OO" languages are not doing much consistency checks. At
+most, they include some more or less powerful kind of type checking (the most
+powerful ones being those of well-typed functional languages like CAML or
+SML), but you should know that even powerful, such type checking is not
+yet secure. For example you may well expect a more precise behavior from
+a comparison function on an ordered class 'a than just being
+'a-&gt;'a-&gt;{LT,EQ,GT}
+i.e. telling that when you compare two elements the result can be
+"lesser than", "equal", or "greater than": you may want the comparison
+function to be compatible with the fact of the class to be actually ordered,
+that is x&lt;y &amp; y&lt;z => x&lt;z and such. Of course, a typechecking
+scheme,
+which is more than useful in any case, is a deterministic decision system,
+and as such cannot completely check arbitrary logical properties as expressed
+above (see your nearest lectures in Logic or Computation Theory). That's why
+to add such enhanced security, you must add non-deterministic behaviour to your
+consistency checker or ask for human help. That's the price for 100%
+secure object combining (but not 100% secure programming, as human error is
+still possible in misexpressing the requirements for using an object, and
+the non-deterministic behovior can require human-forced admission of unproved
+consistency checks by the computer).
+<P>
+   This kind of consistency security by logical formal property of code is
+called a formal specification method. The future of secure programming lies
+in there (try enquire in the industry about the cost of testing or
+debugging software that can endanger the company or even human lives if ill
+written, and insurance funds spent to cover eventual failures - you'll
+understand). Life concerned industries already use such modular formal
+specification techniques.
+<P>
+   In any cases, we see that even when such methods are not used automatically
+by the computer system, the programmer has to use them manually, by including
+the specification in comments or understanding the code, so he does
+computer work.
+<P>
+
+  Now that you've settled the skeleton of your language's requirements, you
+can think about peripheral deduced problems.
+<P>
+
+.....
+<BR>
+<BR>
+
+<!------------------------------------------------------------------------->
+
+<LI>
+When the best fit technique is known,
+only this technique, and none else, should be used.
+any other use may be expedient, but not quite useful.
+<P>
+Moreover, it is
+very hard to anticipate one's future needs; whatever you do, there will
+always be new cases you won't
+have.
+<P>
+
+lastly, it doesn't replace combinators
+ And finally,
+as of the combinatorials allowed
+allowing local server objects to be saved by the client is hard to
+implement eficiently without the server becoming useless, or creating a
+security hole; 
+<P>
+.....
+ At best, your centralized code will provide not only the primitives
+you need, but also the combinators necessary; but then, your centralized code
+is a computing environment by itself, so why need the original computing
+environment ? there is obviously a problem somewhere; if one of the two
+computing environment was good, the other wouldn't be needed !!!;
+All these are problems with servers as much as with libraries.
+<P>
+<BR>
+
+
+<!------------------------------------------------------------------------->
+
+<LI>With a long training, people can avoid most bugs
+that typing would have detected;
+but this long training has a human cost.
+And even then, all bugs are not <EM>guaranteed</EM> to be avoided,
+so insurance is still needed against huge occasional catastrophes,
+which also involves a high, non-linear cost.
+<P>
+Actually, the same holds for any kind of static information
+that might have been gathered about programs:
+you can live without the computer checking it,
+by checking it yourself.
+But then you must do computer work,
+are not guaranteed to do it properly,
+and cannot offer the guarantee to your customers,
+as youuur proof is all inside your mind
+and not repeatable!!!
+<P><BR>
+
+
+<!------------------------------------------------------------------------->
+
+<LI>Paul R Wilson said:
+<BR>
+BTW, this whole wrangle is exactly why I recommend avoiding the term
+"weakly typed."  It means at least three different things to different
+people, and various combinations to other people:
+<OL>
+<LI>dynamic typing
+<LI>implicit conversions, and
+<LI>unchecked types
+</OL>
+<P><BR>
+
+<!------------------------------------------------------------------------->
+
+
+<LI>
+<UL>
+<LI>implicit vs explicit is what differentiates a HLL from a LLL.
+    A LLL will require the 
+    pow
+<LI>not building an artificial border between programmers and users
+  =&gt;
+  not only the system programming <EM>language</EM> must be OO,
+  but the whole <EM>system</EM>.
+
+<LI>easy user extensibility -&gt; language-level reflection.
+
+<LI>sharing mutable data: how ? -&gt; specifications &amp; explicitly
+mutable/immutable
+(or more or less mutation-prone ?) &amp; time &amp; locking -- transactions.
+
+<LI>objects that <EM>must</EM> be shared: all the hardware resources
+ -- disks &amp; al.
+
+<LI>sharing accross time -&gt; persistence
+- reaching precision/mem/speed/resource limit: what to do ? -&gt; exceptions
+
+<LI>recovering from exceptional situations: how ? -&gt; continuations (easy if
+ higher-order on)
+
+<LI>tools to search into a library -&gt;
+ must understand all kind of morphism in
+a logically specified structure.
+
+<LI>sharing accross network -&gt; distribution
+
+<LI>almost the same: tools for merging code -&gt;
+that's tricky. Very important
+for networks or even data distributed on removable memory (aka floppies) --
+each object should have its own merging/recovery method.
+
+<LI>more generally tools for having side effects on the code.
+</UL>
+
+
+<P><BR>
+
+<!------------------------------------------------------------------------->
+
+
+<LI>
+<UL>
+<H3><LI>Structures</H3>
+
+we consider Logical Structures: each structure contains some types, and
+symbols for typed constants, relations, and functions between those types.
+Then we know some algebraic properties verified by those objects,
+i.e. a structure of typed objects, with a set of constants &amp; functions
+&amp; relations symbols, et al.
+<P>
+  A structure A is interpreted in another structure B if you can map the
+symbols of A with combinations of symbols of B (with all the properties
+conserved). The simplest way to be interpreted is to be included.
+<P>
+  A structure A is a specialization of a structure B if it has the same
+symbols, but you know more properties about the represented objects.
+<P>
+
+
+<H3><LI>Mutable objects</H3>
+
+We consider the structure of all the possible states for the object. The
+actual state is a specialization of the structure. The changing states
+accross time constitute a stream of states.
+<P>
+
+
+<H3><LI>Sharing Data</H3>
+
+  The problem is: what to do if someone modifies an object that others see ?
+Well, it depends on the object. An object to be shared must have been
+programmed with special care.
+<P>
+  The simplest case is when the object is atomic, and can be read or modified
+atomically. At one time, the state is well defined, and what this state is
+what other sharers see.
+<P>
+  When the object is a rigid structure of atomic objects, well, we assume that
+you can lock parts of the object that must be changed together -- in the
+meantime, the object is unaccessible or only readable -- and when the
+modification is done, everyone can access the object as before. That's
+transactions.
+<P>
+  Now, what to do when the object is a very long file (say text), that each
+user sees a small part of it (say a full screen of text), and that someone
+somewhere adds or deletes some records (say a sentence) ? Will each user's
+screen scroll according to the number of records deleted ? Or will they
+stay at the same spot ? The later behaviour seem more natural. Thus, a file
+has this behaviour that whenever a modification is done, all pointers to the
+file must change. But consider a file shared by _all_ the users across a
+network. Now, a little modification by someone somewhere will affect
+everyone ! That's why both the semantics and implementation of shared objects
+should be thought about longly before they are settled.
+<P>
+
+
+<H3><LI>Problem: recovery</H3>
+
+What to do when assumptions are broken by higher priority objects ?
+e.g. when the user interrupts a real-time process, when he forces a
+modification in an otherwise locked file, when the process is out of memory,
+etc.
+<P>
+Imagine that a real-time process is interrupted for imperative reasons (e.g.
+a cable was unplugged; a higher-priority process took over the cpu, etc):
+will it continue where it stopped ?
+or will it skip what was done during the interruption ?
+Imagine the system runs out of memory ? Whose memory are you to reclaim back ?
+To the biggest process ?
+The smallest ?
+The oldest ?
+The lowest real-time priority ?
+The first to ask for more ?
+Or will you "panic" like most existing OSes ?
+If objects spawn, thus filling memory (or CPU), how to detect "the one"
+responsible and destroy it ?
+<P>
+If an object locks a common resource, and then is itself blocked by a failure
+or other unwilling latency, should this transaction be cancelled, so others can
+access the resource, or should all the system wait for that single transaction
+to end ?
+<P>
+<BR>
+  As for implementation methods, you should always be aware that
+defining those abstraction as the abstractions they are,
+rather than hand-coded emulation for these,
+allows better optimizations by the compiler,
+quicker write phase for the programmer,
+neater semantics for the reader/reuser,
+no implementation code propagation for the reimplementer,
+etc.
+<P>
+  Partial evaluation should also allow specialization of code that don't use
+all the language's powerful semantics, so that standalone code be produced
+without including the full range of heavy reflective tools.
+
+</UL>
+
+<P><BR>
+
+<!------------------------------------------------------------------------->
+
+<LI>
+all the requirements to be used as for Tunes,
+or design a new one if none is found.
+<P>
+<BR>
+
+
+<!------------------------------------------------------------------------->
+
+<LI>  That is, without ADTs, and combinating ADTs, you spend most of your time
+manually multiplexing. Without semantic reflection (higher order), you spend
+most of your time manually interpreting runtime generated code or manually
+compiling higher order code. Without logical specification, you spend most of
+your time manually verifying. Without language reflection, you spend most of
+your time building user interfaces. Without small grain, you spend most of
+your time manually inlining simple objects into complex ones, or worse,
+simulating them with complex ones. Without persistence,
+you spend most of your time writing disk I/O (or worse, net I/O) routines.
+Without transactions, you spend most of your time locking files. Without
+code generation from constraints, you spend most of your time writing
+redundant functions that could have been deduced from the constraints.
+<P>
+  To conclude, there are essentially two things we fight: lack of feature
+and power from software, and artificial barriers that misdesign of former
+software build between computer objects and others, computer objects and
+human beings, and human beings and other human beings.
+<P>
+<BR>
+
+
+<!------------------------------------------------------------------------->
+
+<LI>
+<OL>
+
+<A NAME="Centralized Code">
+<H3><LI>Centralized code</H3>
+</A>
+
+   There's been a craze lately about "client/server" architecture for computer
+hardware and software. What is "client/server" architecture that many
+corporations boast about providing ?
+<BR>
+.....
+<BR>
+conceptually, a server is a centralized implementation for a library;
+centralized=>coarse-grained;
+now, coarse grained=>evil;
+hence centralized=>evil.
+we also have centralized=>network bandwidth waste.
+only "advantage": the concept is simple to implement even by the dumbest
+programmer.
+Do corporations boast about their programmers being dumb ?
+<BR>
+.....
+<BR>
+   A very common way to share code is to write a code "server" that will
+include tests for all the different cases you may need in the future and
+branch to the right one.
+Actually, this is only some particular kind of library making,
+but much more clumsy,
+as a single entry point will comprise all different behaviours needed.
+This method proves hard to design well,
+as you have to take into account all possible cases to arise,
+with predecided encoding,
+whereas a good encoding would have to take into account actual use
+(and thus be decided after run-time measurements).
+The obtained code is slow as it must test many uncommon cases;
+it is huge, as it must take into account many cases,
+most of them seldom or never actually used;
+it is also uneasy to use, as you must encode and decode the arguments
+to fit its one entry point's calling convention.
+It is very difficult to modify,
+but by adding new entries and replacing obsolete subfunctions by stubs,
+because it would else break existing code;
+it is very clumsy to grant partial access to the subfunctions,
+as you must filter all the calls;
+security semantics become very hard to define.
+<P>
+   Centralized code is also called "client-server architecture";
+the central code is called the server,
+while those who use it are called clients.
+And we saw that a function server is definitely something that no sensible man
+would use directly;
+human users tend to write a library that will encapsulate calls to the server.
+But it's how most operating systems and net-aware programs are implemented,
+as it's the simplest implementation way.
+Many companies boast about providing client-server based programs,
+but we see there's nothing to boast about it;
+client-server architecture is the simplest and dumbest mechanism
+ever conceived;
+even a newbie is able to do that easy.
+What they could boast about would be <EM>not</EM> using client-server
+architecture,
+but truely distributed yet dependable software.
+<P>
+   A server is nothing more than a bogus implementation for a library, and
+shares all the disadvantages and limits of a library, with enhanced
+extensibility problem, and additional overhead. It's only advantage is to have
+a uniform calling convention, which can be useful in a system with centralized
+security, or to pass the stream of arguments through a network to allow
+distant client and servers to communicate. This last use is particularly
+important, as it's the simplest trick ever found for accessing an object's
+multiple services through a single communication line. Translating software
+interface from library to server is called multiplexing the stream of
+library/server access, while the reverse translation is called
+demultiplexing it.
+<P>
+<BR>
+
+
+<A NAME="">
+<H3><LI>Genericity</H3>
+</A>
+
+   Then what are "intelligent" ways to produce reusable, easy to modify code?
+Such a method should allow reusing code without duplicating it, and without
+growing it in a both unefficient and uncomplete way: an algorithm should be
+written once and for once for all the possible applications it may have,
+not for a <EM>specific</EM> one. We have just found the answer to this problem:
+the opposite of specificity, <EM>genericity</EM>.
+<P>
+   So we see that system designers are ill-advised when they provide such
+specific multiplexing, that may or may not be useful, whereas other kind
+of multiplexing is always needed (a proof of which being people always
+boasting about writing -- with real pain -- "client/server" "applications").
+What they really should provide is <EM>generic</EM> ways to automatically
+multiplex lines, whenever such thing is needed.
+<P>
+   More generally a useful operating system should provide a generic way to
+share resources; for that's what an operating system is all about: sharing
+disks, screens, keyboards, and various devices between multiple users and
+programs that may want to use those accross time. But genericity is not
+only for operating systems/sharing. Genericity is useful in any domain; for
+genericity <EM>is</EM> instant reuse: your code is generic -- works in all
+cases -- so you can use it in any circumstances where it may be needed,
+whereas specific code must be rewritten or readapted each new time it must
+be used. Specificity may be expedient; but only genericity is useful on the
+long run.
+<P>
+   Let us recall that genericity is the property of writing things in their
+most generic forms, and having the system specialize them when needed,
+instead of hard-coding specific values (which is some kind of manual
+evaluation).
+<P>
+   Now, <EM>How</EM> can genericity be achieved ?
+<P>
+<BR>
+</OL>
+
+<P>
+<BR>
+
+
+<!------------------------------------------------------------------------->
+
+<LI>
+Machines can already communicate; but with existing "operating systems"
+the only working method they know is "client/server architecture", that is,
+everybody communicating his job to a one von Neuman machine to do all the
+computations, which is limited by the same technological barrier as before.
+The problem is current programming technology is based on coarse-grained
+"processes" that are much too heavy to communicate; thus each job must be
+done on a one computer.
+<P>
+<BR>
+
+
+
+<!------------------------------------------------------------------------->
+
+<LI>
+There is lots of laughable hype about network computers (NCs).
+NCs are the hardware embodiment of the client/server architecture:
+you plug NCs on the net, and the only configuration needed,
+that can be done automatically, is assigning them a network name/address.
+All the data is on the server side.
+<P>
+This just has all the advantages and disadvantages of the client/server:
+surely this ensures consistency of data,
+but efficiency is the worst possible among systems that ensure it,
+because of centralization.
+<P>
+An efficient system would achieve consistency of installed software
+without sacrificing performance, and without requiring a modification
+of current hardware,
+by doing all the consistency enforcement in software.
+Memory that is local to network hosts is then used
+for data cacheing and replication;
+CPU resources can be used to do distributed computations, etc.
+A software solution could do things great.
+A hardware solution like NCs is just waste of resources.
+<P>
+All the more, NCs do not even have compatibility,
+and do not allow any particular leverage of existing software,
+so that they are <em>really</em> a big gratuitous waste of resources.
+For a fraction of the price of all the wasted hardware resources,
+a proven distributed OS could be developed and marketed!
+<P>
+<BR>
+
+
+
+<!------------------------------------------------------------------------->
+
+
+<LI><UL>
+
+<LI>features:
+	high-level abstraction
+	Real-time,
+	reflective language frame,
+	code &amp; data persistence,
+	distribution,
+	higher order
+
+<LI>misfeatures:
+	low-level abstraction
+	explicit batch processing,
+	adhoc languages,
+	sessions &amp; files,
+	networking,
+	first order
+	
+</UL>
+<P>
+<BR>
+
+
+<!------------------------------------------------------------------------->
+
+<LI>
+because many semantical changes are to be manually propagated
+accross the whole program.
+
+
+<P>
+<BR>
+
+
+<!------------------------------------------------------------------------->
+
+<LI>
+"Compilers can not guarantee a program won't crash."
+have I been told.
+<BR>
+Surely, given an expressive enough language,
+there is no compiler that can tell for an arbitrary program
+whether it will crash or not.
+<BR>
+   Happily, computers are not used to run random arbitrary programs!!!
+Well, there's genetic programming and corewar, fair enough.
+When you program,
+<UL>
+<LI> you know what you want, so you know what a correct program is,
+ and more easily even what a non-crashing program is.
+<LI> you write your program specifically so you can prove to yourself
+ that the program is correct.
+<LI> if programming under contract, you are expected to have done the former,
+ even though the customer has no way to check, but perhaps having you
+ fill red tape.
+ </UL>
+Well, instead of all these knowledge and proofs to stay forever untold
+and unchecked, it is possible to use a language that can express them all!
+A computer language could very well express all the requirements
+for the program, and logically check a proof that they are fulfilled.
+
+
+<P>
+<BR>
+
+
+<!------------------------------------------------------------------------->
+
+<P>
+<BR>
+
+
+<!------------------------------------------------------------------------->
+
+
+</UL>
+
+<P><HR><P>
+<A NAME="P3"></A>
+<H2>Part III</H2>
+<UL>
+
+<!------------------------------------------------------------------------->
+
+<LI>Part III would apply the concepts to existing technology.
+<UL>
+<LI>It would have to discuss what is tradition,
+	what is its role, how it should or not be considered,
+	what it currently does wrong,
+	how the Tunes approach inserts in it.
+	
+<LI>It would debunk myths
+
+<LI>Efficiency,Security,Small-grain: take two, you have the third.
+	That is, when you need two of them, you also need the third,
+	but when you have two of them, you automatically have the third.
+
+<LI>with OO, people discovered that implicit binding is needed.
+	Unhappily, most "OO" only know as-late-as-possible binding
+	and no such thing as reflectivity (=implicitness control)
+	or migration (=modification of implicitness control).
+</UL>
+<P><BR>
+
+<!------------------------------------------------------------------------->
+
+
+<LI>
+Name:
+<UL>
+<LI>"Tradition and Revolution" ?
+<LI>"Hierarchy vs Liberty" ?
+<LI>"Myths and reality" ?
+<LI>"The burden of the past" ?
+<LI>"No computer is an island, entire in itself" ?
+</UL>
+
+
+
+<LI>Draft:
+<UL>
+<LI>
+This part would explain how we apply the principles
+from part I and II to actual computing
+<LI>
+It would recall what tradition is,
+what the two meanings for revolution are,
+and why a one applies and not the other.
+<LI>
+It would try debunk some myths:
+<LI>
+Tapes vs Files vs Persistency
+<LI>
+Linear ASCII Text vs hypertext vs Meta-text,
+<LI>
+Single-Computer OS vs Networked OS vs Distributed OS
+<LI>
+Single-User vs Multi-user vs dynamic user
+<LI>
+console vs GUI vs decoupling of programming and IO
+<LI>
+They are all instances of the
+"Flat Resource vs Hierarchical Layering vs Higher-order modularity"
+paradigm.
+</UL>
+
+
+<P><BR>
+
+<!------------------------------------------------------------------------->
+
+
+<LI>
+ Text as source files: derives from
+ the silly notion that because people type programs
+ by hitting a sequence of keys, each being marked with a symbol,
+ the program should be stored and manipulated as
+ the sequence of symbol typed.
+ That because books are read as such a sequence,
+ because time is linear and thus any exploration of the text,
+ then the text should be linear, too.
+ This also derives from the fact that early computers where so
+ slow and primitive, with such tight memory,
+ that programmers had to care a lot about the representation of computer
+ data, with the sequential nature of their being fed to the computer
+ through punched paper or magnetic tape.
+ Derives from belief that the object is its representation,
+ and that the only valid representation is the "usual" one.
+<P>
+<BR>
+<!------------------------------------------------------------------------->
+
+<LI>The Web allows casual users to publish new information
+from where they are.
+This is quite a progress.
+But only passive documents can be published;
+any inter-site reference is unreliable.
+The most advanced programming techniques (cgi-bin)
+only allow unsafe localized low-level computations.
+<P>
+<BR>
+
+
+<!------------------------------------------------------------------------->
+
+<LI>A common myth about programming is that low-level programming
+  allows more efficiency than high-level programming.
+  This is completely untrue, while the opposite is quite true.
+  Actually, people spend several million dollars at developping
+  optimizing C and FORTRAN compilers, but a much cheaper Common LISP
+  compiler (CMU Common LISP, developped by a few students and teachers),
+  achieve similar performance,
+  while allowing the whole expressivity of a real high-level language.
+  Also, people may see that a large part of modern optimizers consist
+  in making the whole code higher-level, so it can be better
+  understood and optimized by the compiler.
+  Any amount of time spent at manually optimizing some routine,
+  could be equally spent at developping some specialized optimizing
+  heuristics of same effect on the particular low-level routine,
+  but that could generalize to further modified versions of the routine,
+  or of similar routines,
+  thus improving reliability and maintainability as well as performance,
+  and saving a lot of time.
+  Of course, this means that compiler technology with the ability to accept
+  user-defined optimizing heuristics be widely available.
+  But this is just possible and will be case.
+  Instead of losing ever more time at low-level coding,
+  most low-level people should consider making such a compiler appear sooner.
+  Actually, a trivial theoretical argument could have told us that already:
+  high-level programs contain more information and less noise than
+  low-level programs, hence, can be manipulated and compiled more efficiently,
+  with proper tools; and anything that can be done in low-level can be
+  done at least as well, and surely more cleanly and genericly, in high-level.
+<P>
+<BR>
+
+
+<!------------------------------------------------------------------------->
+
+
+<LI> Axioms:
+<UL>
+<LI> "No man should do what the computer can do quicker for him (including
+time spent to have the computer understand what to do)" -- that's why we need
+to be able to give order to the computer, i.e. to program.
+<LI> "Do not redo what others already did when you've got more important work"
+ -- that's why we need code reuse.
+<LI> "no uncontrolled code propagation" -- that's why we need genericity.
+<LI> "security is a must when large systems are being designed"
+ -- that's why we need strong typechecking and more.
+<LI> "no artificial border between programming and using"
+ -- that's why the entire system should be OO with a unified language system,
+ not just a hidden system layer.
+<LI> "no computer user is an island, entire by itself"
+ -- you'll always have to
+connect (through cables, floppies or CD-ROMs or whatever) to external
+networks, so the system must be open to external modifications, updates and
+such.
+</UL>
+<P>
+<BR>
+
+
+<!------------------------------------------------------------------------->
+
+<LI>
+Current computers are all based on the von Neumann model in which
+a centralized unit executes step by step a large program composed of
+elementary operations.
+While this model is simple and led to the wonderful computer technology
+we have, laws of physics limit in power future computer technology
+to no more than a grand maximum factor 10000 of what is possible today
+on superdupercomputers.
+<BR>
+This may seem a lot, and it is, which leaves room for many improvement
+in computer technology;
+however, the problems computer are confronted to are not limited anyway
+by the laws of physics.
+To break this barrier, we must use another computer model,
+we must have many different machines that cooperate,
+like cells in a body, ants in a colony,
+neurones in a brain, people in a society.
+<P>
+<BR>
+
+
+<!------------------------------------------------------------------------->
+
+<LI>More than 95% of human computing time is lost
+about Interfaces: interfaces with the system, interfaces with the human.
+Actual algorithms are very few,
+heuristics are at the same time few and too many,
+because the environment makes them unreliable.
+Interfaces can and should be semi-automatically deduced.
+<P>
+<BR>
+
+
+<!------------------------------------------------------------------------->
+
+<LI>
+More generally, the problem with existing systems is lack of reflectivity,
+and lack of consistency:
+you can't simply, quickly, reliably, automate any kind of programming.
+in a way such that system consistency be enforced.
+<P>
+<BR>
+
+
+<!------------------------------------------------------------------------->
+
+<LI>
+Persistence is necessary for AI:
+<UL>
+<LI>
+Intelligence is the fruit of a long tradition.
+Even a most intelligent and precocious human being
+must be carefully bred for years
+before yielding the faintest result.
+<LI>
+How could you expect a machine to become intelligent
+as soon as it is built and powered-up,
+or even after being powered-up for some hours, or some days ?
+<LI>
+computers currently do not allow any information to persist reliably
+more than a few months, and won't translate information from old software
+to newer ones.
+<LI>
+Hence, artificial intelligence is not possible with existing architecture.
+<LI>
+However, systems with persistent memory could be a first step toward
+AI.
+</UL>
+<P>
+<BR>
+
+<!------------------------------------------------------------------------->
+
+
+<LI>unindustrialized countries: the low reliability of power feeds make
+resiliant persistency a must.
+<P>
+<BR>
+
+
+
+<!------------------------------------------------------------------------->
+
+
+<LI>Why are existing OS so bad ?
+For the same reason that ancient lore is completely irrelevant in
+nowadays' world:
+<DL>
+<DD>
+At a time when life was hard, memories very small and expensive,
+development cost very high, people had to invent hacker's techniques to
+survive; they made arbitrary decisions so survive with their few resources;
+They behaved dirtily, and thought for the short term.
+<DD>
+They had to.
+<P>
+<DD>
+Now, technology has always evolved at an increasing pace.
+What was experimental truth is always becoming obsolete,
+and good old recipes are becoming out of date.
+Behaving cleanly and thinking for the long term is made possible.
+<DD>
+It is made compulsory.
+<DD>
+The problem is, most people don't think, but blindly follow traditions.
+They do not try to distinguish what is truth and what is falsehood
+in traditions, what is still true, and what no longer stands.
+They take it as a whole, and adore it religiously,
+sometimes by devotion, most commonly by lack of thinking,
+often by refusal to think,
+rarely but already too often by a hypocrit calculus.
+Thus, they abdicate all their critical faculties,
+or use it against any ethics.
+As a result, for the large majority of honest people,
+their morals are an unspeakable burden, mixing common sense,
+valid or obsolete experimental data, and valid, outdated, or false rules,
+connected and tangled in such a way that by trying to extract something
+valid, you come up with a mass of entangled false things that are associated,
+and that when extirping false things, you often destroy the few that were
+valid together.
+The roots of their opinions are not in actual facts, but in lore,
+hence their being only remotely relevant to anything.
+<P>
+<DD>
+Tunes intends to rip off all these computer superstitions.
+</DL>
+<P>
+<BR>
+
+
+<!------------------------------------------------------------------------->
+
+<LI>
+<OL>
+<A NAME="">
+<H3><LI>Down to actual OSes</H3>
+</A>
+.....
+<P>
+<BR>
+
+
+<A NAME="">
+<H3><LI>Humanly characteristics of computers</H3>
+</A>
+
+persistence, resilience, mobility, etc....
+<P>
+response to human
+<P>
+<BR>
+</OL>
+
+<P>
+<BR>
+
+
+<!------------------------------------------------------------------------->
+
+<LI>The Internet is a progress,
+  in that people can publish documents.
+  But these documents are mostly passive.
+  Those that are not suppose highly-qualified specialists to care about;
+
+<P>
+<BR>
+
+
+<A NAME="Multiplexing">
+<H3><LI>Multiplexing: the main activity of an OS</H3>
+</A>
+
+   Putting aside our main goal, that is, to see how reuse is possible in
+general, let us focus on this particular multiplexing technique, and see
+what lessons we can learn that we may generalize later.
+<P>
+   Multiplexing means to split a single communication line or some other
+resource into multiple sub-lines or sub-resources, so that this resource
+can be shared between multiple uses. Demultiplexing is recreating a single
+line (or resources) from those multiple ones; but as dataflow is often
+bi-directional, this reverse step is most often unseparable from the first,
+and we'll only talk about multiplexing for these two things. Thus,
+multiplexing can be used to share a multiple functions with a single stream
+of calls, or convertly to have a function server be accessed by multiple
+clients.
+<P>
+   Traditional computing systems often allow multiplexing of <EM>some</EM>
+physical
+resources, thus spliting them into a first (but potentially very large) level
+of equivalent logical resources. For example, a disk may be shared with a
+file-system; CPU time can be shared by task-switching; a network interface
+is shared with a packet-transmission protocol. Actually, what any operating
+system does can be considered multiplexing. But those same traditional
+computing systems do not provide the same multiplexing capability
+for arbitrary resource, and the user will eventually end-up with having to
+multiplex something himself (see the term user-level program to multiplex a
+serial line; or the screen program to share a terminal; or window systems,
+etc), and as the system does not support anything about it, he won't do it
+the best way, and not in synergy with other efforts.
+<P>
+   What is wrong with those traditional systems is precisely that they
+only allow limited, predefined, multiplexing of <EM>physical</EM> resources
+into
+a small, predefined, number of <EM>logical resources</EM>; there they create
+a big
+difference between physical resources (that may be multiplexed), and
+logical ones (which cannot be multiplexed again by the system). This gap
+is completely arbitrary (programmed computer abstractions are never purely
+physical, neither are they ever purely logical); and user-implemented
+multiplexers must cope with the system's lacks and deficiencies.
+<P>
+<BR>
+
+
+<!------------------------------------------------------------------------->
+
+<LI>
+More generally, in any system, for a specialized task,
+you may prefer dumb workers that know well their job
+to intelligent workers that that cost a lot more,
+and are not so specialized.
+But as the tasks you need to complete evolve, and your dumb workers don't,
+you'll have to throw them away or pay them to do nothing
+as the task they knows so well is obsolete;
+they may look cheap, but they can't adapt,
+and their overall cost is high for the little time when they are active;
+
+In a highly dynamic world, you lose at betting on dumbness,
+and should invest on intelligence.   
+<P>
+
+whereas with the intelligent worker,
+you may have to invest in his formation,
+but will always have a proficient collaborator after a
+ short adaptation period.
+After all, even the dumb worker had to learn one day,
+and an operating system was needed as a design platform for any program.
+<P>
+
+<P>
+<BR>
+
+
+<!------------------------------------------------------------------------->
+
+<LI>People tend to think statically in many ways.
+<P>
+<BR>
+
+
+<!------------------------------------------------------------------------->
+
+<LI>At the time when the only metaprogramming tool was the human minds
+of specialized engineers, because memories were too small,
+which is very expensive and cannot deal with too much stuff at once,
+a run-time hardware protection was wishable to prevent bugs in
+existing programs from destroying data,
+even though th
+But now that computers have enough horsepower to be useful metaprogrammers,
+the constraints change completely.
+
+<P>
+<BR>
+
+
+<!------------------------------------------------------------------------->
+
+<LI>Dispell the myth of "language independence",
+particularly about OSes.
+which really means "interfaces to many language implementations";
+any expressive-enough language can express anything you expressed
+in another language in many ways.
+
+<P>
+<BR>
+
+
+<!------------------------------------------------------------------------->
+
+<LI>And as the RISC/CISC then MISC/RISC concepts showed,
+the best way to achieve this is to keep the low-level things
+as small as possible, so as to focus on efficiency,
+and provide simple (yet powerful enough) semantics.
+The burden of combining those low-level things into useful
+high-level objects is then moved to compilers,
+that can do things much better than humans,
+and take advantage of the simpler low-level design.
+
+<P>
+<BR>
+
+
+<!------------------------------------------------------------------------->
+
+<LI>
+Now, the description could be restated as:
+"project to replace existing Operating Systems, Languages,
+and User Interfaces by a completely rethough Computing
+System, based on a correctness-proof-secure
+higher-order reflective self-extensible fine-grained
+distributed persistent fault-tolerant version-aware
+decentralized (no-kernel) object system."
+
+
+<P>
+<BR>
+
+
+<!------------------------------------------------------------------------->
+
+<LI>GC&amp;Type checking need be in developing version,
+not forcibly in developed version.
+
+<P>
+<BR>
+
+
+<!------------------------------------------------------------------------->
+
+<LI>Nobody should be <EN>forced</EM> by the system itself
+into proving one's program correctness with respect to any specification.
+Instead, everyone is <EM>enabled</EM> to write proofs,
+and can <EM>require</EM> proofs from others.
+<BR>
+Thus, you can know precisely what you have and what you don't
+when you run code.
+When the code is safe, you know you can trust it.
+When it ain't, you know you shouldn't trust it.
+<BR>
+Surely, you will object that because of this system,
+such man will now require you to give a proof that you
+can't or won't give to him, so NOW you can't deal with him anymore.
+But don't blame it on the system.
+If the man wants the proof,
+it means he'd expected your provided software to behave
+accordingly in the past, but just couldn't require a proof,
+which was impossible.
+By dealing with the man, you'd have been morally and/or legally
+bound to provide the things that he now asks a proof for.
+Hence the proofable system didn't deprive you from making
+any lawful thing. It just helped formalize what is lawful
+and what isn't.
+<BR>
+If the man requires so difficult proofs that he can't find any
+provider to that, he will have to adapt, die, or pay more.
+<BR>
+If the man's requirements are outrageously excessive,
+and no-one should morally provide him the proofs,
+then he obviously is a nasty fascist pig, or whatever,
+and it's an improvement that no-one will now deal with him.
+<BR>
+To sum up things,
+being able to write/read/provide/require proofs
+means being able to transmit/receive more information.
+This means that people can better adapt to each other,
+and any deal that the system will cancel was an unlawful deal,
+replaced by better deals.
+Hence this technology increases the expressivity of languages,
+and does not decrease it.
+The system won't have any statical specification,
+but will be a <EM>free market</EM> for people having specifications
+and people having matching software to safely exchange
+code against money,
+instead of being a <EM>blind racket</EM>.
+
+<P>
+<BR>
+
+
+<!------------------------------------------------------------------------->
+
+<LI>People like that the cryptic Perl syntax,
+because it allows rapid development of small programs,
+and Perl usually guesses right
+what you want it to do.
+<BR>
+other people will object that because your programs
+will then depend on guesses, you can't reliably develop
+large programs and be confident that you don't depend
+on a guess that may prove wrong in certain conditions,
+or after you modify your program a bit.
+<P>
+But why should you <EM>depend</EM> on dynamic guesses?
+A Good programming language would allow you
+<UL>
+<LI>to control how the guesses are done,
+enable some tactics, disable some others, and write your own.
+<LI>to make the guesses explicitly appear or disappear in the program
+by automatic semantic-preserving source-to-source transformations.
+</UL>
+
+<P>
+<BR>
+
+
+<!------------------------------------------------------------------------->
+
+<LI>
+         an open system,
+         where computational information can efficiently flow
+         with as little noise as possible.
+<P>
+Open system means that people can contribute any kind of information
+they want to the available cultural background,
+without having to throw everything away and begin from scratch,
+because the kind of information they want to contribute does not
+fit the system.
+<BR>
+   Example: I can't have lexical scopes in some
+wordprocessor spell-checker, only one "personalized dictionary"
+personalized at once (and even then, I had to hack a lot
+to have more than one dictionary,
+by swapping a unique global dictionary). So bad.
+I'll have to wait for next version of the software.
+Because so few ask for my feature, it'll be twenty years until
+it makes it to an official release. Just be patient.
+Or if I've got lots of time/money, I can rewrite the whole
+wordprocessor package to suit my needs. Wow!
+<BR>
+   On an open system, all software components must come in small grain,
+with possibility of incremental change anywhere,
+so that you can change the dictionary-lookup code to handle
+multiple dictionaries merged by scope, instead of a unique global one,
+without having to rewrite everything.
+<P>
+   Current attempts to build an open system have not been fully successful.
+The only successful approach to offer fine-grained control on objects
+has been to let sources freely available,
+allowing independent hackers/developers to modify and recompile;
+but apart from the object grain problem,
+this doesn't solve the problems of open software.
+   Other problems include the fact
+This offers no semantical control of
+seamless data conservation accross code modification;
+contributions are not really incremental in that
+the whole software must be integrally recompiled, stopped, relaunched;
+Changes that involve propagation of code among the whole program
+cannot be done incrementally with non
+because they
+<P>
+<BR>
+
+
+<!------------------------------------------------------------------------->
+
+<LI>
+"as little noise as possible": this means
+that algorithmic information can be passed
+without any syntactical or architectural constraint in it
+that would not be specifically intended;
+that people are never forced to say
+either more than they mean or less than they mean.
+<P>
+   Example: with low-level languages like C,
+you can't define a generic function to work on any integer,
+then instanciate to the integer implementation that fits
+the further problem.
+If you define a function to work on some limited number type,
+then it won't work on longer numbers than the limit allows,
+while being wasteful when cheaper more limited types might have been used.
+Then if some 100000 lines after, you see that after all,
+you needed longer numbers, you must rewrite everything,
+while still using the previous version for existing code.
+Then you'll have two versions to co-debug and maintain,
+unless you let them diverge inconsistently, which you'll have to document.
+So bad. This is being required to say too much.
+<P>
+   And of course, once the library is written,
+in a way generic enough so it can handle the biggest numbers you'll need
+(perhaps dynamically sized numbers),
+then it can't take advantage of any particular situation
+where the known constraints on numbers
+could save order of magnitudes in computations;
+of course, you could still rewrite yet another version of the library,
+adapted to that particular knowledge,
+but then you again have the same maintenance problems as above.
+This is being required to say too little.
+<P>
+   Any "information" that you are required to give the system
+before you know it, without your possibly knowing it,
+without your caring about it,
+with your not being able to adjust it when you further know more,
+all that is *noise*.
+<P>
+   Any information that you can't give the system,
+because it won't heed it, refuse it as illegal,
+implement in so inefficient a way that it's not usable,
+is *lack of expressiveness*.
+<P>
+   Current languages are all very noisy and inexpressive.
+Well, some are even more than others.
+<P>
+   The "best" available way to circumvent lack of expressiveness from
+available language is known as "literate programming",
+as developed, for example, by D.E.Knuth with his WEB and C/WEB packages.
+With those, you must still fully cope with the noise of a language like C,
+but can circumvent its lack of expressiveness,
+by documenting in informall human language
+what C can't express about the intended use for your objects.
+<P>
+   Only there is no way accurately verify that
+objects are actually used consistently
+with the unformal documented requirements,
+which greatly limits the (nonetheless big) interest of such techniques;
+surely you can ask humans to check the program for validity
+with respect to informal documentation,
+but his not finding a bug could be evidence
+for his unability to find a real bug,
+as well as the possible absence of bug,
+or the inconsistency of the informal documentation.
+This can't be trusted remotely as reliably as a formal proof.
+<P>
+   The Ariane V spacecraft software
+had been human-checked thousands of times against informal documentation,
+but still, a software error would have $10^9 disappear in fumes;
+from the spacecraft failure report,
+it can be concluded that the bug
+(due to the predictable overflow
+of an inappropriately undersized number variable)
+could have been *trivially* pin-pointed by formal methods!
+Please don't tell me that formal methods are more expensive/difficult
+to put in place than that the rubbish military-style red-tape-checking
+that was used in place.
+<P>
+   As a french taxpayer,
+I'm asking immediate relegation of the responsible egg-heads
+to a life-long toilet-washing job
+(their status of french "civil servants" prevents their being fired).
+Of course my voice is unheard.
+<P>
+   Of course, there are lots of other software catastrophes
+that more expressive languages would have avoided,
+but even this single 10 G$ crash would pay more than
+it would ever cost to develop formal methods
+and (re)write all critical software with!
+<P>
+<BR>
+
+
+<!------------------------------------------------------------------------->
+
+<LI>
+It is amazing that researchers in Computer Science are not
+developing branches of a same software,
+but everytime rewriting it all from scratch.
+For instance, people experimenting with persistence, migration,
+partial evaluation, replication, distribution, parallelization, etc,
+just cannot write their part independently from the others.
+Their pieces of code cannot combine,
+and if each isolated technical point is proven possible,
+they are never combined,
+and techniques can never really be fairly compared,
+because they are never applicable to the same data.
+<P>
+It is as if mathematicians would have to learn a completely new language,
+a completely new formalism, a completely new notation,
+for every mathematical theory!
+As if every book couldn't actually assume results from other books,
+unless they were proven again from scratch.
+<P>
+It is as if manufacturers could not assemble parts
+unless they all came from the same factory.
+<P>
+Well, such phenomena happen in other place than computer software, too.
+Basically, it might be conceived as a question of lack of standards.
+But it's much worse with computer software,
+because computer software is pure information.
+When software is buggy, or unable to communicate,
+it's not worth a damn;
+it ain't even good as firewood, as metal to melt or anything to recycle.
+<P>
+Somehow, the physical world is a universal standard for the use
+of physical objects.
+There's no such thing in the computer world
+where all standards are conventional.
+<P>
+Worse, progress in hardware and software implementation techniques
+is incompatible with the advent of definitive computerware standards,
+so that either standards are made ephemeral,
+or implementational progress is throttled.
+<P>
+And the solution is Reflection.
+<P>
+<BR>
+
+<LI>
+The other day, I tried to explain what Reflection is
+to a mathematician friend of mine.
+But Reflection is so natural a thing for mathematicians
+(and my math background is perhaps what makes it hard for me
+to live without it in the computer world),
+that I could only try to describe what lack of Reflection would be in math:
+<BR>
+It would mean that you could only combine theorems that were not
+developped with the very same formalism.
+For instance, you would not even be able to apply to classic results,
+unless you could provide some actual derivation of both well-known theorems
+from scratch using the same formalism,
+which for a mathematician would mean
+a conventional minimalistic theory
+like peano's axioms for arithmetics, or some flavor of set theory.
+<BR>
+This very notion of "scratch" will seem silly to a mathematician,
+as he knows from Goedel that there is no absolute "scratch"
+from which to build mathematics,
+so that theorems should instead be produced in
+whatever form seems the most adequate for its current use
+(its being proved or reused, etc).
+<BR>
+The computer engineer would then say that "scratch" is the
+actual operating software/hardware he's got to work on NOW,
+which is very concrete.
+But this notion of scratch should be silly to him, too,
+if only he were conscious how fast hardware technology evolves,
+and building from current "scratch"
+only ties his programs to current technology,
+preventing computerware upgrade, or limiting the benefits thereof.
+<P>
+Reflection does allow to refine implementations,
+to move between standards,
+to prove new meta-theorems and use them,
+to juggle between representations so as to pick up
+the most adequate for a given task
+without sacrificing consistency,
+to reuse (meta)theorems from other people,
+etc.
+<P>
+<BR>
+
+
+<!------------------------------------------------------------------------->
+
+</UL>
+
+<P><HR><P>
+<A NAME="MISC"></A>
+<H2>Miscellaneous notes</H2>
+<UL>
+
+<!------------------------------------------------------------------------->
+
+<LI>I saw your answer about an article in the news, so i wanna know,
+what is Tunes ?
+<P>
+   Well, that's a tough one.
+   Here is what I told Yahoo:
+"TUNES is a project to replace existing Operating Systems, Languages,
+and User Interfaces by a completely rethough Computing
+System, based on a correctness-proof-secure
+higher-order reflective self-extensible fine-grained
+distributed persistent fault-tolerant version-aware
+decentralized (no-kernel) object system."
+<P>
+   Now, there are lots of technical terms in that.
+Basically, TUNES is a project that strives to develop a system where
+computists would be much freer than they currently are:
+in existing systems, you must suffer the inefficiencies of
+<UL>
+<LI>centralized execution [=overhead in context switching],
+<LI>centralized management [=overhead and single-mindedness in decisions],
+<LI>manual consistency control [=slow operation, limitation in complexity],
+<LI>manual error-recovery [=low security],
+<LI>manual saving and restoration of data [=overhead, loss of data],
+<LI>explicit network access [slow, bulky, limited, unfriendly, unefficient,
+ wasteful distribution of resource],
+<LI>coarse-grained modularity [=lack of features, difficulty to upgrade]
+<LI>unextensibility [=impossibility to do things oneself,
+ people being taken hostage by software providers]
+<LI>unreflectivity [=impossibility to write programs clean for both human
+ and computer; no way to specify security]
+<LI>low-level programming [=necessity to redo things again everytime one
+ parameter changes].
+</UL>
+   If any of these seems unclear to you, I'll try to make it clearer in
+
+<P>
+<BR>
+
+
+<!------------------------------------------------------------------------->
+
+<LI>Note that Tunes does not have any particular technical aim
+  <EM>per se</EM>:
+  any particular technique intended for inclusion in the system
+  has most certainly already
+  been implemented or proposed by someone else already,
+  even if we can't say where or when.
+  Tunes does not claim any kind of technical originality.
+  Tunes people are far from being the most proficient in
+  any of the technical matters that they'll have to use,
+  and hope that their code will be eventually replaced by better
+  code written by the best specialists wherever applicable.
+  But Tunes is not an empty project for that.
+  Tunes does claim to bring some kind of original information,
+  just not of a purely technical nature,
+  but instead,
+  as a global frame to usefully combine
+  those various techniques as well as arbitrary future ones
+  into a coherent system,
+  rather than have them stay idle gadgets that can't reliably
+  communicate with each other.
+  We Tunes people hope that our real contribution
+  will be the very frame in which the code
+  from those specialists can positively combine with each other,
+  instead of being isolated and helpless technical achievements.
+  Even if our frame doesn't make it into a worldwide standard,
+  we do hope that our effort will make such a standard appear
+  sooner than it would have without us (if it ever would),
+  and avoid the traps that we'll have uncovered.
+
+
+<P>
+<BR>
+
+
+<!------------------------------------------------------------------------->
+
+<LI>
+   In this article,
+we have started from a general point of view of moral Utility,
+and by applying it to the particular field of computing,
+we have deduced several key requirements
+for computing systems to be as useful as they could be.
+   We came to affirm concepts like
+dynamism, genericity, reflectivity, separation and persistency,
+which unhappily no available computing system fully implements.
+<P>
+   So to conclude,
+there is essentially one thing that we have to fight:
+the artificial informational barriers
+that
+lack of expressivity
+and misdesign
+of former software,
+due misknowledge, misunderstanding, and reject
+of the goals of computing,
+build between
+computer objects and others computer objects,
+computer objects and human beings,
+human beings and other human beings.
+<P>
+<BR>
+
+
+<!------------------------------------------------------------------------->
+
+<LI>
+People are already enough efficiency-oriented so that
+TUNES needn't invest a lot in it,
+just providing a general frame for others to insert optimization into.
+In the case of a fine-grained dynamic reflective system,
+this means that hooks for dynamic partial evaluation must be provided.
+This is also an original idea, that hasn't been fully developed.
+contribution that TUNES
+
+<P>
+<BR>
+
+
+<!------------------------------------------------------------------------->
+
+<LI>When confronted with some proposition in TUNES,
+people tend to consider it separated from the rest of the TUNES ideas,
+and they then conclude that the idea is silly,
+because it contradicts something else in the traditional system design.
+These systems indeed have some coherency, which is why they survived and
+were passed by tradition. But TUNES tries to be much more coherent even,
+<P>
+<BR>
+
+
+<!------------------------------------------------------------------------->
+
+<LI>When I begun this article, long ago, I believed that multiplexing
+was the main thing an OS would do. Now, I understand that the main thing
+is trust. Multiplexing can be readily done with a powerful language
+(ok, OSes are not currently powered by such languages, so that multiplexing
+is a system-level problem, with them!)
+
+<LI>Not seeing the importance of TRUST, I didn't at the time realize
+the effect of proprietary vs free software issues in the design of the system.
+Indeed, closed vs open source has a great impact on the dynamics of
+trust-building, on the need to have features and multiplexing in the "kernel";
+on the separation between users and programmers, etc, etc.
+
+<LI>
+
+<!------------------------------------------------------------------------->
+
+</UL>
+
+
+<P>
+<BR>
+
+
+
+
+<P><HR><P>
+
+<LI>Previous: <A HREF="Bibliography.html">Bibliography</A>
+<LI>Up: <A HREF="index.html#TOC">Table of Contents</A>
+
+
+
+<P><HR><P>
+<H3>To Do on this page</H3>
+<LI>All stuff in it should be transferred to the definitive version or deleted.
+
+
+<P><HR><P>
+<ADDRESS>
+  <A HREF="http://www.tunes.org/~fare/">Faré</A>
+  -- fare@tunes.org
+</ADDRESS>
+</BODY>
+</HTML>
+$Id: Draft.phtml,v 1.3 2000/02/01 01:05:30 fare Exp $

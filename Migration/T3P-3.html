@@ -1,0 +1,71 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 3.2 Final//EN">
+<HTML>
+<HEAD>
+ <META NAME="GENERATOR" CONTENT="LinuxDoc-Tools 0.9.8.1">
+ <TITLE>Specifications for the T3P -- Tunes Package Publishing Protocol: TB3P -- Tunes Bytestream Package Publishing Protocol</TITLE>
+ <LINK HREF="T3P-2.html" REL=previous>
+ <LINK HREF="T3P.html#toc3" REL=contents>
+</HEAD>
+<BODY>
+Next
+<A HREF="T3P-2.html">Previous</A>
+<A HREF="T3P.html#toc3">Contents</A>
+<HR>
+<H2><A NAME="s3">3.</A> <A HREF="T3P.html#toc3">TB3P -- Tunes Bytestream Package Publishing Protocol</A></H2>
+
+
+
+<H2><A NAME="ss3.1">3.1 Standard External Structure</A>
+</H2>
+
+
+
+<H3>Header</H3>
+
+<P>The header will be defined by the following sequence of bytes:</P>
+<P>
+<PRE>
+{ 'T','B','3','P',MAJOR_VERSION,MINOR_VERSION,PATCH_LEVEL,INTERNAL_REVISION }
+</PRE>
+</P>
+
+<H3>Meta-object</H3>
+
+<P>The meta-object for the rest of the sequence will be determined
+as a little-endian encoded 32-bit number,
+whose meaning is defined by the Tunes project.</P>
+
+
+<H2><A NAME="ss3.2">3.2 Current meta-object registry</A>
+</H2>
+
+
+<P>The registery is given in terms of names,
+that would be defined in the equivalent of a C include file.</P>
+<P>In the case of a language like C that ain't got without local scoping,
+a common prefix like TGMORN_ (for Tunes Global Meta-Object Registry Number)
+would be prepended.
+Underscores may become minuses in other languages like Scheme.
+Such definitions would be automatically generated
+by a registry query program.</P>
+<P>
+<PRE>
+Symbolic name   Meaning
+
+SYSIMG32_1      32-bit system image dump (see specific subsubprotocols)
+LLL_VM32_1      a LLL program for the initial 32-bit
+                virtual machine implementation
+LLL_i386_1      a LLL program in our initial object format for the i386
+SHLMS_1         an initial encoding for simple HLL- structures:
+                straightforwardly dumps a cleaned up syntax tee for sources
+RAW_1           embedded raw object from an external untyped system
+</PRE>
+</P>
+
+
+<HR>
+Next
+<A HREF="T3P-2.html">Previous</A>
+<A HREF="T3P.html#toc3">Contents</A>
+</BODY>
+</HTML>

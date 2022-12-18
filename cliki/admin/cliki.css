@@ -1,0 +1,74 @@
+BODY { background-color: White; color: Black }
+H1,H2,H3,H4 { font-family: Helvetica,Arial,sans-serif }
+H1 { color: DarkGreen; text-transform: Capitalize }
+H2 { font-size: 100% }
+
+#banner { font-size: 150% ; margin: 0em; color: White;
+background-color: #449966; text-align: center }
+#navbar { margin: 0em; color: White; background-color: #449966;
+text-align: center }
+#footer { margin: 0.5em; color: White; background-color: DarkGreen;
+  font-size: smaller }
+#disclaimer { font-size: 50%; text-align: right; }
+#navbar A { color: White }
+#navbar A:visited { color: #dddddd }
+#footer A { color: White ; border: 1px }
+#footer A:visited { color: #dddddd ; border: 1px }
+#footer A:hover { border: 1px solid white }
+#search-result table { text-align: center }
+#main { margin: 0px; text-align: justify; }
+#about {
+        background: #eee;
+        float:      right;
+        margin:     0px;
+        padding:    5px 10px 5px 10px; /* top right bottom left */
+        width:      40% }
+
+A { color: #006622 }
+A.internal { color: #0077bb }
+.navbar { margin: 0em; color: White; background-color: #449966 }
+.footer { margin: 0.5em; color: White; background-color: DarkGreen;
+  font-size: smaller }
+.disclaimer { font-size: smaller }
+A.hyperspec { color: #442266 }
+/* .unexists { color: #770055 } */
+/* .unexists { color: #C48793 } */
+.comment { font-size: 80%; color: DarkRed }
+
+/* Stolen from clim.css (in /serv/tunes/html) */
+A[href].internal { text-decoration: none }
+A[href].internal:hover, A.nav:hover {
+	border: 1px solid black;
+	text-decoration: none;
+	margin: 0px }
+A { onmouseout="window.status='';";
+	margin: 1px }
+.navbar A { color: White }
+.navbar A:visited { color: #dddddd }
+.footer A { color: White }
+.footer A:visited { color: #dddddd }
+.footer A:hover { border: 1px solid white }
+
+/* Markup specifically for review nodes. */
+.links { background-color: #DDDDFF }
+.implementations { background-color: #DDFFDD }
+
+/* Specifically for the overall content layout. */
+#main { margin: 0px }
+#about {
+	background: #eee;
+	float:      right;
+	margin:     0px;
+	padding:    5px 10px 5px 10px; /* top right bottom left */
+	width:      40% }
+
+CODE, CODE PRE {
+	background-color: #E0E0E0;
+	color: #802020;
+	font-weight : bold;
+	font-family : monospace;
+	white-space : pre;
+	/* margin-left: 5% */ }
+
+P CODE { margin-left: 0% }
+P { text-align: justify; }

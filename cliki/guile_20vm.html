@@ -1,0 +1,14 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<HTML><HEAD><TITLE>CTO : Guile VM</TITLE
+><LINK REL="alternate" TYPE="application/rss+xml" TITLE="Recent Changes" HREF="http://tunes.org/cliki/recent-changes.rdf.html"><LINK REL="stylesheet" HREF="admin/cliki.css"></HEAD
+><BODY><DIV ID="banner"><A TITLE="CTO" CLASS="logo" HREF="guile_20vm.html">CTO</A
+> <SPAN>CLiki for the TUNES project</SPAN
+></DIV
+><DIV ID="navbar"><A CLASS="internal" HREF="index.html">Home</A
+>  <A CLASS="internal" HREF="cliki.html">About CLiki</A
+> <A CLASS="internal" HREF="text_20formatting.html">Text Formatting</A
+> </DIV
+><DIV ID="main"><H1>Guile VM</H1
+>The <a class="internal" href="gnu.html" >GNU</a> project's <a class="internal" href="guile.html" >Guile</a> has some very interesting approaches for a <a class="internal" href="concrete_20vm.html" >concrete VM</a>. Its <a class="internal" href="vm.html" >VM</a> is the <a class="internal" href="scheme.html" >Scheme</a> programming language, which is powerful enough to have arbitrary frontends to other languages. So you can write software in any language and with any syntax (a compact byte-code syntax is feasible), yet run it inside a <a class="internal" href="guile.html" >Guile</a> environment. This might be any program linked to the <a class="internal" href="guile.html" >Guile</a> library. Hence, any program can be extended using any language.
+<p>Although the concept is quite nice, the implementation looks unhappily quite bloated and inefficient; as a result it's acceptable as a glue "scripting" language, but not fit for efficient computation.
+</DIV></BODY></HTML>

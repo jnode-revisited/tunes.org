@@ -1,0 +1,35 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<HTML><HEAD><TITLE>CTO : Tom Novelli</TITLE
+><LINK REL="alternate" TYPE="application/rss+xml" TITLE="Recent Changes" HREF="http://tunes.org/cliki/recent-changes.rdf.html"><LINK REL="stylesheet" HREF="admin/cliki.css"></HEAD
+><BODY><DIV ID="banner"><A TITLE="CTO" CLASS="logo" HREF="tom_20novelli.html">CTO</A
+> <SPAN>CLiki for the TUNES project</SPAN
+></DIV
+><DIV ID="navbar"><A CLASS="internal" HREF="index.html">Home</A
+>  <A CLASS="internal" HREF="cliki.html">About CLiki</A
+> <A CLASS="internal" HREF="text_20formatting.html">Text Formatting</A
+> </DIV
+><DIV ID="main"><H1>Tom Novelli</H1
+>The <a class="internal" href="person.html" >person</a> and <a class="internal" href="contributor.html" >contributor</a> who created <a class="internal" href="retro.html" >Retro</a> <a class="internal" href="forth.html" >Forth</a>.
+<A HREF="http://bespin.org/~tom/">http://bespin.org/~tom/</A
+><p>
+<hr>
+<p>My current vision for Tunes:
+<p>A programmers' user environment, where anything you can do from the keyboard, you can do automatically with a program. Within reason.
+<p>LLL, Meta-translator, C-translator: Ideally we can compile any language into an intermediate parse-tree form, and from there to object code. With a sufficiently expressive intermediate form, this would work. Scrap the LLL and focus on this instead. Don't bother trying to translate BETWEEN different languages, comments and all - that's an intractable problem.
+<p>HLL: There's a trade-off between "foolproof" and "practical". I've been skeptical of anyting to do with automatic proof but I'm warming up to the idea of type safety.  You CANNOT guarantee that a program is correct, but you can guarantee that it won't screw anything else up.
+<p>Libraries: Don't get carried away with standard libraries.. don't create extra abstraction layers by over-generalizing. This has been a tough balancing act in the past. Maybe metaprogramming will help get it under control.
+<p><a class="internal" href="user_20interfaces.html" >User Interfaces</a>:
+<ol>
+<li>Streams, suitable for dumb terminals and voice
+<li>Structured text, suitable for VT100 or braille terminal
+<li>Graphics, suitable for raster or vector displays & printers
+</ol>
+You can't do graphics on a dumb terminal. You could write three different user interfaces for text editing, for tables, etc.
+<p>The Migration subproject looks like an exercise in world domination.. it goes way beyond the scope of Tunes. If Tunes has even better source-code compatibility than C and Unix, that's good enough for me.
+<p><hr>
+Can you explain what you mean by "over-generalization"? -<a class="internal" href="tril.html" >Tril</a>
+<br><em>I'm worried about abstraction inversions.  You know, when you're
+given a crappy API with function parameters for every possibility, and you
+end up writing your own simpler abstraction layer on top of it, just to
+cope with it.  It's something that working programmers have to deal with. -Tom</em>
+<hr><p><b>This page is linked from: </b> <a class="internal" href="credits.html" >Credits</a> &nbsp; <a class="internal" href="forth_20is_20not_20intrinsically_20slow.html" >Forth is NOT intrinsically slow</a> &nbsp; <a class="internal" href="retro.html" >Retro</a> &nbsp; <a class="internal" href="small_20c.html" >Small C</a> &nbsp; <a class="internal" href="tcn.html" >tcn</a> &nbsp; </DIV></BODY></HTML>

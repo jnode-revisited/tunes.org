@@ -1,0 +1,25 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<HTML><HEAD><TITLE>CTO : Referential Transparency and State</TITLE
+><LINK REL="alternate" TYPE="application/rss+xml" TITLE="Recent Changes" HREF="http://tunes.org/cliki/recent-changes.rdf.html"><LINK REL="stylesheet" HREF="admin/cliki.css"></HEAD
+><BODY><DIV ID="banner"><A TITLE="CTO" CLASS="logo" HREF="referential_20transparency_20and_20state.html">CTO</A
+> <SPAN>CLiki for the TUNES project</SPAN
+></DIV
+><DIV ID="navbar"><A CLASS="internal" HREF="index.html">Home</A
+>  <A CLASS="internal" HREF="cliki.html">About CLiki</A
+> <A CLASS="internal" HREF="text_20formatting.html">Text Formatting</A
+> </DIV
+><DIV ID="main"><H1>Referential Transparency and State</H1
+>A pair of <a class="internal" href="term.html" >term</a>s characterizing two useful ways of looking at a <a class="internal" href="computing_20system.html" >computing system</a>:
+<p><dl>
+<dt>Referential Transparency</dt>
+<dd>The view that all elements of a program are describable at some level of timelessness, or without reference to implicit context. Even more importantly, that the elements of a program can be exchanged and substituted reliably like terms in a set of mathematically-consistent equations. Such is the impetus behind <a class="internal" href="functional.html" >functional</a> programming: <a class="internal" href="lazy_20evaluation.html" >lazy evaluation</a> and <a class="internal" href="concurrency.html" >concurrency</a> are possible because of referentially-transparent semantics offered. Without time-invariant substitutability, evaluation order cannot be freely adjusted separately from the programmer's specification.</dd>
+<dt>State</dt>
+<dd>The view that all programs move through time, and have meaning (as <a class="internal" href="information.html" >information</a> content) that depends on actions which occur, altering the set of meaningful relationships between <a class="internal" href="object.html" >object</a>s within some outer domain of all possible values.</dd>
+</dl>
+<p>There are many ways in which the adherents of each camp attempt to embrace the other: within <a class="internal" href="functional.html" >functional</a> programming, there are <a class="internal" href="monad.html" >monad</a>s used and <a class="internal" href="linear_20logic.html" >linear</a> types. Stateful languages, while mostly categorized as <a class="internal" href="imperative.html" >imperative</a>, can also be <a class="internal" href="logic.html" >logic</a>al or equational in nature, where state is equivalent to the idea of reduction or evaluation. There is also the use of single static assignment forms of imperative languages, used in <a class="internal" href="sisal.html" >Sisal</a> and many intermediate languages of compilers for the purpose of providing a portable yet provable encoding of programs.
+<p>This dichotomy of viewpoints is also expressed in the distinction between <a class="internal" href="pure.html" >pure</a> and impure, or <a class="internal" href="side_20effect.html" >side effect</a>ing, <a class="internal" href="object.html" >object</a>s. In a properly <a class="internal" href="unified.html" >unified</a> system, the distinction is purely a matter of linguistic perspective: determining what effects an object has vs. what side-effects it has depends on the notion of <a class="internal" href="context.html" >context</a> in general. Most languages avoid this issue by not providing rich-enough contexts or ways to modify them.
+<p><ul class="links">
+<li><A HREF="http://www.cs.tcd.ie/publications/tech-reports/reports.01/TCD-CS-2001-31.pdf">Comparing Proofs about I/O in Three Paradigms</A
+>.
+<li><a class="internal" href="alan_20bawden.html" >Alan Bawden</a>'s thesis paper also provides an interesting way to view this, using his linear naming concept.
+</ul><hr><p><b>This page is linked from: </b> <a class="internal" href="duality.html" >Duality</a> &nbsp; <a class="internal" href="linear_20logic_20comments.html" >Linear Logic Comments</a> &nbsp; </DIV></BODY></HTML>

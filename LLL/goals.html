@@ -1,0 +1,38 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+  <head>
+    <!--#include virtual="/head.html" -->
+    <title>Tunes LLL Goals</title>
+  </head>
+  <body>
+    <h1>Tunes LLL Goals</h1>
+    <!--#include file="header.html" -->
+    <p>Define and implement a low-level language that will fulfill all the requirement to be used as a basis for the Tunes system, including self-extending into the full Tunes HLL, etc.</p>
+    <p>The LLL is <em>not</em> a back-end to the HLL, but a low-level core for its implementation.</p>
+    <h2>Motivation</h2>
+    <p>First, the LLL is meant as a <em>somehow</em> portable way of implementing Tunes. It is a purely internal language, that shouldn't make it to most users, may disappear or change drastically at any new major release, and intended to make implementation on many platforms as easy as possible. The LLL project is in some way the basis of any implementation of Tunes.</p>
+    <h2>Rationale for another intermediate level</h2>
+    <p>The LLL is another artificial layer of computerware, that brings an amount of computing overhead. The hope is to minimize not runtime overhead (though we hope not to make it too large), or even compile-time overhead, but development-time overhead.</p>
+    <p>Once Tunes runs, it is still time to focus on compile-time and run-time speed. Moreover, "the LLL" is not to be understood as an identical abstract language on all machines (even C has different sizes and pointers according to the hardware), but as a general implementation model, that differs according to the hardware.</p>
+    <p>It is up to the HLL above to make abstract whatever is needed. Every particular implementation may have its own version of the LLL, incompatible with that of other implementations, yet still resembling enough so that all can be called "the LLL".</p>
+
+    <h2>Not relying on a standard virtual machine for interoperability</h2>
+    <p>Virtual machines <em>are</em> an easy way to achieve interoperability, but they have serious performance drawbacks: interpretation of virtual machine code is a very slow process, that loses at least one order of magnitude in execution speed. Of course, if the VM code is properly designed, code can be compiled instead of interpreted; but then, the higher-level the code, the longer it takes to compile to efficient code; and interoperability is such that the VM code cannot be adapted as an efficient low-level code for all possible targets, so a lot of compromises must be done.</p>
+    <p>So, virtual machine techniques are very useful whenever speed of execution is not a major issue relatively to compactness of code (with associated speed up and cost reduction in data transfer/storage). This is particularly the case when performance-critical primitives can be isolated in a few locally-optimized code, but isn't enough for high-performance inter-operable software.</p>
+    <p>And very importantly, we refuse the idea of having a <em>single priviledged</em> virtual machine: that this machine would be built statically as a standard for all future work, without knowledge and tuning of this machine, or even with tuning of the machine for today's hardware and software, whereas future hardware and software performance constraints are most likely to change. Such a VM would be no better than the hardware-based standard that IBM-PC under MSDOS constituted up to now; perhaps with a simpler virtual hardware, but still a hardware-based approach.</p>
+    <p>Surely, the Tunes project should allow and encourage VM techniques to be used whenever useful; some implementations might share a same VM, and the LLL might be a good basis for such a VM. But Tunes just won't embark on a universal VM as a central <em>static</em> concept. Also, a VM won't solve any problem but interoperability of software above it with hardware below it.</p>
+    <h2>Avoid C or assembly</h2>
+    <p>It couldn't <em>be</em> C or assembly, because it has to actively support the low-level memory model used to implement migration and annotation (which for a standalone system would be persistency, GC, and weak pointers).</p>
+    <h2>Assembly Support</h2>
+    <p>We do support assembly, as part of the LLL, and are aware that full control over the hardware is the only way to achieve near-optimal code.</p>
+    <p>However, we are confident that eventually, most programming should be done at a higher level, and that even low-level control could and should be done with high-level tools that warranty that the low-level interactions have the right semantics while optimizing code.</p>
+    <p>As for the cases where better code than available optimizer produces is wanted, we feel that adding specialized optimizer tactics leads to safer, surer, more reusable and portable results, that can be checked, whereas hand-writing optimizing leads to unsafe, short-lived code.</p>
+    <h2>No redundancy between HLL and LLL</h2>
+    <p>The HLL/LLL concept is all about an harmony between complementary constraints of programming:</p>
+    <ul>
+      <li>Low-level programming is meant to provide as much performance as possible from the computer hardware, while still having useful semantics.</li>
+      <li>High-level programming is meant to provide the most expressive and cleanly defined semantics, while still being efficiently doable. So we see these are complementary, not opposite or redundant.</li>
+    </ul>
+    <!--#include virtual="/footer.html" -->
+  </body>
+</html>

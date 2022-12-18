@@ -1,0 +1,70 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<HTML><HEAD><TITLE>CTO : Common Lisp</TITLE
+><LINK REL="alternate" TYPE="application/rss+xml" TITLE="Recent Changes" HREF="http://tunes.org/cliki/recent-changes.rdf.html"><LINK REL="stylesheet" HREF="admin/cliki.css"></HEAD
+><BODY><DIV ID="banner"><A TITLE="CTO" CLASS="logo" HREF="common_20lisp.html">CTO</A
+> <SPAN>CLiki for the TUNES project</SPAN
+></DIV
+><DIV ID="navbar"><A CLASS="internal" HREF="index.html">Home</A
+>  <A CLASS="internal" HREF="cliki.html">About CLiki</A
+> <A CLASS="internal" HREF="text_20formatting.html">Text Formatting</A
+> </DIV
+><DIV ID="main"><H1>Common Lisp</H1
+>A very powerful but somewhat messy dialect of the <a class="internal" href="lisp.html" >Lisp</a> <a class="internal" href="programming_20language.html" >programming language</a>. It was intended to unify the many dialects of Lisp, and it has succeeded for the most part in doing so. The only other widely used dialects are <a class="internal" href="scheme.html" >Scheme</a> and EMACS Lisp.
+<span class="comment">
+<br>
+<br>
+It turns out that despite its goal of unification, Common Lisp is actually a very good language. It is my opinion that it is unsurpassed, the best overall language as of now (09-14-2002).
+<p><dl>
+<dt>Some features:</dt><dd>a powerful (but dangerous) macro system, a class-based object system with multiple-dispatch (<a class="internal" href="clos.html" >CLOS</a>) (and often with a powerful <a class="internal" href="meta-object_20protocol.html" >meta-object protocol</a>), an extensive standard library full of rich data structures, and a whole lot more. In addition, there are a number of high quality implementations, free and non-free, available. Some of these implementations output very fast code.</dd>
+<dt>Some misfeatures:</dt><dd>there are many constraints placed on the language due to compatibility reasons, not the least of which is the fact that it is a lisp2 (ie, it has a special namespace for functions). Many very intelligent people (<a class="internal" href="fare.html" >Fare</a>, <a class="internal" href="kent_20m._20pitman.html" >Kent M. Pitman</a>) feel that this is not a disadvantage, but I do. I feel the macro system is unnecessarily dangerous and restrictive (in that macros are not first class values like procedures). Nothing huge though.</dd>
+</dl>
+-- <a class="internal" href="seaslug.html" >seaslug</a>
+</span>
+<p>
+<span class="comment">
+This sounds like the opinion of most people who don't understand that macro hygeine isn't needed in a lisp2. :-) However the points are correct and there is some lisp possible that should be able to best both Common Lisp and Scheme: each design has very old roots.
+-- <a class="internal" href="water.html" >water</a>
+</span>
+<p><ul class="links">
+<li><A HREF="http://www.cliki.net/">CLiki</A
+>, a reference wiki site that covers <em>everything</em> below much better than we can.</li>
+<li><A HREF="http://www.lisp.org/">Lisp.org</A
+> or <A HREF="http://www.alu.org">The Association for Lisp Users</A
+>.
+<li><A HREF="http://www.xanalys.com/software_tools/reference/HyperSpec/">The Common Lisp HyperSpec</A
+></li>
+<li><A HREF="http://www-cgi.cs.cmu.edu/Afs/cs.cmu.edu/project/Ai-repository/Ai/html/cltl/cltl2.html">CLTL</A
+>, <A HREF="http://www.supelec.fr/docs/cltl/cltl2.html">French Mirror</A
+>, Common Lisp: The Language</li>
+<li><A HREF="http://www.gigamonkeys.com/book/">Practical Common Lisp</A
+>, a hands-on approach to using CL in practical situations</li>
+<li><A HREF="http://psg.com/~dlamkins/sl/cover.html">Successful Lisp</A
+>, an excellent way to learn CL</li>
+<li><A HREF="http://www.apl.jhu.edu/~hall/lisp.html">An Introduction and Tutorial for Common Lisp</A
+>, a list of CL resources</li>
+<li><A HREF="http://www.paulgraham.com/onlisp.html">On Lisp</A
+>, we recommend this book for intermediate CL learners.</li>
+</ul>
+<ul class="implementations">
+<li><A HREF="http://sbcl.sourceforge.net/">SBCL</A
+>, a very high quality free implementation. Based on CMUCL.</li>
+<li><A HREF="http://www.cons.org/cmucl/">CMUCL</A
+>, outputs very fast code</li>
+<li><A HREF="http://www.gnu.org/software/gcl/gcl.html">GCL</A
+>, the <a class="internal" href="gnu.html" >GNU</a> project's free implementation</li>
+<li><A HREF="http://ecls.sourceforge.net">ECL</A
+>, Embeddable Common Lisp with interpreter and translator to C code</li>
+<li><A HREF="http://wcl.kontiki.com/">WCL - Embeddable Common Lisp for Linux</A
+></li>
+<li><A HREF="http://clisp.cons.org/">CLISP</A
+>: compiles to portable bytecode, offers mediocre performance.
+<ul>
+<li><A HREF="http://www.clisp.org/">Alternate #1</A
+></li>
+<li><A HREF="http://clisp.sourceforge.net/">Alternate #2</A
+></li>
+<li><A HREF="http://www.gnu.org/software/clisp/">Alternate #3</A
+></li>
+</ul>
+</ul>
+<hr><p><b>This page is linked from: </b> <a class="internal" href="ap5.html" >AP5</a> &nbsp; <a class="internal" href="aspectl.html" >AspectL</a> &nbsp; <a class="internal" href="bknr.html" >bknr</a> &nbsp; <a class="internal" href="cafeobj.html" >CafeOBJ</a> &nbsp; <a class="internal" href="cl.html" >CL</a> &nbsp; <a class="internal" href="clhs.html" >CLHS</a> &nbsp; <a class="internal" href="cliki.html" >CLiki</a> &nbsp; <a class="internal" href="clim.html" >CLIM</a> &nbsp; <a class="internal" href="clos.html" >CLOS</a> &nbsp; <a class="internal" href="design_20by_20contract.html" >Design by Contract</a> &nbsp; <a class="internal" href="eulisp.html" >EuLisp</a> &nbsp; <a class="internal" href="fare-matcher.html" >fare-matcher</a> &nbsp; <a class="internal" href="fault-tolerant.html" >Fault-tolerant</a> &nbsp; <a class="internal" href="garnet.html" >Garnet</a> &nbsp; <a class="internal" href="kent_20m._20pitman.html" >Kent M. Pitman</a> &nbsp; <a class="internal" href="knowos.html" >KnowOS</a> &nbsp; <a class="internal" href="literate_20programming.html" >Literate Programming</a> &nbsp; <a class="internal" href="max.html" >Max</a> &nbsp; <a class="internal" href="movitz.html" >Movitz</a> &nbsp; <a class="internal" href="netclos.html" >NetCLOS</a> &nbsp; <a class="internal" href="pl_20101.html" >PL 101</a> &nbsp; <a class="internal" href="poplog.html" >Poplog</a> &nbsp; <a class="internal" href="qi.html" >Qi</a> &nbsp; <a class="internal" href="rebol.html" >REBOL</a> &nbsp; <a class="internal" href="reflective_20programming_20languages.html" >Reflective Programming Languages</a> &nbsp; <a class="internal" href="scheme.html" >Scheme</a> &nbsp; <a class="internal" href="screamer.html" >Screamer</a> &nbsp; <a class="internal" href="stella_20language.html" >Stella language</a> &nbsp; <a class="internal" href="trotskyite_20tunes.html" >Trotskyite Tunes</a> &nbsp; <a class="internal" href="tunes_20vs_20the_20www.html" >TUNES vs the WWW</a> &nbsp; <a class="internal" href="type_20system.html" >Type System</a> &nbsp; <a class="internal" href="uffi.html" >UFFI</a> &nbsp; <a class="internal" href="uncommon_20web.html" >UnCommon Web</a> &nbsp; <a class="internal" href="zzz.html" >zzz</a> &nbsp; </DIV></BODY></HTML>

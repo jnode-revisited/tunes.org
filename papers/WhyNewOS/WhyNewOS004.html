@@ -1,0 +1,707 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN"
+            "http://www.w3.org/TR/REC-html40/loose.dtd">
+<HTML>
+<HEAD>
+
+<META http-equiv="Content-Type" content="text/html; charset=ANSI_X3.4-1968">
+<META name="GENERATOR" content="hevea 1.07">
+<TITLE>
+Languages and Expressiveness
+</TITLE>
+</HEAD>
+<BODY >
+<A HREF="WhyNewOS003.html"><IMG SRC ="previous_motif.gif" ALT="Previous"></A>
+<A HREF="http://tunes.org/serv/tunes/html/papers/WhyNewOS/WhyNewOS-toc.html"><IMG SRC ="contents_motif.gif" ALT="Up"></A>
+<A HREF="WhyNewOS005.html"><IMG SRC ="next_motif.gif" ALT="Next"></A>
+<HR>
+
+<H2><A NAME="htoc19">3</A>&nbsp;&nbsp;Languages and Expressiveness</H2>
+<A NAME="toc17"></A>
+<H3><A NAME="htoc20">3.1</A>&nbsp;&nbsp;Computer Languages</H3>
+<A NAME="Computer Languages"></A>
+
+ Firstly, let's settle what we call a "computer language".<BR>
+<BR>
+A language is just <EM>any</EM> means by which humans,
+computers, or any active member of a dynamical system,
+can communicate information.
+ Computer languages are languages used to vehiculate
+information about what the computer should do;
+any media for exchanging information is a language.<BR>
+<BR>
+Now, this makes a language even out
+of point-and-click-on-window-system,
+or out of a bitstream protocol.<BR>
+<BR>
+So what?
+Why has a language got to use ASCII symbols or a written alphabet at all?
+People use sounds,
+the deaf use their hands,
+various animals use a lot of different ways to communicate,
+computers use electrical signals.
+What makes the language is the structure of the information communicated,
+not the media used for this communication to happen.<BR>
+<BR>
+Written or spoken english, though they have differences,
+are both english, and recognizable as such;
+what makes english is its structures,
+its patterns, not the media used to communicate those patterns.
+These patterns might be represented by things as physically foreign
+to each other as vibrations of the air (when one talks),
+or digital electrical signals on a silicon chip
+(when your computer text such as this very article you're reading).<BR>
+<BR>
+Of course, symbol-based languages are simpler to implement
+on today's computers,
+but that's only a historical dependency,
+that may evolve and eventually disappear.<BR>
+<BR>
+And of course not all languages are equivalent.
+Surely the language used to communicate with a washing machine
+is much more limited than what we use to talk to humans.
+Still, there is no reason why not to call it a language.<BR>
+<BR>
+As with Operating Systems,
+the problem is not to define the concept of a computer language,
+but to identify what characteristics it should have to maximize its utility.<BR>
+<BR>
+So what kind of structure shall a computer language have?
+What makes a language structure better or more powerful than another?
+That's what we'll have to inspect.<BR>
+<BR>
+<A NAME="toc18"></A>
+<H3><A NAME="htoc21">3.2</A>&nbsp;&nbsp;Goal of a computer language</H3>
+<A NAME="Goal of a Language"></A>
+[Rename that to "Computer Language Utility"?]<BR>
+<BR>
+It should stressed that computer languages have nothing to do with finished,
+static "perfect" computer programs:
+those can have been written in any language,
+preferably a portable one
+(for instance, any ANSI supported language,
+i.e. most probably the largely supported "C",
+even if I'd then personally prefer FORTH or Scheme).
+If all interesting things already had been said and understood,
+and all ever needed programs already run satisfactorily on current machines,
+there would be no more need for a language;
+but there are infinitely many interesting things,
+and only finitely many things said and understood,
+so a language will always be needed,
+and no finite language (a grammarless dictionary) will ever be enough.<BR>
+<BR>
+
+Much like an operating system,
+being useful not as a <EM>static</EM> library,
+but as a frame for <EM>dynamic</EM> computing,
+computer languages have to do with programming,
+with modifyings programs,
+creating new programs,
+not just watching existing ones;
+that is, computer languages are for communicating,
+be it with other people or a further self.
+That is languages are protocols to
+store and retrieve documents
+<EM>in such a way that the meaning of a document,
+its dynamical properties,
+its propension towards evolution and modification, etc,
+be preserved</EM>.<BR>
+<BR>
+Thus, the qualities of a (programming) language do not lie only
+in what can eventually be done as a static program with the language;
+or more precisely, assuming we have all the needed "library" routines
+to access the hardware we need, all Turing-equivalent languages are
+equally able to describe any static program.
+ These qualities do not lie
+in the efficiency of a straightforward implementation either,
+as a good "optimizing" compiler can always be achieved later,
+and speed critical routines can be included in libraries
+(i.e. if you really need a language,
+then you won't be a beginner for a long time at this language).<BR>
+<BR>
+The qualities of a language lie in the easiness to express
+<EM>new</EM> concepts, and to <EM>modify</EM> existing routines.<BR>
+<BR>
+With this in mind, a programming
+language is better than another if it is easier for a human to write a new
+program or to modify an existing program, or of course to reuse existing
+code (which is some extension to modifying code); a language is better,
+if sentences of equal meaning are shorter, or if just if better
+accuracy is reachable.<BR>
+<BR>
+<A NAME="toc19"></A>
+<H3><A NAME="htoc22">3.3</A>&nbsp;&nbsp;Reuse versus Rewrite</H3>
+<A NAME="Reuse vs Rewrite"></A>
+We evaluated a computing system's utility by the actual time saved by
+using them on the long run, as compared to using other tools instead, or
+not using any. Now, personal expediency suggests that people keep using
+the same tools as they always did, however bad they may be, and add
+functionalities as they are needed, because learning and installing new
+tools is costly. But this leads to obsolete tools grown with bogus bulging
+features, that provide tremendous debugging and maintenance costs.
+It results in completely insecure software, so no one trusts any one else's
+software, and no one wants to reuse other people's software, all the more if
+one has to pay.<BR>
+<BR>
+For the problem is that, with existing tools, 99.99% of programming time
+throughout the world is spent doing again and again the same basic things
+that have been done hundreds of times before or elsewhere.
+It is common to hear (or read) that most programmers spend their time
+reinventing the wheel, or desesperately trying to adapt existing wheels to
+their gear.
+Of course, you can't escape
+asking students and newbies to repeat and learn what their elders did,
+so they can understand it and interiorize the constraints of computing.
+The problem is that today's crippled tools and closed development strategies
+make learning difficult and reuse even more difficult,
+secure reuse being just impossible.
+Thus people spend most of their time writing again and again
+new versions of earlier works,
+nothing really worth the time they spend,
+nothing <EM>original</EM>,
+only so they can be sure they know what it does,
+and it provides correctly the particular feature they need
+that couldn't be done before, or at least not exactly.
+Even then, they seldom manage to have it do what they want.<BR>
+<BR>
+Now, after all, you may argue that such a situation creates jobs, so is
+desirable; so why bother ?<BR>
+<BR>
+First of all, there is plenty of useful work to do on Earth, so time and
+money saved by not repeating things while programming can be spent on many
+many other activities (if you really can't find any, call me, I'll show you).
+Physical resources are globally limited,
+so wasting them at doing redundant work is unacceptably harmful.<BR>
+<BR>
+Paying people to dig holes and fill them back just to create jobs,
+as suggested by despicable economists like J.M. Keynes,
+is of utmost stupidity.
+Else, we might encourage random killing,
+as it decreases unemployment among potential victims,
+and increases employment among morticians, cops, and journalists.
+If Maynard Keynes' argument holds,
+I particularly recommend suicide to its proponents
+for the beneficial effect it has on society.
+ See Bastiat's works [<A HREF="WhyNewOS008.html#BastiatLaw"><CITE>1</CITE></A>]
+for a refutation of this myth,
+more than a hundred years before stupid socialist politicians apply it:
+maybe spending money to do useless things
+might have some beneficial aspects,
+as for example stimulating employment;
+but their global effect is very harmful,
+as the money and energy spent by central organs
+to the limited benefit of a few
+could have been spent much more usefully for everyone
+(not forcibly by a central organ <EM>at all</EM>),
+as there are so many useful things to be done,
+be it only to prepare against natural catastrophes,
+not to talk about human curses.
+ That useless work policy is taking a lot from everyone
+to give little to a few.<BR>
+<BR>
+Now, rewriting is a serious problem for everyone.
+To begin with, rewriting is a loss of time,
+that make programming delays quite longer,
+thus is very costly.
+More costly even is the fact that rewriting is an error prone operation
+and anytime during a rewrite,
+one may introduce errors very difficult to trace and remove
+(if need be,
+one may recall the consequences of computer failures in space ships,
+phone nets, planes).
+Reuse of existing data accross software rewrites,
+and communication of data between different software
+proves being of exorbitant cost.
+The most costly aspect of rewriting may also be
+the fact that any work has a short lifespan,
+and will have to be rewritten entirely from scratch
+whenever a new problem arises;
+thus programming investment cost is high,
+and software maintenance is of high cost and low quality.
+And it is to be considered that rewriting is an ungrateful work
+that disheartens programmers,
+which has an immeasurably negative effect
+on programmer productivity and work quality,
+while wasting their (programming or other) talents.
+Last but not least,
+having to rewrite from scratch creates an limit to software quality, that is,
+no software can be better than what one man can program during one life.<BR>
+<BR>
+Rewrite <EM>is</EM> waste of shared resources by lack of communication.
+And all the argument is about that:
+not communicating is harmful;
+any good the system should encourage communication.
+Now, even when current operating systems greatly limit
+communication of computer code,
+they happily do not prevent humans to communicate
+informal ideas of computer code.
+This is how we could get where we are.<BR>
+<BR>
+Therefore, it will now be assumed as proven that
+code rewriting is a really bad thing,
+and that we thus want the opposite: software <EM>reuse</EM>,
+software <EM>sharing</EM>.<BR>
+<BR>
+We could have arrived at the same conclusion just with this simple argument:
+if some software is really useful (considering the general interest),
+then it must be used many, many times, by many different people,
+unless it is some kind of computation with a definitive answer
+that concerns everybody (which is difficult to conceive:
+some software that would solve a metaphysical or historical problem!).
+Thus, useful software, least it be some kind of very unique code,
+is to be reused countless times.
+That's why to be useful, code must be very easy to reuse.<BR>
+<BR>
+It will be showed that such reuse
+is what the "Object-Orientation" slogan is all about,
+and what it really means when it means anything.
+ But reuse itself introduces new problems
+that have to be solved before reuse can actually be possible,
+problems as we already saw, of <EM>trust</EM>:
+how can one trust software from someone else?
+How can one reuse software without spreading errors from reused software,
+without introducing errors due to misunderstanding
+or misadaptation of old code,
+and without having software obsolescence?
+We'll see what are possible reuse techniques,
+and how they cope with these problems.<BR>
+<BR>
+<A NAME="toc20"></A>
+<H3><A NAME="htoc23">3.4</A>&nbsp;&nbsp;Copying Code</H3>
+<A NAME="Copying Code"></A>
+The first and the simplest way to reuse code is just
+the "copy-paste" method:
+the human user just copies some piece of code, and pastes it in a new context,
+then modifies it to fit a new particular purpose.<BR>
+<BR>
+This is really like copying whole chapters of a book,
+and changing a names to have it fit a new context;
+this method has got many flaws and lacks,
+and we can both moral and economically object to it.<BR>
+<BR>
+First of all, copying is a tedious and thus error-prone method:
+if you have to copy and modify the same piece of code thousands of times,
+it can prove a long and difficult work,
+and nothing will prevent you from doing as many mistakes
+while copying or modifying.<BR>
+<BR>
+As for the moral or economical objection, it is sometimes considered bad
+manners to copy other people's code, especially when copyright issues are
+involved; sometimes code is protected in such a way that one cannot copy it
+easily (or would be sued for doing that); thus this copy-paste method won't
+even be legally of humanly possible everytime.<BR>
+<BR>
+Then, assuming that the previous problems could be solved
+(which is not obvious at all),
+there would still be a <EM>big</EM> problem about code copying:
+uncontrolled propagation of bugs and lacks of feature accross the system.
+And this is quite a serious threat to anything like code maintenance;
+actually, copying code means that any misfeature in the code
+is copied altogether with intended code.
+So the paradox of code copying is that bad copying introduces new errors,
+while good copying spreads existing errors;
+in any case code copying is an error prone method.
+Error correction itself is made very difficult,
+because every copy of the code must be corrected
+according to its own particular context,
+while tracking down all existing copies is especially difficult
+as code will have been modified (else the copy would have been made useless
+by any macro-defining preprocessor or procedure call in any language).
+Moreover, if another programmer (or the same programmer some time later)
+ever wants to modify the code,
+he may be unable to find all the modified copies.<BR>
+<BR>
+To conclude, software creation and maintenance is made very difficult,
+and even impossible, when using copy-paste; thus, this method is definitely bad
+for anything but exceptional reuse of a small number of mostly identical
+code in a context where expediency is much more important than long-term
+utility. That is, copy-paste is good for "hacking" small programs for
+immediate use; but it's definitely not a method to program code meant to
+last or to be widely used.<BR>
+<BR>
+<A NAME="toc21"></A>
+<H3><A NAME="htoc24">3.5</A>&nbsp;&nbsp;Having an Extended Vocabulary...</H3>
+<A NAME="Vocabulary"></A>
+The second easiest, and most common way to reuse code,
+is to rely on <EM>standard libraries</EM>.
+ Computer libraries are more like dictionaries and technical references
+than libraries, but the name stuck. So places where one can find lots of
+such "libraries" are called repositories.<BR>
+<BR>
+Using a standard library is easy:
+look for what you need in the standard library's index,
+carefully read the manual for the standard code you use,
+and be sure to follow the instructions.<BR>
+<BR>
+Unhappily,
+not everything one needs will be part of a standard library,
+for standard library include only things that have been established
+as needed by a large number of persons.
+ Patiently waiting for the functionality one needs
+to be included in a next version of standard libraries
+is not a solution, either,
+because what makes some work useful is precisely
+what hasn't been done before,
+so that even if by chance the functionality gets added,
+it would mean someone else did the useful work in one's place,<BR>
+<BR>
+.....
+not everything there are good reasons why
+before a standard library is available
+You wait for the function you need to be included in the standard library,
+and then use it as the manual describes it when it is finally provided.<BR>
+<BR>
+standards are long to come,
+and are even longer to be implemented the way they are documented.
+By that time, you will have needed new not-yet-standard features,
+and will have had to implement them or to use non-standard dictionaries;
+when the standard eventually includes your feature,
+you'll finally have to choose between keeping a non-standard program,
+that won't be able to communicate with newer packages,
+or rewriting your program to conform to the standard.<BR>
+<BR>
+Moreover, this reuse method relies heavily on a central agency
+for editing revised versions of the standard library.
+And how could a centralized agency do all the work for everyone to be happy ?
+Trying to impose reliance on a sole central agency that is communism.
+Relying only on multiple concurrent hierarchically organized agencies
+is feudalism.
+Oneself is the only thing one can ultimately rely upon;
+and liberalism tells us that
+only by having the freeer the information interchange between people,
+the better the system.<BR>
+<BR>
+It's like vocabulary, culture: you always need people to write
+dictionaries, encyclopaedias, and reference textbooks;
+but these people just won't ever provide new knowledge and techniques, they
+rather settle what everyone already know, thus facilitating communication
+where people had to translate between several existing ones more easily.
+You still need other people to create new things: you just can't wait for
+what you need to be included in the next revision of such reference book;
+it won't ever be if no one does settle it clearly before it may be considered
+by a standardization commitee.<BR>
+<BR>
+Now, these standard dictionaries have a technical problem:
+the more useful they strive to be, the larger they grow, but
+the larger they grow, the more difficult it gets to retrieve the right word
+from its meaning, which is what you want when you're writing.
+That's why we need some means to retrieve words from their subject, their
+relationship with other words;
+thus we need a language to talk about properties of words (perhaps the same),
+about how words are created, what words are or not in the standard dictionary
+and will or will not be.
+And this language will have to evolve too,
+so a "meta"-library will not be enough.<BR>
+<BR>
+When vocabularies grow too large,
+there appear "needle in haystack" problems:
+though it exists, you can't locate the word you're looking for,
+because there's no better way to look for it than to cautiously read the
+entire dictionary until you come to it...<BR>
+<BR>
+<A NAME="toc22"></A>
+<H3><A NAME="htoc25">3.6</A>&nbsp;&nbsp;... or a Better Grammar</H3>
+<A NAME="Grammar"></A>
+Furthermore, how is a dictionary to be used ?
+A dictionary does not deal with new words; only old ones.
+To express non-trivial things,
+one must do more than just pronounce a one magic word;
+one must <EM>combine</EM> words into meaningful sentences.
+And this is a matter of <EM>grammar</EM>
+- the structure of the language -
+not <EM>vocabulary</EM>.
+We could have seen that immediately:
+standard libraries do not deal with writing new software,
+but with sharing old software,
+which is also useful, but comes second,
+as there must be software before
+there can be old software.
+Computer software was not created,
+but develops from a long tradition.
+So a library is great for reuse, but actually,
+a good grammar is essential to use itself,
+and reuse in particular.<BR>
+<BR>
+That is,
+the right thing is not <EM>statically</EM> having a extended vocabulary,
+but <EM>dynamically</EM> having an extended vocabulary;
+however statically extended, the vocabulary will never be large enough.
+Thus we need good dynamical way to define new vocabulary.
+Again, it's a matter of dynamism versus statism.
+Current OSes suck because of their statism.
+Dynamically having an extended vocabulary means
+having dynamic ways to extend the vocabulary,
+which is a matter of grammar, not dictionary.<BR>
+<BR>
+Now what does reuse mean for the language grammar ?
+It means that you can define new words from existing ones,
+thus creating new contexts,
+in which you can talk more easily about your particular problems.
+That is, you must be able to add new words and provide new, extended,
+dictionaries.
+To allow the most powerful communication, the language should provide
+all meaningful means to create new words.
+To allow multiple people whose vocabularies evolve independently to
+communicate their <EM>ideas</EM>, it should allow easy abstraction
+and manipulation of the context,
+so that people with different context backgrounds can understand exactly
+each other's ideas.<BR>
+<BR>
+Thus we have two basic constructions, that shall be universally available:
+extracting an object's value in a context (commonly called beta-reduction),
+and abstracting the context of an object (commonly called lambda-abstraction).
+A context is made of variables. When you reduce an object, you replace
+occurences of the variable by its bound value; when abstracting the context,
+you create an object with occurences of an unbound variable inside,
+that you may reduce later after having bound the variable. We thus have
+a third operation, namely function evaluation, that binds an object to
+a free variable in a context.<BR>
+<BR>
+For the grammar to allow maximal reuse,
+just any object shall be abstractible. But what are those objects ?<BR>
+<BR>
+<A NAME="toc23"></A>
+<H3><A NAME="htoc26">3.7</A>&nbsp;&nbsp;Abstraction</H3>
+<A NAME="Abstraction"></A>
+.....<BR>
+<BR>
+The theory of abstractions is called lambda-calculus.
+There are infinitely many different lambda-calculi, each having its
+own properties.<BR>
+<BR>
+Basically, you start with a universe of base objects.
+.......
+ Base objects, or zero-order objects...
+ first order ...
+ second order ...
+ nth order ...
+ higher order ...
+ reflectivity ...
+ beware of reflectivity of a sub-language, not the language itself ...
+ syntax control ...
+.......<BR>
+<BR>
+.....<BR>
+<BR>
+(genericity ?)<BR>
+<BR>
+.....<BR>
+<BR>
+<A NAME="toc24"></A>
+<H3><A NAME="htoc27">3.8</A>&nbsp;&nbsp;Metaprogramming</H3>
+<A NAME="Metaprogramming"></A>
+.....<BR>
+<BR>
+<A NAME="toc25"></A>
+<H3><A NAME="htoc28">3.9</A>&nbsp;&nbsp;Reflection</H3>
+<A NAME="Reflection"></A>
+.....<BR>
+<BR>
+<A NAME="toc26"></A>
+<H3><A NAME="htoc29">3.10</A>&nbsp;&nbsp;Security</H3>
+<A NAME="Security"></A>
+We already saw how the one big problem about reusing software is it that
+when you share the software, you share its good features,
+but you also share its bugs.<BR>
+<BR>
+Reuse is good when it saves work,
+but you can't call that saving work when it makes you spend so much more time
+tracking bugs, avoiding them, fearing them, trying to prevent their effects,
+that you would have been better rewriting the software from scratch so you
+could trust it.<BR>
+<BR>
+That's why sharable software is useless if it is not also trustworthy software.<BR>
+<BR>
+Firstly, we must note that this worry about security does not
+come from software sharing;
+it is only multiplicated and propagated by software sharing.
+Even when you "share" code only with your past and future selves,
+the need arises.
+The problem is you're never sure that a module you use does what
+<EM>you</EM> expect it to.
+Moreover, to be sure you agree with the module, you must have some
+means to know what you want, and what the author intended.
+And this won't warranty that the module works as intended by the author.
+......<BR>
+<BR>
+The first idea that arises is then "programming by contract", that is,
+every time some piece of code is called, it will first check all the
+assumptions made on the parameters, and when it returns, the caller will
+check that the result does fill all the requirements. This may seem simple,
+but implementing such technique is quite tricky: it means that checking the
+parameters and results is easy to do, and that you trust the checking code
+anyway; it also implies that all the necessary information for proper checking
+is computed, which is loss of space, and that all kind of checking will take
+place, which is loss of time. The method is thus very costly, and what does it
+bring ? Well, the program will just detect failure and abort ! Sometimes
+aborting is ok, when you have time (and money) to call some maintenance
+service, but sometimes it is <EM>not</EM>: a plane, a train, a boat, or a
+spacecraft
+whose software fail will crash, collide, sink, explode, be lost, or whatever,
+and won't be able to wait for repairs before it's too late. And even when
+lives or billion dollars are not involved, any failure can be very costly,
+at least for the victim, who may be unable to work.
+ That's why security <EM>is</EM> something important that any operating
+system should offer support for.
+Why integrate such support in the OS itself, and
+not on "higher layers" ? For the very same reasons that reuse had to be
+integrated to the OS: because else, you would have to use not the system,
+but a system built on top of it, with all the related problems, and you
+would have to rely on the double (or bigger multiple, in case of multiple
+intermediate layers) implementations, that each introduce unsecurity (perhaps
+even bugs), unadapted semantics, big loss in performance.<BR>
+<BR>
+......<BR>
+<BR>
+<A NAME="toc27"></A>
+<H3><A NAME="htoc30">3.11</A>&nbsp;&nbsp;Trusting programs</H3>
+<A NAME="Trust"></A>
+So we just saw techniques to design trustworthy software.
+Now, how could you be sure they were well used (if at all),
+unless you did participate to the design using them ?
+These techniques can only enforce trust to the technician people
+who have access to the internals of the software.
+What kind of trust can the user expect from some software s/he purchased ?<BR>
+<BR>
+Some companies sell support for software, so they shall repair or replace
+computer systems in case the customer may have problems.
+Support is fine indeed; support is even needed by anyone seriously using a
+computer (now which kind of support, it depends on what the customer needs,
+and what he can afford). But support won't ever replace reliable software.
+You never can repair all the harm that may result from misdesigned software
+when used in critical environment: exploding spacecrafts, shutdown phone
+networks, missed surgical operation, miscomputed bank accounts,
+blocked factories, all these cost so much that no one can ever pay back.
+Thus, however important, the computer support one gets
+is independent from the trustworth of the software one uses.<BR>
+<BR>
+The computer industry offers no guarantee to its software's reliability.
+You have to trust them, to trust their programmers and their sellers.
+But you shouldn't, as their interest is to spend as few money as possible
+in making their software reliable, as long as you buy it.
+They may have some ethics that will bind them to design software as reliable
+as they can; but don't count on ethics to last indefinitely, when there is.
+The only way to make sure they strive is to have some pressure on them,
+so that in case they would cheat you, you threaten software vendors to sue them
+(and long when even possible), or to lead a campaign against buying their
+products.<BR>
+<BR>
+The former very hard, when possible at all, and last for years during the which
+you must feed lawyers, be worried, without being sure to win.
+The latter means there is fair competition, so you can choose a product that
+will replace the one that fails; it also means that competing software allow
+to recover your data from the flawed system, and run on your former hardware.
+So even competition isn't enough if it's wild and uncontrolled, and vendors
+can create de facto monopolies on software or hardware compatibility (which
+they do).<BR>
+<BR>
+The only reason why you should trust software is that everyone can, and many
+do, examine, use and test <EM>freely</EM> the software <EM>and</EM> its
+actual or potential competitors, and still keep using it.
+We shall insist on there being potential competitors, to which you
+may compare only if the software sources and internal documentation is
+freely available, which is open development, as compared to
+development with non-disclosure agreements.
+This is the one true heart of liberalism.<BR>
+<BR>
+Now, what if the software you use is too specific to be used and tested by
+many ?
+What if there's no way (at reasonable price) to get feedback from the
+other actual and potential users of the software ?
+What if you don't have time to choose before you can get enough feedback to
+make some worthwhile opinion ?
+In those cases, the liberal theory above won't apply anymore.<BR>
+<BR>
+<A NAME="toc28"></A>
+<H3><A NAME="htoc31">3.12</A>&nbsp;&nbsp;Program proof</H3>
+<A NAME="Proof"></A>
+As the need of security in computer systems grows,
+one can't satisfy himself with trusting all the modules one uses,
+just because other people were (alledgedly) happy with them,
+or the authors of the modules have a good reputation,
+or other people bought it but there's no way to get feedback,
+or (silly idea) one paid a lot for it,
+or have been promised an "equal" replacement (but no money back for the other
+loss) in case it fails.<BR>
+<BR>
+However, trusting a computer system is foremost when lives (or their
+contents) are involved by the correct behavior of a module.<BR>
+<BR>
+Thus, providers of computer system modules will have to provide some
+reliable warranty that their modules cause no harm.
+They may offer to pay back any harm that may result from bugs
+(but such harm is seldom measurable).
+Or they may offer a <EM>proof</EM> of the correctness of their program.<BR>
+<BR>
+Test suites are pretty, but not very significant.
+What are tests in a million cases,
+when there are multi-zillions of them, or even infinitely many ?
+Test suites are due to fail.<BR>
+<BR>
+Computers were born from mathematicians and their theory is largely
+developped. If computer systems are designed from mathematically simple
+elements, that have well-known semantics,
+it may be actually possible to prove that the computer system actually does
+what it is meant to do.<BR>
+<BR>
+The advantage of a mathematical proof is that,
+<EM>when done according to the very strict rules of logic</EM>,
+it is as accurate as a comprehensive test,
+even though such test may be impossible
+because the number of cases so wondrous (when not infinite) that it would
+take far longer than the age of the universe to check each one even at the
+speed of light.<BR>
+<BR>
+Now, proving a program's correctness is a difficult task,
+whose complexity grows uncontrollably with the size of the program to prove.
+This is why the need to use computer systems arises quickly for such proof.
+Thus, to trust the proof,
+you must also trust the computer proofchecking program.
+But this program can be <EM>very short</EM> and easy to understand;
+it can also be made publicly available, and be examined, used, tested,
+by all the computer users and hackers throughout the world,
+as explained previously, because it is useful to everyone indeed.
+If those requirements are fulfilled,
+such program may be really much more reliable
+than the most reknowned human doing the same job.<BR>
+<BR>
+Anyway, the simplest are the specifications and proofs,
+the most reliable they are too.
+Therefore, programmers ought to use the programming concepts that allow
+the easiest proofs, such as pure lambda-calculus, as used in a language
+like like ML. Any kind of thing like side-effects and shared (global)
+variables should be avoided whenever possible. The language syntax should
+remain always clear and as localized as possible.
+As for the efficiency hungry, we recall that however fast to execute,
+an unreliable program is worthless, while
+today's compiler technology is ready to translate mathematical abstractions
+into code that is almost as fast as the unreliable software obtained by
+the so-called "optimizing" compilers for unsafe languages.<BR>
+<BR>
+Of course, having program proofs does not mean we should be less careful.
+If you misspecify what a program must do, and prove the program fulfills
+the bogus specification, you may have a bogus program;
+so you must be careful to undertand well what the program is meant to do,
+and how to express it to the proofchecker.
+Also, proofs are always founded on assumptions.
+With wrong assumptions, you can prove anything.
+So program proofs mean we should always be careful,
+but we may at last concentrate on the critical parts,
+and not lose our time verifying details,
+which computers do much better than us.<BR>
+<BR>
+Actually, that's what machines, including computers, are all about:
+having the human concentrate on the essential,
+and letting the machines do repetitive tasks.
+<BLOCKQUOTE><BLOCKQUOTE><FONT SIZE=2><FONT COLOR=purple>
+A programming language is low level when
+its programs require attention to the irrelevant.
+<BR>
+<BR>
+-- Alan Perlis</FONT></FONT></BLOCKQUOTE></BLOCKQUOTE>
+
+<HR>
+<A HREF="WhyNewOS003.html"><IMG SRC ="previous_motif.gif" ALT="Previous"></A>
+<A HREF="http://tunes.org/serv/tunes/html/papers/WhyNewOS/WhyNewOS-toc.html"><IMG SRC ="contents_motif.gif" ALT="Up"></A>
+<A HREF="WhyNewOS005.html"><IMG SRC ="next_motif.gif" ALT="Next"></A>
+</BODY>
+</HTML>

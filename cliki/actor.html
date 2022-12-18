@@ -1,0 +1,68 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<HTML><HEAD><TITLE>CTO : Actor</TITLE
+><LINK REL="alternate" TYPE="application/rss+xml" TITLE="Recent Changes" HREF="http://tunes.org/cliki/recent-changes.rdf.html"><LINK REL="stylesheet" HREF="admin/cliki.css"></HEAD
+><BODY><DIV ID="banner"><A TITLE="CTO" CLASS="logo" HREF="actor.html">CTO</A
+> <SPAN>CLiki for the TUNES project</SPAN
+></DIV
+><DIV ID="navbar"><A CLASS="internal" HREF="index.html">Home</A
+>  <A CLASS="internal" HREF="cliki.html">About CLiki</A
+> <A CLASS="internal" HREF="text_20formatting.html">Text Formatting</A
+> </DIV
+><DIV ID="main"><H1>Actor</H1
+>The <a class="internal" href="term.html" >term</a> for a <a class="internal" href="paradigm.html" >paradigm</a> of programming which models computations with <a class="internal" href="concurrent.html" >concurrent</a> (possibly transparently-<a class="internal" href="distributed.html" >distributed</a>) entities, the <em>Actors</em>, that communicate with asynchronous messages; <em>Actors</em> may update their behaviour depending on the messages they receive.
+<p><strong>Nota bene</strong>: sometimes Actors are <em>inappropriately</em> called <a class="internal" href="agent.html" >Agent</a>s (see for example the abstract of <cite>Actors as a special case of concurrent constraint (logic) programming</cite> below), a <a class="internal" href="term.html" >term</a> often used when Actors are instantiated remotely, or are "mobile agents"; an <a class="internal" href="agent.html" >Agent</a> could be implemented using or not the Actor <a class="internal" href="paradigm.html" >paradigm</a>, but in any case the two <a class="internal" href="term.html" >term</a>s are distinct.
+<p><h4>Actors and <a class="internal" href="capability.html" >capabilities</a></h4>
+<ul class="links">
+<li><A HREF="http://www.erights.org/history/index.html">E's History</A
+>, in particular <A HREF="http://www.erights.org/history/actors.html">Actors: Foundations for Open System</A
+>.
+<blockquote>
+[..] is as foundational a model of computation as the <a class="internal" href="turing_20machine.html" >Turing</a> or Von Neumann models. It is a pure theory of <a class="internal" href="object.html" >object</a>/<a class="internal" href="capability.html" >capability</a> computation and of asynchronous <a class="internal" href="distributed.html" >distributed</a> <a class="internal" href="open.html" >Open</a> System computation. <strong>At the Vat granularity, <a class="internal" href="e.html" >E</a> is an Actor system</strong>.
+</blockquote>
+</ul>
+<p><h4>Actors and <a class="internal" href="concurrent.html" >concurrent</a> <a class="internal" href="constraints.html" >constraint</a> <a class="internal" href="logic.html" >logic</a> programming</h4>
+<ul class="links">
+<li>Ken Kahn, Vijay Saraswat. <A HREF="http://doi.acm.org/10.1145/97945.97955">Actors as a special case of concurrent constraint (logic) programming</A
+>. In OOPSLA/ECOOP 1990. (citation at ACM providing access to full text for a charge or if you are a member of SIGPLAN).
+<blockquote><strong>Abstract</strong>
+<p>Saraswat recently introduced the framework of <a class="internal" href="concurrent.html" >concurrent</a> <a class="internal" href="constraints.html" >constraint</a> programming [14]. The essence of the framework is that computations consist of <a class="internal" href="concurrent.html" >concurrent</a> agents interacting by communicating <a class="internal" href="constraints.html" >constraints</a>. Several <a class="internal" href="concurrent.html" >concurrent</a> <a class="internal" href="constraints.html" >constraint</a> <a class="internal" href="programming_20languages.html" >programming languages</a> have been defined. They differ in the kinds of <a class="internal" href="constraints.html" >constraints</a> that can be used as well as the kinds of operations on <a class="internal" href="constraints.html" >constraints</a> which are available. In this paper we introduce a very simple <a class="internal" href="concurrent.html" >concurrent</a> <a class="internal" href="constraints.html" >constraint</a> language we call Lucy, designed to closely mimic the <a class="internal" href="actor.html" >Actor</a> model of computation. Agents can communicate only by the posting of <a class="internal" href="constraints.html" >constraints</a> upon bags (un-ordered collections possibly with duplicate elements). This very impoverished <a class="internal" href="concurrent.html" >concurrent</a> <a class="internal" href="constraints.html" >constraint</a> language is a syntactic subset of <a class="internal" href="janus.html" >Janus</a>, a <a class="internal" href="concurrent.html" >concurrent</a> <a class="internal" href="constraints.html" >constraint</a> language which closely resembles <a class="internal" href="concurrent.html" >concurrent</a> logic <a class="internal" href="programming_20languages.html" >programming languages</a> such as Guarded Horn Clauses [21], Strand [5], Parlog [2] and Flat Concurrent Prolog [13]. By identifying the subset of <a class="internal" href="janus.html" >Janus</a> which is an <a class="internal" href="actor.html" >Actor</a> language, we elucidate the relationship between <a class="internal" href="actor.html" >Actor</a>s and <a class="internal" href="concurrent.html" >concurrent</a> logic programming (and its generalization as <a class="internal" href="concurrent.html" >concurrent</a> <a class="internal" href="constraints.html" >constraint</a> programming). Lucy is best not thought of as a unification of logic and <a class="internal" href="constraints.html" >constraint</a> programming with <a class="internal" href="actor.html" >Actor</a> and <a class="internal" href="object-oriented.html" >object-oriented</a> programming, but as the missing link between these programming language genera.
+</blockquote>
+</ul>
+<p><h4>Systems implementing Actors</h4>
+<p>Development systems integrating the Actor <a class="internal" href="paradigm.html" >paradigm</a>: <a class="internal" href="framerd.html" >FramerD</a>, <a class="internal" href="erlang.html" >Erlang</a>, <a class="internal" href="e.html" >E</a>, <a class="internal" href="io.html" >Io</a>, <a class="internal" href="salsa.html" >Salsa</a>.
+<p>Other experimental systems integrating the Actor <a class="internal" href="paradigm.html" >paradigm</a>: <a class="internal" href="jocaml.html" >JoCaml</a>, <a class="internal" href="abcl.html" >ABCL</a>, <a class="internal" href="tube.html" >Tube</a>.
+<p>You can write software in actor-oriented style in about any language that allows to do or simulate concurrent programming, but the result will be somewhat painful, especially so when the underlying implementation restricts the number of Actors (e.g. practical limitation of some ten thousands of <a class="internal" href="thread.html" >thread</a>s in Java systems and "native" system <a class="internal" href="thread.html" >thread</a>s system), so you either live by such drastic limitations, end up reimplementing all the infrastructure, or only make a half-baked use of the model.
+<p><h4>History of the Actor <a class="internal" href="paradigm.html" >paradigm</a></h4>
+<p>See the works by Carl Hewitt, <a class="internal" href="henry_20baker.html" >Henry Baker</a>, Henry Lieberman, Will Clinger, Gul Agha and others while at MIT, or by other fine people like <a class="internal" href="a._20yonezawa.html" >Akinori Yonezawa</a>. Actors have been rediscovered twenty years later by formal-methods people, yielding the very cleanly formalized <a class="internal" href="join_20calculus.html" >join calculus</a>. They have also been rediscovered by the industry, and a nice language that robustly implements the actor model is <a class="internal" href="erlang.html" >Erlang</a>.
+<p><span class="comment">Actors are the real thing of which <a class="internal" href="object-oriented.html" >object-oriented</a> programming is the caricature. Actors are what Alan Kay had in mind but couldn't initially achieve when inventing the <a class="internal" href="object-oriented.html" >object-oriented</a> <a class="internal" href="paradigm.html" >paradigm</a>. When people say that OOP is based on an "intuitive" modelling of the world as <a class="internal" href="object.html" >object</a>s in interaction, the intuition they invoke is the Actor model, but their actual <a class="internal" href="oo.html" >OO</a> model is a less-expressive version where only one <a class="internal" href="object.html" >object</a> is active at a time, with a linear flow of control: <a class="internal" href="object.html" >object</a>s are crippled Actors deprived of independent activity. Retrofitting concurrency in an existing <a class="internal" href="object-oriented.html" >object-oriented</a> system can help express the Actor <a class="internal" href="paradigm.html" >paradigm</a>, but it requires more than the superficial addition of <a class="internal" href="thread.html" >thread</a>s to unleash the real thing.
+-- <a class="internal" href="fare.html" >Fare</a>
+</span>
+<p><h4>Other names</h4>
+<p>Other names for models equivalent to the Actor <a class="internal" href="paradigm.html" >paradigm</a>: "<a class="internal" href="concurrency-oriented.html" >Concurrency-Oriented</a> Programming" (term used within the <a class="internal" href="erlang.html" >Erlang</a> community), "<a class="internal" href="join_20calculus.html" >Join calculus</a>" (formal model implemented in JoCaml), etc.
+<p><h4>People involved</h4>
+<ul class="links">
+<li>Carl Hewitt's <A HREF="http://web.archive.org/web/20041011221414/http://www.ai.mit.edu/people/hewitt/">Home Page</A
+> courtesy of WayBack Machine (<A HREF="http://www.ai.mit.edu/people/hewitt/hewitt.html">old link</A
+> <a class="internal" href="mia.html" >MIA</a>).
+<li>Henry Lieberman's <A HREF="http://lieber.www.media.mit.edu/people/lieber/">Home Page</A
+>.
+<li>William D. Clinger's CCS <A HREF="http://www.ccs.neu.edu/home/will/">Home Page</A
+>.
+<li>Gul Agha's <A HREF="http://osl.cs.uiuc.edu/">Open System Laboratory</A
+>.
+<li>Vijay A. Saraswat's <A HREF="http://www.saraswat.org/">Home Page</A
+>.
+</ul>
+<p><h4>Assorted links</h4>
+<ul class="links">
+<li><A HREF="http://en.wikipedia.org/wiki/Actor_model">Actor Model</A
+> at Wikipedia
+<li><A HREF="http://www.dekorte.com/Actors/Chart.html">Actor-based Languages chart</A
+> by <A HREF="http://www.dekorte.com/">Steve Dekorte</A
+>.
+<li>The corresponding page on the is <A HREF="http://c2.com/cgi/wiki?ActorsModel">C2 Wiki</A
+>.
+<li><A HREF="http://students.bath.ac.uk/cs2mjw/actors/index.htm">The Actors Programming Paradigm</A
+>, a coursework website.
+</ul>
+<hr><p><b>Pages in this topic: </b> <a class="internal" href="abcl.html" >ABCL</a> &nbsp; <a class="internal" href="cal.html" >CAL</a> &nbsp; <a class="internal" href="e.html" >E</a> &nbsp; <a class="internal" href="erlang.html" >Erlang</a> &nbsp; <a class="internal" href="framerd.html" >FramerD</a> &nbsp; <a class="internal" href="join_20calculus.html" >Join Calculus</a> &nbsp; <a class="internal" href="netclos.html" >NetCLOS</a> &nbsp; <a class="internal" href="real-time_20maude.html" >Real-Time Maude</a> &nbsp; <a class="internal" href="salsa.html" >Salsa</a> &nbsp; <hr><p><b>Also linked from: </b> <a class="internal" href="abstraction_20inversion.html" >Abstraction Inversion</a> &nbsp; <a class="internal" href="agent.html" >Agent</a> &nbsp; <a class="internal" href="concurrency-oriented.html" >Concurrency-Oriented</a> &nbsp; <a class="internal" href="highly_20concurrent.html" >highly concurrent</a> &nbsp; <a class="internal" href="io.html" >Io</a> &nbsp; <a class="internal" href="linda.html" >Linda</a> &nbsp; <a class="internal" href="linear_20logic_20comments.html" >Linear Logic Comments</a> &nbsp; <a class="internal" href="microkernel.html" >Microkernel</a> &nbsp; <a class="internal" href="microkernel_20debate.html" >Microkernel Debate</a> &nbsp; <a class="internal" href="sr.html" >SR</a> &nbsp; <a class="internal" href="unified.html" >Unified</a> &nbsp; <a class="internal" href="virtual_20machine.html" >Virtual Machine</a> &nbsp; </DIV></BODY></HTML>

@@ -1,0 +1,89 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+  <head>
+    <!--#include virtual="/head.html" -->
+    <title>The Worlds Interface Metaphor</title>
+  </head>
+  <body>
+    <h1 align="center">The Worlds Interface Metaphor</h1>
+    <!--#include file="header.html" -->
+    <p><em>First note:</em> since written, <a href="http://squeak.org">Squeak</a>'s <a href="http://www.opencroquet.org">Croquet</a>/TTime system has addressed most of these issues in a small way. Move them into Slate and work upwards.</p>
+    <h2>Sketch</h2>
+    <ul>
+      <li>User interaction takes place through "worlds"</li>
+      <li>Instead of a login shell, user "logs in" to a world.</li>
+      <li>Worlds might be interacted with via text, 2D/3D pictures, sound, etc., and different combinations of these (which of these is used depends on how the world is set up).
+	<p>The choice of the interface should be separ<em>able</em> from the content of the world in cases where it matters, such as for limited terminals or for disabled people. However, if the content inherently assumes a particular interface, such as a video game, then this should be reflected when another choice is selected, either with failure to render entirely, or some notice of partial failure and a partial mapping into that interface.</p>
+      </li>
+      <li>Each world has some subset of the universe of objects inside it.</li>
+      <li>Objects may be added to a world by a <em><tt>realize</tt></em> or some other command, and then may be later removed/unrealized.</li>
+      <li><em>Realized</em> (or <em>fetched</em>) objects become part of the world, and abide by the world's "physics".  (<em>e.g.</em> realizing a chunk of text might, in a 2D windowing system world, bring up something not too distant from today's word processors). This is a form of <a href="http://tunes.org/Migration">migration</a>, although worlds would have a more complex notion of context than the simple HLL context notion, by all appearances of the concept, and a lot of its implementation issues seen in similar systems in this area.</li>
+      <li>Objects are interfaced to the world through modules/sub-objects, which specify the object (visually, etc.) in terms of other objects in the world or low-level graphics/audio/etc primitives.</li>
+      <li>Normally, one such module exists for each world an object can interface with.</li>
+      <li>But there are exceptions -- world may provide for <em>generic</em> object support, where users can interact with an object just by setting attributes, etc. (<em>e.g.</em> in a world that doesn't support input siders (used for volume controls, etc.), a user might still be able to set some object's field to a value between 1 and 100 to control the slider's value.)</li>
+      <li>Worlds can enclose other worlds. A world can even enclose a copy of itself. To achieve this, worlds must be careful to access drivers (that can be emulated) and not the hardware directly.  Sure, some worlds could access the hardware directly, but this is not reccomended, as it makes that world impossible to run within another world. (<em>Editor's note:</em> what is this saying about the semantics of worlds?)</li>
+      <li>Worlds should interact with Tunes HLL contexts for their security and separation models.</li>
+    </ul>
+<h2>Issues</h2>
+    <ul>
+      <li>Where are objects when not in a world?
+	<p>This is a question of when objects are merely part of the system versus when they are "brought" into representation in a particular world. This could also be a question of navigation versus the <em>fetching</em> concept above.</p>
+	<p>Ultimately, this just relegates them to the general object store: they are stored persistently and can be reclaimed when not used anywhere. Objects that aren't in worlds simply aren't current having-been-fetched into them. If the object only mattered for the world interface, casting it out of the worlds it was in will just let it be forgotten, since it didn't matter anywhere else.</p>
+      </li>
+      <li>Objects can reside in multiple worlds at once. However, this stands against concreteness, as explained by the Self project User Interface team. This could be handled with some visually-marked notion of a proxy, alias, or shadow. This still results in some confusion, as the latter concept can be quite variable.</li>
+      <li>Do worlds support, but don't encourage abstraction. Abstractions can be created (as sub-worlds, perhaps) as needed, but part of the worlds system's advantage is how easy it is to <em>not</em> provide abstraction.
+	<p>Say I have a text object that I want the user to edit.  I can simply plot this object in the user's world, and it'll figure out what to do with itself. That way, I don't have to support it with any of my time/code. (Not sure how that relates to abstraction...)</p>
+	<p>(<em>Editor's note:</em> this seems to be wanting the ideas of CLIM's presentation types, and otherwise doesn't seem conceptually-feasible. Perhaps presentation type can be contrasted with world-context types, where certain types of world-contexts naturally respond with certain presentation-types when asked for new objects.)</p>
+      </li>
+      <li>Multiple users logging into a world, with synchronization and rights-policies.</li>
+      <li>Communication between worlds: done only with worlds as objects, with possible visible representations. A separate meta-object protocol for communication in general may help here.</li>
+      <li>Travel between worlds should be accomplished by a sort of <em>portal</em> or "warp" to other worlds.
+	<p>A portal (maybe an icon) is nothing else than the representation of another world ("room") in the current one.  Entering it would be equivalent to first looking in it (opening it/ looking inside it/ changing its representation from icon to window) and then making it the "default view" by zooming it to full-screen size.</p>
+      </li>
+    </ul>
+
+<h2>Cool thoughts</h2>
+    <ul>
+      <li>Text objects created as sub-worlds, with their own "laws" appropriate to text, etc.
+	<p>This is a concept that leaks towards the HLL context concept: Many objects may be regarded as providing a specialized context and some variably-complex notion of a grammar for its members and children. To oversimplify a metaphor, a parser would be reduced to a kind of object with higher-order behavior.</p>
+	<p>To relate to worlds, this suggests that there should be specific world types to represent this relation and allow direct-manipulation type of access to it. However, the grammar plays a kind of role of the "laws of physics" for the space; direct-manipulation would map to simple linguistic steps that would be resisted per the grammar's dis-allowances.</p>
+      </li>
+    </ul>
+
+<hr>
+
+<pre>
+(about inference and proof)
+   Both are two sides of the same problem: define specifications of
+objects, and use these specifications. Combining objects requires a
+formal or informal "proof" of the specifications, and finding an
+object is just proving an existential specification "there exists an
+object such that...".
+   We won't give info for "every possible case", which is impossible,
+because we want maximal power, and thus have infinitely rich systems
+so "every possible case" will not fit any finite memory. Instead,
+there will be some human-controlled inference system. Interesting
+proofs will be cached in databases; particularly, packages come with
+standard proofs and ad-hoc provers so they can be used easily. If no
+proof is available, standard programmable tools are provided so the
+user can try find a new proof. As TUNES evolves, more or less complex
+AI programs will appear and relieve the human from doing those proofs.
+Meanwhile, superusers have the "admit it" tool, too, so they need not
+be good at logic to have programs run.
+
+(about installation / build automation)
+   Sure, sure. We shall provide the most simple possible installation,
+with automated mutual recognition of software packages: software being
+uniquely named, and coming with formal and unformal specifications, this
+is a very doable task; some AI could later allow the system to run with
+less explicit information. Now, if we control the software, we do not
+control the hardware, and thus we cannot be sure to install fully
+automatically and recognize all the hardware at the same time.
+   To conclude, software installation will be automatical and programmable
+(i.e. under full user control). Default installation will be secure, but
+will propose the user to try less secure hardware modules, and choose the
+options for modules in general.
+    </pre>
+    <!--#include virtual="/footer.html" -->
+  </body>
+</html>

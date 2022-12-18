@@ -1,0 +1,77 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+  <head>
+    <!--#include virtual="/head.html" -->
+    <title>TUNES Collaboration Area</title>
+  </head>
+  <body>
+    <h1>TUNES Collaboration Area</h1>
+    <!--#include file="header.html" -->
+<p>
+<a href="collaboration.html#mail">Mailing Lists</a> |
+<a href="collaboration.html#irc">IRC</a> |
+<a href="collaboration.html#cvs">CVS Server</a>
+</p>
+
+<p><em>
+Status (Dec. 2007): We are mostly working on our own separate projects, however, the #tunes IRC channel has shown signs of life, the mailing list is still running, and we are transitioning to a Django-powered interactive website.
+</em></p>
+<p>
+See the <a href="index.html">main page</a> for the latest news.
+</em></p>
+
+    <hr>
+    <h2><a name="mail">Mailing Lists</a></h2><p>
+    <p>Our mailing lists are open to anyone.  The WWW-interface is at <strong><tt><a href="http://lists.tunes.org/">lists.tunes.org</a></tt></strong>. Please use this link to access all TUNES project lists and TUNES hosted lists.</p>
+    <p>To (un)subscribe to any lists, go to <tt><a href="http://lists.tunes.org/">lists.tunes.org</a></tt> and find the name of the list, then fill in your e-mail address in a form.  It will mail you a confirmation and then when you reply, you're added to that list.  Each list has its own password that will be randomly generated (but you can change it).  If you don't see a form, then that is probably an archive only list, which you can't subscribe to either because it is closed, or because it is hosted elsewhere.
+    <p>The TUNES project lists are:</p>
+    <ul>
+      <li><a href="http://lists.tunes.org/mailman/listinfo/tunes">TUNES</a> (General discussion)</li>
+      <li><a href="http://lists.tunes.org/mailman/listinfo/tunes-announce">TUNES-Announce</a> (Announcements only)</li>
+      <li><a href="http://lists.tunes.org/mailman/listinfo/tunes-cvs">TUNES-CVS</a> (CVS Check-in log)</li>
+    </ul>
+    <p>There are other interesting lists hosted here which you can browse on <a href="http://lists.tunes.org/">lists.tunes.org</a> that are related to TUNES.</p>
+    <p>The mailing-list administrator is <a href="mailto:dem@tunes.org">Tril</a>.</p>
+    <p>If you were unsubscribed inadvertently, maybe it was because your e-mail address had delivery problems.  To be sure, check the <a href="removed.html">List of removed addresses</a>.</p>
+
+    <hr>
+    <h2><a name="irc">IRC</a></h2>
+    <p>The official TUNES IRC channel is <tt>#Tunes</tt> on <tt><a href="http://www.freenode.net">irc.freenode.net</a></tt>, an organization promoting Free software projects through IRC hosting service for collaboration and help-sessions.</p>
+    <ul>
+      <li>Logs are available at <a href="http://tunes.org/~nef/logs/tunes/">~nef/logs/tunes/</a>, WWW-browsable at Kevin Rosenberg's <a href="http://meme.b9.com/">Meme Log Interface</a>.</li>
+      <li>Old logs are available: <a href="http://tunes.org/~nef/logs/">~nef/logs/</a>.</li>
+      <li>Oldest logs are at: <a href="http://tunes.org/files/irc/old/">files/irc/old/</a>.</li>
+    </ul>
+
+    <hr>
+    <h2><A NAME="cvs">CVS Server</a></h2>
+    <p><em>Note: We are switching to GIT soon... the CVS server may not even be running anymore, but here's the information:</em></p>
+    <p>TUNES development is coordinated through our CVS server. The server is also open to anonymous read-only connections, so testers may check-out a build tree of TUNES.</p>
+    <p>A <a href="http://tunes.org/cgi-bin/viewcvs.cgi">web interface</a> to the repository is also maintained.</p>
+    <p>Instructions for access:
+    <ol>
+      <li>Change to a directory in which a <tt>tunes/</tt> directory containing your local CVS copy will be created.</li>
+      <li>Under bash or <a href="http://www.zsh.org">zsh</a>, type:
+	<pre>export CVSROOT=:pserver:anonymous@cvs.tunes.org:/cvs</pre>
+	<p>If you are using another shell, then you should know how to set variable <tt>CVSROOT</tt> to the given value. Then type: <pre>cvs login</pre> and use the password: <pre>anonymous</pre>
+<li>If you are a <a href="members/index.html">registered active TUNES developer</a> (if you want to be, but are not yet, you may apply <a href="poll.html">here</a>), you may instead (after having setup <tt><a href="http://www.openssh.com/">ssh</a></tt> correctly) type:
+	<pre>export CVSROOT=:ext:yourlogin@cvs.tunes.org:/cvs
+export CVS_RSH=ssh</pre></li>
+      <li>Only now can you issue CVS commands to our server. The command to get the whole tunes tree is:
+	<pre>cvs -z 9 checkout tunes</pre>
+	Afterwards, you may get incremental updates simply by entering the <tt>tunes/</tt> directory and typing: <pre>cvs -z 9 update -dP</pre>.</li>
+      <li>If make modifications, you may contribute them back to everyone. If you're a member, just use <pre>cvs -z 9 commit</pre> Otherwise, you can mail a patch made with <pre>cvs -z 9 diff</pre> to <a href="mailto:patches@tunes.org">patches@tunes.org</a></li>
+      <li>For more details, read the documentation about <a href="http://www.loria.fr/~molli/cvs-index.html">CVS</a>, including your own local texinfo docs (under Emacs, type <tt>C-h&nbsp;i</tt>). For instance, option <tt>-z&nbsp;9</tt> is for <tt>gzip</tt> compression of communications (mightn't work well under cygwin).</li>
+    </ol>
+    <p>If you want to be kept informed of progress in the Tunes CVS tree, subscribe to the <em><a href="http://lists.tunes.org/cgi-bin/wilma/tunes-cvs">tunes-cvs</a></em> mailing-list where messages are automatically generated after every checkin.</p>
+<p>Tunes-cvs list actions:<br>
+[<a href="http://lists.tunes.org/cgi-bin/wilma/tunes-cvs#browse">browse</a>]
+[<a href="http://lists.tunes.org/cgi-bin/wilma/tunes-cvs#search">search</a>]
+[<a href="http://lists.tunes.org/cgi-bin/list-control?list=tunes-cvs&amp;do=subscribe">subscribe</a>]
+[<a href="http://lists.tunes.org/cgi-bin/list-control?list=tunes-cvs&amp;do=unsubscribe">unsubscribe</a>]
+[<a href="mailto:tunes-cvs@tunes.org">post</a>]
+</p>
+
+    <!--#include virtual="/footer.html" -->
+  </body>
+</html>

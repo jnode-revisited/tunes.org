@@ -1,0 +1,286 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 3.2 Final//EN">
+<HTML>
+<HEAD>
+ <META NAME="GENERATOR" CONTENT="LinuxDoc-Tools 0.9.8.1">
+ <TITLE>Specifications for the T3P -- Tunes Package Publishing Protocol: Introduction</TITLE>
+ <LINK HREF="T3P-2.html" REL=next>
+
+ <LINK HREF="T3P.html#toc1" REL=contents>
+</HEAD>
+<BODY>
+<A HREF="T3P-2.html">Next</A>
+Previous
+<A HREF="T3P.html#toc1">Contents</A>
+<HR>
+<H2><A NAME="s1">1.</A> <A HREF="T3P.html#toc1">Introduction</A></H2>
+
+<P>This document describes the T3P,
+a protocol used by Tunes to transmit data.</P>
+
+
+<H2><A NAME="ss1.1">1.1 Motivation</A>
+</H2>
+
+<H3>Why a protocol</H3>
+
+<P>Because a system is useful in as much
+as it can communicate with the external world,</P>
+<P>because in its early development phase,
+it must be cross-developped,
+hence need to communicate a lot with the external world,</P>
+<P>because we want to be able to save individual objects
+for communication with others or a later ``self''
+without having to dump the whole system
+(
+<BLOCKQUOTE>Note that we actually might want
+to dump a whole system's state as a same consistent object,
+and actually, we do want such thing be implicitly done at all time,
+so as to achieve persistency across shutdowns.
+The point here is that we might want not to,
+so as to transmit a meaningful part of the system
+without having to transmit the whole bulk of it
+that we don't mean and would be noise...</BLOCKQUOTE>
+),</P>
+<P>because of all these reasons and lots more,
+Tunes needs a robust, well-defined protocol to publish objects.</P>
+<P>It just cannot be useful if it stays a closed system,
+that can talk only to itself until it eventually dies.</P>
+
+
+<H3>Why a new protocol.</H3>
+
+<P>Because the protocol to communicate Tunes objects
+must be able to express all these objects,
+it must be expressive enough
+(
+<BLOCKQUOTE>Actually, a protocol <EM>is</EM> a computer language,
+and the system is only as expressive as its protocols allow.</BLOCKQUOTE>
+).</P>
+<P>Because Tunes is more expressive than any existing system,
+we know that no existing protocol can fit our needs.</P>
+<P>Of course, some existing protocols might be source of strong inspiration...</P>
+
+
+<H3>Why an external protocol</H3>
+
+<P>Internal protocols are specifically left undefined,
+so that Tunes should freely and implicitly optimize it.</P>
+<P>This protocol itself should be have the possibility
+of dynamically expressing and local optimizations,
+so as not to be a burden to arbitrarily efficient communications.</P>
+<P>Good optimizations should quickly become global,
+and the conventional protocol will have to evolve with time;
+but here all modifications will be explicit,
+by the very nature of an external interface protocol.</P>
+
+
+<H3>Applicability and Limits of the T3P</H3>
+
+<P>The T3P will only consider publication,
+where objects are sent in.
+It is an <EM>encoding</EM> protocol.</P>
+<P>It does not handle <EM>interaction</EM> which can
+be handled independently by other protocols.
+For instance, we don't bother here with synchronization problems;
+we suppose that such information as
+the size of the manipulated objects
+are made available by the interaction protocols;
+and so on.</P>
+<P>Of course, high-level interaction protocols
+can be built on top of an encoding layer,
+in as much as an encoding layer can be built on top of interaction layers.
+We have higher-order functors here, not mere static layers.</P>
+
+
+<H2><A NAME="ss1.2">1.2 Flavors and Versions</A>
+</H2>
+
+
+
+<H3>Flavors</H3>
+
+<P>The T3P comes in flavors, so as to adapt to the underlying media:
+a random-access flat memory does not have the same constraints
+as a sequential stream.</P>
+<P>The size, endianness, etc, of atomic elements (bytes, words, whatever)
+also constrains the protocol.</P>
+<P>The T3P is still a one protocol,
+in that adapted flavors are instances of a more generic meta-protocol.</P>
+
+<H3>Current flavors</H3>
+
+<P>Currently, byte-streams being the one standard low-level way
+for computers to communicate;
+hence, the T3P will be have a byte-stream oriented flavor, the TB3P.</P>
+<P>Because the stream aspect of data
+is more standard, and more stable than its byte-orientation,
+the TB3P will be a byte-oriented specific instance
+of a more generic TS3P protocol for generic streams.</P>
+<P>Another related protocol will be the TA3P,
+to transmit objects over standard readable ASCII text channels.
+It may also serve as a low-level text input/output method for objects</P>
+<P>If other low-level standards are to be supported,
+various flavors and sub-flavors will be defined accordingly.</P>
+
+<H3>Versions</H3>
+
+<P>Because we're sure substantial enhancements will be found,
+as well as possibly bugs,
+we must have a versioned protocol,
+so as to be able to seemlessly upgrade it
+without introducing ambiguities.</P>
+<P>Everything afterwards is completely dependent on flavor and version,
+and may change completely with time.</P>
+<P>Below are descriptions for the current versions.</P>
+
+
+<H2><A NAME="ss1.3">1.3 Meta-Objects</A>
+</H2>
+
+<P>The encodings will be defined in terms of a local context,
+named the meta-object.</P>
+
+<H3>Globally Named Meta-Objects</H3>
+
+<P>There will be a global registry of standard encoding (sub-)protocols,
+so that it be possibly to uniquely identify in the exact context
+in which something is encoded.</P>
+<P>Hence, if a machine sees an object with an unknown meta-object,
+it can unambiguously query a global registry
+(see 
+<@@ref>TGRthe Tunes Global Registry</A> below),
+and negociate safe downloading and installation of according handlers.</P>
+<P>All that is needed is that meta-objects builtin
+to basic Tunes distributions (including ``standard libraries'')
+be enough to connect to the registry
+somewhere on the Internet (or on CD-ROM, or whatever).</P>
+<P>How the Tunes Global registry works is worth a section of its own.
+Suffices to say that current version <CODE>TGR0</CODE> is experimental,
+with 32-bit UIDs (Universal IDs) as a prototyping simplification.</P>
+
+
+
+
+<H2><A NAME="ss1.4">1.4 The Tunes Global Registry</A>
+</H2>
+
+<P>The Tunes Global Registry, or TGR, will handle Universal Identifiers (UID)
+for objects that be shared on a large scale accross space and/or time.</P>
+
+
+<H3>TGR0, the Tunes Global Registry, v0</H3>
+
+<P>TGR0, or ``Tunes Global Registry, version 0''
+is the first, experimental, version of the TGR.
+The design is likely to change a lot until Tunes 1.0,
+so take everything here with a pinch of salt.</P>
+<P>The TGR0 will serve to register coarse-grained modules and protocols,
+which in turn can contain subobjects.</P>
+<P>The address space for this initial meta-object registry,
+as applicable in the early versions of the T3P at least is <EM>32-bit</EM>.
+This is a compromise to simplify complexity of initial implementations,
+yet have enough space for some experimentation with semi-automated registry.
+If 32-bit quickly proves too little, TGR0 might be prompty upgraded to 64-bit.
+Or we might choose to experiment with address-space multiplexing,
+with recursive sub-spaces of various (and/or variable) length.</P>
+
+
+<H3>Contacting the TGR0</H3>
+
+<P>Tunes will have standard primitives to query the TGR0.</P>
+<P>As there will be standard TCP/IP ports for Tunes servers to listen,
+anyone can connect there, and talk using either TA3P or TB3P,
+then issue TGR0 queries using normal Tunes primitives.</P>
+<P>When Tunes is bootstrapped,
+a tunes.org internet domain will be registered
+(or something else, if this is already taken).
+Then, connecting to given ports on meta.server.tunes.org
+will enable clients over the world to access the registry.
+The meta-server might actually ask the client to reconnect
+to a nearer server, but in any case,
+there will be a known authority to which to connect on the Internet.</P>
+
+
+<H3>TGR0 subdivision</H3>
+
+<P>The 32-bit TGR0 address space will itself be divided
+into parts with different registration behavior,
+and every part can itself be subdivided as necessary
+for the needs of registration.
+When the limits of some division are reached, or even before,
+multiplexing meta-objects will be made available
+to enlarge the available address space.
+Or if 32-bit are really too tight,
+early enlargement to 64-bit may be decided.
+UIDs are in hexadecimal.
+dot may be used as an optional separator between UIDs for easier reading.</P>
+<P>
+<DL>
+<DT><B>0000.0000 - 00FF.FFFF</B><DD><P>not to be used,
+which allows for encoding of local IDs and numbers mixed with UIDs</P>
+<DT><B>0100.0000 - 01FF.FFFF</B><DD><P>reserved for Tunes internal usage</P>
+<DT><B>0200.0000 - 0FFF.FFFF</B><DD><P>reserved for registration by Tunes authorities</P>
+<DT><B>1000.0000 - 1FFF.FFFF</B><DD><P>reserved for registration by other authorities</P>
+<DT><B>2000.0000 - 3FFF.FFFF</B><DD><P>dedicated to semi automatic UID registration
+To be subdivided among registrars.</P>
+<DT><B>4000.0000 - 7FFF.FFFF</B><DD><P>dedicated to fully automatic UID registration.
+To be subdivided among servers.</P>
+<DT><B>8000.0000 - FEFF.FFFF</B><DD><P>reserved for conservative expansion towards longer UIDs.</P>
+<DT><B>FF00.0000 - FFFF.FFFF</B><DD><P>not to be used,
+which allows for encoding of local IDs or numbers mixed with UIDs</P>
+</DL>
+</P>
+
+
+<H3>Initial TGR0 setup</H3>
+
+<P>This section should describe the beginning of the Tunes-reserved
+TGR0 address space between 0100.0000 and 0100.FFFF;
+more UIDs may be allocated in this division,
+and even more outside of it,
+but suffices to us to describe enough objects
+to get the whole thing bootstrapped and enlighten the process:
+for the exact state of the whole registry, better contact the global server!</P>
+
+<P>
+<DL>
+<DT><B>0100.0000 - 0100.00FF</B><DD><P>unused, for now</P>
+<DT><B>0100.0100 - 0100.0FFF</B><DD><P>Main Tunes objects, such as Tunes itself,
+the TGR0, the standard portable initial execution environments,
+the standard fallback encodings, etc.</P>
+<DT><B>0100.1000 - 0100.1FFF</B><DD><P>Core primitives from the initial Tunes 0.x execution context</P>
+<DT><B>0100.2000 - 0100.3FFF</B><DD><P>primitives from the Tunes system access library</P>
+<DT><B>0100.4000 - 0100.FFFF</B><DD><P>primitives from the Tunes 0.x standard library</P>
+<DT><B>0101.0000 - 0101.0FFF</B><DD><P>primitives for Tunes on "standard" 32-bit flat architectures</P>
+<DT><B>0101.1000 - 0101.1FFF</B><DD><P>primitives for Tunes on i386 platforms</P>
+<DT><B>0102.0000 - 01FF.FFFF</B><DD><P>reserved for later versions</P>
+</DL>
+</P>
+
+
+
+<H3>TGR1, the Tunes Global Registry, v1</H3>
+
+<P>By the time the needs arise, or when Tunes reaches version 2.0,
+we'll have understood what is a good encoding for standard meta-objects,
+and will switch to an enhanced protocol.</P>
+<P>Backward compatibility is definitely <EM>not</EM> a problem,
+as long as possibly needed conversion routines are freely available.
+During early phases of Tunes, and until the system stabilize,
+we'll feel free to modify the design considerably because there will
+be no user-base to break.</P>
+<P>We'll see the design when we're there.
+Most probably, an expanded version of TGR0, with say 64-bit UIDs,
+depending on the needs that will have been experimentally mesured.
+Perhaps v1 might be a conservative extension to v0,
+if v0 proves successful enough, and such design is favorable to compression.</P>
+
+
+
+
+<HR>
+<A HREF="T3P-2.html">Next</A>
+Previous
+<A HREF="T3P.html#toc1">Contents</A>
+</BODY>
+</HTML>

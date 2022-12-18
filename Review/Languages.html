@@ -1,0 +1,315 @@
+<!doctype html public "-//W3C//DTD HTML 4.01 Transitional//EN">
+<HTML>
+  <HEAD>
+    <!--#include virtual="/head.html" -->
+    <TITLE>Review of existing Languages</TITLE>
+  </head>
+  <body>
+    <H1>Review of existing Languages</H1>
+    <!--#include file="header.html" -->
+
+<H2>Preliminary Note</H2>
+<p>This page has been moved <a href="http://cliki.tunes.org/Programming Languages">to the project Wiki</a>. This page remains for material which for various reasons has not been migrated elsewhere yet. Expect it to be gone shortly.</p>
+<h2>Relevant Features</h2>
+<ul>
+<LI>!&lt;x&gt; means that feature &lt;x&gt; is known not to be supported
+<LI>-&lt;x&gt; means that feature &lt;x&gt; is known not to supported in
+	an ankward and limited mode only
+<LI>(C) indicates that at least one free implementation of the language
+	can be seemlessly interfaced
+	to low-level C calling conventions
+	(which implies lots of runtime safety limitations
+	on the implementation).
+	Such language is often called "Embeddable",
+	because you can embed it into most any application,
+	a low-level interface being the current standard.
+<LI>(!C) indicates that no free implementation of the language
+	can be seemlessly interfaced to low-level C calling conventions
+<LI>(c) indicates that at least one free implementation of the language
+	can be portably extended with C runtime code.
+	This can be safely assumed for most languages,
+	C being the one standard low-level language.
+	Only the opposite, (!c) will be specified.
+<LI>(A) indicates that applicative lambda-calculus
+	is fully supported as part of the language
+<LI>(!A) indicates that the language just can't express lambda-calculus
+	as a first-class citizen
+<LI>(M) indicates a well-done module system
+<LI>(!M) indicates no well-done module system
+<LI>(!=) indicates that the language is not even Turing-equivalent
+<LI>(K) indicates that structured data are first-class values
+<LI>(!K) indicates that structured data are not even first-class values
+<LI>(T) indicates that non-trivial strong typing is supported
+<LI>(t) indicates that only trivial strong typing is supported
+<LI>(!T) indicates that strong typing is faked
+<LI>(!t) indicates that strong typing is not even support
+<LI>(R) indicates clean support for reflection
+<LI>(r) indicates that some safe mechanisms for reflection are available
+<LI>(!R) indicates that dirty stuff for reflection
+	(e.g. backdoor evaluation) only is available
+<LI>(!r) indicates no support for reflection at all
+</UL>
+
+<LI>When Tunes is ready,
+	this page will be made a query-driven database
+	(with standard query forms)
+	where languages/implementations couples
+	will be classified upon the characteristics below.
+<UL>
+<LI>What are the aims and practice of the language/implementation?
+<LI>What kind of language specifications are available?
+	Are they formal specs?
+	Are they some ISO/ANS/IEEE/whatever standard?
+<LI>How compatible is the language with anything?
+	How fast does it evolve?
+	Is it free, or do some corporations/institutions tightly control it?
+	Is it burdened by a reference implementation and legacy code
+	whose quirks must be emulated?
+<LI>What kind of language differences and extensions does the implementation
+	support or not support?
+<LI>What are libraries availables?
+	Which are distributed with the implementation?
+	Which are standard?
+<LI>What global control constructs are available?
+	Procedures? Recursion?
+	First-class procedures (=functional programming)?
+	First-class Continuations?
+<LI>Does the language have lexical scoping?
+	Does it support call-by-name? call-by-value?
+	How is evaluation order defined?
+	Are there parallel constructs?
+<LI>Is the language referentially transparent?
+	Does it support uniqueness annotation of types?
+<LI>Does the language support pure programming style?
+	Does it supports side-effects?
+<LI>What kind of typing does the language have?
+	strong typing? recursive types?
+	type-dependent types?
+	value-dependent types?
+	existential types?
+	resource-annotated types?
+	reflective types?
+	formal verification methods?
+<LI>What kind of pattern-matching does the language have?
+	recursive patterns?
+	Does the language have backtracking?
+	Reflective patterns?
+<LI>How extensible is the syntax?
+	Are there hygienic macros?
+	Can fixness of operators be chosen?
+<LI>Is the language fully reflective?
+<LI>What support does the language offer a standard for encapsulation?
+	Is it possible? Standard? Higher-Order?
+	Semantically simple?
+<LI>Does it have some kind of ad-hoc polymorphism?
+	Does it use single-dispatch? multiple argument dispatch?
+	Is it statically dispatched? Dynamically dispatched?
+<LI>How many implementations does the language have?
+<LI>Now consider each implementation of the language.
+<LI>How is the implementation available?
+	does it run on available platforms?
+	Is it free software? Free-of-charge in certain conditions?
+	Are sources available? Are modifications freely redistribuable?
+<LI>What execution model is used by the implementation?
+	Interpreted text?
+	Interpreted syntax tree/graph?
+	virtual-machine code?
+	straightforward assembly code?
+	optimized assembly code?
+<LI>Is the implementation multithreaded?
+<LI>What kind of garbage collection and automatic resource
+	does it have if any?
+	How does that interfere with features of real-time response,
+	persistence, transactions, finalizations, etc?
+<LI>How well does the implementation support recursion?
+	tail recursion?
+<LI>How upwardly and downwardly scalable is it?
+<LI>What does the syntax generally look like?
+	Is it prefix? postfix? infix?
+	How redundant is it to read? To type?
+	Are there cleanly lexically nested blocks?
+	Are there available structured editors?
+<LI>Does the implementation support separately-compiled modules?
+	Dynamic linking?
+	Dynamic compilation?
+	User Interaction?
+<LI>How can the implementation be extended?
+	Can it interface the whole system?
+	What external services is it already interfaced to?
+<LI>Can the implementation be used to extend existing programs
+	written in another language/implementation?
+	what are supported language/implementation interfaces?
+<LI>What control does the programmer have on the rapidity/quality
+	of the compiler?
+	per-file command-line modifications?
+	hints in source code?
+	feedback from runtime?
+<LI>What are known bugs and limitations of the implementation?
+	How more reliable can it be expected to get?
+<LI>How robust is the implementation?
+	Has it been proven correct?
+	How much tested has it been?
+	Is it using an open development model to speed up the debug cycle?
+<LI>What are other implementations for the language?
+	How different are the dialects?
+<LI>For each feature, how well is it supported?
+	would you normally want to use that feature,
+	given the language/implementation?
+	Would you use that language/implementation, given the feature?
+<LI>It should be possible for implementations to point
+	to the language dialect used,
+	to language dialects to point to main language family,
+	to language families to point to groups of languages,
+	etc,
+	with implicitly inherited or explicitly modified properties.
+</UL>
+</UL>
+
+<A NAME="Scheme Critique"></A>
+<H2>Scheme Critique</H2>
+<p>See generic critique for LISP languages above</p>
+<h3>Pros</h3>
+<OL>
+<LI>Scheme is an IEEE standard.
+<LI>Scheme has got lots and lots of implementations
+<LI>Scheme has got a clean, short, and expressive formal semantics.
+<LI>Scheme has got the best macro systems ever found in a language.
+<LI>Scheme is minimalistic, no unneeded constructs or bizarre rules.
+<LI>Scheme makes lots of things completely orthogonal.
+<LI>Just any program can be made a first-class object in Scheme:
+	it has maximal positive expressiveness.
+<LI>Scheme is the basis for some of the best books to learn computer science
+	(see SICP)
+<LI>Scheme can express just any programming style in existence,
+	including functional, procedural, logic, constraint, OO,
+	and whatever programming style you want,
+	for which you'll easily find lots of example source packages.
+</OL>
+<P>
+<H3>Cons</H3>
+<OL>
+<LI>The standard focuses only on the core language,
+	and completely ignores lots of issues
+	that are required for real world use.
+<LI>All the implementations of Scheme are completely incompatible with
+	each other for anything but batch computation,
+	because only the core language is standardized.
+<LI>Notably, no standard binding for non-trivial I/O primitives,
+	threads, persistence, etc, exist in standard Scheme.
+<LI>It has no <em>standard</em> module system
+	or any easy mechanism for deferred binding.
+<LI>Scheme hasn't got a large standard library,
+	which makes every Scheme implementation
+	incompatible with the others as far as the system interface
+	is concerned. SRFIs are meant to improve things here.
+<LI>Actually, its very lack of a <em>standard</em> module system
+	makes development of such library difficult.
+	This is the ONE BIG PROBLEM that prevents Scheme
+	from being used in large projects.
+<LI>The effect of lack of a module system make things very bad
+	as far as namespace management is concerned:
+	the theory is as bad as C
+	(only a one global namespace),
+	and the practice is even worse
+	(making a <kbd>(define)</kbd> definition local
+	is not a local transformation on a module,
+	whereas in C, putting the <kdb>static</kbd> keyword suffices)
+<LI>Despite its simple and clean semantics,
+	Scheme is too low-level wrt mutability.
+<LI>There is no standard way to declare read-only objects.
+	More modern functional languages can do this,
+	and this really would allow much cleaner semantics,
+	hence easier optimization, etc.
+<LI>The read-write cons cell concept is a very low-level one
+	that dirties the otherwise high abstraction level of the language.
+<LI>More generally, Scheme does introduce both the concepts
+	of values and of locations,
+	but does it in complex non-orthogonal ways,
+	which plain sucks.
+<LI>Even more generally, there are a lot of things doable in Scheme,
+	that the Scheme standard offers no way to do,
+	but with clumsy inefficient abstraction inversion,
+	which makes the language both powerful and frustrating.
+<LI>Every single feature you want may be found as first-class
+	in some Scheme implementation,
+	only it will not be standard,
+	and you'll never find a Scheme implementation with
+	all the features you need.
+<LI>Perhaps because of not having a module system that would allow
+	to separate "core" constructs from "library" constructs,
+	Scheme fails even at providing a really minimal "core" language,
+	and has lots of unorthogonal features.
+<LI>Unlike other LISP dialects,
+	Scheme offers no standard way to do run-time reflection;
+	even support for compile-time reflection is minimal and not
+	very adequate, through explicitly manipulating source as data,
+	and using the macro system.
+<LI>The semantics of Scheme macros is not well-defined;
+	only puny "syntactic macros" are standardized,
+	and nothing is specified about concepts of compile-time, run-time, etc,
+	concerning the non-standard but ubiquitous LISP-like
+	defmacro constructs.
+</OL>
+<!-- jch says:
+   Scheme programmers are somewhat remindful of Forth programmers in
+the way they get moved when speaking about their language.
+   However, contrary to the Forth programmers,
+they can usually justify their claims about it.
+-
+   But I completely disagree with the second sentence:
+Scheme and FORTH just have different purposes,
+and are not targeted at the same applications or computing environments.
+   However, there are good and bad things about these languages that are
+independent from their targets.
+   Scheme has closures and reflection, but controls only a preparsed
+version of its input.
+   FORTH hasn't got closures or any high-level structure,
+but more powerful (though much dirtier) reflection and macro facilities
+(well, if considering Wil Baden's modifications to ANS FORTH)
+   That is, FORTH is meant a low-level language
+while Scheme is meant as a high-level language.
+-->
+
+<H2>A new HLL</H2>
+
+<A NAME="HLL Pros"></A>
+<H3>Pros</H3>
+<OL>
+<LI>We can design the syntax to fit our needs and ideas, so that it's
+much easier to use. Moreover, even C isn't our natural language, and
+whatever language we use, there will have been adaptating time to use
+it.
+<LI>We can correct the lacks of any existing language we would have used.
+<LI>Portability: both the system and the language may be as easy to
+port. All you need do is porting a LLL compiler back-end or interpreter,
+and hardware specific lolos (low-level objects).
+<LI>The language is perfectly well adapted to the system. No need of bizarre
+and slow language -&gt; system call translation.
+</OL>being efficient as an interpreted language, it may serve as a shell
+language as well as a programming language; being powerful, and easy to
+specialize via standard libraries, it also replaces small utility languages
+(sed, awk, perl, etc); finally, being high-level and knowing of
+relations between objects, it is easily adaptated to an AI language.
+So there is no more need to learn a different language for every
+application; the same language is used for (almost) everything; no
+more need to learn new syntaxes each time.
+<A NAME="HLL Cons"></A>
+<H3>Cons</H3>
+<OL>
+<LI>we have to relearn a new language syntax.
+But as we may choose whatever syntax pleases us (and support multiple
+automatically translatable syntax), this is no great deal, really.
+<LI>No existing compiler can be used directly.
+This is no great deal either:
+Front end are easy to write, and
+no existing back end can fit an interestingly new OS' object format,
+calling conventions, and security requirements. 
+Moreover, our system having a brand new conception, even with a traditional
+language, we'll have to learn restrictions about our way of programming.
+<LI>we have to debug the language specifications as we use it. But this can
+prove useful to refine the language and the system specs. <EM>Here</EM> is
+an interesting point.
+</OL>
+    <!--#include virtual="/footer.html" -->
+  </body>
+</html>

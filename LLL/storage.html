@@ -1,0 +1,301 @@
+<!doctype html public "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+  <head>
+    <!--#include virtual="/head.html" -->
+    <TITLE>Low-level Storage</TITLE>
+  </head>
+  <body>
+    <H1>Storage by the TUNES LLL</H1>
+    <!--#include file="header.html" -->
+<P>The current specific mappings being worked on are for the <A HREF="i386/index.html"><B>i386</B></A> and <A HREF="OTOP/index.html"><B>O'TOP</B></A> subprojects.</p>
+
+<A NAME="Goals"><H2>Goals and Requirements</H2></A>
+
+<p>Storage in a high-level extensible distributed persistent system is a very tricky problem: This problem is actually a specific instance of the problems tackled in the <A HREF="../Migration/index.html">Migration</A> subproject. But here we document the choices made in our <A HREF="index.html">LLL</A>.</p>
+
+<A NAME="Draft"><H2>Rough Draft</H2></A>
+
+<p>Persitency is really a tough thing to do well.
+Because we want secure, resiliant persistency, this means we have to
+<EM>synchronize</EM> objects:
+if objects A and B depend on each other, matching versions must be
+saved before together so the system can reload from store in case of
+crash. This may look simple, because it is trivial on a single-threaded
+machine. Now, TUNES is a <EM>distributed</EM>, <EM>parallel</EM>
+system, and this makes it quite harder.
+
+<p>Because we want the system's distribution to be as large as possible,
+the simple algorithm "synchronize everything to a central clock" is not
+feasible: there would always be a crash somewhere before the whole world
+synchronizes. Such an algorithm is always local. Thus we shall use such
+perfect synchronization when we know it's possible for some local set of
+synchronizing objects. For larger sets of objects, we must use conservative
+means.
+
+<p>Actually, this problem is <EM>exactly</EM> a garbage collecting
+problem. Just that objects are (logically) version-tagged so that indeed
+we are garbage collecting a view in a space of constants.
+
+<p>Storage in a high-level extensible distributed persistent
+system is a very tricky problem:
+This problem is actually a specific instance of the problems tackled
+in the <A HREF="../Migration/index.html">Migration</A> subproject.
+But here we document the choices made in our <A HREF="index.html">LLL</A>.
+
+<p>To begin with, we'll use memory zones loaded at constant place,
+e.g. a 512MB virtual zone @ 0x40000000 on i386 and OTOP/i386 systems
+(may vary on other systems). Garbage collection will be very simple,
+with a unique heap of objects with fixed encoding, with a simple escape
+mechanism: integers and various kinds of pointers will be differentiated
+from their lowest and highest bits; to check the "type" of a cell relatively
+to the gc, you just need check parity, sign, and overflow (shifting left and
+right could be usual ways to adjust pointers). An overflow manager could
+resolve special pointers.
+<p>To make things simple, we'll use cooperative scheduling,
+using the stack pointer as a heap pointer, with the convention that at
+schedule time, the stack is clean and well-framed, and consistent for
+other threads to use.
+	Before to allocate more than X pages of heap memory, it would be
+the responsibility of the caller to touch pages down there. Or more probably,
+this would be done by the allocating routine.
+	Half the (real or virtual) memory will be used by the heap. Once the
+half limit is almost reached, we use some stop and copy GC method.
+Another, non-gc heap grows on the other side for real-time and special
+
+<p>For this simple implementation, we shouldn't rely strongly on
+memory being virtual, just offer some small optimizations when possible
+(e.g. remapping everything back to the initial address instead of moving
+the logical address or copying the physical data).
+This way, we are much more portable; and posixish virtual memory sucks
+anyway: no efficient mmaping around without large tables, slow syscall
+for each operation, slow non-standard SIGTRAP recovery, etc.
+We can always enhance later.
+
+<p>When TUNES is fully bootstrapped, we can meta-encode everything
+in nicer and more efficient or portable ways. Meta-encode means we can find
+generic ways to encode, and try them in many combinations, until we find
+which suits our application best.
+<p>
+	Because objects may be migrated, it is most important to keep
+a canonical representation of objects, or be able to generate one at any
+moment. Of course, the first and most simple way will be used for the
+moment. Particularly, we must distinguish in an object which links are
+essential, and which link are incidental. For example, and characteristically,
+when I consider a unique object that I visualize, the visualizing device is
+not essential, and may be migrated; but particularly if the object contains
+real-time animations (e.g. video game), I do want it to be specialized for the
+particular current device, to achieve respectable speed; only I want this
+specialization to be reversible.
+<p>
+	Synchronization will be done by actually creating a new object
+for each version, and remembering it until we're sure a "better" object
+is known (that is, an object more evaluated, and fully synchronized).
+The algorithm is simple: each group of co-synchronizing object chooses
+a "leader" as the object with most simple ID (there must be world-wide
+conventions for such a criterion).
+<p>
+	One way to do things would be to use two mmap() files instead than one.
+That would be neater but much slower, as we'd have to accept a multi-MB
+copying delay at checkpoints, because files can't share blocks, and blocks
+cannot be moved along a file's block mappings.
+<p>
+	So the right way to do things is to maintain ourselves a list of
+mappings between blocks and memory, not really using the underlying system's
+virtual memory thingy if any (well, it's used transparently so a TUNES process
+can coexist with other processes). It seems that somehow, we'll reimplement
+virtual memory ourselves.
+<p>
+	Then, two files is only a way to trade efficiency for simplicity,
+and if we're doing things seriously, we'll have to maintain a list of
+block&lt;-&gt;memory mappings, and because of POSIX deficiencies,
+we'll use read() and write() instead of mmap() (which isn't fine-grained),
+and we won't be able to share pages (at least, we'll need to run even if
+sharing is not available).
+
+<A NAME="Sketch"><H2>Sketch for the initial implementation</H2></A>
+
+<h3>Garbage Collection</h3>
+<UL>
+<LI>
+   Objects will be grouped by page-aligned "segments"
+of similarly sized objects.
+rounding the size up to keep only 2-5 significant bits,
+as a compromise to limit the space wasted as padding
+while not overmultiplying the number of groups,
+which would increase both lookup time and swiss-cheese syndrom.
+<LI>
+   Orthogonally to size grouping, objects will be grouped
+as being read-only or not, linear or not, containing pointers or not,
+having a destructor or not.
+Some of these attributes might be perobject meta information instead.
+<LI>
+   Grouping objects is believed to solve most swiss-cheese syndrom related
+problems without the need to compact memory. Still, compacting can be
+done during "major GCs", once a day.
+<LI>
+   Meta-data can be kept as one byte per object,
+unless we choose treadmill like methods.
+<LI>
+   Meta-information might be kept offpage, apart from data,
+so as not to uselessly fill cache with random data during GC,
+depending on the the nature of the objects;
+this is particularly effective when people allocate whole pages, btw.
+   It can be
+<LI>
+   A "first generation" heap will be done as a stack,
+perhaps using the hbaker92CONS LazyAlloc paper ideas,
+or just the standard Appel thingy.
+   Hence, allocation of short-lived objects will be fast,
+and can be done purely on registers,
+without going through all the hassle implied by above plans
+that needs lots of metadata memory access.
+<LI>
+   We could require all objects to be read-only and/or linear,
+but for a special reference type;
+this would ease object many things
+(object identity, write barrier, and many other things).
+<LI>
+   Particularly, back-pointers from non-linear objects to linear ones
+can be done only through a special set of such reference objects anyway.
+</UL>
+
+<h3>Notes:</h3>
+<UL>
+<LI>destructors, weak pointers, migration handlers,
+ are all particular cases of special semantics to execute at
+ special memory management events,
+ like reclaiming of object space, writing the checkpoint,
+ restoring from checkpoint, migrating in or out.
+ They should be provided a uniform interface,
+ but I don't see how it can be made but in ad-hoc ways.
+
+<LI>A copying GC would color destructible objects,
+ and activate destructors if they were not triggered since one flip/run/etc.
+
+<LI>Generic functions to access objects might be very costly,
+ due to various read or write barriers.
+ However, low-level code can be specialized to jump over the barrier,
+ or pay part of the fee only,
+ when the high-level language (or low-level hacker) could prove that
+ the (whole) barrier isn't needed.
+
+<LI>There are lots of things whose average case is good while the
+ worst case wastes a lot of space. Such space should be *reserved*
+ in virtual memory, so as to ensure the system won't crash even on
+ worst-case conditions; but the system will be tuned to work best
+ on average conditions.
+
+<LI>the exact details of the above plan, as suit most our programs,
+ can only be determined through experimentation.
+ Particularly note that it is independent from the GC method being used
+ (mark&sweep, mark&don't sweep, stop&copy, hbaker rtgc, etc).
+ 
+<LI>The format for the stack (==first generation) could very well
+ be used as a portable format for manipulating objects,
+ in association with a table for objects violating the well-ordering.
+ Or perhaps doing like postscript and having a stack-language to generate
+ would suffice; this language would be devoid of any loop
+ (but the structures it creates can be recursive),
+ and have drastic limitations as for ways to create violations of the
+ stack order.
+</UL>
+
+
+
+<h3>Persistence</h3>
+<UL>
+
+<LI>Persistence can be done at the page level.
+
+<LI>Checkpoints will be triggered manually or by the clock;
+when triggered, a checkpoint will wait for next minor GC.
+a checkpoint can also be <EM>forced</EM>, in which case it
+will be done at next safe point (that is, almost in real-time),
+with or without triggering GC;
+a timeout will transform triggered checkpoint into forced checkpoint,
+perhaps by forcing a GC.
+
+<LI>A checkpoint logs the modified pages;
+it first saves the metadata for the pages,
+then writes a the contents of the pages compressed with
+an appropriate algorithm, that uses the metadata as a hint,
+but doesn't waste too much time at that, either,
+so that checkpointing performance stays disk-driven.
+
+<LI>If the above code is well written, a major GC could be achieved
+by restoring a checkpoint just after saving it!!!
+
+<LI>Checkpointing can be done concurrently with running
+if we can control paging and hide the pages with copy-on-write.
+OTOP checkpointing must block the process :( :( :(
+
+</UL>
+
+
+<h3>OTOP tricks for persistence:</h3>
+<UL>
+<LI>If system dirty page bits are not available (e.g. OTOP),
+then they should be manually emulated by software,
+with a write barrier :( :(
+
+<LI><EM>BEFORE</EM> a checkpoint, the previous checkpoint will be
+ committed in case it hasn't been yet.
+ If it wasn't committed, then the checkpoint before it was still valid,
+ so everything's fine.
+ This allows the process to continue to run after checkpoint writes
+ were scheduled, unless we *really* need to stop.
+
+<LI>The problem is that we need <EM>two</EM> fsync() to commit the changes:
+ one for all the data, one for atomically committing the super-block
+ after everything's done.
+ What we may do, if not satisfied with the previous checkpoint,
+ is to schedule the fsync() after we let some time to the unix kernel,
+ so that we can <EM>hope</EM> that fsync() won't stop the process.
+</UL>
+
+
+<h3>Multithreading and Locking</h3>
+<UL>
+<LI>Thread states are cheap continuations.
+<LI>A lock is actually a unique resource server thread
+	that executes routines that are given to it.
+<LI>Such locks as higher-order functions
+	provide a clean semantic framework
+	to solve problems of "priority inversion" in threads.
+</UL>
+
+<h3>Resource-tracking and quotas</h3>
+<UL>
+<LI>No need to have multiple <em>physical</em> address spaces
+	to achieve multiple <em>logical</em> address spaces.
+	To achieve quotas in resource usage,
+	you just need keep track of how much resources are used
+	by the current resource user(s).
+<LI>An efficient implementation would:
+	<UL>
+	<LI>keep track of usage synchronously for seldom used resources;
+	<LI>just update global counters at user-switch time
+		for resources that are constantly evolving
+	<LI>When there are recursive users,
+		either they might all be updated at user-switch time,
+		or only the deepest users are, and the counters for the
+		others are (implicitly or explicitly) invalidated.
+	</UL>
+<LI>All this can be done by reflectively modifying the GC/threading code,
+	without any special OS support besides generic reflection.
+</UL>
+
+<H2>To Do</H2>
+<UL>
+<LI>Do implement.
+<LI>Document the current implementation.
+<LI>Think about the the compatibility of real-time objects and securely
+synchronized objects: real-time generally means that we use fixed-size
+buffers that we update in place. But then, we must keep a synchronized
+version (perhaps several of them), so we must have multiple copies of
+the object, and be sure that copying is atomic (*ouch*).
+<LI>Point to the GC-FAQ, etc (see page Review/Languages.html)
+</UL>
+    <!--#include virtual="/footer.html" -->
+  </body>
+</html>

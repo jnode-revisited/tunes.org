@@ -1,0 +1,108 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+  <head>
+    <!--#include virtual="/head.html" -->
+    <TITLE>The Tunes Metatranslator subproject</TITLE>
+  </head>
+  <body>
+<H1>The TUNES Metatranslator subproject</H1>
+    <!--#include file="header.html" -->
+<H2 name="definition">Definition</H2>
+<H3>Languages</H3>
+    <p>(Computer) concepts are few; (computer) languages are many (not mentioning dialects). Every language has its own expressiveness, with specificities that may have no equivalent in some other languages, and defects, that make it difficult to say things when other languages make it easy.</p>
+    <p>Though it is obvious that some languages are significantly more expressive than others in many to all interesting domains, there is no maximally expressive language is known to date. Even when there was, it wouldn't be universal, at least at first, and there would always be dialects, and old languages, specialized languages and jargon.</p>
+    <p>There is also the technical issue of semantic <a href="../principles.html#scalability">scalability</a> and scaling, which the HLL and its <a href="../architecture.html">framework</a> are intended to support. In cases like these, the language <em>intentionally</em> implements semantics of lesser expressiveness because either (1) the code in some context does not make use (statistically or provably) of higher expressiveness, or (2) the user manually suggests this for some section of code. There are varying ways in which this can happen, as well, and each of these possibilities in different dimensions counts as a new language.</p>
+    <p>Because one must be able to deal with all those languages, and cannot choose what language the person opposite can use, it is essential to be able to use several languages, yet manipulate the "same" objects.</p>
+
+<H3>Translation</H3>
+    <p>To translate from one language into another is to understand the explicit (i.e. structural, clear-cut, obvious) and implicit (i.e. background, nuances, ambiguities) meanings of texts written (or spoken) in the first language, and render them back as efficiently as possible in the other one, with as little information created or lost as possible, and with proper translator's notes when needed.</p>
+    <p>It is much more than an "interface" between languages, which would be just some way to cross-quote sentences from one language into another, though such an interface is useful for the translation.</p>
+
+<H2 name="goal">Goal</H2>
+    <p>Provide a <B>meta</B>-translator, that is, some collection of software that facilitates designing translators between languages of the highest <a href="http://cliki.tunes.org/Abstraction Level">level of abstraction</a>. The meta-translator project will also deal with program manipulators, which are a generalization of translators, that go from one language to itself, with irreversible or undeterministic changes in the context or meta-context.</p>
+    <p>Perhaps "Generic Meta-Program", or "Reflective Semantic-based Program Manipulator" would be more accurate. See our resources on <a href="http://cliki.tunes.org/Program Transformation">program transformation on our Wiki</a>.</p>
+
+<H3>Subjects of Translation</H3>
+    <p>The meta-translator will be used to compile the HLL into the LLL, to translate any language (particularly widely used languages like C or Lisp) into our HLL, and perhaps even to translate subsets of human "natural" languages into computer languages or other human languages.</p>
+
+<h3>Two approaches</h3>
+    <p>Of course, because the implicit assumptions differ so much between languages, the only way to make an "exact" translation would be to teach the original language to the target environment, and not translate the program; this is the "embedding" approach where the original language has an implementation "embedded" in the target environment (this is often the way "interface" approaches are achieved).</p>
+    <p>But most of the time, programs are not piece of humor or poetry (sometimes they are -- see self-printing programs, the IOCCC, etc); instead they are the implementation of a general abstract idea in the particular concrete language. Only the abstract idea is then important, and concrete details may be safely discarded. A good translator will thus have to understand the abstract idea, so as to render it back in the target language. It will have to isolate the abstract semantics, and realize it anew in a different concrete context. This is the intelligent approach.</p>
+    <p>The intelligent approach is more difficult than the embedding approach, but it is sometimes what is needed, so as to fully recycle old code in a way that be efficient and/or maintainable.</p>
+
+<h3>Difficulty</h3>
+    <p>Fully automatizing the intelligent approach is of AI-complete difficulty, which explains why translation between human languages has not succeeded yet. However, because we are only interested in computable programming languages, the embedding approach is guaranteed to be successful, though it might very inefficient.</p>
+    <p>Hence, the right way to achieve a fully automatic and generic translator is to try an AI approach, and fallback to a stubborn embedding approach when the AI does not yield satisfactory results.</p>
+    <p>Happily, at any moment, we needn't something fully automatic and generic, because we want to apply it to a particular program, and because when maintainable code is needed, then human interaction is to be involved anyway, so better take advantage of it during the translation.</p>
+    <p>In the end, the overall intrinsic difficulty of the problem is less than that of the (undecidable) problem of proving correctness of programs; and there are environment for doing program proofs semi-automatically, i.e. using existing automatic tactics when possible, and relying on human help when not. Hence, writing a successful translator is a doable task.</p>
+    <p>For many common tasks, however, <a href="http://cliki.tunes.org/Partial Evaluation">partial evaluation</a> of various kinds as well as operating on <a href="http://cliki.tunes.org/Abstract Syntax Tree">abstract syntax</a> and denotational models should provide more than enough tractability. There is also more recent work in <a href="http://cliki.tunes.org/Haskell">Haskell</a> on the use of <a href="http://cliki.tunes.org/Monad">monads</a> to build modular interpreters easily, and perform some transformation of them into compilers.</p>
+
+<h3>Interaction</h3>
+    <p>The translator can be guided by a human, who will inform the translator so that it would efficiently translate the particular program. This knowledge could be very specific (in that exact case, do that), but could and would be progressively be refined itself, and separated into a generic abstract part and specific details.</p>
+    <p>The value added by the computer is that all the stubborn manipulations can be done quickly with guaranteed consistency, whereas requiring a human to handle those details would be both slow and unreliable.</p>
+    <p>The human can then focus on the high-level details, on the parts that require intelligence, rather than on the stupid straightforward aspects of translation.</p>
+
+<h3>Reversibility</h3>
+    <p>The translation steps can be made reversible, so the human can safely engage in routes that may fail, yet not lose anything in the process (trading time for knowledge), whereas engaging in such routes in a manual translation might result in major lossage, and having to retranslate from scratch.</p>
+    <p>Tweaking the translation steps, modifying and tuning them, becomes possible, so that the final result can be much more efficient and more reliable than what a human would have done. Actually, because "do as I say" is a (valid, though unreliable) translation tactic, anything that a human could have done manually <em>is</em> one of the things the interactive environment can produce, and hence the environment can always be at least as good as a lone human.</p>
+
+<h3>Persistence</h3>
+    <p>Now, an advantage of computer-aided code manipulation systems is that they can memorize the knowledge (explicitly) added by the human, and restore it at any time the human user wants afterwards.</p>
+    <p>Thus, even if the original translator only has a stubborn translate-by-embedding tactic, if it also includes a generic reflective framework for the human to add new tactics, then it can progressively grow into a sophisticated translation platform, that can translate in better and better ways with less and less human action.</p>
+    <p>This accumulation of knowledge is essential, and it is the <em>only</em> non-magic way that we can expect any grand AI-style software like an intelligent translator to succeed.</p>
+
+<h3>Incremental translation</h3>
+    <p>Now, because the original text may evolve, the translation tools should allow to keep the translated text up-to-date without the human having to retranslate everything from scratch.</p>
+    <p>This is another reason why a translator should be written as part of a reflective architecture: modifications at all levels of the code must be first-class objects, so they can be analyzed, manipulated, and propagated through the series of reversible changes that was recorded. Modifications themselves can be understood and factored into abstract idea and concrete realization.</p>
+    <p><a href="http://cliki.tunes.org/Persistence">Persistence</a> and <a href="http://cliki.tunes.org/Tactic">tactics</a> take their full value, as they allow tactics that were intended but previously proved unsuccessful to be tried again without further work where they will prove successful. Work is not lost; it combines.</p>
+    <p>Of course, in most cases, new modifications involve lots of change in the translated code, sometimes major changes, that cannot be automatically done in an efficient way. Again, that's where human interaction intervenes. The humanonly needs to do the minimal necessary work, and is relieved by all that the system has been taught to do.</p>
+
+<h3>Important Note:</h3>
+    <p>An automatic translator, like much any computer software or hardware, or human work, it's the humans who wrote the translator who are doing the work, so what an automatic translator can do is exactly what humans can do, not more, not less.</p>
+    <p>And because one can't predict the future, you can't expect a human who doesn't see the actual text to translate to have the same insight as the one who does, which is why any such software, like most software, should allow the one who does to incrementally (and not <em>only</em> interactively) give this insight to the program in forms of hints, extensions, and any kind of modifications needed.</p>
+
+<h2 name="resources">Resources</h2>
+    <p>See also:</p>
+    <ul>
+      <li>Programs and projects on semantic-based program manipulation (for now, see our <a href="http://cliki.tunes.org/Methods of Reflection">Reflection Review section</a> under "Partial Evaluation").</li>
+      <li>Books and articles on <a href="http://cliki.tunes.org/Semantics">semantics</a> of <a href="http://cliki.tunes.org/Programming Languages">programming languages</a></li>
+      <li><a href="http://cliki.tunes.org/Appetizers">Douglas Hofstadter's "Goedel, Escher, Bach"</a></li>
+    </ul>
+
+<H2 name="examples">Examples</H2>
+
+<p>See the <a href="../examples/sieve.html">Sieve of Eratosthene</a> for examples.</p>
+
+<h3>Object-Oriented and Functional Programming</h3>
+    <p>"<a href="http://cliki.tunes.org/Object-Oriented">Object-Oriented</a> Programming" and "<a href="http://cliki.tunes.org/Functional">Functional</a> Programming" are currently dominant programming "<a href="http://cliki.tunes.org/Paradigm">Paradigms</a>". OOP is very faddy, and most people use it without really understanding what it is about; confusion is king in the OOP world. FP, though it is not free from fads, is a much more seriously studied and understood paradigm.</p>
+    <p>OOP and FP can be typed, which corresponds to OO classes and functional types, or there may be no differentiation of types between objects (besides their observational behavior) (see <A HREF="http://cliki.tunes.org/Self">Self</a> and <A HREF="http://cliki.tunes.org/Lisp">Lisp</A>).</p>
+    <p>In OOP, you send messages. Note that in both cases, computations can be pure or impure (with or without side-effects).</p>
+    <p>In advanced OOP, methods are <a href="http://cliki.tunes.org/Dispatch">dispatch</a>ed not only according to their first arguments, but to all their arguments. Likely, in advanced FP, functions take more than one argument, and are <a href="http://cliki.tunes.org/Dispatch">dispatch</a>ed according to all these.</p>
+
+    <p>One initial aspect of <a href="http://cliki.tunes.org/Metaprogramming">metaprogramming</a> is <A HREF="quotation.html">quotation</A>.</p>
+
+
+<H3>To Do</H3>
+    <UL>
+      <LI>give examples of automatic translation of programs.</li>
+      <LI>in particular, show well-known isomorphisms between programming paradigms, such as:
+	<UL>
+	  <LI>functional programs/logical proofs (Curry-Howard),</li>
+	  <LI>side-effect programs/functional programs (continuation passing),</li>
+	  <LI>lazy-evaluation/strict evaluation,</li>
+	  <LI>data-stream/code-stream processing,</li>
+	  <LI>factored/inlined code,</li>
+	  <LI>parallel/sequential programming,</li>
+	  <LI>mathematical isomorphisms,</li>
+	  <LI>static/dynamic resource allocation,</li>
+	  <LI>etc.
+	</UL></li>
+      <LI>Note that translating from a less expressive language to a more expressive one (e.g. C to HLL) has much different constraints than translating in the reverse direction (eg compiling HLL to C).</li>
+      <LI>Use the fact that most of the time, LLLs like C are used with many conventional restrictions, that may be detected by the translating system, so that some aspects can be better automated.</li>
+      <LI>What about taking a <tt>/etc/termcap</tt> or <tt>terminfo</tt> entry, and producing an emulator for said terminal?</li>
+    </UL>
+<hr>
+<p>Annotate this on the <a href="http://cliki.tunes.org/TUNES Meta-Translator">CLiki</a>.</p>
+    <!--#include virtual="/footer.html" -->
+  </body>
+</html>

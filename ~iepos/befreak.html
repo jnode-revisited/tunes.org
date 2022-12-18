@@ -1,0 +1,250 @@
+<!-- X-URL: http://tunes.org/~iepos/befreak.html -->
+<!-- Date: Sat, 01 Oct 2005 19:47:07 GMT -->
+<!-- Last-Modified: Fri, 25 Mar 2005 07:36:10 GMT -->
+<BASE HREF="">
+
+<html><head><title>The Befreak Programming Language</title></head>
+<body>
+<h1>The Befreak Programming Language</h1>
+Brent Kerby: <a href="mailto:iepos@tunes.org">iepos@tunes.org</a><br>
+Hilton Campbell: <a href="mailto:chauchauchau@msn.com">chauchauchau@msn.com</a><br>
+Last revised: March 26, 2003
+
+<p><ul>
+<li><a href="befreak.html#intro">Introduction</a>
+<li><a href="befreak.html#hello">Hello World</a>
+<li><a href="befreak.html#arithmetic">Arithmetic</a>
+<li><a href="befreak.html#bitwise">Bitwise Operators</a>
+<li><a href="befreak.html#stack">Stack Combinators</a>
+<li><a href="befreak.html#compare">Comparisons</a>
+<li><a href="befreak.html#invert">Inverted Mode</a>
+<li><a href="befreak.html#control">Control Flow</a>
+<li><a href="befreak.html#io">Input/Output</a>
+<li><a href="befreak.html#download">Download Befreak</a>
+<li><a href="befreak.html#reference">Instruction Reference</a>
+<li><a href="befreak.html#links">Links</a>
+</ul>
+
+<p><a name="intro"></a>Befreak is a purely reversible two-dimensional programming language. It was inspired by the Chris Pressey's <a href="http://www.catseye.mb.ca/esoteric/befunge/93/bf93.html">Befunge</a> programming language. Like Befunge, all Befreak instructions are written as a single character, and execution can flow north, south, east, and west.
+
+<p>The thing that makes Befreak special is its reversibility. Every instruction in Befreak is by its very nature reversible. At any point during execution, if you'd like, you can pause the system, toggle the "reverse" flag, and then upon resuming, the program will run itself backwards from its current state, eventually ending up at the very beginning, where it started. This feature is <i>not</i> accomplished by keeping a history of past states, but simply by virtue of the fact that each individual instruction is reversible. This means that Befreak contains no instructions that can destroy information; this can make programming in the language both challenging and interesting.
+
+<h2><a name="hello">Hello World</a></h2>
+We'll begin with the classic "Hello world" program. In Befreak, this is not trivial, so buckle your seatbelts. To help make things easier to follow, I'd recommend <a href="befreak.html#download">downloading the Befreak system</a>, and stepping through the program with the interpreter.
+<p><pre>
+/"Hello world!"01\
+\(13v     'wsv)@(/
+    \(=13=13)/    
+</pre>
+<p>In Befreak, execution always begins at the <code>@</code> symbol and proceeds east. Thus, the first instruction encountered is "(", which pushes a zero onto the stack (in Befreak, data is manipulated through a stack, a la FORTH). The next instruction, "/", is a mirror that causes the IP (the instruction pointer) to change direction; in this case, it will make IP go north; next is "\", which is another mirror, and in this case causes IP to go west. Next we have the instruction "01", or rather "10" since we're coming from the east: this causes the top item on the stack to be XOR'd with 10 (decimal); since the top of stack was zero, this makes the top of stack 10, which is the ASCII code for newline. 
+
+<p>Next, the " instruction is encountered, which causes the program to go into string mode until the next " is reached. In string mode, the ASCII value of each character encountered (not including the quotes themselves) is pushed onto the stack. In Hello World above, when we reach the second ", the top item on the stack is 'H', and the other characters are underneath.
+
+<p>Next, we hit "/" which makes the IP go south. Then we hit "\" which makes the IP go east. Then we hit "(" and "13", which together push 13 onto the stack ("(" pushes a 0 and then 13 XORs it with 13); 13 is the number of characters in our string; this "13" will serve as a counter telling how many times our main loop will execute; it will be decremented each time through the loop, and when it reaches 0, the loop will be exited.
+
+<p>So, we next hit "v", which is the entrance to our main loop. The "v" here is not exactly the same as in Befunge; it makes the IP go south, but it also pushes a value onto an auxiliary stack, called the "control stack", telling where we came from. In this case, it pushes a 1, since we made a right turn (if we'd made a left turn, e.g., came from the east, a 0 would have been pushed). This value, called a "control bit", is needed for reversibility: imagine we're past the "v", going south, and then we want to reverse, making the IP go back north. What happens when we hit the "v"? How do we know if we came from the right or the left? (we don't need to consider the possibility that we came from the north, as will be explained in the <a href="befreak.html#control">control flow</a> section.) By the control bit on the control stack, of course...
+
+<p>The next instructions "(=13=13)" serve as the condition of the loop, which will determine whether the loop will continue or not. Recall that at this point we have a 1 on the control stack, because we turned right entering the "v". Notice that if this 1 remains how it is, then when we hit the next "v" coming up in a few instructions, we'll turn right again, exiting the loop. Thus, the instructions coming up had better change the 1 to a 0, so that the loop will continue. In fact, they do:
+
+<p>First we push a zero onto the stack, with "(". Then we execute "="; this tests to see if the top two items on the stack are equal, and if so, the top item on the control stack will be XOR'd with 1 (effectively toggling it between 0 and 1). "=" has no effect if the top two items are unequal. In this case, the top two items are indeed unequal (13, our counter, is not equal to 0) and thus nothing happens. But, next we have the sequence "13=", which changes the 0 to a 13 (by an XOR) and then checks to see if the loop counter is equal to that, which it is. Thus the 1 on the control stack is toggled to a 0. Finally, we execute "13)" which cleans things up, changing the 13 back to a 0, and removing it (the ")" instruction removes a zero from the stack; it is an error for the top item to be non-zero with this instruction; if it happens, the interpreter will block, refusing to execute the offending instruction).
+
+<p>Then we hit the mirror "/" which bounces us up into the "v", and we remove the "0" from the stack and turn left. Here we have the body of the loop, which is fairly simple. The "s" instruction swaps the top two items on the stack; in this case, it swaps the loop counter out of the way, pulling up a character ("H"). Then, we write the character to stdout using "w" (this removes the character from the stack). Then we decrement the loop counter with "`", pass over some spaces (which are no-ops) and hit the "v" and re-enter the loop; but this time, a 0 is pushed, instead of a 1, since we're turning left. That means that the upcoming conditional code need not change that 0, since as it is, it will cause a left turn at the next "v", making the loop continue. 
+
+<p>Indeed, as you may have figured out, our code only changes the control bit when the loop counter is either 0 or 13, so the loop will keep executing in the same fashion, until the counter reaches 0, at which point the condition will be toggled from a 0 to a 1, causing a right turn at the "v", which makes us exit the loop.
+
+<p>It may seem peculiar that, in essence, we are forced to put both an entrance condition and an exit condition in loop code, instead of just an exit condition. This is a natural phenomenon in reversible programming, since if we were running the loop backwards, we need to know at what point we are done so we can "exit" the loop (through the entrance).
+
+<p>Anyhow, eventually the loop exits, and then removes the loop counter, which is now zero, with ")". Then we ram into the left side of the "@", which the proper way of terminating a Befreak program.
+
+<p>You might be wondering why we used a counter in our Hello World, instead of just using a null-terminated string like one would do in Befunge. The answer is that trying to naively print out a null-terminated string won't work in Befreak becauses its inherently irreversible; if we try to run the program backwards, to unprint the string, how will the program know when the beginning of the string has been reached? But, there are in fact other solutions to the problem besides using a counter: for example, we could fix the first character of the output to be a newline, which would act as a signal when going in reverse (although the output may not look the way we want), or we could preserve a copy of the string as we write.
+
+<h2><a name="arithmetic">Arithmetic</a></h2>
+Befreak also has basic arithmetic instructions. For example, take addition and subtraction: Befreak has "+" and "-". However, be careful, because they function differently than in FORTH or Befunge. The normal interpretation for "+" in a stack-based language is to take two operands and <i>replace both of them</i> with their sum. However, Befreak cannot do this, because that operation is irreversible. Befreak takes two operands and <i>replaces the bottom one</i> with the sum, while leaving the top item unchanged. For example, the following code (entering forwards from the left) will add 5 to the top item on the stack:
+
+<p><pre>
+(5+5)
+</pre>
+
+<p>It works by pushing a zero with "(", changing it to a 5, performing the addition, and then removing the 5 which was left there by "+" (remember, "5" is an XOR; since 5 is already at the stack at this point, XORing it with 5 changes it back to a zero, so it can be removed with ")").
+
+<p>Befreak also has a similar subtraction operator; to subtract 5 instead of adding, use the exact same code as above except replacing "+" with "-". Also, Befreak has the instructions ' and ` which increment and decrement the top item, respectively.
+
+<p>By the way, if an overflow occurs on an addition or subtraction, Befreak will happily wrap around, since this type of overflow is reversible. 
+
+<p>On the other hand, multiplication and division gets a bit trickier. Befreak's division instruction "%" works like so: it takes the dividend on bottom and a divisor on top (which must be non-zero). It performs the division, replacing the dividend with <i>both the quotient and the remainder</i> (the quotient is on bottom, and the remainder is above that, with the original divisor staying untouched on the very top). Thus, division takes 2 items and leaves you with 3 items.
+
+<p>Befreak's inverse to the divide instruction is called "*", however this can be misleading, because it is not a normal multiplication operator. It takes 3 items, multiplies the first (e.g., top item, which is the multiplier, and must be non-zero) by the third and adds in the second (which must be less than the first), and leaves you with that result on bottom, with the original top item unchanged. So you might say this is sort of a restricted "multiply-and-accumulate" instruction; to do a normal multiplication, simply use a 0 as the second item.
+
+<p>By the way, in Befreak it is an error to cause an overflow in a multiplication, because, if the multiplier is even, bits are shifted off the high-end and lost, thus being irreversible. Technically, multiplying by an odd number is reversible even through overflows, because of the number theory fact that odd numbers have inverses modulo 2^n; however, Befreak does not use this. (Another fact is that if we did multiplication modulo a prime, then all multiplication, except by zero, would be reversible).
+
+<h2><a name="bitwise">Bitwise Operators</a></h2>
+Befreak has basic bit manipulation operators. "&" performs a bitwise AND on the top two items, XOR'ing he result into the the third (i.e., bottom) item (the top two items being left unchanged).
+
+<p>Similarly, there is "|" which takes the bitwise OR of the top two items, XOR'ing the result into the third.
+
+<p>Next, there's "#", which performs XORs. This is a bit simpler than "&" and "|", since 
+XOR'ing is reversible. The top item is simply XOR'd onto the second item, leaving the top item unchanged. This is similar to how "+" and "-" work.
+
+<p>And then, there's "~", which performs a bitwise NOT on the top item. As a handy fact, you can push a -1 by doing "(~" (Befreak assumes two's complement arithmetic).
+
+<p>Finally, there's "{" and "}" which perform left and right bitwise rotations; they rotate the second item by the amount specified in the top item, leaving the top item untouched.
+
+<h2><a name="stack">Stack Combinators</a></h2>
+We've already seen the swap "s" operator, which interchanges the top two items on the stack. Befreak also has a few more complex operators for rearranging the top few items on the stack:
+
+<p>There's "d", which digs up the third item, bringing it to the top of the stack (causing the original first and second items to become second and third). The inverse to this is "b", which buries the top item underneath the next two, making it the third item.
+
+<p>There's "c", which swaps the second and third items, leaving the top untouched. And, there's "f", which flips (e.g., reverses the order of) the top three items, effectively swapping the first item with the third.
+
+<p>That's it for the permutators. Befreak also has the equivalent of "DUP"; it's called ":", as in Befunge. This simply duplicates the top item, leaving you with two items that are the same. The inverse is ";", which unduplicates two things, leaving you with one (it is an error if the two things are not the same).
+
+<p>As an interesting fact, it's possible to construct ":" as "(s#" or "(s+".
+
+<p>Finally, as mentioned earlier, Befreak uses an extra stack called the "control stack"; it is is mainly used as a place to put control bits for loops or conditionals; however, it may also be used like the "return stack" of FORTH, as a convenient place to temporarily shove stack items that won't be needed for a while. The instruction to transfer an item from the main stack to the extra stack is "["; to bring it back, use "]" (notice that "[" and "]" <i>move</i>, not copy, the items). Also, there's the "$" instruction, that swaps the top item on the main stack with the top item on the control stack.
+
+<h2><a name="compare">Comparisons</a></h2>
+We've already seen "=", which looks at the top two items, and, if they're equal, toggles the top item on the control stack (i.e., XORs it with 1). Befreak also has "l", which checks to see if the second item is <i>less than</i> the first item, and if so toggles the top item on the control stack. Similarly, there's "g" which checks to see if the second item is <i>greater than</i> the first item, toggling the top of the control stack if so.
+
+<p>Notice, these comparisons can be conveniently combined; for example, to do a lesser-than-or-equals-to comparison, simply do "<code>l=</code>". For not-equals, do "<code>lg</code>".
+
+<h2><a name="invert">Inverted Mode</a></h2>
+In Befreak, every operator as an inverse. For example, the inverse of "+" is "-"; the inverse of "(" is ")". Many instructions are their own inverses, such as "s", "&", "|", "#", "~", "=", "l", "g", and the number-literals.
+
+<p>One of the neat things about a reversible programming language is the ability to run code backwards. In Befreak, sometimes it is expedient to run a portions of code backwards. There is a way to do that: that "?" instruction toggles the system's "inverted mode". If inverted mode is on, then the inverse of each individual instruction is used, instead of the normal instruction. However, the IP keeps moving the same way that it normally would.
+
+<p>There's one particular pattern of coding that "?" is very handy for; often in reversible coding, you want to do some code that sets up some information, then do some code "FOO", and then go back and undo the code that did the setup. That is, you want to do "SETUP FOO UNSETUP". However, if "SETUP" is large, then it can be inconvenient to have to write it again backwards for "UNSETUP". In Befreak, using "?", you can solve the problem this way (here, "SETUP" and "FOO" represent arbitrary blocks of code; they may be much larger than just 5 or 3 characters):
+
+<pre>
+ @v?
+  S
+  E
+  T
+  U
+  P
+/ ^?\
+\FOO/
+</pre>
+
+<p>Recall that the IP starts at "@" and goes east. We hit the "v", turn right, and do the "SETUP". Then, we hit "^", turn right again, and do FOO. We hit "?" which puts the system into inverted mode; then we hit the "^" again, and turn right, going north, and undo "SETUP", and hit "v", turn right again, and hit "?", which restores the system to normal mode. Thus, looking at the whole thing, we've done "SETUP", done "FOO", and then undone "SETUP".
+
+<h2><a name="control">Control Flow</a></h2>
+We've already seen the "v" and "^" instructions above; "v" is called a "South branch" instruction. As already mentioned, if it is entered from the west or from the east, then the IP is made to go south, and an item is pushed onto the control stack (a 0 if a left turn was made, or a 1 if a right turn was made). If it is entered from the south, then it functions as a branch: it removes the top item from the control stack and turns left if it's a 0 and right if it's a 1 (it is an error for it to be something other than a 0 or 1).
+
+<p>In inverted mode, the roles of 0 and 1 are interchanged, in that 0 then corresponds to a right turn and 1 to a left turn, both in entering and exiting the branch. This is neccessary for it to run backwards properly.
+
+<p>Befreak also has "^", ">", and "<", which are north, east, and west branches. They function exactly symmetrically to "v". For example, ">" makes the IP go east (and push a 0 or 1 onto the stack), when coming from the north or south, and makes the IP branch when coming from the east. <b>In all four kinds of branches, 0 corresponds to a left turn, and 1 to a right turn</b> (except that in inverted mode, this is reversed).
+
+<p>One helpful way to think about branches is to avoid thinking too much about the control bits, and simply realize that if we enter a loop or branch by turning right, then it will also exit by turning right, (unless the control bit or the inverted mode is toggled in between), and if we enter by turning left, then it will exit by turning left. You can take a portion of code (that includes branches) and flip it on it horizontally or vertically (i.e., along an x-axis or y-axis), and it will normally function exactly the same way, although all the control bits will be reversed.
+
+<p>Now, we have too look at what happens if a branch is entered from the "wrong" side (for example, if "v" is entered from the north). Here's what happens: the top item on the control stack is toggled, the system enters inverted mode (or rather, inverted mode is toggled), and IP reverses direction (in the case of "v", IP goes back north). This may seem a bit peculiar, but in fact this is a useful behavior in many situations; it gives a slick way of doing backtracking, or aborting due to an exceptional condition. Here's an abstract code example:
+
+<p><pre>
+ @ v? HANDLE_EXCEPTION
+   C
+   O
+   D
+   E                                   / KEEP_GOING
+   > IS_THERE_AN_EXCEPTIONAL_CONDITION <
+                                       v
+</pre>
+
+<p>Here's what happens: we hit the first "v" and go south (and push a bit onto the control stack), do "CODE", and then hit ">", which sets up a bit on the control stack to be potentially toggled by the "IS_THERE_AN_EXCEPTIONAL_CONDITION" (note, we could have set up that bit by manually pushing zero using "([", but that would be less proper, because if we reflected the whole program vertically, it would then no longer function correctly, because then a 1 would be needed to be pushed, instead of a zero; also, the ">" is visually a structural match to the upcoming "<").
+
+<p>Now, as long as that exceptional condition doesn't happen, the IP will turn left again at the "<" and execute "KEEP_GOING", and the program will go on its merry way. However, if there is an exceptional condition, then IP turns right and we hit "v" the wrong way, which causes the top item on the control stack (the bit pushed by the original "v") to be toggled, inverted mode to be entered, and IP to go back north. At this point, the program backtracks until we reach the original "v" (i.e., whatever was done by "CODE" and "IS_THERE_AN_EXCEPTIONAL_CONDITION" is undone). If it wasn't for the fact that the abort (hitting "v" the wrong way) toggled the top item on the control stack, then the abort would be permanent, causing us to backtrack all the way to the beginning of the program, with no way to stop it. However, since it does toggle the top item on the control stack, we end up going east when we hit that original "v", and then hit the "HANDLE_EXCEPTION" stuff (first restoring the system to normal mode using "?"). One last and important thing to notice here is that from the perspective of the "HANDLE_EXCEPTION" stuff, it is as if the "CODE" had never been executed at all, since it was unexecuted in the backtracking process.
+
+<h2><a name="io">Input/Output</a></h2>
+We've already seen the "w" instruction, which writes the top item on the stack to stdout. It expects the top item to be within the range of a byte (0 to 255), otherwise an error occurs.
+<p>Also, Befreak has the "r" instruction, which reads a character from stdin onto the top of the stack.
+<p>We might question the reversibility of these instructions. In fact, writing to stdout is irreversible since we cannot, within the constraints of an irreversible operating system, take back the characters that we've written. Also, we cannot give back characters that we've read from stdin.
+<p>However, the interpreter handles this problem by keeping a stack of characters that have been outputed, and a stack of characters than can be input ("uninputing" something puts a character back on the top of that stack, whereas input from the keyboard comes in at the bottom of the stack). Thus, within the cozy bubble of the interpreter, everything, including input/output, is completely reversible. However, if Befreak is interacting with the outside world, then we'll have to accept this degree of irreversibility. 
+
+<h2><a name="download">Download Befreak</a></h2>
+The Befreak system is free: <a href="befreak.tar.gz">befreak.tar.gz</a> (DOS executable: <a href="BFI.EXE">BFI.EXE</a>). Included is the interpreter, BFI, and the compiler, BFC, and several sample programs. BFC currently happily compiles Befreak code to C (other targets will hopefully be supported in the future). 
+
+<p>As a final note, for kicks, here's a program that prints out the prime numbers (the bottom half of the program outputs an integer in decimal form, character by character, since Befreak has no special instruction to do this):
+
+<p><pre>
+    /1)@(1\         
+    >)1=1(<         
+    \'(v?)/         
+       >'%s(\       
+     ^ >*s)=/       
+     >=<            
+     (              
+/s'0v^?w23(v`s]:(48\
+[   (      )       +
+)   =      =       4
+0   c      c       8
+1   =      =       )
+%   )      (       w
+\01(^      ^)01*01(/
+</pre>
+
+<h2><a name="reference">Instruction Reference</a></h2>
+<pre>
+1-9  XOR top item with a value 1 thru 9 (multidigit also works) . [x] -> [x']
+(    Push a zero onto the stack ..................................... -> [0]
+)    Pop a zero from the stack .................................. [0] ->
+[    Transfer the top of main stack to control stack ............ [x] ->
+]    Transfer the top of control stack to the main stack ............ -> [x]
+$    Swap the top item with the top of control stack ............ [x] -> [y]
+w    Write the top item to stdout as a character ................ [x] ->
+r    Read a character from stdin to the top of stack ................ -> [x]
+'    Increment the top item ..................................... [x] -> [x']
+`    Decrement the top item ..................................... [x] -> [x']
++    Add the top item to the next item ...................... [y] [x] -> [y+x] [x]
+-    Subtract the top item from the next item ............... [y] [x] -> [y-x] [x]
+%    Divide x by d, leaving a quotient and remainder ........ [y] [x] -> [y/x] [y%x] [x]
+*    Undo the effects of %, using multiplication ........ [z] [y] [x] -> [z*x+y] [x]
+~    Bitwise NOT the top item ................................... [x] -> [~x]
+&    Bitwise AND top two items, XOR'ing to the third  ... [z] [y] [x] -> [z^(y&x)] [y] [x]
+|    Bitwise OR top two items, XOR'ing to the third ..... [z] [y] [x] -> [z^(y|x)] [y] [x]
+#    Bitwise XOR the top item to the next item .............. [y] [x] -> [y^x] [x]
+{    Rotate "y" to the left "x" bits ........................ [y] [x] -> [y'] [x]
+}    Rotate "y" to the right "x" bits ....................... [y] [x] -> [y'] [x]
+!    Toggle top of control stack (i.e., XOR it with 1) .............. ->
+=    If y equals x, toggle top of control stack ............. [y] [x] -> [y] [x]
+l    If y is less than x, toggle top of control stack ....... [y] [x] -> [y] [x]
+g    If y is greater than x, toggle top of control stack .... [y] [x] -> [y] [x]
+s    Swap the top two items ................................. [y] [x] -> [x] [y]
+d    Dig the third item to the top ...................... [z] [y] [x] -> [y] [x] [z]
+b    Bury the first item under the next two ............. [z] [y] [x] -> [x] [z] [y]
+f    Flip the order of the top three items .............. [z] [y] [x] -> [x] [y] [z]
+c    Swap the second and third items .................... [z] [y] [x] -> [y] [z] [x]
+o    "Over": dig copy of second item to the top ............. [y] [x] -> [y] [x] [y]
+u    "Under": the inverse of "over" ..................... [y] [x] [y] -> [y] [x]
+:    Duplicate the top item ..................................... [x] -> [x] [x]
+;    Unduplicate the top two items .......................... [x] [x] -> [x]
+"    Enter string mode .............................................. 
+?    Toggle reverse mode ............................................
+@    Halt. Also signals the entrance point for the program ..........
+\    If going east or west, turn right; otherwise, turn left ........
+/    If going east or west, turn left; otherwise, turn right ........
+&gt;    If going north, go east and push 1 (in reverse mode, push 0) ...
+     If going south, go east and push 0 (in reverse mode, push 1) ...
+     If going west, pop and go south if 0, north if 1. (opposite in reverse mode)
+     If going east, toggle top of control stack, toggle inverted mode, and go west.
+&lt;    If going north, go west and push 0 (in reverse mode, push 1) ...
+     If going south, go west and push 1 (in reverse mode, push 0) ...
+     If going east, pop and go north if 0, south if 1. (opposite in reverse mode)
+     If going west, toggle top of control stack, toggle inverted mode, and go east.
+v    If going east, go south and push 1 (in reverse mode, push 0) ...
+     If going west, go south and push 0 (in reverse mode, push 1) ...
+     If going north, pop and go west if 0, east if 1. (opposite in reverse mode)
+     If going south, toggle top of control stack, toggle inverted mode, and go north.
+^    If going east, go north and push 0 (in reverse mode, push 1) ...
+     If going west, go north and push 1 (in reverse mode, push 0) ...
+     If going south, pop and go east if 0, west if 1. (opposite in reverse mode)
+     If going north, toggle top of control stack, toggle inverted mode, and go south.
+</pre>
+<p><h2><a name="links">Links</a></h2>
+<ul>
+<li><a href="http://www.catseye.mb.ca/projects/befunge93-2003.0325/doc/befunge93.html">Cat's Eye Technologies: Befunge</a>. The makers of Befunge.
+<li><a href="http://bug.dhs.org/pingpong/index.html">Ping Pong Programming Language</a>. Another Befunge-like language; it shares Befreak's use of "/" and "\" as mirrors.
+<li><a href="http://www.cise.ufl.edu/~mpf/rc/">Mike's Reversible Computing Page</a>. A great resource for reversible computing: "Janus" (the first reversible programming language), Mike's thesis "Reversibility for Efficient Computing", info on reversible CPU projects, etc.
+<li><a href="http://www.zyvex.com/nanotech/reversible.html">Zyvex Reversible Computation Page</a>. Discusses reversible computing in the context of nanotechnology.
+<li><a href="http://home.pipeline.com/~hbaker1/home.html">Henry Baker's Archive of Research Papers</a>. Here there some classic papers on reversible programming and other topics; conveniently enough, they're available in HTML format.
+<li><a href="http://www.forth.org/">The FORTH Interest Group</a>. Excellent resource on the FORTH programming language.
+<li><a href="http://www.latrobe.edu.au/philosophy/phimvt/joy.html">The Joy Programming Language</a>. An interesting stack-based programming language that supports higher-order programming.
+</ul>
+</body>

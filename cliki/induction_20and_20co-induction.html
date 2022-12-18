@@ -1,0 +1,30 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<HTML><HEAD><TITLE>CTO : Induction and Co-induction</TITLE
+><LINK REL="alternate" TYPE="application/rss+xml" TITLE="Recent Changes" HREF="http://tunes.org/cliki/recent-changes.rdf.html"><LINK REL="stylesheet" HREF="admin/cliki.css"></HEAD
+><BODY><DIV ID="banner"><A TITLE="CTO" CLASS="logo" HREF="induction_20and_20co-induction.html">CTO</A
+> <SPAN>CLiki for the TUNES project</SPAN
+></DIV
+><DIV ID="navbar"><A CLASS="internal" HREF="index.html">Home</A
+>  <A CLASS="internal" HREF="cliki.html">About CLiki</A
+> <A CLASS="internal" HREF="text_20formatting.html">Text Formatting</A
+> </DIV
+><DIV ID="main"><H1>Induction and Co-induction</H1
+>These are contrasting <a class="internal" href="term.html" >term</a>s for ways of describing a system. An inductive definition begins with some kernel or primitive types of <a class="internal" href="object.html" >object</a>s, and uses constructive operations on these to iteratively define a whole group of things <em>based on those primitives</em>. Datatypes such as lists, sets, records, and natural numbers all can be described this way (see <a class="internal" href="algebra_20and_20coalgebra.html" >algebra and coalgebra</a>).
+<p>By contrast, there are datatypes such as streams, graphs (including things that graphs describe, such as state machines), and the rational numbers, which elements can only be described in relation to each other, rather than to some core types. (Although there are obviously ways to implement these types in terms of other types, this is not the same as a definition.) Objects such as these without a well-founded means of deriving a definition have to be treated with a more general kind of <a class="internal" href="logic.html" >logic</a>, one that does not rely strictly on recursion, but may look for self-consistency instead.
+<p><style type="text/css">CODE { font-size: 150%; }</style>
+Formally, the induction and principle is defined as follows. An algebra is said to be minimal when it has no proper (i.e., different from itself) subalgebra. This is the induction principle for the algebra. For instance, natural numbers with zero (<code>0</code>) and successors (<code>'</code>)form a minimal algebra of the functor <code>1 + _</code>: then, any subalgebra (i.e., any subset of the naturals which is closed w.r.t. zero and successor) is the whole algebra of natural numbers. This yields the familiar proof by induction for naturals, when to prove that a property holds for all the naturals you just prove that holds for zero and that, if it holds on <code>x</code>, then it holds on its successor <code>x'</code>.
+<p>The coinduction principle is defined dually. A coalgebra is said to be simple when it has no proper quotients. This is the coinduction principle for the coalgebra, but usually its practical and equivalent formulation is: when two distinct states are not <a class="internal" href="bisimulation.html" >bisimilar</a>.
+<p>The induction and coinduction principle for <a class="internal" href="initiality_20and_20finality.html" >initial and final</a> can be also used to define functions. Initial algebras allow the exploitment of the induction principle to define functions from its carrier to the carrier of another algebra. Dually, final coalgebras allow the exploitment of the coinduction principle to define function from the carrier of another algebra to its carrier. If, for instance, we have an initial algebra <code>O</code> with signature <code>F</code> and carrier <code>A</code>, every function <code>f: A&rarr;B</code> which is also a homomorphism from the initial algebra to some <code>F</code>-algebra <code>P</code> is univocally defined. Dually for coinductive definitions of functions. An inductive definition has a typical flavour, where the effect of <code>f</code> on the constructors of <code>I</code> is defined in terms of the arguments of the constructors applied to <code>f</code>, where <code>P</code> has the role of defining the equational constraints which univocally determine <code>f</code>. Dually, a coinductive definition has a typical flavour, where the effect of the destructors of the final coalgebra <code>I</code> on an application of <code>f</code> is defined in terms of the arguments of this application applied in some way to <code>f</code>where <code>P</code> (the other coalgebra) defines the equational constraints which univocally determine <code>f</code>. For instance the inductive definition of the length of a list:
+<p><code>
+len(empty) = 0
+len(l1 # l2) = len(l1) + len(l2)
+</code>
+<p>and the coinductive definition of the "zipping" function which takes two streams and merges them by full shuffle:
+<p><code>
+head(zip(s1,s2)) = head(s1)
+tail(zip(s1,s2)) = zip(s2,tail(s1))
+</code>
+<p>In the first case, on the LHS we have the function on the outside, and on the RHS the function is "pushed inside", while on the outside the operators of <code>P</code> appear. In the second case, on the LHS we have the destructors on the outside, and on the RHS these destructors are "pushed inside", while on the outside some expression on <code>f</code> appears.
+<p><hr>
+<p>To edit this page see <a class="internal" href="html_20special_20characters_20and_20symbols.html" >HTML special characters and symbols</a>.
+<hr><p><b>This page is linked from: </b> <a class="internal" href="algebra_20and_20coalgebra.html" >Algebra and coalgebra</a> &nbsp; <a class="internal" href="coinduction_20101.html" >Coinduction 101</a> &nbsp; <a class="internal" href="duality.html" >Duality</a> &nbsp; <a class="internal" href="initiality_20and_20finality.html" >Initiality and finality</a> &nbsp; <a class="internal" href="lemon.html" >Lemon</a> &nbsp; <a class="internal" href="morphism.html" >Morphism</a> &nbsp; </DIV></BODY></HTML>

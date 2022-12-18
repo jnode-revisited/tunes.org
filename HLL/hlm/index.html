@@ -1,0 +1,46 @@
+<!doctype html public "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+  <head>
+    <!--#include virtual="/head.html" -->
+    <title>The TUNES HLL- Subproject</title>
+  </head>
+  <body>
+    <h1>The TUNES HLL- Subproject</h1>
+    <!--#include file="header.html" -->
+
+<p>For bootstrap purposes, we define a subset of the HLL that we can easily implement.</p>
+
+<h2>Syntax</h2>
+    <p>We want to keep the syntax as trivial as possible, so that initial lexing and parsing will not be a problem. There are two kinds of obvious choices:</p>
+    <dl>
+      <dt><a href="http://cliki.tunes.org/Forth">Forth</a>-like</dt><dd>Trivial lexing, trivial parsing: the system tokenizes one word and executes the according code to parse it. But that's very low-level and if the only standard, yields dirty reflectivity.</li>
+      <dt><a href="http://cliki.tunes.org/Lisp">Lisp</a>-like</dt><dd>Easy lexing, easy parsing: the source is made of constructed objects, with a trivial s-exp constructor syntax.</dd>
+    </dl>
+
+<h2>Semantics</h2>
+    <h3>Core</h3>
+    <dl>
+      <dt>Structures</dt> <dd>explicit constructors and destructors</dd>
+      <dt>Lambda Calculus</dt> <dd>implicit binding and reduction</dd>
+      <dt>Logical Constraints on Objects</dt> <dd>explicit specifications and proofs</dd>
+      <dt>Modular Scoping</dt> <dd>explicit binding</dd>
+      <dt>Reflection</dt> <dd>absorption and reification of features</dd>
+      <dt>Perspectives</dt> <dd>point of views on objects that describe what is or isn't relevant about the object.</dd>
+    </dl>
+    <h3>Derived</h3>
+    <dl>
+      <dt>Continuations</dt> <dd>explicit rest of computations after return</dd>
+      <dt>Side-Effects</dt> <dd>implicit environment parameters</dd>
+      <dt>Exceptions</dt> <dd>implicit alternate continuations in environment</dd>
+      <dt>Simple pattern-matching,</dd>
+      <dt>Annotations on objects</dt> <dd>implicit constructors</dd>
+      <dt>Typing</dt> <dd>implicit constraint analysis and enforcement</dd>
+      <dt>Automatic partial pattern matching</dt> <dd>implicit destructors</dd>
+      <dt>Functors</dt> <dd>functions returning types</dd>
+      <dt>Fluid binding</dd> <dd></dd>
+      <dt>Inheritance</dt> <dd>implicitly realizing sub-interfaces</dd>
+      <dt>Guarded Partial Evaluation</dt> <dd>implicitly optimizing a program for specialized environments.</dd>
+    </dl>
+    <!--#include virtual="/footer.html" -->
+  </body>
+</html>

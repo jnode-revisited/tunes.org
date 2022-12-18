@@ -1,0 +1,27 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<HTML><HEAD><TITLE>CTO : Unification</TITLE
+><LINK REL="alternate" TYPE="application/rss+xml" TITLE="Recent Changes" HREF="http://tunes.org/cliki/recent-changes.rdf.html"><LINK REL="stylesheet" HREF="admin/cliki.css"></HEAD
+><BODY><DIV ID="banner"><A TITLE="CTO" CLASS="logo" HREF="unification.html">CTO</A
+> <SPAN>CLiki for the TUNES project</SPAN
+></DIV
+><DIV ID="navbar"><A CLASS="internal" HREF="index.html">Home</A
+>  <A CLASS="internal" HREF="cliki.html">About CLiki</A
+> <A CLASS="internal" HREF="text_20formatting.html">Text Formatting</A
+> </DIV
+><DIV ID="main"><H1>Unification</H1
+>A <a class="internal" href="term.html" >term</a> generalizing that of <a class="internal" href="pattern-matching.html" >pattern-matching</a> that is the <a class="internal" href="logic.html" >logic</a> programming equivalent of instantiation in logic.
+<p>Citing from FOLDOC (slightly reformatted, see below):
+<blockquote>
+When two terms are to be unified, they are compared:
+<ul>
+<li>if they are both constants then the result of unification is success if they are equal else failure;
+<li>if one is a variable then it is bound to the other, which may be any term (which satisfies an "occurs check"), and the unification succeeds;
+<li>if both terms are structures then each pair of sub-terms is unified recursively and the unification succeeds if all the sub-terms unify.
+</ul>
+The result of unification is either failure or success with a set of variable bindings, known as a "<strong>unifier</strong>". There may be many such unifiers for any pair of terms but there will be at most one "<strong>Most General Unifier</strong>" (<strong>MGU</strong>), other unifiers simply add extra bindings for sub-terms which are variables in the original terms.
+</blockquote>
+<p><ul class="links">
+<li>FOLDOC <A HREF="http://wombat.doc.ic.ac.uk/foldoc/foldoc.cgi?query=unification">definition</A
+>.
+</ul>
+<hr><p><b>This page is linked from: </b> <a class="internal" href="alan_20bundy.html" >Alan Bundy</a> &nbsp; <a class="internal" href="dispatch.html" >Dispatch</a> &nbsp; <a class="internal" href="life.html" >LIFE</a> &nbsp; <a class="internal" href="txl.html" >TXL</a> &nbsp; </DIV></BODY></HTML>

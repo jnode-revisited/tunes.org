@@ -1,0 +1,26 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+  <head>
+    <!--#include virtual="/head.html" -->
+    <title>O'TOP Technical Issues</title>
+  </head>
+  <body>
+    <h1>O'TOP Technical Issues</h1>
+    <!--#include file="header.html" -->
+    <p>See <A HREF="../index.html#Difficulties">LLL difficulties</A>.</p>
+    <p>Having some hardware independence while limiting inefficiencies.</p>
+
+<h2>Points where POSIX particularly sucks</h2>
+    <p>To be sure that buffers are flushed, we must <code>fsync()</code>, but this is a blocking call. Hence, <code>fsync()</code> and similar calls should be delegated to a forked process that will queue blocking calls and warn the main process back when they are finished.</p>
+    <p>Modifying the memory-mapping tables to do garbage collection is very slow, as it involves a syscall for each operation, and leads to big memory-mapping tables which POSIX implementations are not optimized for at all. Hence, we can't use the <code>mmap()</code> mechanism for fine-grained memory mapping. Microkernels might allow user-level pagers, though.</p>
+    <p>There is no standard or reliable way to reserve a large chunk of address space without cluttering up swap memory and without creating a mess with the C library, particularly if we want to reuse addresses from a swap file across sessions. On each architecture, we will have to add some architecture-dependent memory mapping instructions. Most likely, we will <code>mmap()</code> a huge sparse file on a filesystem that supports it; but then there's block leakage, and the only standard way to reclaim blocks is that when the filesystem overflows, it is time to erase the file, and begin again.</p>
+    <p>When resuming connections, there is absolutely <em>no way</em> to trust the files to be in the right format; we must re-check each time, or blindly trust. The persistent files must be in read-only mode, and be changed to read/write mode just when open by the right process (use the permission mode as an open indicator ?).</p>
+    <p>To allow multithreading, special care will have to be taken to do only non-blocking I/O with <code>select()</code> and such, to queue requests, etc. Yuck.</p>
+    <p>There no way to have safe real-time response. So games, animations, etc. will have to run in separate, untrusted spaces.</p>
+
+<h2>Garbage Collecting</h2>
+    <p>Paging under POSIX is too slow and messy. Should be done as seldom as possible (only at minor and major GC).</p>
+    <p>We'll sacrify the low bit of words, but use macros to choose whether integers or pointers will be unchanged.</p>
+    <!--#include virtual="/footer.html" -->
+  </body>
+</html>

@@ -1,0 +1,44 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<HTML><HEAD><TITLE>CTO : Hardware description language</TITLE
+><LINK REL="alternate" TYPE="application/rss+xml" TITLE="Recent Changes" HREF="http://tunes.org/cliki/recent-changes.rdf.html"><LINK REL="stylesheet" HREF="admin/cliki.css"></HEAD
+><BODY><DIV ID="banner"><A TITLE="CTO" CLASS="logo" HREF="hardware_20description_20language.html">CTO</A
+> <SPAN>CLiki for the TUNES project</SPAN
+></DIV
+><DIV ID="navbar"><A CLASS="internal" HREF="index.html">Home</A
+>  <A CLASS="internal" HREF="cliki.html">About CLiki</A
+> <A CLASS="internal" HREF="text_20formatting.html">Text Formatting</A
+> </DIV
+><DIV ID="main"><H1>Hardware description language</H1
+>In electronics, a HDL (an <a class="internal" href="acronym.html" >acronym</a> for hardware description language) is any <a class="internal" href="language.html" >language</a> from a class of computer <a class="internal" href="language.html" >language</a>s for formal description of electronic circuits. It can describe circuit's operation, its design, and tests to verify its operation by means of simulation. 
+<p>A HDL is a standard text-based expression of the temporal behaviour and/or (spatial) circuit structure of an electronic system. In contrast to a software programming language, an HDL's syntax and semantics include explicit notations for expressing time and concurrency which are the primary attributes of hardware. Languages whose only characteristic is to express circuit connectivity between a hierarchy of blocks are properly classified as netlist languages. 
+<p>Frequently (and incorrectly), the term programming is used to be synonymous with writing a hardware description. This often arises because of the goal that HDLs be executable specifications of some piece of hardware. A simulation program, designed to implement the underlying semantics of the language statements and the progression of time, provides the hardware designer with the ability to model a piece of hardware before it is created physically. This execution capability makes it seem like the language is used to program something. Simulators capabable of supporting discrete event (digital), and continuous time (analog) modeling exist and HDL's targeted for each are available. 
+<p>It is certainly possible to represent hardware semantics using traditional programming languages such as C++ (and augmented with extensive and unwieldy class libraries.) However, the C++ language does not include any capability for expressing time explicitly and consequently is not a proper hardware description language. 
+<p>Using the proper subset of virtually any (hardware description or software programming) language a software program called a synthesizer can infer hardware logic operations from the language statements and produce an equivalent netlist of generic hardware primitives to implement the specified behaviour. This typically (as of 2004) requires the synthesizer to ignore the expression of any timing constructs in the text. The ability to have a synthesizable subset of the language does not itself make a hardware description language. 
+<p>HDLs have two purposes:
+<ul>
+<li>First, they are used to write a model for the expected behaviour of a circuit before that circuit is designed and built. The model is fed into a computer program, called a simulator, that allows the designer to verify that his solution behaves correctly. 
+<li>Second, they are used to write a detailed description of a circuit that is fed into another computer program called a logic compiler. The output of the compiler is used to configure a <a class="internal" href="programmable_20logic_20device.html" >programmable logic device</a> that has the desired function. Often, the HDL code that has been simulated in the first step is re-used and compiled in the second step. 
+</ul>
+<p>An HDL is analogous to a software <a class="internal" href="programming_20language.html" >programming language</a>, but with subtle differences. Both types of language are processed by a compiler. An HDL compiler often works in several stages, first producing a logic description file in a proprietary format, then converting that to a logic description file in the industry-standard EDIF format, then converting that to a JEDEC-format file. The JEDEC file contains instructions to a PLD programmer for building logic. 
+<p>On the other hand, a software compiler generates instructions to a microprocessor for moving data. The difference between HDLs and software languages is becoming less distinct as reconfigurable systems are beginning (in 2002) to combine features of both. 
+<p>HDLs used for digital circuit design include: 
+<p><ul class="implementations">
+<li>Verilog HDL 
+<li><a class="internal" href="vhdl.html" >VHDL</a>
+<li>ABEL HDL ("Advanced Boolean Expression Language", a proprietary language developed by the Data I/O Corporation and now owned by Lattice Semiconductor) 
+<li>AHDL (Altera HDL, a proprietary language from Altera) 
+<li>CUPL (a proprietary language from Logical Devices, Inc.) 
+</ul>
+<p>There are attempts to create HDL for analog circuit design. 
+<p>The current trend is to move away from proprietary HDLs and towards the two leading standards, VHDL and Verilog HDL. 
+<p>There also exist attempts to create high-level description languages, i.e. high-level languages for low-level descriptions. Examples of this new work are: 
+<p><ul class="links">
+<li><A HREF="http://www.confluent.org">Confluence</A
+> (GNU GPL) 
+<li>_Lava (Xilinx use Haskell for HDL) 
+</ul>
+<p>From <A HREF="http://en.wikipedia.org/wiki/Hardware_description_language">Wikipedia, the free encyclopedia</A
+>
+<p>
+<p>
+<hr><p><b>This page is linked from: </b> <a class="internal" href="fpga.html" >FPGA</a> &nbsp; <a class="internal" href="openhw.html" >OpenHW</a> &nbsp; <a class="internal" href="programmable_20logic_20device.html" >programmable logic device</a> &nbsp; <a class="internal" href="vhdl.html" >VHDL</a> &nbsp; </DIV></BODY></HTML>

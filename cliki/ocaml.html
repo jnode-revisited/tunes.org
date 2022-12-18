@@ -1,0 +1,37 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<HTML><HEAD><TITLE>CTO : OCAML</TITLE
+><LINK REL="alternate" TYPE="application/rss+xml" TITLE="Recent Changes" HREF="http://tunes.org/cliki/recent-changes.rdf.html"><LINK REL="stylesheet" HREF="admin/cliki.css"></HEAD
+><BODY><DIV ID="banner"><A TITLE="CTO" CLASS="logo" HREF="ocaml.html">CTO</A
+> <SPAN>CLiki for the TUNES project</SPAN
+></DIV
+><DIV ID="navbar"><A CLASS="internal" HREF="index.html">Home</A
+>  <A CLASS="internal" HREF="cliki.html">About CLiki</A
+> <A CLASS="internal" HREF="text_20formatting.html">Text Formatting</A
+> </DIV
+><DIV ID="main"><H1>OCAML</H1
+>Objective CAML, the <a class="internal" href="object-oriented.html" >object-oriented</a>, <a class="internal" href="concurrent.html" >concurrent</a> variation of the <a class="internal" href="ml.html" >ML</a> <a class="internal" href="functional.html" >functional</a> <a class="internal" href="programming_20language.html" >programming language</a>.
+<p>From the Ocaml official description: <span class="comment">Please, it is better to avoid long citation for copyright reasons. Anyway, where this text come from precisely? -- <a class="internal" href="mad70.html" >MaD70</a></span>
+<p><blockquote>
+Objective Caml belongs to the <a class="internal" href="ml.html" >ML</a> family of programming languages and has been implemented at INRIA Rocquencourt within the ``Cristal project'' group. Since <a class="internal" href="ml.html" >ML</a>'s inception in the late seventies, there has been a continuous line of research at INRIA devoted to implementations and improvements of <a class="internal" href="ml.html" >ML</a>. Objective Caml owes a lot to the original core <a class="internal" href="ml.html" >ML</a> language and to our first Caml implementation (1985-1990). A new byte-coded implementation called Caml Light was developed in the early nineties. The language Caml Light is still in use, especially for education. The language was renamed Objective Caml after the incorporation of a sophisticated module system and an object-oriented layer.
+<p>As all dialects of <a class="internal" href="ml.html" >ML</a>, Objective Caml possesses:
+<ul>
+  <li>First-class functions: functions can be passed to other functions, received as arguments or returned as results.
+  <li>A powerful type system with parametric polymorphism and type inference: functions may have polymorphic types. It is possible to define a type of collections parameterized by the type of the elements, and functions operating over such collections. For instance, the sorting procedure for arrays is defined for any array, regardless of the type of its elements.
+  <li>User-definable data-types and pattern matching: the user can define new recursive data-types as a combination of record and variant types. More importantly, functions over such structures can be defined by pattern matching: a generalized case statement that allows the combination of multiple tests and multiple definitions of parts of the argument in a very compact way.
+  <li>Exceptions for error reporting and non-local control structures.
+  <li>Automatic memory management.
+</ul>
+<p>In addition, Objective Caml features:
+<ul>
+  <li>A sophisticated module system: program phrases can be grouped into structures, which can be named and nested. Signatures are type specifications for structures; they can be used to hide some of the structure components or abstract over some type components. Functors, that is, functions from structures to structures, support parameterized modules.
+  <li>An expressive class-based object-oriented layer that includes traditional imperative operations on objects and classes, multiple inheritance, binary methods, and functional updates.
+</ul>
+<p>The Objective Caml implementation comes with general purpose libraries (arbitrary precision arithmetics, multi-threading, a toolkit for graphical user interfaces, etc.) and a <a class="internal" href="unix.html" >Unix</a>-style programming environment including a replay debugger and a time profiler. Objective Caml programs can easily be interfaced with other languages, in particular with other <a class="internal" href="c_20language.html" >C</a> programs or libraries. The implementation is targeted towards separate compilation of stand-alone applications, although interactive use via a <a class="internal" href="repl.html" >read-eval-print loop</a> is also supported. Both compilation to byte-code (for portability) and to native <a class="internal" href="assembly.html" >assembly</a> code (for performance) are supported. The native code compiler generates very efficient code, complemented by a fast, unobtrusive incremental garbage collector. The implementation runs on most Unix platforms (<a class="internal" href="linux.html" >Linux</a>, Digital <a class="internal" href="unix.html" >Unix</a>, Solaris, IRIX), under Windows 95 and NT, and on the Macintosh.
+</blockquote>
+<p><ul class="links">
+<li>The <A HREF="http://caml.inria.fr/ocaml/">home page</A
+>.
+<li><A HREF="http://pauillac.inria.fr/~furuse/generics/">G'CAML</A
+>, Ocaml with Extensional Polymorphism Extension
+</ul>
+<hr><p><b>This page is linked from: </b> <a class="internal" href="coq.html" >Coq</a> &nbsp; <a class="internal" href="felix.html" >Felix</a> &nbsp; <a class="internal" href="freshml.html" >FreshML</a> &nbsp; <a class="internal" href="garbage_20collection.html" >Garbage Collection</a> &nbsp; <a class="internal" href="inheritance.html" >Inheritance</a> &nbsp; <a class="internal" href="metaml.html" >MetaML</a> &nbsp; <a class="internal" href="ml.html" >ML</a> &nbsp; <a class="internal" href="object-oriented.html" >Object-Oriented</a> &nbsp; <a class="internal" href="orthogonal.html" >Orthogonal</a> &nbsp; <a class="internal" href="pl_20101.html" >PL 101</a> &nbsp; <a class="internal" href="python.html" >Python</a> &nbsp; <a class="internal" href="type_20system.html" >Type System</a> &nbsp; <a class="internal" href="unified.html" >Unified</a> &nbsp; </DIV></BODY></HTML>

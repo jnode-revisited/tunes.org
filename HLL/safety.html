@@ -1,0 +1,76 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+  <head>
+    <!--#include virtual="/head.html" -->
+    <title>HLL Safety and Security Issues</title>
+  </head>
+  <body>
+    <h1>HLL Safety and Security Issues</h1>
+    <!--#include file="header.html" -->
+    <h2>Access rights</h2>
+    <ul>
+      <li>Access rights are implemented through HLL context and scoping. An object is accessible by another object if and only if it is in that other object's HLL context. In other words, we are identifying this level of security with the linguistic semantics.</li>
+      <li>So an object actually exists in the system if and only if there is a path of objects that each allows access to the next, beginning from the boot program, and ending with the considered object.</li>
+      <li>You limit the rights by just wrapping the object with evaluators that will allow access only to parts of existing aspects of the object. <span class="comment">Editor's note: Fix this. There is no restriction if we are only preventing access to <strong>non-existent</strong>aspects.</span></li>
+      <li>The compiler or run-time system should inline any frequently evaluated wrapping code, so this is an amortizable performance hit.</li>
+      <li>An object that verifies or inlines accesses is called a meta-object.</li>
+      <li>This promotes the use of read-only or constant objects, by not publishing any way to modify the object in any context. These semantics are much nicer to express and implement (i.e. much simpler meta-objects).</li>
+      <li>When side-effect functions are hidden from the context, an object may be completely read-only. Particularly, you can't change an attribute's value if you don't have the proper "rights".</li>
+      <li>There is no need for primitive support in the system for builtin capability lists or passwords. These can be implemented as standard meta-objects, but we intend to provide a more expressive and flexible system.</li>
+    </ul>
+
+<h2>Types</h2>
+    <ul>
+      <li>Being able to access objects does not mean you can combine them blindly. To actually combine two objects or evaluate one someway, you must somehow have the system trust such operation may not ever result in a crash.</li>
+      <li>Thus, two objects can connect if only if there exist meta-objects that agree.</li>
+      <li>The set of operations that a meta-object allows for an object is often called the object's type. We thus call "type-system" a meta-object that manages connections between objects, even though these meta-objects can do things completely different from traditional type systems. Verifying that objects' type allow them to combine is called to typecheck the combination.</li>
+      <li>Common languages use deterministic first-order or higher-order type systems; but any kind of type system is possible, as long as it is trustable.</li>
+      <li>An object may have no relevant type in some type system, and thus not be able to combine with other objects in this type system; but it may also have types in other type systems, and thus be able to combine in these.</li>
+      <li>Whatever type systems are used is determined by the context.</li>
+      <li>To found the system, a very basic type systems will allow to define and run low-level code, which makes the <a href="../LLL/index.html">LLL</a> a subset of the HLL.</li>
+      <li>Besides traditional type systems, there will be types consisting of list of capabilities, with or without encrypted signatures, etc. Actually, there will be a whole type-system construction kit.</li>
+      <li>And for optimal security, ultimate type systems will be based on proofs in some formal mathematical logic system.</li>
+    </ul>
+
+<h2>Proofs</h2>
+    <ul>
+      <li>The type of an object is a specification of the object, together with a possible proof that this specification is fullfilled.</li>
+      <li>Such type systems, which can be very well combined with lesser type systems, allow to express just any theoretically computable requirement. Thus, they (and only they) can make us just as confident in programs as we can ever be.</li>
+      <li>The drawback of such rich type systems is that while there it is fairly easy to typecheck a program given enough data, there is no deterministic way to infer this data for an arbitrary program: after a certain point, the logic of a system will be undecidable.</li>
+      <li>In general, an elaborate type system is more expensive in its use, and some programs or just user actions shouldn't be expensive. So, to keep in line with providing an incremental range of power and suitability for the Tunes language, these type systems will be optional, as contracts that one voluntarily accepts to work with a system or program. The contracts will have to be enforcable when necessary, for security reasons in a distributed setting.</li>
+      <li>Thus, objects that are to provide rich information and still run in a decidable way must include enough data to generate a proof of their specification together with this specification. Typechecking such objects can be done very efficiently in a deterministic way.</li>
+      <li>Generating the proofs can be done with lots of tools, but we know (Godel, Turing, etc) that there will always be need for intervention of an intelligent being, because no deterministic generic algorithm exists to generate proofs.</li>
+      <li>Using the Curry-Howard isomorphism, that shows that proofs and programs have the same structure, we can also obtain proofs from programs and conversely, with just the proper annotations (see the <a href="http://cliki.tunes.org/Coq">Coq</a> proof environment), programs can be made out of proofs.</li>
+      <li>Specifications include invariant and variant part.</li>
+      <li>The invariant describes statical information in the program, that is, what information is required, conserved, transformed and acquired by the program when it is run.</li>
+      <li>The variant describes what informational magnitudes should be minimized or maximized by the program, according to some partial ordering. Typically, consumed system resources and unwanted side-effects are invoked here; but any information can be used here, so that the greater (or lesser) the magnitude, the more efficient the program, and the more satisfied the user.</li>
+    </ul>
+
+<h2>Security</h2>
+    <p>See our definition of <a href="http://cliki.tunes.org/Security">security</a>.</p>
+    <ul>
+      <li><em>All</em> systems, from the poorest to the richest, rely on some number of axioms. The problem is to limit the number and unsecurity of these axioms, so we can trust the system as much as possible.</li>
+      <li>Eventually, the list of such axioms will be made very small, so that the human user can control it. The most fundamental axioms, consistency of the most basic system components, will be very reliable because the whole world will be warrant for it, the sources being freely available, and bugs (or hopefully absence of known bugs) will be reported immediately on the Internet.
+      <li>Because proofs depend on axioms, the axiomatic context must be clear for any object. Also, there must be world-wide ways to identify axioms and objects, so proofs are universally understandable.</li>
+      <li>To ensure security while still allowing objects to use axioms that other objects distrust, the system can isolate objects from each other in sandboxes, that can be much like the protected-memory process concept of traditional operating systems.</li>
+      <li>Security is a high-level concept. It depends at the same on the applications used and on global system architecture. No amount of low-level hardware protection can express security. It can only serve to help implement gross checks, in a few cases.</li>
+      <li>Strict type checking (for a variety of application-dependent type-systems) and lexical scoping (i.e. nested, non-global lexical environments) are ways to express high-level security constraints. Relying on such basic framework, proxies can be used to specify and implement arbitrary high-level restriction of resource usage.</li>
+      <li>Capabilities are thus not bitmaps or key lists. They are just access to objects in a strictly lexically scoped language that ensures that capabilities cannot be stolen.</li>
+      <li>Using reflection, there can also be meta-rules that constrain the execution of "base" behavioral rules, so as to preserve security invariants, in a non-intrusive way that allows to separate algorithmic and security aspects of code in as much as possible, keeping things simpler, hence safer.</li>
+      <li>Under tunes, it requires a "capability" to bless code into runnable status, that only trusted compilers initially have (as well as super-user in debug mode).</li>
+      <li>Of course, there will still be the usual low-level paranoid sandboxes for emulation of obsolete systems such as GNU/Linux. Even then, the system emulator that wraps such a black-box will be written using native high-level security mechanisms.</li>
+      <li>The fact that security be acknowledged as a high-level mechanisms and handled at compile-time by usual metaprograms (compiler, etc) means that you can define much tighter security. But it has another, deeper, structural advantage over low-level security mechanisms as observed in current systems. Indeed, low-level kernel-based security mechanisms incur some constant run-time overhead at every use, and are thus for performance reasons not suitable for often-used fine-grained objects. This means that programmers for such objects, application programmers must use their own security paradigms without system support, and thus pay the costly error-prone complexity of mixing several mutually unadapted security paradigms, some of which are unsupported (and thus not only subject to additional costly mismatches, but also impossible for applications to trust when sharing information between applications). Such complexity inevitably leads to less secure code, to shoddy programming practices, and to utter inability to express real high-level security invariants. By contrast, high-level software-based security allows for system-wide security specifications using the same uniform framework for objects regardless of their size and usage frequency, yet, by static compilation, without runtime overhead. The uniformity of the framework allows for much simpler and hence more understandable, more manageable, and overall safer security specifications. Using reflection, programmers are free to introduce new distinctions between classes of object, in a way that enables the user to manage them according to relevant criteria adapted to the considered application and regardless of performance criteria that are automatically taken care of at the metalevel.</li>
+    </ul>
+
+<h2>Correctness</h2>
+    <ul>
+      <li>At what point is an object under scrutiny of correctness; i.e. when is it proven?  Never, until user requested; or automatically, when created or defined?
+
+	<p>Well, the system will have user-defined invariants, and every "context" will include its set of invariants. The system will guarantee that these invariants are always enforced. So that when an object is used in a context where correctness of the object wrt to some specification is part of the invariants, then you can be fairly sure that the object correctly implements its specification. Of course, the system may be unable to enforce some invariants, but then, it won't provide you the context you want; only by giving the system the proper hints, you may achieve what you want.</p>
+
+	<p>Hence, you write a specification, then ask the system "instantiate this specification for me", giving it a tactic/meta-object, or letting the default tactic run. The system will either manage to instantiate the specification, or fail (or you may stop it when it still hasn't answered and you are bored). <em>Of course</em>, the instantiation tactic may involve interactive computations and proofs.</p>
+      </li>
+    </ul>
+    <!--#include virtual="/footer.html" -->
+  </body>
+</html>

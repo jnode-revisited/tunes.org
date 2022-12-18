@@ -1,0 +1,126 @@
+<!doctype html public "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+  <head>
+    <!--#include virtual="/head.html" -->
+    <TITLE>The TUNES i386 Subproject</TITLE>
+  </head>
+  <body>
+    <H1>The TUNES i386 Subproject</H1>
+    <!--#include file="header.html" -->
+    <p><B>NOTE:</B> existing code and corresponding technical comments lie in directory src/LLL/i386 of the source distribution.</p>
+
+<h2><a name="Goals">Goals</a></h2>
+
+    <p>Implement the Tunes project on "industry standard" computers equipped with an Intel 80386 or compatible 32-bit CPU.</p>
+    <p>The implementation should be faithful to the LLL specifications, and device drivers should be provided to allow basic memory management, human interaction, and access to mass storage.</p>
+
+<h2><a name="implementation ideas">Implementation Ideas</a></h2>
+
+<h3>Use of the MMU</h3>
+    <p>Run most code in ring 0 to reduce all the I/O and ring switching overhead. This is safe because we use safe code. If some features of paging (write-protect) in code 0 is not possible (386 computers), use ring 1 with IO rights (IOPL).</p>
+    <p>Use segments only as a way to achieve quick pointer arithmetics for large objects worth the descriptor table mangling and all the overhead resulting from different memory management.</p>
+    <p>Emulation boxes and other unsecure programs of course use ring 3.</p>
+    <p>Small programs (most of them) don't need a full personal address space and share their MMU pagetables with their calling program. If a program grows large, migration can still make a full task for it.</p>
+    <p>Programs that we know will be large and little interacting with other (or not be trusted) will be given an address space for them alone. There must be some way to share code whatsoever. The first thing an experienced user may want to do is create a task for him alone.</p>
+    <p>paging can be used to use wired service address valid both in PL0 as well as other levels.</p>
+
+
+<h3>DOS emulation</h3>
+    <p>Run DOS in real low memory, even if using vm86 mode, so DOS programs can use DMA and such. Perhaps even run in true real-mode.</p>
+    <p>Here are a few trick to free as much DOS memory as possible:</p>
+    <ul>
+      <li>TUNES installs as high as possible in real and extended memory</li>
+      <li>We can intercept all interrupts, with the real-mode IDT being in extended memory; real-mode interrupts jump to the same physical code portion that just jumps into protected mode for PM interrupt management; interrupts are differentiated by the code segment with which the code portion was reached: 5F21 for int 21, 5F33 for int 33, etc: the same few bytes need not be replicated 256 times.</li>
+    </ul>
+
+<h2><a name="Issues">Difficulties</a></h2>
+    <UL>
+      <LI>See <a href="../index.html#Issues">LLL issues</a>.</li>
+      <LI>Having some efficient code, but limit hardware dependence to the least possible.</li>
+      <LI>Supporting all the <EM>various</EM> kinds of existing hardware on PC-compatible stuff.</li>
+      <LI>Perhaps supporting DOS running below TUNES.</li>
+      <LI>We need some standard object encoding for our modules. See GOOSE subproject.</li>
+</UL>
+
+<h2><a name="Boot">The Bootstrap Sequence</a></h2>
+    <p>Only the very first steps of the boot sequence have already been implemented, and the initial kernel is still to be completed.</p>
+    <p>Here are the first steps of the boot sequence:</p>
+    <UL>
+      <LI>The ROM-based BIOS, or some boot multiplexer (e.g. LILO the LInux LOader, or OS/2's boot manager) loads our 512-byte long <B>boot sector</B> at 0:7C00, and jumps into it.</li>
+      <LI>The boot sector just chains into the ~2K boot loader that it read from disk according to information written in the boot sector during the TUNES installation. It also installs a BIOS extension to allow reading floppies that were overformatted (&gt;1.44MB), using fdformat, or Linux utilities.</li>
+      <LI>The boot loader tests the CPU type, the amount of available memory, and retrieves a small kernel from disk, and jumps into it with proper parameters.</li>
+      <LI>Alternatively, LILO or LOADLIN (from DOS prompt) loaded the kernel, that was faking a Linux kernel, and jumped into the boot loader. The boot loader is able to detect it and will load the small kernel from memory rather than disk; it will even recognize command-line parameters given by such a loader.</li>
+      <LI>A simple initial kernel, as loaded by the loader, is run. It manages:
+	<UL>
+	  <LI>real-mode&lt;-&gt;protected-mode switching</li>
+	  <LI>A 32-bit FORTH kernel</li>
+	  <LI>hooks for TUNES to intercept hardware interrupts</li>
+	  <LI>calling the BIOS from protected mode</li>
+	  <LI>A simple console video output module using the BIOS</li>
+	  <LI>A simple console keyboard input module using the BIOS</li>
+	  <LI>A simple disk I/O module using the BIOS</li>
+	  <LI>real-memory/extended-memory dynamic linking</li>
+	  <LI>loading of the remaining of TUNES according to modules that were concatenated to the initial kernel.</li>
+	</UL>
+      <LI>When the initial kernel finished installing itself, it consecutively installs all the modules that were concatenated to it during system installation, and loaded after it by the boot loader. The last one will presumably load ever more modules until all wanted modules are installed, and the system is ready to begin or resume actual work. Some of these modules will be i386 specific; others may be architecture-independent.</li>
+    </UL>
+
+<h2><a name="Modules">Modules</a></h2>
+
+<h3><a name="implemented">Implemented Modules</a></h3>
+    <p>Here is a list of implemented i386-specific modules:</p>
+    <UL>
+      <LI><B>Booting</B>
+	<UL>
+	  <LI>The boot record and boot loader, with corresponding installation tools.</li>
+	  <LI>A very simple protected mode program that makes segment, paging, tasking, and interrupt management, and transmode (real/protected) calling just possible. reflects interrupts to real-mode and allows to call real-mode routines or interrupts.</li>
+	</UL>
+    </UL>
+
+<h3><a name="to implement">Modules still to implement</a></h3>
+
+    <p>Here is a list of i386-specific modules to implement:</p>
+    <UL>
+      <LI><B>Memory management</B>
+	<UL>
+	  <LI>An interface to the i386 MMU</li>
+	  <LI>An interface to the i386 segmenting</li>
+	  <LI>Interrupt sharing manager</li>
+	</UL>
+      <LI><B>i386 specializations of more generic modules</B>
+	<UL>
+	  <LI>An i386-optimized instance of the generational garbage collector that checkpoints objects for persistency.</li>
+	  <LI>support for chunks i386 executable binary.</li>
+	  <LI>full support for GOOSE modules.</li>
+	</UL>
+      <LI><B>Raw drivers for console interface</B>
+	<UL>
+	  <LI>A simple parametrizable raw keyboard manager</li>
+	  <LI>Some keyboard cooking to obtain national keyboard mapping</li>
+	  <LI>A simple interface to text-mode video</li>
+	</UL>
+      <LI><B>I/O drivers:</B>
+	<UL>
+	  <LI>Generic and specific disk drivers, that may be using the BIOS, or directly talking to the adapter, using a SCSI interface, etc. Perhaps stealing it from Linux.</li>
+	  <LI>Drivers for serial ports</li>
+	  <LI>Drivers for parallel ports</li>
+	  <LI>Drivers for ethernet adapters</li>
+	  <LI>Sound drivers</li>
+	  <LI>Graphic card drivers</li>
+	</UL>
+    </UL>
+
+<h2><a name="bibliography">Bibliography</a></h2>
+    <p>See the <a href="http://cliki.tunes.org/Operating Systems">OS page of the Wiki</a>, particularly the <a href="http://cliki.tunes.org/Operating Systems#code">Code section</a>.
+
+<h3>To Do</h3>
+<ul>
+<li>Use Flux as a BIOS replacement that gives us Linux and BSD drivers.</li>
+<li>set up standard memory segmenting and mapping.</li>
+<li>set up GC implementation.</li>
+<li>set up calling conventions.</li>
+<li>Write the i386 stuff as a Linux kernel module?</li>
+</ul>
+    <!--#include virtual="/footer.html" -->
+  </body>
+</html>

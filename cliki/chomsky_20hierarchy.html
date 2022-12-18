@@ -1,0 +1,54 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<HTML><HEAD><TITLE>CTO : Chomsky Hierarchy</TITLE
+><LINK REL="alternate" TYPE="application/rss+xml" TITLE="Recent Changes" HREF="http://tunes.org/cliki/recent-changes.rdf.html"><LINK REL="stylesheet" HREF="admin/cliki.css"></HEAD
+><BODY><DIV ID="banner"><A TITLE="CTO" CLASS="logo" HREF="chomsky_20hierarchy.html">CTO</A
+> <SPAN>CLiki for the TUNES project</SPAN
+></DIV
+><DIV ID="navbar"><A CLASS="internal" HREF="index.html">Home</A
+>  <A CLASS="internal" HREF="cliki.html">About CLiki</A
+> <A CLASS="internal" HREF="text_20formatting.html">Text Formatting</A
+> </DIV
+><DIV ID="main"><H1>Chomsky Hierarchy</H1
+>This describes an aspect of <a class="internal" href="syntax.html" >syntax</a>, originally defined by <a class="internal" href="noam_20chomsky.html" >Noam Chomsky</a>, relating classes of languages with their corresponding grammars and machines:
+<p><table border=1 cellpadding=2>
+<tr>
+<th>Language</th>
+<th>Grammar</th>
+<th>Machine</th>
+<th>Example</th>
+<th>Production Rules</th>
+</tr>
+<tr>
+<td>Regular language</td>
+<td>Regular grammar
+  <ul>
+  <li>Right-linear grammar
+  <li>Left-linear grammar
+  </ul></td>
+<td>Deterministic or nondeterministic finite-state acceptor</td>
+<td>a*</td>
+<td>A -> aB,<br>A -> a</td>
+</tr>
+<tr>
+<td>Context-free language</td>
+<td>Context-free grammar</td>
+<td>Nondeterministic pushdown automaton</td>
+<td>a<sup>n</sup>b<sup>n</sup></td>
+<td>A -> r</td>
+</tr>
+<tr>
+<td>Context-sensitive language</td>
+<td>Context-sensitive grammar</td>
+<td>Linear-bounded automaton</td>
+<td>a<sup>n</sup>b<sup>n</sup>c<sup>n</sup></td>
+<td><sub>A</sub>A<sub>B</sub> -> <sub>A</sub>r<sub>B</sub></td>
+</tr>
+<tr>
+<td>Recursively enumerable language</td>
+<td>Unrestricted grammar</td>
+<td>Turing machine</td>
+<td>Any computable function</td>
+<td><em>(No restrictions)</em></td>
+</tr>
+</table>
+<p>These languages form a strict hierarchy, with greater expressive powers in the lower entries of the table.</DIV></BODY></HTML>

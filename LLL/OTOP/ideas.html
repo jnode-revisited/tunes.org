@@ -1,0 +1,27 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+  <head>
+    <!--#include virtual="/head.html" -->
+    <title>O'TOP Implementation Ideas</title>
+  </head>
+
+  <body>
+    <h1>O'TOP Implementation Ideas</h1>
+    <!--#include file="header.html" -->
+
+<h2>System configuration</h2>
+    <p>Existing "POSIX-compliant" systems vary a great lot: word size, endianness, stack growth direction, possible assembly (and register) optimizations, availability of useful (GCC) extensions to ANSI C such as like first-class labels or <code>typeof()</code> statements, names and flags of compiler tools, available libraries and corresponding header files to include, etc.</p>
+    <p>Thus we must have some automatic portable configuration subsystem. Caml-light does things entirely automatically, and determines each feature of the system. PFE uses some kind of database. We should use a mix of these, where there is a system to generate configuration files, and some precomputed configuration files for known systems.</p>
+
+<h2>C as a portable assembler</h2>
+    <p>Produce some assembly-like C source, with global variables, labels, jumps in one big procedure, using m4 as a macro-processor, and/or outputing C from the HLL.</p>
+    <p>This way, we build a generic assembly implementation of the TUNES LLL, to avoid the need for a completely different C based one, while still taking advantage of C optimizing compilers, and we can use our specific calling and multithreading conventions without interfering with the C calling stack (still useful for I/O).</p>
+
+<h2>C and memory management</h2>
+    <p>Efficient garbage collection and persistent memory management is particularly difficult if using standard C libraries at the same time. These use their own uncontrollable data-structures in <tt>malloc</tt>'ed memory.</p>
+    <p>All persistence and garbage collection should thus be done outside of this malloc'ed memory: This should be done by mmap'ing some persistent file into a system-dependent address space zone out of reach of malloc (say, at least 0.5 GB), and/or mprotect()ed so that we'll be warned in case malloc() reaches it.</p>
+    <p>Some statical mapping allows much more optimizations, and far easier saving/loading of a persistent memory image. If it's not possible, restoring (not saving) the image would relocate pointers if actual dynamical address is different.</p>
+    <p>We might use the C call stack pointer as the heap pointer.</p>
+    <!--#include virtual="/footer.html" -->
+  </body>
+</html>

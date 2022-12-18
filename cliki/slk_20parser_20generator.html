@@ -1,0 +1,20 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<HTML><HEAD><TITLE>CTO : SLK Parser Generator</TITLE
+><LINK REL="alternate" TYPE="application/rss+xml" TITLE="Recent Changes" HREF="http://tunes.org/cliki/recent-changes.rdf.html"><LINK REL="stylesheet" HREF="admin/cliki.css"></HEAD
+><BODY><DIV ID="banner"><A TITLE="CTO" CLASS="logo" HREF="slk_20parser_20generator.html">CTO</A
+> <SPAN>CLiki for the TUNES project</SPAN
+></DIV
+><DIV ID="navbar"><A CLASS="internal" HREF="index.html">Home</A
+>  <A CLASS="internal" HREF="cliki.html">About CLiki</A
+> <A CLASS="internal" HREF="text_20formatting.html">Text Formatting</A
+> </DIV
+><DIV ID="main"><H1>SLK Parser Generator</H1
+><em>The SLK parser-generator is the only tool available that enables <strong>table-driven LL(k) <a class="internal" href="parsing.html" >parsing</a></strong></em>. <!-- Avoids problems in search listing. -->
+<em>Top-down parsing (LL) is thought to be better suited to syntax directed translation (compilers) than the bottom-up parsing technique (LALR) that is used by most parser-generators. The SLK table-driven parsing method is also superior to the recursive-descent technique that is used by programmers because it automates much of the process. The simple driver treats all symbol types of the grammar the same because the grammar is encoded in a set of tables. In recursive-descent, all of the productions are individually written out in the source code of the program. This is tedious, prone to error, difficult to maintain, and it obscures the grammar in a way that makes it difficult to determine exactly what language is really being recognized by the compiler.
+<p>SLK combines the simplicity and efficiency of the LL(1) method with the power and flexibility of Strong LL(k) parsing (SLL(k)). The SLK parser-generator creates parsers that are smaller and faster than others. They also have consistent, easily customizable, automated error recovery. Correctness is easier to demonstrate since the parsing code is separate from the semantic action code. [..]
+</em> (Excerpt from its home page, see below).
+<p><ul class="links">
+  <li><A HREF="http://home.earthlink.net/~slkpg/">The SLK Parser Generator</A
+>.</li>
+</ul>
+<hr><p><b>This page is linked from: </b> <a class="internal" href="parsing.html" >Parsing</a> &nbsp; </DIV></BODY></HTML>

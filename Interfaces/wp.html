@@ -1,0 +1,45 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+  <head>
+    <!--#include virtual="/head.html" -->
+    <title>The Tunes Interfaces Subproject -- Word Processing</title>
+  </head>
+  <body>
+    <h1 align="center">Word Processing</h1>
+    <!--#include file="header.html" -->
+    <h2>Considerations</h2>
+
+<p>With Tunes, one must be able, with reasonable ease, to create high-quality text-based documents.</p>
+
+    <h2>Goals</h2>
+    <ul>
+      <li>Fast.</li>
+      <li>Modular and flexible.</li>
+      <li>Compatible with existing (though gross) standards.</li>
+    </ul>
+
+    <p>Abolish the modern-day concept of a word processor. Programs such as MS Word have 100x as many features as a simple text program ought to, and, as a result, are very big, slow and non-intuitive. Tunes must be different.</p>
+    <p>Word Processing apparently falls under the greater category of "Professional 2D Document Publishing", something that also includes graphics and <a href="http://wombat.doc.ic.ac.uk/foldoc/foldoc.cgi?DTP">DTP</a>. The future of such publishing seems to be heading towards, and should head towards, much more modular, flexible and open architectures, architectures, perhaps such as <a href="http://wombat.doc.ic.ac.uk/foldoc/foldoc.cgi?OpenDoc">OpenDoc</a> and <a href="http://wombat.doc.ic.ac.uk/foldoc/foldoc.cgi?OLE">OLE</a>, where small, managable-sized components are stacked together to build much more friendly, usable working environments.</p>
+    <p>There should exist seperate text, graphics, spell-check, thesaurus, (ad nauseum) modules, each of which is loosely integrated with the rest, and each of which is easy to replace, should a better or preferable version come along.</p>
+    <p>The Tunes Interface subproject principles dictate that all these modules and systems they compose into should be usable in whatever terminals are possible.</p>
+
+    <ul>
+      <li>All this should be done in a reflective way: the user should be able to define the meaning of his document, and independently refine the tactics by which it is represented in some medium; things known as style files in word processors and DTP packages are rough analogues of this concept.</li>
+      <li>Tunes should have a better, cleaner equivalent of TeX. You'd have all the power of the Tunes HLL, with a collection of predefined concepts and tactics corresponding to 2D typesetting.
+	<p>A set of structure-based editing tactics for this language could be made: this would constitute the "word-processor". However, since this framework would be embedded in the HLL, users could use meta-level operations to automate things that traditional word processors are not capable of.</p>
+      </li>
+    </ul>
+    <p>Because every single sub-object of their document will be a first-class Tunes object, and any first-class Tunes object can be embedded in their document through adaptation (wrapping or meta-programming), any Tunes operation can be done on it.</p>
+    <p>Hence, I could study some problems, acquire data in a specific format with specific semantic operators; treat this data in many ways; define functions and concepts to manipulate a large class of data, define styles to display the data in various ways, and automatically generate from my same Tunes workplace lots of information extracts as 2D documents:</p>
+    <ul>
+      <li>A series of reports about how the problem can be handled, with ones being more technical versions of the others.</li>
+      <li>More or less introductory/specialized courses on the subject.</li>
+      <li>Exercises about the topic, with versions of the exercises file that include more or less hints, and/or more or less detailed solutions.</li>
+      <li>References to other works on the subject.</li>
+    </ul>
+    <p>But because arbitrary Tunes objects, <em>not</em> 2D graphical data, constitute the common Tunes language, publishing in that format, which is good for paper documents, would not be the limit. I could publish a read-only (<em>i.e.</em> copy-on-write) version of most my very workplace (stripped from private/development parts).</p>
+    <p>The reader is also capable of some independence: instead of having to contend with the precomputed output of prebuilt static tactics, the reader could interactively propose his own personalized tactic. So, he would discover my reports, choose which part to expand and which to keep summarized according to his own taste and background. He could then ask for exercise hints precisely for the exercises he tried and didn't find, while being able to interactively use the concepts I defined with his computer in a semantically-preserving way; these concepts would be live objects with their own behavior playing out live. He could arbitrarily make queries on things in my document with his own familiar information extraction tools, instead of having to adapt to mine. He could also reliably write comments on the objects I published, and perhaps even publish them in turn, etc. This last part is an example of distributed annotation.</p>
+    <p>Because Tunes can manipulate side-effective structured objects instead of isolated linear bytestreams, it removes the problem of having to explicitly copy object representations and references, with all the associated desynchronization problems (about this latter problem of current systems, see <a href="tunesvswww.html">Tunes Distributed Publishing</a>).</p>
+    <!--#include virtual="/footer.html" -->
+  </body>
+</html>

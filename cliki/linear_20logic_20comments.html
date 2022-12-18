@@ -1,0 +1,56 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<HTML><HEAD><TITLE>CTO : Linear Logic Comments</TITLE
+><LINK REL="alternate" TYPE="application/rss+xml" TITLE="Recent Changes" HREF="http://tunes.org/cliki/recent-changes.rdf.html"><LINK REL="stylesheet" HREF="admin/cliki.css"></HEAD
+><BODY><DIV ID="banner"><A TITLE="CTO" CLASS="logo" HREF="linear_20logic_20comments.html">CTO</A
+> <SPAN>CLiki for the TUNES project</SPAN
+></DIV
+><DIV ID="navbar"><A CLASS="internal" HREF="index.html">Home</A
+>  <A CLASS="internal" HREF="cliki.html">About CLiki</A
+> <A CLASS="internal" HREF="text_20formatting.html">Text Formatting</A
+> </DIV
+><DIV ID="main"><H1>Linear Logic Comments</H1
+>An <a class="internal" href="essay.html" >essay</a> by <a class="internal" href="jack_20waugh.html" >Jack Waugh</a>:
+<p>[I don't remember how long ago I wrote this. I'm sure that when I did, the current <a class="internal" href="linear_20logic.html" >linear logic</a> article wasn't in the Wiki, and I think it very authoritatively replaces this "essay" at least in the latter's original intent. I could see deleting this page, except perhaps for the value of the comments and discussion that people have added after my original text. -- Jack Waugh 2003-08-11]
+<p>I have seen the term "<a class="internal" href="linear_20logic.html" >linear logic</a>" used in a way that has nothing to do with linear equations (described at Linear Programming). In the literature I saw, Linear Logic means a discipline where an object <a class="internal" href="reference.html" >reference</a> can only be used once. In fact, you must use it exactly once. To destroy a reference requires an explicit mention. To "split" a reference also does. So for example, where in, say <a class="internal" href="smalltalk.html" >Smalltalk</a> (an imperative OO language), you could write:
+<p><code>foo: anArgument
+ ^ anArgument + anArgument</code>
+<p>a linear-logic language would (assuming a similar syntax) require something like
+<p><code>foo: anArgument
+ | tmp1 tmp2 |
+ tmp1, tmp2 := anArgument asTwoCopies.
+ ^ tmp1 + tmp2</code>
+<p>(This assumes an extention to <a class="internal" href="smalltalk.html" >Smalltalk</a> syntax where you could have a call return multiple results, which you could then store in variables.)
+<p>Since the restrictions I outlined above prevent an object from having more (or less) than one reference to it at a time, there is never shared reference to a mutable object. Consequently, linear-logic languages exhibit <a class="internal" href="referential_20transparency_20and_20state.html" >referential transparency</a>, so they qualify as pure <a class="internal" href="functional.html" >functional</a> languages. But what linear logic buys you is that an implementation can reuse the storage of an object for a derivitave object. For example, suppose:
+<p><code>foo at: 1 put: 2</code>
+<p>means an array just like <var>foo</var> (assume <var>foo</var> is an array) except that the first element has been replaced with the number 2. Then the implementation can just store 2 at the first location in the memory formerly used for foo and can use the same memory for the result. It can do that confidently because it knows that the calling code just used up the reference <var>foo</var> and can't be about to use it again.
+<p>Does linear logic simplify <a class="internal" href="garbage_20collection.html" >garbage collection</a>? Not much, I guess, because if you allow the explicit reference splitting and destroying, you can still generate garbage, and collecting it remains the same problem.
+<p><span class="comment">[Where have you taken this idea of splitting references? (This is not a rhetorical question: do you have references?). As you correctly pointed out at the beginning of this essay, <cite>[..] Linear Logic means a discipline where an object <a class="internal" href="reference.html" >reference</a> can only be used once. [..]</cite> As I understand it, with splitting references you mean duplicate references, correct me if I am wrong. But a split (duplicated) reference is no more a linear reference by its own definition. So linear logic does not simplify <a class="internal" href="garbage_20collection.html" >garbage collection</a>, but <strong>completely avoids it</strong>.
+<p>See <A HREF="http://www.pipeline.com/~hbaker1/LinearLisp.html">Lively Linear Lisp -- 'Look Ma, No Garbage!'</A
+> and other <a class="internal" href="henry_20baker.html" >Henry Baker</a>'s papers on this subject.
+<p>Well, I just realized that this is an essay from our old Wiki so he probably will not respond. Anyway his understanding of linear logic seems to me fallacious or I have misunderstood him.. Can anyone enlighten me?
+<p>-- <a class="internal" href="mad70.html" >Mad70</a>]</span>
+<p>The reference on the the splitting of references is:
+<p><blockquote>
+Ken Kahn, Vijay Saraswat. <cite>Actors as a special case of concurrent constraint (logic) programming</cite>. In OOPSLA/ECOOP 1990. (See <a class="internal" href="actor.html" >Actor</a> for a link to this paper).
+</blockquote>
+<p>On page 60, top of the right column, the authors mention the necessity of explicitly splitting references in Lucy, the language that the paper introduces as the "missing link" between <a class="internal" href="concurrent.html" >concurrent</a> <a class="internal" href="constraints.html" >constraint</a> programming (represented by the language <a class="internal" href="janus.html" >Janus</a>, which the paper also describes) and the <a class="internal" href="actor.html" >Actor</a> model of Hewitt and Agha.
+<p>Rereading my text above, I can imagine a possible source of confusion between two notions of "reference". Those are reference to an immutable object, vs. reference to a mutable object.
+<p>Suppose the language only permitted "references" to "immutable objects" (arguably most simply described as simply "values") as arguments and returned values. Then with the <a class="internal" href="constraints.html" >constraint</a> of linearity, that you can't ignore an argument nor can you use it in more than one place, there is no need for garbage collection. If you explictly free the value or "object", the implementation knows there are no other "references" to the "object" (as John Carter points out below, the reference count is exactly one), so it can release the memory right away. No need for collection.
+<p>In such a language, any notion of "splitting" the "reference" would just be semantically equivalent (except perhaps in regard to time or space performance) to copying the value. That is probably what I was thinking about when I wrote the original example above where I first mentioned splitting.
+<p>The reference splitting described by Saraswat and Kahn, however, involves refereces to mutable objects (<a class="internal" href="actor.html" >Actor</a>s in their case). So it's not quite the same thing. If you can explicitly split and destroy references to mutable objects, you just as much need a collector as in a language like <a class="internal" href="smalltalk.html" >Smalltalk</a> where the splitting and destroying is implicit.
+<p>-- <a class="internal" href="jack_20waugh.html" >Jack Waugh</a> 2003-08-11
+<hr>
+<p>(Linear logic can help when it is rolled into stack-handling, as <a class="internal" href="monad.html" >Monad</a>s are often implemented.)
+<p><A HREF="http://www.linearity.org/">A website</A
+>
+<p><A HREF="ftp://publications.ai.mit.edu/ai-publications/1500-1999/AITR-1627.ps">A paper</A
+>
+<p><hr>
+<p>Think of it as "reference counting on the fingers of one thumb".
+<p>It is the way we learnt that the world works back in preschool. If I have an object and I give it to you, I no longer have it. If I take it back, you no longer have it.
+<p>My two-year-old toddler understands that.
+<p>Now I see Linear Logic as an important simplifier. We have suffered from "pass-by-name", "pass-by-reference", "pass-by-value" semantics long enough. What we really want is "I hand this object to you", "You borrow this object only to read from", "I hand this object to you to modify, you will give it right back again." "You will give an object to me".
+<p><a class="internal" href="c_2b_2b.html" >C++</a> makes a baby step towards this with <code>const</code>. <code>const</code> is basically "You can borrow this object to read from".
+<p>In fact I claim that the contract between calling routine and function regarding the read only, hand in, modify and hand out semantics is more important than Strict Typing. The language should require the client to specify which semantics he requires, verify that it matches the called routines declaration and enforce it.
+<p>I see this as an important step towards True Encapsulation. -- <a class="internal" href="john_20carter.html" >John Carter</a>
+</DIV></BODY></HTML>

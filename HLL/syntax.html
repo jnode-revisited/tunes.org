@@ -1,0 +1,64 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+  <head>
+    <!--#include virtual="/head.html" -->
+    <title>HLL Syntax</title>
+  </head>
+  <body>
+    <h1>The Tunes HLL Syntax</h1>
+    <!--#include file="header.html" -->
+    <p>Language syntax is a matter of conventions. No one expressed any preference yet, and existing languages of interest are many, each with its own completely different syntax.</p>
+    <p>Syntax matters in as much as we need it to communicate the <A HREF="http://tunes.org/HLL/semantics.html">semantics</A> of the HLL.</p>
+
+<hr>
+
+<h2><a name="plan">Plan</a></h2>
+    <p>One possible approach is to define the HLL as multiple extensions to existing languages, then refine it to obtain cleaner things.</p>
+    <p>A likely approach with this is to define such an extension first in Scheme or Common Lisp that uses a modified form of their syntax to better express these ideas and to interface to the HLL implemented as a Lisp library.</p>
+
+<hr>
+<H2><a name="nonconcerns">Non-Concerns</a></H2>
+    <p>Sequentiality:</p>
+    <ul>
+      <li>Textual syntax is sequential just because text is sequential. Other syntax (graphical?) may be structured in a way that easily allows more than one possible sequential reading. However, it looks like some bottleneck forces individual humans to acquire data in a sequential manner, anyway.</li>
+      <li>However, sequential syntax still encodes meaning that doesn't have to do with position in the code. So Tunes HLL <a href="principles.html">principles</a> suggest that this sequentiality not be built in to the objects representing the expression, but instead be treated as a normalized encoding of the structure.</li>
+    </ul>
+    <p>Tunes HLL <a href="principles.html">principles</a> encourage the idea of separating abstraction from implementation as a necessity; this subproject infers that to mean that a particular syntax should not be exclusively-coupled to a system. So, Tunes should support multiple syntaxes. This juggling may break given sequencing, and use arbitrary tree/graph manipulations. The graphical interface that structured (graphical or textual) editors propose is enough of a "syntax" to me. (See the Tunes <a href="../Interfaces/index.html">Interfaces</a> subproject for generalizations.)</p>
+    <p>The preferred syntax for input may not forcibly be the preferred syntax for output. For instance, users generally like free-form keyboard input with name completion, and nicknames, but structured output with full names and color. For the sake of consistency verification, it should be easy to interactively change the syntactic mode.</p>
+
+<hr>
+<H2><a name="difficulties">Difficulties</a></H2>
+    <ul>
+      <li>The most difficult thing about syntax is to <em>agree</em>.</li>
+      <li>The syntax must be as simple as possible.</li>
+      <li>It must also be compact, with no unneeded redundances.</li>
+      <li>Redundances are <em>allowed</em> to verify structure matching as in
+	<ul>
+	  <li>begin ... end</li>
+	  <li>if ... then ... elif ... elseif ... else ... {endif}</li>
+	  <li>for ... in ... do ... </li>
+	</ul>
+      </li>
+      <li>The sources must be human-writable and <em>human-readable</em>.</li>
+      <li>What about having a mode where indentation is a structure indicator?</li>
+      <li>We would like to be able to embed any syntax in any other with standard tools.</li>
+      <li>What syntax for macros and reflexivity?</li>
+      <li>Particularly, how to export/import modules without importing the higher-order parts of the module (defining words).</li>
+      <li>Now, when there is some higher-order rewrite (say, some object being redefined), how determine simply what objects get rewritten, and which use the old version? Particularly when it's some extension.</li>
+      <li>There should be some clear yet quick way to differentiate the refinement of some existing object from the defition of a new one.</li>
+      <li>I propose we define some generic way to define and use higher-order modules (i.e. you can define objects, but also meta-objects/grammar rules/defining words, etc). Then we can have some simple languages (Forth, Scheme, Self, Haskell) implemented as simple modules.</li>
+    </ul>
+
+    <p>Basic abstractions:</p>
+    <ul>
+      <li>annotations</li>
+      <li>environments as interned symbol->value annotations</li>
+      <li>patterns as interned object->environment->new-environment</li>
+    </ul>
+    <p>Basic concretizers:</p>
+    <ul>
+      <li>hash tables</li>
+    </ul>
+    <!--#include virtual="/footer.html" -->
+  </body>
+</html>

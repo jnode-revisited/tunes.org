@@ -1,0 +1,57 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<HTML><HEAD><TITLE>CTO : Continuation-Passing Style</TITLE
+><LINK REL="alternate" TYPE="application/rss+xml" TITLE="Recent Changes" HREF="http://tunes.org/cliki/recent-changes.rdf.html"><LINK REL="stylesheet" HREF="admin/cliki.css"></HEAD
+><BODY><DIV ID="banner"><A TITLE="CTO" CLASS="logo" HREF="continuation-passing_20style.html">CTO</A
+> <SPAN>CLiki for the TUNES project</SPAN
+></DIV
+><DIV ID="navbar"><A CLASS="internal" HREF="index.html">Home</A
+>  <A CLASS="internal" HREF="cliki.html">About CLiki</A
+> <A CLASS="internal" HREF="text_20formatting.html">Text Formatting</A
+> </DIV
+><DIV ID="main"><H1>Continuation-Passing Style</H1
+>Continuation-Passing Style, <a class="internal" href="aka.html" >aka</a> <a class="internal" href="cps.html" >CPS</a>, is a paradigm for expressing programs in terms of primitives that explicitly build, pass around and invoke <a class="internal" href="continuation.html" >continuation</a>s.
+<p>In <a class="internal" href="cps.html" >CPS</a>, all the "function calls" are actually jumps to <a class="internal" href="continuation.html" >continuation</a>s that never return (so you asymptotically better not waste stack space with them). You can <a class="internal" href="macro.html" >macro</a>-express "normal" function calls into <a class="internal" href="cps.html" >CPS</a> by having the caller jump to the subroutine while giving to it an explicit <a class="internal" href="continuation.html" >continuation</a> as an extra argument, and returning for the callee will consist in jumping to that <a class="internal" href="continuation.html" >continuation</a> with the return value as argument. That <a class="internal" href="continuation.html" >continuation</a> itself refers to the caller's <a class="internal" href="continuation.html" >continuation</a> argument, and thus recursively <a class="internal" href="reification.html" >reifies</a> the whole call chain; at each element of the chain, it also includes the bit of work that has to be done to finish the current function before to return. In other words, the system call stack can be viewed as a <a class="internal" href="continuation.html" >continuation</a>, and each return addresses (together with the code it points to) can be seen as the static "bit of work remaining to be done" part of a <a class="internal" href="continuation.html" >continuation</a>.
+<p><a class="internal" href="cps.html" >CPS</a> is notably used to build compiler representations or to extend a <a class="internal" href="language.html" >language</a> with <a class="internal" href="reification.html" >reifiable</a> <a class="internal" href="continuation.html" >continuation</a>s. These <a class="internal" href="continuation.html" >continuation</a>s can then be used to express synchronous remote procedure call in an asynchronous <a class="internal" href="distributed.html" >distributed</a> or <a class="internal" href="concurrent.html" >concurrent</a> system, non-deterministic computations, <a class="internal" href="persistence.html" >persistent</a> computations, seamless web interface (see Paul Graham paper below), <a class="internal" href="gui.html" >GUI</a>s (see Matthew Fuchs paper below), etc.
+<p>Note that <a class="internal" href="cps.html" >CPS</a> builds the sequencing of computations into the representation, so it is rather <a class="internal" href="low-level.html" >low-level</a> with respect to pure <a class="internal" href="high-level.html" >high-level</a> computations that you'd like to parallelize. On the other hand, this low level of <a class="internal" href="abstraction.html" >abstraction</a> makes <a class="internal" href="cps.html" >CPS</a> well suited to producing <a class="internal" href="assembly.html" >assembly</a> code: indeed, machine code instructions can be viewed as <a class="internal" href="cps.html" >CPS</a> combinators. A particular <a class="internal" href="scheme.html" >Scheme</a> compiler using <a class="internal" href="cps.html" >CPS</a> and targetting <a class="internal" href="c_20language.html" >C</a> is <A HREF="http://cliki.tunes.org/Scheme#chicken">chicken</A
+>.
+<p>See also FOO-passing Style, <a class="internal" href="monad.html" >Monad</a>s, etc.
+<p><ul class="links">
+<li><A HREF="http://www.cs.princeton.edu/~appel/">Andrew Appel</A
+>'s book <A HREF="http://us.cambridge.org/titles/catalogue.asp?isbn=0521416957">Compiling with Continuation</A
+>;
+<li>by <A HREF="http://www.paulgraham.com/">Paul Graham</A
+> <A HREF="http://www.paulgraham.com/lwba.html">Lisp in Web-Based Applications</A
+>; excerpt:
+  <blockquote>
+  [..]
+  <br>
+  <strong>Closures Simulate Subroutines</strong>
+<p>  One of the problems with using Web pages as a UI is the inherent statelessness of Web sessions. We got around this by using lexical closures to simulate subroutine-like behavior. If you understand about continuations, one way to explain what we did would be to say that we wrote our software in <strong>continuation-passing style</strong>. [..]
+  </blockquote>  
+<li>by <A HREF="http://www.cs.nyu.edu/phd_students/fuchs/">Matthew Fuchs</A
+> <A HREF="http://www.cs.nyu.edu/phd_students/fuchs/gui.ps.gz">Escaping the event loop: an alternative control structure for multi-threaded GUIs</A
+> [.ps.gz]; summarizing about contributions of his PhD dissertation, he writes:
+  <blockquote>
+  [..] How to escape the ubiquitous <a class="internal" href="gui.html" >GUI</a> event loop and eliminate the tortured, dismembered programming style it engenders. The essential realization is that "reactive programming" with callbacks is really a twisted form of <strong>continuation-passing style</strong>, a source code transformation commonly used in compilers for <a class="internal" href="functional.html" >functional</a> languages. [..]
+  </blockquote>
+<li>Some good intro to <a class="internal" href="continuation.html" >continuation</a>s and <a class="internal" href="cps.html" >CPS</a>...
+See papers by Olivier Danvy, Andrzej Filinski, Christian Queinnec (notably his Lisp in Small Pieces), <a class="internal" href="philip_20wadler.html" >Philip Wadler</a>, etc. Ask citeseer.
+<li><A HREF="http://www.cs.indiana.edu/hyplan/dfried/appcont.pdf">Applications of Continuations</A
+>, a paper by <A HREF="http://www.cs.indiana.edu/~dfried/">Dan Friedman</A
+>
+<li>...and to A-normal form (ANF):
+  <ul>
+  <li><A HREF="http://www.cs.purdue.edu/homes/suresh/502-Spring2003/lectures/Jan.23-Lecture-4.ppt">CPS and A-normal form</A
+> [.ppt];
+  <li><A HREF="http://www.cs.cmu.edu/~fp/talks/lfm00-talk.pdf">Properties of Terms in Continuation-Passing Style in an Ordered Logical Framework</A
+> [.pdf];
+  <li><A HREF="http://www.cs.indiana.edu/~sabry/papers/essence-retro.pdf">The Essence of Compiling with Continuations</A
+> [.pdf];
+  <li><A HREF="http://www.cs.bath.ac.uk/~jap/CM30171/anf.html">MATH0069: Programming Language Implementation Techniques - A Normal Form (ANF)</A
+> (<A HREF="http://www.cs.bath.ac.uk/~jap/CM30171/Old-exam-papers/">exams and aswers</A
+> for this course: see m69-* files);
+  <li><A HREF="http://www.cs.pdx.edu/~apt/cs510cal_2000/interp2.ps">CS410/510</A
+> (.ps) - Compiling Advanced <a class="internal" href="language.html" >Language</a>s - Spr2000 Lecture Notes - Towards <a class="internal" href="abstract_20vm.html" >Abstract Machines</a> II;
+  </li>
+  </ul>
+</ul><hr><p><b>This page is linked from: </b> <a class="internal" href="cps.html" >CPS</a> &nbsp; <a class="internal" href="microkernel_20debate.html" >Microkernel Debate</a> &nbsp; <a class="internal" href="screamer.html" >Screamer</a> &nbsp; <a class="internal" href="uncommon_20web.html" >UnCommon Web</a> &nbsp; </DIV></BODY></HTML>

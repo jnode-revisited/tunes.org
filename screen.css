@@ -1,0 +1,49 @@
+.sidebar {
+  font-size: 75%;
+/*
+  font-style: italic;
+  color: black; background-color: yellow;
+*/
+  float: right; clear: both;
+  width: 10em;
+  padding: 0.5em;
+/*  border: medium solid gray;*/
+  border: medium solid black;
+  margin: 0.5em 1em;
+}
+
+
+/*
+* {
+ font-family: Verdana, sans-serif;
+}
+*/
+
+td {
+ padding: .5em;
+ vertical-align: top;
+}
+
+#question {
+ color: red;
+ font-size: 75%;
+}
+
+#answer {
+ color: blue;
+ font-size: 75%;
+ font-style: italic;
+}
+
+#comment > * {
+ font-size: 75%;
+ font-style: italic;
+}
+
+#box {
+ color: white;
+ background: gray;
+ padding: 0;
+ margin: .5em;
+}
+
