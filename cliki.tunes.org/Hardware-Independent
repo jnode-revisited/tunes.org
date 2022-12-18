@@ -1,0 +1,40 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html><head><script src="//archive.org/includes/analytics.js?v=cf34f82" type="text/javascript"></script>
+<script type="text/javascript">window.addEventListener('DOMContentLoaded',function(){var v=archive_analytics.values;v.service='wb';v.server_name='wwwb-app223.us.archive.org';v.server_ms=839;archive_analytics.send_pageview({});});</script>
+<script type="text/javascript" src="/_static/js/bundle-playback.js?v=MzYkZ0TU" charset="utf-8"></script>
+<script type="text/javascript" src="/_static/js/wombat.js?v=UHAOicsW" charset="utf-8"></script>
+<script type="text/javascript">
+  __wm.init("https://web.archive.org/web");
+  __wm.wombat("http://cliki.tunes.org:80/Hardware-Independent","20050414223644","https://web.archive.org/","web","/_static/",
+	      "1113518204");
+</script>
+<link rel="stylesheet" type="text/css" href="/_static/css/banner-styles.css?v=S1zqJCYt" />
+<link rel="stylesheet" type="text/css" href="/_static/css/iconochive.css?v=qtvMKcIJ" />
+<!-- End Wayback Rewrite JS Include -->
+<title>CTO : Hardware-Independent</title><link rel="alternate" type="application/rss+xml" title="Recent Changes" href="https://web.archive.org/web/20050414223644/http://cliki.tunes.org/recent-changes.rdf"><link rel="stylesheet" href="https://web.archive.org/web/20050414223644cs_/http://cliki.tunes.org/admin/cliki.css"></head><body><div id="banner"><a title="CTO" class="logo" href="https://web.archive.org/web/20050414223644/http://cliki.tunes.org/">CTO</a> <span>CLiki for the TUNES project</span></div><div id="navbar"><a class="internal" href="https://web.archive.org/web/20050414223644/http://cliki.tunes.org/index">Home</a> <a class="internal" href="https://web.archive.org/web/20050414223644/http://cliki.tunes.org/Recent%20Changes">Recent Changes</a> <a class="internal" href="https://web.archive.org/web/20050414223644/http://cliki.tunes.org/CLiki">About CLiki</a> <a class="internal" href="https://web.archive.org/web/20050414223644/http://cliki.tunes.org/Text%20Formatting">Text Formatting</a> <a class="internal" onclick="if(name=window.prompt('New page name ([A-Za-z0-9 ])')) document.location='https://web.archive.org/web/20050414223644/http://cliki.tunes.org/edit/'+name ;return false;" href="/web/20050414223644/http://cliki.tunes.org/">Create New Page</a></div><div id="main"><h1>Hardware-Independent</h1>A comparative <a class="internal" href="https://web.archive.org/web/20050414223644/http://cliki.tunes.org/term">term</a> for software which has a higher <a class="internal" href="https://web.archive.org/web/20050414223644/http://cliki.tunes.org/abstraction%20level">abstraction level</a> with respect to the underlying hardware.
+
+<p>While any software may be implemented on top of any other software, the degree to which direct interpretation is required is a rough measure of how dependent upon a particular hardware architecture the software is.
+
+<p>Ideally, there should be a clear delineation between abstraction levels, so that some is totally independent of the hardware and relates almost directly to mathematics and logic or the person's conceptual model, while other software is concerned with various levels of translation and optimization. The intent is to create varying degrees of portability, and possibly meta-programmability.
+</div><div id="footer"><form action="https://web.archive.org/web/20050414223644/http://cliki.tunes.org/admin/search"><a class="internal" href="https://web.archive.org/web/20050414223644/http://cliki.tunes.org/edit/Hardware-Independent">Edit page</a> | <a class="internal" href="https://web.archive.org/web/20050414223644/http://cliki.tunes.org/Hardware-Independent?source">View source</a> | Revisions: <b title="Wed, 08 Jan 2003 02:41:17 GMT">0</b>  | <input name="words" size="30"><input type="submit" value="search"></form><div id="disclaimer">CTO pages can be modified by anyone at anytime.
+Imagine an appropriate disclaimer. Double it. Add two.</div></body></html></div><!--
+     FILE ARCHIVED ON 22:36:44 Apr 14, 2005 AND RETRIEVED FROM THE
+     INTERNET ARCHIVE ON 06:13:18 Dec 18, 2022.
+     JAVASCRIPT APPENDED BY WAYBACK MACHINE, COPYRIGHT INTERNET ARCHIVE.
+
+     ALL OTHER CONTENT MAY ALSO BE PROTECTED BY COPYRIGHT (17 U.S.C.
+     SECTION 108(a)(3)).
+-->
+<!--
+playback timings (ms):
+  captures_list: 583.373
+  exclusion.robots: 0.137
+  exclusion.robots.policy: 0.128
+  RedisCDXSource: 6.909
+  esindex: 0.008
+  LoadShardBlock: 560.759 (3)
+  PetaboxLoader3.datanode: 567.57 (4)
+  CDXLines.iter: 13.266 (3)
+  load_resource: 252.487
+  PetaboxLoader3.resolve: 30.711
+-->

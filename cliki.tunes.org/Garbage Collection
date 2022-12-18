@@ -1,0 +1,75 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html><head><script src="//archive.org/includes/analytics.js?v=cf34f82" type="text/javascript"></script>
+<script type="text/javascript">window.addEventListener('DOMContentLoaded',function(){var v=archive_analytics.values;v.service='wb';v.server_name='wwwb-app220.us.archive.org';v.server_ms=224;archive_analytics.send_pageview({});});</script>
+<script type="text/javascript" src="/_static/js/bundle-playback.js?v=MzYkZ0TU" charset="utf-8"></script>
+<script type="text/javascript" src="/_static/js/wombat.js?v=UHAOicsW" charset="utf-8"></script>
+<script type="text/javascript">
+  __wm.init("https://web.archive.org/web");
+  __wm.wombat("http://cliki.tunes.org:80/Garbage%20Collection","20050414222334","https://web.archive.org/","web","/_static/",
+	      "1113517414");
+</script>
+<link rel="stylesheet" type="text/css" href="/_static/css/banner-styles.css?v=S1zqJCYt" />
+<link rel="stylesheet" type="text/css" href="/_static/css/iconochive.css?v=qtvMKcIJ" />
+<!-- End Wayback Rewrite JS Include -->
+<title>CTO : Garbage Collection</title><link rel="alternate" type="application/rss+xml" title="Recent Changes" href="https://web.archive.org/web/20050414222334/http://cliki.tunes.org/recent-changes.rdf"><link rel="stylesheet" href="https://web.archive.org/web/20050414222334cs_/http://cliki.tunes.org/admin/cliki.css"></head><body><div id="banner"><a title="CTO" class="logo" href="https://web.archive.org/web/20050414222334/http://cliki.tunes.org/">CTO</a> <span>CLiki for the TUNES project</span></div><div id="navbar"><a class="internal" href="https://web.archive.org/web/20050414222334/http://cliki.tunes.org/index">Home</a> <a class="internal" href="https://web.archive.org/web/20050414222334/http://cliki.tunes.org/Recent%20Changes">Recent Changes</a> <a class="internal" href="https://web.archive.org/web/20050414222334/http://cliki.tunes.org/CLiki">About CLiki</a> <a class="internal" href="https://web.archive.org/web/20050414222334/http://cliki.tunes.org/Text%20Formatting">Text Formatting</a> <a class="internal" onclick="if(name=window.prompt('New page name ([A-Za-z0-9 ])')) document.location='https://web.archive.org/web/20050414222334/http://cliki.tunes.org/edit/'+name ;return false;" href="/web/20050414222334/http://cliki.tunes.org/">Create New Page</a></div><div id="main"><h1>Garbage Collection</h1>The <a class="internal" href="https://web.archive.org/web/20050414222334/http://cliki.tunes.org/term">term</a> for automated <a class="internal" href="https://web.archive.org/web/20050414222334/http://cliki.tunes.org/memory">memory</a>-management and reclamation, one of the many <a class="internal" href="https://web.archive.org/web/20050414222334/http://cliki.tunes.org/methods%20of%20migration">methods of migration</a>.
+
+<p><style type="text/css">p.r {text-align: right; font-size: small}</style>
+<p class="r">
+<cite><a class="internal" href="https://web.archive.org/web/20050414222334/http://cliki.tunes.org/GC">GC</a> is not a generic solution for <a class="internal" href="https://web.archive.org/web/20050414222334/http://cliki.tunes.org/memory">memory</a> leaks, but a (correct) <a class="internal" href="https://web.archive.org/web/20050414222334/http://cliki.tunes.org/GC">GC</a> is a generic solution for '<strong>dangling pointers</strong>'. Just as there is no general solution for 'loops' (due to undecidability), there is no general solution for 'leaks'.</cite>
+<br>-- <a class="internal" href="https://web.archive.org/web/20050414222334/http://cliki.tunes.org/Henry%20Baker">Henry Baker</a>
+</p>
+
+<p><ul class="links">
+<li><a href="https://web.archive.org/web/20050414222334/http://www.cs.ukc.ac.uk/people/staff/rej/gc.html"><em>the</em> Garbage Collection page</a> by Richard Jones with extensive links and bibliography.
+<li><a href="https://web.archive.org/web/20050414222334/http://www.cs.utexas.edu/users/wilson/">Paul R. Wilson</a>'s <a href="https://web.archive.org/web/20050414222334/http://www.cs.utexas.edu/users/oops/">OOPS team</a>, and his dedicated <a href="https://web.archive.org/web/20050414222334/ftp://ftp.cs.utexas.edu/pub/garbage/">GC FTP</a> site.
+<li><a href="https://web.archive.org/web/20050414222334/http://www.iecc.com/gclist/GC-faq.html">GC FAQ -- draft</a> a draft FAQ for <a href="https://web.archive.org/web/20050414222334/http://www.iecc.com/gclist/">The Garbage Collection List (GC-LIST)</a>.
+<li>The <a href="https://web.archive.org/web/20050414222334/http://www-sor.inria.fr/index.en.html">SOR project</a> at french INRIA<a class="internal" href="https://web.archive.org/web/20050414222334/http://cliki.tunes.org/edit/INRIA">?</a> has developed distributed <a class="internal" href="https://web.archive.org/web/20050414222334/http://cliki.tunes.org/GC">GC</a>s.
+<li><a href="https://web.archive.org/web/20050414222334/http://www.cs.colorado.edu/homes/zorn/public_html/DSA.html">Dynamic Storage Allocation Information Repository</a>.
+<li>Another <a href="https://web.archive.org/web/20050414222334/http://www.wildcard.demon.co.uk/dev/gc.html">Garbage Collection</a> page.
+</ul>
+
+<p><ul class="links"><h4>Papers</h4>
+<li><a class="internal" href="https://web.archive.org/web/20050414222334/http://cliki.tunes.org/Andrew%20Appel">Andrew W. Appel</a>. <a href="https://web.archive.org/web/20050414222334/http://www.cs.princeton.edu/~appel/papers/45.ps">Garbage collection can be faster than stack allocation</a> (.<a class="internal" href="https://web.archive.org/web/20050414222334/http://cliki.tunes.org/ps">ps</a>). <em>Information Processing Letters</em> 25(4):275-279, 17 June 1987.
+<li>Miller, James S. and Guillermo J. Rozas. <a href="https://web.archive.org/web/20050414222334/ftp://publications.ai.mit.edu/ai-publications/1000-1499/AIM-1462.ps.Z">Garbage Collection is Fast, But a Stack is Faster</a> (.<a class="internal" href="https://web.archive.org/web/20050414222334/http://cliki.tunes.org/ps">ps</a>.Z) (<a href="https://web.archive.org/web/20050414222334/ftp://publications.ai.mit.edu/ai-publications/pdf/AIM-1462.pdf">.pdf</a>). MIT AI Lab. AIM-1462. March 1994.
+<li>A study of <a href="https://web.archive.org/web/20050414222334/ftp://ftp.cs.colorado.edu/pub/techreports/zorn/CU-CS-665-93.ps.Z">Memory Allocation Costs in Large C and C++ Programs</a> (.<a class="internal" href="https://web.archive.org/web/20050414222334/http://cliki.tunes.org/ps">ps</a>.Z) compares <strong>conservative <a class="internal" href="https://web.archive.org/web/20050414222334/http://cliki.tunes.org/GC">GC</a></strong> and various <a class="internal" href="https://web.archive.org/web/20050414222334/http://cliki.tunes.org/memory">memory</a> allocation techniques.
+<li>Damien Doligez's <a href="https://web.archive.org/web/20050414222334/http://para.inria.fr/~doligez/caml-guts/Doligez95.ps.gz">Conception, réalisation et certification d'un glaneur de cellules concurrent</a> (.<a class="internal" href="https://web.archive.org/web/20050414222334/http://cliki.tunes.org/ps">ps</a>.gz) Ph.D. thesis (in French) about proving correct the concurrent <a class="internal" href="https://web.archive.org/web/20050414222334/http://cliki.tunes.org/GC">GC</a> he wrote for <a class="internal" href="https://web.archive.org/web/20050414222334/http://cliki.tunes.org/OCAML">OCAML</a> and other <a href="https://web.archive.org/web/20050414222334/http://para.inria.fr/~doligez/caml-guts/">relevant papers</a>.
+<li><a class="internal" href="https://web.archive.org/web/20050414222334/http://cliki.tunes.org/Henry%20Baker">Henry G. Baker</a> has a good <a class="internal" href="https://web.archive.org/web/20050414222334/http://cliki.tunes.org/GC">GC</a> papers.
+</ul>
+
+<p><ul class="links"><h4>Surveys</h4>
+<li>Paul R. Wilson's <a href="https://web.archive.org/web/20050414222334/http://www.cs.utexas.edu/users/oops/papers.html#gcsurvey">Uniprocessor Garbage Collection Techniques</a> (<a href="https://web.archive.org/web/20050414222334/ftp://ftp.cs.utexas.edu//pub/garbage/gcsurvey.ps">.ps</a>) and the <a href="https://web.archive.org/web/20050414222334/http://www.cs.utexas.edu/users/oops/papers.html#bigsurv">draft of much expanded version</a> (<a href="https://web.archive.org/web/20050414222334/ftp://ftp.cs.utexas.edu/pub/garbage/bigsurv.ps">.ps</a>).
+<li>Paul R. Wilson, Mark S. Johnstone, Michael Neely, and David Boles <a href="https://web.archive.org/web/20050414222334/ftp://ftp.cs.utexas.edu/pub/garbage/allocsrv.ps">Dynamic Storage Allocation: A Survey and Critical Review</a> (.<a class="internal" href="https://web.archive.org/web/20050414222334/http://cliki.tunes.org/ps">ps</a>).
+<li>David Plainfossé's and Marc Shapiro's <a href="https://web.archive.org/web/20050414222334/http://www-sor.inria.fr/publi/SDGC_iwmm95.html">Survey of Distributed Garbage Collection techniques</a>.
+</ul>
+
+<p><ul class="links"><h4>Random pointers about <a class="internal" href="https://web.archive.org/web/20050414222334/http://cliki.tunes.org/GC">GC</a></h4>
+<li><a href="https://web.archive.org/web/20050414222334/http://sunland.gsfc.nasa.gov/info/elisp/Garbage_Collection.html">Emacs GC</a>.
+<li><a href="https://web.archive.org/web/20050414222334/http://www.cs.rice.edu/CS/PLT/packages/doc/mzembed/node43.html">MzScheme GC</a>.
+</ul>
+
+<p><ul class="implementations">
+<li>The Boehm-Demers-Weiser <a href="https://web.archive.org/web/20050414222334/http://www.hpl.hp.com/personal/Hans_Boehm/gc/index.html">conservative GC</a> for C/C++.
+<li><a href="https://web.archive.org/web/20050414222334/http://research.sun.com/projects/gcspy/">GCspy</a>, a heap visualisation framework at <a href="https://web.archive.org/web/20050414222334/http://research.sun.com/">Sun Microsystems Laboratories</a>.
+</ul>
+<hr><p><b>Page in this topic: </b> <a class="internal" href="https://web.archive.org/web/20050414222334/http://cliki.tunes.org/Why%20GC">Why GC</a> &nbsp; <hr><p><b>Also linked from: </b> <a class="internal" href="https://web.archive.org/web/20050414222334/http://cliki.tunes.org/Cedar">Cedar</a> &nbsp; <a class="internal" href="https://web.archive.org/web/20050414222334/http://cliki.tunes.org/Escape">Escape</a> &nbsp; <a class="internal" href="https://web.archive.org/web/20050414222334/http://cliki.tunes.org/EUMEL">EUMEL</a> &nbsp; <a class="internal" href="https://web.archive.org/web/20050414222334/http://cliki.tunes.org/GC">GC</a> &nbsp; <a class="internal" href="https://web.archive.org/web/20050414222334/http://cliki.tunes.org/Hermes">Hermes</a> &nbsp; <a class="internal" href="https://web.archive.org/web/20050414222334/http://cliki.tunes.org/Language%20Implementation">Language Implementation</a> &nbsp; <a class="internal" href="https://web.archive.org/web/20050414222334/http://cliki.tunes.org/Linear%20Logic%20Comments">Linear Logic Comments</a> &nbsp; <a class="internal" href="https://web.archive.org/web/20050414222334/http://cliki.tunes.org/Methods%20of%20Migration">Methods of Migration</a> &nbsp; <a class="internal" href="https://web.archive.org/web/20050414222334/http://cliki.tunes.org/Mica">Mica</a> &nbsp; <a class="internal" href="https://web.archive.org/web/20050414222334/http://cliki.tunes.org/Modula-3">Modula-3</a> &nbsp; <a class="internal" href="https://web.archive.org/web/20050414222334/http://cliki.tunes.org/Preemption%20and%20Cooperation">Preemption and Cooperation</a> &nbsp; <a class="internal" href="https://web.archive.org/web/20050414222334/http://cliki.tunes.org/Sheep">Sheep</a> &nbsp; <a class="internal" href="https://web.archive.org/web/20050414222334/http://cliki.tunes.org/Sigil">Sigil</a> &nbsp; </div><div id="footer"><form action="https://web.archive.org/web/20050414222334/http://cliki.tunes.org/admin/search"><a class="internal" href="https://web.archive.org/web/20050414222334/http://cliki.tunes.org/edit/Garbage%20Collection">Edit page</a> | <a class="internal" href="https://web.archive.org/web/20050414222334/http://cliki.tunes.org/Garbage%20Collection?source">View source</a> | Revisions: <b title="Sat, 17 Jul 2004 16:56:34 GMT">1</b>  | <input name="words" size="30"><input type="submit" value="search"></form><div id="disclaimer">CTO pages can be modified by anyone at anytime.
+Imagine an appropriate disclaimer. Double it. Add two.</div></body></html></div><!--
+     FILE ARCHIVED ON 22:23:34 Apr 14, 2005 AND RETRIEVED FROM THE
+     INTERNET ARCHIVE ON 06:12:58 Dec 18, 2022.
+     JAVASCRIPT APPENDED BY WAYBACK MACHINE, COPYRIGHT INTERNET ARCHIVE.
+
+     ALL OTHER CONTENT MAY ALSO BE PROTECTED BY COPYRIGHT (17 U.S.C.
+     SECTION 108(a)(3)).
+-->
+<!--
+playback timings (ms):
+  captures_list: 149.721
+  exclusion.robots: 0.066
+  exclusion.robots.policy: 0.06
+  RedisCDXSource: 9.544
+  esindex: 0.007
+  LoadShardBlock: 117.781 (3)
+  PetaboxLoader3.datanode: 128.229 (4)
+  CDXLines.iter: 19.766 (3)
+  load_resource: 68.443
+  PetaboxLoader3.resolve: 53.516
+-->

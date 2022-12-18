@@ -1,0 +1,54 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html><head><script src="//archive.org/includes/analytics.js?v=cf34f82" type="text/javascript"></script>
+<script type="text/javascript">window.addEventListener('DOMContentLoaded',function(){var v=archive_analytics.values;v.service='wb';v.server_name='wwwb-app215.us.archive.org';v.server_ms=196;archive_analytics.send_pageview({});});</script>
+<script type="text/javascript" src="/_static/js/bundle-playback.js?v=MzYkZ0TU" charset="utf-8"></script>
+<script type="text/javascript" src="/_static/js/wombat.js?v=UHAOicsW" charset="utf-8"></script>
+<script type="text/javascript">
+  __wm.init("https://web.archive.org/web");
+  __wm.wombat("http://cliki.tunes.org:80/SubProject","20050318111949","https://web.archive.org/","web","/_static/",
+	      "1111144789");
+</script>
+<link rel="stylesheet" type="text/css" href="/_static/css/banner-styles.css?v=S1zqJCYt" />
+<link rel="stylesheet" type="text/css" href="/_static/css/iconochive.css?v=qtvMKcIJ" />
+<!-- End Wayback Rewrite JS Include -->
+<title>CTO : SubProject</title><link rel="alternate" type="application/rss+xml" title="Recent Changes" href="https://web.archive.org/web/20050318111949/http://cliki.tunes.org/recent-changes.rdf"><link rel="stylesheet" href="https://web.archive.org/web/20050318111949cs_/http://cliki.tunes.org/admin/cliki.css"></head><body><div id="banner"><a title="CTO" class="logo" href="https://web.archive.org/web/20050318111949/http://cliki.tunes.org/">CTO</a> <span>CLiki for the TUNES project</span></div><div id="navbar"><a class="internal" href="https://web.archive.org/web/20050318111949/http://cliki.tunes.org/index">Home</a> <a class="internal" href="https://web.archive.org/web/20050318111949/http://cliki.tunes.org/Recent%20Changes">Recent Changes</a> <a class="internal" href="https://web.archive.org/web/20050318111949/http://cliki.tunes.org/CLiki">About CLiki</a> <a class="internal" href="https://web.archive.org/web/20050318111949/http://cliki.tunes.org/Text%20Formatting">Text Formatting</a> <a class="internal" onclick="if(name=window.prompt('New page name ([A-Za-z0-9 ])')) document.location='https://web.archive.org/web/20050318111949/http://cliki.tunes.org/edit/'+name ;return false;" href="/web/20050318111949/http://cliki.tunes.org/">Create New Page</a></div><div id="main"><h1>SubProject</h1>The <a class="internal" href="https://web.archive.org/web/20050318111949/http://cliki.tunes.org/topic">topic</a> of sub-projects of the overall <a class="internal" href="https://web.archive.org/web/20050318111949/http://cliki.tunes.org/TUNES%20Project">TUNES Project</a>.
+
+<p><ul>
+<li><a class="internal" href="https://web.archive.org/web/20050318111949/http://cliki.tunes.org/TUNES%20HLL">HLL</a>.
+<ul>
+<li><a class="internal" href="https://web.archive.org/web/20050318111949/http://cliki.tunes.org/TUNES%20HLL-">HLL-</a>.
+<li><a class="internal" href="https://web.archive.org/web/20050318111949/http://cliki.tunes.org/TUNES%20Meta-Translator">Meta-Translator</a>.
+<ul>
+<li><a class="internal" href="https://web.archive.org/web/20050318111949/http://cliki.tunes.org/TUNES%20C-Translator">C-Translator</a>.
+</ul>
+<li><a class="internal" href="https://web.archive.org/web/20050318111949/http://cliki.tunes.org/TUNES%20Standard%20Libraries">Standard Libraries</a>.
+</ul>
+<li><a class="internal" href="https://web.archive.org/web/20050318111949/http://cliki.tunes.org/TUNES%20Interfaces">Interfaces</a>.
+<li><a class="internal" href="https://web.archive.org/web/20050318111949/http://cliki.tunes.org/TUNES%20Migration">Migration</a>.
+<li><a class="internal" href="https://web.archive.org/web/20050318111949/http://cliki.tunes.org/TUNES%20LLL">LLL</a>.
+<ul>
+<li><a class="internal" href="https://web.archive.org/web/20050318111949/http://cliki.tunes.org/TUNES%20On%20Top%20of%20POSIX">OTOP</a>.
+<li><a class="internal" href="https://web.archive.org/web/20050318111949/http://cliki.tunes.org/TUNES%20On%20i386">i386</a>.
+</ul>
+</ul><hr><p><b>Pages in this topic: </b> <a class="internal" href="https://web.archive.org/web/20050318111949/http://cliki.tunes.org/Review">Review</a> &nbsp; <a class="internal" href="https://web.archive.org/web/20050318111949/http://cliki.tunes.org/TUNES%20C-Translator">TUNES C-Translator</a> &nbsp; <a class="internal" href="https://web.archive.org/web/20050318111949/http://cliki.tunes.org/TUNES%20HLL">TUNES HLL</a> &nbsp; <a class="internal" href="https://web.archive.org/web/20050318111949/http://cliki.tunes.org/TUNES%20HLL-">TUNES HLL-</a> &nbsp; <a class="internal" href="https://web.archive.org/web/20050318111949/http://cliki.tunes.org/TUNES%20Interfaces">TUNES Interfaces</a> &nbsp; <a class="internal" href="https://web.archive.org/web/20050318111949/http://cliki.tunes.org/TUNES%20LLL">TUNES LLL</a> &nbsp; <a class="internal" href="https://web.archive.org/web/20050318111949/http://cliki.tunes.org/TUNES%20Meta-Translator">TUNES Meta-Translator</a> &nbsp; <a class="internal" href="https://web.archive.org/web/20050318111949/http://cliki.tunes.org/TUNES%20Migration">TUNES Migration</a> &nbsp; <a class="internal" href="https://web.archive.org/web/20050318111949/http://cliki.tunes.org/TUNES%20On%20i386">TUNES On i386</a> &nbsp; <a class="internal" href="https://web.archive.org/web/20050318111949/http://cliki.tunes.org/TUNES%20On%20Top%20of%20POSIX">TUNES On Top of POSIX</a> &nbsp; <a class="internal" href="https://web.archive.org/web/20050318111949/http://cliki.tunes.org/TUNES%20Standard%20Libraries">TUNES Standard Libraries</a> &nbsp; <hr><p><b>Also linked from: </b> <a class="internal" href="https://web.archive.org/web/20050318111949/http://cliki.tunes.org/index">index</a> &nbsp; <a class="internal" href="https://web.archive.org/web/20050318111949/http://cliki.tunes.org/Learning%20Lounge">Learning Lounge</a> &nbsp; <a class="internal" href="https://web.archive.org/web/20050318111949/http://cliki.tunes.org/NOW">NOW</a> &nbsp; <a class="internal" href="https://web.archive.org/web/20050318111949/http://cliki.tunes.org/Off">Off</a> &nbsp; <a class="internal" href="https://web.archive.org/web/20050318111949/http://cliki.tunes.org/Plan%20B">Plan B</a> &nbsp; <a class="internal" href="https://web.archive.org/web/20050318111949/http://cliki.tunes.org/TUNES%20Project">TUNES Project</a> &nbsp; <a class="internal" href="https://web.archive.org/web/20050318111949/http://cliki.tunes.org/Virtual%20Machines">Virtual Machines</a> &nbsp; </div><div id="footer"><form action="https://web.archive.org/web/20050318111949/http://cliki.tunes.org/admin/search"><a class="internal" href="https://web.archive.org/web/20050318111949/http://cliki.tunes.org/edit/SubProject">Edit page</a> | <a class="internal" href="https://web.archive.org/web/20050318111949/http://cliki.tunes.org/SubProject?source">View source</a> | Revisions: <b title="Mon, 06 Jan 2003 02:11:53 GMT">0</b>  | <input name="words" size="30"><input type="submit" value="search"></form><div id="disclaimer">CTO pages can be modified by anyone at anytime.
+Imagine an appropriate disclaimer. Double it. Add two.</div></body></html></div><!--
+     FILE ARCHIVED ON 11:19:49 Mar 18, 2005 AND RETRIEVED FROM THE
+     INTERNET ARCHIVE ON 06:05:25 Dec 18, 2022.
+     JAVASCRIPT APPENDED BY WAYBACK MACHINE, COPYRIGHT INTERNET ARCHIVE.
+
+     ALL OTHER CONTENT MAY ALSO BE PROTECTED BY COPYRIGHT (17 U.S.C.
+     SECTION 108(a)(3)).
+-->
+<!--
+playback timings (ms):
+  captures_list: 91.375
+  exclusion.robots: 0.103
+  exclusion.robots.policy: 0.092
+  cdx.remote: 0.091
+  esindex: 0.012
+  LoadShardBlock: 53.681 (3)
+  PetaboxLoader3.datanode: 78.809 (4)
+  CDXLines.iter: 17.546 (3)
+  load_resource: 98.413
+  PetaboxLoader3.resolve: 27.767
+-->

@@ -1,0 +1,82 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html><head><script src="//archive.org/includes/analytics.js?v=cf34f82" type="text/javascript"></script>
+<script type="text/javascript">window.addEventListener('DOMContentLoaded',function(){var v=archive_analytics.values;v.service='wb';v.server_name='wwwb-app221.us.archive.org';v.server_ms=272;archive_analytics.send_pageview({});});</script>
+<script type="text/javascript" src="/_static/js/bundle-playback.js?v=MzYkZ0TU" charset="utf-8"></script>
+<script type="text/javascript" src="/_static/js/wombat.js?v=UHAOicsW" charset="utf-8"></script>
+<script type="text/javascript">
+  __wm.init("https://web.archive.org/web");
+  __wm.wombat("http://cliki.tunes.org:80/Parsing","20050403183216","https://web.archive.org/","web","/_static/",
+	      "1112553136");
+</script>
+<link rel="stylesheet" type="text/css" href="/_static/css/banner-styles.css?v=S1zqJCYt" />
+<link rel="stylesheet" type="text/css" href="/_static/css/iconochive.css?v=qtvMKcIJ" />
+<!-- End Wayback Rewrite JS Include -->
+<title>CTO : Parsing</title><link rel="alternate" type="application/rss+xml" title="Recent Changes" href="https://web.archive.org/web/20050403183216/http://cliki.tunes.org/recent-changes.rdf"><link rel="stylesheet" href="https://web.archive.org/web/20050403183216cs_/http://cliki.tunes.org/admin/cliki.css"></head><body><div id="banner"><a title="CTO" class="logo" href="https://web.archive.org/web/20050403183216/http://cliki.tunes.org/">CTO</a> <span>CLiki for the TUNES project</span></div><div id="navbar"><a class="internal" href="https://web.archive.org/web/20050403183216/http://cliki.tunes.org/index">Home</a> <a class="internal" href="https://web.archive.org/web/20050403183216/http://cliki.tunes.org/Recent%20Changes">Recent Changes</a> <a class="internal" href="https://web.archive.org/web/20050403183216/http://cliki.tunes.org/CLiki">About CLiki</a> <a class="internal" href="https://web.archive.org/web/20050403183216/http://cliki.tunes.org/Text%20Formatting">Text Formatting</a> <a class="internal" onclick="if(name=window.prompt('New page name ([A-Za-z0-9 ])')) document.location='https://web.archive.org/web/20050403183216/http://cliki.tunes.org/edit/'+name ;return false;" href="/web/20050403183216/http://cliki.tunes.org/">Create New Page</a></div><div id="main"><h1>Parsing</h1>The <a class="internal" href="https://web.archive.org/web/20050403183216/http://cliki.tunes.org/term">term</a> for the process of turning an input stream into an <a class="internal" href="https://web.archive.org/web/20050403183216/http://cliki.tunes.org/abstract%20syntax%20tree">abstract syntax tree</a>. Parsing generally depends on the complexity of the grammar or <a class="internal" href="https://web.archive.org/web/20050403183216/http://cliki.tunes.org/syntax">syntax</a>, and in the most general cases can require a Turing-complete program, i.e. its own <a class="internal" href="https://web.archive.org/web/20050403183216/http://cliki.tunes.org/programming%20language">programming language</a>.
+
+<p><ul class="links">
+  <li><a href="https://web.archive.org/web/20050403183216/http://www.geocities.com/SiliconValley/Campus/3754/index.htm">Lex And Yacc Tutorial</a>.
+  <li>The book <a href="https://web.archive.org/web/20050403183216/http://www.cs.vu.nl/~dick/PTAPG.html">Parsing Techniques - A Practical Guide</a> (there are many others) is available online.
+  <li>The book <a href="https://web.archive.org/web/20050403183216/http://utenti.lycos.it/parsers/">Prolog Parsers - Parsing techniques in</a> <a class="internal" href="https://web.archive.org/web/20050403183216/http://cliki.tunes.org/Prolog">Prolog</a> by Klaus von Bremen, available online.
+  <li><a href="https://web.archive.org/web/20050403183216/http://students.si.fct.unl.pt/users/pjmlp/en/parserscan.html">Parser and Scanner Generators</a>.
+  <li><a href="https://web.archive.org/web/20050403183216/http://citeseer.nj.nec.com/111233.html">Concurrent, Object-Oriented Natural Language Parsing: The ParseTalk Model</a>.
+  <li><a href="https://web.archive.org/web/20050403183216/http://compilers.iecc.com/crenshaw/">Let's Build a Compiler</a>, by Jack Crenshaw, Ph.D. - an introduction to program translators, using a simplified approach inspired by <a class="internal" href="https://web.archive.org/web/20050403183216/http://cliki.tunes.org/Small%20C">Small C</a>.
+</ul>
+
+<p><ul class="implementations">
+  <li><a href="https://web.archive.org/web/20050403183216/http://www.antlr.org/">ANTLR</a> ANother Tool for Language Recognition, FKA PCCTS, a framework for constructing recognizers, compilers, and translators.
+  <li><a href="https://web.archive.org/web/20050403183216/http://www-rocq.inria.fr/oscar/www/fnc2/AGtexte.html">Attribute Grammars home page</a>.
+  <li><a href="https://web.archive.org/web/20050403183216/http://wildideas.org/basil/">basil</a> (<a class="internal" href="https://web.archive.org/web/20050403183216/http://cliki.tunes.org/SourceForge">SourceForge</a> <a href="https://web.archive.org/web/20050403183216/http://sourceforge.net/projects/basil/">entry</a>) a parsing and modeling environment for working with, code in, and integrate any computer language.
+  <li><a href="https://web.archive.org/web/20050403183216/http://www.cs.chalmers.se/~markus/BNFC/">The BNF Converter</a> a <a class="internal" href="https://web.archive.org/web/20050403183216/http://cliki.tunes.org/BNF">BNF</a>-based compiler construction tool written for <a class="internal" href="https://web.archive.org/web/20050403183216/http://cliki.tunes.org/Haskell">Haskell</a>.
+  <li><a href="https://web.archive.org/web/20050403183216/http://cppcc.sourceforge.net/">C++ Compiler Compiler (CppCC)</a> <a href="https://web.archive.org/web/20050403183216/http://sourceforge.net/projects/cppcc/">at SourceForge</a> an object-oriented scanner and LL(k) parser generator. It aims to replace LEX&YACC; for those who write <a class="internal" href="https://web.archive.org/web/20050403183216/http://cliki.tunes.org/C%2B%2B">C++</a> applications that involve parsing.
+  <li><a href="https://web.archive.org/web/20050403183216/http://dotnet.jku.at/Projects/Rotor/">Compiler Generation Tools</a> for <a class="internal" href="https://web.archive.org/web/20050403183216/http://cliki.tunes.org/C%23">C#</a>.
+  <li><a href="https://web.archive.org/web/20050403183216/http://ctool.sourceforge.net/">CTool</a> a <a class="internal" href="https://web.archive.org/web/20050403183216/http://cliki.tunes.org/C%20language">C</a> lexer/parser with a symbol table.
+  <li><a href="https://web.archive.org/web/20050403183216/http://www.idt.mdh.se/kpt/Homepage/software.html">ddgen</a> by <a href="https://web.archive.org/web/20050403183216/http://www.idt.mdh.se/kpt/">Kjell Post</a>, a parser generator for dynamic operator languages.
+  <li>[<a class="internal" href="https://web.archive.org/web/20050403183216/http://cliki.tunes.org/MIA">MIA</a>] <a href="https://web.archive.org/web/20050403183216/http://starlane.org/code/dendra/dendra.html">dendra</a> (try <a href="https://web.archive.org/web/20050403183216/http://216.239.37.100/search?q=cache:QKEVJeam4uoC:starlane.org/code/dendra/dendra.html+dendra%2BLisp&amp;hl=it&amp;ie=UTF-8">Google cache</a>) <a class="internal" href="https://web.archive.org/web/20050403183216/http://cliki.tunes.org/Lisp">Lisp</a> style syntax parsing and printing code.
+  <li><a href="https://web.archive.org/web/20050403183216/http://dparser.sourceforge.net/">dparser</a> (<a class="internal" href="https://web.archive.org/web/20050403183216/http://cliki.tunes.org/freshmeat">freshmeat</a> <a href="https://web.archive.org/web/20050403183216/http://freshmeat.net/projects/dparser/">entry</a>) a scannerless GLR parser generator based on the Tomita algorithm.
+  <li><a href="https://web.archive.org/web/20050403183216/http://www.informatik.uni-freiburg.de/proglang/software/essence/">Essence</a>, an LR parser generator for <a class="internal" href="https://web.archive.org/web/20050403183216/http://cliki.tunes.org/Scheme">Scheme</a>.
+  <li><a href="https://web.archive.org/web/20050403183216/http://www.cs.ruu.nl/~jeroen/article/parsers/index.html">Functional Parsers</a>.
+  <li><a href="https://web.archive.org/web/20050403183216/http://www.complang.tuwien.ac.at/projects/forth.html">Gray</a> a parser generator in <a class="internal" href="https://web.archive.org/web/20050403183216/http://cliki.tunes.org/FORTH">FORTH</a>.
+  <li><a href="https://web.archive.org/web/20050403183216/http://sourceforge.net/projects/ipars/">ipars</a> Incremental scanner/PARSer.
+  <li><a href="https://web.archive.org/web/20050403183216/http://www.cs.hofstra.edu/~cscccl/parsergen/">lambdayacc</a> <a class="internal" href="https://web.archive.org/web/20050403183216/http://cliki.tunes.org/Lambda%20Prolog">Lambda Prolog</a> Parser Generator.
+  <li><a href="https://web.archive.org/web/20050403183216/http://www.research.att.com/sw/tools/lextools/">Lextools</a> a toolkit for finite-state linguistic analysis.
+  <li><a href="https://web.archive.org/web/20050403183216/http://www.ece.purdue.edu/~qobi/software.html">lfg</a> a parser for an LFG-like grammar formalism for <a class="internal" href="https://web.archive.org/web/20050403183216/http://cliki.tunes.org/Scheme">Scheme</a>.
+  <li><a href="https://web.archive.org/web/20050403183216/http://sourceforge.net/projects/locos/">locos</a> an <a class="internal" href="https://web.archive.org/web/20050403183216/http://cliki.tunes.org/OO">OO</a> framework for building parsers and other language processing tools.
+  <li><a href="https://web.archive.org/web/20050403183216/http://www.cs.ruu.nl/groups/ST/Software/LRC/">lrc</a> a system for generating efficient incremental attribute evaluators, used to generate language based editors and other advanced interactive environments
+  <li><a class="internal" href="https://web.archive.org/web/20050403183216/http://cliki.tunes.org/metafront">metafront</a>, a tool for specifying syntactic transformations between languages, defined by context-free grammars, which uses <strong>specificity parsing</strong>, that is designed to support gradual extensions of a grammar.
+  <li><a href="https://web.archive.org/web/20050403183216/http://www.di.uniovi.es/~candi/o2c2/o2c2.htm">O2C2</a> <a class="internal" href="https://web.archive.org/web/20050403183216/http://cliki.tunes.org/OO">OO</a> Compiler Construction, recursive descent LL (k)-based parsers from syntactic specification (<a class="internal" href="https://web.archive.org/web/20050403183216/http://cliki.tunes.org/EBNF">EBNF</a> notation).
+  <li><a href="https://web.archive.org/web/20050403183216/http://sourceforge.net/projects/olex/">Olex</a> (<a href="https://web.archive.org/web/20050403183216/http://sourceforge.net/projects/olex/">at SourceForge</a>) a LL(1) parser generator for <a class="internal" href="https://web.archive.org/web/20050403183216/http://cliki.tunes.org/C%2B%2B">C++</a>.
+  <li><a href="https://web.archive.org/web/20050403183216/http://www.cosc.canterbury.ac.nz/~greg/python/Plex/">Plex</a> a Python module for constructing lexical analysers/scanners.
+  <li><a href="https://web.archive.org/web/20050403183216/http://www.cs.uu.nl/~daan/papers/parsec.html">Parsec, a fast combinator parser</a>.
+  <li>Ratatosk <a href="https://web.archive.org/web/20050403183216/ftp://ftp.diku.dk/diku/users/torbenm/">ftp directory</a> (<a href="https://web.archive.org/web/20050403183216/ftp://ftp.diku.dk/diku/users/torbenm/Ratatosk.tar.Z">Ratatosk.tar.Z</a>), a lexer/parser generator for Gofer (<a class="internal" href="https://web.archive.org/web/20050403183216/http://cliki.tunes.org/Haskell">Haskell</a>).
+  <li><a href="https://web.archive.org/web/20050403183216/http://www.geocities.com/mparker762/clawk.html">REGEX/CLAWK/LEXER Packages</a> (<a class="internal" href="https://web.archive.org/web/20050403183216/http://cliki.tunes.org/CLiki">CLiki</a> <a href="https://web.archive.org/web/20050403183216/http://www.cliki.net/RegEx-CLAWK-Lexer">entry</a>) regex matcher/interesting bits of <a class="internal" href="https://web.archive.org/web/20050403183216/http://cliki.tunes.org/AWK">AWK</a>/ lexer-generator macro.
+  <li>The <a class="internal" href="https://web.archive.org/web/20050403183216/http://cliki.tunes.org/SLK%20Parser%20Generator">SLK Parser Generator</a>.
+  <li><a href="https://web.archive.org/web/20050403183216/http://www.csh.rit.edu/~shaggy/software.html">SHACC</a> Shaggy's Homebrew Alternative Compiler Compiler, YACC replacement.
+  <li><a href="https://web.archive.org/web/20050403183216/http://tedlab.mit.edu/~dr/SLG/index.html">SLG</a> Simple Language Generator, stochastic context-free grammar tool.
+  <li><a href="https://web.archive.org/web/20050403183216/http://pages.cpsc.ucalgary.ca/~aycock/spark/">SPARK</a> Scanning, Parsing and <a class="internal" href="https://web.archive.org/web/20050403183216/http://cliki.tunes.org/rewrite">Rewriting</a> Kit.
+  <li><a href="https://web.archive.org/web/20050403183216/http://minnow.cc.gatech.edu/squeak/1419">T-Gen</a><a href="https://web.archive.org/web/20050403183216/http://st-www.cs.uiuc.edu/users/droberts/tgen2.2.1/tgen.html">T-Gen - The Parser Generator for Visualworks</a> <a href="https://web.archive.org/web/20050403183216/ftp://st.cs.uiuc.edu/pub/Smalltalk/st80_r41/T-gen2.1/">ftp</a> a <a class="internal" href="https://web.archive.org/web/20050403183216/http://cliki.tunes.org/SmallTalk">SmallTalk</a> parser generator.
+  <li><a href="https://web.archive.org/web/20050403183216/http://tedlab.mit.edu/~dr/Tgrep2/index.html">TGrep2</a> the next-generation search engine for parse trees.
+  <li><a href="https://web.archive.org/web/20050403183216/http://www.alchar.org/~aedil/Projects/y2l.html">Yacc to LaTeX (y2l)</a> Yacc to Latex, yacc grammar description file as input, <a class="internal" href="https://web.archive.org/web/20050403183216/http://cliki.tunes.org/EBNF">EBNF</a> grammar in latex as output.
+  <li><a href="https://web.archive.org/web/20050403183216/http://theory.stanford.edu/~amitp/Yapps/">Yapps</a> Yet Another <a class="internal" href="https://web.archive.org/web/20050403183216/http://cliki.tunes.org/Python">Python</a> Parser System.
+</ul>
+<hr><p><b>Pages in this topic: </b> <a class="internal" href="https://web.archive.org/web/20050403183216/http://cliki.tunes.org/metafront">metafront</a> &nbsp; <a class="internal" href="https://web.archive.org/web/20050403183216/http://cliki.tunes.org/SLK%20Parser%20Generator">SLK Parser Generator</a> &nbsp; <hr><p><b>Also linked from: </b> <a class="internal" href="https://web.archive.org/web/20050403183216/http://cliki.tunes.org/BNF">BNF</a> &nbsp; <a class="internal" href="https://web.archive.org/web/20050403183216/http://cliki.tunes.org/EBNF">EBNF</a> &nbsp; <a class="internal" href="https://web.archive.org/web/20050403183216/http://cliki.tunes.org/Language%20Implementation">Language Implementation</a> &nbsp; </div><div id="footer"><form action="https://web.archive.org/web/20050403183216/http://cliki.tunes.org/admin/search"><a class="internal" href="https://web.archive.org/web/20050403183216/http://cliki.tunes.org/edit/Parsing">Edit page</a> | <a class="internal" href="https://web.archive.org/web/20050403183216/http://cliki.tunes.org/Parsing?source">View source</a> | Revisions: <b title="Fri, 29 Oct 2004 02:27:03 GMT">1</b>  | <input name="words" size="30"><input type="submit" value="search"></form><div id="disclaimer">CTO pages can be modified by anyone at anytime.
+Imagine an appropriate disclaimer. Double it. Add two.</div></body></html></div><!--
+     FILE ARCHIVED ON 18:32:16 Apr 03, 2005 AND RETRIEVED FROM THE
+     INTERNET ARCHIVE ON 06:15:50 Dec 18, 2022.
+     JAVASCRIPT APPENDED BY WAYBACK MACHINE, COPYRIGHT INTERNET ARCHIVE.
+
+     ALL OTHER CONTENT MAY ALSO BE PROTECTED BY COPYRIGHT (17 U.S.C.
+     SECTION 108(a)(3)).
+-->
+<!--
+playback timings (ms):
+  captures_list: 139.577
+  exclusion.robots: 0.1
+  exclusion.robots.policy: 0.092
+  RedisCDXSource: 4.576
+  esindex: 0.008
+  LoadShardBlock: 116.158 (3)
+  PetaboxLoader3.datanode: 181.708 (4)
+  CDXLines.iter: 16.377 (3)
+  load_resource: 126.838
+  PetaboxLoader3.resolve: 21.097
+-->

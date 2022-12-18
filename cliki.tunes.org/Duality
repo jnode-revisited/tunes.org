@@ -1,0 +1,44 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html><head><script src="//archive.org/includes/analytics.js?v=cf34f82" type="text/javascript"></script>
+<script type="text/javascript">window.addEventListener('DOMContentLoaded',function(){var v=archive_analytics.values;v.service='wb';v.server_name='wwwb-app226.us.archive.org';v.server_ms=165;archive_analytics.send_pageview({});});</script>
+<script type="text/javascript" src="/_static/js/bundle-playback.js?v=MzYkZ0TU" charset="utf-8"></script>
+<script type="text/javascript" src="/_static/js/wombat.js?v=UHAOicsW" charset="utf-8"></script>
+<script type="text/javascript">
+  __wm.init("https://web.archive.org/web");
+  __wm.wombat("http://cliki.tunes.org:80/Duality","20050414222830","https://web.archive.org/","web","/_static/",
+	      "1113517710");
+</script>
+<link rel="stylesheet" type="text/css" href="/_static/css/banner-styles.css?v=S1zqJCYt" />
+<link rel="stylesheet" type="text/css" href="/_static/css/iconochive.css?v=qtvMKcIJ" />
+<!-- End Wayback Rewrite JS Include -->
+<title>CTO : Duality</title><link rel="alternate" type="application/rss+xml" title="Recent Changes" href="https://web.archive.org/web/20050414222830/http://cliki.tunes.org/recent-changes.rdf"><link rel="stylesheet" href="https://web.archive.org/web/20050414222830cs_/http://cliki.tunes.org/admin/cliki.css"></head><body><div id="banner"><a title="CTO" class="logo" href="https://web.archive.org/web/20050414222830/http://cliki.tunes.org/">CTO</a> <span>CLiki for the TUNES project</span></div><div id="navbar"><a class="internal" href="https://web.archive.org/web/20050414222830/http://cliki.tunes.org/index">Home</a> <a class="internal" href="https://web.archive.org/web/20050414222830/http://cliki.tunes.org/Recent%20Changes">Recent Changes</a> <a class="internal" href="https://web.archive.org/web/20050414222830/http://cliki.tunes.org/CLiki">About CLiki</a> <a class="internal" href="https://web.archive.org/web/20050414222830/http://cliki.tunes.org/Text%20Formatting">Text Formatting</a> <a class="internal" onclick="if(name=window.prompt('New page name ([A-Za-z0-9 ])')) document.location='https://web.archive.org/web/20050414222830/http://cliki.tunes.org/edit/'+name ;return false;" href="/web/20050414222830/http://cliki.tunes.org/">Create New Page</a></div><div id="main"><h1>Duality</h1>The <a class="internal" href="https://web.archive.org/web/20050414222830/http://cliki.tunes.org/term">term</a> for a dichotomy or a division in a space of possibilities. There are many dualities in programming, often surrounded by fallacies.
+
+<p>In the <a class="internal" href="https://web.archive.org/web/20050414222830/http://cliki.tunes.org/programming%20language">programming language</a> mode of thinking about programming, we have <a class="internal" href="https://web.archive.org/web/20050414222830/http://cliki.tunes.org/pure">pure</a> vs. <a class="internal" href="https://web.archive.org/web/20050414222830/http://cliki.tunes.org/side%20effect">side effect</a>ing expressions, languages, and such, also expressed as the distinguishment between <a class="internal" href="https://web.archive.org/web/20050414222830/http://cliki.tunes.org/referential%20transparency%20and%20state">referential transparency and state</a>.
+
+<p>There is also <a class="internal" href="https://web.archive.org/web/20050414222830/http://cliki.tunes.org/low-level">low-level</a> vs. <a class="internal" href="https://web.archive.org/web/20050414222830/http://cliki.tunes.org/high-level">high-level</a>, for those who are obsessed with implementation as a spectrum.
+
+<p>From <a class="internal" href="https://web.archive.org/web/20050414222830/http://cliki.tunes.org/category%20theory">category theory</a> or abstract math/logic in general, we have <a class="internal" href="https://web.archive.org/web/20050414222830/http://cliki.tunes.org/induction%20and%20co-induction">induction and co-induction</a> or <a class="internal" href="https://web.archive.org/web/20050414222830/http://cliki.tunes.org/algebra%20and%20coalgebra">algebra and coalgebra</a>. This relates also to being <a class="internal" href="https://web.archive.org/web/20050414222830/http://cliki.tunes.org/well-founded">well-founded</a> vs. <a class="internal" href="https://web.archive.org/web/20050414222830/http://cliki.tunes.org/non-well-founded">non-well-founded</a>.
+
+<p>A separate duality in category theory is <a class="internal" href="https://web.archive.org/web/20050414222830/http://cliki.tunes.org/initiality%20and%20finality">initiality and finality</a>.
+</div><div id="footer"><form action="https://web.archive.org/web/20050414222830/http://cliki.tunes.org/admin/search"><a class="internal" href="https://web.archive.org/web/20050414222830/http://cliki.tunes.org/edit/Duality">Edit page</a> | <a class="internal" href="https://web.archive.org/web/20050414222830/http://cliki.tunes.org/Duality?source">View source</a> | Revisions: <b title="Fri, 02 Jan 2004 04:33:12 GMT">0</b>  | <input name="words" size="30"><input type="submit" value="search"></form><div id="disclaimer">CTO pages can be modified by anyone at anytime.
+Imagine an appropriate disclaimer. Double it. Add two.</div></body></html></div><!--
+     FILE ARCHIVED ON 22:28:30 Apr 14, 2005 AND RETRIEVED FROM THE
+     INTERNET ARCHIVE ON 06:12:13 Dec 18, 2022.
+     JAVASCRIPT APPENDED BY WAYBACK MACHINE, COPYRIGHT INTERNET ARCHIVE.
+
+     ALL OTHER CONTENT MAY ALSO BE PROTECTED BY COPYRIGHT (17 U.S.C.
+     SECTION 108(a)(3)).
+-->
+<!--
+playback timings (ms):
+  captures_list: 85.192
+  exclusion.robots: 0.082
+  exclusion.robots.policy: 0.075
+  RedisCDXSource: 0.562
+  esindex: 0.008
+  LoadShardBlock: 68.439 (3)
+  PetaboxLoader3.datanode: 79.382 (4)
+  CDXLines.iter: 13.793 (3)
+  load_resource: 77.246
+  PetaboxLoader3.resolve: 45.507
+-->

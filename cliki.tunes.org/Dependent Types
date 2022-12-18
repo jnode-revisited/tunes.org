@@ -1,0 +1,39 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html><head><script src="//archive.org/includes/analytics.js?v=cf34f82" type="text/javascript"></script>
+<script type="text/javascript">window.addEventListener('DOMContentLoaded',function(){var v=archive_analytics.values;v.service='wb';v.server_name='wwwb-app220.us.archive.org';v.server_ms=134;archive_analytics.send_pageview({});});</script>
+<script type="text/javascript" src="/_static/js/bundle-playback.js?v=MzYkZ0TU" charset="utf-8"></script>
+<script type="text/javascript" src="/_static/js/wombat.js?v=UHAOicsW" charset="utf-8"></script>
+<script type="text/javascript">
+  __wm.init("https://web.archive.org/web");
+  __wm.wombat("http://cliki.tunes.org:80/Dependent%20Types","20050414222950","https://web.archive.org/","web","/_static/",
+	      "1113517790");
+</script>
+<link rel="stylesheet" type="text/css" href="/_static/css/banner-styles.css?v=S1zqJCYt" />
+<link rel="stylesheet" type="text/css" href="/_static/css/iconochive.css?v=qtvMKcIJ" />
+<!-- End Wayback Rewrite JS Include -->
+<title>CTO : Dependent Types</title><link rel="alternate" type="application/rss+xml" title="Recent Changes" href="https://web.archive.org/web/20050414222950/http://cliki.tunes.org/recent-changes.rdf"><link rel="stylesheet" href="https://web.archive.org/web/20050414222950cs_/http://cliki.tunes.org/admin/cliki.css"></head><body><div id="banner"><a title="CTO" class="logo" href="https://web.archive.org/web/20050414222950/http://cliki.tunes.org/">CTO</a> <span>CLiki for the TUNES project</span></div><div id="navbar"><a class="internal" href="https://web.archive.org/web/20050414222950/http://cliki.tunes.org/index">Home</a> <a class="internal" href="https://web.archive.org/web/20050414222950/http://cliki.tunes.org/Recent%20Changes">Recent Changes</a> <a class="internal" href="https://web.archive.org/web/20050414222950/http://cliki.tunes.org/CLiki">About CLiki</a> <a class="internal" href="https://web.archive.org/web/20050414222950/http://cliki.tunes.org/Text%20Formatting">Text Formatting</a> <a class="internal" onclick="if(name=window.prompt('New page name ([A-Za-z0-9 ])')) document.location='https://web.archive.org/web/20050414222950/http://cliki.tunes.org/edit/'+name ;return false;" href="/web/20050414222950/http://cliki.tunes.org/">Create New Page</a></div><div id="main"><h1>Dependent Types</h1>A <a class="internal" href="https://web.archive.org/web/20050414222950/http://cliki.tunes.org/term">term</a> describing a <a class="internal" href="https://web.archive.org/web/20050414222950/http://cliki.tunes.org/type%20system">type system</a> where <a class="internal" href="https://web.archive.org/web/20050414222950/http://cliki.tunes.org/type">type</a>s can depend on values.
+
+<p><a class="internal" href="https://web.archive.org/web/20050414222950/http://cliki.tunes.org/Programming%20languages">Programming languages</a> with Dependent Types:
+<ul><li><a class="internal" href="https://web.archive.org/web/20050414222950/http://cliki.tunes.org/Cayenne">Cayenne</a> - A variant of the <a class="internal" href="https://web.archive.org/web/20050414222950/http://cliki.tunes.org/Haskell">Haskell</a> <a class="internal" href="https://web.archive.org/web/20050414222950/http://cliki.tunes.org/Lazy%20Evaluation">lazy</a> <a class="internal" href="https://web.archive.org/web/20050414222950/http://cliki.tunes.org/functional">functional</a> <a class="internal" href="https://web.archive.org/web/20050414222950/http://cliki.tunes.org/programming%20language">programming language</a> with <a class="internal" href="https://web.archive.org/web/20050414222950/http://cliki.tunes.org/dependent%20types">dependent types</a></li><li><a class="internal" href="https://web.archive.org/web/20050414222950/http://cliki.tunes.org/DML">DML</a> - An <a class="internal" href="https://web.archive.org/web/20050414222950/http://cliki.tunes.org/acronym">acronym</a> for <strong>D</strong>ependent <strong>ML</strong>, a conservative extension of the <a class="internal" href="https://web.archive.org/web/20050414222950/http://cliki.tunes.org/functional">functional</a> <a class="internal" href="https://web.archive.org/web/20050414222950/http://cliki.tunes.org/programming%20language">programming language</a> <a class="internal" href="https://web.archive.org/web/20050414222950/http://cliki.tunes.org/ML">ML</a> with a <a class="internal" href="https://web.archive.org/web/20050414222950/http://cliki.tunes.org/type%20system">type system</a>  enriched with a <strong>restricted</strong> form of <a class="internal" href="https://web.archive.org/web/20050414222950/http://cliki.tunes.org/dependent%20types">dependent types</a></li><li><a class="internal" href="https://web.archive.org/web/20050414222950/http://cliki.tunes.org/Epigram">Epigram</a> - A <a class="internal" href="https://web.archive.org/web/20050414222950/http://cliki.tunes.org/functional">functional</a> <a class="internal" href="https://web.archive.org/web/20050414222950/http://cliki.tunes.org/programming%20language">programming language</a> with <a class="internal" href="https://web.archive.org/web/20050414222950/http://cliki.tunes.org/Dependent%20Types">Dependent Types</a></li><li><a class="internal" href="https://web.archive.org/web/20050414222950/http://cliki.tunes.org/Xanadu%20language">Xanadu language</a> - An <a class="internal" href="https://web.archive.org/web/20050414222950/http://cliki.tunes.org/imperative">imperative</a> <a class="internal" href="https://web.archive.org/web/20050414222950/http://cliki.tunes.org/programming%20language">programming language</a> with <a class="internal" href="https://web.archive.org/web/20050414222950/http://cliki.tunes.org/dependent%20types">dependent types</a></li></ul>
+<p><hr><p><b>Pages in this topic: </b> <a class="internal" href="https://web.archive.org/web/20050414222950/http://cliki.tunes.org/Cayenne">Cayenne</a> &nbsp; <a class="internal" href="https://web.archive.org/web/20050414222950/http://cliki.tunes.org/DML">DML</a> &nbsp; <a class="internal" href="https://web.archive.org/web/20050414222950/http://cliki.tunes.org/Epigram">Epigram</a> &nbsp; <a class="internal" href="https://web.archive.org/web/20050414222950/http://cliki.tunes.org/Xanadu%20language">Xanadu language</a> &nbsp; </div><div id="footer"><form action="https://web.archive.org/web/20050414222950/http://cliki.tunes.org/admin/search"><a class="internal" href="https://web.archive.org/web/20050414222950/http://cliki.tunes.org/edit/Dependent%20Types">Edit page</a> | <a class="internal" href="https://web.archive.org/web/20050414222950/http://cliki.tunes.org/Dependent%20Types?source">View source</a> | Revisions: <b title="Fri, 04 Jun 2004 04:08:54 GMT">1</b>  | <input name="words" size="30"><input type="submit" value="search"></form><div id="disclaimer">CTO pages can be modified by anyone at anytime.
+Imagine an appropriate disclaimer. Double it. Add two.</div></body></html></div><!--
+     FILE ARCHIVED ON 22:29:50 Apr 14, 2005 AND RETRIEVED FROM THE
+     INTERNET ARCHIVE ON 06:11:57 Dec 18, 2022.
+     JAVASCRIPT APPENDED BY WAYBACK MACHINE, COPYRIGHT INTERNET ARCHIVE.
+
+     ALL OTHER CONTENT MAY ALSO BE PROTECTED BY COPYRIGHT (17 U.S.C.
+     SECTION 108(a)(3)).
+-->
+<!--
+playback timings (ms):
+  captures_list: 65.295
+  exclusion.robots: 0.146
+  exclusion.robots.policy: 0.133
+  RedisCDXSource: 0.778
+  esindex: 0.012
+  LoadShardBlock: 45.305 (3)
+  PetaboxLoader3.datanode: 61.355 (4)
+  CDXLines.iter: 16.204 (3)
+  load_resource: 63.256
+  PetaboxLoader3.resolve: 26.336
+-->

@@ -1,0 +1,40 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html><head><script src="//archive.org/includes/analytics.js?v=cf34f82" type="text/javascript"></script>
+<script type="text/javascript">window.addEventListener('DOMContentLoaded',function(){var v=archive_analytics.values;v.service='wb';v.server_name='wwwb-app209.us.archive.org';v.server_ms=299;archive_analytics.send_pageview({});});</script>
+<script type="text/javascript" src="/_static/js/bundle-playback.js?v=MzYkZ0TU" charset="utf-8"></script>
+<script type="text/javascript" src="/_static/js/wombat.js?v=UHAOicsW" charset="utf-8"></script>
+<script type="text/javascript">
+  __wm.init("https://web.archive.org/web");
+  __wm.wombat("http://cliki.tunes.org:80/Continuation","20050205175809","https://web.archive.org/","web","/_static/",
+	      "1107626289");
+</script>
+<link rel="stylesheet" type="text/css" href="/_static/css/banner-styles.css?v=S1zqJCYt" />
+<link rel="stylesheet" type="text/css" href="/_static/css/iconochive.css?v=qtvMKcIJ" />
+<!-- End Wayback Rewrite JS Include -->
+<title>CTO : Continuation</title><link rel="alternate" type="application/rss+xml" title="Recent Changes" href="https://web.archive.org/web/20050205175809/http://cliki.tunes.org/recent-changes.rdf"><link rel="stylesheet" href="https://web.archive.org/web/20050205175809cs_/http://cliki.tunes.org/admin/cliki.css"></head><body><div id="banner"><a title="CTO" class="logo" href="https://web.archive.org/web/20050205175809/http://cliki.tunes.org/">CTO</a> <span>CLiki for the TUNES project</span></div><div id="navbar"><a class="internal" href="https://web.archive.org/web/20050205175809/http://cliki.tunes.org/index">Home</a> <a class="internal" href="https://web.archive.org/web/20050205175809/http://cliki.tunes.org/Recent%20Changes">Recent Changes</a> <a class="internal" href="https://web.archive.org/web/20050205175809/http://cliki.tunes.org/CLiki">About CLiki</a> <a class="internal" href="https://web.archive.org/web/20050205175809/http://cliki.tunes.org/Text%20Formatting">Text Formatting</a> <a class="internal" onclick="if(name=window.prompt('New page name ([A-Za-z0-9 ])')) document.location='https://web.archive.org/web/20050205175809/http://cliki.tunes.org/edit/'+name ;return false;" href="/web/20050205175809/http://cliki.tunes.org/">Create New Page</a></div><div id="main"><h1>Continuation</h1>A <a class="internal" href="https://web.archive.org/web/20050205175809/http://cliki.tunes.org/term">term</a> from <a class="internal" href="https://web.archive.org/web/20050205175809/http://cliki.tunes.org/functional">functional</a> programming where a function is used to capture the whole of the rest of the computation from a specific point in the lexical <a class="internal" href="https://web.archive.org/web/20050205175809/http://cliki.tunes.org/scope">scope</a>. It can be seen as a function which also has a <a class="internal" href="https://web.archive.org/web/20050205175809/http://cliki.tunes.org/side%20effect">side effect</a>, i.e. full replacement of the current evaluation <a class="internal" href="https://web.archive.org/web/20050205175809/http://cliki.tunes.org/context">context</a> with another one. A continuation also accepts a parameter and functionally behaves as an identity, with the caveat that the produced value will be used in the context the continuation itself sets up. As an example, in a <a class="internal" href="https://web.archive.org/web/20050205175809/http://cliki.tunes.org/LISP">LISP</a>-like language if <code>c</code> is a continuation storing the context <code>(+ 3 [])</code>, the evaluation of <code>(- 5 (c 2))</code> produces <code>(+ 3 2)</code>. Let us suppose that the evaluation strategy of the language selects the redex <code>(c 2)</code> to be evaluated. In first place, the evaluation context of the redex <code>(- 5 [])</code> is replaced with that stored in the continuation <code>(+ 3 [])</code>. In second place the functional evaluation of <code>(c 2)</code> is performed. We told that a continuation functionally behaves as an identity, and therefore the value <code>2</code> is produced. This value is put back in the evaluation context, which now is <code>(+ 3 [])</code>, and the resulting expression <code>(+ 3 2)</code> is evaluated. 
+
+<p>Continuations as <a class="internal" href="https://web.archive.org/web/20050205175809/http://cliki.tunes.org/object">object</a>s are powerful in that passing them around as arguments allows implementing very flexible control-flow structures; Essentially, they are <a class="internal" href="https://web.archive.org/web/20050205175809/http://cliki.tunes.org/high-level">high-level</a> goto's. Continuations in most languages have a <a class="internal" href="https://web.archive.org/web/20050205175809/http://cliki.tunes.org/security">security</a> flaw, however, since they are not implemented with <a class="internal" href="https://web.archive.org/web/20050205175809/http://cliki.tunes.org/linear%20logic">linear</a> usage restrictions: A continuation may be freely (re-)evaluated by any part of the system that receives a reference to it.
+
+<p>There is a means of implementing functional-style language using continuations as a low-level control-flow model, and a standard means of embedding normal lexical scoping in terms of it, called continuation-passing style.
+<hr><p><b>This page is linked from: </b> <a class="internal" href="https://web.archive.org/web/20050205175809/http://cliki.tunes.org/Continuation-Passing%20Style">Continuation-Passing Style</a> &nbsp; <a class="internal" href="https://web.archive.org/web/20050205175809/http://cliki.tunes.org/FDScript">FDScript</a> &nbsp; <a class="internal" href="https://web.archive.org/web/20050205175809/http://cliki.tunes.org/Reification">Reification</a> &nbsp; <a class="internal" href="https://web.archive.org/web/20050205175809/http://cliki.tunes.org/Ruby">Ruby</a> &nbsp; <a class="internal" href="https://web.archive.org/web/20050205175809/http://cliki.tunes.org/Sigil">Sigil</a> &nbsp; <a class="internal" href="https://web.archive.org/web/20050205175809/http://cliki.tunes.org/Thread">Thread</a> &nbsp; <a class="internal" href="https://web.archive.org/web/20050205175809/http://cliki.tunes.org/Tube">Tube</a> &nbsp; </div><div id="footer"><form action="https://web.archive.org/web/20050205175809/http://cliki.tunes.org/admin/search"><a class="internal" href="https://web.archive.org/web/20050205175809/http://cliki.tunes.org/edit/Continuation">Edit page</a> | <a class="internal" href="https://web.archive.org/web/20050205175809/http://cliki.tunes.org/Continuation?source">View source</a> | Revisions: <b title="Fri, 19 Dec 2003 13:09:24 GMT">0</b>  | <input name="words" size="30"><input type="submit" value="search"></form><div id="disclaimer">CTO pages can be modified by anyone at anytime.
+Imagine an appropriate disclaimer. Double it. Add two.</div></body></html></div><!--
+     FILE ARCHIVED ON 17:58:09 Feb 05, 2005 AND RETRIEVED FROM THE
+     INTERNET ARCHIVE ON 06:17:32 Dec 18, 2022.
+     JAVASCRIPT APPENDED BY WAYBACK MACHINE, COPYRIGHT INTERNET ARCHIVE.
+
+     ALL OTHER CONTENT MAY ALSO BE PROTECTED BY COPYRIGHT (17 U.S.C.
+     SECTION 108(a)(3)).
+-->
+<!--
+playback timings (ms):
+  captures_list: 134.873
+  exclusion.robots: 0.067
+  exclusion.robots.policy: 0.06
+  cdx.remote: 0.059
+  esindex: 0.009
+  LoadShardBlock: 98.655 (3)
+  PetaboxLoader3.datanode: 84.971 (4)
+  CDXLines.iter: 14.954 (3)
+  PetaboxLoader3.resolve: 157.527 (2)
+  load_resource: 160.729
+-->

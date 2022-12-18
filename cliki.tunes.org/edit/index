@@ -1,0 +1,103 @@
+<html><head><script src="//archive.org/includes/analytics.js?v=cf34f82" type="text/javascript"></script>
+<script type="text/javascript">window.addEventListener('DOMContentLoaded',function(){var v=archive_analytics.values;v.service='wb';v.server_name='wwwb-app224.us.archive.org';v.server_ms=188;archive_analytics.send_pageview({});});</script>
+<script type="text/javascript" src="/_static/js/bundle-playback.js?v=MzYkZ0TU" charset="utf-8"></script>
+<script type="text/javascript" src="/_static/js/wombat.js?v=UHAOicsW" charset="utf-8"></script>
+<script type="text/javascript">
+  __wm.init("https://web.archive.org/web");
+  __wm.wombat("http://cliki.tunes.org:80/edit/index","20030412182215","https://web.archive.org/","web","/_static/",
+	      "1050171735");
+</script>
+<link rel="stylesheet" type="text/css" href="/_static/css/banner-styles.css?v=S1zqJCYt" />
+<link rel="stylesheet" type="text/css" href="/_static/css/iconochive.css?v=qtvMKcIJ" />
+<!-- End Wayback Rewrite JS Include -->
+<title>TUNES : Edit ``index''</title>
+<meta name="ROBOTS" content="noindex,nofollow"></meta>
+<link rel="alternate" type="application/rss+xml" title="Recent Changes" href="https://web.archive.org/web/20030412182215/http://cliki.tunes.org/recent-changes.rdf"></link>
+<link rel="stylesheet" href="https://web.archive.org/web/20030412182215cs_/http://cliki.tunes.org/admin/cliki.css"></link>
+<link rel="shortcut icon" type="image/x-icon" href="https://web.archive.org/web/20030412182215im_/http://cliki.tunes.org/favicon.ico"></link>
+</head>
+<body><table width="100%"><tr><td colspan="3">CLiki pages can be edited by anybody at any time.  Imagine a <i>scarily comprehensive legal disclaimer</i>.  Double it.  Add two.  <!-- Now shut your eyes.  Dark, isn't it? --></td>
+</tr>
+</table>
+<center><table><tr><td><a href="https://web.archive.org/web/20030412182215/http://cliki.tunes.org/index">Home</a>
+</td>
+<td><a href="https://web.archive.org/web/20030412182215/http://cliki.tunes.org/Recent%20Changes">Recent Changes</a>
+</td>
+<td><a href="https://web.archive.org/web/20030412182215/http://cliki.tunes.org/CLiki">About CLiki</a>
+</td>
+<td><a href="https://web.archive.org/web/20030412182215/http://cliki.tunes.org/Text%20Formatting">Text Formatting</a>
+</td>
+<td><a onclick="if(name=window.prompt('New page name ([A-Za-z0-9 ])')) document.location='https://web.archive.org/web/20030412182215/http://cliki.tunes.org/edit/'+name ;return false;" href="#">Create new page</a>
+</td>
+</tr>
+</table>
+</center>
+<hr><h1>Edit ``index''</h1>
+
+ <form method="post">
+ <textarea wrap="virtual" name="text" rows="20" cols="80">
+Welcome to the _(TUNES Project) Wiki.
+
+<h2>The major _(topic)s:</h2>
+<dl>
+<dt>_(SubProject) areas</dt><dd>Places for annotative work and references.</dd>
+<dt>_(Glossary)</dt><dd>Terms and concepts used to support TUNES development.</dd>
+<dt>_(Learning Lounge)</dt><dd>Resources for explaining the background of ideas.</dd>
+<dt>_(Examples)</dt><dd>Illustrating features and concepts.</dd>
+<dt>_(Review) Articles:</dt>
+<dd>
+<ul>
+<li>_(Operating Systems).
+<li>_(Programming Languages).
+<li>_(Virtual Machines).
+<li>_(User Interfaces).
+<li>_(Methods of Reflection).
+<li>_(Methods of Migration).
+<li>_(Other Reviews).
+</ul>
+</dd>
+<dt>_(Resource)s</dt><dd>Toolkits and libraries for development of TUNES.</dd>
+<dt>_(Contributor)s</dt><dd>Who's involved in the project.</dd>
+<dt>_(Person)s</dt><dd>Cited for interesting work.</dd>
+<dt>_(Cybernethics) area</dt><dd>The political or ethical vision of TUNES.</dd>
+<dt>_(Essay)s</dt><dd>Descriptions of TUNES or commentary.</dd>
+<dt>_(Activities)</dt><dd>What the various members are working on.</dd>
+<dt>_(Credits)</dt><dd>Contributions past and present made for TUNES.</dd>
+<dt>_(Search Facilities)</dt><dd>Search engines and akins relevant for TUNES.</dd>
+</dl>
+
+<h2>About this Site</h2>
+
+The site is maintained using _(CLiki). It welcomes your contributions - please see the _(CLiki Content) guidelines for more information. To try things out, use the _(Sand Box), please.
+
+An automatically updated list of _(Recent Changes) is available from the link at the top of each page.
+
+Some things don't really fit anywhere in the current structure, so are presently _(Uncategorized).  There is a complete <a href="admin/all-pages">listing</a> of pages and a rough _(Site Map).
+
+For problems in using _(CLiki), leave a note on _(CLiki Bugs).  No software is perfect. If you have questions, comments, or complaints about how this CLiki is organized and run, use the _(Comments) page.</textarea>
+ <br>Please supply your name and a summary of changes for the Recent Changes page.  If you are making a minor alteration to a page you recently edited, you can avoid making another Recent Changes entry by leaving the Summary box blank
+ <br><b>Summary of changes:</b>
+  <input type="text" size="60" name="summary" value=""><br><b>Your name:</b>
+  <input type="text" size="30" name="name" value="A N Other">
+ <br><input type="checkbox" name="rememberme"> <b>Check this box to fill in your name automatically next time</b> (uses a cookie)
+  <br><input type="submit" value="Save" name="Save"></form></body></html><!--
+     FILE ARCHIVED ON 18:22:15 Apr 12, 2003 AND RETRIEVED FROM THE
+     INTERNET ARCHIVE ON 06:06:05 Dec 18, 2022.
+     JAVASCRIPT APPENDED BY WAYBACK MACHINE, COPYRIGHT INTERNET ARCHIVE.
+
+     ALL OTHER CONTENT MAY ALSO BE PROTECTED BY COPYRIGHT (17 U.S.C.
+     SECTION 108(a)(3)).
+-->
+<!--
+playback timings (ms):
+  captures_list: 80.3
+  exclusion.robots: 0.069
+  exclusion.robots.policy: 0.062
+  RedisCDXSource: 0.532
+  esindex: 0.008
+  LoadShardBlock: 65.888 (3)
+  PetaboxLoader3.datanode: 99.817 (4)
+  CDXLines.iter: 11.937 (3)
+  load_resource: 105.137
+  PetaboxLoader3.resolve: 57.12
+-->

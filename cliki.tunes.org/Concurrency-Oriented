@@ -1,0 +1,69 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html><head><script src="//archive.org/includes/analytics.js?v=cf34f82" type="text/javascript"></script>
+<script type="text/javascript">window.addEventListener('DOMContentLoaded',function(){var v=archive_analytics.values;v.service='wb';v.server_name='wwwb-app227.us.archive.org';v.server_ms=170;archive_analytics.send_pageview({});});</script>
+<script type="text/javascript" src="/_static/js/bundle-playback.js?v=MzYkZ0TU" charset="utf-8"></script>
+<script type="text/javascript" src="/_static/js/wombat.js?v=UHAOicsW" charset="utf-8"></script>
+<script type="text/javascript">
+  __wm.init("https://web.archive.org/web");
+  __wm.wombat("http://cliki.tunes.org:80/Concurrency-Oriented","20050209220610","https://web.archive.org/","web","/_static/",
+	      "1107986770");
+</script>
+<link rel="stylesheet" type="text/css" href="/_static/css/banner-styles.css?v=S1zqJCYt" />
+<link rel="stylesheet" type="text/css" href="/_static/css/iconochive.css?v=qtvMKcIJ" />
+<!-- End Wayback Rewrite JS Include -->
+<title>CTO : Concurrency-Oriented</title><link rel="alternate" type="application/rss+xml" title="Recent Changes" href="https://web.archive.org/web/20050209220610/http://cliki.tunes.org/recent-changes.rdf"><link rel="stylesheet" href="https://web.archive.org/web/20050209220610cs_/http://cliki.tunes.org/admin/cliki.css"></head><body><div id="banner"><a title="CTO" class="logo" href="https://web.archive.org/web/20050209220610/http://cliki.tunes.org/">CTO</a> <span>CLiki for the TUNES project</span></div><div id="navbar"><a class="internal" href="https://web.archive.org/web/20050209220610/http://cliki.tunes.org/index">Home</a> <a class="internal" href="https://web.archive.org/web/20050209220610/http://cliki.tunes.org/Recent%20Changes">Recent Changes</a> <a class="internal" href="https://web.archive.org/web/20050209220610/http://cliki.tunes.org/CLiki">About CLiki</a> <a class="internal" href="https://web.archive.org/web/20050209220610/http://cliki.tunes.org/Text%20Formatting">Text Formatting</a> <a class="internal" onclick="if(name=window.prompt('New page name ([A-Za-z0-9 ])')) document.location='https://web.archive.org/web/20050209220610/http://cliki.tunes.org/edit/'+name ;return false;" href="/web/20050209220610/http://cliki.tunes.org/">Create New Page</a></div><div id="main"><h1>Concurrency-Oriented</h1>A <a class="internal" href="https://web.archive.org/web/20050209220610/http://cliki.tunes.org/term">term</a> describing a <a class="internal" href="https://web.archive.org/web/20050209220610/http://cliki.tunes.org/programming%20language">programming language</a> <a class="internal" href="https://web.archive.org/web/20050209220610/http://cliki.tunes.org/paradigm">paradigm</a> where independent parts of the problem can be represented as independent computations. This requires that concurrency should be easy, with language support, that to some level concurrency be transparent, and that the implementation should ensure it is cheap.
+
+<p>The two major inspirations for this term are <a class="internal" href="https://web.archive.org/web/20050209220610/http://cliki.tunes.org/Mozart%2FOz">Mozart/Oz</a>, which has declarative concurrency, and <a class="internal" href="https://web.archive.org/web/20050209220610/http://cliki.tunes.org/Erlang">Erlang</a>, which has message-passing <a class="internal" href="https://web.archive.org/web/20050209220610/http://cliki.tunes.org/concurrency">concurrency</a> (also referred to as the <a class="internal" href="https://web.archive.org/web/20050209220610/http://cliki.tunes.org/Actor">Actor</a> model), but any language marked here as <a class="internal" href="https://web.archive.org/web/20050209220610/http://cliki.tunes.org/concurrent">concurrent</a> is similar to one of these two.
+
+<p>The basic properties seem to be (as outlined by Joe Armstrong - see his papers below):
+<ol>
+<li>Concurrency-Oriented languages must support processes. A process can be thought of as a self-contained virtual machine.
+<li>Several processes operating on the same machine must be strongly isolated.  A fault in one process should not adversely affect another process, unless such interaction is explicitly programmed. Two processes operating on the same machine must be as independent as if they ran on physically separated machines.
+<li>Each process must be identified by a unique unforgeable identifier.
+<li>There should be no shared state between processes.  Processes interact by sending messages.  If you know the identifier of a process then you can send a message to the process.
+<li>Location transparency: you send a message to a process the same way no matter what machine it's on, you don't <em>have</em> to care about locations.
+<li>Message passing is assumed to be unreliable with no guarantee of delivery:
+<ul>
+  <li>Message passing is atomic: a message is either delivered in its entirety or not at all.
+  <li>Message passing between a pair of processes is ordered [If P1 sends X then Y to P2, P2 will receive X before Y].
+  <li>Messages should not refer to mutable data. [Reason: if sender crashes or laters data, what happens to message?]
+</ul>
+<li>It should be possible for one process to detect failure in another process.  We should also know the reason for faiure.
+</ol>
+
+<p>He also outlines some essential requirements:
+<dl>
+<dt>Concurrency</dt><dd>The computational effort needed to create or destroy a concurrent process should be very small, and there should be no penalty for creating large numbers (explained elsewhere as hundreds of thousands) of concurrent processes.</dd>
+<dt>Error encapsulation</dt><dd>Errors occurring in one process must not be able to damage other processes in the system.</dd>
+<dt>Fault detection</dt><dd>Exceptions should be detectable and handlable both locally, in the process where the exception occurred, and remotely - in a non-local process.</dd>
+<dt>Fault identification</dt><dd>We should be able to identify why an exception occurred.</dd>
+<dt>Code upgrade</dt><dd>There should exist mechanisms to change code as it is executing and without stopping the system.</dd>
+<dt>Persistence</dt><dd>We need to store data in a manner which survives a system crash.  More precisely, we need to store <em>selected</em> data in a manner which survives a system crash.</dd>
+</dl>
+
+<p><ul class="links">
+<li>Various papers by <a href="https://web.archive.org/web/20050209220610/http://www.sics.se/~joe/">Joe Armstrong</a> who developed the idea.
+<li>A <a href="https://web.archive.org/web/20050209220610/http://lambda-the-ultimate.org/classic/message9289.html">discussion on it</a> at <a class="internal" href="https://web.archive.org/web/20050209220610/http://cliki.tunes.org/LtU">LtU</a>.
+</ul>
+<hr><p><b>This page is linked from: </b> <a class="internal" href="https://web.archive.org/web/20050209220610/http://cliki.tunes.org/Actor">Actor</a> &nbsp; </div><div id="footer"><form action="https://web.archive.org/web/20050209220610/http://cliki.tunes.org/admin/search"><a class="internal" href="https://web.archive.org/web/20050209220610/http://cliki.tunes.org/edit/Concurrency-Oriented">Edit page</a> | <a class="internal" href="https://web.archive.org/web/20050209220610/http://cliki.tunes.org/Concurrency-Oriented?source">View source</a> | Revisions: <b title="Thu, 30 Sep 2004 03:43:47 GMT">1</b>  | <input name="words" size="30"><input type="submit" value="search"></form><div id="disclaimer">CTO pages can be modified by anyone at anytime.
+Imagine an appropriate disclaimer. Double it. Add two.</div></body></html></div><!--
+     FILE ARCHIVED ON 22:06:10 Feb 09, 2005 AND RETRIEVED FROM THE
+     INTERNET ARCHIVE ON 06:11:32 Dec 18, 2022.
+     JAVASCRIPT APPENDED BY WAYBACK MACHINE, COPYRIGHT INTERNET ARCHIVE.
+
+     ALL OTHER CONTENT MAY ALSO BE PROTECTED BY COPYRIGHT (17 U.S.C.
+     SECTION 108(a)(3)).
+-->
+<!--
+playback timings (ms):
+  captures_list: 84.134
+  exclusion.robots: 0.121
+  exclusion.robots.policy: 0.111
+  RedisCDXSource: 3.358
+  esindex: 0.007
+  LoadShardBlock: 61.91 (3)
+  PetaboxLoader3.datanode: 74.58 (4)
+  CDXLines.iter: 15.869 (3)
+  load_resource: 82.1
+  PetaboxLoader3.resolve: 39.229
+-->

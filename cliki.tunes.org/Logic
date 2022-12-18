@@ -1,0 +1,53 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html><head><script src="//archive.org/includes/analytics.js?v=cf34f82" type="text/javascript"></script>
+<script type="text/javascript">window.addEventListener('DOMContentLoaded',function(){var v=archive_analytics.values;v.service='wb';v.server_name='wwwb-app220.us.archive.org';v.server_ms=260;archive_analytics.send_pageview({});});</script>
+<script type="text/javascript" src="/_static/js/bundle-playback.js?v=MzYkZ0TU" charset="utf-8"></script>
+<script type="text/javascript" src="/_static/js/wombat.js?v=UHAOicsW" charset="utf-8"></script>
+<script type="text/javascript">
+  __wm.init("https://web.archive.org/web");
+  __wm.wombat("http://cliki.tunes.org:80/Logic","20050412160806","https://web.archive.org/","web","/_static/",
+	      "1113322086");
+</script>
+<link rel="stylesheet" type="text/css" href="/_static/css/banner-styles.css?v=S1zqJCYt" />
+<link rel="stylesheet" type="text/css" href="/_static/css/iconochive.css?v=qtvMKcIJ" />
+<!-- End Wayback Rewrite JS Include -->
+<title>CTO : Logic</title><link rel="alternate" type="application/rss+xml" title="Recent Changes" href="https://web.archive.org/web/20050412160806/http://cliki.tunes.org/recent-changes.rdf"><link rel="stylesheet" href="https://web.archive.org/web/20050412160806cs_/http://cliki.tunes.org/admin/cliki.css"></head><body><div id="banner"><a title="CTO" class="logo" href="https://web.archive.org/web/20050412160806/http://cliki.tunes.org/">CTO</a> <span>CLiki for the TUNES project</span></div><div id="navbar"><a class="internal" href="https://web.archive.org/web/20050412160806/http://cliki.tunes.org/index">Home</a> <a class="internal" href="https://web.archive.org/web/20050412160806/http://cliki.tunes.org/Recent%20Changes">Recent Changes</a> <a class="internal" href="https://web.archive.org/web/20050412160806/http://cliki.tunes.org/CLiki">About CLiki</a> <a class="internal" href="https://web.archive.org/web/20050412160806/http://cliki.tunes.org/Text%20Formatting">Text Formatting</a> <a class="internal" onclick="if(name=window.prompt('New page name ([A-Za-z0-9 ])')) document.location='https://web.archive.org/web/20050412160806/http://cliki.tunes.org/edit/'+name ;return false;" href="/web/20050412160806/http://cliki.tunes.org/">Create New Page</a></div><div id="main"><h1>Logic</h1>The <a class="internal" href="https://web.archive.org/web/20050412160806/http://cliki.tunes.org/term">term</a> for a <a class="internal" href="https://web.archive.org/web/20050412160806/http://cliki.tunes.org/paradigm">paradigm</a> of programming that originates in the <a class="internal" href="https://web.archive.org/web/20050412160806/http://cliki.tunes.org/Curry-Howard%20Isomorphism">Curry-Howard Isomorphism</a>, which relates <a class="internal" href="https://web.archive.org/web/20050412160806/http://cliki.tunes.org/type">type</a>s and <a class="internal" href="https://web.archive.org/web/20050412160806/http://cliki.tunes.org/proof">proof</a>s to terms and expressions. In most cases, logical deduction or inference is equated with term evaluation or state update.
+
+<p><ul class="links">
+<li>The <a href="https://web.archive.org/web/20050412160806/http://www.cs.kuleuven.ac.be/~dtai/projects/ALP/">Association for Logic Programming (ALP)</a>.
+<li><a href="https://web.archive.org/web/20050412160806/http://www.afm.sbu.ac.uk/logic-prog/">Logic Programming</a> at <a href="https://web.archive.org/web/20050412160806/http://www.vlib.org/">The WWW Virtual Library</a>.
+<li><a href="https://web.archive.org/web/20050412160806/http://logic-programming.org/">logic-programming.org</a> actually empty.
+<li><a href="https://web.archive.org/web/20050412160806/http://pauillac.inria.fr/~leifer/research.html#logicreport">Formal logic via functional programming</a>: a dissertation.
+<li><a href="https://web.archive.org/web/20050412160806/http://www.complang.tuwien.ac.at/cti/">Termination inference</a>, a kind of program analysis for logic programs.
+</ul>
+
+<p><ul class="implementations">
+<li><a href="https://web.archive.org/web/20050412160806/ftp://ftp.cs.rice.edu/public/dorai/schelog3.tar.gz">Schelog3</a> [<a class="internal" href="https://web.archive.org/web/20050412160806/http://cliki.tunes.org/MIA">MIA</a>].
+<li><a href="https://web.archive.org/web/20050412160806/ftp://ftp.loria.fr/pub/loria/protheo/softwares/Spike/">SPIKE</a>. From its readme:
+<blockquote>
+The SPIKE system is an automatic theorem prover in theories presented  by conditional equations. SPIKE was written in Caml Light, a functional language of the <a class="internal" href="https://web.archive.org/web/20050412160806/http://cliki.tunes.org/ML">ML</a> family.
+<blockquote>
+</li>
+</ul>
+<hr><p><b>Pages in this topic: </b> <a class="internal" href="https://web.archive.org/web/20050412160806/http://cliki.tunes.org/ALF">ALF</a> &nbsp; <a class="internal" href="https://web.archive.org/web/20050412160806/http://cliki.tunes.org/ASF%2BSDF">ASF+SDF</a> &nbsp; <a class="internal" href="https://web.archive.org/web/20050412160806/http://cliki.tunes.org/Axiom%20of%20Choice">Axiom of Choice</a> &nbsp; <a class="internal" href="https://web.archive.org/web/20050412160806/http://cliki.tunes.org/CafeOBJ">CafeOBJ</a> &nbsp; <a class="internal" href="https://web.archive.org/web/20050412160806/http://cliki.tunes.org/Claire">Claire</a> &nbsp; <a class="internal" href="https://web.archive.org/web/20050412160806/http://cliki.tunes.org/Curry">Curry</a> &nbsp; <a class="internal" href="https://web.archive.org/web/20050412160806/http://cliki.tunes.org/Curry-Howard%20Isomorphism">Curry-Howard Isomorphism</a> &nbsp; <a class="internal" href="https://web.archive.org/web/20050412160806/http://cliki.tunes.org/Dynamo">Dynamo</a> &nbsp; <a class="internal" href="https://web.archive.org/web/20050412160806/http://cliki.tunes.org/Escher">Escher</a> &nbsp; <a class="internal" href="https://web.archive.org/web/20050412160806/http://cliki.tunes.org/Goedel">Goedel</a> &nbsp; <a class="internal" href="https://web.archive.org/web/20050412160806/http://cliki.tunes.org/Lambda%20Prolog">Lambda Prolog</a> &nbsp; <a class="internal" href="https://web.archive.org/web/20050412160806/http://cliki.tunes.org/LIFE">LIFE</a> &nbsp; <a class="internal" href="https://web.archive.org/web/20050412160806/http://cliki.tunes.org/Maude">Maude</a> &nbsp; <a class="internal" href="https://web.archive.org/web/20050412160806/http://cliki.tunes.org/Mercury">Mercury</a> &nbsp; <a class="internal" href="https://web.archive.org/web/20050412160806/http://cliki.tunes.org/NuPrl">NuPrl</a> &nbsp; <a class="internal" href="https://web.archive.org/web/20050412160806/http://cliki.tunes.org/Prolog">Prolog</a> &nbsp; <a class="internal" href="https://web.archive.org/web/20050412160806/http://cliki.tunes.org/SPARCL">SPARCL</a> &nbsp; <a class="internal" href="https://web.archive.org/web/20050412160806/http://cliki.tunes.org/TyRuBa">TyRuBa</a> &nbsp; <a class="internal" href="https://web.archive.org/web/20050412160806/http://cliki.tunes.org/Yarrow">Yarrow</a> &nbsp; <hr><p><b>Also linked from: </b> <a class="internal" href="https://web.archive.org/web/20050412160806/http://cliki.tunes.org/Actor">Actor</a> &nbsp; <a class="internal" href="https://web.archive.org/web/20050412160806/http://cliki.tunes.org/Alan%20Bundy">Alan Bundy</a> &nbsp; <a class="internal" href="https://web.archive.org/web/20050412160806/http://cliki.tunes.org/BOBJ">BOBJ</a> &nbsp; <a class="internal" href="https://web.archive.org/web/20050412160806/http://cliki.tunes.org/Constraints">Constraints</a> &nbsp; <a class="internal" href="https://web.archive.org/web/20050412160806/http://cliki.tunes.org/Declarative">Declarative</a> &nbsp; <a class="internal" href="https://web.archive.org/web/20050412160806/http://cliki.tunes.org/Fifth%20Generation%20Computer%20Systems">Fifth Generation Computer Systems</a> &nbsp; <a class="internal" href="https://web.archive.org/web/20050412160806/http://cliki.tunes.org/Induction%20and%20Co-induction">Induction and Co-induction</a> &nbsp; <a class="internal" href="https://web.archive.org/web/20050412160806/http://cliki.tunes.org/Janus">Janus</a> &nbsp; <a class="internal" href="https://web.archive.org/web/20050412160806/http://cliki.tunes.org/NCL">NCL</a> &nbsp; <a class="internal" href="https://web.archive.org/web/20050412160806/http://cliki.tunes.org/OBJ%20Family">OBJ Family</a> &nbsp; <a class="internal" href="https://web.archive.org/web/20050412160806/http://cliki.tunes.org/Quotienting">Quotienting</a> &nbsp; <a class="internal" href="https://web.archive.org/web/20050412160806/http://cliki.tunes.org/Referential%20Transparency%20and%20State">Referential Transparency and State</a> &nbsp; <a class="internal" href="https://web.archive.org/web/20050412160806/http://cliki.tunes.org/Scheme">Scheme</a> &nbsp; <a class="internal" href="https://web.archive.org/web/20050412160806/http://cliki.tunes.org/Unification">Unification</a> &nbsp; </div><div id="footer"><form action="https://web.archive.org/web/20050412160806/http://cliki.tunes.org/admin/search"><a class="internal" href="https://web.archive.org/web/20050412160806/http://cliki.tunes.org/edit/Logic">Edit page</a> | <a class="internal" href="https://web.archive.org/web/20050412160806/http://cliki.tunes.org/Logic?source">View source</a> | Revisions: <a href="https://web.archive.org/web/20050412160806/http://cliki.tunes.org/Logic?v=1" title="Mon, 31 May 2004 16:52:45 GMT">1</a> <b title="Tue, 01 Jun 2004 17:19:29 GMT">2</b>  | <input name="words" size="30"><input type="submit" value="search"></form><div id="disclaimer">CTO pages can be modified by anyone at anytime.
+Imagine an appropriate disclaimer. Double it. Add two.</div></body></html></div><!--
+     FILE ARCHIVED ON 16:08:06 Apr 12, 2005 AND RETRIEVED FROM THE
+     INTERNET ARCHIVE ON 06:11:40 Dec 18, 2022.
+     JAVASCRIPT APPENDED BY WAYBACK MACHINE, COPYRIGHT INTERNET ARCHIVE.
+
+     ALL OTHER CONTENT MAY ALSO BE PROTECTED BY COPYRIGHT (17 U.S.C.
+     SECTION 108(a)(3)).
+-->
+<!--
+playback timings (ms):
+  captures_list: 171.258
+  exclusion.robots: 0.069
+  exclusion.robots.policy: 0.062
+  RedisCDXSource: 0.588
+  esindex: 0.008
+  LoadShardBlock: 155.291 (3)
+  PetaboxLoader3.datanode: 169.043 (4)
+  CDXLines.iter: 12.98 (3)
+  load_resource: 84.453
+  PetaboxLoader3.resolve: 54.621
+-->

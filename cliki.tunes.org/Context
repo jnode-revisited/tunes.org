@@ -1,0 +1,58 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html><head><script src="//archive.org/includes/analytics.js?v=cf34f82" type="text/javascript"></script>
+<script type="text/javascript">window.addEventListener('DOMContentLoaded',function(){var v=archive_analytics.values;v.service='wb';v.server_name='wwwb-app210.us.archive.org';v.server_ms=1618;archive_analytics.send_pageview({});});</script>
+<script type="text/javascript" src="/_static/js/bundle-playback.js?v=MzYkZ0TU" charset="utf-8"></script>
+<script type="text/javascript" src="/_static/js/wombat.js?v=UHAOicsW" charset="utf-8"></script>
+<script type="text/javascript">
+  __wm.init("https://web.archive.org/web");
+  __wm.wombat("http://cliki.tunes.org:80/Context","20050414223302","https://web.archive.org/","web","/_static/",
+	      "1113517982");
+</script>
+<link rel="stylesheet" type="text/css" href="/_static/css/banner-styles.css?v=S1zqJCYt" />
+<link rel="stylesheet" type="text/css" href="/_static/css/iconochive.css?v=qtvMKcIJ" />
+<!-- End Wayback Rewrite JS Include -->
+<title>CTO : Context</title><link rel="alternate" type="application/rss+xml" title="Recent Changes" href="https://web.archive.org/web/20050414223302/http://cliki.tunes.org/recent-changes.rdf"><link rel="stylesheet" href="https://web.archive.org/web/20050414223302cs_/http://cliki.tunes.org/admin/cliki.css"></head><body><div id="banner"><a title="CTO" class="logo" href="https://web.archive.org/web/20050414223302/http://cliki.tunes.org/">CTO</a> <span>CLiki for the TUNES project</span></div><div id="navbar"><a class="internal" href="https://web.archive.org/web/20050414223302/http://cliki.tunes.org/index">Home</a> <a class="internal" href="https://web.archive.org/web/20050414223302/http://cliki.tunes.org/Recent%20Changes">Recent Changes</a> <a class="internal" href="https://web.archive.org/web/20050414223302/http://cliki.tunes.org/CLiki">About CLiki</a> <a class="internal" href="https://web.archive.org/web/20050414223302/http://cliki.tunes.org/Text%20Formatting">Text Formatting</a> <a class="internal" onclick="if(name=window.prompt('New page name ([A-Za-z0-9 ])')) document.location='https://web.archive.org/web/20050414223302/http://cliki.tunes.org/edit/'+name ;return false;" href="/web/20050414223302/http://cliki.tunes.org/">Create New Page</a></div><div id="main"><h1>Context</h1>The <a class="internal" href="https://web.archive.org/web/20050414223302/http://cliki.tunes.org/term">term</a> for that which gives, or completes, the meaning of an <a class="internal" href="https://web.archive.org/web/20050414223302/http://cliki.tunes.org/object">object</a>.
+
+<p><style type="text/css">CODE { font-family: sans-serif; font-weight: bold; }</style>
+
+<p>There are many different aspects to context, but there is a single notion that encompasses the whole which can be defined. We say that an <em>object</em> described in a <em><a class="internal" href="https://web.archive.org/web/20050414223302/http://cliki.tunes.org/language">language</a></em> within a particular <em><a class="internal" href="https://web.archive.org/web/20050414223302/http://cliki.tunes.org/scope">scope</a></em> has a context, which is defined by the total state of the evaluator when defined.
+
+<p><p class="comment">This definition is a bit naive, especially when considered that the <a class="internal" href="https://web.archive.org/web/20050414223302/http://cliki.tunes.org/Tunes%20HLL">Tunes HLL</a> <a href="https://web.archive.org/web/20050414223302/http://tunes.org/HLL/architecture.html">architecture</a> defines several types of re-usable components which interact in various ways to produce what we would call a "language".</p>
+
+<p><ul class="links">
+<li><a href="https://web.archive.org/web/20050414223302/http://context.umcs.maine.edu/">Context Research Home Page</a>
+<li><a href="https://web.archive.org/web/20050414223302/http://www.lip6.fr/fr/production/publications-rapport-fiche.php?RECORD_KEY%28rapports%29=id&amp;id(rapports)=197">Modeling and using context: Past, present and future</a>
+<li><a href="https://web.archive.org/web/20050414223302/http://www-formal.stanford.edu/buvac/">Sasa Buvac: FORMALIZING CONTEXT</a>
+</ul>
+
+<p>In a term algebra, a context <code>C</code> for a term <code>t</code> is a term <code>t<sup>1</sup></code> having <code>t</code> as a subterm, where (one of) the occurrence(s) of <code>t</code> has been replaced by a "hole". The hole is a special-purpose term whose role is just marking an empty slot in a term, and is usually indicated as <code>[]</code>. Congruences in algebras are defined as equivalences which are preserved by any context. As an example, in the <a class="internal" href="https://web.archive.org/web/20050414223302/http://cliki.tunes.org/lambda%20calculus">lambda calculus</a> <code>&#955;x.[]</code> is a context for the terms <code>x</code> and <code>((&#955;y.x) a)</code> (indeed, for any term). The substitution of the hole with these terms yields the terms <code>&#955;x.x</code> and <code>&#955;x.((&#955;y.x) a)</code> respectively.
+
+<p><a class="internal" href="https://web.archive.org/web/20050414223302/http://cliki.tunes.org/Rewrite">Rewrite</a> rules are usually defined for a class of elementary terms and recursively extended to all the term by means of a class of context named the evaluation, or applicative, contexts. As an example, if <code>&#955;x.[]</code> is an evaluation context, given the reduction <code>(&#955;y.x) a &#8594; x</code>, we can infer from it the reduction <code>&#955;x.((&#955;y.x) a) &#8594; &#955;x.x</code>. If, on the other hand, we restrain evaluation context by excluding all the <code>&#955;x.[]</code> contexts, like in Mendhekar and Friedman's reflective lambda calculus, the latter reduction cannot be performed. Restraining evaluation contexts is equivalent to establishing an evaluation order. On the other hand, in calculi for concurrent distributed processes, like the <a class="internal" href="https://web.archive.org/web/20050414223302/http://cliki.tunes.org/pi%20calculus">pi calculus</a>, evaluation contexts are usually named reactive contexts, and express the computational loci where distributed computing entities may interact. In this case, restraining evaluation contexts is necessary to express the fact that not every hole where a term modelling a process may appear is meant as a place where the process can compute. As an example, all the <code>a.[]</code> contexts are not reactive: By the very definition of the dot (<code>.</code>) continuation operator, the term in the slot will be able to perform its computations only after the <code>a</code> valence has been consumed.
+ 
+<hr>
+
+<p>To edit this page see <a class="internal" href="https://web.archive.org/web/20050414223302/http://cliki.tunes.org/HTML%20special%20characters%20and%20symbols">HTML special characters and symbols</a>.
+
+<p><strong>Nota bene:</strong> if you have a UNICODE-aware text editor than ignore the <a href="https://web.archive.org/web/20050414223302/http://cliki.tunes.org/Text%20Formatting#SGML bug">SGML entities bug</a>; you can edit, copy&paste; from such an editor without problems.
+<hr><p><b>This page is linked from: </b> <a class="internal" href="https://web.archive.org/web/20050414223302/http://cliki.tunes.org/Abstraction">Abstraction</a> &nbsp; <a class="internal" href="https://web.archive.org/web/20050414223302/http://cliki.tunes.org/Congruence">Congruence</a> &nbsp; <a class="internal" href="https://web.archive.org/web/20050414223302/http://cliki.tunes.org/Continuation">Continuation</a> &nbsp; <a class="internal" href="https://web.archive.org/web/20050414223302/http://cliki.tunes.org/Escape">Escape</a> &nbsp; <a class="internal" href="https://web.archive.org/web/20050414223302/http://cliki.tunes.org/Functional">Functional</a> &nbsp; <a class="internal" href="https://web.archive.org/web/20050414223302/http://cliki.tunes.org/Meta-Space">Meta-Space</a> &nbsp; <a class="internal" href="https://web.archive.org/web/20050414223302/http://cliki.tunes.org/process%20migration">process migration</a> &nbsp; <a class="internal" href="https://web.archive.org/web/20050414223302/http://cliki.tunes.org/Referential%20Transparency%20and%20State">Referential Transparency and State</a> &nbsp; <a class="internal" href="https://web.archive.org/web/20050414223302/http://cliki.tunes.org/Reification">Reification</a> &nbsp; <a class="internal" href="https://web.archive.org/web/20050414223302/http://cliki.tunes.org/Resilient">Resilient</a> &nbsp; <a class="internal" href="https://web.archive.org/web/20050414223302/http://cliki.tunes.org/Scope">Scope</a> &nbsp; <a class="internal" href="https://web.archive.org/web/20050414223302/http://cliki.tunes.org/Semantics">Semantics</a> &nbsp; <a class="internal" href="https://web.archive.org/web/20050414223302/http://cliki.tunes.org/Side%20Effect">Side Effect</a> &nbsp; <a class="internal" href="https://web.archive.org/web/20050414223302/http://cliki.tunes.org/Virtual%20Machine">Virtual Machine</a> &nbsp; </div><div id="footer"><form action="https://web.archive.org/web/20050414223302/http://cliki.tunes.org/admin/search"><a class="internal" href="https://web.archive.org/web/20050414223302/http://cliki.tunes.org/edit/Context">Edit page</a> | <a class="internal" href="https://web.archive.org/web/20050414223302/http://cliki.tunes.org/Context?source">View source</a> | Revisions: <a href="https://web.archive.org/web/20050414223302/http://cliki.tunes.org/Context?v=1" title="Fri, 16 Jul 2004 11:31:25 GMT">1</a> <b title="Fri, 16 Jul 2004 15:52:35 GMT">2</b>  | <input name="words" size="30"><input type="submit" value="search"></form><div id="disclaimer">CTO pages can be modified by anyone at anytime.
+Imagine an appropriate disclaimer. Double it. Add two.</div></body></html></div><!--
+     FILE ARCHIVED ON 22:33:02 Apr 14, 2005 AND RETRIEVED FROM THE
+     INTERNET ARCHIVE ON 06:10:02 Dec 18, 2022.
+     JAVASCRIPT APPENDED BY WAYBACK MACHINE, COPYRIGHT INTERNET ARCHIVE.
+
+     ALL OTHER CONTENT MAY ALSO BE PROTECTED BY COPYRIGHT (17 U.S.C.
+     SECTION 108(a)(3)).
+-->
+<!--
+playback timings (ms):
+  captures_list: 1386.583
+  exclusion.robots: 0.063
+  exclusion.robots.policy: 0.056
+  cdx.remote: 0.053
+  esindex: 0.006
+  LoadShardBlock: 162.459 (3)
+  PetaboxLoader3.resolve: 147.937 (4)
+  PetaboxLoader3.datanode: 139.822 (4)
+  CDXLines.iter: 17.386 (3)
+  load_resource: 227.761
+-->

@@ -1,0 +1,54 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html><head><script src="//archive.org/includes/analytics.js?v=cf34f82" type="text/javascript"></script>
+<script type="text/javascript">window.addEventListener('DOMContentLoaded',function(){var v=archive_analytics.values;v.service='wb';v.server_name='wwwb-app226.us.archive.org';v.server_ms=307;archive_analytics.send_pageview({});});</script>
+<script type="text/javascript" src="/_static/js/bundle-playback.js?v=MzYkZ0TU" charset="utf-8"></script>
+<script type="text/javascript" src="/_static/js/wombat.js?v=UHAOicsW" charset="utf-8"></script>
+<script type="text/javascript">
+  __wm.init("https://web.archive.org/web");
+  __wm.wombat("http://cliki.tunes.org:80/Feature-Oriented%20Programming","20050309022329","https://web.archive.org/","web","/_static/",
+	      "1110335009");
+</script>
+<link rel="stylesheet" type="text/css" href="/_static/css/banner-styles.css?v=S1zqJCYt" />
+<link rel="stylesheet" type="text/css" href="/_static/css/iconochive.css?v=qtvMKcIJ" />
+<!-- End Wayback Rewrite JS Include -->
+<title>CTO : Feature-Oriented Programming</title><link rel="alternate" type="application/rss+xml" title="Recent Changes" href="https://web.archive.org/web/20050309022329/http://cliki.tunes.org/recent-changes.rdf"><link rel="stylesheet" href="https://web.archive.org/web/20050309022329cs_/http://cliki.tunes.org/admin/cliki.css"></head><body><div id="banner"><a title="CTO" class="logo" href="https://web.archive.org/web/20050309022329/http://cliki.tunes.org/">CTO</a> <span>CLiki for the TUNES project</span></div><div id="navbar"><a class="internal" href="https://web.archive.org/web/20050309022329/http://cliki.tunes.org/index">Home</a> <a class="internal" href="https://web.archive.org/web/20050309022329/http://cliki.tunes.org/Recent%20Changes">Recent Changes</a> <a class="internal" href="https://web.archive.org/web/20050309022329/http://cliki.tunes.org/CLiki">About CLiki</a> <a class="internal" href="https://web.archive.org/web/20050309022329/http://cliki.tunes.org/Text%20Formatting">Text Formatting</a> <a class="internal" onclick="if(name=window.prompt('New page name ([A-Za-z0-9 ])')) document.location='https://web.archive.org/web/20050309022329/http://cliki.tunes.org/edit/'+name ;return false;" href="/web/20050309022329/http://cliki.tunes.org/">Create New Page</a></div><div id="main"><h1>Feature-Oriented Programming</h1>The <a class="internal" href="https://web.archive.org/web/20050309022329/http://cliki.tunes.org/term">term</a> for a kind of <a class="internal" href="https://web.archive.org/web/20050309022329/http://cliki.tunes.org/metaprogramming">metaprogramming</a>.
+
+<p>Excerpt from <em>Getting Started</em> below:
+<blockquote>
+<b>Feature Oriented Programming (<a class="internal" href="https://web.archive.org/web/20050309022329/http://cliki.tunes.org/FOP">FOP</a>)</b> is the the study of feature modularity, where features are raised to first-class entities in design. Features are implemented by <b>cross-cuts</b> that are modifications or extensions to multiple classes. Unlike <a class="internal" href="https://web.archive.org/web/20050309022329/http://cliki.tunes.org/AOP">AOP</a> aspects, whose focus is on quantification -- i.e., specifying predicates that identify join points at which to insert code -- feature implementations are actually much closer to <a class="internal" href="https://web.archive.org/web/20050309022329/http://cliki.tunes.org/OO">OO</a> framework designs. That is, to add a feature to an <a class="internal" href="https://web.archive.org/web/20050309022329/http://cliki.tunes.org/OO">OO</a> framework, there are predefined methods and classes that are to be extended. In such designs, there is little or no quantification, but there are indeed "cross-cuts". This is the approach that we have used for years in building program families (<a class="internal" href="https://web.archive.org/web/20050309022329/http://cliki.tunes.org/aka">aka</a> <b><a class="internal" href="https://web.archive.org/web/20050309022329/http://cliki.tunes.org/product%20line">product line</a>s</b>).
+
+<p><b>Algebraic Hierarchical Equations for Application Design (AHEAD)</b> is an example of <a class="internal" href="https://web.archive.org/web/20050309022329/http://cliki.tunes.org/FOP">FOP</a>. It is a simple and general <a class="internal" href="https://web.archive.org/web/20050309022329/http://cliki.tunes.org/Algebraic%20Specification">algebraic model of program synthesis</a> that is based on <b>step-wise refinement</b> -- a methodology that advocates that complex systems can be built by adding features incrementally. <a class="internal" href="https://web.archive.org/web/20050309022329/http://cliki.tunes.org/FOP">FOP</a> and AHEAD address a fundamental problem in software engineering -- a path to its future.
+
+<p><em>The future of software engineering is in automation</em>. The best practical example of automated software engineering is <a class="internal" href="https://web.archive.org/web/20050309022329/http://cliki.tunes.org/relational">relational</a> query optimization. That is, database queries are expressed using a <a class="internal" href="https://web.archive.org/web/20050309022329/http://cliki.tunes.org/declarative">declarative</a> specification (SQL) that is mapped to an efficient program. The general problem of mapping from a <a class="internal" href="https://web.archive.org/web/20050309022329/http://cliki.tunes.org/declarative">declarative</a> spec to a provably efficient program is very difficult -- it is called <b>automatic programming</b>). The success of <a class="internal" href="https://web.archive.org/web/20050309022329/http://cliki.tunes.org/relational">relational</a> databases rests on <a class="internal" href="https://web.archive.org/web/20050309022329/http://cliki.tunes.org/relational">relational</a> <a class="internal" href="https://web.archive.org/web/20050309022329/http://cliki.tunes.org/Algebra%20and%20coalgebra">algebra</a> -- a set of fundamental operators on tables -- and that query evaluation programs are expressions -- compositions of <a class="internal" href="https://web.archive.org/web/20050309022329/http://cliki.tunes.org/relational">relational</a> <a class="internal" href="https://web.archive.org/web/20050309022329/http://cliki.tunes.org/Algebra%20and%20coalgebra">algebra</a> operators. <a class="internal" href="https://web.archive.org/web/20050309022329/http://cliki.tunes.org/Optimizer">Optimizer</a>s use algebraic identities to <a class="internal" href="https://web.archive.org/web/20050309022329/http://cliki.tunes.org/Rewrite%20for%20Optimization">rewrite</a>, and hence <a class="internal" href="https://web.archive.org/web/20050309022329/http://cliki.tunes.org/optimize">optimize</a>, expressions, which in turn <a class="internal" href="https://web.archive.org/web/20050309022329/http://cliki.tunes.org/optimize">optimize</a>s query evaluation programs. This is how databases "solve" the automatic programming problem for query evaluation programs.
+
+<p>[..]
+</blockquote>
+
+<p><ul class="links">
+<li><a href="https://web.archive.org/web/20050309022329/http://www.cs.utexas.edu/users/schwartz/Started.html">Getting Started</a>.
+<li><a href="https://web.archive.org/web/20050309022329/http://www.cs.utexas.edu/users/schwartz/">Home Page of the Product-Line Architecture Research Group</a>.
+<li><a href="https://web.archive.org/web/20050309022329/http://www.cs.utexas.edu/users/schwartz/ATS.html">The AHEAD Tool Suite (ATS)</a>.
+<li><a href="https://web.archive.org/web/20050309022329/http://www.cs.utexas.edu/home/research/areas.shtml">Research Areas at Department of Computer Sciences of The University of Texas at Austin</a>.
+</ul>
+<hr><p><b>This page is linked from: </b> <a class="internal" href="https://web.archive.org/web/20050309022329/http://cliki.tunes.org/FOP">FOP</a> &nbsp; <a class="internal" href="https://web.archive.org/web/20050309022329/http://cliki.tunes.org/Monopoly">Monopoly</a> &nbsp; <a class="internal" href="https://web.archive.org/web/20050309022329/http://cliki.tunes.org/PoLITe%20project">PoLITe project</a> &nbsp; </div><div id="footer"><form action="https://web.archive.org/web/20050309022329/http://cliki.tunes.org/admin/search"><a class="internal" href="https://web.archive.org/web/20050309022329/http://cliki.tunes.org/edit/Feature-Oriented%20Programming">Edit page</a> | <a class="internal" href="https://web.archive.org/web/20050309022329/http://cliki.tunes.org/Feature-Oriented%20Programming?source">View source</a> | Revisions: <b title="Mon, 24 Nov 2003 15:41:44 GMT">0</b>  | <input name="words" size="30"><input type="submit" value="search"></form><div id="disclaimer">CTO pages can be modified by anyone at anytime.
+Imagine an appropriate disclaimer. Double it. Add two.</div></body></html></div><!--
+     FILE ARCHIVED ON 02:23:29 Mar 09, 2005 AND RETRIEVED FROM THE
+     INTERNET ARCHIVE ON 06:12:40 Dec 18, 2022.
+     JAVASCRIPT APPENDED BY WAYBACK MACHINE, COPYRIGHT INTERNET ARCHIVE.
+
+     ALL OTHER CONTENT MAY ALSO BE PROTECTED BY COPYRIGHT (17 U.S.C.
+     SECTION 108(a)(3)).
+-->
+<!--
+playback timings (ms):
+  captures_list: 164.727
+  exclusion.robots: 0.062
+  exclusion.robots.policy: 0.056
+  RedisCDXSource: 1.583
+  esindex: 0.005
+  LoadShardBlock: 148.73 (3)
+  PetaboxLoader3.resolve: 128.234 (4)
+  PetaboxLoader3.datanode: 82.618 (4)
+  CDXLines.iter: 12.378 (3)
+  load_resource: 139.18
+-->

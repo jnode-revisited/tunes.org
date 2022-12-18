@@ -1,0 +1,63 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html><head><script src="//archive.org/includes/analytics.js?v=cf34f82" type="text/javascript"></script>
+<script type="text/javascript">window.addEventListener('DOMContentLoaded',function(){var v=archive_analytics.values;v.service='wb';v.server_name='wwwb-app221.us.archive.org';v.server_ms=161;archive_analytics.send_pageview({});});</script>
+<script type="text/javascript" src="/_static/js/bundle-playback.js?v=MzYkZ0TU" charset="utf-8"></script>
+<script type="text/javascript" src="/_static/js/wombat.js?v=UHAOicsW" charset="utf-8"></script>
+<script type="text/javascript">
+  __wm.init("https://web.archive.org/web");
+  __wm.wombat("http://cliki.tunes.org:80/Ontology","20050414222922","https://web.archive.org/","web","/_static/",
+	      "1113517762");
+</script>
+<link rel="stylesheet" type="text/css" href="/_static/css/banner-styles.css?v=S1zqJCYt" />
+<link rel="stylesheet" type="text/css" href="/_static/css/iconochive.css?v=qtvMKcIJ" />
+<!-- End Wayback Rewrite JS Include -->
+<title>CTO : Ontology</title><link rel="alternate" type="application/rss+xml" title="Recent Changes" href="https://web.archive.org/web/20050414222922/http://cliki.tunes.org/recent-changes.rdf"><link rel="stylesheet" href="https://web.archive.org/web/20050414222922cs_/http://cliki.tunes.org/admin/cliki.css"></head><body><div id="banner"><a title="CTO" class="logo" href="https://web.archive.org/web/20050414222922/http://cliki.tunes.org/">CTO</a> <span>CLiki for the TUNES project</span></div><div id="navbar"><a class="internal" href="https://web.archive.org/web/20050414222922/http://cliki.tunes.org/index">Home</a> <a class="internal" href="https://web.archive.org/web/20050414222922/http://cliki.tunes.org/Recent%20Changes">Recent Changes</a> <a class="internal" href="https://web.archive.org/web/20050414222922/http://cliki.tunes.org/CLiki">About CLiki</a> <a class="internal" href="https://web.archive.org/web/20050414222922/http://cliki.tunes.org/Text%20Formatting">Text Formatting</a> <a class="internal" onclick="if(name=window.prompt('New page name ([A-Za-z0-9 ])')) document.location='https://web.archive.org/web/20050414222922/http://cliki.tunes.org/edit/'+name ;return false;" href="/web/20050414222922/http://cliki.tunes.org/">Create New Page</a></div><div id="main"><h1>Ontology</h1>In philosophy the <a class="internal" href="https://web.archive.org/web/20050414222922/http://cliki.tunes.org/term">term</a> ontology is used to indicate a theory of being, which describes "what is" and in some cases by converse "what is not", and the relationships between beings. One of the simplest ontologies is Parmenides': existence is - stop. This rules out distinction among different things, and therefore space, time, quality, yielding a reality devoided of any informative content since a system with only one state can be encoded with zero <a class="internal" href="https://web.archive.org/web/20050414222922/http://cliki.tunes.org/bit">bit</a>s. Although Parmenides' approach raised many interesting philosophical issues at the time it was introduced (the well-known Parmenides' paradoxes) we want more complex ontologies both for theoretical and for practical purposes. 
+
+<p>An ontology is also the basic vocabulary to start speaking - and reasoning - about anything. As such, communication cannot occur unless the speakers agree on a common ontology, an issue known as ontological commitment. To commit on a common ontology, however, speakers must communicate -- and therefore they must already be both committed to a (perhaps simpler) common ontology, a typical <a class="internal" href="https://web.archive.org/web/20050414222922/http://cliki.tunes.org/bootstrap">bootstrap</a> problem. To computer scientists  ontologies are commonly meant as organized vocabularies to make distributed computing systems interact. Researchers in knowledge representation are usually more precise. A definition from Tom Gruber's "What is an ontology?" (see links below):
+<p><cite>
+In the context of knowledge sharing, I use the term ontology to mean a  specification of a conceptualization. That is, an ontology is a description (like a formal specification of a program) of the concepts and relationships that can exist for an agent or a community of agents. 
+</cite></p>
+
+<p><ul class="links">
+<li><a href="https://web.archive.org/web/20050414222922/http://www-ksl.stanford.edu/kst/what-is-an-ontology.html">What is an ontology?</a> From Tom Gruber, Stanford Knowledge System Laboratory.</li>
+<li> <a href="https://web.archive.org/web/20050414222922/http://www.ei.sanken.osaka-u.ac.jp/">Knowledge representation at Mizoguchi lab</a>. Comprehensive.</li>
+<li> <a href="https://web.archive.org/web/20050414222922/http://ontolingua.stanford.edu/">Knowledge Sharing Public Library</a> from Stanford University. An example of ontology. A public ontology navigator is available: Log in anonymously for a read-only access. In KIF (Knowledge Interchange Format) language.</li>
+<li>The <a href="https://web.archive.org/web/20050414222922/http://www.semanticweb.org/">semantic web</a> homepage.</li>
+<li>The standardization effort at <a href="https://web.archive.org/web/20050414222922/http://www.w3.org/2001/sw/WebOnt/">w3</a>.</li>
+<li>Marcia J. Bates, <a href="https://web.archive.org/web/20050414222922/http://firstmonday.org/issues/issue7_7/bates/">After the Dot-Bomb: Getting Web Information Retrieval Right This Time</a> (on the "<strong>ontology</strong>" <strong>fallacy</strong> and the effectiveness of <strong>specialized</strong> (vs conventional) dictionaries and thesauruses - see <a class="internal" href="https://web.archive.org/web/20050414222922/http://cliki.tunes.org/TUNES%20vs%20the%20WWW">TUNES vs the WWW</a>).</li>
+</ul>
+
+<p><hr/>
+
+<p><span class="comment">
+Desperately needs improvement, but could be a starter -- <a class="internal" href="https://web.archive.org/web/20050414222922/http://cliki.tunes.org/schizophonic">schizophonic</a>
+
+<p>One problem with this definition and characterization is that <em>being</em> has nothing to do with <em>existence</em>, so anything mentioned <em>is</em>, regardless of whether it is possible or logically-consistent or such. None of the technical abuses of the word in software engineering seem to acknowledge this. -- <a class="internal" href="https://web.archive.org/web/20050414222922/http://cliki.tunes.org/water">water</a>
+
+<p>Could this be the good old difference between <code>FOO</code> and <code>'FOO</code>? Somehow, <code>(EVAL 'FOO)</code> always has a meaning, so that any nameable concept <em>is</em>, whereas <code>(EVAL FOO)</code> can fail to converge to an answer, so that some nameable concepts describe things that do not <em>exist</em>. Except that in a reasoning world, <code>EVAL</code> is much richer than in a simple computing world, since it "returns" all the meaningful behaviour associated to thinking about a concept, not just a one procedure to execute. -- <a class="internal" href="https://web.archive.org/web/20050414222922/http://cliki.tunes.org/Far%E9">Faré</a>
+
+<p>About the difference between being and existing, I don't get the point of the idea "if it is, it can be mentioned; if it exists it has a theory/a consistent theory/an implementation behind it". It means that any term of a language "is", and if some semantics is attached on the language, such that you find at least one model for the term, then it also "exists"? I.e. existence as meaning (it exists iff means something)? Well, I wouldn't be so bold, first because you can flexibly attach many semantics (not necessary consistent, you can have paraconsistence if you want), second because... well, it doesn't sound good to me. If you have a class of term you have at least its initial semantics, so what's the point to distinguish? Third because "existence" is not necessarily a feature of nameable things. Initiality indeed expresses the fact that a thing exists (in the model) only if it has a name. I will ask my next-door philosopher for delucidations. Although I think the distinction could work for practical purposes if formulated as such: A term can exists <em>with respect to</em> some kind of semantics. In this sense, for the evaluator of Faré's example <code>'FOO</code> exists but <code>FOO</code> does not because <code>'FOO</code> has a semantics, which is <code>FOO</code>, and <code>FOO</code> has no semantics - obviously, relatively to how the specific evaluator gives a semantics to a term. However, <code>'FOO</code> and <code>FOO</code> are because in some theory, i.e. in my_own_theory_of_silly_text_strings, they mean something (4 useless characters and 3 useless characters for myself as an evaluator). Does it make some sense at all? -- <a class="internal" href="https://web.archive.org/web/20050414222922/http://cliki.tunes.org/schizophonic">schizophonic</a>
+
+<p></span>
+<hr><p><b>This page is linked from: </b> <a class="internal" href="https://web.archive.org/web/20050414222922/http://cliki.tunes.org/Bootstrap">Bootstrap</a> &nbsp; <a class="internal" href="https://web.archive.org/web/20050414222922/http://cliki.tunes.org/Meta-">Meta-</a> &nbsp; <a class="internal" href="https://web.archive.org/web/20050414222922/http://cliki.tunes.org/Metatext">Metatext</a> &nbsp; <a class="internal" href="https://web.archive.org/web/20050414222922/http://cliki.tunes.org/Paradigm">Paradigm</a> &nbsp; <a class="internal" href="https://web.archive.org/web/20050414222922/http://cliki.tunes.org/TUNES%20vs%20the%20WWW">TUNES vs the WWW</a> &nbsp; </div><div id="footer"><form action="https://web.archive.org/web/20050414222922/http://cliki.tunes.org/admin/search"><a class="internal" href="https://web.archive.org/web/20050414222922/http://cliki.tunes.org/edit/Ontology">Edit page</a> | <a class="internal" href="https://web.archive.org/web/20050414222922/http://cliki.tunes.org/Ontology?source">View source</a> | Revisions: <b title="Mon, 31 May 2004 19:46:22 GMT">1</b>  | <input name="words" size="30"><input type="submit" value="search"></form><div id="disclaimer">CTO pages can be modified by anyone at anytime.
+Imagine an appropriate disclaimer. Double it. Add two.</div></body></html></div><!--
+     FILE ARCHIVED ON 22:29:22 Apr 14, 2005 AND RETRIEVED FROM THE
+     INTERNET ARCHIVE ON 06:15:23 Dec 18, 2022.
+     JAVASCRIPT APPENDED BY WAYBACK MACHINE, COPYRIGHT INTERNET ARCHIVE.
+
+     ALL OTHER CONTENT MAY ALSO BE PROTECTED BY COPYRIGHT (17 U.S.C.
+     SECTION 108(a)(3)).
+-->
+<!--
+playback timings (ms):
+  captures_list: 88.628
+  exclusion.robots: 0.092
+  exclusion.robots.policy: 0.082
+  RedisCDXSource: 11.443
+  esindex: 0.009
+  LoadShardBlock: 60.912 (3)
+  PetaboxLoader3.datanode: 76.058 (4)
+  CDXLines.iter: 13.698 (3)
+  load_resource: 68.142
+  PetaboxLoader3.resolve: 27.454
+-->

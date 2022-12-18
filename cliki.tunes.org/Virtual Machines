@@ -1,0 +1,74 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html><head><script src="//archive.org/includes/analytics.js?v=cf34f82" type="text/javascript"></script>
+<script type="text/javascript">window.addEventListener('DOMContentLoaded',function(){var v=archive_analytics.values;v.service='wb';v.server_name='wwwb-app219.us.archive.org';v.server_ms=156;archive_analytics.send_pageview({});});</script>
+<script type="text/javascript" src="/_static/js/bundle-playback.js?v=MzYkZ0TU" charset="utf-8"></script>
+<script type="text/javascript" src="/_static/js/wombat.js?v=UHAOicsW" charset="utf-8"></script>
+<script type="text/javascript">
+  __wm.init("https://web.archive.org/web");
+  __wm.wombat("http://cliki.tunes.org:80/Virtual%20Machines","20050208010614","https://web.archive.org/","web","/_static/",
+	      "1107824774");
+</script>
+<link rel="stylesheet" type="text/css" href="/_static/css/banner-styles.css?v=S1zqJCYt" />
+<link rel="stylesheet" type="text/css" href="/_static/css/iconochive.css?v=qtvMKcIJ" />
+<!-- End Wayback Rewrite JS Include -->
+<title>CTO : Virtual Machines</title><link rel="alternate" type="application/rss+xml" title="Recent Changes" href="https://web.archive.org/web/20050208010614/http://cliki.tunes.org/recent-changes.rdf"><link rel="stylesheet" href="https://web.archive.org/web/20050208010614cs_/http://cliki.tunes.org/admin/cliki.css"></head><body><div id="banner"><a title="CTO" class="logo" href="https://web.archive.org/web/20050208010614/http://cliki.tunes.org/">CTO</a> <span>CLiki for the TUNES project</span></div><div id="navbar"><a class="internal" href="https://web.archive.org/web/20050208010614/http://cliki.tunes.org/index">Home</a> <a class="internal" href="https://web.archive.org/web/20050208010614/http://cliki.tunes.org/Recent%20Changes">Recent Changes</a> <a class="internal" href="https://web.archive.org/web/20050208010614/http://cliki.tunes.org/CLiki">About CLiki</a> <a class="internal" href="https://web.archive.org/web/20050208010614/http://cliki.tunes.org/Text%20Formatting">Text Formatting</a> <a class="internal" onclick="if(name=window.prompt('New page name ([A-Za-z0-9 ])')) document.location='https://web.archive.org/web/20050208010614/http://cliki.tunes.org/edit/'+name ;return false;" href="/web/20050208010614/http://cliki.tunes.org/">Create New Page</a></div><div id="main"><h1>Virtual Machines</h1>Virtual Machines reviewed.  (<a class="internal" href="https://web.archive.org/web/20050208010614/http://cliki.tunes.org/Virtual%20Machine">definition</a>)
+
+<p><a class="internal" href="https://web.archive.org/web/20050208010614/http://cliki.tunes.org/Abstract%20VM">Abstract VM</a>'s.
+
+<p><a class="internal" href="https://web.archive.org/web/20050208010614/http://cliki.tunes.org/Concrete%20VM">Concrete VM</a>'s.
+
+<p><a class="internal" href="https://web.archive.org/web/20050208010614/http://cliki.tunes.org/Proprietary%20VM">Proprietary VM</a>'s.
+
+<p>All <a class="internal" href="https://web.archive.org/web/20050208010614/http://cliki.tunes.org/VM">VM</a>'s (a raw index).
+
+<p><h2>Remove these as they are added:</h2>
+
+<p><li>Von Neuman Machine model
+<li>abstract CPUs models: CISC vs LispMachines vs VLIW vs RISC vs MISC
+<li>Vienna AM -- <a href="https://web.archive.org/web/20050208010614/http://www.complang.tuwien.ac.at/andi/articles.html">Andi Krall</a>
+<li>low-level parallel models: PRAM, etc
+</ul>
+<li>Add these entries among <a class="internal" href="https://web.archive.org/web/20050208010614/http://cliki.tunes.org/concrete%20VM">concrete VM</a>s:
+<ul>
+<li>Actual CPUs -- point to related CPU pages.
+<li>Actual Object File Format encoding -- point to related pages; includes Fat binaries.
+<li>ABVM.
+<li>UVM (?)
+<li>Dis from <a class="internal" href="https://web.archive.org/web/20050208010614/http://cliki.tunes.org/Inferno">Inferno</a> OS: It's supported on lots of hardware and software platforms, with lots of interesting backends and frontends. Is it freely usable?
+<li><a class="internal" href="https://web.archive.org/web/20050208010614/http://cliki.tunes.org/Kali">Kali</a>
+</ul>
+<li>You should <a href="https://web.archive.org/web/20050208010614/http://www.iecc.com/comparch/compsearch">search</a> for the recurrent UNCOL issue in the <a href="https://web.archive.org/web/20050208010614/http://www.iecc.com/comparch/">archives</a> of
+<a href="https://web.archive.org/web/20050208010614/http://www.iecc.com/comparch/compsearch">comp.compilers</a>.
+<li>Discuss the choice of a universal language for distributing code
+<li>See the <a class="internal" href="https://web.archive.org/web/20050208010614/http://cliki.tunes.org/Tunes%20Migration">Tunes Migration</a> <a class="internal" href="https://web.archive.org/web/20050208010614/http://cliki.tunes.org/Subproject">Subproject</a>.
+<li><a href="https://web.archive.org/web/20050208010614/http://www.infoworld.com/cgi-bin/displayStory.pl?97044.wuvm.htm">an article in infoworld</a>
+<li><a href="https://web.archive.org/web/20050208010614/http://www-sor.inria.fr/~riccardi/vvm3.html">an article from project SOR</a> at INRIA<a class="internal" href="https://web.archive.org/web/20050208010614/http://cliki.tunes.org/edit/INRIA">?</a>
+<li><a href="https://web.archive.org/web/20050208010614/http://www.eecs.umich.edu/gasm/">abstract state machines</a>
+<li><a href="https://web.archive.org/web/20050208010614/http://www-sor.inria.fr/~piumarta/">Ian Piumarta</a>: virtual machine guru, maintainer of the <a class="internal" href="https://web.archive.org/web/20050208010614/http://cliki.tunes.org/Squeak%20VM">Squeak VM</a>, working on the <a href="https://web.archive.org/web/20050208010614/http://www-sor.inria.fr/projects/vvm/index.html">VVM</a> project at SOR.
+<li>LispVM<a class="internal" href="https://web.archive.org/web/20050208010614/http://cliki.tunes.org/edit/LispVM">?</a>.
+<li><a href="https://web.archive.org/web/20050208010614/http://lists.tunes.org/cgi-bin/wilma/virtmach">virtmach</a>
+<li><a href="https://web.archive.org/web/20050208010614/http://fileformat.virtualave.net/">File Format</a>
+<li><a href="https://web.archive.org/web/20050208010614/http://www.complang.tuwien.ac.at/anton/vmgen/">Anton Ertl's vmgen</a>
+<li> <a class="internal" href="https://web.archive.org/web/20050208010614/http://cliki.tunes.org/C%20Compiler%20%20%20dlopen%20VM">C Compiler   dlopen VM</a>
+</ul><hr><p><b>This page is linked from: </b> <a class="internal" href="https://web.archive.org/web/20050208010614/http://cliki.tunes.org/Denali">Denali</a> &nbsp; <a class="internal" href="https://web.archive.org/web/20050208010614/http://cliki.tunes.org/index">index</a> &nbsp; <a class="internal" href="https://web.archive.org/web/20050208010614/http://cliki.tunes.org/Review">Review</a> &nbsp; <a class="internal" href="https://web.archive.org/web/20050208010614/http://cliki.tunes.org/TUNES%20LLL">TUNES LLL</a> &nbsp; <a class="internal" href="https://web.archive.org/web/20050208010614/http://cliki.tunes.org/Virtual%20Machine">Virtual Machine</a> &nbsp; <a class="internal" href="https://web.archive.org/web/20050208010614/http://cliki.tunes.org/VM">VM</a> &nbsp; </div><div id="footer"><form action="https://web.archive.org/web/20050208010614/http://cliki.tunes.org/admin/search"><a class="internal" href="https://web.archive.org/web/20050208010614/http://cliki.tunes.org/edit/Virtual%20Machines">Edit page</a> | <a class="internal" href="https://web.archive.org/web/20050208010614/http://cliki.tunes.org/Virtual%20Machines?source">View source</a> | Revisions: <b title="Thu, 08 Jan 2004 04:33:09 GMT">0</b>  | <input name="words" size="30"><input type="submit" value="search"></form><div id="disclaimer">CTO pages can be modified by anyone at anytime.
+Imagine an appropriate disclaimer. Double it. Add two.</div></body></html></div><!--
+     FILE ARCHIVED ON 01:06:14 Feb 08, 2005 AND RETRIEVED FROM THE
+     INTERNET ARCHIVE ON 06:05:35 Dec 18, 2022.
+     JAVASCRIPT APPENDED BY WAYBACK MACHINE, COPYRIGHT INTERNET ARCHIVE.
+
+     ALL OTHER CONTENT MAY ALSO BE PROTECTED BY COPYRIGHT (17 U.S.C.
+     SECTION 108(a)(3)).
+-->
+<!--
+playback timings (ms):
+  captures_list: 68.347
+  exclusion.robots: 0.125
+  exclusion.robots.policy: 0.117
+  cdx.remote: 0.069
+  esindex: 0.013
+  LoadShardBlock: 41.468 (3)
+  PetaboxLoader3.datanode: 67.236 (4)
+  CDXLines.iter: 14.106 (3)
+  load_resource: 84.127
+  PetaboxLoader3.resolve: 43.604
+-->

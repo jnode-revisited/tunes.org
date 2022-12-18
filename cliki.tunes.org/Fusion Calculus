@@ -1,0 +1,64 @@
+<html><head><script src="//archive.org/includes/analytics.js?v=cf34f82" type="text/javascript"></script>
+<script type="text/javascript">window.addEventListener('DOMContentLoaded',function(){var v=archive_analytics.values;v.service='wb';v.server_name='wwwb-app218.us.archive.org';v.server_ms=484;archive_analytics.send_pageview({});});</script>
+<script type="text/javascript" src="/_static/js/bundle-playback.js?v=MzYkZ0TU" charset="utf-8"></script>
+<script type="text/javascript" src="/_static/js/wombat.js?v=UHAOicsW" charset="utf-8"></script>
+<script type="text/javascript">
+  __wm.init("https://web.archive.org/web");
+  __wm.wombat("http://cliki.tunes.org:80/Fusion%20Calculus","20031231061753","https://web.archive.org/","web","/_static/",
+	      "1072851473");
+</script>
+<link rel="stylesheet" type="text/css" href="/_static/css/banner-styles.css?v=S1zqJCYt" />
+<link rel="stylesheet" type="text/css" href="/_static/css/iconochive.css?v=qtvMKcIJ" />
+<!-- End Wayback Rewrite JS Include -->
+<title>TUNES : Fusion Calculus</title>
+<link rel="alternate" type="application/rss+xml" title="Recent Changes" href="https://web.archive.org/web/20031231061753/http://cliki.tunes.org/recent-changes.rdf"></link>
+<link rel="stylesheet" href="https://web.archive.org/web/20031231061753cs_/http://cliki.tunes.org/admin/cliki.css"></link>
+<link rel="shortcut icon" type="image/x-icon" href="https://web.archive.org/web/20031231061753im_/http://cliki.tunes.org/favicon.ico"></link>
+</head>
+<body><div class="navbar"><table width="100%"><tr><td colspan="3" class="disclaimer">CLiki pages can be edited by anybody at any time.  Imagine a <i>scarily comprehensive legal disclaimer</i>.  Double it.  Add two.  <!-- Now shut your eyes.  Dark, isn't it? --></td>
+</tr>
+</table>
+<center><table><tr><td><a href="https://web.archive.org/web/20031231061753/http://cliki.tunes.org/index">Home</a>
+</td>
+<td><a href="https://web.archive.org/web/20031231061753/http://cliki.tunes.org/Recent%20Changes">Recent Changes</a>
+</td>
+<td><a href="https://web.archive.org/web/20031231061753/http://cliki.tunes.org/CLiki">About CLiki</a>
+</td>
+<td><a href="https://web.archive.org/web/20031231061753/http://cliki.tunes.org/Text%20Formatting">Text Formatting</a>
+</td>
+<td><a onclick="if(name=window.prompt('New page name ([A-Za-z0-9 ])')) document.location='https://web.archive.org/web/20031231061753/http://cliki.tunes.org/edit/'+name ;return false;" href="#">Create new page</a>
+</td>
+</tr>
+</table>
+</center>
+</div>
+<h1>Fusion Calculus</h1>
+Fusion Calculus is yet another nicer variant of the <a class="internal" href="Pi%20calculus" onmouseover="window.status='Pi calculus'; return true" onmouseout="window.status='';">Pi calculus</a>, an <a class="internal" href="abstract%20VM" onmouseover="window.status='abstract VM'; return true" onmouseout="window.status='';">abstract VM</a> for parallel, mobile computations, for expressing <a class="internal" href="concurrency" onmouseover="window.status='concurrency'; return true" onmouseout="window.status='';">concurrency</a>.
+
+<p>It is based on the concept that communication can be broken in two independent components: fusion of names (i.e. a mutual agreement between two parties to consider two names as aliases) and name scoping. By decoupling these components a calculus based on communication is obtained which is less understandable than pi, but having better formal properties. Notably, there is only one sensible form of <a class="internal" href="bisimulation" onmouseover="window.status='bisimulation'; return true" onmouseout="window.status='';">bisimulation</a> defined for the Fusion Calculus, which is also a <a class="internal" href="congruence" onmouseover="window.status='congruence'; return true" onmouseout="window.status='';">congruence</a>.
+
+<p><ul class="links">
+<li><a href="https://web.archive.org/web/20031231061753/http://user.it.uu.se/~victor/tr/fusion.shtml">The Fusion Calculus: Expressiveness and Symmetry in Mobile Processes</a>
+
+</ul>
+<hr><b>This page is linked from: </b> <a class="internal" href="Bisimulation" onmouseover="window.status='Bisimulation'; return true" onmouseout="window.status='';">Bisimulation</a> &nbsp; <div class="footer"><form action="https://web.archive.org/web/20031231061753/http://cliki.tunes.org/admin/search"><a href="/web/20031231061753/http://cliki.tunes.org/view-source/Fusion%20Calculus" class="nav" onmouseover="window.status='View the source'; return true">Show</a>/<a href="/web/20031231061753/http://cliki.tunes.org/edit/Fusion%20Calculus" class="nav" onmouseover="window.status='Edit this page'; return true">Edit source</a> |  Last edit: Thu, 04 Dec 2003 17:40:46 | <a href="/web/20031231061753/http://cliki.tunes.org/history/Fusion%20Calculus" class="nav" onmouseover="window.status='Show page history'; return true">History</a> | <a href="CLiki+Search" class="nav" onmouseover="window.status='Search all pages'; return true">Search:</a>&nbsp;<input name="words" size="20"></form></div><!--
+     FILE ARCHIVED ON 06:17:53 Dec 31, 2003 AND RETRIEVED FROM THE
+     INTERNET ARCHIVE ON 06:20:38 Dec 18, 2022.
+     JAVASCRIPT APPENDED BY WAYBACK MACHINE, COPYRIGHT INTERNET ARCHIVE.
+
+     ALL OTHER CONTENT MAY ALSO BE PROTECTED BY COPYRIGHT (17 U.S.C.
+     SECTION 108(a)(3)).
+-->
+<!--
+playback timings (ms):
+  captures_list: 254.14
+  exclusion.robots: 0.094
+  exclusion.robots.policy: 0.085
+  cdx.remote: 0.072
+  esindex: 0.01
+  LoadShardBlock: 228.189 (3)
+  PetaboxLoader3.datanode: 202.643 (4)
+  CDXLines.iter: 13.844 (3)
+  PetaboxLoader3.resolve: 218.37 (2)
+  load_resource: 227.236
+-->

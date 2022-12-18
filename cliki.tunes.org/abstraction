@@ -1,0 +1,41 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html><head><script src="//archive.org/includes/analytics.js?v=cf34f82" type="text/javascript"></script>
+<script type="text/javascript">window.addEventListener('DOMContentLoaded',function(){var v=archive_analytics.values;v.service='wb';v.server_name='wwwb-app217.us.archive.org';v.server_ms=313;archive_analytics.send_pageview({});});</script>
+<script type="text/javascript" src="/_static/js/bundle-playback.js?v=MzYkZ0TU" charset="utf-8"></script>
+<script type="text/javascript" src="/_static/js/wombat.js?v=UHAOicsW" charset="utf-8"></script>
+<script type="text/javascript">
+  __wm.init("https://web.archive.org/web");
+  __wm.wombat("http://cliki.tunes.org:80/Abstraction","20050403170601","https://web.archive.org/","web","/_static/",
+	      "1112547961");
+</script>
+<link rel="stylesheet" type="text/css" href="/_static/css/banner-styles.css?v=S1zqJCYt" />
+<link rel="stylesheet" type="text/css" href="/_static/css/iconochive.css?v=qtvMKcIJ" />
+<!-- End Wayback Rewrite JS Include -->
+<title>CTO : Abstraction</title><link rel="alternate" type="application/rss+xml" title="Recent Changes" href="https://web.archive.org/web/20050403170601/http://cliki.tunes.org/recent-changes.rdf"><link rel="stylesheet" href="https://web.archive.org/web/20050403170601cs_/http://cliki.tunes.org/admin/cliki.css"></head><body><div id="banner"><a title="CTO" class="logo" href="https://web.archive.org/web/20050403170601/http://cliki.tunes.org/">CTO</a> <span>CLiki for the TUNES project</span></div><div id="navbar"><a class="internal" href="https://web.archive.org/web/20050403170601/http://cliki.tunes.org/index">Home</a> <a class="internal" href="https://web.archive.org/web/20050403170601/http://cliki.tunes.org/Recent%20Changes">Recent Changes</a> <a class="internal" href="https://web.archive.org/web/20050403170601/http://cliki.tunes.org/CLiki">About CLiki</a> <a class="internal" href="https://web.archive.org/web/20050403170601/http://cliki.tunes.org/Text%20Formatting">Text Formatting</a> <a class="internal" onclick="if(name=window.prompt('New page name ([A-Za-z0-9 ])')) document.location='https://web.archive.org/web/20050403170601/http://cliki.tunes.org/edit/'+name ;return false;" href="/web/20050403170601/http://cliki.tunes.org/">Create New Page</a></div><div id="main"><h1>Abstraction</h1>The <a class="internal" href="https://web.archive.org/web/20050403170601/http://cliki.tunes.org/term">term</a> for the process of by which an <a class="internal" href="https://web.archive.org/web/20050403170601/http://cliki.tunes.org/object">object</a> is taken out of its <a class="internal" href="https://web.archive.org/web/20050403170601/http://cliki.tunes.org/context">context</a>, so that a new <a class="internal" href="https://web.archive.org/web/20050403170601/http://cliki.tunes.org/context">context</a> can be applied to it. Abstraction's possibility enables deductive and inductive thinking, and a well-developed ability of abstraction is what makes <a class="internal" href="https://web.archive.org/web/20050403170601/http://cliki.tunes.org/man">man</a>'s intelligence superior to all the other known living species.
+
+<p>The mathematical theory of such abstractions is called a <a class="internal" href="https://web.archive.org/web/20050403170601/http://cliki.tunes.org/lambda%20calculus">lambda calculus</a>, after the greek letter lambda, traditionally (actually, it's a typographical accident) used to denote such abstractions. 
+
+<p>In a computer <a class="internal" href="https://web.archive.org/web/20050403170601/http://cliki.tunes.org/programming%20language">programming language</a>, abstraction is the syntactical ability to deduce the expression of a function from a pattern of abstract arguments, and the body expression. Applying such a function to concrete parameters results in those parameters being matches to the argument pattern, and the matched values being consequently substituted to abstract arguments in the function body. The value of a the function application is then the result of evaluating this substituted body. 
+
+<p>For instance, in the <a class="internal" href="https://web.archive.org/web/20050403170601/http://cliki.tunes.org/LISP">LISP</a> programming language family, <code>(sin y)</code> denotes the sine of <var>y</var>, and <code>(* 2 x)</code> the double of <var>x</var>. Hence, <code>(lambda (x) (sin (* 2 x)))</code> denotes a function which, when applied to an argument <var>x</var>, will return the sine of the double of <var>x</var>.<hr><p><b>Pages in this topic: </b> <a class="internal" href="https://web.archive.org/web/20050403170601/http://cliki.tunes.org/Lisp%20Literate%20Engine">Lisp Literate Engine</a> &nbsp; <a class="internal" href="https://web.archive.org/web/20050403170601/http://cliki.tunes.org/Quotienting">Quotienting</a> &nbsp; <a class="internal" href="https://web.archive.org/web/20050403170601/http://cliki.tunes.org/Reference">Reference</a> &nbsp; <hr><p><b>Also linked from: </b> <a class="internal" href="https://web.archive.org/web/20050403170601/http://cliki.tunes.org/Abstraction%20Level">Abstraction Level</a> &nbsp; <a class="internal" href="https://web.archive.org/web/20050403170601/http://cliki.tunes.org/Continuation-Passing%20Style">Continuation-Passing Style</a> &nbsp; <a class="internal" href="https://web.archive.org/web/20050403170601/http://cliki.tunes.org/Declarative">Declarative</a> &nbsp; <a class="internal" href="https://web.archive.org/web/20050403170601/http://cliki.tunes.org/Exokernel">Exokernel</a> &nbsp; <a class="internal" href="https://web.archive.org/web/20050403170601/http://cliki.tunes.org/Higher-Order">Higher-Order</a> &nbsp; <a class="internal" href="https://web.archive.org/web/20050403170601/http://cliki.tunes.org/Hume">Hume</a> &nbsp; <a class="internal" href="https://web.archive.org/web/20050403170601/http://cliki.tunes.org/Plan%20B">Plan B</a> &nbsp; <a class="internal" href="https://web.archive.org/web/20050403170601/http://cliki.tunes.org/Plan9">Plan9</a> &nbsp; </div><div id="footer"><form action="https://web.archive.org/web/20050403170601/http://cliki.tunes.org/admin/search"><a class="internal" href="https://web.archive.org/web/20050403170601/http://cliki.tunes.org/edit/Abstraction">Edit page</a> | <a class="internal" href="https://web.archive.org/web/20050403170601/http://cliki.tunes.org/Abstraction?source">View source</a> | Revisions: <b title="Tue, 04 Mar 2003 03:22:32 GMT">0</b>  | <input name="words" size="30"><input type="submit" value="search"></form><div id="disclaimer">CTO pages can be modified by anyone at anytime.
+Imagine an appropriate disclaimer. Double it. Add two.</div></body></html></div><!--
+     FILE ARCHIVED ON 17:06:01 Apr 03, 2005 AND RETRIEVED FROM THE
+     INTERNET ARCHIVE ON 06:09:59 Dec 18, 2022.
+     JAVASCRIPT APPENDED BY WAYBACK MACHINE, COPYRIGHT INTERNET ARCHIVE.
+
+     ALL OTHER CONTENT MAY ALSO BE PROTECTED BY COPYRIGHT (17 U.S.C.
+     SECTION 108(a)(3)).
+-->
+<!--
+playback timings (ms):
+  captures_list: 256.584
+  exclusion.robots: 0.064
+  exclusion.robots.policy: 0.058
+  cdx.remote: 0.059
+  esindex: 0.008
+  LoadShardBlock: 149.467 (3)
+  PetaboxLoader3.resolve: 144.26 (4)
+  PetaboxLoader3.datanode: 45.559 (4)
+  CDXLines.iter: 26.968 (3)
+  load_resource: 51.355
+-->

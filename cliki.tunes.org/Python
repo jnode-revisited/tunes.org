@@ -1,0 +1,71 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html><head><script src="//archive.org/includes/analytics.js?v=cf34f82" type="text/javascript"></script>
+<script type="text/javascript">window.addEventListener('DOMContentLoaded',function(){var v=archive_analytics.values;v.service='wb';v.server_name='wwwb-app224.us.archive.org';v.server_ms=241;archive_analytics.send_pageview({});});</script>
+<script type="text/javascript" src="/_static/js/bundle-playback.js?v=MzYkZ0TU" charset="utf-8"></script>
+<script type="text/javascript" src="/_static/js/wombat.js?v=UHAOicsW" charset="utf-8"></script>
+<script type="text/javascript">
+  __wm.init("https://web.archive.org/web");
+  __wm.wombat("http://cliki.tunes.org:80/Python","20050408224553","https://web.archive.org/","web","/_static/",
+	      "1113000353");
+</script>
+<link rel="stylesheet" type="text/css" href="/_static/css/banner-styles.css?v=S1zqJCYt" />
+<link rel="stylesheet" type="text/css" href="/_static/css/iconochive.css?v=qtvMKcIJ" />
+<!-- End Wayback Rewrite JS Include -->
+<title>CTO : Python</title><link rel="alternate" type="application/rss+xml" title="Recent Changes" href="https://web.archive.org/web/20050408224553/http://cliki.tunes.org/recent-changes.rdf"><link rel="stylesheet" href="https://web.archive.org/web/20050408224553cs_/http://cliki.tunes.org/admin/cliki.css"></head><body><div id="banner"><a title="CTO" class="logo" href="https://web.archive.org/web/20050408224553/http://cliki.tunes.org/">CTO</a> <span>CLiki for the TUNES project</span></div><div id="navbar"><a class="internal" href="https://web.archive.org/web/20050408224553/http://cliki.tunes.org/index">Home</a> <a class="internal" href="https://web.archive.org/web/20050408224553/http://cliki.tunes.org/Recent%20Changes">Recent Changes</a> <a class="internal" href="https://web.archive.org/web/20050408224553/http://cliki.tunes.org/CLiki">About CLiki</a> <a class="internal" href="https://web.archive.org/web/20050408224553/http://cliki.tunes.org/Text%20Formatting">Text Formatting</a> <a class="internal" onclick="if(name=window.prompt('New page name ([A-Za-z0-9 ])')) document.location='https://web.archive.org/web/20050408224553/http://cliki.tunes.org/edit/'+name ;return false;" href="/web/20050408224553/http://cliki.tunes.org/">Create New Page</a></div><div id="main"><h1>Python</h1>Python is an <a class="internal" href="https://web.archive.org/web/20050408224553/http://cliki.tunes.org/object-oriented">object-oriented</a>, strictly, dynamically typed, lexically-scoped  <a class="internal" href="https://web.archive.org/web/20050408224553/http://cliki.tunes.org/programming%20language">programming language</a>. Its object model is quite flexible (single-dispatch, metaclasses, everything is an object), and somewhat similar to that of <a class="internal" href="https://web.archive.org/web/20050408224553/http://cliki.tunes.org/Smalltalk">Smalltalk</a>. Python has some <a class="internal" href="https://web.archive.org/web/20050408224553/http://cliki.tunes.org/functional">functional</a> programming features: first-class functions, map(), reduce(), list comprehensions, and lexical closures. Python is a very "free-form" language with very few ways of invariant construction.
+
+<p><ul class="links">
+  <li><a href="https://web.archive.org/web/20050408224553/http://www.python.org/">Main Site</a>, <a href="https://web.archive.org/web/20050408224553/http://www.cwi.nl/www.python.org/">Mirror</a>: WWW Sites.</li>
+  <li><a href="https://web.archive.org/web/20050408224553/ftp://ftp.python.org/">FTP Site</a>.</li>
+  <li><a href="https://web.archive.org/web/20050408224553/http://www.3plus4.de/squeak/">Python-Parser</a>, Python parser in Squeak.</li>
+</ul>
+
+<p><ul class="links"><h4>Unsorted</h4>
+<li><a href="https://web.archive.org/web/20050408224553/http://bytecodehacks.sourceforge.net/">ByteCodeHacks</a> - a Python <a class="internal" href="https://web.archive.org/web/20050408224553/http://cliki.tunes.org/VM">VM</a> bytecode library.</li>
+<li><a href="https://web.archive.org/web/20050408224553/http://www.crazy-compilers.com/bridgekeeper/">BridgeKeeper</a> - a <a class="internal" href="https://web.archive.org/web/20050408224553/http://cliki.tunes.org/Perl">Perl</a> to Python source code converter.</li>
+<li><a href="https://web.archive.org/web/20050408224553/http://www.foretec.com/python/workshops/1998-11/proceedings/papers/aycock-little/aycock-little.html">"Compiling Little Languages in Python"</a>.</li>
+<li><a href="https://web.archive.org/web/20050408224553/http://www.crazy-compilers.com/decompyle/">Decompyle</a> - a Python decompiler.</li>
+<li><a href="https://web.archive.org/web/20050408224553/http://www.jython.org/">Jython</a> - a Python in <a class="internal" href="https://web.archive.org/web/20050408224553/http://cliki.tunes.org/Java">Java</a>.</li>
+<li><a href="https://web.archive.org/web/20050408224553/http://sourceforge.net/projects/leo/">Leo</a> - a programmers outlining editor and a flexible browser, a literate programming tool, a data organizer and project manager, fully scriptable using Python.</li>
+<li><a href="https://web.archive.org/web/20050408224553/http://sourceforge.net/projects/moop/">Moop</a> - Mud Object-Oriented Pythonic.</li>
+<li><a href="https://web.archive.org/web/20050408224553/http://www.sff.net/people/neelk/open-source/index.htp">Multimethod.py</a> - a Python implementation of <a class="internal" href="https://web.archive.org/web/20050408224553/http://cliki.tunes.org/Cecil">Cecil</a> / <a class="internal" href="https://web.archive.org/web/20050408224553/http://cliki.tunes.org/Dylan">Dylan</a> style multimethods.</li>
+<li><a href="https://web.archive.org/web/20050408224553/http://www.isr.uci.edu/projects/sensos/python/">Palmpython</a> - Python to Palm Pilot Port.</li>
+<li><a href="https://web.archive.org/web/20050408224553/http://www.endeavors.com/pippy/">Pippy</a> - Python for the Palm.</li>
+<li><a href="https://web.archive.org/web/20050408224553/http://pyastra.sourceforge.net/">Pyastra</a> - Python to <a class="internal" href="https://web.archive.org/web/20050408224553/http://cliki.tunes.org/Assembly">Assembly</a> translator.</li>
+<li><a href="https://web.archive.org/web/20050408224553/http://www.ccraig.org/software/pyhp/">Pyhp</a> - Python Hypertext Preprocessor, a <a class="internal" href="https://web.archive.org/web/20050408224553/http://cliki.tunes.org/PHP">PHP</a>-like language that uses Python.</li>
+<li><a href="https://web.archive.org/web/20050408224553/http://www.biostat.wisc.edu/~annis/creations/PyLisp/">Pylisp</a> - <a class="internal" href="https://web.archive.org/web/20050408224553/http://cliki.tunes.org/Lisp">Lisp</a> in Python.</li>
+<li><a href="https://web.archive.org/web/20050408224553/http://www.codespeak.net/pypy/">Pypy</a> - aka PyPython, Python in Python.</li>
+<li><a href="https://web.archive.org/web/20050408224553/http://starship.python.net/crew/mwh/hacks/pyrepl.html">Pyrepl</a> - a Python readline-a-like.</li>
+<li><a href="https://web.archive.org/web/20050408224553/http://www.cosc.canterbury.ac.nz/~greg/python/Pyrex/">Pyrex</a> - a language for writing Python extension modules.</li>
+<li><a href="https://web.archive.org/web/20050408224553/http://www.pyrite.org/">Pyrite</a>.</li>
+<li><a href="https://web.archive.org/web/20050408224553/http://www.algonet.se/~jsjogren/oscar/cython/">Pyrl</a> - a preprocessor, Perl to Pythonish syntax.</li>
+<li><a href="https://web.archive.org/web/20050408224553/http://www.pyzine.com/">Pyzine</a>.</li>
+<li><a href="https://web.archive.org/web/20050408224553/http://www-2.cs.cmu.edu/~music/aura/serpent.htm">Serpent</a> - a Python-inspired <a class="internal" href="https://web.archive.org/web/20050408224553/http://cliki.tunes.org/programming%20language">programming language</a> for real-time interactive multimedia systems.</li>
+<li><a href="https://web.archive.org/web/20050408224553/http://se.wtb.tue.nl/~hat/showgrammar/">ShowGrammar</a> - a Python script to convert a yacc<a class="internal" href="https://web.archive.org/web/20050408224553/http://cliki.tunes.org/edit/yacc">?</a> grammar to syntax diagrams.</li>
+<li><a href="https://web.archive.org/web/20050408224553/http://www.first.gmd.de/smile/trap/">Trap</a> - a Python-based generic compiler prototyping system.</li>
+<li><a href="https://web.archive.org/web/20050408224553/http://www.vendian.org/language_year/">"The Year In Scripting Languages"</a> - covers <a class="internal" href="https://web.archive.org/web/20050408224553/http://cliki.tunes.org/Lua">Lua</a> <a class="internal" href="https://web.archive.org/web/20050408224553/http://cliki.tunes.org/Perl">Perl</a> <a class="internal" href="https://web.archive.org/web/20050408224553/http://cliki.tunes.org/Python">Python</a> <a class="internal" href="https://web.archive.org/web/20050408224553/http://cliki.tunes.org/Ruby">Ruby</a> and <a class="internal" href="https://web.archive.org/web/20050408224553/http://cliki.tunes.org/Tcl">Tcl</a>.</li>
+<li><a href="https://web.archive.org/web/20050408224553/http://www.vpython.org/">VPython</a> - a 3D programming environment for Python.</li>
+<li><a href="https://web.archive.org/web/20050408224553/http://sourceforge.net/projects/vyper/">Vyper</a> - a programming language based on Python, written in <a class="internal" href="https://web.archive.org/web/20050408224553/http://cliki.tunes.org/Ocaml">Ocaml</a>.</li>
+<li><a href="https://web.archive.org/web/20050408224553/http://www.zope.org/">Zope</a> - a "web objects" system in Python.</li>
+</ul>
+<hr><p><b>This page is linked from: </b> <a class="internal" href="https://web.archive.org/web/20050408224553/http://cliki.tunes.org/Armin%20Rigo">Armin Rigo</a> &nbsp; <a class="internal" href="https://web.archive.org/web/20050408224553/http://cliki.tunes.org/Boo">Boo</a> &nbsp; <a class="internal" href="https://web.archive.org/web/20050408224553/http://cliki.tunes.org/Candygram">Candygram</a> &nbsp; <a class="internal" href="https://web.archive.org/web/20050408224553/http://cliki.tunes.org/Design%20by%20Contract">Design by Contract</a> &nbsp; <a class="internal" href="https://web.archive.org/web/20050408224553/http://cliki.tunes.org/Euphoria">Euphoria</a> &nbsp; <a class="internal" href="https://web.archive.org/web/20050408224553/http://cliki.tunes.org/Languages%20ToDo">Languages ToDo</a> &nbsp; <a class="internal" href="https://web.archive.org/web/20050408224553/http://cliki.tunes.org/Lython">Lython</a> &nbsp; <a class="internal" href="https://web.archive.org/web/20050408224553/http://cliki.tunes.org/Parrot">Parrot</a> &nbsp; <a class="internal" href="https://web.archive.org/web/20050408224553/http://cliki.tunes.org/Parsing">Parsing</a> &nbsp; <a class="internal" href="https://web.archive.org/web/20050408224553/http://cliki.tunes.org/Partial%20Evaluation%20101">Partial Evaluation 101</a> &nbsp; <a class="internal" href="https://web.archive.org/web/20050408224553/http://cliki.tunes.org/Prothon">Prothon</a> &nbsp; <a class="internal" href="https://web.archive.org/web/20050408224553/http://cliki.tunes.org/Psyco">Psyco</a> &nbsp; <a class="internal" href="https://web.archive.org/web/20050408224553/http://cliki.tunes.org/Reflective%20Programming%20Languages">Reflective Programming Languages</a> &nbsp; <a class="internal" href="https://web.archive.org/web/20050408224553/http://cliki.tunes.org/Ruby">Ruby</a> &nbsp; <a class="internal" href="https://web.archive.org/web/20050408224553/http://cliki.tunes.org/Scheme">Scheme</a> &nbsp; <a class="internal" href="https://web.archive.org/web/20050408224553/http://cliki.tunes.org/Self">Self</a> &nbsp; <a class="internal" href="https://web.archive.org/web/20050408224553/http://cliki.tunes.org/SWIG">SWIG</a> &nbsp; <a class="internal" href="https://web.archive.org/web/20050408224553/http://cliki.tunes.org/TUI">TUI</a> &nbsp; </div><div id="footer"><form action="https://web.archive.org/web/20050408224553/http://cliki.tunes.org/admin/search"><a class="internal" href="https://web.archive.org/web/20050408224553/http://cliki.tunes.org/edit/Python">Edit page</a> | <a class="internal" href="https://web.archive.org/web/20050408224553/http://cliki.tunes.org/Python?source">View source</a> | Revisions: <a href="https://web.archive.org/web/20050408224553/http://cliki.tunes.org/Python?v=1" title="Sat, 17 Apr 2004 05:00:04 GMT">1</a> <b title="Sat, 05 Jun 2004 17:09:41 GMT">2</b>  | <input name="words" size="30"><input type="submit" value="search"></form><div id="disclaimer">CTO pages can be modified by anyone at anytime.
+Imagine an appropriate disclaimer. Double it. Add two.</div></body></html></div><!--
+     FILE ARCHIVED ON 22:45:53 Apr 08, 2005 AND RETRIEVED FROM THE
+     INTERNET ARCHIVE ON 06:08:46 Dec 18, 2022.
+     JAVASCRIPT APPENDED BY WAYBACK MACHINE, COPYRIGHT INTERNET ARCHIVE.
+
+     ALL OTHER CONTENT MAY ALSO BE PROTECTED BY COPYRIGHT (17 U.S.C.
+     SECTION 108(a)(3)).
+-->
+<!--
+playback timings (ms):
+  captures_list: 108.172
+  exclusion.robots: 0.073
+  exclusion.robots.policy: 0.066
+  RedisCDXSource: 0.494
+  esindex: 0.007
+  LoadShardBlock: 90.239 (3)
+  PetaboxLoader3.datanode: 155.733 (4)
+  CDXLines.iter: 14.663 (3)
+  PetaboxLoader3.resolve: 60.418 (2)
+  load_resource: 128.859
+-->

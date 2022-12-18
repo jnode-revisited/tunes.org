@@ -1,0 +1,168 @@
+<script src="//archive.org/includes/analytics.js?v=cf34f82" type="text/javascript"></script>
+<script type="text/javascript">window.addEventListener('DOMContentLoaded',function(){var v=archive_analytics.values;v.service='wb';v.server_name='wwwb-app210.us.archive.org';v.server_ms=1004;archive_analytics.send_pageview({});});</script>
+<script type="text/javascript" src="/_static/js/bundle-playback.js?v=MzYkZ0TU" charset="utf-8"></script>
+<script type="text/javascript" src="/_static/js/wombat.js?v=UHAOicsW" charset="utf-8"></script>
+<script type="text/javascript">
+  __wm.init("https://web.archive.org/web");
+  __wm.wombat("http://cliki.tunes.org:80/Text%20Formatting?source","20050216202144","https://web.archive.org/","web","/_static/",
+	      "1108585304");
+</script>
+<link rel="stylesheet" type="text/css" href="/_static/css/banner-styles.css?v=S1zqJCYt" />
+<link rel="stylesheet" type="text/css" href="/_static/css/iconochive.css?v=qtvMKcIJ" />
+<!-- End Wayback Rewrite JS Include -->
+<strong>Nota bene:</strong> to edit this page use <em>View source</em> at the bottom of this node to access the un-translated source and then edit it off-line (see <strong>SGML entities bug</strong> at the bottom of this node for an explanation).
+
+<h4>Guidelines</h4>
+CLiki links are case-insensitive. "CLiki" will point to the same node as "cliki". However, node names are case-sensitive, and may show up in searches among topics, etc. So keep your node names uniform to the elements of the same category. For example, _(term) nodes should be capitalized, as well as topics.
+
+<h4>Avoid <code>P</code> tags</h4>
+As a convenience, text is assumed to start a new paragraph -- will be rendered preceded by a <code>P</code> tag -- if preceded by a blank line and not starting with a left-angle bracket. This seems to work passably well unless you want to start a paragraph with marked-up text. You'll just have to add the <code>P</code> tag yourself in that case. <strong>Don't use a <code>P</code> tag (or, in general, any other tag) at the beginning of an entry because it causes problems with topic-listing</strong> (see _(Searches|http://cliki.tunes.org/Text%20Formatting#Searches) below).
+
+<h4>Markup</h4>
+Most of the weird and wonderful markup syntax of the original Wiki is omitted, as HTML markup is allowed.  This is easily abusable: I'd rather receive patches to fix it than I would see the problem demonstrated.
+
+We have our own special markup too, of course: this consists of a funny character followed by an argument in parens.
+<!--
+To avoid quoting nightmares, <strong>on this page I have inserted an extra space between the character and the open-paren. Don't type it for real.</strong>
+-->
+
+<dl>
+  <dt>Internal links:</dt>
+  <dd>
+    <ul>
+    <li><code>&#95;(Foo)</code> renders as _(Foo).
+    <li><code>&#95;(Ex Em Ell|XML)</code> renders as _(Ex Em Ell|XML).
+    </ul>
+  <br>Cliki page titles aren't case-sensitive, and spaces and underscores are treated equivalently, but Cliki will remember the way the title was written when you first created the page, and format it that way forevermore. So, please make some effort to use capitals where appropriate. In keeping with the precedent set by _(Ward's Wiki), links to pages that don't exist are displayed less obtrusively than links to pages that do.
+  </dd>
+
+  <dt>External links:</dt>
+  <dd>
+    <ul>
+    <li><code>&#95;(Foo | http://www.google.com/)</code> renders as _(Foo | http://www.google.com/).
+    <li><code>&#95;(http://www.google.com/)</code> renders as _(http://www.google.com/).
+    <li><code>&#95;("Alias|Wavefront"|http://www.aliaswavefront.com/)</code> renders as _("Alias|Wavefront"|http://www.aliaswavefront.com/)
+    <li><code>&#95;(Alias\|Wavefront|http://www.aliaswavefront.com/)</code> renders as _(Alias\|Wavefront|http://www.aliaswavefront.com/).
+    <li><code>&#95;(anchor | URL)</code> provides a convenient wiki-style external link.
+    </ul>
+  </dd>
+
+  <dt>Links and anchors:
+  </dt>
+  <dd>
+    <dl>
+    <dt>tipically, you want the possibility to link directly to an item in a list of links (for an example see _(http://cliki.tunes.org/Scheme#chicken)).
+    <dt>This is the <b>wrong</b> way (just in case):
+      <dd><code>&#95;(<em>name="LLL"</em> "chicken"|http://tunes.org/subprojects.html)</code>
+    <dt>This is the <b>correct</b> way to insert a link with an anchor (named LLL):
+      <dd><code>&#95;("here the link to LLL"|http://tunes.org/subprojects.html<em>" name="LLL</em>)</code>
+        <br>which render as _("here the link to LLL"|http://tunes.org/subprojects.html" name="LLL) (this link go directly to a page on the main _(Tunes project) site).
+        <br>Now you can jump directly in the middle of this same page, at the link just stated, with:
+        <br><code>&#95;("go to the link to LLL in this page"|http://cliki.tunes.org/Text%20Formatting<em>#LLL</em>)</code>
+        <br>which render as _("go to the link to LLL in this page"|http://cliki.tunes.org/Text%20Formatting#LLL).
+    </dl>
+  </dd>
+  
+  <dt>_(CLHS) references:</dt>
+  <dd><code>&#35;H(FOO)</code>, where FOO is a standard CL symbol, will expand into a link to the appropriate Hyperspec page.  Thanks to Eric Marsden for the code that does this.  It presently goes to the Xanalys site, because the _(ALU) site was down when I tried it.
+  </dd>
+  
+  <a name="Searches"></a><dt>Searches:</dt>
+  <dd><code>&#47;("prototype-based" :attribute :topic :match :substring)</code>
+  <br>where:
+    <ul>
+    <li><code>:attribute</code> is one of <code>:title</code>, <code>:topic</code>, <code>:body</code>;
+    <li><code>:match</code> is <code>:exact</code> or <code>:substring</code>;
+    <li><code>:case-sensitive</code> is <code>nil</code> or <code>t</code>;
+    </ul>
+  renders as:
+  /("prototype-based" :attribute :topic :match :substring)
+  The search code is still in development: title searches work, topics work only for exact matches (and ignore the setting of <code>:case-sensitive</code>), body text doesn't at all.
+  
+  <br><strong>Now the search is able to display also the first sentence of the page found</strong>. So remember this when you will write the first sentence of an entry. _(CLiki Style) encourages the use of inverted pyramid style.
+  </dd>
+</dl>
+
+<h4>Topic markers</h4>
+The use of topic indicators should be minimized. For example, acronyms are generally not glossary terms unless they are in common usage in a generic sense.
+
+<code>&#42;(Foo)</code> declares this page to be relevant to topic Foo. This means that:
+<ol>
+<li>it will have Foo listed in the footer,
+<li>it will be listed on pages which include a topic search for Foo.
+</ol>
+Usually there will be a page called Foo<strong>s</strong> (note the plural) that contains such a search.
+
+Some general advice (you can find the complete list of topic at the _(topic) entry):
+<ul>
+  <li>Pages for _(person)s should have the <code>&#42;(person)</code> topic in them.
+  <li>If the person is a contributor of the _(TUNES project) you should also put the <code>&#42;(contributor)</code> topic.
+  <li>An entry in the _(Operating systems review|Operating Systems) section must have the topic <code>&#42;(OS)</code> in it.
+  <li>An entry in the _(Programming languages review|Programming Languages) section must have the topic <code>&#42;(Programming Language)</code> in it.
+  <li>An entry in the _(Glossary) section should have the topic <code>&#42;(term)</code> in it.
+  <li>An acronym should have the topic <code>&#42;(acronym)</code> in it.
+</ul>
+Look at the other sections, and cross-reference when it's useful and possible.
+
+<h4>Style-sheet support</h4>
+<ul>
+  <li>Put <strong>code examples</strong> in <code>code</code> tags.
+    <br><em>Example:</em> <code>&lt;code&gt;x = f(x)&lt;/code&gt;</code> render as <code>x = f(x)</code>.
+  <li>Put <strong>remarks</strong>, that you want your to stand separately from the main document and be noticed as such, tipically in a <code>span</code> tag, with a <code>class="comment"</code> attribute.
+    <br><em>Example:</em>
+    <code>&lt;span class="comment"&gt;This is a not so long comment&lt;/span&gt;</code>
+    render as <span class="comment">This is a not so long comment</span>.
+  <li>Put a <strong>list of links to external sites</strong> at the bottom of your new entry using <code>ul</code> (Unordered List) or <code>ol</code> (Ordered List) tags.
+  <ul>
+    <li>When the links are about <strong>implementations</strong> put a <code>class="implementations"</code> attribute.
+      <br><em>Example with an Ordered List:</em>
+<pre><code>&lt;ol class="implementations"&gt;
+  &lt;li&gt;&#95;("1st implementation"|http://cliki.tunes.org/Text%20Formatting)
+  &lt;li&gt;&#95;("2nd implementation"|http://cliki.tunes.org/Text%20Formatting)
+&lt;/ol&gt;</code></pre>
+      <em>Render as:</em>
+      <ol class="implementations">
+        <li>_("1st implementation"|http://cliki.tunes.org/Text%20Formatting)
+        <li>_("2nd implementation"|http://cliki.tunes.org/Text%20Formatting)
+      </ol>
+    <li>When the links are <strong>informative</strong> put a <code>class="links"</code> attribute.
+      <br><em>Example with an Unordered List:</em>
+<pre><code>&lt;ul class="links"&gt;
+  &lt;li&gt;&#95;("A link"|http://cliki.tunes.org/Text%20Formatting)
+  &lt;li&gt;&#95;("Another link"|http://cliki.tunes.org/Text%20Formatting)
+&lt;/ul&gt;</code></pre>
+      <em>Render as:</em>
+      <ul class="links">
+        <li>_("A link"|http://cliki.tunes.org/Text%20Formatting)
+        <li>_("Another link"|http://cliki.tunes.org/Text%20Formatting)
+      </ul>
+  </ul>
+</ul>
+
+<a name="SGML bug"></a><h4>SGML entities bug</h4>
+Don't expect to be able to type SGML entities (e.g. ampersand-l-t-semicolon), and have them work, as they tend to be translated into the actual characters they represent (e.g. less-than sign).  This is listed on the _(CLiki bugs|http://www.cliki.net/CLiki%20Bugs) page, but is unlikely to get fixed any time soon.
+
+<strong>In any case you can mantain and edit a local version of a node and then copy the result, so this is a minor annoyance (but use <em>View source</em> at the bottom of each node to access the un-translated source).</strong>
+
+See also _(HTML special characters and symbols).
+<!--
+     FILE ARCHIVED ON 20:21:44 Feb 16, 2005 AND RETRIEVED FROM THE
+     INTERNET ARCHIVE ON 06:09:32 Dec 18, 2022.
+     JAVASCRIPT APPENDED BY WAYBACK MACHINE, COPYRIGHT INTERNET ARCHIVE.
+
+     ALL OTHER CONTENT MAY ALSO BE PROTECTED BY COPYRIGHT (17 U.S.C.
+     SECTION 108(a)(3)).
+-->
+<!--
+playback timings (ms):
+  captures_list: 207.275
+  exclusion.robots: 0.121
+  exclusion.robots.policy: 0.108
+  cdx.remote: 0.091
+  esindex: 0.011
+  LoadShardBlock: 83.726 (3)
+  PetaboxLoader3.datanode: 105.533 (4)
+  CDXLines.iter: 16.103 (3)
+  load_resource: 792.409
+  PetaboxLoader3.resolve: 49.589
+-->

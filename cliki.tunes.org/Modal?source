@@ -1,0 +1,16 @@
+Modal is a *(user interface) *(term), but it is applied from the field of logic, where a mode means a situation where only a finite set of possibilities for transitioning into the future are possible. That is, only certain paths are accessible. Modality in the logical sense has to do with the various phases of possibility, therefore. A modality and a mode are <em>not</em> the same concept.
+
+We can say a _(user interface) is modeless if it always responds to the _(user)'s input the same way. Thus, if it does not respond _(uniform)ly to a user's input the same way, it is modal. Keep in mind that this is a relative term, in that the behavior of a system in the user interface sense is subjective. That is, the user as subject has a model of the system which determines how she acts. So uniformity is relative; it represents conformance with the user's expectations based on how they perceive the system to be composed.
+
+We can say that a modal interface is not _(orthogonal) to the task at hand, because it requires the user to reason about the state of the interface in order to accomplish the task at hand. While a modeless interface allows a user to take advantage of habituation to remove this unorthogonality, the modal interface not only requires conscious thought but can often cause mistakes due to the unstoppable tendency to habituate.
+
+Unfortunately, to some degree, modes are unavoidable in an interface. In some cases, this isn't bad, like in the case of a text cursor. Depending on where the text cursor is, text is inserted or deleted at different places. However, I do not personally experience mode errors with a text cursor, and I've never seen anyone else experience one. Apparently our minds are able to habitually track a text cursor, which turns the mode into not a mode for all intents and purposes.
+
+In the cases where our minds are unable to "habituate over" a mode, and where the mode is unavoidable, a few steps can be taken to minimize the impact of the mode.
+<ol>
+<li>Force the user to kinesthetically maintain the mode. This has two advantages: constant sensory feedback and abortability. By abortability I mean the user can back out of the mode easily at any time. Think of how many mode errors you've made with caps lock. Now think of how many you've made with shift.  It CAN still happen, but it's not nearly as likely.</li>
+<li>Give good sensory feedback, preferrably in the form of (radical) visual change, a sound (one for when the mode activates, another for when it deactivates, and/or, in the case of a really dangerous mode, a constant humming or buzzing), or kinesthetically maintainance. Imagine if your current windowing system/interface did not visually describe focus, or if you could not see the text cursor.</li>
+<li>Provide documentation/help to alert the user as to what the mode is, what it does, and most importantly, how to get out of it. Imagine performing some action and suddenly, for no apparent reason, the screen turns red and the speakers beep and start buzzing.</li>
+</ol>
+<hr>
+This page needs some examples. -Tril

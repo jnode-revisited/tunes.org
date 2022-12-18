@@ -1,0 +1,49 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html><head><script src="//archive.org/includes/analytics.js?v=cf34f82" type="text/javascript"></script>
+<script type="text/javascript">window.addEventListener('DOMContentLoaded',function(){var v=archive_analytics.values;v.service='wb';v.server_name='wwwb-app204.us.archive.org';v.server_ms=1584;archive_analytics.send_pageview({});});</script>
+<script type="text/javascript" src="/_static/js/bundle-playback.js?v=MzYkZ0TU" charset="utf-8"></script>
+<script type="text/javascript" src="/_static/js/wombat.js?v=UHAOicsW" charset="utf-8"></script>
+<script type="text/javascript">
+  __wm.init("https://web.archive.org/web");
+  __wm.wombat("http://cliki.tunes.org:80/Plan9","20050409012111","https://web.archive.org/","web","/_static/",
+	      "1113009671");
+</script>
+<link rel="stylesheet" type="text/css" href="/_static/css/banner-styles.css?v=S1zqJCYt" />
+<link rel="stylesheet" type="text/css" href="/_static/css/iconochive.css?v=qtvMKcIJ" />
+<!-- End Wayback Rewrite JS Include -->
+<title>CTO : Plan9</title><link rel="alternate" type="application/rss+xml" title="Recent Changes" href="https://web.archive.org/web/20050409012111/http://cliki.tunes.org/recent-changes.rdf"><link rel="stylesheet" href="https://web.archive.org/web/20050409012111cs_/http://cliki.tunes.org/admin/cliki.css"></head><body><div id="banner"><a title="CTO" class="logo" href="https://web.archive.org/web/20050409012111/http://cliki.tunes.org/">CTO</a> <span>CLiki for the TUNES project</span></div><div id="navbar"><a class="internal" href="https://web.archive.org/web/20050409012111/http://cliki.tunes.org/index">Home</a> <a class="internal" href="https://web.archive.org/web/20050409012111/http://cliki.tunes.org/Recent%20Changes">Recent Changes</a> <a class="internal" href="https://web.archive.org/web/20050409012111/http://cliki.tunes.org/CLiki">About CLiki</a> <a class="internal" href="https://web.archive.org/web/20050409012111/http://cliki.tunes.org/Text%20Formatting">Text Formatting</a> <a class="internal" onclick="if(name=window.prompt('New page name ([A-Za-z0-9 ])')) document.location='https://web.archive.org/web/20050409012111/http://cliki.tunes.org/edit/'+name ;return false;" href="/web/20050409012111/http://cliki.tunes.org/">Create New Page</a></div><div id="main"><h1>Plan9</h1>Plan9 <a class="internal" href="https://web.archive.org/web/20050409012111/http://cliki.tunes.org/OS">OS</a>, or what <a class="internal" href="https://web.archive.org/web/20050409012111/http://cliki.tunes.org/Unix">Unix</a> should have been (originally by <a class="internal" href="https://web.archive.org/web/20050409012111/http://cliki.tunes.org/Bell%20Labs">Bell Labs</a> from where <a class="internal" href="https://web.archive.org/web/20050409012111/http://cliki.tunes.org/Unix">Unix</a> came). It's open source.
+
+<p>It got everything right as for proposing a <a class="internal" href="https://web.archive.org/web/20050409012111/http://cliki.tunes.org/uniform">uniform</a> system interface (the <a class="internal" href="https://web.archive.org/web/20050409012111/http://cliki.tunes.org/dynamic">dynamic</a>, per-<a class="internal" href="https://web.archive.org/web/20050409012111/http://cliki.tunes.org/process">process</a> name-&gt;channel "<a class="internal" href="https://web.archive.org/web/20050409012111/http://cliki.tunes.org/file%20system">file system</a>" thing) but is still wrong by using a <a class="internal" href="https://web.archive.org/web/20050409012111/http://cliki.tunes.org/low-level">low-level</a> <a class="internal" href="https://web.archive.org/web/20050409012111/http://cliki.tunes.org/programming%20language">programming language</a> with coarse-<a class="internal" href="https://web.archive.org/web/20050409012111/http://cliki.tunes.org/grain">grain</a>ed system <a class="internal" href="https://web.archive.org/web/20050409012111/http://cliki.tunes.org/abstraction">abstraction</a>s.
+
+<p>See its successor, <a class="internal" href="https://web.archive.org/web/20050409012111/http://cliki.tunes.org/Inferno">Inferno</a>.
+
+<p><ul class="links">
+<li>The <a href="https://web.archive.org/web/20050409012111/http://plan9.bell-labs.com/plan9dist/">home page</a>.
+<li><a href="https://web.archive.org/web/20050409012111/http://ask.km.ru/3p/plan9faq.html">The FAQ</a>.
+<li><a href="https://web.archive.org/web/20050409012111/http://plan9.bell-labs.com/sys/doc/acme/acme.html">Acme: A User Interface for Programmers</a>, its <a class="internal" href="https://web.archive.org/web/20050409012111/http://cliki.tunes.org/TUI">TUI</a>.</li>
+<li><a href="https://web.archive.org/web/20050409012111/http://plan9.bell-labs.com/sys/doc/plumb.html">Plumbing and Other Utilities</a>,
+     "<cite>Inter-process communication (<a class="internal" href="https://web.archive.org/web/20050409012111/http://cliki.tunes.org/IPC">IPC</a>) that enlivens the interactive <a class="internal" href="https://web.archive.org/web/20050409012111/http://cliki.tunes.org/user%20interface">user interface</a></cite>".</li>
+<li> A <a href="https://web.archive.org/web/20050409012111/http://www.well.com/~aleks/CompOsPlan9/index.html">comp.os.plan9 collection</a>.
+</ul>
+<hr><p><b>This page is linked from: </b> <a class="internal" href="https://web.archive.org/web/20050409012111/http://cliki.tunes.org/Inferno">Inferno</a> &nbsp; <a class="internal" href="https://web.archive.org/web/20050409012111/http://cliki.tunes.org/Plan%20B">Plan B</a> &nbsp; <a class="internal" href="https://web.archive.org/web/20050409012111/http://cliki.tunes.org/Trotskyite%20Tunes">Trotskyite Tunes</a> &nbsp; <a class="internal" href="https://web.archive.org/web/20050409012111/http://cliki.tunes.org/VSTa">VSTa</a> &nbsp; <a class="internal" href="https://web.archive.org/web/20050409012111/http://cliki.tunes.org/Wily">Wily</a> &nbsp; </div><div id="footer"><form action="https://web.archive.org/web/20050409012111/http://cliki.tunes.org/admin/search"><a class="internal" href="https://web.archive.org/web/20050409012111/http://cliki.tunes.org/edit/Plan9">Edit page</a> | <a class="internal" href="https://web.archive.org/web/20050409012111/http://cliki.tunes.org/Plan9?source">View source</a> | Revisions: <b title="Sun, 25 Jan 2004 13:49:12 GMT">0</b>  | <input name="words" size="30"><input type="submit" value="search"></form><div id="disclaimer">CTO pages can be modified by anyone at anytime.
+Imagine an appropriate disclaimer. Double it. Add two.</div></body></html></div><!--
+     FILE ARCHIVED ON 01:21:11 Apr 09, 2005 AND RETRIEVED FROM THE
+     INTERNET ARCHIVE ON 05:46:31 Dec 18, 2022.
+     JAVASCRIPT APPENDED BY WAYBACK MACHINE, COPYRIGHT INTERNET ARCHIVE.
+
+     ALL OTHER CONTENT MAY ALSO BE PROTECTED BY COPYRIGHT (17 U.S.C.
+     SECTION 108(a)(3)).
+-->
+<!--
+playback timings (ms):
+  captures_list: 1400.85
+  exclusion.robots: 0.095
+  exclusion.robots.policy: 0.086
+  cdx.remote: 0.076
+  esindex: 0.01
+  LoadShardBlock: 73.857 (3)
+  PetaboxLoader3.datanode: 145.387 (4)
+  CDXLines.iter: 14.65 (3)
+  load_resource: 180.063
+  PetaboxLoader3.resolve: 82.938
+-->

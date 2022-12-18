@@ -1,0 +1,55 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html><head><script src="//archive.org/includes/analytics.js?v=cf34f82" type="text/javascript"></script>
+<script type="text/javascript">window.addEventListener('DOMContentLoaded',function(){var v=archive_analytics.values;v.service='wb';v.server_name='wwwb-app214.us.archive.org';v.server_ms=211;archive_analytics.send_pageview({});});</script>
+<script type="text/javascript" src="/_static/js/bundle-playback.js?v=MzYkZ0TU" charset="utf-8"></script>
+<script type="text/javascript" src="/_static/js/wombat.js?v=UHAOicsW" charset="utf-8"></script>
+<script type="text/javascript">
+  __wm.init("https://web.archive.org/web");
+  __wm.wombat("http://cliki.tunes.org:80/Dispatch","20050414221942","https://web.archive.org/","web","/_static/",
+	      "1113517182");
+</script>
+<link rel="stylesheet" type="text/css" href="/_static/css/banner-styles.css?v=S1zqJCYt" />
+<link rel="stylesheet" type="text/css" href="/_static/css/iconochive.css?v=qtvMKcIJ" />
+<!-- End Wayback Rewrite JS Include -->
+<title>CTO : Dispatch</title><link rel="alternate" type="application/rss+xml" title="Recent Changes" href="https://web.archive.org/web/20050414221942/http://cliki.tunes.org/recent-changes.rdf"><link rel="stylesheet" href="https://web.archive.org/web/20050414221942cs_/http://cliki.tunes.org/admin/cliki.css"></head><body><div id="banner"><a title="CTO" class="logo" href="https://web.archive.org/web/20050414221942/http://cliki.tunes.org/">CTO</a> <span>CLiki for the TUNES project</span></div><div id="navbar"><a class="internal" href="https://web.archive.org/web/20050414221942/http://cliki.tunes.org/index">Home</a> <a class="internal" href="https://web.archive.org/web/20050414221942/http://cliki.tunes.org/Recent%20Changes">Recent Changes</a> <a class="internal" href="https://web.archive.org/web/20050414221942/http://cliki.tunes.org/CLiki">About CLiki</a> <a class="internal" href="https://web.archive.org/web/20050414221942/http://cliki.tunes.org/Text%20Formatting">Text Formatting</a> <a class="internal" onclick="if(name=window.prompt('New page name ([A-Za-z0-9 ])')) document.location='https://web.archive.org/web/20050414221942/http://cliki.tunes.org/edit/'+name ;return false;" href="/web/20050414221942/http://cliki.tunes.org/">Create New Page</a></div><div id="main"><h1>Dispatch</h1>The <a class="internal" href="https://web.archive.org/web/20050414221942/http://cliki.tunes.org/term">term</a> and <a class="internal" href="https://web.archive.org/web/20050414221942/http://cliki.tunes.org/topic">topic</a> of a <a class="internal" href="https://web.archive.org/web/20050414221942/http://cliki.tunes.org/programming%20language">programming language</a>'s method of choosing a definition to use to evaluate some expression. This notion generalizes over several more commonly-known methods that are often not distinguished from evaluation itself. In this sense, dispatch is complementary to <a class="internal" href="https://web.archive.org/web/20050414221942/http://cliki.tunes.org/rewrite">rewrite</a>.
+
+<p>A function definition is a fairly common part of many programming languages. However, the rules for how definitions are composed into a whole vary widely. The following spectrum is arrayed in increasing range of expressiveness:
+<ol>
+<li>Lexically-scoped procedural languages in general will require exactly one definition per name of a function, possibly allowing for lexically-scoped overriding of the definition.
+<li><a class="internal" href="https://web.archive.org/web/20050414221942/http://cliki.tunes.org/Object-oriented">Object-oriented</a> programming languages have a variety of arranged schemes for polymorphic dispatch, depending on the object model:
+<ul>
+<li>Single-dispatch versus multiple-dispatch: whether the first argument or all the arguments are consulted for dispatch.
+<li>Single inheritance versus multiple inheritance or mixin-based overrides.
+<li>Dispatch on classes versus instances.
+<li>Predicate dispatch (only really deployed in <a class="internal" href="https://web.archive.org/web/20050414221942/http://cliki.tunes.org/Cecil">Cecil</a>).
+<li>Various forms of combination options for functions, whether termed <em>inner</em> calls, <em>super</em> calls, <em>resends</em>, <em>before/after</em>-calls, or <em>around</em> calls.
+</ul>
+<li><a class="internal" href="https://web.archive.org/web/20050414221942/http://cliki.tunes.org/Functional">Functional</a> programming languages use <a class="internal" href="https://web.archive.org/web/20050414221942/http://cliki.tunes.org/pattern-matching">pattern-matching</a> to identify the applicable evaluation result. The advantage is that the expression value defined recursively is fully-available for inspection. Such languages can usually dispatch on types, structure, and value of their arguments.
+<li>Logical programming languages generally specify a set of rules in an arbitrary sense which apply, and often define a strategy for traversing these rules which hopefully results in a terminating or at least manageable program. This process is often known as <a class="internal" href="https://web.archive.org/web/20050414221942/http://cliki.tunes.org/unification">unification</a> as distinguished from pattern-matchers.
+</ol>
+
+<p>Each of these can generally express the previous one without emulation, but also requires a more sophisticated algorithm to manage efficiently.
+
+<p>Of final note is that the specification of the traversal order of the functions is also included within this concept, through a meta-level protocol concerning the function definitions or the context within which the function definitions are entered.
+<hr><p><b>This page is linked from: </b> <a class="internal" href="https://web.archive.org/web/20050414221942/http://cliki.tunes.org/C%2B%2B">C++</a> &nbsp; <a class="internal" href="https://web.archive.org/web/20050414221942/http://cliki.tunes.org/MultiJava">MultiJava</a> &nbsp; <a class="internal" href="https://web.archive.org/web/20050414221942/http://cliki.tunes.org/Needle">Needle</a> &nbsp; </div><div id="footer"><form action="https://web.archive.org/web/20050414221942/http://cliki.tunes.org/admin/search"><a class="internal" href="https://web.archive.org/web/20050414221942/http://cliki.tunes.org/edit/Dispatch">Edit page</a> | <a class="internal" href="https://web.archive.org/web/20050414221942/http://cliki.tunes.org/Dispatch?source">View source</a> | Revisions: <b title="Tue, 14 Jan 2003 10:31:17 GMT">0</b>  | <input name="words" size="30"><input type="submit" value="search"></form><div id="disclaimer">CTO pages can be modified by anyone at anytime.
+Imagine an appropriate disclaimer. Double it. Add two.</div></body></html></div><!--
+     FILE ARCHIVED ON 22:19:42 Apr 14, 2005 AND RETRIEVED FROM THE
+     INTERNET ARCHIVE ON 06:12:02 Dec 18, 2022.
+     JAVASCRIPT APPENDED BY WAYBACK MACHINE, COPYRIGHT INTERNET ARCHIVE.
+
+     ALL OTHER CONTENT MAY ALSO BE PROTECTED BY COPYRIGHT (17 U.S.C.
+     SECTION 108(a)(3)).
+-->
+<!--
+playback timings (ms):
+  captures_list: 75.177
+  exclusion.robots: 0.087
+  exclusion.robots.policy: 0.08
+  cdx.remote: 0.073
+  esindex: 0.01
+  LoadShardBlock: 38.638 (3)
+  PetaboxLoader3.datanode: 46.818 (4)
+  CDXLines.iter: 16.563 (3)
+  load_resource: 132.275
+  PetaboxLoader3.resolve: 104.749
+-->

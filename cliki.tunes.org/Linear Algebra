@@ -1,0 +1,44 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html><head><script src="//archive.org/includes/analytics.js?v=cf34f82" type="text/javascript"></script>
+<script type="text/javascript">window.addEventListener('DOMContentLoaded',function(){var v=archive_analytics.values;v.service='wb';v.server_name='wwwb-app226.us.archive.org';v.server_ms=198;archive_analytics.send_pageview({});});</script>
+<script type="text/javascript" src="/_static/js/bundle-playback.js?v=MzYkZ0TU" charset="utf-8"></script>
+<script type="text/javascript" src="/_static/js/wombat.js?v=UHAOicsW" charset="utf-8"></script>
+<script type="text/javascript">
+  __wm.init("https://web.archive.org/web");
+  __wm.wombat("http://cliki.tunes.org:80/Linear%20Algebra","20050414222610","https://web.archive.org/","web","/_static/",
+	      "1113517570");
+</script>
+<link rel="stylesheet" type="text/css" href="/_static/css/banner-styles.css?v=S1zqJCYt" />
+<link rel="stylesheet" type="text/css" href="/_static/css/iconochive.css?v=qtvMKcIJ" />
+<!-- End Wayback Rewrite JS Include -->
+<title>CTO : Linear Algebra</title><link rel="alternate" type="application/rss+xml" title="Recent Changes" href="https://web.archive.org/web/20050414222610/http://cliki.tunes.org/recent-changes.rdf"><link rel="stylesheet" href="https://web.archive.org/web/20050414222610cs_/http://cliki.tunes.org/admin/cliki.css"></head><body><div id="banner"><a title="CTO" class="logo" href="https://web.archive.org/web/20050414222610/http://cliki.tunes.org/">CTO</a> <span>CLiki for the TUNES project</span></div><div id="navbar"><a class="internal" href="https://web.archive.org/web/20050414222610/http://cliki.tunes.org/index">Home</a> <a class="internal" href="https://web.archive.org/web/20050414222610/http://cliki.tunes.org/Recent%20Changes">Recent Changes</a> <a class="internal" href="https://web.archive.org/web/20050414222610/http://cliki.tunes.org/CLiki">About CLiki</a> <a class="internal" href="https://web.archive.org/web/20050414222610/http://cliki.tunes.org/Text%20Formatting">Text Formatting</a> <a class="internal" onclick="if(name=window.prompt('New page name ([A-Za-z0-9 ])')) document.location='https://web.archive.org/web/20050414222610/http://cliki.tunes.org/edit/'+name ;return false;" href="/web/20050414222610/http://cliki.tunes.org/">Create New Page</a></div><div id="main"><h1>Linear Algebra</h1>In any generalized algebra, that is, a structure with a commutative associative sum operation with neutral element over which other "product" operations distribute, a functional term is said to be linear in some variable if and only if this term can be expressed as a sum of "monomials" in each of which the variable appears (exactly) once. The sum may contain zero, one, or finitely many (maybe even infinitely many?) monomials. That's what this <a class="internal" href="https://web.archive.org/web/20050414222610/http://cliki.tunes.org/term">term</a> refers to.
+
+<p>For instance, assuming <var>+</var> is the sum operator, and <var>*</var> is a product operator, the terms <code>x*y + 2*x*y*y</code> and <code>x + 3*x*y</code> are linear in <var>x</var>, but not in <var>y</var>: in both terms, each monomial the former term, the second monomial contains two <var>y</var>, while in the latter term the first monomial contains no y.
+
+<p>Linear algebra studies such linear terms and linear transformations (the transformations that preserve the property of linearity), as well as their properties. A slight variant of linear algebra, affine algebra, allows to sum "constant" monomials where the variable doesn't appear, together with linear terms where it appears exactly once.
+
+<p>Linear algebra over commutative fields and rings is an extremely rich branch of mathematics; it constitutes the basis of modern geometry, and has applications in all sciences, from physics to economics to biology. When people talk about "linear algebra", they usually refer to linear algebra over a commutative field, most likely the field of real or complex numbers.
+
+<p>Linear algebra over arbitrary computational term grammars, is also an extremely broad branch of computer science (<em>since when? give references!</em>), with a growing number of applications. In computer science, the word "linear" usually refers to properties of terms where a considered subterm appears only once. Computer scientists name "linear logic" this branch of their science that studies such generalized linear algebras (<em>Note:</em> this is a broad generalization that should not be taken too literally, especially technically. Linear logic is actually a very narrowly-defined subject that just happens to use a same concept).
+<hr><p><b>This page is linked from: </b> <a class="internal" href="https://web.archive.org/web/20050414222610/http://cliki.tunes.org/Linear%20Logic">Linear Logic</a> &nbsp; </div><div id="footer"><form action="https://web.archive.org/web/20050414222610/http://cliki.tunes.org/admin/search"><a class="internal" href="https://web.archive.org/web/20050414222610/http://cliki.tunes.org/edit/Linear%20Algebra">Edit page</a> | <a class="internal" href="https://web.archive.org/web/20050414222610/http://cliki.tunes.org/Linear%20Algebra?source">View source</a> | Revisions: <b title="Mon, 30 Dec 2002 23:16:28 GMT">0</b>  | <input name="words" size="30"><input type="submit" value="search"></form><div id="disclaimer">CTO pages can be modified by anyone at anytime.
+Imagine an appropriate disclaimer. Double it. Add two.</div></body></html></div><!--
+     FILE ARCHIVED ON 22:26:10 Apr 14, 2005 AND RETRIEVED FROM THE
+     INTERNET ARCHIVE ON 06:14:02 Dec 18, 2022.
+     JAVASCRIPT APPENDED BY WAYBACK MACHINE, COPYRIGHT INTERNET ARCHIVE.
+
+     ALL OTHER CONTENT MAY ALSO BE PROTECTED BY COPYRIGHT (17 U.S.C.
+     SECTION 108(a)(3)).
+-->
+<!--
+playback timings (ms):
+  captures_list: 109.162
+  exclusion.robots: 0.096
+  exclusion.robots.policy: 0.086
+  RedisCDXSource: 2.083
+  esindex: 0.009
+  LoadShardBlock: 88.574 (3)
+  PetaboxLoader3.datanode: 80.052 (4)
+  CDXLines.iter: 15.754 (3)
+  load_resource: 84.71
+  PetaboxLoader3.resolve: 44.204
+-->

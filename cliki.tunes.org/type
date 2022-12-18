@@ -1,0 +1,39 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html><head><script src="//archive.org/includes/analytics.js?v=cf34f82" type="text/javascript"></script>
+<script type="text/javascript">window.addEventListener('DOMContentLoaded',function(){var v=archive_analytics.values;v.service='wb';v.server_name='wwwb-app203.us.archive.org';v.server_ms=222;archive_analytics.send_pageview({});});</script>
+<script type="text/javascript" src="/_static/js/bundle-playback.js?v=MzYkZ0TU" charset="utf-8"></script>
+<script type="text/javascript" src="/_static/js/wombat.js?v=UHAOicsW" charset="utf-8"></script>
+<script type="text/javascript">
+  __wm.init("https://web.archive.org/web");
+  __wm.wombat("http://cliki.tunes.org:80/Type","20050416152523","https://web.archive.org/","web","/_static/",
+	      "1113665123");
+</script>
+<link rel="stylesheet" type="text/css" href="/_static/css/banner-styles.css?v=S1zqJCYt" />
+<link rel="stylesheet" type="text/css" href="/_static/css/iconochive.css?v=qtvMKcIJ" />
+<!-- End Wayback Rewrite JS Include -->
+<title>CTO : Type</title><link rel="alternate" type="application/rss+xml" title="Recent Changes" href="https://web.archive.org/web/20050416152523/http://cliki.tunes.org/recent-changes.rdf"><link rel="stylesheet" href="https://web.archive.org/web/20050416152523cs_/http://cliki.tunes.org/admin/cliki.css"></head><body><div id="banner"><a title="CTO" class="logo" href="https://web.archive.org/web/20050416152523/http://cliki.tunes.org/">CTO</a> <span>CLiki for the TUNES project</span></div><div id="navbar"><a class="internal" href="https://web.archive.org/web/20050416152523/http://cliki.tunes.org/index">Home</a> <a class="internal" href="https://web.archive.org/web/20050416152523/http://cliki.tunes.org/Recent%20Changes">Recent Changes</a> <a class="internal" href="https://web.archive.org/web/20050416152523/http://cliki.tunes.org/CLiki">About CLiki</a> <a class="internal" href="https://web.archive.org/web/20050416152523/http://cliki.tunes.org/Text%20Formatting">Text Formatting</a> <a class="internal" onclick="if(name=window.prompt('New page name ([A-Za-z0-9 ])')) document.location='https://web.archive.org/web/20050416152523/http://cliki.tunes.org/edit/'+name ;return false;" href="/web/20050416152523/http://cliki.tunes.org/">Create New Page</a></div><div id="main"><h1>Type</h1>Typing in general means that the choice of possible data structures manipulated by a program can be conceptually divided into groups of <a class="internal" href="https://web.archive.org/web/20050416152523/http://cliki.tunes.org/object">object</a>s with some homogeneity (e.g. integers, floating-point numbers, lists, arrays, hash-tables, etc.); the <a class="internal" href="https://web.archive.org/web/20050416152523/http://cliki.tunes.org/term">term</a> for these groups is called a <em>type</em>.
+
+<p>A <em>variable's type</em> is the upper bound of the range of values that a variable can assume during the execution of a program.
+
+<p>Depending on the type of an <a class="internal" href="https://web.archive.org/web/20050416152523/http://cliki.tunes.org/object">object</a>, different interfaces will be available to interact with it (numbers are subject to arithmetic operations; lists can be deconstructed into head and tail; functions can be applied; etc.), and different algorithms will be used to implement common interfaces (adding two integers is not same as adding two floating-point numbers).
+<hr><p><b>This page is linked from: </b> <a class="internal" href="https://web.archive.org/web/20050416152523/http://cliki.tunes.org/Axiom">Axiom</a> &nbsp; <a class="internal" href="https://web.archive.org/web/20050416152523/http://cliki.tunes.org/Benjamin%20C.%20Pierce">Benjamin C. Pierce</a> &nbsp; <a class="internal" href="https://web.archive.org/web/20050416152523/http://cliki.tunes.org/Clean">Clean</a> &nbsp; <a class="internal" href="https://web.archive.org/web/20050416152523/http://cliki.tunes.org/Component%20Object%20Model">Component Object Model</a> &nbsp; <a class="internal" href="https://web.archive.org/web/20050416152523/http://cliki.tunes.org/Coq">Coq</a> &nbsp; <a class="internal" href="https://web.archive.org/web/20050416152523/http://cliki.tunes.org/Dependent%20Types">Dependent Types</a> &nbsp; <a class="internal" href="https://web.archive.org/web/20050416152523/http://cliki.tunes.org/Foreign%20Function%20Interface">Foreign Function Interface</a> &nbsp; <a class="internal" href="https://web.archive.org/web/20050416152523/http://cliki.tunes.org/Lava">Lava</a> &nbsp; <a class="internal" href="https://web.archive.org/web/20050416152523/http://cliki.tunes.org/Lego">Lego</a> &nbsp; <a class="internal" href="https://web.archive.org/web/20050416152523/http://cliki.tunes.org/Logic">Logic</a> &nbsp; <a class="internal" href="https://web.archive.org/web/20050416152523/http://cliki.tunes.org/Self">Self</a> &nbsp; <a class="internal" href="https://web.archive.org/web/20050416152523/http://cliki.tunes.org/TAL">TAL</a> &nbsp; <a class="internal" href="https://web.archive.org/web/20050416152523/http://cliki.tunes.org/Type%20System">Type System</a> &nbsp; </div><div id="footer"><form action="https://web.archive.org/web/20050416152523/http://cliki.tunes.org/admin/search"><a class="internal" href="https://web.archive.org/web/20050416152523/http://cliki.tunes.org/edit/Type">Edit page</a> | <a class="internal" href="https://web.archive.org/web/20050416152523/http://cliki.tunes.org/Type?source">View source</a> | Revisions: <b title="Mon, 31 May 2004 17:41:21 GMT">1</b>  | <input name="words" size="30"><input type="submit" value="search"></form><div id="disclaimer">CTO pages can be modified by anyone at anytime.
+Imagine an appropriate disclaimer. Double it. Add two.</div></body></html></div><!--
+     FILE ARCHIVED ON 15:25:23 Apr 16, 2005 AND RETRIEVED FROM THE
+     INTERNET ARCHIVE ON 06:11:58 Dec 18, 2022.
+     JAVASCRIPT APPENDED BY WAYBACK MACHINE, COPYRIGHT INTERNET ARCHIVE.
+
+     ALL OTHER CONTENT MAY ALSO BE PROTECTED BY COPYRIGHT (17 U.S.C.
+     SECTION 108(a)(3)).
+-->
+<!--
+playback timings (ms):
+  captures_list: 196.689
+  exclusion.robots: 0.068
+  exclusion.robots.policy: 0.062
+  cdx.remote: 0.051
+  esindex: 0.007
+  LoadShardBlock: 172.919 (3)
+  PetaboxLoader3.datanode: 150.735 (4)
+  CDXLines.iter: 12.028 (3)
+  load_resource: 22.125
+-->

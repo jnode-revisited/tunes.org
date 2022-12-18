@@ -1,0 +1,48 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html><head><script src="//archive.org/includes/analytics.js?v=cf34f82" type="text/javascript"></script>
+<script type="text/javascript">window.addEventListener('DOMContentLoaded',function(){var v=archive_analytics.values;v.service='wb';v.server_name='wwwb-app219.us.archive.org';v.server_ms=461;archive_analytics.send_pageview({});});</script>
+<script type="text/javascript" src="/_static/js/bundle-playback.js?v=MzYkZ0TU" charset="utf-8"></script>
+<script type="text/javascript" src="/_static/js/wombat.js?v=UHAOicsW" charset="utf-8"></script>
+<script type="text/javascript">
+  __wm.init("https://web.archive.org/web");
+  __wm.wombat("http://cliki.tunes.org:80/highly%20concurrent","20050416153520","https://web.archive.org/","web","/_static/",
+	      "1113665720");
+</script>
+<link rel="stylesheet" type="text/css" href="/_static/css/banner-styles.css?v=S1zqJCYt" />
+<link rel="stylesheet" type="text/css" href="/_static/css/iconochive.css?v=qtvMKcIJ" />
+<!-- End Wayback Rewrite JS Include -->
+<title>CTO : highly concurrent</title><link rel="alternate" type="application/rss+xml" title="Recent Changes" href="https://web.archive.org/web/20050416153520/http://cliki.tunes.org/recent-changes.rdf"><link rel="stylesheet" href="https://web.archive.org/web/20050416153520cs_/http://cliki.tunes.org/admin/cliki.css"></head><body><div id="banner"><a title="CTO" class="logo" href="https://web.archive.org/web/20050416153520/http://cliki.tunes.org/">CTO</a> <span>CLiki for the TUNES project</span></div><div id="navbar"><a class="internal" href="https://web.archive.org/web/20050416153520/http://cliki.tunes.org/index">Home</a> <a class="internal" href="https://web.archive.org/web/20050416153520/http://cliki.tunes.org/Recent%20Changes">Recent Changes</a> <a class="internal" href="https://web.archive.org/web/20050416153520/http://cliki.tunes.org/CLiki">About CLiki</a> <a class="internal" href="https://web.archive.org/web/20050416153520/http://cliki.tunes.org/Text%20Formatting">Text Formatting</a> <a class="internal" onclick="if(name=window.prompt('New page name ([A-Za-z0-9 ])')) document.location='https://web.archive.org/web/20050416153520/http://cliki.tunes.org/edit/'+name ;return false;" href="/web/20050416153520/http://cliki.tunes.org/">Create New Page</a></div><div id="main"><h1>highly concurrent</h1>A <a class="internal" href="https://web.archive.org/web/20050416153520/http://cliki.tunes.org/term">term</a> for a program or system whose software is designed to execute as a relatively large number of <a class="internal" href="https://web.archive.org/web/20050416153520/http://cliki.tunes.org/thread">thread</a>s, so as to interact more efficiently with the outside environment (the user, I/O devices, other software or system components).
+
+<p><hr/>
+<strong>Nota bene</strong>: the <a class="internal" href="https://web.archive.org/web/20050416153520/http://cliki.tunes.org/term">term</a> <a class="internal" href="https://web.archive.org/web/20050416153520/http://cliki.tunes.org/Actor">Actor</a> <a class="internal" href="https://web.archive.org/web/20050416153520/http://cliki.tunes.org/paradigm">paradigm</a> is well established for this model of programming, so we discourage the use of this composite <a class="internal" href="https://web.archive.org/web/20050416153520/http://cliki.tunes.org/term">term</a>.
+<hr/>
+
+<p>Software which has to interact with external agencies typically uses some kind of <a class="internal" href="https://web.archive.org/web/20050416153520/http://cliki.tunes.org/handshaking">handshaking</a> technique to synchronise its operation with them. If its must deal with many external agencies (rather than just one or two) concurrently, it is likely that this will cause a significant amount of waiting among some of the agencies (while the program interacts with others). This might be a cause of significant inefficiency.
+
+<p>By writing (or rewriting) a program to have many threads, it may be possible to interact with more (or all) of these agencies (more) concurrently, and reduce the inefficiency. Highly concurrent software takes this technique to its (reasonable) limit.
+
+<p>A simple example is a 'web browser' program. Many such programs are able to display a partially downloaded web page in parallel with downloading the page (or parts of it, such as pictures). This generally increases the efficiency of interaction with the user, because the user sees something earlier, and can therefore make decisions (such as going back or following a hyperlink) quicker.
+
+<p>Synonymous terms: highly parallel; highly multithreaded; highly multitasking.
+<hr><p><b>This page is linked from: </b> <a class="internal" href="https://web.archive.org/web/20050416153520/http://cliki.tunes.org/AdaOS">AdaOS</a> &nbsp; </div><div id="footer"><form action="https://web.archive.org/web/20050416153520/http://cliki.tunes.org/admin/search"><a class="internal" href="https://web.archive.org/web/20050416153520/http://cliki.tunes.org/edit/highly%20concurrent">Edit page</a> | <a class="internal" href="https://web.archive.org/web/20050416153520/http://cliki.tunes.org/highly%20concurrent?source">View source</a> | Revisions: <a href="https://web.archive.org/web/20050416153520/http://cliki.tunes.org/highly%20concurrent?v=1" title="Sat, 29 May 2004 21:50:26 GMT">1</a> <a href="https://web.archive.org/web/20050416153520/http://cliki.tunes.org/highly%20concurrent?v=2" title="Mon, 31 May 2004 18:37:37 GMT">2</a> <b title="Fri, 19 Nov 2004 11:26:09 GMT">3</b>  | <input name="words" size="30"><input type="submit" value="search"></form><div id="disclaimer">CTO pages can be modified by anyone at anytime.
+Imagine an appropriate disclaimer. Double it. Add two.</div></body></html></div><!--
+     FILE ARCHIVED ON 15:35:20 Apr 16, 2005 AND RETRIEVED FROM THE
+     INTERNET ARCHIVE ON 06:13:21 Dec 18, 2022.
+     JAVASCRIPT APPENDED BY WAYBACK MACHINE, COPYRIGHT INTERNET ARCHIVE.
+
+     ALL OTHER CONTENT MAY ALSO BE PROTECTED BY COPYRIGHT (17 U.S.C.
+     SECTION 108(a)(3)).
+-->
+<!--
+playback timings (ms):
+  captures_list: 321.004
+  exclusion.robots: 0.068
+  exclusion.robots.policy: 0.061
+  cdx.remote: 0.056
+  esindex: 0.008
+  LoadShardBlock: 287.877 (3)
+  PetaboxLoader3.datanode: 358.514 (4)
+  CDXLines.iter: 13.042 (3)
+  load_resource: 136.768
+  PetaboxLoader3.resolve: 30.95
+-->

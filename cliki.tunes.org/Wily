@@ -1,0 +1,48 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html><head><script src="//archive.org/includes/analytics.js?v=cf34f82" type="text/javascript"></script>
+<script type="text/javascript">window.addEventListener('DOMContentLoaded',function(){var v=archive_analytics.values;v.service='wb';v.server_name='wwwb-app218.us.archive.org';v.server_ms=181;archive_analytics.send_pageview({});});</script>
+<script type="text/javascript" src="/_static/js/bundle-playback.js?v=MzYkZ0TU" charset="utf-8"></script>
+<script type="text/javascript" src="/_static/js/wombat.js?v=UHAOicsW" charset="utf-8"></script>
+<script type="text/javascript">
+  __wm.init("https://web.archive.org/web");
+  __wm.wombat("http://cliki.tunes.org:80/Wily","20050412160258","https://web.archive.org/","web","/_static/",
+	      "1113321778");
+</script>
+<link rel="stylesheet" type="text/css" href="/_static/css/banner-styles.css?v=S1zqJCYt" />
+<link rel="stylesheet" type="text/css" href="/_static/css/iconochive.css?v=qtvMKcIJ" />
+<!-- End Wayback Rewrite JS Include -->
+<title>CTO : Wily</title><link rel="alternate" type="application/rss+xml" title="Recent Changes" href="https://web.archive.org/web/20050412160258/http://cliki.tunes.org/recent-changes.rdf"><link rel="stylesheet" href="https://web.archive.org/web/20050412160258cs_/http://cliki.tunes.org/admin/cliki.css"></head><body><div id="banner"><a title="CTO" class="logo" href="https://web.archive.org/web/20050412160258/http://cliki.tunes.org/">CTO</a> <span>CLiki for the TUNES project</span></div><div id="navbar"><a class="internal" href="https://web.archive.org/web/20050412160258/http://cliki.tunes.org/index">Home</a> <a class="internal" href="https://web.archive.org/web/20050412160258/http://cliki.tunes.org/Recent%20Changes">Recent Changes</a> <a class="internal" href="https://web.archive.org/web/20050412160258/http://cliki.tunes.org/CLiki">About CLiki</a> <a class="internal" href="https://web.archive.org/web/20050412160258/http://cliki.tunes.org/Text%20Formatting">Text Formatting</a> <a class="internal" onclick="if(name=window.prompt('New page name ([A-Za-z0-9 ])')) document.location='https://web.archive.org/web/20050412160258/http://cliki.tunes.org/edit/'+name ;return false;" href="/web/20050412160258/http://cliki.tunes.org/">Create New Page</a></div><div id="main"><h1>Wily</h1>Wily is a <a class="internal" href="https://web.archive.org/web/20050412160258/http://cliki.tunes.org/TUI">TUI</a> style of <a class="internal" href="https://web.archive.org/web/20050412160258/http://cliki.tunes.org/user%20interface">user interface</a> for <a class="internal" href="https://web.archive.org/web/20050412160258/http://cliki.tunes.org/Unix">Unix</a>-like <a class="internal" href="https://web.archive.org/web/20050412160258/http://cliki.tunes.org/OS">OS</a>es inspired by the <a class="internal" href="https://web.archive.org/web/20050412160258/http://cliki.tunes.org/Plan9">Plan9</a> Acme <a class="internal" href="https://web.archive.org/web/20050412160258/http://cliki.tunes.org/TUI">TUI</a>.
+
+<p><ul class="implementations">
+  <li><a href="https://web.archive.org/web/20050412160258/http://www.cs.yorku.ca/~oz/wily/">Wily Homepage</a>.</li>
+</ul>
+
+<p><hr>
+This is a nice interface, but it forces the user to use the mouse too much, which is very inefficient. See <a class="internal" href="https://web.archive.org/web/20050412160258/http://cliki.tunes.org/WIMP">WIMP</a> for why windows and mice are bad. -- <a class="internal" href="https://web.archive.org/web/20050412160258/http://cliki.tunes.org/seaslug">seaslug</a>
+
+<p><hr>
+I beg to differ. The mouse is a lot faster than navigating with the keyboard. Switching between the two (which is what is slow, but still faster than navigating with the keyboard) isn't that common in Wily: either you're typing new text with the keyboard, or you're copying or moving text around using the mouse. --AnonymousDonor
+
+<p><hr>
+Well, you're wrong. period. The mouse is well suited for graphical tasks, but for text, it's slow. On average, a keystroke takes a user .4 seconds to switch his hand from keyboard to mouse and vice versa, and 1.1 seconds to point to a position on the display. These numbers vary on the user and what is being pointed to, but with a text interface like wily, it's likely that the second number is larger because the user is pointing at something so small. In contrast, it takes .2 seconds to tap a key. I understand that it may seem easier to seek to text using a mouse, but try emacs' incremental search to seek to text and you'll be hooked, even though it's modal. Overall, the keyboard is <u>much</u> faster than the mouse. If you don't reply to this argument in a few days I'm going to remove your reply and mine from this page. -- <a class="internal" href="https://web.archive.org/web/20050412160258/http://cliki.tunes.org/seaslug">seaslug</a></div><div id="footer"><form action="https://web.archive.org/web/20050412160258/http://cliki.tunes.org/admin/search"><a class="internal" href="https://web.archive.org/web/20050412160258/http://cliki.tunes.org/edit/Wily">Edit page</a> | <a class="internal" href="https://web.archive.org/web/20050412160258/http://cliki.tunes.org/Wily?source">View source</a> | Revisions: <b title="Sat, 15 Feb 2003 18:00:54 GMT">0</b>  | <input name="words" size="30"><input type="submit" value="search"></form><div id="disclaimer">CTO pages can be modified by anyone at anytime.
+Imagine an appropriate disclaimer. Double it. Add two.</div></body></html></div><!--
+     FILE ARCHIVED ON 16:02:58 Apr 12, 2005 AND RETRIEVED FROM THE
+     INTERNET ARCHIVE ON 06:19:10 Dec 18, 2022.
+     JAVASCRIPT APPENDED BY WAYBACK MACHINE, COPYRIGHT INTERNET ARCHIVE.
+
+     ALL OTHER CONTENT MAY ALSO BE PROTECTED BY COPYRIGHT (17 U.S.C.
+     SECTION 108(a)(3)).
+-->
+<!--
+playback timings (ms):
+  captures_list: 126.07
+  exclusion.robots: 0.134
+  exclusion.robots.policy: 0.122
+  cdx.remote: 0.108
+  esindex: 0.014
+  LoadShardBlock: 95.946 (3)
+  PetaboxLoader3.datanode: 108.151 (4)
+  CDXLines.iter: 17.507 (3)
+  load_resource: 51.479
+  PetaboxLoader3.resolve: 25.47
+-->

@@ -1,0 +1,58 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html><head><script src="//archive.org/includes/analytics.js?v=cf34f82" type="text/javascript"></script>
+<script type="text/javascript">window.addEventListener('DOMContentLoaded',function(){var v=archive_analytics.values;v.service='wb';v.server_name='wwwb-app220.us.archive.org';v.server_ms=1144;archive_analytics.send_pageview({});});</script>
+<script type="text/javascript" src="/_static/js/bundle-playback.js?v=MzYkZ0TU" charset="utf-8"></script>
+<script type="text/javascript" src="/_static/js/wombat.js?v=UHAOicsW" charset="utf-8"></script>
+<script type="text/javascript">
+  __wm.init("https://web.archive.org/web");
+  __wm.wombat("http://cliki.tunes.org:80/Code%20Generation","20050414222618","https://web.archive.org/","web","/_static/",
+	      "1113517578");
+</script>
+<link rel="stylesheet" type="text/css" href="/_static/css/banner-styles.css?v=S1zqJCYt" />
+<link rel="stylesheet" type="text/css" href="/_static/css/iconochive.css?v=qtvMKcIJ" />
+<!-- End Wayback Rewrite JS Include -->
+<title>CTO : Code Generation</title><link rel="alternate" type="application/rss+xml" title="Recent Changes" href="https://web.archive.org/web/20050414222618/http://cliki.tunes.org/recent-changes.rdf"><link rel="stylesheet" href="https://web.archive.org/web/20050414222618cs_/http://cliki.tunes.org/admin/cliki.css"></head><body><div id="banner"><a title="CTO" class="logo" href="https://web.archive.org/web/20050414222618/http://cliki.tunes.org/">CTO</a> <span>CLiki for the TUNES project</span></div><div id="navbar"><a class="internal" href="https://web.archive.org/web/20050414222618/http://cliki.tunes.org/index">Home</a> <a class="internal" href="https://web.archive.org/web/20050414222618/http://cliki.tunes.org/Recent%20Changes">Recent Changes</a> <a class="internal" href="https://web.archive.org/web/20050414222618/http://cliki.tunes.org/CLiki">About CLiki</a> <a class="internal" href="https://web.archive.org/web/20050414222618/http://cliki.tunes.org/Text%20Formatting">Text Formatting</a> <a class="internal" onclick="if(name=window.prompt('New page name ([A-Za-z0-9 ])')) document.location='https://web.archive.org/web/20050414222618/http://cliki.tunes.org/edit/'+name ;return false;" href="/web/20050414222618/http://cliki.tunes.org/">Create New Page</a></div><div id="main"><h1>Code Generation</h1>The <a class="internal" href="https://web.archive.org/web/20050414222618/http://cliki.tunes.org/term">term</a> for the last phase of a compiler that emits code in the target language.
+
+<p>Once the <a class="internal" href="https://web.archive.org/web/20050414222618/http://cliki.tunes.org/operating%20system">operating system</a> has read an <a class="internal" href="https://web.archive.org/web/20050414222618/http://cliki.tunes.org/object">object</a> and understood what to do with it, it has to produce the "code" that the hardware will run to evaluate the <a class="internal" href="https://web.archive.org/web/20050414222618/http://cliki.tunes.org/object">object</a>. We at the <a class="internal" href="https://web.archive.org/web/20050414222618/http://cliki.tunes.org/TUNES">TUNES</a> project are convinced that code generation should be based on meta-programmable <a class="internal" href="https://web.archive.org/web/20050414222618/http://cliki.tunes.org/partial%20evaluation">partial evaluation</a>.
+
+<p>The simplest solutions for code generation are to write an interpreter that directly evaluates the internal encoding of <a class="internal" href="https://web.archive.org/web/20050414222618/http://cliki.tunes.org/object">object</a>s, or an interpreter for an intermediate machine that is a compromise between the <a class="internal" href="https://web.archive.org/web/20050414222618/http://cliki.tunes.org/low-level">low-level</a> hardware computing model and the <a class="internal" href="https://web.archive.org/web/20050414222618/http://cliki.tunes.org/high-level">high-level</a> computing model. These solutions should be used as the default one in <a class="internal" href="https://web.archive.org/web/20050414222618/http://cliki.tunes.org/TUNES">TUNES</a>. But as some <a class="internal" href="https://web.archive.org/web/20050414222618/http://cliki.tunes.org/object">object</a>s get used frequently (or are intended to be used frequently), the partial evaluator triggers and tries to <a class="internal" href="https://web.archive.org/web/20050414222618/http://cliki.tunes.org/optimize">optimize</a> these <a class="internal" href="https://web.archive.org/web/20050414222618/http://cliki.tunes.org/object">object</a>s, spending no more time optimizing than is expected to be saved by the optimizations.
+
+<p>The <a class="internal" href="https://web.archive.org/web/20050414222618/http://cliki.tunes.org/user">user</a>, as always, can give more or less explicit and thorough hints about where to focus code generation efforts, and how to try to generate good code; they will associate code to be optimized and tactics to optimize code with, or give hints about such association for the system to look for automatically. Such tactics could look like:
+
+<p><ul>
+<li>"try to implement these two functions as arrays, to interleave those two arrays (with possibly other arrays, too), to achieve power-of-two element size in the merged array, while wasting as few bytes as possible, to align the beginning of the array, properly offset, to a 64KB boundary (or better, put it at address 0)", so that access to the array will be as fast as possible.
+<li>"try to use a barrel-shift register instead of an arithmetical counter for this bit-mask loop"
+<li>"transform incremental counting into decremental counting to skip a compare instruction"
+<li>"try these megafast implementations under various known contexts (CPU, calling convention, or any restrictive predicate)", or even 
+<li>"send that informal code specification down the usual trail to the company that offers commercial coding services and support, so they make great computer code out of this stuff".
+</ul>
+
+<p>Such tactics would prove much easier to use, much more portable, much surer as for efficiency (if tactic fails to yield better code, it can be semi-automatically ignored) and much faster to tweak (when a proper library is available) than any <a class="internal" href="https://web.archive.org/web/20050414222618/http://cliki.tunes.org/low-level">low-level</a> coding, while bringing the same expressive power as this <a class="internal" href="https://web.archive.org/web/20050414222618/http://cliki.tunes.org/low-level">low-level</a> coding; more importantly, they wouldn't tie code to old hardware or software hacks, and could be managed dynamically.
+
+<p>See also <a class="internal" href="https://web.archive.org/web/20050414222618/http://cliki.tunes.org/Run-Time%20Code%20Generation">Run-Time Code Generation</a>.
+
+<p><ul class="links">
+<li><a href="https://web.archive.org/web/20050414222618/http://www.codegeneration.net/">Code Generation Network</a>.
+</ul>
+<hr><p><b>This page is linked from: </b> <a class="internal" href="https://web.archive.org/web/20050414222618/http://cliki.tunes.org/Decentralized">Decentralized</a> &nbsp; <a class="internal" href="https://web.archive.org/web/20050414222618/http://cliki.tunes.org/Multipop">Multipop</a> &nbsp; <a class="internal" href="https://web.archive.org/web/20050414222618/http://cliki.tunes.org/Optimizer">Optimizer</a> &nbsp; <a class="internal" href="https://web.archive.org/web/20050414222618/http://cliki.tunes.org/PoLITe%20project">PoLITe project</a> &nbsp; <a class="internal" href="https://web.archive.org/web/20050414222618/http://cliki.tunes.org/Preemption%20and%20Cooperation">Preemption and Cooperation</a> &nbsp; <a class="internal" href="https://web.archive.org/web/20050414222618/http://cliki.tunes.org/Program%20Transformation">Program Transformation</a> &nbsp; <a class="internal" href="https://web.archive.org/web/20050414222618/http://cliki.tunes.org/Run-Time%20Code%20Generation">Run-Time Code Generation</a> &nbsp; <a class="internal" href="https://web.archive.org/web/20050414222618/http://cliki.tunes.org/Synthesis">Synthesis</a> &nbsp; <a class="internal" href="https://web.archive.org/web/20050414222618/http://cliki.tunes.org/Synthetix">Synthetix</a> &nbsp; </div><div id="footer"><form action="https://web.archive.org/web/20050414222618/http://cliki.tunes.org/admin/search"><a class="internal" href="https://web.archive.org/web/20050414222618/http://cliki.tunes.org/edit/Code%20Generation">Edit page</a> | <a class="internal" href="https://web.archive.org/web/20050414222618/http://cliki.tunes.org/Code%20Generation?source">View source</a> | Revisions: <a href="https://web.archive.org/web/20050414222618/http://cliki.tunes.org/Code%20Generation?v=1" title="Wed, 16 Jun 2004 09:02:30 GMT">1</a> <b title="Fri, 15 Oct 2004 23:48:21 GMT">2</b>  | <input name="words" size="30"><input type="submit" value="search"></form><div id="disclaimer">CTO pages can be modified by anyone at anytime.
+Imagine an appropriate disclaimer. Double it. Add two.</div></body></html></div><!--
+     FILE ARCHIVED ON 22:26:18 Apr 14, 2005 AND RETRIEVED FROM THE
+     INTERNET ARCHIVE ON 06:11:16 Dec 18, 2022.
+     JAVASCRIPT APPENDED BY WAYBACK MACHINE, COPYRIGHT INTERNET ARCHIVE.
+
+     ALL OTHER CONTENT MAY ALSO BE PROTECTED BY COPYRIGHT (17 U.S.C.
+     SECTION 108(a)(3)).
+-->
+<!--
+playback timings (ms):
+  captures_list: 1041.836
+  exclusion.robots: 0.085
+  exclusion.robots.policy: 0.078
+  RedisCDXSource: 0.67
+  esindex: 0.009
+  LoadShardBlock: 1023.545 (3)
+  PetaboxLoader3.datanode: 962.966 (4)
+  CDXLines.iter: 15.098 (3)
+  PetaboxLoader3.resolve: 125.672 (2)
+  load_resource: 96.955
+-->

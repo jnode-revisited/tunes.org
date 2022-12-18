@@ -1,0 +1,198 @@
+<html><head><script src="//archive.org/includes/analytics.js?v=cf34f82" type="text/javascript"></script>
+<script type="text/javascript">window.addEventListener('DOMContentLoaded',function(){var v=archive_analytics.values;v.service='wb';v.server_name='wwwb-app215.us.archive.org';v.server_ms=1169;archive_analytics.send_pageview({});});</script>
+<script type="text/javascript" src="/_static/js/bundle-playback.js?v=MzYkZ0TU" charset="utf-8"></script>
+<script type="text/javascript" src="/_static/js/wombat.js?v=UHAOicsW" charset="utf-8"></script>
+<script type="text/javascript">
+  __wm.init("https://web.archive.org/web");
+  __wm.wombat("http://cliki.tunes.org:80/Recent%20Changes?start=900","20040106203501","https://web.archive.org/","web","/_static/",
+	      "1073421301");
+</script>
+<link rel="stylesheet" type="text/css" href="/_static/css/banner-styles.css?v=S1zqJCYt" />
+<link rel="stylesheet" type="text/css" href="/_static/css/iconochive.css?v=qtvMKcIJ" />
+<!-- End Wayback Rewrite JS Include -->
+<title>TUNES : Recent Changes</title>
+<link rel="alternate" type="application/rss+xml" title="Recent Changes" href="https://web.archive.org/web/20040106203501/http://cliki.tunes.org/recent-changes.rdf"></link>
+<link rel="stylesheet" href="https://web.archive.org/web/20040106203501cs_/http://cliki.tunes.org/admin/cliki.css"></link>
+<link rel="shortcut icon" type="image/x-icon" href="https://web.archive.org/web/20040106203501im_/http://cliki.tunes.org/favicon.ico"></link>
+</head>
+<body><div class="navbar"><table width="100%"><tr><td colspan="3" class="disclaimer">CLiki pages can be edited by anybody at any time.  Imagine a <i>scarily comprehensive legal disclaimer</i>.  Double it.  Add two.  <!-- Now shut your eyes.  Dark, isn't it? --></td>
+</tr>
+</table>
+<center><table><tr><td><a href="https://web.archive.org/web/20040106203501/http://cliki.tunes.org/index">Home</a>
+</td>
+<td><a href="https://web.archive.org/web/20040106203501/http://cliki.tunes.org/Recent%20Changes">Recent Changes</a>
+</td>
+<td><a href="https://web.archive.org/web/20040106203501/http://cliki.tunes.org/CLiki">About CLiki</a>
+</td>
+<td><a href="https://web.archive.org/web/20040106203501/http://cliki.tunes.org/Text%20Formatting">Text Formatting</a>
+</td>
+<td><a onclick="if(name=window.prompt('New page name ([A-Za-z0-9 ])')) document.location='https://web.archive.org/web/20040106203501/http://cliki.tunes.org/edit/'+name ;return false;" href="#">Create new page</a>
+</td>
+</tr>
+</table>
+</center>
+</div>
+<h1>Recent Changes</h1>
+<p>Older entries (starting at 900)</p>
+</blockquote>
+<a name="3256961381"><h3>Tuesday 18 March 2003</h3></a>
+<blockquote><br><tt> 07:29 </tt><b><a class="internal" href="Functional" onmouseover="window.status='Functional'; return true" onmouseout="window.status='';">Functional</a></b> : Removed the non-free book. ;P -- <a class="internal" href="water" onmouseover="window.status='water'; return true" onmouseout="window.status='';">water</a> 
+<br><tt> 07:17 </tt><b><a class="internal" href="Functional" onmouseover="window.status='Functional'; return true" onmouseout="window.status='';">Functional</a></b> : Added a link to a book on Implementation. -- <a class="internal" href="water" onmouseover="window.status='water'; return true" onmouseout="window.status='';">water</a> 
+<br><tt> 04:21 </tt><b><a class="internal" href="Scheme" onmouseover="window.status='Scheme'; return true" onmouseout="window.status='';">Scheme</a></b> : Added some links from Abi. -- <a class="internal" href="Mad70" onmouseover="window.status='Mad70'; return true" onmouseout="window.status='';">Mad70</a> 
+<br><tt> 04:14 </tt><b><a class="internal" href="Sting" onmouseover="window.status='Sting'; return true" onmouseout="window.status='';">Sting</a></b> : Added from Abi. -- <a class="internal" href="Mad70" onmouseover="window.status='Mad70'; return true" onmouseout="window.status='';">Mad70</a> 
+<br><tt> 02:11 </tt><b><a class="internal" href="Code%20Generation" onmouseover="window.status='Code Generation'; return true" onmouseout="window.status='';">Code Generation</a></b> : Updated with ref. to Run-Time Code Generation. -- <a class="internal" href="Mad70" onmouseover="window.status='Mad70'; return true" onmouseout="window.status='';">Mad70</a> 
+<br><tt> 02:09 </tt><b><a class="internal" href="Decentralized" onmouseover="window.status='Decentralized'; return true" onmouseout="window.status='';">Decentralized</a></b> : Updated: now "code generator" hiddenly ref. to "Code Generation". -- <a class="internal" href="Mad70" onmouseover="window.status='Mad70'; return true" onmouseout="window.status='';">Mad70</a> 
+<br><tt> 01:46 </tt><b><a class="internal" href="Word%20Processors%3A%20Stupid%20and%20Inefficient" onmouseover="window.status='Word Processors: Stupid and Inefficient'; return true" onmouseout="window.status='';">Word Processors: Stupid and Inefficient</a></b> : Added. -- <a class="internal" href="Mad70" onmouseover="window.status='Mad70'; return true" onmouseout="window.status='';">Mad70</a> 
+</blockquote>
+<a name="3256931118"><h3>Monday 17 March 2003</h3></a>
+<blockquote><br><tt> 23:05 </tt><b><a class="internal" href="REBOL" onmouseover="window.status='REBOL'; return true" onmouseout="window.status='';">REBOL</a></b> : added script library link -- <span class="unexists">[inky]<a class="internal" href="edit/inky" onmouseover="window.status='Create a Node for inky'; return true">?</a></span> 
+<br><tt> 22:30 </tt><b><a class="internal" href="RPG" onmouseover="window.status='RPG'; return true" onmouseout="window.status='';">RPG</a></b> : Corrected small typo. -- <a class="internal" href="Mad70" onmouseover="window.status='Mad70'; return true" onmouseout="window.status='';">Mad70</a> 
+<br><tt> 22:27 </tt><b><a class="internal" href="RELFUN" onmouseover="window.status='RELFUN'; return true" onmouseout="window.status='';">RELFUN</a></b> : Added from Abi. -- <a class="internal" href="Mad70" onmouseover="window.status='Mad70'; return true" onmouseout="window.status='';">Mad70</a> 
+<br><tt> 20:25 </tt><b><a class="internal" href="Libra" onmouseover="window.status='Libra'; return true" onmouseout="window.status='';">Libra</a></b> : Added. -- <a class="internal" href="water" onmouseover="window.status='water'; return true" onmouseout="window.status='';">water</a> 
+<br><tt> 20:22 </tt><b><a class="internal" href="Relational" onmouseover="window.status='Relational'; return true" onmouseout="window.status='';">Relational</a></b> : Added this paradigm. -- <a class="internal" href="water" onmouseover="window.status='water'; return true" onmouseout="window.status='';">water</a> 
+<br><tt> 20:19 </tt><b><a class="internal" href="Imperative" onmouseover="window.status='Imperative'; return true" onmouseout="window.status='';">Imperative</a></b> : Added this paradigm. -- <a class="internal" href="water" onmouseover="window.status='water'; return true" onmouseout="window.status='';">water</a> 
+<br><tt> 20:12 </tt><b><a class="internal" href="Eiffel" onmouseover="window.status='Eiffel'; return true" onmouseout="window.status='';">Eiffel</a></b> : Added documentation links. -- <a class="internal" href="water" onmouseover="window.status='water'; return true" onmouseout="window.status='';">water</a> 
+</blockquote>
+<a name="3256834359"><h3>Sunday 16 March 2003</h3></a>
+<blockquote><br><tt> 20:12 </tt><b><a class="internal" href="Scheme" onmouseover="window.status='Scheme'; return true" onmouseout="window.status='';">Scheme</a></b> : Updated with links from Abi. -- <a class="internal" href="Mad70" onmouseover="window.status='Mad70'; return true" onmouseout="window.status='';">Mad70</a> 
+<br><tt> 19:55 </tt><b><a class="internal" href="Ocelot" onmouseover="window.status='Ocelot'; return true" onmouseout="window.status='';">Ocelot</a></b> : Added from Abi. -- <a class="internal" href="Mad70" onmouseover="window.status='Mad70'; return true" onmouseout="window.status='';">Mad70</a> 
+<br><tt> 19:47 </tt><b><a class="internal" href="Nexus" onmouseover="window.status='Nexus'; return true" onmouseout="window.status='';">Nexus</a></b> : Added from Abi. -- <a class="internal" href="Mad70" onmouseover="window.status='Mad70'; return true" onmouseout="window.status='';">Mad70</a> 
+<br><tt> 19:45 </tt><b><a class="internal" href="NeXeme" onmouseover="window.status='NeXeme'; return true" onmouseout="window.status='';">NeXeme</a></b> : Added from Abi. -- <a class="internal" href="Mad70" onmouseover="window.status='Mad70'; return true" onmouseout="window.status='';">Mad70</a> 
+<br><tt> 19:41 </tt><b><a class="internal" href="NASOS" onmouseover="window.status='NASOS'; return true" onmouseout="window.status='';">NASOS</a></b> : Added from Abi. -- <a class="internal" href="Mad70" onmouseover="window.status='Mad70'; return true" onmouseout="window.status='';">Mad70</a> 
+<br><tt> 19:25 </tt><b><a class="internal" href="Miasma" onmouseover="window.status='Miasma'; return true" onmouseout="window.status='';">Miasma</a></b> : Added from Abi. -- <a class="internal" href="Mad70" onmouseover="window.status='Mad70'; return true" onmouseout="window.status='';">Mad70</a> 
+<br><tt> 19:22 </tt><b><a class="internal" href="Macro" onmouseover="window.status='Macro'; return true" onmouseout="window.status='';">Macro</a></b> : Added Macro by Example from Abi. -- <a class="internal" href="Mad70" onmouseover="window.status='Mad70'; return true" onmouseout="window.status='';">Mad70</a> 
+<br><tt> 19:20 </tt><b><a class="internal" href="Lunacy" onmouseover="window.status='Lunacy'; return true" onmouseout="window.status='';">Lunacy</a></b> : Added from Abi. -- <a class="internal" href="Mad70" onmouseover="window.status='Mad70'; return true" onmouseout="window.status='';">Mad70</a> 
+<br><tt> 19:10 </tt><b><a class="internal" href="Parsing" onmouseover="window.status='Parsing'; return true" onmouseout="window.status='';">Parsing</a></b> : Added lfg from Abi. -- <a class="internal" href="Mad70" onmouseover="window.status='Mad70'; return true" onmouseout="window.status='';">Mad70</a> 
+<br><tt> 19:04 </tt><b><a class="internal" href="Scheme" onmouseover="window.status='Scheme'; return true" onmouseout="window.status='';">Scheme</a></b> : Updated with links from Abi. -- <a class="internal" href="Mad70" onmouseover="window.status='Mad70'; return true" onmouseout="window.status='';">Mad70</a> 
+<br><tt> 19:03 </tt><b><a class="internal" href="kew" onmouseover="window.status='kew'; return true" onmouseout="window.status='';">kew</a></b> : Added from Abi. -- <a class="internal" href="Mad70" onmouseover="window.status='Mad70'; return true" onmouseout="window.status='';">Mad70</a> 
+<br><tt> 18:35 </tt><b><a class="internal" href="Hobbit" onmouseover="window.status='Hobbit'; return true" onmouseout="window.status='';">Hobbit</a></b> : Added from Abi. -- <a class="internal" href="Mad70" onmouseover="window.status='Mad70'; return true" onmouseout="window.status='';">Mad70</a> 
+<br><tt> 18:10 </tt><b><a class="internal" href="fxm" onmouseover="window.status='fxm'; return true" onmouseout="window.status='';">fxm</a></b> : Added from Abi. -- <a class="internal" href="Mad70" onmouseover="window.status='Mad70'; return true" onmouseout="window.status='';">Mad70</a> 
+<br><tt> 18:02 </tt><b><a class="internal" href="fx" onmouseover="window.status='fx'; return true" onmouseout="window.status='';">fx</a></b> : Added from Abi. -- <a class="internal" href="Mad70" onmouseover="window.status='Mad70'; return true" onmouseout="window.status='';">Mad70</a> 
+<br><tt> 18:00 </tt><b><a class="internal" href="Scheme" onmouseover="window.status='Scheme'; return true" onmouseout="window.status='';">Scheme</a></b> : Updated with links from Abi. -- <a class="internal" href="Mad70" onmouseover="window.status='Mad70'; return true" onmouseout="window.status='';">Mad70</a> 
+<br><tt> 17:56 </tt><b><a class="internal" href="EuLisp" onmouseover="window.status='EuLisp'; return true" onmouseout="window.status='';">EuLisp</a></b> : Updated with link to euscheme from Abi. -- <a class="internal" href="Mad70" onmouseover="window.status='Mad70'; return true" onmouseout="window.status='';">Mad70</a> 
+<p><center><table width="100%"><tr><td>Result page:  </td><td> </td><td>
+<a href="/web/20040106203501/http://cliki.tunes.org/Recent%20Changes?start=870">Previous</a> 
+<a href="/web/20040106203501/http://cliki.tunes.org/Recent%20Changes?start=0">1</a> 
+<a href="/web/20040106203501/http://cliki.tunes.org/Recent%20Changes?start=30">2</a> 
+<a href="/web/20040106203501/http://cliki.tunes.org/Recent%20Changes?start=60">3</a> 
+<a href="/web/20040106203501/http://cliki.tunes.org/Recent%20Changes?start=90">4</a> 
+<a href="/web/20040106203501/http://cliki.tunes.org/Recent%20Changes?start=120">5</a> 
+<a href="/web/20040106203501/http://cliki.tunes.org/Recent%20Changes?start=150">6</a> 
+<a href="/web/20040106203501/http://cliki.tunes.org/Recent%20Changes?start=180">7</a> 
+<a href="/web/20040106203501/http://cliki.tunes.org/Recent%20Changes?start=210">8</a> 
+<a href="/web/20040106203501/http://cliki.tunes.org/Recent%20Changes?start=240">9</a> 
+<a href="/web/20040106203501/http://cliki.tunes.org/Recent%20Changes?start=270">10</a> 
+<a href="/web/20040106203501/http://cliki.tunes.org/Recent%20Changes?start=300">11</a> 
+<a href="/web/20040106203501/http://cliki.tunes.org/Recent%20Changes?start=330">12</a> 
+<a href="/web/20040106203501/http://cliki.tunes.org/Recent%20Changes?start=360">13</a> 
+<a href="/web/20040106203501/http://cliki.tunes.org/Recent%20Changes?start=390">14</a> 
+<a href="/web/20040106203501/http://cliki.tunes.org/Recent%20Changes?start=420">15</a> 
+<a href="/web/20040106203501/http://cliki.tunes.org/Recent%20Changes?start=450">16</a> 
+<a href="/web/20040106203501/http://cliki.tunes.org/Recent%20Changes?start=480">17</a> 
+<a href="/web/20040106203501/http://cliki.tunes.org/Recent%20Changes?start=510">18</a> 
+<a href="/web/20040106203501/http://cliki.tunes.org/Recent%20Changes?start=540">19</a> 
+<a href="/web/20040106203501/http://cliki.tunes.org/Recent%20Changes?start=570">20</a> 
+<a href="/web/20040106203501/http://cliki.tunes.org/Recent%20Changes?start=600">21</a> 
+<a href="/web/20040106203501/http://cliki.tunes.org/Recent%20Changes?start=630">22</a> 
+<a href="/web/20040106203501/http://cliki.tunes.org/Recent%20Changes?start=660">23</a> 
+<a href="/web/20040106203501/http://cliki.tunes.org/Recent%20Changes?start=690">24</a> 
+<a href="/web/20040106203501/http://cliki.tunes.org/Recent%20Changes?start=720">25</a> 
+<a href="/web/20040106203501/http://cliki.tunes.org/Recent%20Changes?start=750">26</a> 
+<a href="/web/20040106203501/http://cliki.tunes.org/Recent%20Changes?start=780">27</a> 
+<a href="/web/20040106203501/http://cliki.tunes.org/Recent%20Changes?start=810">28</a> 
+<a href="/web/20040106203501/http://cliki.tunes.org/Recent%20Changes?start=840">29</a> 
+<a href="/web/20040106203501/http://cliki.tunes.org/Recent%20Changes?start=870">30</a> 
+ 31
+<a href="/web/20040106203501/http://cliki.tunes.org/Recent%20Changes?start=930">32</a> 
+<a href="/web/20040106203501/http://cliki.tunes.org/Recent%20Changes?start=960">33</a> 
+<a href="/web/20040106203501/http://cliki.tunes.org/Recent%20Changes?start=990">34</a> 
+<a href="/web/20040106203501/http://cliki.tunes.org/Recent%20Changes?start=1020">35</a> 
+<a href="/web/20040106203501/http://cliki.tunes.org/Recent%20Changes?start=1050">36</a> 
+<a href="/web/20040106203501/http://cliki.tunes.org/Recent%20Changes?start=1080">37</a> 
+<a href="/web/20040106203501/http://cliki.tunes.org/Recent%20Changes?start=1110">38</a> 
+<a href="/web/20040106203501/http://cliki.tunes.org/Recent%20Changes?start=1140">39</a> 
+<a href="/web/20040106203501/http://cliki.tunes.org/Recent%20Changes?start=1170">40</a> 
+<a href="/web/20040106203501/http://cliki.tunes.org/Recent%20Changes?start=1200">41</a> 
+<a href="/web/20040106203501/http://cliki.tunes.org/Recent%20Changes?start=1230">42</a> 
+<a href="/web/20040106203501/http://cliki.tunes.org/Recent%20Changes?start=1260">43</a> 
+<a href="/web/20040106203501/http://cliki.tunes.org/Recent%20Changes?start=1290">44</a> 
+<a href="/web/20040106203501/http://cliki.tunes.org/Recent%20Changes?start=1320">45</a> 
+<a href="/web/20040106203501/http://cliki.tunes.org/Recent%20Changes?start=1350">46</a> 
+<a href="/web/20040106203501/http://cliki.tunes.org/Recent%20Changes?start=1380">47</a> 
+<a href="/web/20040106203501/http://cliki.tunes.org/Recent%20Changes?start=1410">48</a> 
+<a href="/web/20040106203501/http://cliki.tunes.org/Recent%20Changes?start=1440">49</a> 
+<a href="/web/20040106203501/http://cliki.tunes.org/Recent%20Changes?start=1470">50</a> 
+<a href="/web/20040106203501/http://cliki.tunes.org/Recent%20Changes?start=1500">51</a> 
+<a href="/web/20040106203501/http://cliki.tunes.org/Recent%20Changes?start=1530">52</a> 
+<a href="/web/20040106203501/http://cliki.tunes.org/Recent%20Changes?start=1560">53</a> 
+<a href="/web/20040106203501/http://cliki.tunes.org/Recent%20Changes?start=1590">54</a> 
+<a href="/web/20040106203501/http://cliki.tunes.org/Recent%20Changes?start=1620">55</a> 
+<a href="/web/20040106203501/http://cliki.tunes.org/Recent%20Changes?start=1650">56</a> 
+<a href="/web/20040106203501/http://cliki.tunes.org/Recent%20Changes?start=1680">57</a> 
+<a href="/web/20040106203501/http://cliki.tunes.org/Recent%20Changes?start=1710">58</a> 
+<a href="/web/20040106203501/http://cliki.tunes.org/Recent%20Changes?start=1740">59</a> 
+<a href="/web/20040106203501/http://cliki.tunes.org/Recent%20Changes?start=1770">60</a> 
+<a href="/web/20040106203501/http://cliki.tunes.org/Recent%20Changes?start=1800">61</a> 
+<a href="/web/20040106203501/http://cliki.tunes.org/Recent%20Changes?start=1830">62</a> 
+<a href="/web/20040106203501/http://cliki.tunes.org/Recent%20Changes?start=1860">63</a> 
+<a href="/web/20040106203501/http://cliki.tunes.org/Recent%20Changes?start=1890">64</a> 
+<a href="/web/20040106203501/http://cliki.tunes.org/Recent%20Changes?start=1920">65</a> 
+<a href="/web/20040106203501/http://cliki.tunes.org/Recent%20Changes?start=1950">66</a> 
+<a href="/web/20040106203501/http://cliki.tunes.org/Recent%20Changes?start=1980">67</a> 
+<a href="/web/20040106203501/http://cliki.tunes.org/Recent%20Changes?start=2010">68</a> 
+<a href="/web/20040106203501/http://cliki.tunes.org/Recent%20Changes?start=2040">69</a> 
+<a href="/web/20040106203501/http://cliki.tunes.org/Recent%20Changes?start=2070">70</a> 
+<a href="/web/20040106203501/http://cliki.tunes.org/Recent%20Changes?start=2100">71</a> 
+<a href="/web/20040106203501/http://cliki.tunes.org/Recent%20Changes?start=2130">72</a> 
+<a href="/web/20040106203501/http://cliki.tunes.org/Recent%20Changes?start=2160">73</a> 
+<a href="/web/20040106203501/http://cliki.tunes.org/Recent%20Changes?start=2190">74</a> 
+<a href="/web/20040106203501/http://cliki.tunes.org/Recent%20Changes?start=2220">75</a> 
+<a href="/web/20040106203501/http://cliki.tunes.org/Recent%20Changes?start=2250">76</a> 
+<a href="/web/20040106203501/http://cliki.tunes.org/Recent%20Changes?start=2280">77</a> 
+<a href="/web/20040106203501/http://cliki.tunes.org/Recent%20Changes?start=2310">78</a> 
+<a href="/web/20040106203501/http://cliki.tunes.org/Recent%20Changes?start=2340">79</a> 
+<a href="/web/20040106203501/http://cliki.tunes.org/Recent%20Changes?start=2370">80</a> 
+<a href="/web/20040106203501/http://cliki.tunes.org/Recent%20Changes?start=2400">81</a> 
+<a href="/web/20040106203501/http://cliki.tunes.org/Recent%20Changes?start=2430">82</a> 
+<a href="/web/20040106203501/http://cliki.tunes.org/Recent%20Changes?start=2460">83</a> 
+<a href="/web/20040106203501/http://cliki.tunes.org/Recent%20Changes?start=2490">84</a> 
+<a href="/web/20040106203501/http://cliki.tunes.org/Recent%20Changes?start=2520">85</a> 
+<a href="/web/20040106203501/http://cliki.tunes.org/Recent%20Changes?start=2550">86</a> 
+<a href="/web/20040106203501/http://cliki.tunes.org/Recent%20Changes?start=2580">87</a> 
+<a href="/web/20040106203501/http://cliki.tunes.org/Recent%20Changes?start=2610">88</a> 
+<a href="/web/20040106203501/http://cliki.tunes.org/Recent%20Changes?start=2640">89</a> 
+<a href="/web/20040106203501/http://cliki.tunes.org/Recent%20Changes?start=2670">90</a> 
+<a href="/web/20040106203501/http://cliki.tunes.org/Recent%20Changes?start=2700">91</a> 
+<a href="/web/20040106203501/http://cliki.tunes.org/Recent%20Changes?start=2730">92</a> 
+<a href="/web/20040106203501/http://cliki.tunes.org/Recent%20Changes?start=2760">93</a> 
+<a href="/web/20040106203501/http://cliki.tunes.org/Recent%20Changes?start=2790">94</a> 
+<a href="/web/20040106203501/http://cliki.tunes.org/Recent%20Changes?start=2820">95</a> 
+<a href="/web/20040106203501/http://cliki.tunes.org/Recent%20Changes?start=2850">96</a> 
+<a href="/web/20040106203501/http://cliki.tunes.org/Recent%20Changes?start=2880">97</a> 
+<a href="/web/20040106203501/http://cliki.tunes.org/Recent%20Changes?start=2910">98</a> 
+<a href="/web/20040106203501/http://cliki.tunes.org/Recent%20Changes?start=2940">99</a> 
+<a href="/web/20040106203501/http://cliki.tunes.org/Recent%20Changes?start=2970">100</a> 
+<a href="/web/20040106203501/http://cliki.tunes.org/Recent%20Changes?start=3000">101</a> 
+<a href="/web/20040106203501/http://cliki.tunes.org/Recent%20Changes?start=3030">102</a> 
+<a href="/web/20040106203501/http://cliki.tunes.org/Recent%20Changes?start=3060">103</a> 
+<a href="/web/20040106203501/http://cliki.tunes.org/Recent%20Changes?start=930">Next</a> </td></tr></table></center><!--
+     FILE ARCHIVED ON 20:35:01 Jan 06, 2004 AND RETRIEVED FROM THE
+     INTERNET ARCHIVE ON 06:22:19 Dec 18, 2022.
+     JAVASCRIPT APPENDED BY WAYBACK MACHINE, COPYRIGHT INTERNET ARCHIVE.
+
+     ALL OTHER CONTENT MAY ALSO BE PROTECTED BY COPYRIGHT (17 U.S.C.
+     SECTION 108(a)(3)).
+-->
+<!--
+playback timings (ms):
+  captures_list: 927.02
+  exclusion.robots: 0.072
+  exclusion.robots.policy: 0.065
+  cdx.remote: 0.057
+  esindex: 0.009
+  LoadShardBlock: 556.971 (3)
+  PetaboxLoader3.datanode: 585.595 (4)
+  CDXLines.iter: 11.828 (3)
+  load_resource: 235.918
+  PetaboxLoader3.resolve: 174.943
+-->

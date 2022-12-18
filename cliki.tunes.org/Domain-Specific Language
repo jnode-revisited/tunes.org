@@ -1,0 +1,49 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html><head><script src="//archive.org/includes/analytics.js?v=cf34f82" type="text/javascript"></script>
+<script type="text/javascript">window.addEventListener('DOMContentLoaded',function(){var v=archive_analytics.values;v.service='wb';v.server_name='wwwb-app203.us.archive.org';v.server_ms=3455;archive_analytics.send_pageview({});});</script>
+<script type="text/javascript" src="/_static/js/bundle-playback.js?v=MzYkZ0TU" charset="utf-8"></script>
+<script type="text/javascript" src="/_static/js/wombat.js?v=UHAOicsW" charset="utf-8"></script>
+<script type="text/javascript">
+  __wm.init("https://web.archive.org/web");
+  __wm.wombat("http://cliki.tunes.org:80/Domain-Specific%20Language","20050306070518","https://web.archive.org/","web","/_static/",
+	      "1110092718");
+</script>
+<link rel="stylesheet" type="text/css" href="/_static/css/banner-styles.css?v=S1zqJCYt" />
+<link rel="stylesheet" type="text/css" href="/_static/css/iconochive.css?v=qtvMKcIJ" />
+<!-- End Wayback Rewrite JS Include -->
+<title>CTO : Domain-Specific Language</title><link rel="alternate" type="application/rss+xml" title="Recent Changes" href="https://web.archive.org/web/20050306070518/http://cliki.tunes.org/recent-changes.rdf"><link rel="stylesheet" href="https://web.archive.org/web/20050306070518cs_/http://cliki.tunes.org/admin/cliki.css"></head><body><div id="banner"><a title="CTO" class="logo" href="https://web.archive.org/web/20050306070518/http://cliki.tunes.org/">CTO</a> <span>CLiki for the TUNES project</span></div><div id="navbar"><a class="internal" href="https://web.archive.org/web/20050306070518/http://cliki.tunes.org/index">Home</a> <a class="internal" href="https://web.archive.org/web/20050306070518/http://cliki.tunes.org/Recent%20Changes">Recent Changes</a> <a class="internal" href="https://web.archive.org/web/20050306070518/http://cliki.tunes.org/CLiki">About CLiki</a> <a class="internal" href="https://web.archive.org/web/20050306070518/http://cliki.tunes.org/Text%20Formatting">Text Formatting</a> <a class="internal" onclick="if(name=window.prompt('New page name ([A-Za-z0-9 ])')) document.location='https://web.archive.org/web/20050306070518/http://cliki.tunes.org/edit/'+name ;return false;" href="/web/20050306070518/http://cliki.tunes.org/">Create New Page</a></div><div id="main"><h1>Domain-Specific Language</h1>The <a class="internal" href="https://web.archive.org/web/20050306070518/http://cliki.tunes.org/term">term</a> for a <a class="internal" href="https://web.archive.org/web/20050306070518/http://cliki.tunes.org/programming%20language">programming language</a> designed for a special purpose, usually within some commercial field of application, although such a language can be made for practically any domain.
+
+<p>There is a separate strand of research just to improve the ability to develop efficient and usable domain-specific languages.
+
+<p>Some research:
+<ul class="links">
+<li><a href="https://web.archive.org/web/20050306070518/http://www.math.chalmers.se/~rjmh/Combinators/">Designing and Using Combinators: The Essence of Functional Programming</a>, a graduate course by John Hughes on combinator libraries <a class="internal" href="https://web.archive.org/web/20050306070518/http://cliki.tunes.org/aka">aka</a> Domain Specific Embedded Languages.</li>
+<li><a href="https://web.archive.org/web/20050306070518/http://compose.labri.fr/documentation/dsl/">Domain-Specific Languages</a> at <a href="https://web.archive.org/web/20050306070518/http://compose.labri.fr/">IRISA/INRIA - LABRI, COMPOSE Project</a> [<a class="internal" href="https://web.archive.org/web/20050306070518/http://cliki.tunes.org/MIA">MIA</a>?].</li>
+<li><a href="https://web.archive.org/web/20050306070518/http://www-sal.cs.uiuc.edu/~kamin/dslresearch.html">Functional Domain-Specific Languages </a>.</li>
+<li><a href="https://web.archive.org/web/20050306070518/http://www.hh.se/staff/vero/DSL/">Series of seminars</a> Domain Specific Languages at <a href="https://web.archive.org/web/20050306070518/http://www.hh.se/english/index.htm">Halmstad University</a>.</li>
+<li><a href="https://web.archive.org/web/20050306070518/http://www.usenix.org/events/bytopic/dsl.html">USENIX - Conference on Domain-Specific Languages</a>.</li>
+<li><a class="internal" href="https://web.archive.org/web/20050306070518/http://cliki.tunes.org/LtU">LtU</a> has a <a href="https://web.archive.org/web/20050306070518/http://lambda.weblogs.com/newsItems/viewDepartment$DSL">section on DSL's</a>.</li>
+<li>A <a href="https://web.archive.org/web/20050306070518/http://www.cwi.nl/htbin/dsl/wiki/wiki">wiki on DSLs</a> at <a href="https://web.archive.org/web/20050306070518/http://www.cwi.nl/">CWI</a>.</li>
+<li><a href="https://web.archive.org/web/20050306070518/http://www.cs.yale.edu/homes/hudak-paul/hudak-dir/dsl/">The Promise of DSLs</a>, a webbed presentation.</li>
+</ul><hr><p><b>This page is linked from: </b> <a class="internal" href="https://web.archive.org/web/20050306070518/http://cliki.tunes.org/DSL">DSL</a> &nbsp; <a class="internal" href="https://web.archive.org/web/20050306070518/http://cliki.tunes.org/Language">Language</a> &nbsp; <a class="internal" href="https://web.archive.org/web/20050306070518/http://cliki.tunes.org/Mozart">Mozart</a> &nbsp; <a class="internal" href="https://web.archive.org/web/20050306070518/http://cliki.tunes.org/Pattern%20Languages">Pattern Languages</a> &nbsp; <a class="internal" href="https://web.archive.org/web/20050306070518/http://cliki.tunes.org/Programming%20Languages">Programming Languages</a> &nbsp; <a class="internal" href="https://web.archive.org/web/20050306070518/http://cliki.tunes.org/Syntax%20in%20Lisp">Syntax in Lisp</a> &nbsp; <a class="internal" href="https://web.archive.org/web/20050306070518/http://cliki.tunes.org/Syntax%20in%20Maude">Syntax in Maude</a> &nbsp; </div><div id="footer"><form action="https://web.archive.org/web/20050306070518/http://cliki.tunes.org/admin/search"><a class="internal" href="https://web.archive.org/web/20050306070518/http://cliki.tunes.org/edit/Domain-Specific%20Language">Edit page</a> | <a class="internal" href="https://web.archive.org/web/20050306070518/http://cliki.tunes.org/Domain-Specific%20Language?source">View source</a> | Revisions: <b title="Tue, 29 Apr 2003 01:45:43 GMT">0</b>  | <input name="words" size="30"><input type="submit" value="search"></form><div id="disclaimer">CTO pages can be modified by anyone at anytime.
+Imagine an appropriate disclaimer. Double it. Add two.</div></body></html></div><!--
+     FILE ARCHIVED ON 07:05:18 Mar 06, 2005 AND RETRIEVED FROM THE
+     INTERNET ARCHIVE ON 06:12:13 Dec 18, 2022.
+     JAVASCRIPT APPENDED BY WAYBACK MACHINE, COPYRIGHT INTERNET ARCHIVE.
+
+     ALL OTHER CONTENT MAY ALSO BE PROTECTED BY COPYRIGHT (17 U.S.C.
+     SECTION 108(a)(3)).
+-->
+<!--
+playback timings (ms):
+  captures_list: 3385.602
+  exclusion.robots: 0.155
+  exclusion.robots.policy: 0.143
+  cdx.remote: 0.121
+  esindex: 0.013
+  LoadShardBlock: 41.773 (3)
+  PetaboxLoader3.datanode: 59.034 (4)
+  CDXLines.iter: 16.871 (3)
+  load_resource: 64.376
+  PetaboxLoader3.resolve: 27.593
+-->

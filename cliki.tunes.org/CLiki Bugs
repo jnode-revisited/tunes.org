@@ -1,0 +1,86 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html><head><script src="//archive.org/includes/analytics.js?v=cf34f82" type="text/javascript"></script>
+<script type="text/javascript">window.addEventListener('DOMContentLoaded',function(){var v=archive_analytics.values;v.service='wb';v.server_name='wwwb-app213.us.archive.org';v.server_ms=147;archive_analytics.send_pageview({});});</script>
+<script type="text/javascript" src="/_static/js/bundle-playback.js?v=MzYkZ0TU" charset="utf-8"></script>
+<script type="text/javascript" src="/_static/js/wombat.js?v=UHAOicsW" charset="utf-8"></script>
+<script type="text/javascript">
+  __wm.init("https://web.archive.org/web");
+  __wm.wombat("http://cliki.tunes.org:80/CLiki%20Bugs","20050307193804","https://web.archive.org/","web","/_static/",
+	      "1110224284");
+</script>
+<link rel="stylesheet" type="text/css" href="/_static/css/banner-styles.css?v=S1zqJCYt" />
+<link rel="stylesheet" type="text/css" href="/_static/css/iconochive.css?v=qtvMKcIJ" />
+<!-- End Wayback Rewrite JS Include -->
+<title>CTO : CLiki Bugs</title><link rel="alternate" type="application/rss+xml" title="Recent Changes" href="https://web.archive.org/web/20050307193804/http://cliki.tunes.org/recent-changes.rdf"><link rel="stylesheet" href="https://web.archive.org/web/20050307193804cs_/http://cliki.tunes.org/admin/cliki.css"></head><body><div id="banner"><a title="CTO" class="logo" href="https://web.archive.org/web/20050307193804/http://cliki.tunes.org/">CTO</a> <span>CLiki for the TUNES project</span></div><div id="navbar"><a class="internal" href="https://web.archive.org/web/20050307193804/http://cliki.tunes.org/index">Home</a> <a class="internal" href="https://web.archive.org/web/20050307193804/http://cliki.tunes.org/Recent%20Changes">Recent Changes</a> <a class="internal" href="https://web.archive.org/web/20050307193804/http://cliki.tunes.org/CLiki">About CLiki</a> <a class="internal" href="https://web.archive.org/web/20050307193804/http://cliki.tunes.org/Text%20Formatting">Text Formatting</a> <a class="internal" onclick="if(name=window.prompt('New page name ([A-Za-z0-9 ])')) document.location='https://web.archive.org/web/20050307193804/http://cliki.tunes.org/edit/'+name ;return false;" href="/web/20050307193804/http://cliki.tunes.org/">Create New Page</a></div><div id="main"><h1>CLiki Bugs</h1>Describe any issues you have with the CLiki below the line. Try not to duplicate any of the known bugs at <a href="https://web.archive.org/web/20050307193804/http://www.cliki.net/CLiki%20Bugs">Cliki.net's bug-report page</a>.
+
+<p><hr>
+
+<p>The CTO server is more stable now that it uses an apache <code>reverse-proxy</code> like the maintainer of araneida himself does. Please tell me immediately about any problem you experience.
+<br>-- <a class="internal" href="https://web.archive.org/web/20050307193804/http://cliki.tunes.org/Fare">Fare</a> 2004-05-25
+
+<p><hr>
+
+<p>The history mechanism doesnt't show the first version at the bottom of the page (version 0: see for example the node <a class="internal" href="https://web.archive.org/web/20050307193804/http://cliki.tunes.org/Pattern-Matching">Pattern-Matching</a>. Anyway, you can access the first version appending a <a href="https://web.archive.org/web/20050307193804/http://cliki.tunes.org/Pattern-Matching?v=0">?v=0</a> at the node URI.
+<br>-- <a class="internal" href="https://web.archive.org/web/20050307193804/http://cliki.tunes.org/MaD70">MaD70</a> 2004-10-16
+
+<p><hr>
+
+<p>The link to the node <a class="internal" href="https://web.archive.org/web/20050307193804/http://cliki.tunes.org/Word%20Processors%3A%20Stupid%20and%20Inefficient">Word Processors: Stupid and Inefficient</a>, although rendered correctly with escaped characters, when followed results in a 502 Proxy Error.
+<br>-- <a class="internal" href="https://web.archive.org/web/20050307193804/http://cliki.tunes.org/MaD70">MaD70</a> 2004-05-26
+
+<p>Titles which include '/'s such as <a class="internal" href="https://web.archive.org/web/20050307193804/http://cliki.tunes.org/CP%2FM">CP/M</a> are 404s.
+<br>-- <a class="internal" href="https://web.archive.org/web/20050307193804/http://cliki.tunes.org/hcf">hcf</a> 2004-06-08
+
+<p><b>Solved at last:</b>
+apache mod_proxy's ProxyPass feature was badly broken. See problems and fix in  <a href="https://web.archive.org/web/20050307193804/http://issues.apache.org/bugzilla/show_bug.cgi?id=29554">Apache bug 29554</a>...
+-- <a class="internal" href="https://web.archive.org/web/20050307193804/http://cliki.tunes.org/Far%E9">Faré</a> 2004-06-16
+
+<p><i>Is this really solved? The <a class="internal" href="https://web.archive.org/web/20050307193804/http://cliki.tunes.org/CP%2FM">CP/M</a> link still fails, as do <a class="internal" href="https://web.archive.org/web/20050307193804/http://cliki.tunes.org/PL%2FI">PL/I</a> and <a class="internal" href="https://web.archive.org/web/20050307193804/http://cliki.tunes.org/Mozart%2FOz">Mozart/Oz</a></i>
+
+<p>Well, we had failed to recompile a patched mod_proxy when upgrading apache for security reasons. It's fixed (again) now. -- <a class="internal" href="https://web.archive.org/web/20050307193804/http://cliki.tunes.org/Far%E9">Faré</a> 2004-09-28
+
+<p><hr>
+
+<p><ul>
+<li>There is a spurious <b>ol</b> tag in the generated listing of <a class="internal" href="https://web.archive.org/web/20050307193804/http://cliki.tunes.org/Term">Term</a>s just before Aspect-Oriented Programming entry.
+<br><b>Solved:</b> <a class="internal" href="https://web.archive.org/web/20050307193804/http://cliki.tunes.org/Artificial%20Intelligence">Artificial Intelligence</a> term had an <b>ol</b> tag at the beginning.
+<li>The final part of <a class="internal" href="https://web.archive.org/web/20050307193804/http://cliki.tunes.org/Text%20Formatting">Text Formatting</a> seems cutted in correspondence of this search:
+<br>/ ("Lisp" :attribute :title :match :substring :case-sensitive nil)
+<br>-- <a class="internal" href="https://web.archive.org/web/20050307193804/http://cliki.tunes.org/MaD70">MaD70</a> 2004-05-31
+<br><b>Solved</b>: in view.lisp 1.59, <code>legacy-search-result</code> was dying on page placeholders with NIL first sentence. Dan upstream has a fix.
+<br>-- <a class="internal" href="https://web.archive.org/web/20050307193804/http://cliki.tunes.org/Far%E9">Faré</a> 2004-06-01
+</ul>
+
+<p><hr>
+
+<p>Sometimes editing a node leaving the Summary box blank does not avoid making another Recent Changes entry. See for example <a class="internal" href="https://web.archive.org/web/20050307193804/http://cliki.tunes.org/CAPE">CAPE</a> recently added.
+<br>-- <a class="internal" href="https://web.archive.org/web/20050307193804/http://cliki.tunes.org/MaD70">MaD70</a> 2004-06-11
+
+<p><b>Solved?</b> There was a thinko in my cliki patch's save-page. Hopefully fixed without introducing a new bug... -- <a class="internal" href="https://web.archive.org/web/20050307193804/http://cliki.tunes.org/Far%E9">Faré</a> 2004-06-16
+
+<p><hr>
+
+<p>The hyperlinked question mark at the end of the sentence: "If you intend to deface this site please at least read here?" on the main index page (close to the bottom) is horribly broken with what appears to be content in the link itself.
+<b>Nevermind...</b> I see that the index page has potentially been defaced. See version 8 for a good one)
+<hr><p><b>This page is linked from: </b> <a class="internal" href="https://web.archive.org/web/20050307193804/http://cliki.tunes.org/index">index</a> &nbsp; <a class="internal" href="https://web.archive.org/web/20050307193804/http://cliki.tunes.org/Past%20news">Past news</a> &nbsp; <a class="internal" href="https://web.archive.org/web/20050307193804/http://cliki.tunes.org/Sand%20Box">Sand Box</a> &nbsp; </div><div id="footer"><form action="https://web.archive.org/web/20050307193804/http://cliki.tunes.org/admin/search"><a class="internal" href="https://web.archive.org/web/20050307193804/http://cliki.tunes.org/edit/CLiki%20Bugs">Edit page</a> | <a class="internal" href="https://web.archive.org/web/20050307193804/http://cliki.tunes.org/CLiki%20Bugs?source">View source</a> | Revisions: <a href="https://web.archive.org/web/20050307193804/http://cliki.tunes.org/CLiki%20Bugs?v=27" title="Thu, 04 Nov 2004 08:58:04 GMT">27</a> <a href="https://web.archive.org/web/20050307193804/http://cliki.tunes.org/CLiki%20Bugs?v=28" title="Thu, 04 Nov 2004 17:31:42 GMT">28</a> <a href="https://web.archive.org/web/20050307193804/http://cliki.tunes.org/CLiki%20Bugs?v=29" title="Thu, 04 Nov 2004 18:41:20 GMT">29</a> <a href="https://web.archive.org/web/20050307193804/http://cliki.tunes.org/CLiki%20Bugs?v=30" title="Fri, 05 Nov 2004 08:10:17 GMT">30</a> <b title="Fri, 05 Nov 2004 13:23:18 GMT">31</b>  | <input name="words" size="30"><input type="submit" value="search"></form><div id="disclaimer">CTO pages can be modified by anyone at anytime.
+Imagine an appropriate disclaimer. Double it. Add two.</div></body></html></div><!--
+     FILE ARCHIVED ON 19:38:04 Mar 07, 2005 AND RETRIEVED FROM THE
+     INTERNET ARCHIVE ON 06:05:21 Dec 18, 2022.
+     JAVASCRIPT APPENDED BY WAYBACK MACHINE, COPYRIGHT INTERNET ARCHIVE.
+
+     ALL OTHER CONTENT MAY ALSO BE PROTECTED BY COPYRIGHT (17 U.S.C.
+     SECTION 108(a)(3)).
+-->
+<!--
+playback timings (ms):
+  captures_list: 67.228
+  exclusion.robots: 0.065
+  exclusion.robots.policy: 0.058
+  cdx.remote: 0.092
+  esindex: 0.008
+  LoadShardBlock: 36.255 (3)
+  PetaboxLoader3.datanode: 45.697 (4)
+  CDXLines.iter: 17.032 (3)
+  load_resource: 75.358
+  PetaboxLoader3.resolve: 30.664
+-->

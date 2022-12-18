@@ -1,0 +1,59 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html><head><script src="//archive.org/includes/analytics.js?v=cf34f82" type="text/javascript"></script>
+<script type="text/javascript">window.addEventListener('DOMContentLoaded',function(){var v=archive_analytics.values;v.service='wb';v.server_name='wwwb-app203.us.archive.org';v.server_ms=192;archive_analytics.send_pageview({});});</script>
+<script type="text/javascript" src="/_static/js/bundle-playback.js?v=MzYkZ0TU" charset="utf-8"></script>
+<script type="text/javascript" src="/_static/js/wombat.js?v=UHAOicsW" charset="utf-8"></script>
+<script type="text/javascript">
+  __wm.init("https://web.archive.org/web");
+  __wm.wombat("http://cliki.tunes.org:80/Pattern-Matching","20050414223548","https://web.archive.org/","web","/_static/",
+	      "1113518148");
+</script>
+<link rel="stylesheet" type="text/css" href="/_static/css/banner-styles.css?v=S1zqJCYt" />
+<link rel="stylesheet" type="text/css" href="/_static/css/iconochive.css?v=qtvMKcIJ" />
+<!-- End Wayback Rewrite JS Include -->
+<title>CTO : Pattern-Matching</title><link rel="alternate" type="application/rss+xml" title="Recent Changes" href="https://web.archive.org/web/20050414223548/http://cliki.tunes.org/recent-changes.rdf"><link rel="stylesheet" href="https://web.archive.org/web/20050414223548cs_/http://cliki.tunes.org/admin/cliki.css"></head><body><div id="banner"><a title="CTO" class="logo" href="https://web.archive.org/web/20050414223548/http://cliki.tunes.org/">CTO</a> <span>CLiki for the TUNES project</span></div><div id="navbar"><a class="internal" href="https://web.archive.org/web/20050414223548/http://cliki.tunes.org/index">Home</a> <a class="internal" href="https://web.archive.org/web/20050414223548/http://cliki.tunes.org/Recent%20Changes">Recent Changes</a> <a class="internal" href="https://web.archive.org/web/20050414223548/http://cliki.tunes.org/CLiki">About CLiki</a> <a class="internal" href="https://web.archive.org/web/20050414223548/http://cliki.tunes.org/Text%20Formatting">Text Formatting</a> <a class="internal" onclick="if(name=window.prompt('New page name ([A-Za-z0-9 ])')) document.location='https://web.archive.org/web/20050414223548/http://cliki.tunes.org/edit/'+name ;return false;" href="/web/20050414223548/http://cliki.tunes.org/">Create New Page</a></div><div id="main"><h1>Pattern-Matching</h1>A <a class="internal" href="https://web.archive.org/web/20050414223548/http://cliki.tunes.org/term">term</a> used to describe a family of programs operating over compound, structured data, usually trees or graphs. Pattern matching programs verify whether a data item complies with a pattern, i.e. an abstract structural description, and usually bind one or more variables with points in the data structure. Bindings are specified in the pattern. 
+
+<p>Adapted and extended from <a href="https://web.archive.org/web/20050414223548/http://wombat.doc.ic.ac.uk/foldoc/foldoc.cgi?query=pattern-matching">FOLDOC's definition</a>:
+
+<p>A function is defined to take arguments of a particular type, form or value. When applying the function to its actual arguments it is necessary to match the type, form or value of the actual arguments against the formal arguments in some definition. For example, the function:
+
+<p><code>length []     = 0
+length (x:xs) = 1 + length xs</code>
+
+<p>uses pattern matching in its argument to distinguish a null list from a non-null one.
+
+<p>There are well known algorithm for translating pattern matching into conditional expressions such as <code>if</code> or <code>case</code>. E.g. the above function could be transformed to
+
+<p><code>length l = case l of
+           []   -&gt; 0
+           x:xs -&gt; 1 : length xs</code>
+
+<p>Pattern matching is usually performed in textual order though there are languages which match more specific patterns before less specific ones.
+
+<p>The Tunes correspondent to this can be more general, in that specification of a non-deterministic or partially-deterministic order of traversal of function definitions can be given. The fact that code can be specified in a non-linear shape contributes to making this possible, as well as reflective specification of the traversal order.
+
+<p><ul class="links">
+<li><a href="https://web.archive.org/web/20050414223548/http://www.cs.ucr.edu/~stelo/pattern.html">Pattern Matching Pointers</a>.
+</ul>
+<hr><p><b>This page is linked from: </b> <a class="internal" href="https://web.archive.org/web/20050414223548/http://cliki.tunes.org/Alan%20Bundy">Alan Bundy</a> &nbsp; <a class="internal" href="https://web.archive.org/web/20050414223548/http://cliki.tunes.org/Bla">Bla</a> &nbsp; <a class="internal" href="https://web.archive.org/web/20050414223548/http://cliki.tunes.org/C%2B%2B">C++</a> &nbsp; <a class="internal" href="https://web.archive.org/web/20050414223548/http://cliki.tunes.org/CLiki%20Bugs">CLiki Bugs</a> &nbsp; <a class="internal" href="https://web.archive.org/web/20050414223548/http://cliki.tunes.org/Dispatch">Dispatch</a> &nbsp; <a class="internal" href="https://web.archive.org/web/20050414223548/http://cliki.tunes.org/fare-matcher">fare-matcher</a> &nbsp; <a class="internal" href="https://web.archive.org/web/20050414223548/http://cliki.tunes.org/Forklift">Forklift</a> &nbsp; <a class="internal" href="https://web.archive.org/web/20050414223548/http://cliki.tunes.org/Godiva">Godiva</a> &nbsp; <a class="internal" href="https://web.archive.org/web/20050414223548/http://cliki.tunes.org/Linda">Linda</a> &nbsp; <a class="internal" href="https://web.archive.org/web/20050414223548/http://cliki.tunes.org/ML">ML</a> &nbsp; <a class="internal" href="https://web.archive.org/web/20050414223548/http://cliki.tunes.org/Moby">Moby</a> &nbsp; <a class="internal" href="https://web.archive.org/web/20050414223548/http://cliki.tunes.org/Qi">Qi</a> &nbsp; <a class="internal" href="https://web.archive.org/web/20050414223548/http://cliki.tunes.org/Scala">Scala</a> &nbsp; <a class="internal" href="https://web.archive.org/web/20050414223548/http://cliki.tunes.org/Sheep">Sheep</a> &nbsp; <a class="internal" href="https://web.archive.org/web/20050414223548/http://cliki.tunes.org/TXL">TXL</a> &nbsp; <a class="internal" href="https://web.archive.org/web/20050414223548/http://cliki.tunes.org/Unification">Unification</a> &nbsp; </div><div id="footer"><form action="https://web.archive.org/web/20050414223548/http://cliki.tunes.org/admin/search"><a class="internal" href="https://web.archive.org/web/20050414223548/http://cliki.tunes.org/edit/Pattern-Matching">Edit page</a> | <a class="internal" href="https://web.archive.org/web/20050414223548/http://cliki.tunes.org/Pattern-Matching?source">View source</a> | Revisions: <a href="https://web.archive.org/web/20050414223548/http://cliki.tunes.org/Pattern-Matching?v=1" title="Wed, 13 Oct 2004 16:03:51 GMT">1</a> <b title="Thu, 14 Oct 2004 18:23:50 GMT">2</b>  | <input name="words" size="30"><input type="submit" value="search"></form><div id="disclaimer">CTO pages can be modified by anyone at anytime.
+Imagine an appropriate disclaimer. Double it. Add two.</div></body></html></div><!--
+     FILE ARCHIVED ON 22:35:48 Apr 14, 2005 AND RETRIEVED FROM THE
+     INTERNET ARCHIVE ON 06:15:58 Dec 18, 2022.
+     JAVASCRIPT APPENDED BY WAYBACK MACHINE, COPYRIGHT INTERNET ARCHIVE.
+
+     ALL OTHER CONTENT MAY ALSO BE PROTECTED BY COPYRIGHT (17 U.S.C.
+     SECTION 108(a)(3)).
+-->
+<!--
+playback timings (ms):
+  captures_list: 112.282
+  exclusion.robots: 0.121
+  exclusion.robots.policy: 0.11
+  cdx.remote: 0.108
+  esindex: 0.012
+  LoadShardBlock: 56.57 (3)
+  PetaboxLoader3.datanode: 79.768 (4)
+  CDXLines.iter: 20.315 (3)
+  load_resource: 73.59
+  PetaboxLoader3.resolve: 30.543
+-->

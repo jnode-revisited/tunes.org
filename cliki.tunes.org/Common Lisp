@@ -1,0 +1,76 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html><head><script src="//archive.org/includes/analytics.js?v=cf34f82" type="text/javascript"></script>
+<script type="text/javascript">window.addEventListener('DOMContentLoaded',function(){var v=archive_analytics.values;v.service='wb';v.server_name='wwwb-app219.us.archive.org';v.server_ms=238;archive_analytics.send_pageview({});});</script>
+<script type="text/javascript" src="/_static/js/bundle-playback.js?v=MzYkZ0TU" charset="utf-8"></script>
+<script type="text/javascript" src="/_static/js/wombat.js?v=UHAOicsW" charset="utf-8"></script>
+<script type="text/javascript">
+  __wm.init("https://web.archive.org/web");
+  __wm.wombat("http://cliki.tunes.org:80/Common%20Lisp","20050403182718","https://web.archive.org/","web","/_static/",
+	      "1112552838");
+</script>
+<link rel="stylesheet" type="text/css" href="/_static/css/banner-styles.css?v=S1zqJCYt" />
+<link rel="stylesheet" type="text/css" href="/_static/css/iconochive.css?v=qtvMKcIJ" />
+<!-- End Wayback Rewrite JS Include -->
+<title>CTO : Common Lisp</title><link rel="alternate" type="application/rss+xml" title="Recent Changes" href="https://web.archive.org/web/20050403182718/http://cliki.tunes.org/recent-changes.rdf"><link rel="stylesheet" href="https://web.archive.org/web/20050403182718cs_/http://cliki.tunes.org/admin/cliki.css"></head><body><div id="banner"><a title="CTO" class="logo" href="https://web.archive.org/web/20050403182718/http://cliki.tunes.org/">CTO</a> <span>CLiki for the TUNES project</span></div><div id="navbar"><a class="internal" href="https://web.archive.org/web/20050403182718/http://cliki.tunes.org/index">Home</a> <a class="internal" href="https://web.archive.org/web/20050403182718/http://cliki.tunes.org/Recent%20Changes">Recent Changes</a> <a class="internal" href="https://web.archive.org/web/20050403182718/http://cliki.tunes.org/CLiki">About CLiki</a> <a class="internal" href="https://web.archive.org/web/20050403182718/http://cliki.tunes.org/Text%20Formatting">Text Formatting</a> <a class="internal" onclick="if(name=window.prompt('New page name ([A-Za-z0-9 ])')) document.location='https://web.archive.org/web/20050403182718/http://cliki.tunes.org/edit/'+name ;return false;" href="/web/20050403182718/http://cliki.tunes.org/">Create New Page</a></div><div id="main"><h1>Common Lisp</h1>A very powerful but somewhat messy dialect of the <a class="internal" href="https://web.archive.org/web/20050403182718/http://cliki.tunes.org/Lisp">Lisp</a> <a class="internal" href="https://web.archive.org/web/20050403182718/http://cliki.tunes.org/programming%20language">programming language</a>. It was intended to unify the many dialects of Lisp, and it has succeeded for the most part in doing so. The only other widely used dialects are <a class="internal" href="https://web.archive.org/web/20050403182718/http://cliki.tunes.org/Scheme">Scheme</a> and EMACS Lisp.
+<span class="comment">
+<br>
+<br>
+It turns out that despite its goal of unification, Common Lisp is actually a very good language. It is my opinion that it is unsurpassed, the best overall language as of now (09-14-2002).
+
+<p><dl>
+<dt>Some features:</dt><dd>a powerful (but dangerous) macro system, a class-based object system with multiple-dispatch (<a class="internal" href="https://web.archive.org/web/20050403182718/http://cliki.tunes.org/CLOS">CLOS</a>) (and often with a powerful <a class="internal" href="https://web.archive.org/web/20050403182718/http://cliki.tunes.org/meta-object%20protocol">meta-object protocol</a>), an extensive standard library full of rich data structures, and a whole lot more. In addition, there are a number of high quality implementations, free and non-free, available. Some of these implementations output very fast code.</dd>
+<dt>Some misfeatures:</dt><dd>there are many constraints placed on the language due to compatibility reasons, not the least of which is the fact that it is a lisp2 (ie, it has a special namespace for functions). Many very intelligent people (<a class="internal" href="https://web.archive.org/web/20050403182718/http://cliki.tunes.org/Fare">Fare</a>, <a class="internal" href="https://web.archive.org/web/20050403182718/http://cliki.tunes.org/Kent%20M.%20Pitman">Kent M. Pitman</a>) feel that this is not a disadvantage, but I do. I feel the macro system is unnecessarily dangerous and restrictive (in that macros are not first class values like procedures). Nothing huge though.</dd>
+</dl>
+-- <a class="internal" href="https://web.archive.org/web/20050403182718/http://cliki.tunes.org/seaslug">seaslug</a>
+</span>
+
+<p>
+<span class="comment">
+This sounds like the opinion of most people who don't understand that macro hygeine isn't needed in a lisp2. :-) However the points are correct and there is some lisp possible that should be able to best both Common Lisp and Scheme: each design has very old roots.
+-- <a class="internal" href="https://web.archive.org/web/20050403182718/http://cliki.tunes.org/water">water</a>
+</span>
+
+<p><ul class="links">
+<li><a href="https://web.archive.org/web/20050403182718/http://www.cliki.net/">CLiki</a>, a reference wiki site that covers <em>everything</em> below much better than we can.</li>
+<li><a href="https://web.archive.org/web/20050403182718/http://www.lisp.org/">Lisp.org</a> or <a href="https://web.archive.org/web/20050403182718/http://www.alu.org/">The Association for Lisp Users</a>.
+<li><a href="https://web.archive.org/web/20050403182718/http://www.xanalys.com/software_tools/reference/HyperSpec/">The Common Lisp HyperSpec</a></li>
+<li><a href="https://web.archive.org/web/20050403182718/http://www-cgi.cs.cmu.edu/Afs/cs.cmu.edu/project/Ai-repository/Ai/html/cltl/cltl2.html">CLTL</a>, <a href="https://web.archive.org/web/20050403182718/http://www.supelec.fr/docs/cltl/cltl2.html">French Mirror</a>, Common Lisp: The Language</li>
+<li><a href="https://web.archive.org/web/20050403182718/http://psg.com/~dlamkins/sl/cover.html">Successful Lisp</a>, an excellent way to learn CL</li>
+<li><a href="https://web.archive.org/web/20050403182718/http://www.apl.jhu.edu/~hall/lisp.html">An Introduction and Tutorial for Common Lisp</a>, a list of CL resources</li>
+<li><a href="https://web.archive.org/web/20050403182718/http://www.paulgraham.com/onlisp.html">On Lisp</a>, we recommend this book for intermediate CL learners.</li>
+</ul>
+<ul class="implementations">
+<li><a href="https://web.archive.org/web/20050403182718/http://sbcl.sourceforge.net/">SBCL</a>, a very high quality free implementation. Based on CMUCL.</li>
+<li><a href="https://web.archive.org/web/20050403182718/http://www.cons.org/cmucl/">CMUCL</a>, outputs very fast code</li>
+<li><a href="https://web.archive.org/web/20050403182718/http://www.gnu.org/software/gcl/gcl.html">GCL</a>, the <a class="internal" href="https://web.archive.org/web/20050403182718/http://cliki.tunes.org/GNU">GNU</a> project's free implementation</li>
+<li><a href="https://web.archive.org/web/20050403182718/http://ecls.sourceforge.net/">ECL</a>, Embeddable Common Lisp with interpreter and translator to C code</li>
+<li><a href="https://web.archive.org/web/20050403182718/http://wcl.kontiki.com/">WCL - Embeddable Common Lisp for Linux</a></li>
+<li><a href="https://web.archive.org/web/20050403182718/http://clisp.cons.org/">CLISP</a>: compiles to portable bytecode, offers mediocre performance.
+<ul>
+<li><a href="https://web.archive.org/web/20050403182718/http://www.clisp.org/">Alternate #1</a></li>
+<li><a href="https://web.archive.org/web/20050403182718/http://clisp.sourceforge.net/">Alternate #2</a></li>
+<li><a href="https://web.archive.org/web/20050403182718/http://www.gnu.org/software/clisp/">Alternate #3</a></li>
+</ul>
+</ul>
+<hr><p><b>This page is linked from: </b> <a class="internal" href="https://web.archive.org/web/20050403182718/http://cliki.tunes.org/AP5">AP5</a> &nbsp; <a class="internal" href="https://web.archive.org/web/20050403182718/http://cliki.tunes.org/AspectL">AspectL</a> &nbsp; <a class="internal" href="https://web.archive.org/web/20050403182718/http://cliki.tunes.org/bknr">bknr</a> &nbsp; <a class="internal" href="https://web.archive.org/web/20050403182718/http://cliki.tunes.org/CafeOBJ">CafeOBJ</a> &nbsp; <a class="internal" href="https://web.archive.org/web/20050403182718/http://cliki.tunes.org/CL">CL</a> &nbsp; <a class="internal" href="https://web.archive.org/web/20050403182718/http://cliki.tunes.org/CLHS">CLHS</a> &nbsp; <a class="internal" href="https://web.archive.org/web/20050403182718/http://cliki.tunes.org/CLiki">CLiki</a> &nbsp; <a class="internal" href="https://web.archive.org/web/20050403182718/http://cliki.tunes.org/CLIM">CLIM</a> &nbsp; <a class="internal" href="https://web.archive.org/web/20050403182718/http://cliki.tunes.org/CLOS">CLOS</a> &nbsp; <a class="internal" href="https://web.archive.org/web/20050403182718/http://cliki.tunes.org/Design%20by%20Contract">Design by Contract</a> &nbsp; <a class="internal" href="https://web.archive.org/web/20050403182718/http://cliki.tunes.org/EuLisp">EuLisp</a> &nbsp; <a class="internal" href="https://web.archive.org/web/20050403182718/http://cliki.tunes.org/fare-matcher">fare-matcher</a> &nbsp; <a class="internal" href="https://web.archive.org/web/20050403182718/http://cliki.tunes.org/Fault-tolerant">Fault-tolerant</a> &nbsp; <a class="internal" href="https://web.archive.org/web/20050403182718/http://cliki.tunes.org/Garnet">Garnet</a> &nbsp; <a class="internal" href="https://web.archive.org/web/20050403182718/http://cliki.tunes.org/Kent%20M.%20Pitman">Kent M. Pitman</a> &nbsp; <a class="internal" href="https://web.archive.org/web/20050403182718/http://cliki.tunes.org/Literate%20Programming">Literate Programming</a> &nbsp; <a class="internal" href="https://web.archive.org/web/20050403182718/http://cliki.tunes.org/Max">Max</a> &nbsp; <a class="internal" href="https://web.archive.org/web/20050403182718/http://cliki.tunes.org/Movitz">Movitz</a> &nbsp; <a class="internal" href="https://web.archive.org/web/20050403182718/http://cliki.tunes.org/NetCLOS">NetCLOS</a> &nbsp; <a class="internal" href="https://web.archive.org/web/20050403182718/http://cliki.tunes.org/PL%20101">PL 101</a> &nbsp; <a class="internal" href="https://web.archive.org/web/20050403182718/http://cliki.tunes.org/Poplog">Poplog</a> &nbsp; <a class="internal" href="https://web.archive.org/web/20050403182718/http://cliki.tunes.org/Qi">Qi</a> &nbsp; <a class="internal" href="https://web.archive.org/web/20050403182718/http://cliki.tunes.org/REBOL">REBOL</a> &nbsp; <a class="internal" href="https://web.archive.org/web/20050403182718/http://cliki.tunes.org/Reflective%20Programming%20Languages">Reflective Programming Languages</a> &nbsp; <a class="internal" href="https://web.archive.org/web/20050403182718/http://cliki.tunes.org/Scheme">Scheme</a> &nbsp; <a class="internal" href="https://web.archive.org/web/20050403182718/http://cliki.tunes.org/Screamer">Screamer</a> &nbsp; <a class="internal" href="https://web.archive.org/web/20050403182718/http://cliki.tunes.org/Stella%20language">Stella language</a> &nbsp; <a class="internal" href="https://web.archive.org/web/20050403182718/http://cliki.tunes.org/Trotskyite%20Tunes">Trotskyite Tunes</a> &nbsp; <a class="internal" href="https://web.archive.org/web/20050403182718/http://cliki.tunes.org/TUNES%20vs%20the%20WWW">TUNES vs the WWW</a> &nbsp; <a class="internal" href="https://web.archive.org/web/20050403182718/http://cliki.tunes.org/Type%20System">Type System</a> &nbsp; <a class="internal" href="https://web.archive.org/web/20050403182718/http://cliki.tunes.org/UFFI">UFFI</a> &nbsp; <a class="internal" href="https://web.archive.org/web/20050403182718/http://cliki.tunes.org/UnCommon%20Web">UnCommon Web</a> &nbsp; <a class="internal" href="https://web.archive.org/web/20050403182718/http://cliki.tunes.org/zzz">zzz</a> &nbsp; </div><div id="footer"><form action="https://web.archive.org/web/20050403182718/http://cliki.tunes.org/admin/search"><a class="internal" href="https://web.archive.org/web/20050403182718/http://cliki.tunes.org/edit/Common%20Lisp">Edit page</a> | <a class="internal" href="https://web.archive.org/web/20050403182718/http://cliki.tunes.org/Common%20Lisp?source">View source</a> | Revisions: <a href="https://web.archive.org/web/20050403182718/http://cliki.tunes.org/Common%20Lisp?v=2" title="Tue, 28 Sep 2004 03:52:31 GMT">2</a> <a href="https://web.archive.org/web/20050403182718/http://cliki.tunes.org/Common%20Lisp?v=3" title="Sat, 02 Oct 2004 15:55:12 GMT">3</a> <a href="https://web.archive.org/web/20050403182718/http://cliki.tunes.org/Common%20Lisp?v=4" title="Sat, 02 Oct 2004 15:59:28 GMT">4</a> <a href="https://web.archive.org/web/20050403182718/http://cliki.tunes.org/Common%20Lisp?v=5" title="Tue, 05 Oct 2004 05:40:16 GMT">5</a> <b title="Tue, 05 Oct 2004 10:21:35 GMT">6</b>  | <input name="words" size="30"><input type="submit" value="search"></form><div id="disclaimer">CTO pages can be modified by anyone at anytime.
+Imagine an appropriate disclaimer. Double it. Add two.</div></body></html></div><!--
+     FILE ARCHIVED ON 18:27:18 Apr 03, 2005 AND RETRIEVED FROM THE
+     INTERNET ARCHIVE ON 06:06:52 Dec 18, 2022.
+     JAVASCRIPT APPENDED BY WAYBACK MACHINE, COPYRIGHT INTERNET ARCHIVE.
+
+     ALL OTHER CONTENT MAY ALSO BE PROTECTED BY COPYRIGHT (17 U.S.C.
+     SECTION 108(a)(3)).
+-->
+<!--
+playback timings (ms):
+  captures_list: 126.306
+  exclusion.robots: 0.085
+  exclusion.robots.policy: 0.078
+  cdx.remote: 0.087
+  esindex: 0.014
+  LoadShardBlock: 89.414 (3)
+  PetaboxLoader3.datanode: 66.889 (4)
+  CDXLines.iter: 17.03 (3)
+  PetaboxLoader3.resolve: 66.547 (2)
+  load_resource: 101.447
+-->

@@ -1,0 +1,44 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html><head><script src="//archive.org/includes/analytics.js?v=cf34f82" type="text/javascript"></script>
+<script type="text/javascript">window.addEventListener('DOMContentLoaded',function(){var v=archive_analytics.values;v.service='wb';v.server_name='wwwb-app200.us.archive.org';v.server_ms=5407;archive_analytics.send_pageview({});});</script>
+<script type="text/javascript" src="/_static/js/bundle-playback.js?v=MzYkZ0TU" charset="utf-8"></script>
+<script type="text/javascript" src="/_static/js/wombat.js?v=UHAOicsW" charset="utf-8"></script>
+<script type="text/javascript">
+  __wm.init("https://web.archive.org/web");
+  __wm.wombat("http://cliki.tunes.org:80/Monad","20050412160121","https://web.archive.org/","web","/_static/",
+	      "1113321681");
+</script>
+<link rel="stylesheet" type="text/css" href="/_static/css/banner-styles.css?v=S1zqJCYt" />
+<link rel="stylesheet" type="text/css" href="/_static/css/iconochive.css?v=qtvMKcIJ" />
+<!-- End Wayback Rewrite JS Include -->
+<title>CTO : Monad</title><link rel="alternate" type="application/rss+xml" title="Recent Changes" href="https://web.archive.org/web/20050412160121/http://cliki.tunes.org/recent-changes.rdf"><link rel="stylesheet" href="https://web.archive.org/web/20050412160121cs_/http://cliki.tunes.org/admin/cliki.css"></head><body><div id="banner"><a title="CTO" class="logo" href="https://web.archive.org/web/20050412160121/http://cliki.tunes.org/">CTO</a> <span>CLiki for the TUNES project</span></div><div id="navbar"><a class="internal" href="https://web.archive.org/web/20050412160121/http://cliki.tunes.org/index">Home</a> <a class="internal" href="https://web.archive.org/web/20050412160121/http://cliki.tunes.org/Recent%20Changes">Recent Changes</a> <a class="internal" href="https://web.archive.org/web/20050412160121/http://cliki.tunes.org/CLiki">About CLiki</a> <a class="internal" href="https://web.archive.org/web/20050412160121/http://cliki.tunes.org/Text%20Formatting">Text Formatting</a> <a class="internal" onclick="if(name=window.prompt('New page name ([A-Za-z0-9 ])')) document.location='https://web.archive.org/web/20050412160121/http://cliki.tunes.org/edit/'+name ;return false;" href="/web/20050412160121/http://cliki.tunes.org/">Create New Page</a></div><div id="main"><h1>Monad</h1>A <a class="internal" href="https://web.archive.org/web/20050412160121/http://cliki.tunes.org/term">term</a> taken from <a class="internal" href="https://web.archive.org/web/20050412160121/http://cliki.tunes.org/category%20theory">category theory</a> and applied to <a class="internal" href="https://web.archive.org/web/20050412160121/http://cliki.tunes.org/functional">functional</a> programming concepts to provide a way to deal with <em>local</em>, single-thread state in a functional language without having to pass the state around explicitly as extra arguments to all the functions that deal with it (and requiring changing their signatures, etc.) See also <a class="internal" href="https://web.archive.org/web/20050412160121/http://cliki.tunes.org/Eugenio%20Moggi">Eugenio Moggi</a> and a <a class="internal" href="https://web.archive.org/web/20050412160121/http://cliki.tunes.org/Learning%20Lounge">Learning Lounge</a> course, <a class="internal" href="https://web.archive.org/web/20050412160121/http://cliki.tunes.org/Monads%20101">Monads 101</a>.
+
+<p><ul class="links">
+<li>The FOLDOC <a href="https://web.archive.org/web/20050412160121/http://foldoc.doc.ic.ac.uk/foldoc/foldoc.cgi?query=monad">entry</a>.
+<li>A recent, in-depth, seemingly practical tutorial <a href="https://web.archive.org/web/20050412160121/http://www.nomaware.com/monads/html/">All About Monads</a>.
+<li><a href="https://web.archive.org/web/20050412160121/http://web.archive.org/web/20040104091246/http://www.cse.ogi.edu/~walton/monads.html">Monads</a> (thanks to <a class="internal" href="https://web.archive.org/web/20050412160121/http://cliki.tunes.org/Search%20Facilities">Wayback Machine</a>) (<a href="https://web.archive.org/web/20050412160121/http://www.cse.ogi.edu/~walton/monads.html">old link</a> <a class="internal" href="https://web.archive.org/web/20050412160121/http://cliki.tunes.org/MIA">MIA</a>), a collection of references to literature about monads (mostly computer science) by <a href="https://web.archive.org/web/20050412160121/http://home.gwi.net/~lwalton/">Lisa A. Walton</a> (<a href="https://web.archive.org/web/20050412160121/http://www.cse.ogi.edu/~walton/">old home-page</a> <a class="internal" href="https://web.archive.org/web/20050412160121/http://cliki.tunes.org/MIA">MIA</a>).
+<li>About optimizing certain kinds of monads, see the work of <a href="https://web.archive.org/web/20050412160121/http://www.cs.indiana.edu/~jsobel/">Jonathan Sobel</a>.
+<li><a href="https://web.archive.org/web/20050412160121/http://www.mta.ca/~cat-dist/categories.html">Categories List</a>.
+</ul>
+<hr><p><b>This page is linked from: </b> <a class="internal" href="https://web.archive.org/web/20050412160121/http://cliki.tunes.org/Arrow%20Logic%20101">Arrow Logic 101</a> &nbsp; <a class="internal" href="https://web.archive.org/web/20050412160121/http://cliki.tunes.org/Category%20Theory%20101">Category Theory 101</a> &nbsp; <a class="internal" href="https://web.archive.org/web/20050412160121/http://cliki.tunes.org/Continuation-Passing%20Style">Continuation-Passing Style</a> &nbsp; <a class="internal" href="https://web.archive.org/web/20050412160121/http://cliki.tunes.org/Eugenio%20Moggi">Eugenio Moggi</a> &nbsp; <a class="internal" href="https://web.archive.org/web/20050412160121/http://cliki.tunes.org/Linear%20Logic">Linear Logic</a> &nbsp; <a class="internal" href="https://web.archive.org/web/20050412160121/http://cliki.tunes.org/Linear%20Logic%20Comments">Linear Logic Comments</a> &nbsp; <a class="internal" href="https://web.archive.org/web/20050412160121/http://cliki.tunes.org/Monads%20101">Monads 101</a> &nbsp; <a class="internal" href="https://web.archive.org/web/20050412160121/http://cliki.tunes.org/Referential%20Transparency%20and%20State">Referential Transparency and State</a> &nbsp; </div><div id="footer"><form action="https://web.archive.org/web/20050412160121/http://cliki.tunes.org/admin/search"><a class="internal" href="https://web.archive.org/web/20050412160121/http://cliki.tunes.org/edit/Monad">Edit page</a> | <a class="internal" href="https://web.archive.org/web/20050412160121/http://cliki.tunes.org/Monad?source">View source</a> | Revisions: <a href="https://web.archive.org/web/20050412160121/http://cliki.tunes.org/Monad?v=1" title="Sun, 19 Sep 2004 16:26:09 GMT">1</a> <b title="Wed, 29 Sep 2004 05:09:22 GMT">2</b>  | <input name="words" size="30"><input type="submit" value="search"></form><div id="disclaimer">CTO pages can be modified by anyone at anytime.
+Imagine an appropriate disclaimer. Double it. Add two.</div></body></html></div><!--
+     FILE ARCHIVED ON 16:01:21 Apr 12, 2005 AND RETRIEVED FROM THE
+     INTERNET ARCHIVE ON 06:15:00 Dec 18, 2022.
+     JAVASCRIPT APPENDED BY WAYBACK MACHINE, COPYRIGHT INTERNET ARCHIVE.
+
+     ALL OTHER CONTENT MAY ALSO BE PROTECTED BY COPYRIGHT (17 U.S.C.
+     SECTION 108(a)(3)).
+-->
+<!--
+playback timings (ms):
+  captures_list: 5208.522
+  exclusion.robots: 0.074
+  exclusion.robots.policy: 0.067
+  cdx.remote: 0.065
+  esindex: 0.01
+  LoadShardBlock: 169.946 (3)
+  PetaboxLoader3.datanode: 202.271 (4)
+  CDXLines.iter: 16.581 (3)
+  load_resource: 195.438
+  PetaboxLoader3.resolve: 123.302
+-->

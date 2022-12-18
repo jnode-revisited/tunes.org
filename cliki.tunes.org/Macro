@@ -1,0 +1,49 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html><head><script src="//archive.org/includes/analytics.js?v=cf34f82" type="text/javascript"></script>
+<script type="text/javascript">window.addEventListener('DOMContentLoaded',function(){var v=archive_analytics.values;v.service='wb';v.server_name='wwwb-app228.us.archive.org';v.server_ms=241;archive_analytics.send_pageview({});});</script>
+<script type="text/javascript" src="/_static/js/bundle-playback.js?v=MzYkZ0TU" charset="utf-8"></script>
+<script type="text/javascript" src="/_static/js/wombat.js?v=UHAOicsW" charset="utf-8"></script>
+<script type="text/javascript">
+  __wm.init("https://web.archive.org/web");
+  __wm.wombat("http://cliki.tunes.org:80/Macro","20050412160354","https://web.archive.org/","web","/_static/",
+	      "1113321834");
+</script>
+<link rel="stylesheet" type="text/css" href="/_static/css/banner-styles.css?v=S1zqJCYt" />
+<link rel="stylesheet" type="text/css" href="/_static/css/iconochive.css?v=qtvMKcIJ" />
+<!-- End Wayback Rewrite JS Include -->
+<title>CTO : Macro</title><link rel="alternate" type="application/rss+xml" title="Recent Changes" href="https://web.archive.org/web/20050412160354/http://cliki.tunes.org/recent-changes.rdf"><link rel="stylesheet" href="https://web.archive.org/web/20050412160354cs_/http://cliki.tunes.org/admin/cliki.css"></head><body><div id="banner"><a title="CTO" class="logo" href="https://web.archive.org/web/20050412160354/http://cliki.tunes.org/">CTO</a> <span>CLiki for the TUNES project</span></div><div id="navbar"><a class="internal" href="https://web.archive.org/web/20050412160354/http://cliki.tunes.org/index">Home</a> <a class="internal" href="https://web.archive.org/web/20050412160354/http://cliki.tunes.org/Recent%20Changes">Recent Changes</a> <a class="internal" href="https://web.archive.org/web/20050412160354/http://cliki.tunes.org/CLiki">About CLiki</a> <a class="internal" href="https://web.archive.org/web/20050412160354/http://cliki.tunes.org/Text%20Formatting">Text Formatting</a> <a class="internal" onclick="if(name=window.prompt('New page name ([A-Za-z0-9 ])')) document.location='https://web.archive.org/web/20050412160354/http://cliki.tunes.org/edit/'+name ;return false;" href="/web/20050412160354/http://cliki.tunes.org/">Create New Page</a></div><div id="main"><h1>Macro</h1>The <a class="internal" href="https://web.archive.org/web/20050412160354/http://cliki.tunes.org/term">term</a> for a way to extend the <a class="internal" href="https://web.archive.org/web/20050412160354/http://cliki.tunes.org/syntax">syntax</a> and <a class="internal" href="https://web.archive.org/web/20050412160354/http://cliki.tunes.org/semantics">semantics</a> of a <a class="internal" href="https://web.archive.org/web/20050412160354/http://cliki.tunes.org/programming%20language">programming language</a>; they are a special case of compile-time <a class="internal" href="https://web.archive.org/web/20050412160354/http://cliki.tunes.org/rewrite">rewrite</a>.
+
+<p>Macros operate at the level of a structure in which the language is modeled, which can be at various levels: theoretical monads, abstract syntax trees, lexer tokens, or character strings. The higher-level methods of doing this generally offer cleaner methods of expressing these transformations, and are preferred when accessible.
+
+<p>They are a particular case of <a class="internal" href="https://web.archive.org/web/20050412160354/http://cliki.tunes.org/metaprogramming">metaprogramming</a>, done within a language itself, as a restricted form of compile-time reflection<a class="internal" href="https://web.archive.org/web/20050412160354/http://cliki.tunes.org/edit/compile-time%20reflection">?</a>. The integration of macros with general compile-time reflection requires the availability of suitable ways to control code emission, that are not usually available in standard macro systems; in general these subjects are considered separate, except when <a class="internal" href="https://web.archive.org/web/20050412160354/http://cliki.tunes.org/open%20implementation">open implementation</a>s are explicitly brought up.
+
+<p><ul class="links">
+  <li><a href="https://web.archive.org/web/20050412160354/http://citeseer.nj.nec.com/brabrand00growing.html">Growing Languages with Metamorphic Syntax Macros</a> describes a syntax macro language with interesting properties and generality.</li>
+  <li> <a href="https://web.archive.org/web/20050412160354/http://www.ai.mit.edu/~gregs/ll1-discuss-archive-html/msg02079.html">Some LL1 posts</a> which offer some useful advice about when and how to use macros. Perhaps these will coalesce into a proper set of published principles soon.</li>
+  <li><a href="https://web.archive.org/web/20050412160354/http://citeseer.nj.nec.com/440438.html">Macros as Multi-Stage Computations: Type-Safe, Generative, Binding Macros in MacroML</a>
+  <li><a href="https://web.archive.org/web/20050412160354/http://www.cs.utah.edu/~jbaker/maya/">Maya</a>: a multi-dispatch macro system for <a class="internal" href="https://web.archive.org/web/20050412160354/http://cliki.tunes.org/Java">Java</a> written in <a class="internal" href="https://web.archive.org/web/20050412160354/http://cliki.tunes.org/Scheme">Kawa</a>.
+  <li><a href="https://web.archive.org/web/20050412160354/http://citeseer.nj.nec.com/maddox89semanticallysensitive.html">Semantically-Sensitive Macroprocessing</a>.</li>
+  <li><a href="https://web.archive.org/web/20050412160354/http://www.ccs.neu.edu/home/dorai/mbe/mbe-imps.html">Macro by Example</a>.</li>
+  <li><a href="https://web.archive.org/web/20050412160354/http://www.bawden.org/mtt/">First-class Macros Have Types</a> by <a class="internal" href="https://web.archive.org/web/20050412160354/http://cliki.tunes.org/Alan%20Bawden">Alan Bawden</a>.
+</ul><hr><p><b>This page is linked from: </b> <a class="internal" href="https://web.archive.org/web/20050412160354/http://cliki.tunes.org/C%20Compiler%20%20%20dlopen%20VM">C Compiler   dlopen VM</a> &nbsp; <a class="internal" href="https://web.archive.org/web/20050412160354/http://cliki.tunes.org/Continuation-Passing%20Style">Continuation-Passing Style</a> &nbsp; <a class="internal" href="https://web.archive.org/web/20050412160354/http://cliki.tunes.org/FDScript">FDScript</a> &nbsp; <a class="internal" href="https://web.archive.org/web/20050412160354/http://cliki.tunes.org/Felix">Felix</a> &nbsp; <a class="internal" href="https://web.archive.org/web/20050412160354/http://cliki.tunes.org/FreshML">FreshML</a> &nbsp; <a class="internal" href="https://web.archive.org/web/20050412160354/http://cliki.tunes.org/Lisp">Lisp</a> &nbsp; <a class="internal" href="https://web.archive.org/web/20050412160354/http://cliki.tunes.org/PL%20101">PL 101</a> &nbsp; <a class="internal" href="https://web.archive.org/web/20050412160354/http://cliki.tunes.org/Scheme">Scheme</a> &nbsp; <a class="internal" href="https://web.archive.org/web/20050412160354/http://cliki.tunes.org/Syntax%20in%20Lisp">Syntax in Lisp</a> &nbsp; <a class="internal" href="https://web.archive.org/web/20050412160354/http://cliki.tunes.org/Type%20System">Type System</a> &nbsp; </div><div id="footer"><form action="https://web.archive.org/web/20050412160354/http://cliki.tunes.org/admin/search"><a class="internal" href="https://web.archive.org/web/20050412160354/http://cliki.tunes.org/edit/Macro">Edit page</a> | <a class="internal" href="https://web.archive.org/web/20050412160354/http://cliki.tunes.org/Macro?source">View source</a> | Revisions: <b title="Wed, 11 Jun 2003 21:19:01 GMT">0</b>  | <input name="words" size="30"><input type="submit" value="search"></form><div id="disclaimer">CTO pages can be modified by anyone at anytime.
+Imagine an appropriate disclaimer. Double it. Add two.</div></body></html></div><!--
+     FILE ARCHIVED ON 16:03:54 Apr 12, 2005 AND RETRIEVED FROM THE
+     INTERNET ARCHIVE ON 06:14:12 Dec 18, 2022.
+     JAVASCRIPT APPENDED BY WAYBACK MACHINE, COPYRIGHT INTERNET ARCHIVE.
+
+     ALL OTHER CONTENT MAY ALSO BE PROTECTED BY COPYRIGHT (17 U.S.C.
+     SECTION 108(a)(3)).
+-->
+<!--
+playback timings (ms):
+  captures_list: 153.623
+  exclusion.robots: 0.143
+  exclusion.robots.policy: 0.134
+  RedisCDXSource: 0.734
+  esindex: 0.008
+  LoadShardBlock: 131.47 (3)
+  PetaboxLoader3.datanode: 139.332 (4)
+  CDXLines.iter: 18.419 (3)
+  load_resource: 83.044
+  PetaboxLoader3.resolve: 61.423
+-->

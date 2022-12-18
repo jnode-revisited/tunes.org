@@ -1,0 +1,56 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html><head><script src="//archive.org/includes/analytics.js?v=cf34f82" type="text/javascript"></script>
+<script type="text/javascript">window.addEventListener('DOMContentLoaded',function(){var v=archive_analytics.values;v.service='wb';v.server_name='wwwb-app221.us.archive.org';v.server_ms=219;archive_analytics.send_pageview({});});</script>
+<script type="text/javascript" src="/_static/js/bundle-playback.js?v=MzYkZ0TU" charset="utf-8"></script>
+<script type="text/javascript" src="/_static/js/wombat.js?v=UHAOicsW" charset="utf-8"></script>
+<script type="text/javascript">
+  __wm.init("https://web.archive.org/web");
+  __wm.wombat("http://cliki.tunes.org:80/Diagram","20050414222121","https://web.archive.org/","web","/_static/",
+	      "1113517281");
+</script>
+<link rel="stylesheet" type="text/css" href="/_static/css/banner-styles.css?v=S1zqJCYt" />
+<link rel="stylesheet" type="text/css" href="/_static/css/iconochive.css?v=qtvMKcIJ" />
+<!-- End Wayback Rewrite JS Include -->
+<title>CTO : Diagram</title><link rel="alternate" type="application/rss+xml" title="Recent Changes" href="https://web.archive.org/web/20050414222121/http://cliki.tunes.org/recent-changes.rdf"><link rel="stylesheet" href="https://web.archive.org/web/20050414222121cs_/http://cliki.tunes.org/admin/cliki.css"></head><body><div id="banner"><a title="CTO" class="logo" href="https://web.archive.org/web/20050414222121/http://cliki.tunes.org/">CTO</a> <span>CLiki for the TUNES project</span></div><div id="navbar"><a class="internal" href="https://web.archive.org/web/20050414222121/http://cliki.tunes.org/index">Home</a> <a class="internal" href="https://web.archive.org/web/20050414222121/http://cliki.tunes.org/Recent%20Changes">Recent Changes</a> <a class="internal" href="https://web.archive.org/web/20050414222121/http://cliki.tunes.org/CLiki">About CLiki</a> <a class="internal" href="https://web.archive.org/web/20050414222121/http://cliki.tunes.org/Text%20Formatting">Text Formatting</a> <a class="internal" onclick="if(name=window.prompt('New page name ([A-Za-z0-9 ])')) document.location='https://web.archive.org/web/20050414222121/http://cliki.tunes.org/edit/'+name ;return false;" href="/web/20050414222121/http://cliki.tunes.org/">Create New Page</a></div><div id="main"><h1>Diagram</h1>A <a class="internal" href="https://web.archive.org/web/20050414222121/http://cliki.tunes.org/user%20interface">user interface</a> <a class="internal" href="https://web.archive.org/web/20050414222121/http://cliki.tunes.org/term">term</a> for a representation of some group of information that at least partially makes use of structural or symbolic representation. The study of diagrams has become particularly interesting in recent years, and programmatic generation of them is in <a href="https://web.archive.org/web/20050414222121/http://tunes.org/Interfaces/ingen.html">TUNES' interface generation's</a> interest.
+
+<p><ul class="links">
+<li><a href="https://web.archive.org/web/20050414222121/http://citeseer.nj.nec.com/kulpa94diagrammatic.html">Diagrammatic Representation And Reasoning</a>, a paper given in 1994 as an overview of the subject.
+<li><a href="https://web.archive.org/web/20050414222121/http://plato.stanford.edu/entries/diagrams/">The entry on diagrams</a> from the Stanford Encyclopedia of Philosophy.
+<li><a href="https://web.archive.org/web/20050414222121/http://www.cl.cam.ac.uk/users/afb21/publications/yuri-chapter.html">A Meta-Taxonomy for Diagram Research</a>, a recent chapter (by <a href="https://web.archive.org/web/20050414222121/http://www.cl.cam.ac.uk/users/afb21/">Alan Blackwell</a>, who has written many other <a class="internal" href="https://web.archive.org/web/20050414222121/http://cliki.tunes.org/HCI">HCI</a> papers and is the mantainer of <em>Cognitive Dimensions of Notations
+Resource Site</em>, see <a class="internal" href="https://web.archive.org/web/20050414222121/http://cliki.tunes.org/Psychology%20of%20Programming">Psychology of Programming</a>) of the following book.
+<li><a href="https://web.archive.org/web/20050414222121/http://www.springer.de/cgi-bin/search_book.pl?isbn=1-85233-242-5&amp;cookie=done">Diagrammatic Representation And Reasoning</a>, a Springer-Verlag book in 2002 which covers many details in greater depth of analysis, by
+     <a href="https://web.archive.org/web/20050414222121/http://welcome.to/bernd.meyer/">Bernd Meyer</a>,
+<a href="https://web.archive.org/web/20050414222121/http://www.cs.hartford.edu/~anderson/personal/">Michael Anderson</a> and
+ <a href="https://web.archive.org/web/20050414222121/http://www-users.cs.york.ac.uk/~patrick/">Patrick Olivier</a>.
+<li><a href="https://web.archive.org/web/20050414222121/http://name.math.univ-rennes1.fr/nathalie.rittemard/twd98_intro.html">ACTING WITH DIAGRAMS: how to plan strategies</a>.
+<li><a href="https://web.archive.org/web/20050414222121/http://www.cs.hartford.edu/~anderson/">Diagrammatic Reasoning Site</a>.  
+<li><a href="https://web.archive.org/web/20050414222121/http://www.edwardtufte.com/tufte/">E.R. Tufte</a>'s books on information design are also quite relevant.
+<li><a href="https://web.archive.org/web/20050414222121/http://www.hcirn.com/res/event/diagrams.php">International Conference on the Theory and Application of Diagrams</a>.
+<li><a href="https://web.archive.org/web/20050414222121/http://www.psychology.nottingham.ac.uk/staff/Peter.Cheng/DRandKA/">Diagrammatic Reasoning and Knowledge Acquisition</a>.
+<li><a href="https://web.archive.org/web/20050414222121/http://www.wideman-one.com/gw/xm/concmod/thinkwdiag.htm">Thinking With Diagrams</a>.
+<li><a href="https://web.archive.org/web/20050414222121/http://ilex.cc.kcl.ac.uk/wlm/diagram/">Diagramming</a>.
+</ul>
+
+<p>In <a class="internal" href="https://web.archive.org/web/20050414222121/http://cliki.tunes.org/category%20theory">category theory</a> a diagram is a graph where edges are labelled with <a class="internal" href="https://web.archive.org/web/20050414222121/http://cliki.tunes.org/morphism">morphisms</a> and vertices are labelled with objects, in a way that typing of morphisms is respected. Formally, a diagram in a category C is a functor from the free category generated by the graph to C. A commutative diagram is a diagram where some equation holds. The formal definition is the same, where the free category is suitably quotiented by the <a class="internal" href="https://web.archive.org/web/20050414222121/http://cliki.tunes.org/congruence">congruence</a> induced by the equations.
+<hr><p><b>This page is linked from: </b> <a class="internal" href="https://web.archive.org/web/20050414222121/http://cliki.tunes.org/Clarity">Clarity</a> &nbsp; <a class="internal" href="https://web.archive.org/web/20050414222121/http://cliki.tunes.org/Syntax%20in%20K">Syntax in K</a> &nbsp; </div><div id="footer"><form action="https://web.archive.org/web/20050414222121/http://cliki.tunes.org/admin/search"><a class="internal" href="https://web.archive.org/web/20050414222121/http://cliki.tunes.org/edit/Diagram">Edit page</a> | <a class="internal" href="https://web.archive.org/web/20050414222121/http://cliki.tunes.org/Diagram?source">View source</a> | Revisions: <b title="Sat, 14 Feb 2004 11:03:15 GMT">0</b>  | <input name="words" size="30"><input type="submit" value="search"></form><div id="disclaimer">CTO pages can be modified by anyone at anytime.
+Imagine an appropriate disclaimer. Double it. Add two.</div></body></html></div><!--
+     FILE ARCHIVED ON 22:21:21 Apr 14, 2005 AND RETRIEVED FROM THE
+     INTERNET ARCHIVE ON 06:12:01 Dec 18, 2022.
+     JAVASCRIPT APPENDED BY WAYBACK MACHINE, COPYRIGHT INTERNET ARCHIVE.
+
+     ALL OTHER CONTENT MAY ALSO BE PROTECTED BY COPYRIGHT (17 U.S.C.
+     SECTION 108(a)(3)).
+-->
+<!--
+playback timings (ms):
+  captures_list: 135.607
+  exclusion.robots: 0.062
+  exclusion.robots.policy: 0.056
+  RedisCDXSource: 2.182
+  esindex: 0.006
+  LoadShardBlock: 117.646 (3)
+  PetaboxLoader3.datanode: 122.99 (4)
+  CDXLines.iter: 13.567 (3)
+  load_resource: 79.357
+  PetaboxLoader3.resolve: 35.774
+-->

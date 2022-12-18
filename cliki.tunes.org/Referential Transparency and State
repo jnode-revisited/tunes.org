@@ -1,0 +1,51 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html><head><script src="//archive.org/includes/analytics.js?v=cf34f82" type="text/javascript"></script>
+<script type="text/javascript">window.addEventListener('DOMContentLoaded',function(){var v=archive_analytics.values;v.service='wb';v.server_name='wwwb-app227.us.archive.org';v.server_ms=331;archive_analytics.send_pageview({});});</script>
+<script type="text/javascript" src="/_static/js/bundle-playback.js?v=MzYkZ0TU" charset="utf-8"></script>
+<script type="text/javascript" src="/_static/js/wombat.js?v=UHAOicsW" charset="utf-8"></script>
+<script type="text/javascript">
+  __wm.init("https://web.archive.org/web");
+  __wm.wombat("http://cliki.tunes.org:80/Referential%20Transparency%20and%20State","20050306211125","https://web.archive.org/","web","/_static/",
+	      "1110143485");
+</script>
+<link rel="stylesheet" type="text/css" href="/_static/css/banner-styles.css?v=S1zqJCYt" />
+<link rel="stylesheet" type="text/css" href="/_static/css/iconochive.css?v=qtvMKcIJ" />
+<!-- End Wayback Rewrite JS Include -->
+<title>CTO : Referential Transparency and State</title><link rel="alternate" type="application/rss+xml" title="Recent Changes" href="https://web.archive.org/web/20050306211125/http://cliki.tunes.org/recent-changes.rdf"><link rel="stylesheet" href="https://web.archive.org/web/20050306211125cs_/http://cliki.tunes.org/admin/cliki.css"></head><body><div id="banner"><a title="CTO" class="logo" href="https://web.archive.org/web/20050306211125/http://cliki.tunes.org/">CTO</a> <span>CLiki for the TUNES project</span></div><div id="navbar"><a class="internal" href="https://web.archive.org/web/20050306211125/http://cliki.tunes.org/index">Home</a> <a class="internal" href="https://web.archive.org/web/20050306211125/http://cliki.tunes.org/Recent%20Changes">Recent Changes</a> <a class="internal" href="https://web.archive.org/web/20050306211125/http://cliki.tunes.org/CLiki">About CLiki</a> <a class="internal" href="https://web.archive.org/web/20050306211125/http://cliki.tunes.org/Text%20Formatting">Text Formatting</a> <a class="internal" onclick="if(name=window.prompt('New page name ([A-Za-z0-9 ])')) document.location='https://web.archive.org/web/20050306211125/http://cliki.tunes.org/edit/'+name ;return false;" href="/web/20050306211125/http://cliki.tunes.org/">Create New Page</a></div><div id="main"><h1>Referential Transparency and State</h1>A pair of <a class="internal" href="https://web.archive.org/web/20050306211125/http://cliki.tunes.org/term">term</a>s characterizing two useful ways of looking at a <a class="internal" href="https://web.archive.org/web/20050306211125/http://cliki.tunes.org/computing%20system">computing system</a>:
+
+<p><dl>
+<dt>Referential Transparency</dt>
+<dd>The view that all elements of a program are describable at some level of timelessness, or without reference to implicit context. Even more importantly, that the elements of a program can be exchanged and substituted reliably like terms in a set of mathematically-consistent equations. Such is the impetus behind <a class="internal" href="https://web.archive.org/web/20050306211125/http://cliki.tunes.org/functional">functional</a> programming: <a class="internal" href="https://web.archive.org/web/20050306211125/http://cliki.tunes.org/lazy%20evaluation">lazy evaluation</a> and <a class="internal" href="https://web.archive.org/web/20050306211125/http://cliki.tunes.org/concurrency">concurrency</a> are possible because of referentially-transparent semantics offered. Without time-invariant substitutability, evaluation order cannot be freely adjusted separately from the programmer's specification.</dd>
+<dt>State</dt>
+<dd>The view that all programs move through time, and have meaning (as <a class="internal" href="https://web.archive.org/web/20050306211125/http://cliki.tunes.org/information">information</a> content) that depends on actions which occur, altering the set of meaningful relationships between <a class="internal" href="https://web.archive.org/web/20050306211125/http://cliki.tunes.org/object">object</a>s within some outer domain of all possible values.</dd>
+</dl>
+
+<p>There are many ways in which the adherents of each camp attempt to embrace the other: within <a class="internal" href="https://web.archive.org/web/20050306211125/http://cliki.tunes.org/functional">functional</a> programming, there are <a class="internal" href="https://web.archive.org/web/20050306211125/http://cliki.tunes.org/monad">monad</a>s used and <a class="internal" href="https://web.archive.org/web/20050306211125/http://cliki.tunes.org/linear%20logic">linear</a> types. Stateful languages, while mostly categorized as <a class="internal" href="https://web.archive.org/web/20050306211125/http://cliki.tunes.org/imperative">imperative</a>, can also be <a class="internal" href="https://web.archive.org/web/20050306211125/http://cliki.tunes.org/logic">logic</a>al or equational in nature, where state is equivalent to the idea of reduction or evaluation. There is also the use of single static assignment forms of imperative languages, used in <a class="internal" href="https://web.archive.org/web/20050306211125/http://cliki.tunes.org/Sisal">Sisal</a> and many intermediate languages of compilers for the purpose of providing a portable yet provable encoding of programs.
+
+<p>This dichotomy of viewpoints is also expressed in the distinction between <a class="internal" href="https://web.archive.org/web/20050306211125/http://cliki.tunes.org/pure">pure</a> and impure, or <a class="internal" href="https://web.archive.org/web/20050306211125/http://cliki.tunes.org/side%20effect">side effect</a>ing, <a class="internal" href="https://web.archive.org/web/20050306211125/http://cliki.tunes.org/object">object</a>s. In a properly <a class="internal" href="https://web.archive.org/web/20050306211125/http://cliki.tunes.org/unified">unified</a> system, the distinction is purely a matter of linguistic perspective: determining what effects an object has vs. what side-effects it has depends on the notion of <a class="internal" href="https://web.archive.org/web/20050306211125/http://cliki.tunes.org/context">context</a> in general. Most languages avoid this issue by not providing rich-enough contexts or ways to modify them.
+
+<p><ul class="links">
+<li><a href="https://web.archive.org/web/20050306211125/http://www.cs.tcd.ie/publications/tech-reports/reports.01/TCD-CS-2001-31.pdf">Comparing Proofs about I/O in Three Paradigms</a>.
+<li><a class="internal" href="https://web.archive.org/web/20050306211125/http://cliki.tunes.org/Alan%20Bawden">Alan Bawden</a>'s thesis paper also provides an interesting way to view this, using his linear naming concept.
+</ul><hr><p><b>This page is linked from: </b> <a class="internal" href="https://web.archive.org/web/20050306211125/http://cliki.tunes.org/Duality">Duality</a> &nbsp; <a class="internal" href="https://web.archive.org/web/20050306211125/http://cliki.tunes.org/Linear%20Logic%20Comments">Linear Logic Comments</a> &nbsp; </div><div id="footer"><form action="https://web.archive.org/web/20050306211125/http://cliki.tunes.org/admin/search"><a class="internal" href="https://web.archive.org/web/20050306211125/http://cliki.tunes.org/edit/Referential%20Transparency%20and%20State">Edit page</a> | <a class="internal" href="https://web.archive.org/web/20050306211125/http://cliki.tunes.org/Referential%20Transparency%20and%20State?source">View source</a> | Revisions: <b title="Tue, 18 Mar 2003 19:13:14 GMT">0</b>  | <input name="words" size="30"><input type="submit" value="search"></form><div id="disclaimer">CTO pages can be modified by anyone at anytime.
+Imagine an appropriate disclaimer. Double it. Add two.</div></body></html></div><!--
+     FILE ARCHIVED ON 21:11:25 Mar 06, 2005 AND RETRIEVED FROM THE
+     INTERNET ARCHIVE ON 06:16:29 Dec 18, 2022.
+     JAVASCRIPT APPENDED BY WAYBACK MACHINE, COPYRIGHT INTERNET ARCHIVE.
+
+     ALL OTHER CONTENT MAY ALSO BE PROTECTED BY COPYRIGHT (17 U.S.C.
+     SECTION 108(a)(3)).
+-->
+<!--
+playback timings (ms):
+  captures_list: 187.441
+  exclusion.robots: 0.092
+  exclusion.robots.policy: 0.082
+  RedisCDXSource: 39.512
+  esindex: 0.019
+  LoadShardBlock: 129.692 (3)
+  PetaboxLoader3.datanode: 121.535 (4)
+  CDXLines.iter: 15.299 (3)
+  load_resource: 139.574
+  PetaboxLoader3.resolve: 128.596
+-->

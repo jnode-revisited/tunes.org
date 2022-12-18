@@ -1,0 +1,42 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html><head><script src="//archive.org/includes/analytics.js?v=cf34f82" type="text/javascript"></script>
+<script type="text/javascript">window.addEventListener('DOMContentLoaded',function(){var v=archive_analytics.values;v.service='wb';v.server_name='wwwb-app224.us.archive.org';v.server_ms=213;archive_analytics.send_pageview({});});</script>
+<script type="text/javascript" src="/_static/js/bundle-playback.js?v=MzYkZ0TU" charset="utf-8"></script>
+<script type="text/javascript" src="/_static/js/wombat.js?v=UHAOicsW" charset="utf-8"></script>
+<script type="text/javascript">
+  __wm.init("https://web.archive.org/web");
+  __wm.wombat("http://cliki.tunes.org:80/Aspect-Oriented%20Programming","20050312222417","https://web.archive.org/","web","/_static/",
+	      "1110666257");
+</script>
+<link rel="stylesheet" type="text/css" href="/_static/css/banner-styles.css?v=S1zqJCYt" />
+<link rel="stylesheet" type="text/css" href="/_static/css/iconochive.css?v=qtvMKcIJ" />
+<!-- End Wayback Rewrite JS Include -->
+<title>CTO : Aspect-Oriented Programming</title><link rel="alternate" type="application/rss+xml" title="Recent Changes" href="https://web.archive.org/web/20050312222417/http://cliki.tunes.org/recent-changes.rdf"><link rel="stylesheet" href="https://web.archive.org/web/20050312222417cs_/http://cliki.tunes.org/admin/cliki.css"></head><body><div id="banner"><a title="CTO" class="logo" href="https://web.archive.org/web/20050312222417/http://cliki.tunes.org/">CTO</a> <span>CLiki for the TUNES project</span></div><div id="navbar"><a class="internal" href="https://web.archive.org/web/20050312222417/http://cliki.tunes.org/index">Home</a> <a class="internal" href="https://web.archive.org/web/20050312222417/http://cliki.tunes.org/Recent%20Changes">Recent Changes</a> <a class="internal" href="https://web.archive.org/web/20050312222417/http://cliki.tunes.org/CLiki">About CLiki</a> <a class="internal" href="https://web.archive.org/web/20050312222417/http://cliki.tunes.org/Text%20Formatting">Text Formatting</a> <a class="internal" onclick="if(name=window.prompt('New page name ([A-Za-z0-9 ])')) document.location='https://web.archive.org/web/20050312222417/http://cliki.tunes.org/edit/'+name ;return false;" href="/web/20050312222417/http://cliki.tunes.org/">Create New Page</a></div><div id="main"><h1>Aspect-Oriented Programming</h1>The <a class="internal" href="https://web.archive.org/web/20050312222417/http://cliki.tunes.org/term">term</a> for a means of <a class="internal" href="https://web.archive.org/web/20050312222417/http://cliki.tunes.org/metaprogramming">metaprogramming</a> where a <a class="internal" href="https://web.archive.org/web/20050312222417/http://cliki.tunes.org/programming%20language">programming language</a> is separated into a core language and various domain-specific languages which express (ideally) orthogonal aspects of program behavior. One of the main benefits of this means of expression is that the aspect programs for a given system are often applicable across a wide range of elements of the system, in a <em>cross-cutting</em> manner. That is, the aspects pervasively effect the way that the system must be implemented while not addressing any of the core domain concerns of the application.
+
+<p>One of the drawbacks to this approach, beyond those of basic <a class="internal" href="https://web.archive.org/web/20050312222417/http://cliki.tunes.org/metaprogramming">metaprogramming</a>, are that the aspect domains are often only statically choosable per language. However, the benefits are that separate specification is possible, and that these systems combine to form valid programs in the original (non-core) programming language after <em>weave-time</em>, the part of compilation where the aspect programs are combined with the core language program.
+
+<p><ul class="links">
+<li><a href="https://web.archive.org/web/20050312222417/http://www.aosd.net/">Aspect-Oriented Software Development Community &amp; Conference</a>.
+</ul>
+<hr><p><b>Pages in this topic: </b> <a class="internal" href="https://web.archive.org/web/20050312222417/http://cliki.tunes.org/AspectC%2FC%2B%2B">AspectC/C++</a> &nbsp; <a class="internal" href="https://web.archive.org/web/20050312222417/http://cliki.tunes.org/AspectJ">AspectJ</a> &nbsp; <a class="internal" href="https://web.archive.org/web/20050312222417/http://cliki.tunes.org/AspectL">AspectL</a> &nbsp; <a class="internal" href="https://web.archive.org/web/20050312222417/http://cliki.tunes.org/AspectS">AspectS</a> &nbsp; <a class="internal" href="https://web.archive.org/web/20050312222417/http://cliki.tunes.org/Demeter">Demeter</a> &nbsp; <a class="internal" href="https://web.archive.org/web/20050312222417/http://cliki.tunes.org/Pike">Pike</a> &nbsp; <a class="internal" href="https://web.archive.org/web/20050312222417/http://cliki.tunes.org/TyRuBa">TyRuBa</a> &nbsp; <hr><p><b>Also linked from: </b> <a class="internal" href="https://web.archive.org/web/20050312222417/http://cliki.tunes.org/AOP">AOP</a> &nbsp; <a class="internal" href="https://web.archive.org/web/20050312222417/http://cliki.tunes.org/Gregor%20Kiczales">Gregor Kiczales</a> &nbsp; <a class="internal" href="https://web.archive.org/web/20050312222417/http://cliki.tunes.org/Methods%20of%20Reflection">Methods of Reflection</a> &nbsp; <a class="internal" href="https://web.archive.org/web/20050312222417/http://cliki.tunes.org/Mozart">Mozart</a> &nbsp; <a class="internal" href="https://web.archive.org/web/20050312222417/http://cliki.tunes.org/Mozart%2FOz">Mozart/Oz</a> &nbsp; <a class="internal" href="https://web.archive.org/web/20050312222417/http://cliki.tunes.org/Open%20Implementation">Open Implementation</a> &nbsp; <a class="internal" href="https://web.archive.org/web/20050312222417/http://cliki.tunes.org/PL%20101">PL 101</a> &nbsp; <a class="internal" href="https://web.archive.org/web/20050312222417/http://cliki.tunes.org/Sina">Sina</a> &nbsp; <a class="internal" href="https://web.archive.org/web/20050312222417/http://cliki.tunes.org/Smalltalk">Smalltalk</a> &nbsp; <a class="internal" href="https://web.archive.org/web/20050312222417/http://cliki.tunes.org/Socrates">Socrates</a> &nbsp; <a class="internal" href="https://web.archive.org/web/20050312222417/http://cliki.tunes.org/Transparent">Transparent</a> &nbsp; </div><div id="footer"><form action="https://web.archive.org/web/20050312222417/http://cliki.tunes.org/admin/search"><a class="internal" href="https://web.archive.org/web/20050312222417/http://cliki.tunes.org/edit/Aspect-Oriented%20Programming">Edit page</a> | <a class="internal" href="https://web.archive.org/web/20050312222417/http://cliki.tunes.org/Aspect-Oriented%20Programming?source">View source</a> | Revisions: <b title="Wed, 17 Nov 2004 00:37:41 GMT">1</b>  | <input name="words" size="30"><input type="submit" value="search"></form><div id="disclaimer">CTO pages can be modified by anyone at anytime.
+Imagine an appropriate disclaimer. Double it. Add two.</div></body></html></div><!--
+     FILE ARCHIVED ON 22:24:17 Mar 12, 2005 AND RETRIEVED FROM THE
+     INTERNET ARCHIVE ON 06:10:36 Dec 18, 2022.
+     JAVASCRIPT APPENDED BY WAYBACK MACHINE, COPYRIGHT INTERNET ARCHIVE.
+
+     ALL OTHER CONTENT MAY ALSO BE PROTECTED BY COPYRIGHT (17 U.S.C.
+     SECTION 108(a)(3)).
+-->
+<!--
+playback timings (ms):
+  captures_list: 125.216
+  exclusion.robots: 0.063
+  exclusion.robots.policy: 0.057
+  RedisCDXSource: 0.564
+  esindex: 0.007
+  LoadShardBlock: 109.224 (3)
+  PetaboxLoader3.datanode: 80.07 (4)
+  CDXLines.iter: 13.211 (3)
+  PetaboxLoader3.resolve: 77.251 (2)
+  load_resource: 83.599
+-->

@@ -1,0 +1,66 @@
+<html><head><script src="//archive.org/includes/analytics.js?v=cf34f82" type="text/javascript"></script>
+<script type="text/javascript">window.addEventListener('DOMContentLoaded',function(){var v=archive_analytics.values;v.service='wb';v.server_name='wwwb-app211.us.archive.org';v.server_ms=307;archive_analytics.send_pageview({});});</script>
+<script type="text/javascript" src="/_static/js/bundle-playback.js?v=MzYkZ0TU" charset="utf-8"></script>
+<script type="text/javascript" src="/_static/js/wombat.js?v=UHAOicsW" charset="utf-8"></script>
+<script type="text/javascript">
+  __wm.init("https://web.archive.org/web");
+  __wm.wombat("http://cliki.tunes.org:80/Abstract%20Algebra%20101","20031222183028","https://web.archive.org/","web","/_static/",
+	      "1072117828");
+</script>
+<link rel="stylesheet" type="text/css" href="/_static/css/banner-styles.css?v=S1zqJCYt" />
+<link rel="stylesheet" type="text/css" href="/_static/css/iconochive.css?v=qtvMKcIJ" />
+<!-- End Wayback Rewrite JS Include -->
+<title>TUNES : Abstract Algebra 101</title>
+<link rel="alternate" type="application/rss+xml" title="Recent Changes" href="https://web.archive.org/web/20031222183028/http://cliki.tunes.org/recent-changes.rdf"></link>
+<link rel="stylesheet" href="https://web.archive.org/web/20031222183028cs_/http://cliki.tunes.org/admin/cliki.css"></link>
+<link rel="shortcut icon" type="image/x-icon" href="https://web.archive.org/web/20031222183028im_/http://cliki.tunes.org/favicon.ico"></link>
+</head>
+<body><div class="navbar"><table width="100%"><tr><td colspan="3" class="disclaimer">CLiki pages can be edited by anybody at any time.  Imagine a <i>scarily comprehensive legal disclaimer</i>.  Double it.  Add two.  <!-- Now shut your eyes.  Dark, isn't it? --></td>
+</tr>
+</table>
+<center><table><tr><td><a href="https://web.archive.org/web/20031222183028/http://cliki.tunes.org/index">Home</a>
+</td>
+<td><a href="https://web.archive.org/web/20031222183028/http://cliki.tunes.org/Recent%20Changes">Recent Changes</a>
+</td>
+<td><a href="https://web.archive.org/web/20031222183028/http://cliki.tunes.org/CLiki">About CLiki</a>
+</td>
+<td><a href="https://web.archive.org/web/20031222183028/http://cliki.tunes.org/Text%20Formatting">Text Formatting</a>
+</td>
+<td><a onclick="if(name=window.prompt('New page name ([A-Za-z0-9 ])')) document.location='https://web.archive.org/web/20031222183028/http://cliki.tunes.org/edit/'+name ;return false;" href="#">Create new page</a>
+</td>
+</tr>
+</table>
+</center>
+</div>
+<h1>Abstract Algebra 101</h1>
+A <a class="internal" href="Learning%20Lounge" onmouseover="window.status='Learning Lounge'; return true" onmouseout="window.status='';">Learning Lounge</a> course.
+
+<p><ul class="links"><h4>Online books:</h4>
+<li><a href="https://web.archive.org/web/20031222183028/http://www.math.miami.edu/~ec/book/">Elements of Abstract and Linear Algebra</a>
+, E. H. Connell:
+  <blockquote>
+  [..] Most of the material in the first four chapters of this text is covered in various <span class="unexists">[discrete mathematics]<a class="internal" href="edit/Discrete%20Mathematics%20101" onmouseover="window.status='Create a Node for Discrete Mathematics 101'; return true">?</a></span> courses. [..] This book is a survey of abstract algebra with emphasis on linear algebra. It is intended for students in mathematics, computer science, and the physical sciences. The first three or four chapters can stand alone as a one semester course in abstract algebra. However they are structured to provide the background for the chapter on linear algebra. [..]
+  </blockquote>
+  On the same site there is also a forum dedicated to abstract and linear algebra.
+</li>
+</ul><hr><b>This page is linked from: </b> <a class="internal" href="Learning%20Lounge" onmouseover="window.status='Learning Lounge'; return true" onmouseout="window.status='';">Learning Lounge</a> &nbsp; <div class="footer"><form action="https://web.archive.org/web/20031222183028/http://cliki.tunes.org/admin/search"><a href="/web/20031222183028/http://cliki.tunes.org/view-source/Abstract%20Algebra%20101" class="nav" onmouseover="window.status='View the source'; return true">Show</a>/<a href="/web/20031222183028/http://cliki.tunes.org/edit/Abstract%20Algebra%20101" class="nav" onmouseover="window.status='Edit this page'; return true">Edit source</a> |  Last edit: Thu, 13 Nov 2003 08:41:04 | <a href="/web/20031222183028/http://cliki.tunes.org/history/Abstract%20Algebra%20101" class="nav" onmouseover="window.status='Show page history'; return true">History</a> | <a href="CLiki+Search" class="nav" onmouseover="window.status='Search all pages'; return true">Search:</a>&nbsp;<input name="words" size="20"></form></div><!--
+     FILE ARCHIVED ON 18:30:28 Dec 22, 2003 AND RETRIEVED FROM THE
+     INTERNET ARCHIVE ON 06:21:37 Dec 18, 2022.
+     JAVASCRIPT APPENDED BY WAYBACK MACHINE, COPYRIGHT INTERNET ARCHIVE.
+
+     ALL OTHER CONTENT MAY ALSO BE PROTECTED BY COPYRIGHT (17 U.S.C.
+     SECTION 108(a)(3)).
+-->
+<!--
+playback timings (ms):
+  captures_list: 78.176
+  exclusion.robots: 0.096
+  exclusion.robots.policy: 0.087
+  cdx.remote: 0.073
+  esindex: 0.012
+  LoadShardBlock: 50.559 (3)
+  PetaboxLoader3.datanode: 186.927 (4)
+  CDXLines.iter: 14.377 (3)
+  load_resource: 224.825
+  PetaboxLoader3.resolve: 79.505
+-->

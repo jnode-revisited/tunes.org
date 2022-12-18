@@ -1,0 +1,120 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html><head><script src="//archive.org/includes/analytics.js?v=cf34f82" type="text/javascript"></script>
+<script type="text/javascript">window.addEventListener('DOMContentLoaded',function(){var v=archive_analytics.values;v.service='wb';v.server_name='wwwb-app220.us.archive.org';v.server_ms=157;archive_analytics.send_pageview({});});</script>
+<script type="text/javascript" src="/_static/js/bundle-playback.js?v=MzYkZ0TU" charset="utf-8"></script>
+<script type="text/javascript" src="/_static/js/wombat.js?v=UHAOicsW" charset="utf-8"></script>
+<script type="text/javascript">
+  __wm.init("https://web.archive.org/web");
+  __wm.wombat("http://cliki.tunes.org:80/Learning%20Lounge","20050414222314","https://web.archive.org/","web","/_static/",
+	      "1113517394");
+</script>
+<link rel="stylesheet" type="text/css" href="/_static/css/banner-styles.css?v=S1zqJCYt" />
+<link rel="stylesheet" type="text/css" href="/_static/css/iconochive.css?v=qtvMKcIJ" />
+<!-- End Wayback Rewrite JS Include -->
+<title>CTO : Learning Lounge</title><link rel="alternate" type="application/rss+xml" title="Recent Changes" href="https://web.archive.org/web/20050414222314/http://cliki.tunes.org/recent-changes.rdf"><link rel="stylesheet" href="https://web.archive.org/web/20050414222314cs_/http://cliki.tunes.org/admin/cliki.css"></head><body><div id="banner"><a title="CTO" class="logo" href="https://web.archive.org/web/20050414222314/http://cliki.tunes.org/">CTO</a> <span>CLiki for the TUNES project</span></div><div id="navbar"><a class="internal" href="https://web.archive.org/web/20050414222314/http://cliki.tunes.org/index">Home</a> <a class="internal" href="https://web.archive.org/web/20050414222314/http://cliki.tunes.org/Recent%20Changes">Recent Changes</a> <a class="internal" href="https://web.archive.org/web/20050414222314/http://cliki.tunes.org/CLiki">About CLiki</a> <a class="internal" href="https://web.archive.org/web/20050414222314/http://cliki.tunes.org/Text%20Formatting">Text Formatting</a> <a class="internal" onclick="if(name=window.prompt('New page name ([A-Za-z0-9 ])')) document.location='https://web.archive.org/web/20050414222314/http://cliki.tunes.org/edit/'+name ;return false;" href="/web/20050414222314/http://cliki.tunes.org/">Create New Page</a></div><div id="main"><h1>Learning Lounge</h1>This is a list of what are (mostly as far as I <a class="internal" href="https://web.archive.org/web/20050414222314/http://cliki.tunes.org/SkrjabLin">SkrjabLin</a> understand) the most major and basic topics which one needs to master in order to be able to constructively participate in Tunes research and development at its current stage. (with "Tunes" currently meaning the different projects, by different people (i.e. currently the projects of <a class="internal" href="https://web.archive.org/web/20050414222314/http://cliki.tunes.org/Fran%E7ois-Ren%E9%20Rideau">François-René Rideau</a>, <a class="internal" href="https://web.archive.org/web/20050414222314/http://cliki.tunes.org/Brian%20T.%20Rice">Brian T. Rice</a> (the <a class="internal" href="https://web.archive.org/web/20050414222314/http://cliki.tunes.org/Arrow%20system">Arrow system</a>, <a class="internal" href="https://web.archive.org/web/20050414222314/http://cliki.tunes.org/Slate">Slate</a>) and Alexis Read<a class="internal" href="https://web.archive.org/web/20050414222314/http://cliki.tunes.org/edit/Alexis%20Read">?</a>), that more or less try to accomplish Tunes' specs, and are reported about on Tunes' mailing list.)
+
+<p>Suggested texts/books/papers to read are also given. This bibliography has been chosen using a mixture of the criteria (in no certain order of importance) Onlineness, Quality (i.e. wellwritten/pedagogical/correct etc.), Freeness.
+
+<p>Everybody is invited to make this page more complete and correct: filling in the gaps, replacing bad text with better, and removing unnecessary material. Keep it limited to the most central topics and the most central texts on these topics, preferrably listing just one or two recommended books -- the best and most concise ones.
+
+<p>So, the purpose of the page is to speed up for newcomers, as much as possible, the process of getting some deeper clues and overview of Tunes, not to list in an unstructured manner every possible resource that has some little relevance to some obscure part of the project (there is already the <a class="internal" href="https://web.archive.org/web/20050414222314/http://cliki.tunes.org/Review">Review</a> area, several parts of which do something like that).  If you need help navigating
+through this material, please visit the <a class="internal" href="https://web.archive.org/web/20050414222314/http://cliki.tunes.org/Newbie%20Support">Newbie Support</a> area.
+
+<p><h2>Organisation</h2>
+
+<p>The topics below have been ordered in something like quasi-college-courses, and these courses are sorted in larger categories.
+
+<p>The idea is like this: for now, it appears you have to have a basic understanding of roughly all of the stuff below in order to help with Tunes, and that's quite a lot. [It takes some time, but it's not impossible: myself I didn't know very much at all and didn't think I was really fit for all the formal mathematical things here, but now, after some half year of studies on spare time only, I already feel quite knowledgeable about at least some Tunes-aspects. You will probably make it quicker than me, since you're probably cleverer, or may have more knowledge already. You also have this Lounge to guide you. S.] But in trying to reach this final goal, you might, on the way, through some little strategy and planning in your learning, achieve guru-ship in some of the sub-subjects. Such gained knowledge may be usable also in non-Tunes-related contexts.
+
+<p>Also observe the category of <em>End Goals For Learning</em> below. The idea is that all other stuff mentioned on this page should be a prerequisite to at least one of these End Goals. For now, there are only very general end goals, but it is hoped that in the future, when some sort of basic foundation has been laid for Tunes, there will exist limited sub-tasks for Tunes R&D; (some of which might correspond to the <a class="internal" href="https://web.archive.org/web/20050414222314/http://cliki.tunes.org/SubProject">SubProject</a>s) with more limited knowledge prerequisites, and those would then be listed here.
+
+<p><h2>End Goals For Learning</h2>
+
+<p><ul>
+<li><a class="internal" href="https://web.archive.org/web/20050414222314/http://cliki.tunes.org/Tunes%20101">Tunes 101</a>: Intro to tunes for the usual C++ programmer. Prerequisites: none.
+<li><a class="internal" href="https://web.archive.org/web/20050414222314/http://cliki.tunes.org/Tunes%20102">Tunes 102</a>: Deeper insights. Prerequisites: most stuff in comp-sci category below.
+<li><a class="internal" href="https://web.archive.org/web/20050414222314/http://cliki.tunes.org/Slate%20101">Slate 101</a>: the Slate language. Prerequisites: <a class="internal" href="https://web.archive.org/web/20050414222314/http://cliki.tunes.org/PL%20101">PL 101</a>
+<li><a class="internal" href="https://web.archive.org/web/20050414222314/http://cliki.tunes.org/Arrow%20101">Arrow 101</a>: Grasping the <a class="internal" href="https://web.archive.org/web/20050414222314/http://cliki.tunes.org/Arrow%20system">Arrow system</a>. Prerequisites: Logics and Maths.
+<li><a class="internal" href="https://web.archive.org/web/20050414222314/http://cliki.tunes.org/Hidden%20Algebra">Hidden Algebra</a>.
+</ul>
+
+<p><h2>Programming Languages, Etc.</h2>
+
+<p><p><ul>
+<li><a class="internal" href="https://web.archive.org/web/20050414222314/http://cliki.tunes.org/PL%20101">PL 101</a>: a somewhat gentle introduction to modern programming paradigms. Prerequisites: none.</li>
+<li><a class="internal" href="https://web.archive.org/web/20050414222314/http://cliki.tunes.org/Joy%20101">Joy 101</a>; <a class="internal" href="https://web.archive.org/web/20050414222314/http://cliki.tunes.org/Monads%20101">Monads 101</a>. Prerequisites: in order to get some deeper understanding, <a class="internal" href="https://web.archive.org/web/20050414222314/http://cliki.tunes.org/Category%20Theory%20101">Category Theory 101</a>.</li>
+</ul>
+
+<p><h2>System Design and Implementation</h2>
+
+<p><ul>
+<li><a class="internal" href="https://web.archive.org/web/20050414222314/http://cliki.tunes.org/Persistence%20101">Persistence 101</a></li>
+</ul>
+
+<p><h2>Basic Logic / Maths / Comp Sci</h2>
+
+<p><ul>
+<li><a class="internal" href="https://web.archive.org/web/20050414222314/http://cliki.tunes.org/Appetizers">Appetizers</a>: books that give you a broad insightful view of what computers can or cannot do.</li>
+<li><a class="internal" href="https://web.archive.org/web/20050414222314/http://cliki.tunes.org/Category%20Theory%20101">Category Theory 101</a>. Prerequisites: none, if you read the right book.
+<li><a class="internal" href="https://web.archive.org/web/20050414222314/http://cliki.tunes.org/Basic%20Logic%20101">Basic Logic 101</a>: classical predicate logic, metalogic, turing-machines/recursion theory/proof theory, model theory, a little set theory etc. Prerequisites: none.</li>
+<li><a class="internal" href="https://web.archive.org/web/20050414222314/http://cliki.tunes.org/Abstract%20Algebra%20101">Abstract Algebra 101</a>.</li>
+<li>Discrete Mathematics 101<a class="internal" href="https://web.archive.org/web/20050414222314/http://cliki.tunes.org/edit/Discrete%20Mathematics%20101">?</a>.</li>
+<li><a class="internal" href="https://web.archive.org/web/20050414222314/http://cliki.tunes.org/Basic%20Computer%20Science">Basic Computer Science</a>: lambda calculus, the Curry-Howard isomorphism and more.</li>
+<li><a class="internal" href="https://web.archive.org/web/20050414222314/http://cliki.tunes.org/Programming%20Language%20Semantics%20101">Programming Language Semantics 101</a></li>
+</ul>
+
+<p><h2>Tunes-Central Topics In Theoretical Comp-Sci</h2>
+
+<p>Prerequisites for these are, typically, <a class="internal" href="https://web.archive.org/web/20050414222314/http://cliki.tunes.org/PL%20101">PL 101</a> and various things from the category Basic Logic/Maths/Comp-sci above.
+
+<p><ul>
+<li><a class="internal" href="https://web.archive.org/web/20050414222314/http://cliki.tunes.org/Reflection%20101">Reflection 101</a></li>
+<li><a class="internal" href="https://web.archive.org/web/20050414222314/http://cliki.tunes.org/Rewrite%20Logic%20101">Rewrite Logic 101</a></li>
+<li><a class="internal" href="https://web.archive.org/web/20050414222314/http://cliki.tunes.org/Partial%20Evaluation%20101">Partial Evaluation 101</a></li>
+<li><a class="internal" href="https://web.archive.org/web/20050414222314/http://cliki.tunes.org/Linearity%20101">Linearity 101</a>: linear logic, naming, typing.</li>
+<li><a class="internal" href="https://web.archive.org/web/20050414222314/http://cliki.tunes.org/Parallelism%20101">Parallelism 101</a>: concurrency and distribution.
+</ul>
+
+<p><h2>Diverse Topics in Logic / Maths</h2>
+
+<p><ul>
+<li><a class="internal" href="https://web.archive.org/web/20050414222314/http://cliki.tunes.org/Coinduction%20101">Coinduction 101</a>.</li>
+<li><a class="internal" href="https://web.archive.org/web/20050414222314/http://cliki.tunes.org/Arrow%20Logic%20101">Arrow Logic 101</a>.</li>
+<li><a class="internal" href="https://web.archive.org/web/20050414222314/http://cliki.tunes.org/Substructural%20Logics%20101">Substructural Logics 101</a>: Said to be one useful part of a deeper formal understanding of the Arrow system. The connection will perhaps be explained soon in a new Arrow paper. Prerequisites: <a class="internal" href="https://web.archive.org/web/20050414222314/http://cliki.tunes.org/Basic%20Logic%20101">Basic Logic 101</a>.</li>
+</ul>
+
+<p><h2>Philosophy</h2>
+
+<p><em>Philosophical semantics</em>: This very wide and undefined topic is very central to Tunes. Don't know what would be recommendably relevant material, though.
+
+<p><h2>Other Resources</h2>
+
+<p><a href="https://web.archive.org/web/20050414222314/http://www.cs.uu.nl/~franka/ref">Programming language theory texts online</a>: A few central online cs texts.
+
+<p><h2>To Do</h2>
+
+<p>Short descriptions of the ways in which the different topics relate to Tunes.
+
+<p>For each topic, one or a few essential papers, and a pointer to some resource.
+<hr><p><b>Pages in this topic: </b> <a class="internal" href="https://web.archive.org/web/20050414222314/http://cliki.tunes.org/Abstract%20Algebra%20101">Abstract Algebra 101</a> &nbsp; <a class="internal" href="https://web.archive.org/web/20050414222314/http://cliki.tunes.org/Appetizers">Appetizers</a> &nbsp; <a class="internal" href="https://web.archive.org/web/20050414222314/http://cliki.tunes.org/Arrow%20101">Arrow 101</a> &nbsp; <a class="internal" href="https://web.archive.org/web/20050414222314/http://cliki.tunes.org/Arrow%20Logic%20101">Arrow Logic 101</a> &nbsp; <a class="internal" href="https://web.archive.org/web/20050414222314/http://cliki.tunes.org/Basic%20Computer%20Science">Basic Computer Science</a> &nbsp; <a class="internal" href="https://web.archive.org/web/20050414222314/http://cliki.tunes.org/Basic%20Logic%20101">Basic Logic 101</a> &nbsp; <a class="internal" href="https://web.archive.org/web/20050414222314/http://cliki.tunes.org/Category%20Theory%20101">Category Theory 101</a> &nbsp; <a class="internal" href="https://web.archive.org/web/20050414222314/http://cliki.tunes.org/Coinduction%20101">Coinduction 101</a> &nbsp; <a class="internal" href="https://web.archive.org/web/20050414222314/http://cliki.tunes.org/Joy%20101">Joy 101</a> &nbsp; <a class="internal" href="https://web.archive.org/web/20050414222314/http://cliki.tunes.org/Linearity%20101">Linearity 101</a> &nbsp; <a class="internal" href="https://web.archive.org/web/20050414222314/http://cliki.tunes.org/Monads%20101">Monads 101</a> &nbsp; <a class="internal" href="https://web.archive.org/web/20050414222314/http://cliki.tunes.org/Parallelism%20101">Parallelism 101</a> &nbsp; <a class="internal" href="https://web.archive.org/web/20050414222314/http://cliki.tunes.org/Partial%20Evaluation%20101">Partial Evaluation 101</a> &nbsp; <a class="internal" href="https://web.archive.org/web/20050414222314/http://cliki.tunes.org/Persistence%20101">Persistence 101</a> &nbsp; <a class="internal" href="https://web.archive.org/web/20050414222314/http://cliki.tunes.org/PL%20101">PL 101</a> &nbsp; <a class="internal" href="https://web.archive.org/web/20050414222314/http://cliki.tunes.org/Programming%20Language%20Semantics%20101">Programming Language Semantics 101</a> &nbsp; <a class="internal" href="https://web.archive.org/web/20050414222314/http://cliki.tunes.org/Reflection%20101">Reflection 101</a> &nbsp; <a class="internal" href="https://web.archive.org/web/20050414222314/http://cliki.tunes.org/Rewrite%20Logic%20101">Rewrite Logic 101</a> &nbsp; <a class="internal" href="https://web.archive.org/web/20050414222314/http://cliki.tunes.org/Slate%20101">Slate 101</a> &nbsp; <a class="internal" href="https://web.archive.org/web/20050414222314/http://cliki.tunes.org/Substructural%20Logics%20101">Substructural Logics 101</a> &nbsp; <a class="internal" href="https://web.archive.org/web/20050414222314/http://cliki.tunes.org/Tunes%20101">Tunes 101</a> &nbsp; <a class="internal" href="https://web.archive.org/web/20050414222314/http://cliki.tunes.org/Tunes%20102">Tunes 102</a> &nbsp; <hr><p><b>Also linked from: </b> <a class="internal" href="https://web.archive.org/web/20050414222314/http://cliki.tunes.org/Activities">Activities</a> &nbsp; <a class="internal" href="https://web.archive.org/web/20050414222314/http://cliki.tunes.org/Essay">Essay</a> &nbsp; <a class="internal" href="https://web.archive.org/web/20050414222314/http://cliki.tunes.org/index">index</a> &nbsp; <a class="internal" href="https://web.archive.org/web/20050414222314/http://cliki.tunes.org/Monad">Monad</a> &nbsp; <a class="internal" href="https://web.archive.org/web/20050414222314/http://cliki.tunes.org/Newbie%20Support">Newbie Support</a> &nbsp; <a class="internal" href="https://web.archive.org/web/20050414222314/http://cliki.tunes.org/Site%20Map">Site Map</a> &nbsp; <a class="internal" href="https://web.archive.org/web/20050414222314/http://cliki.tunes.org/SkrjabLin">SkrjabLin</a> &nbsp; </div><div id="footer"><form action="https://web.archive.org/web/20050414222314/http://cliki.tunes.org/admin/search"><a class="internal" href="https://web.archive.org/web/20050414222314/http://cliki.tunes.org/edit/Learning%20Lounge">Edit page</a> | <a class="internal" href="https://web.archive.org/web/20050414222314/http://cliki.tunes.org/Learning%20Lounge?source">View source</a> | Revisions: <a href="https://web.archive.org/web/20050414222314/http://cliki.tunes.org/Learning%20Lounge?v=1" title="Tue, 13 Apr 2004 08:15:36 GMT">1</a> <b title="Tue, 13 Apr 2004 15:38:56 GMT">2</b>  | <input name="words" size="30"><input type="submit" value="search"></form><div id="disclaimer">CTO pages can be modified by anyone at anytime.
+Imagine an appropriate disclaimer. Double it. Add two.</div></body></html></div><!--
+     FILE ARCHIVED ON 22:23:14 Apr 14, 2005 AND RETRIEVED FROM THE
+     INTERNET ARCHIVE ON 06:15:02 Dec 18, 2022.
+     JAVASCRIPT APPENDED BY WAYBACK MACHINE, COPYRIGHT INTERNET ARCHIVE.
+
+     ALL OTHER CONTENT MAY ALSO BE PROTECTED BY COPYRIGHT (17 U.S.C.
+     SECTION 108(a)(3)).
+-->
+<!--
+playback timings (ms):
+  captures_list: 57.836
+  exclusion.robots: 0.083
+  exclusion.robots.policy: 0.075
+  RedisCDXSource: 0.691
+  esindex: 0.01
+  LoadShardBlock: 37.671 (3)
+  PetaboxLoader3.datanode: 69.97 (4)
+  CDXLines.iter: 16.487 (3)
+  load_resource: 91.067
+  PetaboxLoader3.resolve: 38.443
+-->

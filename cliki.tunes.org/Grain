@@ -1,0 +1,48 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html><head><script src="//archive.org/includes/analytics.js?v=cf34f82" type="text/javascript"></script>
+<script type="text/javascript">window.addEventListener('DOMContentLoaded',function(){var v=archive_analytics.values;v.service='wb';v.server_name='wwwb-app219.us.archive.org';v.server_ms=360;archive_analytics.send_pageview({});});</script>
+<script type="text/javascript" src="/_static/js/bundle-playback.js?v=MzYkZ0TU" charset="utf-8"></script>
+<script type="text/javascript" src="/_static/js/wombat.js?v=UHAOicsW" charset="utf-8"></script>
+<script type="text/javascript">
+  __wm.init("https://web.archive.org/web");
+  __wm.wombat("http://cliki.tunes.org:80/Grain","20050412160754","https://web.archive.org/","web","/_static/",
+	      "1113322074");
+</script>
+<link rel="stylesheet" type="text/css" href="/_static/css/banner-styles.css?v=S1zqJCYt" />
+<link rel="stylesheet" type="text/css" href="/_static/css/iconochive.css?v=qtvMKcIJ" />
+<!-- End Wayback Rewrite JS Include -->
+<title>CTO : Grain</title><link rel="alternate" type="application/rss+xml" title="Recent Changes" href="https://web.archive.org/web/20050412160754/http://cliki.tunes.org/recent-changes.rdf"><link rel="stylesheet" href="https://web.archive.org/web/20050412160754cs_/http://cliki.tunes.org/admin/cliki.css"></head><body><div id="banner"><a title="CTO" class="logo" href="https://web.archive.org/web/20050412160754/http://cliki.tunes.org/">CTO</a> <span>CLiki for the TUNES project</span></div><div id="navbar"><a class="internal" href="https://web.archive.org/web/20050412160754/http://cliki.tunes.org/index">Home</a> <a class="internal" href="https://web.archive.org/web/20050412160754/http://cliki.tunes.org/Recent%20Changes">Recent Changes</a> <a class="internal" href="https://web.archive.org/web/20050412160754/http://cliki.tunes.org/CLiki">About CLiki</a> <a class="internal" href="https://web.archive.org/web/20050412160754/http://cliki.tunes.org/Text%20Formatting">Text Formatting</a> <a class="internal" onclick="if(name=window.prompt('New page name ([A-Za-z0-9 ])')) document.location='https://web.archive.org/web/20050412160754/http://cliki.tunes.org/edit/'+name ;return false;" href="/web/20050412160754/http://cliki.tunes.org/">Create New Page</a></div><div id="main"><h1>Grain</h1>A <a class="internal" href="https://web.archive.org/web/20050412160754/http://cliki.tunes.org/term">term</a> for the minimal or typical size of <a class="internal" href="https://web.archive.org/web/20050412160754/http://cliki.tunes.org/object">object</a>s a system can handle. The larger this size, the coarser the grain; the smaller this size, the finer the grain.
+
+<p>The coarser the grain, the more expensive it is to create, handle, maintain, dispatch, <a class="internal" href="https://web.archive.org/web/20050412160754/http://cliki.tunes.org/object">object</a>s. Thus, <a class="internal" href="https://web.archive.org/web/20050412160754/http://cliki.tunes.org/computing%20liberalism">computing liberalism</a> tells us that to have a system that adapts better, you must reduce the grain as much as possible.
+
+<p>However, handling <a class="internal" href="https://web.archive.org/web/20050412160754/http://cliki.tunes.org/object">object</a>s may involve overhead in <a class="internal" href="https://web.archive.org/web/20050412160754/http://cliki.tunes.org/administration">administration</a>. Thus, to achieve a better system, you must also reduce the administratrivia together with the grain, wherever possible.
+
+<p>Traditional <a class="internal" href="https://web.archive.org/web/20050412160754/http://cliki.tunes.org/Operating%20System">Operating System</a>s have a very high grain (the basic <a class="internal" href="https://web.archive.org/web/20050412160754/http://cliki.tunes.org/object">object</a> size being a file, and the typical packaging grain being the huge "application"), thus yielding poor performance and adaptability. The insecure <a class="internal" href="https://web.archive.org/web/20050412160754/http://cliki.tunes.org/C%20language">C</a> forbids a smaller grain. As long as OSes will use such a language, the <a class="internal" href="https://web.archive.org/web/20050412160754/http://cliki.tunes.org/computer%20industry">computer industry</a> is bound to poor results.
+
+<p>Actually, traditional system design bears the stigmata of a long past time when computer resources were much more expensive than human programming resources, so that people would relieve as much as possible the computer from bookkeeping tasks, so as to focus use of computer space and time resources on actual computations. Hence, programs had to be hand-optimized in space and time, so as to fit the available resources; the resources allocated to <a class="internal" href="https://web.archive.org/web/20050412160754/http://cliki.tunes.org/meta-">meta-</a>data and <a class="internal" href="https://web.archive.org/web/20050412160754/http://cliki.tunes.org/metaprogramming">meta-programs</a> were minimal, so that an automatic <a class="internal" href="https://web.archive.org/web/20050412160754/http://cliki.tunes.org/higher-order">higher-order</a> <a class="internal" href="https://web.archive.org/web/20050412160754/http://cliki.tunes.org/module">module</a> system for fine-grained <a class="internal" href="https://web.archive.org/web/20050412160754/http://cliki.tunes.org/object">object</a>s was unconceivable, or considered far too costly. People then designed programming paradigms centered around coarse-grained programs, and even as hardware evolved, made it follow that model.
+
+<p>Today, the price of computer resources has dropped drastically, and the balance is largely overweight in the other way: qualified human resources cost much more than the computer cycles and bits needed for bookkeeping of an evergrowing base of data. Still, <a class="internal" href="https://web.archive.org/web/20050412160754/http://cliki.tunes.org/conservatism">conservatism</a> is such that computer system design is always mostly centered around the old paradigms of human management of resources and consistency among coarse-grained <a class="internal" href="https://web.archive.org/web/20050412160754/http://cliki.tunes.org/object">object</a>s.
+
+<p>A great brake to changing the model, is that proprietary software vendor<a class="internal" href="https://web.archive.org/web/20050412160754/http://cliki.tunes.org/edit/vendor">?</a>s benefit from a coarse-grainedness of <a class="internal" href="https://web.archive.org/web/20050412160754/http://cliki.tunes.org/object">object</a>s. It allows them to sell a bigger product, while preventing people to replace part of their software with better parts, or buy (and claim to pay) only the small part or upgrade they need that previously-sold software did not support or did not support well. They thus can make hostages out of customers, as these are subject to them for any improvement in purchased software.
+<hr><p><b>This page is linked from: </b> <a class="internal" href="https://web.archive.org/web/20050412160754/http://cliki.tunes.org/Computer%20Industry">Computer Industry</a> &nbsp; <a class="internal" href="https://web.archive.org/web/20050412160754/http://cliki.tunes.org/Computing%20Liberalism">Computing Liberalism</a> &nbsp; <a class="internal" href="https://web.archive.org/web/20050412160754/http://cliki.tunes.org/Ellie">Ellie</a> &nbsp; <a class="internal" href="https://web.archive.org/web/20050412160754/http://cliki.tunes.org/Metatext">Metatext</a> &nbsp; <a class="internal" href="https://web.archive.org/web/20050412160754/http://cliki.tunes.org/Microkernel">Microkernel</a> &nbsp; <a class="internal" href="https://web.archive.org/web/20050412160754/http://cliki.tunes.org/Microkernel%20Debate">Microkernel Debate</a> &nbsp; <a class="internal" href="https://web.archive.org/web/20050412160754/http://cliki.tunes.org/Plan9">Plan9</a> &nbsp; <a class="internal" href="https://web.archive.org/web/20050412160754/http://cliki.tunes.org/Process">Process</a> &nbsp; <a class="internal" href="https://web.archive.org/web/20050412160754/http://cliki.tunes.org/Semantics">Semantics</a> &nbsp; <a class="internal" href="https://web.archive.org/web/20050412160754/http://cliki.tunes.org/Synthetix">Synthetix</a> &nbsp; <a class="internal" href="https://web.archive.org/web/20050412160754/http://cliki.tunes.org/Thread">Thread</a> &nbsp; </div><div id="footer"><form action="https://web.archive.org/web/20050412160754/http://cliki.tunes.org/admin/search"><a class="internal" href="https://web.archive.org/web/20050412160754/http://cliki.tunes.org/edit/Grain">Edit page</a> | <a class="internal" href="https://web.archive.org/web/20050412160754/http://cliki.tunes.org/Grain?source">View source</a> | Revisions: <b title="Mon, 31 May 2004 17:59:03 GMT">1</b>  | <input name="words" size="30"><input type="submit" value="search"></form><div id="disclaimer">CTO pages can be modified by anyone at anytime.
+Imagine an appropriate disclaimer. Double it. Add two.</div></body></html></div><!--
+     FILE ARCHIVED ON 16:07:54 Apr 12, 2005 AND RETRIEVED FROM THE
+     INTERNET ARCHIVE ON 06:13:10 Dec 18, 2022.
+     JAVASCRIPT APPENDED BY WAYBACK MACHINE, COPYRIGHT INTERNET ARCHIVE.
+
+     ALL OTHER CONTENT MAY ALSO BE PROTECTED BY COPYRIGHT (17 U.S.C.
+     SECTION 108(a)(3)).
+-->
+<!--
+playback timings (ms):
+  captures_list: 224.966
+  exclusion.robots: 0.064
+  exclusion.robots.policy: 0.058
+  cdx.remote: 0.048
+  esindex: 0.008
+  LoadShardBlock: 196.764 (3)
+  PetaboxLoader3.datanode: 255.783 (4)
+  CDXLines.iter: 11.665 (3)
+  load_resource: 132.428
+  PetaboxLoader3.resolve: 44.809
+-->

@@ -1,0 +1,63 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html><head><script src="//archive.org/includes/analytics.js?v=cf34f82" type="text/javascript"></script>
+<script type="text/javascript">window.addEventListener('DOMContentLoaded',function(){var v=archive_analytics.values;v.service='wb';v.server_name='wwwb-app228.us.archive.org';v.server_ms=134;archive_analytics.send_pageview({});});</script>
+<script type="text/javascript" src="/_static/js/bundle-playback.js?v=MzYkZ0TU" charset="utf-8"></script>
+<script type="text/javascript" src="/_static/js/wombat.js?v=UHAOicsW" charset="utf-8"></script>
+<script type="text/javascript">
+  __wm.init("https://web.archive.org/web");
+  __wm.wombat("http://cliki.tunes.org:80/Exokernel","20050403184944","https://web.archive.org/","web","/_static/",
+	      "1112554184");
+</script>
+<link rel="stylesheet" type="text/css" href="/_static/css/banner-styles.css?v=S1zqJCYt" />
+<link rel="stylesheet" type="text/css" href="/_static/css/iconochive.css?v=qtvMKcIJ" />
+<!-- End Wayback Rewrite JS Include -->
+<title>CTO : Exokernel</title><link rel="alternate" type="application/rss+xml" title="Recent Changes" href="https://web.archive.org/web/20050403184944/http://cliki.tunes.org/recent-changes.rdf"><link rel="stylesheet" href="https://web.archive.org/web/20050403184944cs_/http://cliki.tunes.org/admin/cliki.css"></head><body><div id="banner"><a title="CTO" class="logo" href="https://web.archive.org/web/20050403184944/http://cliki.tunes.org/">CTO</a> <span>CLiki for the TUNES project</span></div><div id="navbar"><a class="internal" href="https://web.archive.org/web/20050403184944/http://cliki.tunes.org/index">Home</a> <a class="internal" href="https://web.archive.org/web/20050403184944/http://cliki.tunes.org/Recent%20Changes">Recent Changes</a> <a class="internal" href="https://web.archive.org/web/20050403184944/http://cliki.tunes.org/CLiki">About CLiki</a> <a class="internal" href="https://web.archive.org/web/20050403184944/http://cliki.tunes.org/Text%20Formatting">Text Formatting</a> <a class="internal" onclick="if(name=window.prompt('New page name ([A-Za-z0-9 ])')) document.location='https://web.archive.org/web/20050403184944/http://cliki.tunes.org/edit/'+name ;return false;" href="/web/20050403184944/http://cliki.tunes.org/">Create New Page</a></div><div id="main"><h1>Exokernel</h1>A <a class="internal" href="https://web.archive.org/web/20050403184944/http://cliki.tunes.org/OS">OS</a> project from MIT. From its home page (see below):
+<blockquote>
+...
+<br><strong>An exokernel eliminates the notion that an <a class="internal" href="https://web.archive.org/web/20050403184944/http://cliki.tunes.org/operating%20system">operating system</a> should provide <a class="internal" href="https://web.archive.org/web/20050403184944/http://cliki.tunes.org/abstraction">abstraction</a>s on which applications are built</strong>. Instead, it concentrates solely on <a class="internal" href="https://web.archive.org/web/20050403184944/http://cliki.tunes.org/security">securely</a> multiplexing the raw hardware: from basic hardware primitives, application-level libraries and servers can directly implement traditional operating system abstractions, specialized for appropriateness and speed.
+<br>...
+</blockquote>
+
+<p><ul class="implementations">
+<li><a href="https://web.archive.org/web/20050403184944/http://www.pdos.lcs.mit.edu/exo.html">MIT Exokernel Operating System</a>
+</ul>
+
+<p><ul class="links"><h4>Relevant documentation</h4>
+<li><a href="https://web.archive.org/web/20050403184944/http://www.pdos.lcs.mit.edu/papers/hotos-jeremiad.ps">Exterminate all operating system abstractions</a> (.ps): this paper introduce the key concept of exokernels
+<li><a href="https://web.archive.org/web/20050403184944/http://amsterdam.lcs.mit.edu/exo/docs.html">documentation</a>
+<li>PDOS Publications, <a href="https://web.archive.org/web/20050403184944/http://amsterdam.lcs.mit.edu/PDOS-papers.html#Exokernels">Exokernels</a>
+</ul>
+
+<p><hr>
+What follow was the old, inadequate definition of exokernel: someway, during the transition to <a class="internal" href="https://web.archive.org/web/20050403184944/http://cliki.tunes.org/Cliki">Cliki</a>, our awareness regarding exokernels was not adequately reported.
+
+<p><blockquote>
+A <a class="internal" href="https://web.archive.org/web/20050403184944/http://cliki.tunes.org/microkernel">microkernel</a> <a class="internal" href="https://web.archive.org/web/20050403184944/http://cliki.tunes.org/OS">OS</a> project from MIT, which seems to have the most features divorced from its core of all of them.
+
+<p><span class="comment">An exokernel is not a <a class="internal" href="https://web.archive.org/web/20050403184944/http://cliki.tunes.org/microkernel">microkernel</a>.  It is a fundamentally different architecture, whereby the <a class="internal" href="https://web.archive.org/web/20050403184944/http://cliki.tunes.org/kernel">kernel</a> is predominently monolithic in nature, but the services normally offered by a monolithic kernel to applications are pushed up into user-space libraries, called library operating systems. This is how an exokernel achieves flexibility and performance gains; applications need only use the parts of the OS that are necessary, rather than being forced to deal with all the abstractions that are normally enforced by monolithic kernels, including microkernels.
+<br>-- <a class="internal" href="https://web.archive.org/web/20050403184944/http://cliki.tunes.org/A%20N%20Other">A N Other</a></span>
+
+<p><span class="comment">The debate <strong>monolithic <a class="internal" href="https://web.archive.org/web/20050403184944/http://cliki.tunes.org/kernel">kernel</a>s</strong> <em>vs</em> <strong><a class="internal" href="https://web.archive.org/web/20050403184944/http://cliki.tunes.org/microkernel">microkernel</a>s</strong> is uninteresting for <a class="internal" href="https://web.archive.org/web/20050403184944/http://cliki.tunes.org/Tunes">Tunes</a>, which is about <a class="internal" href="https://web.archive.org/web/20050403184944/http://cliki.tunes.org/No-Kernel">No-Kernel</a> systems.
+<br>-- <a class="internal" href="https://web.archive.org/web/20050403184944/http://cliki.tunes.org/MaD70">MaD70</a></span>
+</blockquote>
+<hr><p><b>This page is linked from: </b> <a class="internal" href="https://web.archive.org/web/20050403184944/http://cliki.tunes.org/Microkernel%20Debate">Microkernel Debate</a> &nbsp; </div><div id="footer"><form action="https://web.archive.org/web/20050403184944/http://cliki.tunes.org/admin/search"><a class="internal" href="https://web.archive.org/web/20050403184944/http://cliki.tunes.org/edit/Exokernel">Edit page</a> | <a class="internal" href="https://web.archive.org/web/20050403184944/http://cliki.tunes.org/Exokernel?source">View source</a> | Revisions: <a href="https://web.archive.org/web/20050403184944/http://cliki.tunes.org/Exokernel?v=1" title="Tue, 28 Sep 2004 03:52:31 GMT">1</a> <a href="https://web.archive.org/web/20050403184944/http://cliki.tunes.org/Exokernel?v=2" title="Sat, 02 Oct 2004 16:02:22 GMT">2</a> <a href="https://web.archive.org/web/20050403184944/http://cliki.tunes.org/Exokernel?v=3" title="Tue, 05 Oct 2004 05:40:21 GMT">3</a> <b title="Tue, 05 Oct 2004 10:22:22 GMT">4</b>  | <input name="words" size="30"><input type="submit" value="search"></form><div id="disclaimer">CTO pages can be modified by anyone at anytime.
+Imagine an appropriate disclaimer. Double it. Add two.</div></body></html></div><!--
+     FILE ARCHIVED ON 18:49:44 Apr 03, 2005 AND RETRIEVED FROM THE
+     INTERNET ARCHIVE ON 06:07:07 Dec 18, 2022.
+     JAVASCRIPT APPENDED BY WAYBACK MACHINE, COPYRIGHT INTERNET ARCHIVE.
+
+     ALL OTHER CONTENT MAY ALSO BE PROTECTED BY COPYRIGHT (17 U.S.C.
+     SECTION 108(a)(3)).
+-->
+<!--
+playback timings (ms):
+  captures_list: 81.134
+  exclusion.robots: 0.072
+  exclusion.robots.policy: 0.065
+  RedisCDXSource: 10.578
+  esindex: 0.009
+  LoadShardBlock: 53.188 (3)
+  PetaboxLoader3.datanode: 58.724 (4)
+  CDXLines.iter: 14.672 (3)
+  load_resource: 48.827
+-->

@@ -1,0 +1,167 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html><head><script src="//archive.org/includes/analytics.js?v=cf34f82" type="text/javascript"></script>
+<script type="text/javascript">window.addEventListener('DOMContentLoaded',function(){var v=archive_analytics.values;v.service='wb';v.server_name='wwwb-app220.us.archive.org';v.server_ms=216;archive_analytics.send_pageview({});});</script>
+<script type="text/javascript" src="/_static/js/bundle-playback.js?v=MzYkZ0TU" charset="utf-8"></script>
+<script type="text/javascript" src="/_static/js/wombat.js?v=UHAOicsW" charset="utf-8"></script>
+<script type="text/javascript">
+  __wm.init("https://web.archive.org/web");
+  __wm.wombat("http://cliki.tunes.org:80/Text%20Formatting?v=5","20050216202100","https://web.archive.org/","web","/_static/",
+	      "1108585260");
+</script>
+<link rel="stylesheet" type="text/css" href="/_static/css/banner-styles.css?v=S1zqJCYt" />
+<link rel="stylesheet" type="text/css" href="/_static/css/iconochive.css?v=qtvMKcIJ" />
+<!-- End Wayback Rewrite JS Include -->
+<title>CTO : Text Formatting</title><link rel="alternate" type="application/rss+xml" title="Recent Changes" href="https://web.archive.org/web/20050216202100/http://cliki.tunes.org/recent-changes.rdf"><link rel="stylesheet" href="https://web.archive.org/web/20050216202100cs_/http://cliki.tunes.org/admin/cliki.css"></head><body><div id="banner"><a title="CTO" class="logo" href="https://web.archive.org/web/20050216202100/http://cliki.tunes.org/">CTO</a> <span>CLiki for the TUNES project</span></div><div id="navbar"><a class="internal" href="https://web.archive.org/web/20050216202100/http://cliki.tunes.org/index">Home</a> <a class="internal" href="https://web.archive.org/web/20050216202100/http://cliki.tunes.org/Recent%20Changes">Recent Changes</a> <a class="internal" href="https://web.archive.org/web/20050216202100/http://cliki.tunes.org/CLiki">About CLiki</a> <a class="internal" href="https://web.archive.org/web/20050216202100/http://cliki.tunes.org/Text%20Formatting">Text Formatting</a> <a class="internal" onclick="if(name=window.prompt('New page name ([A-Za-z0-9 ])')) document.location='https://web.archive.org/web/20050216202100/http://cliki.tunes.org/edit/'+name ;return false;" href="/web/20050216202100/http://cliki.tunes.org/">Create New Page</a></div><div id="main"><h1>Text Formatting</h1><h4>Guidelines</h4>
+CLiki links are case-insensitive. "CLiki" will point to the same node as "cliki". However, node names are case-sensitive, and may show up in searches among topics, etc. So keep your node names uniform to the elements of the same category. For example, <a class="internal" href="https://web.archive.org/web/20050216202100/http://cliki.tunes.org/term">term</a> nodes should be capitalized, as well as topics.
+
+<p><h4>Avoid <code>P</code> tags</h4>
+As a convenience, text is assumed to start a new paragraph -- will be rendered preceded by a <code>P</code> tag -- if preceded by a blank line and not starting with a left-angle bracket. This seems to work passably well unless you want to start a paragraph with marked-up text. You'll just have to add the <code>P</code> tag yourself in that case. <strong>Don't use a <code>P</code> tag (or, in general, any other tag) at the beginning of an entry because it causes problems with topic-listing</strong> (see <a href="https://web.archive.org/web/20050216202100/http://cliki.tunes.org/Text%20Formatting#Searches">Searches</a> below).
+
+<p><h4>Markup</h4>
+Most of the weird and wonderful markup syntax of the original Wiki is omitted, as HTML markup is allowed.  This is easily abusable: I'd rather receive patches to fix it than I would see the problem demonstrated.
+
+<p>We have our own special markup too, of course: this consists of a funny character followed by an argument in parens.
+<!--
+To avoid quoting nightmares, <strong>on this page I have inserted an extra space between the character and the open-paren. Don't type it for real.</strong>
+-->
+
+<p><dl>
+  <dt>Internal links:</dt>
+  <dd>
+    <ul>
+    <li><code>Foo<a class="internal" href="https://web.archive.org/web/20050216202100/http://cliki.tunes.org/edit/Foo">?</a></code> renders as Foo<a class="internal" href="https://web.archive.org/web/20050216202100/http://cliki.tunes.org/edit/Foo">?</a>.
+    <li><code><a class="internal" href="https://web.archive.org/web/20050216202100/http://cliki.tunes.org/XML">Ex Em Ell</a></code> renders as <a class="internal" href="https://web.archive.org/web/20050216202100/http://cliki.tunes.org/XML">Ex Em Ell</a>.
+    </ul>
+  <br>Cliki page titles aren't case-sensitive, and spaces and underscores are treated equivalently, but Cliki will remember the way the title was written when you first created the page, and format it that way forevermore. So, please make some effort to use capitals where appropriate. In keeping with the precedent set by <a class="internal" href="https://web.archive.org/web/20050216202100/http://cliki.tunes.org/Ward's%20Wiki">Ward's Wiki</a>, links to pages that don't exist are displayed less obtrusively than links to pages that do.
+  </dd>
+
+<p>  <dt>External links:</dt>
+  <dd>
+    <ul>
+    <li><code><a href="https://web.archive.org/web/20050216202100/http://www.google.com/">Foo</a></code> renders as <a href="https://web.archive.org/web/20050216202100/http://www.google.com/">Foo</a>.
+    <li><code><a href="https://web.archive.org/web/20050216202100/http://www.google.com/">http://www.google.com/</a></code> renders as <a href="https://web.archive.org/web/20050216202100/http://www.google.com/">http://www.google.com/</a>.
+    <li><code><a href="https://web.archive.org/web/20050216202100/http://www.aliaswavefront.com/">Alias|Wavefront</a></code> renders as <a href="https://web.archive.org/web/20050216202100/http://www.aliaswavefront.com/">Alias|Wavefront</a>
+    <li><code><a href="https://web.archive.org/web/20050216202100/http://www.aliaswavefront.com/">Alias|Wavefront</a></code> renders as <a href="https://web.archive.org/web/20050216202100/http://www.aliaswavefront.com/">Alias|Wavefront</a>.
+    <li><code>anchor<a class="internal" href="https://web.archive.org/web/20050216202100/http://cliki.tunes.org/edit/URL">?</a></code> provides a convenient wiki-style external link.
+    </ul>
+  </dd>
+
+<p>  <dt>Links and anchors:
+  </dt>
+  <dd>
+    <dl>
+    <dt>tipically, you want the possibility to link directly to an item in a list of links (for an example see <a href="https://web.archive.org/web/20050216202100/http://cliki.tunes.org/Scheme#chicken">http://cliki.tunes.org/Scheme#chicken</a>).
+    <dt>This is the <b>wrong</b> way (just in case):
+      <dd><code><a href="https://web.archive.org/web/20050216202100/http://tunes.org/subprojects.html"><em>name="LLL"</em> "chicken"</a></code>
+    <dt>This is the <b>correct</b> way to insert a link with an anchor (named LLL):
+      <dd><code><a href="https://web.archive.org/web/20050216202100/http://tunes.org/subprojects.html<em>" name="LLL</em>">here the link to LLL</a></code>
+        <br>which render as <a href="https://web.archive.org/web/20050216202100/http://tunes.org/subprojects.html" name="LLL">here the link to LLL</a> (this link go directly to a page on the main <a class="internal" href="https://web.archive.org/web/20050216202100/http://cliki.tunes.org/Tunes%20project">Tunes project</a> site).
+        <br>Now you can jump directly in the middle of this same page, at the link just stated, with:
+        <br><code><a href="https://web.archive.org/web/20050216202100/http://cliki.tunes.org/Text%20Formatting<em>#LLL</em>">go to the link to LLL in this page</a></code>
+        <br>which render as <a href="https://web.archive.org/web/20050216202100/http://cliki.tunes.org/Text%20Formatting#LLL">go to the link to LLL in this page</a>.
+    </dl>
+  </dd>
+  
+  <dt><a class="internal" href="https://web.archive.org/web/20050216202100/http://cliki.tunes.org/CLHS">CLHS</a> references:</dt>
+  <dd><code>FOO</code>, where FOO is a standard CL symbol, will expand into a link to the appropriate Hyperspec page.  Thanks to Eric Marsden for the code that does this.  It presently goes to the Xanalys site, because the ALU<a class="internal" href="https://web.archive.org/web/20050216202100/http://cliki.tunes.org/edit/ALU">?</a> site was down when I tried it.
+  </dd>
+  
+  <a name="Searches"></a><dt>Searches:</dt>
+  <dd><code><ul><li><a class="internal" href="https://web.archive.org/web/20050216202100/http://cliki.tunes.org/Brain">Brain</a> - A purely <a class="internal" href="https://web.archive.org/web/20050216202100/http://cliki.tunes.org/object-oriented">object-oriented</a> <a class="internal" href="https://web.archive.org/web/20050216202100/http://cliki.tunes.org/prototype-based">prototype-based</a> <a class="internal" href="https://web.archive.org/web/20050216202100/http://cliki.tunes.org/programming%20language">programming language</a></li><li><a class="internal" href="https://web.archive.org/web/20050216202100/http://cliki.tunes.org/Cecil">Cecil</a> - A <a class="internal" href="https://web.archive.org/web/20050216202100/http://cliki.tunes.org/prototype-based">prototype-based</a> <a class="internal" href="https://web.archive.org/web/20050216202100/http://cliki.tunes.org/object-oriented">object-oriented</a> <a class="internal" href="https://web.archive.org/web/20050216202100/http://cliki.tunes.org/programming%20language">programming language</a> developed at the University of Washington</li><li><a class="internal" href="https://web.archive.org/web/20050216202100/http://cliki.tunes.org/Cel">Cel</a> - An <a class="internal" href="https://web.archive.org/web/20050216202100/http://cliki.tunes.org/object-oriented">object-oriented</a> <a class="internal" href="https://web.archive.org/web/20050216202100/http://cliki.tunes.org/prototype-based">prototype-based</a> <a class="internal" href="https://web.archive.org/web/20050216202100/http://cliki.tunes.org/programming%20language">programming language</a> based on <a class="internal" href="https://web.archive.org/web/20050216202100/http://cliki.tunes.org/Self">Self</a> and <a class="internal" href="https://web.archive.org/web/20050216202100/http://cliki.tunes.org/Smalltalk">Smalltalk</a></li><li><a class="internal" href="https://web.archive.org/web/20050216202100/http://cliki.tunes.org/Io">Io</a> - A small <a class="internal" href="https://web.archive.org/web/20050216202100/http://cliki.tunes.org/prototype-based">prototype-based</a> <a class="internal" href="https://web.archive.org/web/20050216202100/http://cliki.tunes.org/object-oriented">object-oriented</a> <a class="internal" href="https://web.archive.org/web/20050216202100/http://cliki.tunes.org/programming%20language">programming language</a>, mostly inspired by <a class="internal" href="https://web.archive.org/web/20050216202100/http://cliki.tunes.org/Smalltalk">Smalltalk</a> (all values are <a class="internal" href="https://web.archive.org/web/20050216202100/http://cliki.tunes.org/object">object</a>s), <a class="internal" href="https://web.archive.org/web/20050216202100/http://cliki.tunes.org/Self">Self</a>, NewtonScript<a class="internal" href="https://web.archive.org/web/20050216202100/http://cliki.tunes.org/edit/NewtonScript">?</a> and Act1<a class="internal" href="https://web.archive.org/web/20050216202100/http://cliki.tunes.org/edit/Act1">?</a> (<a class="internal" href="https://web.archive.org/web/20050216202100/http://cliki.tunes.org/prototype-based">prototype-based</a> differential <a class="internal" href="https://web.archive.org/web/20050216202100/http://cliki.tunes.org/inheritance">inheritance</a>, <a class="internal" href="https://web.archive.org/web/20050216202100/http://cliki.tunes.org/actor">actor</a>s and <a class="internal" href="https://web.archive.org/web/20050216202100/http://cliki.tunes.org/future">future</a>s for concurrency), <a class="internal" href="https://web.archive.org/web/20050216202100/http://cliki.tunes.org/Lisp">Lisp</a> (code is a runtime inspectable/modifiable tree) and <a class="internal" href="https://web.archive.org/web/20050216202100/http://cliki.tunes.org/Lua">Lua</a> (small, embeddable)</li><li><a class="internal" href="https://web.archive.org/web/20050216202100/http://cliki.tunes.org/Kevo">Kevo</a> - A <a class="internal" href="https://web.archive.org/web/20050216202100/http://cliki.tunes.org/Forth">Forth</a>-like concatenative <a class="internal" href="https://web.archive.org/web/20050216202100/http://cliki.tunes.org/prototype-based">prototype-based</a> <a class="internal" href="https://web.archive.org/web/20050216202100/http://cliki.tunes.org/object-oriented">object-oriented</a> <a class="internal" href="https://web.archive.org/web/20050216202100/http://cliki.tunes.org/programming%20language">programming language</a> by Antero Taivalsaari</li><li><a class="internal" href="https://web.archive.org/web/20050216202100/http://cliki.tunes.org/Moostrap">Moostrap</a> - An <a class="internal" href="https://web.archive.org/web/20050216202100/http://cliki.tunes.org/acronym">acronym</a> for <strong>M</strong>ini <strong>O</strong>bject-<strong>O</strong>riented <strong>S</strong>ystem <strong>T</strong>owards <strong>R</strong>eflective <strong>A</strong>rchitectures for <strong>P</strong>rogramming: a <a class="internal" href="https://web.archive.org/web/20050216202100/http://cliki.tunes.org/prototype-based">prototype-based</a> <a class="internal" href="https://web.archive.org/web/20050216202100/http://cliki.tunes.org/object-oriented">object-oriented</a> <a class="internal" href="https://web.archive.org/web/20050216202100/http://cliki.tunes.org/programming%20language">programming language</a> with behavioral <a class="internal" href="https://web.archive.org/web/20050216202100/http://cliki.tunes.org/reflection">reflection</a></li><li><a class="internal" href="https://web.archive.org/web/20050216202100/http://cliki.tunes.org/Prothon">Prothon</a> - <a href="https://web.archive.org/web/20050216202100/http://www.prothon.org/">Prothon</a> is a <a class="internal" href="https://web.archive.org/web/20050216202100/http://cliki.tunes.org/prototype-based">prototype-based</a> <a class="internal" href="https://web.archive.org/web/20050216202100/http://cliki.tunes.org/programming%20language">programming language</a> based on <a class="internal" href="https://web.archive.org/web/20050216202100/http://cliki.tunes.org/Python">Python</a></li><li><a class="internal" href="https://web.archive.org/web/20050216202100/http://cliki.tunes.org/Self">Self</a> - A <a class="internal" href="https://web.archive.org/web/20050216202100/http://cliki.tunes.org/pure">pure</a> <a class="internal" href="https://web.archive.org/web/20050216202100/http://cliki.tunes.org/prototype-based">prototype-based</a> <a class="internal" href="https://web.archive.org/web/20050216202100/http://cliki.tunes.org/Object-Oriented">Object-Oriented</a> <a class="internal" href="https://web.archive.org/web/20050216202100/http://cliki.tunes.org/programming%20language">programming language</a> in the <a class="internal" href="https://web.archive.org/web/20050216202100/http://cliki.tunes.org/Smalltalk">Smalltalk</a> family, based on very simple concepts which allow efficient implementations</li><li><a class="internal" href="https://web.archive.org/web/20050216202100/http://cliki.tunes.org/Slate">Slate</a> - An <a class="internal" href="https://web.archive.org/web/20050216202100/http://cliki.tunes.org/object-oriented">object-oriented</a> <a class="internal" href="https://web.archive.org/web/20050216202100/http://cliki.tunes.org/programming%20language">programming language</a> based on <a class="internal" href="https://web.archive.org/web/20050216202100/http://cliki.tunes.org/Smalltalk">Smalltalk</a> syntax, <a class="internal" href="https://web.archive.org/web/20050216202100/http://cliki.tunes.org/prototype-based">prototype-based</a> object system, and multi-method dispatch, by <a class="internal" href="https://web.archive.org/web/20050216202100/http://cliki.tunes.org/Brian%20T.%20Rice">Brian T. Rice</a> and <a class="internal" href="https://web.archive.org/web/20050216202100/http://cliki.tunes.org/Lee%20Salzman">Lee Salzman</a></li></ul></code>
+  <br>where:
+    <ul>
+    <li><code>:attribute</code> is one of <code>:title</code>, <code>:topic</code>, <code>:body</code>;
+    <li><code>:match</code> is <code>:exact</code> or <code>:substring</code>;
+    <li><code>:case-sensitive</code> is <code>nil</code> or <code>t</code>;
+    </ul>
+  renders as:
+  <ul><li><a class="internal" href="https://web.archive.org/web/20050216202100/http://cliki.tunes.org/Brain">Brain</a> - A purely <a class="internal" href="https://web.archive.org/web/20050216202100/http://cliki.tunes.org/object-oriented">object-oriented</a> <a class="internal" href="https://web.archive.org/web/20050216202100/http://cliki.tunes.org/prototype-based">prototype-based</a> <a class="internal" href="https://web.archive.org/web/20050216202100/http://cliki.tunes.org/programming%20language">programming language</a></li><li><a class="internal" href="https://web.archive.org/web/20050216202100/http://cliki.tunes.org/Cecil">Cecil</a> - A <a class="internal" href="https://web.archive.org/web/20050216202100/http://cliki.tunes.org/prototype-based">prototype-based</a> <a class="internal" href="https://web.archive.org/web/20050216202100/http://cliki.tunes.org/object-oriented">object-oriented</a> <a class="internal" href="https://web.archive.org/web/20050216202100/http://cliki.tunes.org/programming%20language">programming language</a> developed at the University of Washington</li><li><a class="internal" href="https://web.archive.org/web/20050216202100/http://cliki.tunes.org/Cel">Cel</a> - An <a class="internal" href="https://web.archive.org/web/20050216202100/http://cliki.tunes.org/object-oriented">object-oriented</a> <a class="internal" href="https://web.archive.org/web/20050216202100/http://cliki.tunes.org/prototype-based">prototype-based</a> <a class="internal" href="https://web.archive.org/web/20050216202100/http://cliki.tunes.org/programming%20language">programming language</a> based on <a class="internal" href="https://web.archive.org/web/20050216202100/http://cliki.tunes.org/Self">Self</a> and <a class="internal" href="https://web.archive.org/web/20050216202100/http://cliki.tunes.org/Smalltalk">Smalltalk</a></li><li><a class="internal" href="https://web.archive.org/web/20050216202100/http://cliki.tunes.org/Io">Io</a> - A small <a class="internal" href="https://web.archive.org/web/20050216202100/http://cliki.tunes.org/prototype-based">prototype-based</a> <a class="internal" href="https://web.archive.org/web/20050216202100/http://cliki.tunes.org/object-oriented">object-oriented</a> <a class="internal" href="https://web.archive.org/web/20050216202100/http://cliki.tunes.org/programming%20language">programming language</a>, mostly inspired by <a class="internal" href="https://web.archive.org/web/20050216202100/http://cliki.tunes.org/Smalltalk">Smalltalk</a> (all values are <a class="internal" href="https://web.archive.org/web/20050216202100/http://cliki.tunes.org/object">object</a>s), <a class="internal" href="https://web.archive.org/web/20050216202100/http://cliki.tunes.org/Self">Self</a>, NewtonScript<a class="internal" href="https://web.archive.org/web/20050216202100/http://cliki.tunes.org/edit/NewtonScript">?</a> and Act1<a class="internal" href="https://web.archive.org/web/20050216202100/http://cliki.tunes.org/edit/Act1">?</a> (<a class="internal" href="https://web.archive.org/web/20050216202100/http://cliki.tunes.org/prototype-based">prototype-based</a> differential <a class="internal" href="https://web.archive.org/web/20050216202100/http://cliki.tunes.org/inheritance">inheritance</a>, <a class="internal" href="https://web.archive.org/web/20050216202100/http://cliki.tunes.org/actor">actor</a>s and <a class="internal" href="https://web.archive.org/web/20050216202100/http://cliki.tunes.org/future">future</a>s for concurrency), <a class="internal" href="https://web.archive.org/web/20050216202100/http://cliki.tunes.org/Lisp">Lisp</a> (code is a runtime inspectable/modifiable tree) and <a class="internal" href="https://web.archive.org/web/20050216202100/http://cliki.tunes.org/Lua">Lua</a> (small, embeddable)</li><li><a class="internal" href="https://web.archive.org/web/20050216202100/http://cliki.tunes.org/Kevo">Kevo</a> - A <a class="internal" href="https://web.archive.org/web/20050216202100/http://cliki.tunes.org/Forth">Forth</a>-like concatenative <a class="internal" href="https://web.archive.org/web/20050216202100/http://cliki.tunes.org/prototype-based">prototype-based</a> <a class="internal" href="https://web.archive.org/web/20050216202100/http://cliki.tunes.org/object-oriented">object-oriented</a> <a class="internal" href="https://web.archive.org/web/20050216202100/http://cliki.tunes.org/programming%20language">programming language</a> by Antero Taivalsaari</li><li><a class="internal" href="https://web.archive.org/web/20050216202100/http://cliki.tunes.org/Moostrap">Moostrap</a> - An <a class="internal" href="https://web.archive.org/web/20050216202100/http://cliki.tunes.org/acronym">acronym</a> for <strong>M</strong>ini <strong>O</strong>bject-<strong>O</strong>riented <strong>S</strong>ystem <strong>T</strong>owards <strong>R</strong>eflective <strong>A</strong>rchitectures for <strong>P</strong>rogramming: a <a class="internal" href="https://web.archive.org/web/20050216202100/http://cliki.tunes.org/prototype-based">prototype-based</a> <a class="internal" href="https://web.archive.org/web/20050216202100/http://cliki.tunes.org/object-oriented">object-oriented</a> <a class="internal" href="https://web.archive.org/web/20050216202100/http://cliki.tunes.org/programming%20language">programming language</a> with behavioral <a class="internal" href="https://web.archive.org/web/20050216202100/http://cliki.tunes.org/reflection">reflection</a></li><li><a class="internal" href="https://web.archive.org/web/20050216202100/http://cliki.tunes.org/Prothon">Prothon</a> - <a href="https://web.archive.org/web/20050216202100/http://www.prothon.org/">Prothon</a> is a <a class="internal" href="https://web.archive.org/web/20050216202100/http://cliki.tunes.org/prototype-based">prototype-based</a> <a class="internal" href="https://web.archive.org/web/20050216202100/http://cliki.tunes.org/programming%20language">programming language</a> based on <a class="internal" href="https://web.archive.org/web/20050216202100/http://cliki.tunes.org/Python">Python</a></li><li><a class="internal" href="https://web.archive.org/web/20050216202100/http://cliki.tunes.org/Self">Self</a> - A <a class="internal" href="https://web.archive.org/web/20050216202100/http://cliki.tunes.org/pure">pure</a> <a class="internal" href="https://web.archive.org/web/20050216202100/http://cliki.tunes.org/prototype-based">prototype-based</a> <a class="internal" href="https://web.archive.org/web/20050216202100/http://cliki.tunes.org/Object-Oriented">Object-Oriented</a> <a class="internal" href="https://web.archive.org/web/20050216202100/http://cliki.tunes.org/programming%20language">programming language</a> in the <a class="internal" href="https://web.archive.org/web/20050216202100/http://cliki.tunes.org/Smalltalk">Smalltalk</a> family, based on very simple concepts which allow efficient implementations</li><li><a class="internal" href="https://web.archive.org/web/20050216202100/http://cliki.tunes.org/Slate">Slate</a> - An <a class="internal" href="https://web.archive.org/web/20050216202100/http://cliki.tunes.org/object-oriented">object-oriented</a> <a class="internal" href="https://web.archive.org/web/20050216202100/http://cliki.tunes.org/programming%20language">programming language</a> based on <a class="internal" href="https://web.archive.org/web/20050216202100/http://cliki.tunes.org/Smalltalk">Smalltalk</a> syntax, <a class="internal" href="https://web.archive.org/web/20050216202100/http://cliki.tunes.org/prototype-based">prototype-based</a> object system, and multi-method dispatch, by <a class="internal" href="https://web.archive.org/web/20050216202100/http://cliki.tunes.org/Brian%20T.%20Rice">Brian T. Rice</a> and <a class="internal" href="https://web.archive.org/web/20050216202100/http://cliki.tunes.org/Lee%20Salzman">Lee Salzman</a></li></ul>
+  The search code is still in development: title searches work, topics work only for exact matches (and ignore the setting of <code>:case-sensitive</code>), body text doesn't at all.
+  
+  <br><strong>Now the search is able to display also the first sentence of the page found</strong>. So remember this when you will write the first sentence of an entry. CLiki Style<a class="internal" href="https://web.archive.org/web/20050216202100/http://cliki.tunes.org/edit/CLiki%20Style">?</a> encourages the use of inverted pyramid style.
+  </dd>
+</dl>
+
+<p><h4>Topic markers</h4>
+The use of topic indicators should be minimized. For example, acronyms are generally not glossary terms unless they are in common usage in a generic sense.
+
+<p><code>Foo<a class="internal" href="https://web.archive.org/web/20050216202100/http://cliki.tunes.org/edit/Foo">?</a></code> declares this page to be relevant to topic Foo. This means that:
+<ol>
+<li>it will have Foo listed in the footer,
+<li>it will be listed on pages which include a topic search for Foo.
+</ol>
+Usually there will be a page called Foo<strong>s</strong> (note the plural) that contains such a search.
+
+<p>Some general advice (you can find the complete list of topic at the <a class="internal" href="https://web.archive.org/web/20050216202100/http://cliki.tunes.org/topic">topic</a> entry):
+<ul>
+  <li>Pages for <a class="internal" href="https://web.archive.org/web/20050216202100/http://cliki.tunes.org/person">person</a>s should have the <code><a class="internal" href="https://web.archive.org/web/20050216202100/http://cliki.tunes.org/person">person</a></code> topic in them.
+  <li>If the person is a contributor of the <a class="internal" href="https://web.archive.org/web/20050216202100/http://cliki.tunes.org/TUNES%20project">TUNES project</a> you should also put the <code><a class="internal" href="https://web.archive.org/web/20050216202100/http://cliki.tunes.org/contributor">contributor</a></code> topic.
+  <li>An entry in the <a class="internal" href="https://web.archive.org/web/20050216202100/http://cliki.tunes.org/Operating%20Systems">Operating systems review</a> section must have the topic <code><a class="internal" href="https://web.archive.org/web/20050216202100/http://cliki.tunes.org/OS">OS</a></code> in it.
+  <li>An entry in the <a class="internal" href="https://web.archive.org/web/20050216202100/http://cliki.tunes.org/Programming%20Languages">Programming languages review</a> section must have the topic <code><a class="internal" href="https://web.archive.org/web/20050216202100/http://cliki.tunes.org/Programming%20Language">Programming Language</a></code> in it.
+  <li>An entry in the <a class="internal" href="https://web.archive.org/web/20050216202100/http://cliki.tunes.org/Glossary">Glossary</a> section should have the topic <code><a class="internal" href="https://web.archive.org/web/20050216202100/http://cliki.tunes.org/term">term</a></code> in it.
+  <li>An acronym should have the topic <code><a class="internal" href="https://web.archive.org/web/20050216202100/http://cliki.tunes.org/acronym">acronym</a></code> in it.
+</ul>
+Look at the other sections, and cross-reference when it's useful and possible.
+
+<p><h4>Style-sheet support</h4>
+<ul>
+  <li>Put <strong>code examples</strong> in <code>code</code> tags.
+    <br><em>Example:</em> <code><code>x = f(x)</code></code> render as <code>x = f(x)</code>.
+  <li>Put <strong>remarks</strong>, that you want your to stand separately from the main document and be noticed as such, tipically in a <code>span</code> tag, with a <code>class="comment"</code> attribute.
+    <br><em>Example:</em>
+    <code><span class="comment">This is a not so long comment</span></code>
+    render as <span class="comment">This is a not so long comment</span>.
+  <li>Put a <strong>list of links to external sites</strong> at the bottom of your new entry using <code>ul</code> (Unordered List) or <code>ol</code> (Ordered List) tags.
+  <ul>
+    <li>When the links are about <strong>implementations</strong> put a <code>class="implementations"</code> attribute.
+      <br><em>Example with an Ordered List:</em>
+<pre><code><ol class="implementations">
+  <li><a href="https://web.archive.org/web/20050216202100/http://cliki.tunes.org/Text%20Formatting">1st implementation</a>
+  <li><a href="https://web.archive.org/web/20050216202100/http://cliki.tunes.org/Text%20Formatting">2nd implementation</a>
+</ol></code></pre>
+      <em>Render as:</em>
+      <ol class="implementations">
+        <li><a href="https://web.archive.org/web/20050216202100/http://cliki.tunes.org/Text%20Formatting">1st implementation</a>
+        <li><a href="https://web.archive.org/web/20050216202100/http://cliki.tunes.org/Text%20Formatting">2nd implementation</a>
+      </ol>
+    <li>When the links are <strong>informative</strong> put a <code>class="links"</code> attribute.
+      <br><em>Example with an Unordered List:</em>
+<pre><code><ul class="links">
+  <li><a href="https://web.archive.org/web/20050216202100/http://cliki.tunes.org/Text%20Formatting">A link</a>
+  <li><a href="https://web.archive.org/web/20050216202100/http://cliki.tunes.org/Text%20Formatting">Another link</a>
+</ul></code></pre>
+      <em>Render as:</em>
+      <ul class="links">
+        <li><a href="https://web.archive.org/web/20050216202100/http://cliki.tunes.org/Text%20Formatting">A link</a>
+        <li><a href="https://web.archive.org/web/20050216202100/http://cliki.tunes.org/Text%20Formatting">Another link</a>
+      </ul>
+  </ul>
+</ul>
+
+<p><a name="SGML bug"></a><h4>SGML entities bug</h4>
+Don't expect to be able to type SGML entities (e.g. ampersand-l-t-semicolon), and have them work, as they tend to be translated into the actual characters they represent (e.g. less-than sign).  This is listed on the <a href="https://web.archive.org/web/20050216202100/http://www.cliki.net/CLiki%20Bugs">CLiki bugs</a> page, but is unlikely to get fixed any time soon.
+
+<p><strong>In any case you can mantain and edit a local version of a node and then copy the result, so this is a minor annoyance (but use <em>View source</em> at the bottom of each node to access the un-translated source).</strong>
+
+<p>See also <a class="internal" href="https://web.archive.org/web/20050216202100/http://cliki.tunes.org/HTML%20special%20characters%20and%20symbols">HTML special characters and symbols</a>.<hr><p><b>This page is linked from: </b> <a class="internal" href="https://web.archive.org/web/20050216202100/http://cliki.tunes.org/CLiki%20Bugs">CLiki Bugs</a> &nbsp; <a class="internal" href="https://web.archive.org/web/20050216202100/http://cliki.tunes.org/CLiki%20Content">CLiki Content</a> &nbsp; <a class="internal" href="https://web.archive.org/web/20050216202100/http://cliki.tunes.org/Forth%20OSes">Forth OSes</a> &nbsp; <a class="internal" href="https://web.archive.org/web/20050216202100/http://cliki.tunes.org/Topic%20Markers">Topic Markers</a> &nbsp; </div><div id="footer"><form action="https://web.archive.org/web/20050216202100/http://cliki.tunes.org/admin/search"><a class="internal" href="https://web.archive.org/web/20050216202100/http://cliki.tunes.org/edit/Text%20Formatting">Edit page</a> | <a class="internal" href="https://web.archive.org/web/20050216202100/http://cliki.tunes.org/Text%20Formatting?source&amp;v=5">View source</a> | Revisions: <b title="Fri, 03 Sep 2004 06:38:07 GMT">5</b> <a href="https://web.archive.org/web/20050216202100/http://cliki.tunes.org/Text%20Formatting?v=6" title="Fri, 03 Sep 2004 11:52:50 GMT">6</a> <a href="https://web.archive.org/web/20050216202100/http://cliki.tunes.org/Text%20Formatting?v=7" title="Fri, 03 Sep 2004 18:26:08 GMT">7</a> <a href="https://web.archive.org/web/20050216202100/http://cliki.tunes.org/Text%20Formatting?v=8" title="Thu, 04 Nov 2004 09:10:23 GMT">8</a> <a href="https://web.archive.org/web/20050216202100/http://cliki.tunes.org/Text%20Formatting?v=9" title="Thu, 04 Nov 2004 18:30:02 GMT">9</a>  | <input name="words" size="30"><input type="submit" value="search"></form><div id="disclaimer">CTO pages can be modified by anyone at anytime.
+Imagine an appropriate disclaimer. Double it. Add two.</div></body></html></div><!--
+     FILE ARCHIVED ON 20:21:00 Feb 16, 2005 AND RETRIEVED FROM THE
+     INTERNET ARCHIVE ON 06:09:32 Dec 18, 2022.
+     JAVASCRIPT APPENDED BY WAYBACK MACHINE, COPYRIGHT INTERNET ARCHIVE.
+
+     ALL OTHER CONTENT MAY ALSO BE PROTECTED BY COPYRIGHT (17 U.S.C.
+     SECTION 108(a)(3)).
+-->
+<!--
+playback timings (ms):
+  captures_list: 100.2
+  exclusion.robots: 0.176
+  exclusion.robots.policy: 0.161
+  RedisCDXSource: 21.744
+  esindex: 0.01
+  LoadShardBlock: 56.186 (3)
+  PetaboxLoader3.datanode: 89.369 (4)
+  CDXLines.iter: 17.982 (3)
+  load_resource: 105.424
+  PetaboxLoader3.resolve: 65.252
+-->

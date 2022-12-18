@@ -1,0 +1,56 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html><head><script src="//archive.org/includes/analytics.js?v=cf34f82" type="text/javascript"></script>
+<script type="text/javascript">window.addEventListener('DOMContentLoaded',function(){var v=archive_analytics.values;v.service='wb';v.server_name='wwwb-app224.us.archive.org';v.server_ms=181;archive_analytics.send_pageview({});});</script>
+<script type="text/javascript" src="/_static/js/bundle-playback.js?v=MzYkZ0TU" charset="utf-8"></script>
+<script type="text/javascript" src="/_static/js/wombat.js?v=UHAOicsW" charset="utf-8"></script>
+<script type="text/javascript">
+  __wm.init("https://web.archive.org/web");
+  __wm.wombat("http://cliki.tunes.org:80/Capability","20050211205624","https://web.archive.org/","web","/_static/",
+	      "1108155384");
+</script>
+<link rel="stylesheet" type="text/css" href="/_static/css/banner-styles.css?v=S1zqJCYt" />
+<link rel="stylesheet" type="text/css" href="/_static/css/iconochive.css?v=qtvMKcIJ" />
+<!-- End Wayback Rewrite JS Include -->
+<title>CTO : Capability</title><link rel="alternate" type="application/rss+xml" title="Recent Changes" href="https://web.archive.org/web/20050211205624/http://cliki.tunes.org/recent-changes.rdf"><link rel="stylesheet" href="https://web.archive.org/web/20050211205624cs_/http://cliki.tunes.org/admin/cliki.css"></head><body><div id="banner"><a title="CTO" class="logo" href="https://web.archive.org/web/20050211205624/http://cliki.tunes.org/">CTO</a> <span>CLiki for the TUNES project</span></div><div id="navbar"><a class="internal" href="https://web.archive.org/web/20050211205624/http://cliki.tunes.org/index">Home</a> <a class="internal" href="https://web.archive.org/web/20050211205624/http://cliki.tunes.org/Recent%20Changes">Recent Changes</a> <a class="internal" href="https://web.archive.org/web/20050211205624/http://cliki.tunes.org/CLiki">About CLiki</a> <a class="internal" href="https://web.archive.org/web/20050211205624/http://cliki.tunes.org/Text%20Formatting">Text Formatting</a> <a class="internal" onclick="if(name=window.prompt('New page name ([A-Za-z0-9 ])')) document.location='https://web.archive.org/web/20050211205624/http://cliki.tunes.org/edit/'+name ;return false;" href="/web/20050211205624/http://cliki.tunes.org/">Create New Page</a></div><div id="main"><h1>Capability</h1>A <a class="internal" href="https://web.archive.org/web/20050211205624/http://cliki.tunes.org/security">security</a> <a class="internal" href="https://web.archive.org/web/20050211205624/http://cliki.tunes.org/term">term</a> describing a way of controlling access dynamically in a <a class="internal" href="https://web.archive.org/web/20050211205624/http://cliki.tunes.org/computing%20system">computing system</a> by treating access to <a class="internal" href="https://web.archive.org/web/20050211205624/http://cliki.tunes.org/object">object</a>s as provided by a "key" instead of via an "ID Card" (<a class="internal" href="https://web.archive.org/web/20050211205624/http://cliki.tunes.org/user%20rights">user rights</a>). This is generally more principled, since each object is required to access functionality individually on a lease-per-object basis, while still being able to transfer the use of those leases to other objects during the lease's term.
+
+<p><ul class="links">
+<li><a href="https://web.archive.org/web/20050211205624/http://www.eros-os.org/essays/capintro.html">What is a Capability, Anyway?</a>.</li>
+<li><a href="https://web.archive.org/web/20050211205624/http://www.eros-os.org/essays/00Essays.html">Essays on Capabilities and Security</a> on <a class="internal" href="https://web.archive.org/web/20050211205624/http://cliki.tunes.org/EROS">EROS</a> web site.</li>
+<li>Norman Hardy's <a href="https://web.archive.org/web/20050211205624/http://cap-lore.com/">site</a> devoted to capability theory, notably:
+  <ul>
+    <li><a href="https://web.archive.org/web/20050211205624/http://cap-lore.com/CapTheory/Personal.html">A GUI for a Capability System</a></li>
+    <li><a href="https://web.archive.org/web/20050211205624/http://cap-lore.com/CapTheory/discip.html">Capabilities in disguise</a></li>
+  </ul>
+<li><a href="https://web.archive.org/web/20050211205624/http://www.informatik.uni-ulm.de/rs/projekte/SPEEDOS/">The SPEEDOS Project</a> a software-engineering toolkit based on capabilities and confinement.</li>
+<li><a href="https://web.archive.org/web/20050211205624/http://www.caplet.com/index.html">Mark S. Miller Home Page</a>, in particular his <a href="https://web.archive.org/web/20050211205624/http://www.agorics.com/Library/agoricpapers.html">Agoric Open Systems Papers</a> (see also <a class="internal" href="https://web.archive.org/web/20050211205624/http://cliki.tunes.org/Security">Security</a> and <a class="internal" href="https://web.archive.org/web/20050211205624/http://cliki.tunes.org/E">E</a>, a programming language built with capabilities in mind).</li>
+<li>Don't miss this article by <a href="https://web.archive.org/web/20050211205624/http://mumble.net/jar/">Jonathan Rees</a>: <a href="https://web.archive.org/web/20050211205624/ftp://publications.ai.mit.edu/ai-publications/1500-1999/AIM-1564.ps.Z">W7, a security kernel based on the Lambda Calculus</a>, that <em>could</em> have been called "<a class="internal" href="https://web.archive.org/web/20050211205624/http://cliki.tunes.org/Lambda%20VM">Lambda</a>, the ultimate capability".</li>
+<li><!-- Message-ID: <51d67993.0401080116.675c1224@posting.google.com> -->
+In this <a href="https://web.archive.org/web/20050211205624/http://groups.google.com/groups?dq=&amp;hl=en&amp;lr=&amp;ie=UTF-8&amp;safe=off&amp;threadm=51d67993.0401080116.675c1224%40posting.google.com&amp;rnum=1&amp;prev=/groups%3Fq%3Dg:thl3257787964d%26dq%3D%26hl%3Den%26lr%3D%26ie%3DUTF-8%26safe%3Doff%26selm%3D51d67993.0401080116.675c1224%2540posting.google.com">thread</a> on <em>comp.lang.misc</em> <a class="internal" href="https://web.archive.org/web/20050211205624/http://cliki.tunes.org/Peter%20Van%20Roy">Peter Van Roy</a> compares <em>name values</em> in <a class="internal" href="https://web.archive.org/web/20050211205624/http://cliki.tunes.org/Oz">Oz</a> with <em>capabilities</em> and then concludes:
+<blockquote>
+You're right, name values are a kind of capability too! They only have one operation, though: equality comparison.
+</blockquote>
+<li><a href="https://web.archive.org/web/20050211205624/http://c2.com/cgi/wiki?CapabilitySecurityModel">CapabilitySecurityModel</a> page on the C2 Wiki.
+</li>
+</ul>
+<hr><p><b>This page is linked from: </b> <a class="internal" href="https://web.archive.org/web/20050211205624/http://cliki.tunes.org/Actor">Actor</a> &nbsp; <a class="internal" href="https://web.archive.org/web/20050211205624/http://cliki.tunes.org/E">E</a> &nbsp; <a class="internal" href="https://web.archive.org/web/20050211205624/http://cliki.tunes.org/EROS">EROS</a> &nbsp; <a class="internal" href="https://web.archive.org/web/20050211205624/http://cliki.tunes.org/GO!">GO!</a> &nbsp; <a class="internal" href="https://web.archive.org/web/20050211205624/http://cliki.tunes.org/Hermes">Hermes</a> &nbsp; <a class="internal" href="https://web.archive.org/web/20050211205624/http://cliki.tunes.org/Information-Flow%20Security">Information-Flow Security</a> &nbsp; <a class="internal" href="https://web.archive.org/web/20050211205624/http://cliki.tunes.org/KeyKOS">KeyKOS</a> &nbsp; <a class="internal" href="https://web.archive.org/web/20050211205624/http://cliki.tunes.org/Microkernel%20Debate">Microkernel Debate</a> &nbsp; <a class="internal" href="https://web.archive.org/web/20050211205624/http://cliki.tunes.org/Sebyla">Sebyla</a> &nbsp; <a class="internal" href="https://web.archive.org/web/20050211205624/http://cliki.tunes.org/Security">Security</a> &nbsp; <a class="internal" href="https://web.archive.org/web/20050211205624/http://cliki.tunes.org/User%20Rights">User Rights</a> &nbsp; <a class="internal" href="https://web.archive.org/web/20050211205624/http://cliki.tunes.org/Vault">Vault</a> &nbsp; </div><div id="footer"><form action="https://web.archive.org/web/20050211205624/http://cliki.tunes.org/admin/search"><a class="internal" href="https://web.archive.org/web/20050211205624/http://cliki.tunes.org/edit/Capability">Edit page</a> | <a class="internal" href="https://web.archive.org/web/20050211205624/http://cliki.tunes.org/Capability?source">View source</a> | Revisions: <b title="Thu, 27 May 2004 15:16:34 GMT">1</b>  | <input name="words" size="30"><input type="submit" value="search"></form><div id="disclaimer">CTO pages can be modified by anyone at anytime.
+Imagine an appropriate disclaimer. Double it. Add two.</div></body></html></div><!--
+     FILE ARCHIVED ON 20:56:24 Feb 11, 2005 AND RETRIEVED FROM THE
+     INTERNET ARCHIVE ON 06:11:02 Dec 18, 2022.
+     JAVASCRIPT APPENDED BY WAYBACK MACHINE, COPYRIGHT INTERNET ARCHIVE.
+
+     ALL OTHER CONTENT MAY ALSO BE PROTECTED BY COPYRIGHT (17 U.S.C.
+     SECTION 108(a)(3)).
+-->
+<!--
+playback timings (ms):
+  captures_list: 112.972
+  exclusion.robots: 0.123
+  exclusion.robots.policy: 0.11
+  RedisCDXSource: 8.788
+  esindex: 0.01
+  LoadShardBlock: 82.668 (3)
+  PetaboxLoader3.datanode: 83.969 (4)
+  CDXLines.iter: 14.115 (3)
+  load_resource: 63.896
+  PetaboxLoader3.resolve: 38.494
+-->

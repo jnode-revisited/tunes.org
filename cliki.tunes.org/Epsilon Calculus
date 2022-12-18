@@ -1,0 +1,71 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html><head><script src="//archive.org/includes/analytics.js?v=cf34f82" type="text/javascript"></script>
+<script type="text/javascript">window.addEventListener('DOMContentLoaded',function(){var v=archive_analytics.values;v.service='wb';v.server_name='wwwb-app226.us.archive.org';v.server_ms=116;archive_analytics.send_pageview({});});</script>
+<script type="text/javascript" src="/_static/js/bundle-playback.js?v=MzYkZ0TU" charset="utf-8"></script>
+<script type="text/javascript" src="/_static/js/wombat.js?v=UHAOicsW" charset="utf-8"></script>
+<script type="text/javascript">
+  __wm.init("https://web.archive.org/web");
+  __wm.wombat("http://cliki.tunes.org:80/Epsilon%20Calculus","20050414222814","https://web.archive.org/","web","/_static/",
+	      "1113517694");
+</script>
+<link rel="stylesheet" type="text/css" href="/_static/css/banner-styles.css?v=S1zqJCYt" />
+<link rel="stylesheet" type="text/css" href="/_static/css/iconochive.css?v=qtvMKcIJ" />
+<!-- End Wayback Rewrite JS Include -->
+<title>CTO : Epsilon Calculus</title><link rel="alternate" type="application/rss+xml" title="Recent Changes" href="https://web.archive.org/web/20050414222814/http://cliki.tunes.org/recent-changes.rdf"><link rel="stylesheet" href="https://web.archive.org/web/20050414222814cs_/http://cliki.tunes.org/admin/cliki.css"></head><body><div id="banner"><a title="CTO" class="logo" href="https://web.archive.org/web/20050414222814/http://cliki.tunes.org/">CTO</a> <span>CLiki for the TUNES project</span></div><div id="navbar"><a class="internal" href="https://web.archive.org/web/20050414222814/http://cliki.tunes.org/index">Home</a> <a class="internal" href="https://web.archive.org/web/20050414222814/http://cliki.tunes.org/Recent%20Changes">Recent Changes</a> <a class="internal" href="https://web.archive.org/web/20050414222814/http://cliki.tunes.org/CLiki">About CLiki</a> <a class="internal" href="https://web.archive.org/web/20050414222814/http://cliki.tunes.org/Text%20Formatting">Text Formatting</a> <a class="internal" onclick="if(name=window.prompt('New page name ([A-Za-z0-9 ])')) document.location='https://web.archive.org/web/20050414222814/http://cliki.tunes.org/edit/'+name ;return false;" href="/web/20050414222814/http://cliki.tunes.org/">Create New Page</a></div><div id="main"><h1>Epsilon Calculus</h1>A formal logic <a class="internal" href="https://web.archive.org/web/20050414222814/http://cliki.tunes.org/term">term</a>.
+
+<p><style type="text/css">
+CODE { font-size: 150%; }
+#legenda {
+	background: #eee;
+	float:      right;
+	margin:     0% 0% 0% 5%;  /* top right bottom left */
+	padding:    5px 10px 5px 10px; /* top right bottom left */
+	width:      17% }
+</style>
+
+<p>  <div id="legenda">
+  <table><th>Legenda</th>
+  <tr><td>&epsilon;</td><td>epsilon</td></tr>
+  <tr><td>&lambda;</td><td>lambda</td></tr>
+  <tr><td>&harr;</td><td>if and only if</td></tr>
+  <tr><td>&forall;</td><td>for all</td></tr>
+  <tr><td>&exist;</td><td>there exists</td></tr>
+  </table>
+  </div>
+
+<p>In classical logic, an &epsilon;-term <code>&epsilon;(x) A(x)</code> denotes some value <code>x<sub>0</sub></code> that satisfies <code>A(x<sub>0</sub>) &harr; &exist;(x) A(x)</code>.
+
+<p>Note that this is different from &exist; in that it answers a satisfactory object (a "witness") instead of just the boolean answer to the query.
+
+<p>In some constructive logic, the &epsilon;-term will converge to a witness if and only if a witness exists, and otherwise will diverge (fail to yield a value).
+
+<p>In a deep sense, &epsilon; is to &exist; what &lambda; is to &forall;.
+
+<p><ul class="links">
+<li>The Stanford Encyclopedia of Philosophy's <a href="https://web.archive.org/web/20050414222814/http://plato.stanford.edu/entries/epsilon-calculus/">entry</a>.
+</ul>
+
+<p><hr>
+
+<p>To edit this page see <a class="internal" href="https://web.archive.org/web/20050414222814/http://cliki.tunes.org/HTML%20special%20characters%20and%20symbols">HTML special characters and symbols</a>.
+<hr><p><b>This page is linked from: </b> <a class="internal" href="https://web.archive.org/web/20050414222814/http://cliki.tunes.org/Lambda%20Calculus">Lambda Calculus</a> &nbsp; </div><div id="footer"><form action="https://web.archive.org/web/20050414222814/http://cliki.tunes.org/admin/search"><a class="internal" href="https://web.archive.org/web/20050414222814/http://cliki.tunes.org/edit/Epsilon%20Calculus">Edit page</a> | <a class="internal" href="https://web.archive.org/web/20050414222814/http://cliki.tunes.org/Epsilon%20Calculus?source">View source</a> | Revisions: <a href="https://web.archive.org/web/20050414222814/http://cliki.tunes.org/Epsilon%20Calculus?v=1" title="Mon, 31 May 2004 18:28:22 GMT">1</a> <b title="Mon, 31 May 2004 18:30:15 GMT">2</b>  | <input name="words" size="30"><input type="submit" value="search"></form><div id="disclaimer">CTO pages can be modified by anyone at anytime.
+Imagine an appropriate disclaimer. Double it. Add two.</div></body></html></div><!--
+     FILE ARCHIVED ON 22:28:14 Apr 14, 2005 AND RETRIEVED FROM THE
+     INTERNET ARCHIVE ON 06:12:33 Dec 18, 2022.
+     JAVASCRIPT APPENDED BY WAYBACK MACHINE, COPYRIGHT INTERNET ARCHIVE.
+
+     ALL OTHER CONTENT MAY ALSO BE PROTECTED BY COPYRIGHT (17 U.S.C.
+     SECTION 108(a)(3)).
+-->
+<!--
+playback timings (ms):
+  captures_list: 83.84
+  exclusion.robots: 0.071
+  exclusion.robots.policy: 0.064
+  RedisCDXSource: 0.647
+  esindex: 0.007
+  LoadShardBlock: 66.798 (3)
+  PetaboxLoader3.datanode: 74.004 (4)
+  CDXLines.iter: 13.704 (3)
+  load_resource: 28.768
+-->

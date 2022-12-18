@@ -1,0 +1,6 @@
+CLiki is a free collaborative hypertext authoring program, written in _(Common Lisp). Modelled on _(Wiki), it's free software using the _(MIT license|http://www.cliki.net/MIT-LICENSE). See _("CLiki's home page"|http://www.cliki.net/CLiki) for more details. 
+Add feature suggestions on the _(CLiki Todo).
+
+Also, anyone who wants to contribute to this CLiki hypertext system should understand the _(Privacy Statement).
+
+Cliki.Tunes.Org, _(aka) CTO, is a CLiki installation based on the CVS release of the original CLiki, plus local modifications and configuration settings, that are available _(on the Tunes CVS site|http://tunes.org/cgi-bin/viewcvs.cgi/cto/) (see these _(instructions|http://tunes.org/collaboration.html#cvs)), and can be used either as an example or as a layered basis for your own installation.

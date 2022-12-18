@@ -1,0 +1,63 @@
+<html><head><script src="//archive.org/includes/analytics.js?v=cf34f82" type="text/javascript"></script>
+<script type="text/javascript">window.addEventListener('DOMContentLoaded',function(){var v=archive_analytics.values;v.service='wb';v.server_name='wwwb-app214.us.archive.org';v.server_ms=229;archive_analytics.send_pageview({});});</script>
+<script type="text/javascript" src="/_static/js/bundle-playback.js?v=MzYkZ0TU" charset="utf-8"></script>
+<script type="text/javascript" src="/_static/js/wombat.js?v=UHAOicsW" charset="utf-8"></script>
+<script type="text/javascript">
+  __wm.init("https://web.archive.org/web");
+  __wm.wombat("http://cliki.tunes.org:80/Oberon","20031201005544","https://web.archive.org/","web","/_static/",
+	      "1070240144");
+</script>
+<link rel="stylesheet" type="text/css" href="/_static/css/banner-styles.css?v=S1zqJCYt" />
+<link rel="stylesheet" type="text/css" href="/_static/css/iconochive.css?v=qtvMKcIJ" />
+<!-- End Wayback Rewrite JS Include -->
+<title>TUNES : Oberon</title>
+<link rel="alternate" type="application/rss+xml" title="Recent Changes" href="https://web.archive.org/web/20031201005544/http://cliki.tunes.org/recent-changes.rdf"></link>
+<link rel="stylesheet" href="https://web.archive.org/web/20031201005544cs_/http://cliki.tunes.org/admin/cliki.css"></link>
+<link rel="shortcut icon" type="image/x-icon" href="https://web.archive.org/web/20031201005544im_/http://cliki.tunes.org/favicon.ico"></link>
+</head>
+<body><div class="navbar"><table width="100%"><tr><td colspan="3" class="disclaimer">CLiki pages can be edited by anybody at any time.  Imagine a <i>scarily comprehensive legal disclaimer</i>.  Double it.  Add two.  <!-- Now shut your eyes.  Dark, isn't it? --></td>
+</tr>
+</table>
+<center><table><tr><td><a href="https://web.archive.org/web/20031201005544/http://cliki.tunes.org/index">Home</a>
+</td>
+<td><a href="https://web.archive.org/web/20031201005544/http://cliki.tunes.org/Recent%20Changes">Recent Changes</a>
+</td>
+<td><a href="https://web.archive.org/web/20031201005544/http://cliki.tunes.org/CLiki">About CLiki</a>
+</td>
+<td><a href="https://web.archive.org/web/20031201005544/http://cliki.tunes.org/Text%20Formatting">Text Formatting</a>
+</td>
+<td><a onclick="if(name=window.prompt('New page name ([A-Za-z0-9 ])')) document.location='https://web.archive.org/web/20031201005544/http://cliki.tunes.org/edit/'+name ;return false;" href="#">Create new page</a>
+</td>
+</tr>
+</table>
+</center>
+</div>
+<h1>Oberon</h1>
+Oberón (now system 3, with the older V4 still available) is the latest
+modular <a class="internal" href="OO" onmouseover="window.status='OO'; return true" onmouseout="window.status='';">OO</a> <a class="internal" href="programming%20language" onmouseover="window.status='programming language'; return true" onmouseout="window.status='';">programming language</a> by Prof. <a class="internal" href="Nicklaus%20Wirth" onmouseover="window.status='Nicklaus Wirth'; return true" onmouseout="window.status='';">Nicklaus Wirth</a> (the author of
+<a class="internal" href="Pascal" onmouseover="window.status='Pascal'; return true" onmouseout="window.status='';">Pascal</a> and <a class="internal" href="Modula-2" onmouseover="window.status='Modula-2'; return true" onmouseout="window.status='';">Modula-2</a>). Notable is <a class="internal" href="TUI" onmouseover="window.status='TUI'; return true" onmouseout="window.status='';">TUI</a>.
+
+<p><ul class="links">
+<li><a href="https://web.archive.org/web/20031201005544/http://www.oberon.ethz.ch/">WWW Site</a></li>
+<li><a href="https://web.archive.org/web/20031201005544/http://www.math.tau.ac.il/~guy/Oberon/">The Oberon Reference Site</a></li>
+</ul><hr><b>This page is linked from: </b> <a class="internal" href="XOberon%2FPowerPC" onmouseover="window.status='XOberon/PowerPC'; return true" onmouseout="window.status='';">XOberon/PowerPC</a> &nbsp; <div class="footer"><form action="https://web.archive.org/web/20031201005544/http://cliki.tunes.org/admin/search"><a href="/web/20031201005544/http://cliki.tunes.org/view-source/Oberon" class="nav" onmouseover="window.status='View the source'; return true">Show</a>/<a href="/web/20031201005544/http://cliki.tunes.org/edit/Oberon" class="nav" onmouseover="window.status='Edit this page'; return true">Edit source</a> |  Last edit: Sat, 15 Nov 2003 15:52:19 | <a href="/web/20031201005544/http://cliki.tunes.org/history/Oberon" class="nav" onmouseover="window.status='Show page history'; return true">History</a> | <a href="CLiki+Search" class="nav" onmouseover="window.status='Search all pages'; return true">Search:</a>&nbsp;<input name="words" size="20"></form></div><!--
+     FILE ARCHIVED ON 00:55:44 Dec 01, 2003 AND RETRIEVED FROM THE
+     INTERNET ARCHIVE ON 06:21:37 Dec 18, 2022.
+     JAVASCRIPT APPENDED BY WAYBACK MACHINE, COPYRIGHT INTERNET ARCHIVE.
+
+     ALL OTHER CONTENT MAY ALSO BE PROTECTED BY COPYRIGHT (17 U.S.C.
+     SECTION 108(a)(3)).
+-->
+<!--
+playback timings (ms):
+  captures_list: 120.803
+  exclusion.robots: 0.084
+  exclusion.robots.policy: 0.075
+  cdx.remote: 0.084
+  esindex: 0.009
+  LoadShardBlock: 89.074 (3)
+  PetaboxLoader3.datanode: 103.505 (4)
+  CDXLines.iter: 12.898 (3)
+  load_resource: 104.806
+  PetaboxLoader3.resolve: 37.774
+-->

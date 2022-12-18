@@ -1,0 +1,94 @@
+<html><head><script src="//archive.org/includes/analytics.js?v=cf34f82" type="text/javascript"></script>
+<script type="text/javascript">window.addEventListener('DOMContentLoaded',function(){var v=archive_analytics.values;v.service='wb';v.server_name='wwwb-app224.us.archive.org';v.server_ms=201;archive_analytics.send_pageview({});});</script>
+<script type="text/javascript" src="/_static/js/bundle-playback.js?v=MzYkZ0TU" charset="utf-8"></script>
+<script type="text/javascript" src="/_static/js/wombat.js?v=UHAOicsW" charset="utf-8"></script>
+<script type="text/javascript">
+  __wm.init("https://web.archive.org/web");
+  __wm.wombat("http://cliki.tunes.org:80/TCL","20040114120728","https://web.archive.org/","web","/_static/",
+	      "1074082048");
+</script>
+<link rel="stylesheet" type="text/css" href="/_static/css/banner-styles.css?v=S1zqJCYt" />
+<link rel="stylesheet" type="text/css" href="/_static/css/iconochive.css?v=qtvMKcIJ" />
+<!-- End Wayback Rewrite JS Include -->
+<title>TUNES : TCL</title>
+<link rel="alternate" type="application/rss+xml" title="Recent Changes" href="https://web.archive.org/web/20040114120728/http://cliki.tunes.org/recent-changes.rdf"></link>
+<link rel="stylesheet" href="https://web.archive.org/web/20040114120728cs_/http://cliki.tunes.org/admin/cliki.css"></link>
+<link rel="shortcut icon" type="image/x-icon" href="https://web.archive.org/web/20040114120728im_/http://cliki.tunes.org/favicon.ico"></link>
+</head>
+<body><div class="navbar"><table width="100%"><tr><td colspan="3" class="disclaimer">CLiki pages can be edited by anybody at any time.  Imagine a <i>scarily comprehensive legal disclaimer</i>.  Double it.  Add two.  <!-- Now shut your eyes.  Dark, isn't it? --></td>
+</tr>
+</table>
+<center><table><tr><td><a href="https://web.archive.org/web/20040114120728/http://cliki.tunes.org/index">Home</a>
+</td>
+<td><a href="https://web.archive.org/web/20040114120728/http://cliki.tunes.org/Recent%20Changes">Recent Changes</a>
+</td>
+<td><a href="https://web.archive.org/web/20040114120728/http://cliki.tunes.org/CLiki">About CLiki</a>
+</td>
+<td><a href="https://web.archive.org/web/20040114120728/http://cliki.tunes.org/Text%20Formatting">Text Formatting</a>
+</td>
+<td><a onclick="if(name=window.prompt('New page name ([A-Za-z0-9 ])')) document.location='https://web.archive.org/web/20040114120728/http://cliki.tunes.org/edit/'+name ;return false;" href="#">Create new page</a>
+</td>
+</tr>
+</table>
+</center>
+</div>
+<h1>TCL</h1>
+<a href="https://web.archive.org/web/20040114120728/http://www.tcl.tk/">TCL</a>
+ is a logically challenged interpreted 
+<a class="internal" href="programming%20language" onmouseover="window.status='programming language'; return true" onmouseout="window.status='';">programming language</a>, which is well known for Tk, a powerful cross-platform GUI toolkit for X-Window, Windows, Mac OS and others. Tcl is a string oriented language "everything is a string" (string is the only user visible datatype).
+
+<p>Tcl's syntax is extremly simple and minimalistic (only 11 rules). This confuses many programmers as they expect and assume rules when there are none. It is easy to learn for non-programmers but can be hard to learn for programmers coming from procedural languages like C/C++, as many concepts work different or aren't needed.
+
+<p>Tcl is a powerful scripting language in the domains of embedding, unicode handling, cross-platform programming, and gluing other programs together. Tcl has strong introspection capabilities, making <a class="internal" href="Reflection" onmouseover="window.status='Reflection'; return true" onmouseout="window.status='';">Reflection</a> an easy task. 
+
+<p>One of the things Tcl lacks is OO. Basically it is a bastard between functional and procedural languages, lacking OO in the core system. But there are many extensions which provide powerful OO features for the language, following different paradigms. (some mimic the style of C++, Java, Smalltalk, etc.)
+
+<p>Those who really managed to understand its semantics try to explain it
+with words such as `binding-time', `runtime', `coffee-time' and pretend
+it's not that bad after all. Tcl has lots of success since it is a
+strongly-hyped language, and has excellent cross-platform support (various 
+flavors of UNIX/Linux, Mac, and Windows).  
+
+<p><ul class="implementations">
+<li>The <a href="https://web.archive.org/web/20040114120728/http://www.tcl.tk/">main site</a>
+.
+<li><a href="https://web.archive.org/web/20040114120728/http://www.equi4.com/tinytcl/">Tiny TCL</a>
+.
+</ul>
+
+<p><ul class="links">
+<li>The <a href="https://web.archive.org/web/20040114120728/http://wiki.tcl.tk/">Tcl'ers Wiki</a>
+.
+<li>The <a href="https://web.archive.org/web/20040114120728/http://groups.google.com/groups?group=comp.lang.tcl">comp.lang.tcl</a>
+ usenet group.
+<li>The <a href="https://web.archive.org/web/20040114120728/http://dmoz.org/Computers/Programming/Languages/Tcl-Tk/">Open Directory's entry for TCL</a>
+.
+<li><a href="https://web.archive.org/web/20040114120728/http://www.aopsys.com/tos/">TCL Object System</a>
+.
+<li><a href="https://web.archive.org/web/20040114120728/http://www.wjduquette.com/snit/">SNIT</a>
+, or Snit's Not Incr Tcl, a pure-Tcl object and megawidget framework, based on delegation.
+<li><a href="https://web.archive.org/web/20040114120728/http://www.xotcl.org/">eXtended Object TCL</a>
+.
+<li><a href="https://web.archive.org/web/20040114120728/http://www.hwaci.com/sw/pttcl/pttcl.html">PThreads-TCL</a>
+.
+</ul><hr><b>This page is linked from: </b> <a class="internal" href="Scheme" onmouseover="window.status='Scheme'; return true" onmouseout="window.status='';">Scheme</a> &nbsp; <a class="internal" href="SWIG" onmouseover="window.status='SWIG'; return true" onmouseout="window.status='';">SWIG</a> &nbsp; <div class="footer"><form action="https://web.archive.org/web/20040114120728/http://cliki.tunes.org/admin/search"><a href="/web/20040114120728/http://cliki.tunes.org/view-source/TCL" class="nav" onmouseover="window.status='View the source'; return true">Show</a>/<a href="/web/20040114120728/http://cliki.tunes.org/edit/TCL" class="nav" onmouseover="window.status='Edit this page'; return true">Edit source</a> |  Last edit: Tue, 25 Nov 2003 16:59:19 | <a href="/web/20040114120728/http://cliki.tunes.org/history/TCL" class="nav" onmouseover="window.status='Show page history'; return true">History</a> | <a href="CLiki+Search" class="nav" onmouseover="window.status='Search all pages'; return true">Search:</a>&nbsp;<input name="words" size="20"></form></div><!--
+     FILE ARCHIVED ON 12:07:28 Jan 14, 2004 AND RETRIEVED FROM THE
+     INTERNET ARCHIVE ON 06:20:40 Dec 18, 2022.
+     JAVASCRIPT APPENDED BY WAYBACK MACHINE, COPYRIGHT INTERNET ARCHIVE.
+
+     ALL OTHER CONTENT MAY ALSO BE PROTECTED BY COPYRIGHT (17 U.S.C.
+     SECTION 108(a)(3)).
+-->
+<!--
+playback timings (ms):
+  captures_list: 155.381
+  exclusion.robots: 0.136
+  exclusion.robots.policy: 0.126
+  RedisCDXSource: 0.679
+  esindex: 0.008
+  LoadShardBlock: 132.918 (3)
+  PetaboxLoader3.resolve: 122.084 (4)
+  PetaboxLoader3.datanode: 43.139 (4)
+  CDXLines.iter: 18.689 (3)
+  load_resource: 39.735
+-->

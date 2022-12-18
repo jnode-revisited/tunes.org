@@ -1,0 +1,68 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html><head><script src="//archive.org/includes/analytics.js?v=cf34f82" type="text/javascript"></script>
+<script type="text/javascript">window.addEventListener('DOMContentLoaded',function(){var v=archive_analytics.values;v.service='wb';v.server_name='wwwb-app209.us.archive.org';v.server_ms=1645;archive_analytics.send_pageview({});});</script>
+<script type="text/javascript" src="/_static/js/bundle-playback.js?v=MzYkZ0TU" charset="utf-8"></script>
+<script type="text/javascript" src="/_static/js/wombat.js?v=UHAOicsW" charset="utf-8"></script>
+<script type="text/javascript">
+  __wm.init("https://web.archive.org/web");
+  __wm.wombat("http://cliki.tunes.org:80/CLiki%20Todo","20050416155555","https://web.archive.org/","web","/_static/",
+	      "1113666955");
+</script>
+<link rel="stylesheet" type="text/css" href="/_static/css/banner-styles.css?v=S1zqJCYt" />
+<link rel="stylesheet" type="text/css" href="/_static/css/iconochive.css?v=qtvMKcIJ" />
+<!-- End Wayback Rewrite JS Include -->
+<title>CTO : CLiki Todo</title><link rel="alternate" type="application/rss+xml" title="Recent Changes" href="https://web.archive.org/web/20050416155555/http://cliki.tunes.org/recent-changes.rdf"><link rel="stylesheet" href="https://web.archive.org/web/20050416155555cs_/http://cliki.tunes.org/admin/cliki.css"></head><body><div id="banner"><a title="CTO" class="logo" href="https://web.archive.org/web/20050416155555/http://cliki.tunes.org/">CTO</a> <span>CLiki for the TUNES project</span></div><div id="navbar"><a class="internal" href="https://web.archive.org/web/20050416155555/http://cliki.tunes.org/index">Home</a> <a class="internal" href="https://web.archive.org/web/20050416155555/http://cliki.tunes.org/Recent%20Changes">Recent Changes</a> <a class="internal" href="https://web.archive.org/web/20050416155555/http://cliki.tunes.org/CLiki">About CLiki</a> <a class="internal" href="https://web.archive.org/web/20050416155555/http://cliki.tunes.org/Text%20Formatting">Text Formatting</a> <a class="internal" onclick="if(name=window.prompt('New page name ([A-Za-z0-9 ])')) document.location='https://web.archive.org/web/20050416155555/http://cliki.tunes.org/edit/'+name ;return false;" href="/web/20050416155555/http://cliki.tunes.org/">Create New Page</a></div><div id="main"><h1>CLiki Todo</h1><h2>Appearance</h2>
+<p>Modify the CSS and/or source to have a better appearance.</p>
+<p>Re-defun the functions that use the original with-page-surround macro instead of our patched version.</p>
+<h2>Backups</h2>
+<p>Enter the files into Tunes' CVS.</p>
+<h2>Infobot Integration</h2>
+An access function is already implemented as "cto $foo". What remains:
+<ul>
+<li>Import rest of the relevant <a href="https://web.archive.org/web/20050416155555/http://tunes.org/~nef/abi/factoids.txt">the factoids</a>.
+<li>Add an interface to the search function, perhaps showing the returned values directly instead of printing the URL equivalent.
+<li>Add a way to summarize any node, using topic annotations and external links. The key function is a summary, which may just have to be the first line of the node or some extra annotation. <span class="comment">Using a SPAN tag with class "summary" is an option, but it requires too much manual work and extra storage.</span> <span class="comment" style="color: DarkGreen">Another option is to use <a href="https://web.archive.org/web/20050416155555/http://www.usemod.com/cgi-bin/mb.pl?SectionedPage">sectioned pages</a></span>
+</ul>
+<h2>CLiki</h2>
+<ul>
+<li>Modify Araneida to use PAServe's url-parsing logic... basically, fix it.
+<li>Make sure that any characters that are not proper file name characters are URL-escaped. Also, be sure to reverse-translate the escaping.
+<li>Track (con-)current edits with hidden form values and merge them with a diff-style system.
+<li>Add the simplest authentication scheme possible.
+<li>Automate the backup system, and eventually include a reversion mechanism.
+<li>Add a web interface for controlling the Foo.titles file contents.
+<li>Fix up the page-creation routines so that all of the previous references to that page that were broken get counted in its references table.
+<li>Adjust the all-pages display so that it shows the Foo.titles variants. It currently shows duplicates.
+<li>Show a link that displays the edit history, if not the revisions, for the current page. <span class="comment">Implemented, but only shows up to 60 results; any more requires some logic adjustments.</span> (Lost in the merge with Cliki CVS - has to be ported from water's source.)
+<li>Sort the list of "Pages in this topic"
+<li>Provide a text links database URL so that cliki can be browsed using <a href="https://web.archive.org/web/20050416155555/http://touchgraph.sourceforge.net/">TouchGraph</a> <a href="https://web.archive.org/web/20050416155555/http://prdownloads.sourceforge.net/touchgraph/TGWB_102.zip">WikiBrowser</a>.
+The format of a line in the links database is:
+<pre>node-name [node-linked-to ...] [url-linked-to ...]
+</pre>
+</ul>
+<h2>Content</h2>
+<ul>
+<li>Finish moving over and verifying the ad hoc information on the Tunes Review for Languages, Reflection, and Migration methods.
+<li>Make sure people know how to use the <a class="internal" href="https://web.archive.org/web/20050416155555/http://cliki.tunes.org/topic">topic</a>s properly, and keep the set of topics understandable and small (help!! They're growing!).
+</ul><hr><p><b>This page is linked from: </b> <a class="internal" href="https://web.archive.org/web/20050416155555/http://cliki.tunes.org/CLiki">CLiki</a> &nbsp; <a class="internal" href="https://web.archive.org/web/20050416155555/http://cliki.tunes.org/Sand%20Box">Sand Box</a> &nbsp; </div><div id="footer"><form action="https://web.archive.org/web/20050416155555/http://cliki.tunes.org/admin/search"><a class="internal" href="https://web.archive.org/web/20050416155555/http://cliki.tunes.org/edit/CLiki%20Todo">Edit page</a> | <a class="internal" href="https://web.archive.org/web/20050416155555/http://cliki.tunes.org/CLiki%20Todo?source">View source</a> | Revisions: <b title="Thu, 01 Apr 2004 12:37:51 GMT">1</b>  | <input name="words" size="30"><input type="submit" value="search"></form><div id="disclaimer">CTO pages can be modified by anyone at anytime.
+Imagine an appropriate disclaimer. Double it. Add two.</div></body></html></div><!--
+     FILE ARCHIVED ON 15:55:55 Apr 16, 2005 AND RETRIEVED FROM THE
+     INTERNET ARCHIVE ON 06:07:01 Dec 18, 2022.
+     JAVASCRIPT APPENDED BY WAYBACK MACHINE, COPYRIGHT INTERNET ARCHIVE.
+
+     ALL OTHER CONTENT MAY ALSO BE PROTECTED BY COPYRIGHT (17 U.S.C.
+     SECTION 108(a)(3)).
+-->
+<!--
+playback timings (ms):
+  captures_list: 150.159
+  exclusion.robots: 0.087
+  exclusion.robots.policy: 0.079
+  cdx.remote: 0.067
+  esindex: 0.009
+  LoadShardBlock: 60.939 (3)
+  PetaboxLoader3.datanode: 88.118 (4)
+  CDXLines.iter: 16.489 (3)
+  load_resource: 1491.173
+  PetaboxLoader3.resolve: 1396.557
+-->

@@ -1,0 +1,56 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html><head><script src="//archive.org/includes/analytics.js?v=cf34f82" type="text/javascript"></script>
+<script type="text/javascript">window.addEventListener('DOMContentLoaded',function(){var v=archive_analytics.values;v.service='wb';v.server_name='wwwb-app228.us.archive.org';v.server_ms=165;archive_analytics.send_pageview({});});</script>
+<script type="text/javascript" src="/_static/js/bundle-playback.js?v=MzYkZ0TU" charset="utf-8"></script>
+<script type="text/javascript" src="/_static/js/wombat.js?v=UHAOicsW" charset="utf-8"></script>
+<script type="text/javascript">
+  __wm.init("https://web.archive.org/web");
+  __wm.wombat("http://cliki.tunes.org:80/Uncategorized","20050320032122","https://web.archive.org/","web","/_static/",
+	      "1111288882");
+</script>
+<link rel="stylesheet" type="text/css" href="/_static/css/banner-styles.css?v=S1zqJCYt" />
+<link rel="stylesheet" type="text/css" href="/_static/css/iconochive.css?v=qtvMKcIJ" />
+<!-- End Wayback Rewrite JS Include -->
+<title>CTO : Uncategorized</title><link rel="alternate" type="application/rss+xml" title="Recent Changes" href="https://web.archive.org/web/20050320032122/http://cliki.tunes.org/recent-changes.rdf"><link rel="stylesheet" href="https://web.archive.org/web/20050320032122cs_/http://cliki.tunes.org/admin/cliki.css"></head><body><div id="banner"><a title="CTO" class="logo" href="https://web.archive.org/web/20050320032122/http://cliki.tunes.org/">CTO</a> <span>CLiki for the TUNES project</span></div><div id="navbar"><a class="internal" href="https://web.archive.org/web/20050320032122/http://cliki.tunes.org/index">Home</a> <a class="internal" href="https://web.archive.org/web/20050320032122/http://cliki.tunes.org/Recent%20Changes">Recent Changes</a> <a class="internal" href="https://web.archive.org/web/20050320032122/http://cliki.tunes.org/CLiki">About CLiki</a> <a class="internal" href="https://web.archive.org/web/20050320032122/http://cliki.tunes.org/Text%20Formatting">Text Formatting</a> <a class="internal" onclick="if(name=window.prompt('New page name ([A-Za-z0-9 ])')) document.location='https://web.archive.org/web/20050320032122/http://cliki.tunes.org/edit/'+name ;return false;" href="/web/20050320032122/http://cliki.tunes.org/">Create New Page</a></div><div id="main"><h1>Uncategorized</h1>This is a placeholder page for Uncategorized resources.  Anything listed here is probably here due to a lack in the existing topics rather than something intrinsic to the page.
+
+<p><ul><li><a class="internal" href="https://web.archive.org/web/20050320032122/http://cliki.tunes.org/ADATE">ADATE</a> - Presently <a class="internal" href="https://web.archive.org/web/20050320032122/http://cliki.tunes.org/Uncategorized">Uncategorized</a>, <cite><strong>A</strong>utomatic <strong>D</strong>esign of <strong>A</strong>lgorithms <strong>T</strong>hrough <strong>E</strong>volution (ADATE) is a system for automatic programming (inductive inference of algorithms)</li><li><a class="internal" href="https://web.archive.org/web/20050320032122/http://cliki.tunes.org/class-based">class-based</a> - Describe class-based here</li><li><a class="internal" href="https://web.archive.org/web/20050320032122/http://cliki.tunes.org/Computer%20Algebra%20System">Computer Algebra System</a> - <a class="internal" href="https://web.archive.org/web/20050320032122/http://cliki.tunes.org/Uncategorized">Uncategorized</a>: the <a class="internal" href="https://web.archive.org/web/20050320032122/http://cliki.tunes.org/topic">topic</a> for systems which provide the means to deal with mathematical concepts computationally at various levels of abstraction</li><li><a class="internal" href="https://web.archive.org/web/20050320032122/http://cliki.tunes.org/Lego">Lego</a> - Presently <a class="internal" href="https://web.archive.org/web/20050320032122/http://cliki.tunes.org/uncategorized">uncategorized</a></li></ul>
+
+<p>Debate (below the line) is encouraged on where best to put these and how to rearrange things generally
+
+<p><hr>
+
+<p>In my opinion, in general for information organization and retrieval systems,
+the right approach is <em>not</em> to set up preconceived categories and try
+to shoehorn everything into those categories, but to use dynamic clustering
+based on "soft" (natural content) and "hard" (specially assigned) keywords.
+If somebody wants a toplevel menu, you just list the major clusters, and
+use their most significant keywords as the "name" of the category shown
+in the menu.
+
+<p><hr>
+A topic map may be a simple way of indentifying 'hub' topics with lots of links. I saw one on another wiki somewhere. Maybe near <a href="https://web.archive.org/web/20050320032122/http://www.c2.com/cgi/wiki?GraphWiki">http://www.c2.com/cgi/wiki?GraphWiki</a> but that wasn't it. It looked more like the semantic web activity map-thing on w3c (done in SVG)
+
+<p>Of course identifying key topics/documents based on their links goes back to the old citation indexes you used to find in the Uni library. Google uses links for its ranking. The same sort of thing.
+
+<p><hr><hr><p><b>Pages in this topic: </b> <a class="internal" href="https://web.archive.org/web/20050320032122/http://cliki.tunes.org/ADATE">ADATE</a> &nbsp; <a class="internal" href="https://web.archive.org/web/20050320032122/http://cliki.tunes.org/class-based">class-based</a> &nbsp; <a class="internal" href="https://web.archive.org/web/20050320032122/http://cliki.tunes.org/Computer%20Algebra%20System">Computer Algebra System</a> &nbsp; <a class="internal" href="https://web.archive.org/web/20050320032122/http://cliki.tunes.org/Lego">Lego</a> &nbsp; <hr><p><b>Also linked from: </b> <a class="internal" href="https://web.archive.org/web/20050320032122/http://cliki.tunes.org/index">index</a> &nbsp; </div><div id="footer"><form action="https://web.archive.org/web/20050320032122/http://cliki.tunes.org/admin/search"><a class="internal" href="https://web.archive.org/web/20050320032122/http://cliki.tunes.org/edit/Uncategorized">Edit page</a> | <a class="internal" href="https://web.archive.org/web/20050320032122/http://cliki.tunes.org/Uncategorized?source">View source</a> | Revisions: <b title="Thu, 09 Jan 2003 17:08:27 GMT">0</b>  | <input name="words" size="30"><input type="submit" value="search"></form><div id="disclaimer">CTO pages can be modified by anyone at anytime.
+Imagine an appropriate disclaimer. Double it. Add two.</div></body></html></div><!--
+     FILE ARCHIVED ON 03:21:22 Mar 20, 2005 AND RETRIEVED FROM THE
+     INTERNET ARCHIVE ON 06:05:06 Dec 18, 2022.
+     JAVASCRIPT APPENDED BY WAYBACK MACHINE, COPYRIGHT INTERNET ARCHIVE.
+
+     ALL OTHER CONTENT MAY ALSO BE PROTECTED BY COPYRIGHT (17 U.S.C.
+     SECTION 108(a)(3)).
+-->
+<!--
+playback timings (ms):
+  captures_list: 88.24
+  exclusion.robots: 0.088
+  exclusion.robots.policy: 0.081
+  RedisCDXSource: 0.538
+  esindex: 0.024
+  LoadShardBlock: 71.973 (3)
+  PetaboxLoader3.datanode: 56.258 (4)
+  CDXLines.iter: 13.357 (3)
+  load_resource: 73.036
+  PetaboxLoader3.resolve: 58.769
+-->

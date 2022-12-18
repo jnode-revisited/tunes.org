@@ -1,0 +1,61 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html><head><script src="//archive.org/includes/analytics.js?v=cf34f82" type="text/javascript"></script>
+<script type="text/javascript">window.addEventListener('DOMContentLoaded',function(){var v=archive_analytics.values;v.service='wb';v.server_name='wwwb-app225.us.archive.org';v.server_ms=412;archive_analytics.send_pageview({});});</script>
+<script type="text/javascript" src="/_static/js/bundle-playback.js?v=MzYkZ0TU" charset="utf-8"></script>
+<script type="text/javascript" src="/_static/js/wombat.js?v=UHAOicsW" charset="utf-8"></script>
+<script type="text/javascript">
+  __wm.init("https://web.archive.org/web");
+  __wm.wombat("http://cliki.tunes.org:80/WIMP","20050307202110","https://web.archive.org/","web","/_static/",
+	      "1110226870");
+</script>
+<link rel="stylesheet" type="text/css" href="/_static/css/banner-styles.css?v=S1zqJCYt" />
+<link rel="stylesheet" type="text/css" href="/_static/css/iconochive.css?v=qtvMKcIJ" />
+<!-- End Wayback Rewrite JS Include -->
+<title>CTO : WIMP</title><link rel="alternate" type="application/rss+xml" title="Recent Changes" href="https://web.archive.org/web/20050307202110/http://cliki.tunes.org/recent-changes.rdf"><link rel="stylesheet" href="https://web.archive.org/web/20050307202110cs_/http://cliki.tunes.org/admin/cliki.css"></head><body><div id="banner"><a title="CTO" class="logo" href="https://web.archive.org/web/20050307202110/http://cliki.tunes.org/">CTO</a> <span>CLiki for the TUNES project</span></div><div id="navbar"><a class="internal" href="https://web.archive.org/web/20050307202110/http://cliki.tunes.org/index">Home</a> <a class="internal" href="https://web.archive.org/web/20050307202110/http://cliki.tunes.org/Recent%20Changes">Recent Changes</a> <a class="internal" href="https://web.archive.org/web/20050307202110/http://cliki.tunes.org/CLiki">About CLiki</a> <a class="internal" href="https://web.archive.org/web/20050307202110/http://cliki.tunes.org/Text%20Formatting">Text Formatting</a> <a class="internal" onclick="if(name=window.prompt('New page name ([A-Za-z0-9 ])')) document.location='https://web.archive.org/web/20050307202110/http://cliki.tunes.org/edit/'+name ;return false;" href="/web/20050307202110/http://cliki.tunes.org/">Create New Page</a></div><div id="main"><h1>WIMP</h1>An <a class="internal" href="https://web.archive.org/web/20050307202110/http://cliki.tunes.org/acronym">acronym</a> for Windows, Icons, Mice, and Pull-down menus.
+<hr>
+This is the standard Mac/Windows <a class="internal" href="https://web.archive.org/web/20050307202110/http://cliki.tunes.org/user%20interface">user interface</a> first thought up at Xerox.
+
+<p>In theory, they are good for novices because they are highly <a class="internal" href="https://web.archive.org/web/20050307202110/http://cliki.tunes.org/visible">visible</a>. However, mice are inefficient compared to keyboards for most things; Pull-down menus reduce visibility by hiding commands; and worst of all, windows are <a class="internal" href="https://web.archive.org/web/20050307202110/http://cliki.tunes.org/Modal">Modal</a>. This means that, though it's possible that a novice might find the interface pleasant, an expert would be losing great amounts of time.
+
+<p>Icons can be useful, but only when accompanied with text. If used alone, their meaning is often confusing and ambiguous. When added to text they increase pointing efficiency (by increasing the size of the clickable area) and can be aesthetically pleasing.
+
+<p>And this is considering the ideal case, which existing WIMPs fall far short of.
+
+<p>Basically, this <a class="internal" href="https://web.archive.org/web/20050307202110/http://cliki.tunes.org/paradigm">paradigm</a> is tolerable for novices and awful for experts.
+
+<p><blockquote>"windows are, in a sense, modes in sheep's clothing"
+<br>--Larry Tesler of Xerox PARC </blockquote>
+-- <a class="internal" href="https://web.archive.org/web/20050307202110/http://cliki.tunes.org/seaslug">seaslug</a>
+
+<p><hr>
+I want to moderate, not oppose, this reasoning. <strong>If taken to extreme</strong> this contrast, keyboard vs mouse, is a nonsense. In particular if using a keyboard means lack of <a class="internal" href="https://web.archive.org/web/20050307202110/http://cliki.tunes.org/visible">visibility</a> then the time saved up using a keyboard is nothing compared to the time spent in trying to remember an arcane command or sequence of keys: anyone is a neophyte with respect to some less frequently used parts of a system/application.
+
+<p>In such case at least 2 options are possible:
+<ul>
+  <li>for a rare use a point-and-click <a class="internal" href="https://web.archive.org/web/20050307202110/http://cliki.tunes.org/user%20interface">interface</a>, if well designed, is a good compromise;</li>
+  <li>for a less casual use habituation plays its role: it is important a consistent and <a class="internal" href="https://web.archive.org/web/20050307202110/http://cliki.tunes.org/unified">unified</a> <a class="internal" href="https://web.archive.org/web/20050307202110/http://cliki.tunes.org/user%20interface">interface</a>, so that is possible to reuse knowledge of other parts of the system in the form of generic, widely applicable, abstract <a class="internal" href="https://web.archive.org/web/20050307202110/http://cliki.tunes.org/GOMS">operators/methods</a>.</li>
+</ul>
+
+<p>Anyway I consider "optimal" an adaptive <a class="internal" href="https://web.archive.org/web/20050307202110/http://cliki.tunes.org/user%20interface">interface</a>, one which helps, <strong>when necessary</strong>, a smooth transition from neophyte to expert status (<strong>no</strong>, I'm not thinking about these stupid menu items that suddenly disappear).
+-- <a class="internal" href="https://web.archive.org/web/20050307202110/http://cliki.tunes.org/Mad70">Mad70</a><hr><p><b>This page is linked from: </b> <a class="internal" href="https://web.archive.org/web/20050307202110/http://cliki.tunes.org/CLIM">CLIM</a> &nbsp; <a class="internal" href="https://web.archive.org/web/20050307202110/http://cliki.tunes.org/Garnet">Garnet</a> &nbsp; <a class="internal" href="https://web.archive.org/web/20050307202110/http://cliki.tunes.org/PostScript">PostScript</a> &nbsp; <a class="internal" href="https://web.archive.org/web/20050307202110/http://cliki.tunes.org/The%20Humane%20Environment">The Humane Environment</a> &nbsp; <a class="internal" href="https://web.archive.org/web/20050307202110/http://cliki.tunes.org/Wily">Wily</a> &nbsp; <a class="internal" href="https://web.archive.org/web/20050307202110/http://cliki.tunes.org/windowing%20system">windowing system</a> &nbsp; <a class="internal" href="https://web.archive.org/web/20050307202110/http://cliki.tunes.org/ZUI">ZUI</a> &nbsp; </div><div id="footer"><form action="https://web.archive.org/web/20050307202110/http://cliki.tunes.org/admin/search"><a class="internal" href="https://web.archive.org/web/20050307202110/http://cliki.tunes.org/edit/WIMP">Edit page</a> | <a class="internal" href="https://web.archive.org/web/20050307202110/http://cliki.tunes.org/WIMP?source">View source</a> | Revisions: <b title="Tue, 18 Mar 2003 08:12:41 GMT">0</b>  | <input name="words" size="30"><input type="submit" value="search"></form><div id="disclaimer">CTO pages can be modified by anyone at anytime.
+Imagine an appropriate disclaimer. Double it. Add two.</div></body></html></div><!--
+     FILE ARCHIVED ON 20:21:10 Mar 07, 2005 AND RETRIEVED FROM THE
+     INTERNET ARCHIVE ON 06:18:38 Dec 18, 2022.
+     JAVASCRIPT APPENDED BY WAYBACK MACHINE, COPYRIGHT INTERNET ARCHIVE.
+
+     ALL OTHER CONTENT MAY ALSO BE PROTECTED BY COPYRIGHT (17 U.S.C.
+     SECTION 108(a)(3)).
+-->
+<!--
+playback timings (ms):
+  captures_list: 140.589
+  exclusion.robots: 0.071
+  exclusion.robots.policy: 0.064
+  RedisCDXSource: 0.689
+  esindex: 0.007
+  LoadShardBlock: 123.181 (3)
+  PetaboxLoader3.datanode: 147.355 (4)
+  CDXLines.iter: 14.496 (3)
+  load_resource: 267.742
+  PetaboxLoader3.resolve: 188.319
+-->

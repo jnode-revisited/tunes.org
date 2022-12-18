@@ -1,0 +1,50 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html><head><script src="//archive.org/includes/analytics.js?v=cf34f82" type="text/javascript"></script>
+<script type="text/javascript">window.addEventListener('DOMContentLoaded',function(){var v=archive_analytics.values;v.service='wb';v.server_name='wwwb-app212.us.archive.org';v.server_ms=203;archive_analytics.send_pageview({});});</script>
+<script type="text/javascript" src="/_static/js/bundle-playback.js?v=MzYkZ0TU" charset="utf-8"></script>
+<script type="text/javascript" src="/_static/js/wombat.js?v=UHAOicsW" charset="utf-8"></script>
+<script type="text/javascript">
+  __wm.init("https://web.archive.org/web");
+  __wm.wombat("http://cliki.tunes.org:80/Modal","20050414222302","https://web.archive.org/","web","/_static/",
+	      "1113517382");
+</script>
+<link rel="stylesheet" type="text/css" href="/_static/css/banner-styles.css?v=S1zqJCYt" />
+<link rel="stylesheet" type="text/css" href="/_static/css/iconochive.css?v=qtvMKcIJ" />
+<!-- End Wayback Rewrite JS Include -->
+<title>CTO : Modal</title><link rel="alternate" type="application/rss+xml" title="Recent Changes" href="https://web.archive.org/web/20050414222302/http://cliki.tunes.org/recent-changes.rdf"><link rel="stylesheet" href="https://web.archive.org/web/20050414222302cs_/http://cliki.tunes.org/admin/cliki.css"></head><body><div id="banner"><a title="CTO" class="logo" href="https://web.archive.org/web/20050414222302/http://cliki.tunes.org/">CTO</a> <span>CLiki for the TUNES project</span></div><div id="navbar"><a class="internal" href="https://web.archive.org/web/20050414222302/http://cliki.tunes.org/index">Home</a> <a class="internal" href="https://web.archive.org/web/20050414222302/http://cliki.tunes.org/Recent%20Changes">Recent Changes</a> <a class="internal" href="https://web.archive.org/web/20050414222302/http://cliki.tunes.org/CLiki">About CLiki</a> <a class="internal" href="https://web.archive.org/web/20050414222302/http://cliki.tunes.org/Text%20Formatting">Text Formatting</a> <a class="internal" onclick="if(name=window.prompt('New page name ([A-Za-z0-9 ])')) document.location='https://web.archive.org/web/20050414222302/http://cliki.tunes.org/edit/'+name ;return false;" href="/web/20050414222302/http://cliki.tunes.org/">Create New Page</a></div><div id="main"><h1>Modal</h1>Modal is a <a class="internal" href="https://web.archive.org/web/20050414222302/http://cliki.tunes.org/user%20interface">user interface</a> <a class="internal" href="https://web.archive.org/web/20050414222302/http://cliki.tunes.org/term">term</a>, but it is applied from the field of logic, where a mode means a situation where only a finite set of possibilities for transitioning into the future are possible. That is, only certain paths are accessible. Modality in the logical sense has to do with the various phases of possibility, therefore. A modality and a mode are <em>not</em> the same concept.
+
+<p>We can say a <a class="internal" href="https://web.archive.org/web/20050414222302/http://cliki.tunes.org/user%20interface">user interface</a> is modeless if it always responds to the <a class="internal" href="https://web.archive.org/web/20050414222302/http://cliki.tunes.org/user">user</a>'s input the same way. Thus, if it does not respond <a class="internal" href="https://web.archive.org/web/20050414222302/http://cliki.tunes.org/uniform">uniform</a>ly to a user's input the same way, it is modal. Keep in mind that this is a relative term, in that the behavior of a system in the user interface sense is subjective. That is, the user as subject has a model of the system which determines how she acts. So uniformity is relative; it represents conformance with the user's expectations based on how they perceive the system to be composed.
+
+<p>We can say that a modal interface is not <a class="internal" href="https://web.archive.org/web/20050414222302/http://cliki.tunes.org/orthogonal">orthogonal</a> to the task at hand, because it requires the user to reason about the state of the interface in order to accomplish the task at hand. While a modeless interface allows a user to take advantage of habituation to remove this unorthogonality, the modal interface not only requires conscious thought but can often cause mistakes due to the unstoppable tendency to habituate.
+
+<p>Unfortunately, to some degree, modes are unavoidable in an interface. In some cases, this isn't bad, like in the case of a text cursor. Depending on where the text cursor is, text is inserted or deleted at different places. However, I do not personally experience mode errors with a text cursor, and I've never seen anyone else experience one. Apparently our minds are able to habitually track a text cursor, which turns the mode into not a mode for all intents and purposes.
+
+<p>In the cases where our minds are unable to "habituate over" a mode, and where the mode is unavoidable, a few steps can be taken to minimize the impact of the mode.
+<ol>
+<li>Force the user to kinesthetically maintain the mode. This has two advantages: constant sensory feedback and abortability. By abortability I mean the user can back out of the mode easily at any time. Think of how many mode errors you've made with caps lock. Now think of how many you've made with shift.  It CAN still happen, but it's not nearly as likely.</li>
+<li>Give good sensory feedback, preferrably in the form of (radical) visual change, a sound (one for when the mode activates, another for when it deactivates, and/or, in the case of a really dangerous mode, a constant humming or buzzing), or kinesthetically maintainance. Imagine if your current windowing system/interface did not visually describe focus, or if you could not see the text cursor.</li>
+<li>Provide documentation/help to alert the user as to what the mode is, what it does, and most importantly, how to get out of it. Imagine performing some action and suddenly, for no apparent reason, the screen turns red and the speakers beep and start buzzing.</li>
+</ol>
+<hr>
+This page needs some examples. -Tril<hr><p><b>This page is linked from: </b> <a class="internal" href="https://web.archive.org/web/20050414222302/http://cliki.tunes.org/WIMP">WIMP</a> &nbsp; </div><div id="footer"><form action="https://web.archive.org/web/20050414222302/http://cliki.tunes.org/admin/search"><a class="internal" href="https://web.archive.org/web/20050414222302/http://cliki.tunes.org/edit/Modal">Edit page</a> | <a class="internal" href="https://web.archive.org/web/20050414222302/http://cliki.tunes.org/Modal?source">View source</a> | Revisions: <b title="Mon, 24 Feb 2003 08:14:08 GMT">0</b>  | <input name="words" size="30"><input type="submit" value="search"></form><div id="disclaimer">CTO pages can be modified by anyone at anytime.
+Imagine an appropriate disclaimer. Double it. Add two.</div></body></html></div><!--
+     FILE ARCHIVED ON 22:23:02 Apr 14, 2005 AND RETRIEVED FROM THE
+     INTERNET ARCHIVE ON 05:46:30 Dec 18, 2022.
+     JAVASCRIPT APPENDED BY WAYBACK MACHINE, COPYRIGHT INTERNET ARCHIVE.
+
+     ALL OTHER CONTENT MAY ALSO BE PROTECTED BY COPYRIGHT (17 U.S.C.
+     SECTION 108(a)(3)).
+-->
+<!--
+playback timings (ms):
+  captures_list: 111.354
+  exclusion.robots: 0.101
+  exclusion.robots.policy: 0.092
+  cdx.remote: 0.079
+  esindex: 0.01
+  LoadShardBlock: 78.137 (3)
+  PetaboxLoader3.datanode: 99.714 (4)
+  CDXLines.iter: 16.089 (3)
+  load_resource: 88.306
+  PetaboxLoader3.resolve: 36.51
+-->

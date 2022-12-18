@@ -1,0 +1,107 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html><head><script src="//archive.org/includes/analytics.js?v=cf34f82" type="text/javascript"></script>
+<script type="text/javascript">window.addEventListener('DOMContentLoaded',function(){var v=archive_analytics.values;v.service='wb';v.server_name='wwwb-app222.us.archive.org';v.server_ms=220;archive_analytics.send_pageview({});});</script>
+<script type="text/javascript" src="/_static/js/bundle-playback.js?v=MzYkZ0TU" charset="utf-8"></script>
+<script type="text/javascript" src="/_static/js/wombat.js?v=UHAOicsW" charset="utf-8"></script>
+<script type="text/javascript">
+  __wm.init("https://web.archive.org/web");
+  __wm.wombat("http://cliki.tunes.org:80/Forth","20050323231142","https://web.archive.org/","web","/_static/",
+	      "1111619502");
+</script>
+<link rel="stylesheet" type="text/css" href="/_static/css/banner-styles.css?v=S1zqJCYt" />
+<link rel="stylesheet" type="text/css" href="/_static/css/iconochive.css?v=qtvMKcIJ" />
+<!-- End Wayback Rewrite JS Include -->
+<title>CTO : Forth</title><link rel="alternate" type="application/rss+xml" title="Recent Changes" href="https://web.archive.org/web/20050323231142/http://cliki.tunes.org/recent-changes.rdf"><link rel="stylesheet" href="https://web.archive.org/web/20050323231142cs_/http://cliki.tunes.org/admin/cliki.css"></head><body><div id="banner"><a title="CTO" class="logo" href="https://web.archive.org/web/20050323231142/http://cliki.tunes.org/">CTO</a> <span>CLiki for the TUNES project</span></div><div id="navbar"><a class="internal" href="https://web.archive.org/web/20050323231142/http://cliki.tunes.org/index">Home</a> <a class="internal" href="https://web.archive.org/web/20050323231142/http://cliki.tunes.org/Recent%20Changes">Recent Changes</a> <a class="internal" href="https://web.archive.org/web/20050323231142/http://cliki.tunes.org/CLiki">About CLiki</a> <a class="internal" href="https://web.archive.org/web/20050323231142/http://cliki.tunes.org/Text%20Formatting">Text Formatting</a> <a class="internal" onclick="if(name=window.prompt('New page name ([A-Za-z0-9 ])')) document.location='https://web.archive.org/web/20050323231142/http://cliki.tunes.org/edit/'+name ;return false;" href="/web/20050323231142/http://cliki.tunes.org/">Create New Page</a></div><div id="main"><h1>Forth</h1>A <a class="internal" href="https://web.archive.org/web/20050323231142/http://cliki.tunes.org/low-level">low-level</a> <a class="internal" href="https://web.archive.org/web/20050323231142/http://cliki.tunes.org/functional">functional</a> <a class="internal" href="https://web.archive.org/web/20050323231142/http://cliki.tunes.org/programming%20language">programming language</a>, mostly <a class="internal" href="https://web.archive.org/web/20050323231142/http://cliki.tunes.org/concatenative">concatenative</a>, with <a class="internal" href="https://web.archive.org/web/20050323231142/http://cliki.tunes.org/imperative">imperative</a> features, for a stack-based <a class="internal" href="https://web.archive.org/web/20050323231142/http://cliki.tunes.org/VM">VM</a> model, invented by <a class="internal" href="https://web.archive.org/web/20050323231142/http://cliki.tunes.org/Chuck%20Moore">Chuck Moore</a>. It is a very interesting language to study, both for its achievements and its shortcomings.
+<span class="comment">The writer won't list those shortcomings of Forth here, and he doesn't list any of its achievements either. You'll just have to guess what he must have been thinking.
+-- <a class="internal" href="https://web.archive.org/web/20050323231142/http://cliki.tunes.org/A%20N%20Other">A N Other</a></span>
+
+<p>Central to Forth is the notion of a "word", corresponding to a function in other languages. A Forth program, after parsing, is nothing but a list of words, executed consecutively by the "inner interpreter", the core of Forth.
+
+<p>Forth is fully reflective and self-containing; the Forth parser (the so-called "outer interpreter") is written in Forth and can be modified at any time. It has also a set of words to access the input buffer (see for example the word <code>PARSE</code>). Thus, at least potentially, Forth can have any syntax.
+
+<p>Forth is usually untyped, much in the same way that <a class="internal" href="https://web.archive.org/web/20050323231142/http://cliki.tunes.org/Assembly">Assembly</a> is (though see strongForth below). More generally, Forth is a very low-level language, with manual management of memory, fixed-size buffers, pointer manipulation; but reflection makes it a remarkably powerful language among low-level languages.
+
+<p>See also <a class="internal" href="https://web.archive.org/web/20050323231142/http://cliki.tunes.org/Forth%20OSes">Forth OSes</a>, <a class="internal" href="https://web.archive.org/web/20050323231142/http://cliki.tunes.org/Forth%20is%20NOT%20intrinsically%20slow">Forth is NOT intrinsically slow</a>.
+
+<p><ul class="links">
+<li><a href="https://web.archive.org/web/20050323231142/http://www.forth.org/">forth.org</a>, <a href="https://web.archive.org/web/20050323231142/ftp://ftp.forth.org/">FTP Site</a>, <a href="https://web.archive.org/web/20050323231142/ftp://ftp.uni-bremen.de/pub/languages/programming/forth/Taygeta-Archive">German FTP Mirror</a>.</li>
+<li><a href="https://web.archive.org/web/20050323231142/http://www.forth.com/Content/History/History1.htm">The Evolution of Forth</a>, a Forth history by <a class="internal" href="https://web.archive.org/web/20050323231142/http://cliki.tunes.org/Chuck%20Moore">Charles H. Moore</a>, Elizabeth D. Rather, Donald R. Colburn.</li>
+<li><a href="https://web.archive.org/web/20050323231142/http://www.ultratechnology.com/4th_1970.html">FORTH - A Language for Interactive Computing</a>: the original FORTH paper by <a class="internal" href="https://web.archive.org/web/20050323231142/http://cliki.tunes.org/Chuck%20Moore">Chuck Moore</a>.</li>
+<li><a href="https://web.archive.org/web/20050323231142/http://www.colorforth.com/HOPL.html">Forth - The Early Years</a> another Forth history from its inventor.</li>
+<li><a href="https://web.archive.org/web/20050323231142/http://www.taygeta.com/forth/dpans.html">Draft ANS Forth</a> the standard.</li>
+<li><a href="https://web.archive.org/web/20050323231142/http://www.forthfreak.net/wiki/">The ForthFreak Wiki</a>
+<li><a href="https://web.archive.org/web/20050323231142/http://www.taygeta.com/forth_intro/stackflo.html">An Introduction to Forth Using StackFlow</a>.</li>
+<li><a href="https://web.archive.org/web/20050323231142/http://www.faqs.org/faqs/computer-lang/forth-faq/">FAQ</a> written by the good people at comp.lang.forth.</li>
+<li><a href="https://web.archive.org/web/20050323231142/http://www.cera2.com/softd/forth.htm">cera2.com</a> and <a href="https://web.archive.org/web/20050323231142/http://www.eg3.com/softd/forth.htm">eg3.com</a>.</li>
+<li><a href="https://web.archive.org/web/20050323231142/http://www.ece.cmu.edu/~koopman/stack_computers/index.html">Stack Computers: the new wave</a>: a freely available online book by <a class="internal" href="https://web.archive.org/web/20050323231142/http://cliki.tunes.org/Philip%20Koopman">Philip J. Koopman, Jr.</a></li>
+<li><a href="https://web.archive.org/web/20050323231142/http://home.iae.nl/users/mhx/">Starting Forth</a>, Leo Brodie's classic introductory book is now available on-line (from Marcel Hendrix's home page).</li>
+<li><a href="https://web.archive.org/web/20050323231142/http://www.complang.tuwien.ac.at/anton/home.html">M. Anton Ertl's WWW site</a>.</li>
+<li><a href="https://web.archive.org/web/20050323231142/http://dmoz.org/Computers/Programming/Languages/Forth/">Forth entry in the Open Directory Project</a>: a comprehensive list of Forth related links</li>
+<li><a href="https://web.archive.org/web/20050323231142/http://www.zetetics.com/bj/papers/index.html">Moving Forth: a series on writing Forth kernels</a>: is a collection of papers by Brad Rodriguez, including Design Decisions in the Forth Kernel (various threading techniques)</li>
+</ul>
+
+<p><ul class="links">
+<li><a href="https://web.archive.org/web/20050323231142/http://www.colorforth.com/">colorForth</a>: <a class="internal" href="https://web.archive.org/web/20050323231142/http://cliki.tunes.org/Chuck%20Moore">Chuck Moore</a>'s colorForth Homepage</li>
+<li><a href="https://web.archive.org/web/20050323231142/http://www.ultratechnology.com/">UltraTechnology.com</a>: Jeff Fox's UltraTechnology Homepage</li>
+<li><a href="https://web.archive.org/web/20050323231142/http://www.forth.com/">Forth, Inc.</a>: founded by the original developers of Forth.</li>
+<li><a href="https://web.archive.org/web/20050323231142/http://www.taygeta.com/">Taygeta Scientific Incorporated</a>.</li>
+<li><a href="https://web.archive.org/web/20050323231142/http://www.ptsc.com/">Patriot Scientific Corp.</a>: FORTH chip maker.</li>
+</ul>
+
+<p><ul class="links">
+<li><a href="https://web.archive.org/web/20050323231142/http://home.pipeline.com/~hbaker1/ForthStack.html">Linear Logic and Permutation Stacks--The Forth Shall Be First</a> (<a href="https://web.archive.org/web/20050323231142/http://home.pipeline.com/~hbaker1/ForthStack.ps.gz">.ps.gz</a>), a paper by <a class="internal" href="https://web.archive.org/web/20050323231142/http://cliki.tunes.org/Henry%20Baker">Henry Baker</a>
+<br><strong>Abstract</strong>:
+<blockquote>Girard's <a class="internal" href="https://web.archive.org/web/20050323231142/http://cliki.tunes.org/linear%20logic">linear logic</a> can be used to model programming languages in which each bound variable name has exactly one "occurrence"--i.e., no variable can have implicit "fan-out"; multiple uses require explicit duplication. Among other nice properties, "linear" languages need no garbage collector, yet have no dangling reference problems. We show a natural equivalence between a "linear" programming language and a stack machine in which the top items can undergo arbitrary permutations. Such permutation stack machines can be considered <a class="internal" href="https://web.archive.org/web/20050323231142/http://cliki.tunes.org/combinator">combinator</a> abstractions of Moore's Forth programming language.</blockquote>
+</li>
+</ul>
+
+<p><ul class="implementations">
+<li><a href="https://web.archive.org/web/20050323231142/http://www.jwdt.com/~paysan/gforth.html">Gforth</a>: GNU Forth.</li>
+<li><a href="https://web.archive.org/web/20050323231142/http://www.powermops.org/">Mops</a>: A superb public domain FORTH with <a class="internal" href="https://web.archive.org/web/20050323231142/http://cliki.tunes.org/OO">OO</a> extensions for Mac OS X. (An older version for "Classic" Mac OS can be found on the <a href="https://web.archive.org/web/20050323231142/ftp://ftp.powermops.org/">Mops FTPsite</a>.)</li>
+<li><a href="https://web.archive.org/web/20050323231142/ftp://ftp.taygeta.com/pub/Forth/">PFE</a>.</li>
+<li><a href="https://web.archive.org/web/20050323231142/http://home.t-online.de/home/s.becher/forth/">strongForth Homepage</a> [<a class="internal" href="https://web.archive.org/web/20050323231142/http://cliki.tunes.org/MIA">MIA</a>] (<a href="https://web.archive.org/web/20050323231142/http://web.archive.org/web/20040207010925/http://home.t-online.de/home/s.becher/forth/">archived</a> at <a class="internal" href="https://web.archive.org/web/20050323231142/http://cliki.tunes.org/Search%20Facilities">Internet Archive</a>) (<a href="https://web.archive.org/web/20050323231142/http://www.egroups.com/group/strongforth/">strongForth Yahoo! group</a> [<a class="internal" href="https://web.archive.org/web/20050323231142/http://cliki.tunes.org/MIA">MIA</a>]) an ANS FORTH with strong compile-time typechecking. See also discussions in <a class="internal" href="https://web.archive.org/web/20050323231142/http://cliki.tunes.org/concatenative">concatenative</a> Yahoo! group.</li>
+<li>For various implementations see <a href="https://web.archive.org/web/20050323231142/http://forth.sourceforge.net/">comp.lang.forth.repository</a>.</li>
+</ul>
+
+<p><ul class="links"><h4>Unsorted</h4>
+<li><a href="https://web.archive.org/web/20050323231142/http://www.xs4all.nl/~thebeez/4tH/">4th</a> compiler.</li>
+<li><a href="https://web.archive.org/web/20050323231142/http://www.complang.tuwien.ac.at/projects/forth.html#gforth">Gforth</a> system.</li>
+<li><a href="https://web.archive.org/web/20050323231142/http://home.netsurf.de/helge.horch/hype.html">Hype</a> - a simple <a class="internal" href="https://web.archive.org/web/20050323231142/http://cliki.tunes.org/object-oriented">object-oriented</a> Forth.</li>
+<li><a href="https://web.archive.org/web/20050323231142/http://www.hcsw.org/frugal/">Frugal</a> - HardCore SoftWare's Forth system.</li>
+<li><a href="https://web.archive.org/web/20050323231142/http://www.elilabs.com/~rj/dreams/">Dreams</a> - a Forth <a class="internal" href="https://web.archive.org/web/20050323231142/http://cliki.tunes.org/object-oriented">object-oriented</a> programming extension.</li>
+<li><a href="https://web.archive.org/web/20050323231142/http://www.perl.com/CPAN/modules/by-authors/id/PETERGAL/">Pgforth</a> - a Forth interpreter in <a class="internal" href="https://web.archive.org/web/20050323231142/http://cliki.tunes.org/Perl">Perl</a>.</li>
+<li><a href="https://web.archive.org/web/20050323231142/http://isforth.clss.net/">IsForth</a> - a 32 bit Direct Threaded <a class="internal" href="https://web.archive.org/web/20050323231142/http://cliki.tunes.org/Linux">Linux</a> Forth compiler.</li>
+<li><a href="https://web.archive.org/web/20050323231142/http://www.fourmilab.ch/atlast/">Atlast</a> - Autodesk Threaded Language Application System Toolkit, a <a class="internal" href="https://web.archive.org/web/20050323231142/http://cliki.tunes.org/programming%20language">programming language</a> based on FORTH-83.</li>
+<li><a href="https://web.archive.org/web/20050323231142/http://coldstore.sourceforge.net/chaos/chaos.html">Coldstore's Chaos</a> - a Forth-like <a class="internal" href="https://web.archive.org/web/20050323231142/http://cliki.tunes.org/programming%20language">programming language</a>. Also <a href="https://web.archive.org/web/20050323231142/http://coldstore.sourceforge.net/wiki/index.php?page=Chaos">Chaos's wiki page</a>.</li>
+<li><a href="https://web.archive.org/web/20050323231142/http://www.compusmart.ab.ca/rc/Timbre/timbre.htm">Timbre</a> - a script driven translator engine.</li>
+<li><a href="https://web.archive.org/web/20050323231142/http://www.zetetics.com/bj/papers/oofs.htm">A Survey of Object-Oriented Forths</a>.</li>
+<li><a href="https://web.archive.org/web/20050323231142/http://qualdan.homeip.net:5000/svn/fpos/">Fpos</a> - a native PPC ColorForth. [<a class="internal" href="https://web.archive.org/web/20050323231142/http://cliki.tunes.org/MIA">MIA</a>]</li>
+<li><a href="https://web.archive.org/web/20050323231142/http://www.icdc.com/~mghughes18/sources/">Fcvm</a> - Forth Code <a class="internal" href="https://web.archive.org/web/20050323231142/http://cliki.tunes.org/Virtual%20Machine">Virtual Machine</a>. [<a class="internal" href="https://web.archive.org/web/20050323231142/http://cliki.tunes.org/MIA">MIA</a>]</li>
+<li><a href="https://web.archive.org/web/20050323231142/http://www.theforthsource.com/">The Forth Source</a>.</li>
+<li><a href="https://web.archive.org/web/20050323231142/http://www.fortunecity.com/skyscraper/coding/396/">Common Forth homepage</a>.</li>
+<li><a href="https://web.archive.org/web/20050323231142/http://dec.bournemouth.ac.uk/forth/">Forth Research page</a>.</li>
+<li><a href="https://web.archive.org/web/20050323231142/http://home.iae.nl/users/mhx/">iForth, tForth, eForth, mxForth, benchmarks, and links</a>.</li>
+<li>Various Forth link collections <a href="https://web.archive.org/web/20050323231142/http://dec.bournemouth.ac.uk/forth/links.html">here</a> <a href="https://web.archive.org/web/20050323231142/http://www.albany.net/~hello/links.htm#Forth">here</a> and <a href="https://web.archive.org/web/20050323231142/http://angg.twu.net/forth.html">here</a>.</li>
+</ul>
+<hr><p><b>Pages in this topic: </b> <a class="internal" href="https://web.archive.org/web/20050323231142/http://cliki.tunes.org/Flua">Flua</a> &nbsp; <a class="internal" href="https://web.archive.org/web/20050323231142/http://cliki.tunes.org/Forth%20OSes">Forth OSes</a> &nbsp; <a class="internal" href="https://web.archive.org/web/20050323231142/http://cliki.tunes.org/Kevo">Kevo</a> &nbsp; <hr><p><b>Also linked from: </b> <a class="internal" href="https://web.archive.org/web/20050323231142/http://cliki.tunes.org/Block%20Editor">Block Editor</a> &nbsp; <a class="internal" href="https://web.archive.org/web/20050323231142/http://cliki.tunes.org/Charles%20Childers">Charles Childers</a> &nbsp; <a class="internal" href="https://web.archive.org/web/20050323231142/http://cliki.tunes.org/Chuck%20Moore">Chuck Moore</a> &nbsp; <a class="internal" href="https://web.archive.org/web/20050323231142/http://cliki.tunes.org/Credits">Credits</a> &nbsp; <a class="internal" href="https://web.archive.org/web/20050323231142/http://cliki.tunes.org/False">False</a> &nbsp; <a class="internal" href="https://web.archive.org/web/20050323231142/http://cliki.tunes.org/Forth%20is%20NOT%20intrinsically%20slow">Forth is NOT intrinsically slow</a> &nbsp; <a class="internal" href="https://web.archive.org/web/20050323231142/http://cliki.tunes.org/Joy">Joy</a> &nbsp; <a class="internal" href="https://web.archive.org/web/20050323231142/http://cliki.tunes.org/Object-Oriented">Object-Oriented</a> &nbsp; <a class="internal" href="https://web.archive.org/web/20050323231142/http://cliki.tunes.org/OJOS">OJOS</a> &nbsp; <a class="internal" href="https://web.archive.org/web/20050323231142/http://cliki.tunes.org/Open%20Firmware">Open Firmware</a> &nbsp; <a class="internal" href="https://web.archive.org/web/20050323231142/http://cliki.tunes.org/Parsing">Parsing</a> &nbsp; <a class="internal" href="https://web.archive.org/web/20050323231142/http://cliki.tunes.org/PostScript">PostScript</a> &nbsp; <a class="internal" href="https://web.archive.org/web/20050323231142/http://cliki.tunes.org/Reflective%20Programming%20Languages">Reflective Programming Languages</a> &nbsp; <a class="internal" href="https://web.archive.org/web/20050323231142/http://cliki.tunes.org/Retro">Retro</a> &nbsp; <a class="internal" href="https://web.archive.org/web/20050323231142/http://cliki.tunes.org/RPL">RPL</a> &nbsp; <a class="internal" href="https://web.archive.org/web/20050323231142/http://cliki.tunes.org/Scheme">Scheme</a> &nbsp; <a class="internal" href="https://web.archive.org/web/20050323231142/http://cliki.tunes.org/SED">SED</a> &nbsp; <a class="internal" href="https://web.archive.org/web/20050323231142/http://cliki.tunes.org/Small%20C">Small C</a> &nbsp; <a class="internal" href="https://web.archive.org/web/20050323231142/http://cliki.tunes.org/Stacker">Stacker</a> &nbsp; <a class="internal" href="https://web.archive.org/web/20050323231142/http://cliki.tunes.org/The%20True%20Story%20of%20Ada">The True Story of Ada</a> &nbsp; <a class="internal" href="https://web.archive.org/web/20050323231142/http://cliki.tunes.org/Tom%20Novelli">Tom Novelli</a> &nbsp; </div><div id="footer"><form action="https://web.archive.org/web/20050323231142/http://cliki.tunes.org/admin/search"><a class="internal" href="https://web.archive.org/web/20050323231142/http://cliki.tunes.org/edit/Forth">Edit page</a> | <a class="internal" href="https://web.archive.org/web/20050323231142/http://cliki.tunes.org/Forth?source">View source</a> | Revisions: <a href="https://web.archive.org/web/20050323231142/http://cliki.tunes.org/Forth?v=5" title="Sat, 26 Jun 2004 22:50:09 GMT">5</a> <a href="https://web.archive.org/web/20050323231142/http://cliki.tunes.org/Forth?v=6" title="Tue, 05 Oct 2004 15:03:36 GMT">6</a> <a href="https://web.archive.org/web/20050323231142/http://cliki.tunes.org/Forth?v=7" title="Sun, 10 Oct 2004 02:20:06 GMT">7</a> <a href="https://web.archive.org/web/20050323231142/http://cliki.tunes.org/Forth?v=8" title="Sun, 10 Oct 2004 18:46:02 GMT">8</a> <b title="Fri, 29 Oct 2004 22:05:52 GMT">9</b>  | <input name="words" size="30"><input type="submit" value="search"></form><div id="disclaimer">CTO pages can be modified by anyone at anytime.
+Imagine an appropriate disclaimer. Double it. Add two.</div></body></html></div><!--
+     FILE ARCHIVED ON 23:11:42 Mar 23, 2005 AND RETRIEVED FROM THE
+     INTERNET ARCHIVE ON 06:08:40 Dec 18, 2022.
+     JAVASCRIPT APPENDED BY WAYBACK MACHINE, COPYRIGHT INTERNET ARCHIVE.
+
+     ALL OTHER CONTENT MAY ALSO BE PROTECTED BY COPYRIGHT (17 U.S.C.
+     SECTION 108(a)(3)).
+-->
+<!--
+playback timings (ms):
+  captures_list: 88.322
+  exclusion.robots: 0.104
+  exclusion.robots.policy: 0.095
+  RedisCDXSource: 0.596
+  esindex: 0.01
+  LoadShardBlock: 49.435 (3)
+  PetaboxLoader3.datanode: 125.378 (4)
+  CDXLines.iter: 17.014 (3)
+  load_resource: 124.988
+  PetaboxLoader3.resolve: 40.295
+-->

@@ -1,0 +1,40 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html><head><script src="//archive.org/includes/analytics.js?v=cf34f82" type="text/javascript"></script>
+<script type="text/javascript">window.addEventListener('DOMContentLoaded',function(){var v=archive_analytics.values;v.service='wb';v.server_name='wwwb-app225.us.archive.org';v.server_ms=231;archive_analytics.send_pageview({});});</script>
+<script type="text/javascript" src="/_static/js/bundle-playback.js?v=MzYkZ0TU" charset="utf-8"></script>
+<script type="text/javascript" src="/_static/js/wombat.js?v=UHAOicsW" charset="utf-8"></script>
+<script type="text/javascript">
+  __wm.init("https://web.archive.org/web");
+  __wm.wombat("http://cliki.tunes.org:80/CLiki?v=30","20050416155109","https://web.archive.org/","web","/_static/",
+	      "1113666669");
+</script>
+<link rel="stylesheet" type="text/css" href="/_static/css/banner-styles.css?v=S1zqJCYt" />
+<link rel="stylesheet" type="text/css" href="/_static/css/iconochive.css?v=qtvMKcIJ" />
+<!-- End Wayback Rewrite JS Include -->
+<title>CTO : CLiki</title><link rel="alternate" type="application/rss+xml" title="Recent Changes" href="https://web.archive.org/web/20050416155109/http://cliki.tunes.org/recent-changes.rdf"><link rel="stylesheet" href="https://web.archive.org/web/20050416155109cs_/http://cliki.tunes.org/admin/cliki.css"></head><body><div id="banner"><a title="CTO" class="logo" href="https://web.archive.org/web/20050416155109/http://cliki.tunes.org/">CTO</a> <span>CLiki for the TUNES project</span></div><div id="navbar"><a class="internal" href="https://web.archive.org/web/20050416155109/http://cliki.tunes.org/index">Home</a> <a class="internal" href="https://web.archive.org/web/20050416155109/http://cliki.tunes.org/Recent%20Changes">Recent Changes</a> <a class="internal" href="https://web.archive.org/web/20050416155109/http://cliki.tunes.org/CLiki">About CLiki</a> <a class="internal" href="https://web.archive.org/web/20050416155109/http://cliki.tunes.org/Text%20Formatting">Text Formatting</a> <a class="internal" onclick="if(name=window.prompt('New page name ([A-Za-z0-9 ])')) document.location='https://web.archive.org/web/20050416155109/http://cliki.tunes.org/edit/'+name ;return false;" href="/web/20050416155109/http://cliki.tunes.org/">Create New Page</a></div><div id="main"><h1>CLiki</h1>CLiki is a free collaborative hypertext authoring program, written in <a class="internal" href="https://web.archive.org/web/20050416155109/http://cliki.tunes.org/Common%20Lisp">Common Lisp</a>. Modelled on <a class="internal" href="https://web.archive.org/web/20050416155109/http://cliki.tunes.org/Wiki">Wiki</a>, it's free software using the <a href="https://web.archive.org/web/20050416155109/http://www.cliki.net/MIT-LICENSE">MIT license</a>. See <a href="https://web.archive.org/web/20050416155109/http://www.cliki.net/CLiki">CLiki's home page</a> for more details. 
+Add feature suggestions on the <a class="internal" href="https://web.archive.org/web/20050416155109/http://cliki.tunes.org/CLiki%20Todo">CLiki Todo</a>.
+
+<p>Also, anyone who wants to contribute to this CLiki hypertext system should understand the <a class="internal" href="https://web.archive.org/web/20050416155109/http://cliki.tunes.org/Privacy%20Statement">Privacy Statement</a>.
+
+<p>Cliki.Tunes.Org, <a class="internal" href="https://web.archive.org/web/20050416155109/http://cliki.tunes.org/aka">aka</a> CTO, is a CLiki installation based on the CVS release of the original CLiki, plus local modifications and configuration settings, that are available <a href="https://web.archive.org/web/20050416155109/http://tunes.org/cgi-bin/viewcvs.cgi/cto/">on the Tunes CVS site</a> (see these <a href="https://web.archive.org/web/20050416155109/http://tunes.org/collaboration.html#cvs">instructions</a>), and can be used either as an example or as a layered basis for your own installation.<hr><p><b>This page is linked from: </b> <a class="internal" href="https://web.archive.org/web/20050416155109/http://cliki.tunes.org/Daniel%20Barlow">Daniel Barlow</a> &nbsp; <a class="internal" href="https://web.archive.org/web/20050416155109/http://cliki.tunes.org/Exokernel">Exokernel</a> &nbsp; <a class="internal" href="https://web.archive.org/web/20050416155109/http://cliki.tunes.org/HTML%20special%20characters%20and%20symbols">HTML special characters and symbols</a> &nbsp; <a class="internal" href="https://web.archive.org/web/20050416155109/http://cliki.tunes.org/index">index</a> &nbsp; <a class="internal" href="https://web.archive.org/web/20050416155109/http://cliki.tunes.org/Parsing">Parsing</a> &nbsp; <a class="internal" href="https://web.archive.org/web/20050416155109/http://cliki.tunes.org/Past%20news">Past news</a> &nbsp; <a class="internal" href="https://web.archive.org/web/20050416155109/http://cliki.tunes.org/Privacy%20Statement">Privacy Statement</a> &nbsp; <a class="internal" href="https://web.archive.org/web/20050416155109/http://cliki.tunes.org/self-proclaimed%20%93hackers%94">self-proclaimed “hackers”</a> &nbsp; <a class="internal" href="https://web.archive.org/web/20050416155109/http://cliki.tunes.org/Ward's%20Wiki">Ward's Wiki</a> &nbsp; <a class="internal" href="https://web.archive.org/web/20050416155109/http://cliki.tunes.org/Wiki">Wiki</a> &nbsp; </div><div id="footer"><form action="https://web.archive.org/web/20050416155109/http://cliki.tunes.org/admin/search"><a class="internal" href="https://web.archive.org/web/20050416155109/http://cliki.tunes.org/edit/CLiki">Edit page</a> | <a class="internal" href="https://web.archive.org/web/20050416155109/http://cliki.tunes.org/CLiki?source&amp;v=30">View source</a> | Revisions: <a href="https://web.archive.org/web/20050416155109/http://cliki.tunes.org/CLiki?v=28" title="Wed, 03 Nov 2004 07:59:57 GMT">28</a> <a href="https://web.archive.org/web/20050416155109/http://cliki.tunes.org/CLiki?v=29" title="Sun, 07 Nov 2004 09:19:16 GMT">29</a> <b title="Sun, 07 Nov 2004 09:20:51 GMT">30</b> <a href="https://web.archive.org/web/20050416155109/http://cliki.tunes.org/CLiki?v=31" title="Sat, 13 Nov 2004 05:27:59 GMT">31</a> <a href="https://web.archive.org/web/20050416155109/http://cliki.tunes.org/CLiki?v=32" title="Sat, 13 Nov 2004 21:07:03 GMT">32</a>  | <input name="words" size="30"><input type="submit" value="search"></form><div id="disclaimer">CTO pages can be modified by anyone at anytime.
+Imagine an appropriate disclaimer. Double it. Add two.</div></body></html></div><!--
+     FILE ARCHIVED ON 15:51:09 Apr 16, 2005 AND RETRIEVED FROM THE
+     INTERNET ARCHIVE ON 06:07:22 Dec 18, 2022.
+     JAVASCRIPT APPENDED BY WAYBACK MACHINE, COPYRIGHT INTERNET ARCHIVE.
+
+     ALL OTHER CONTENT MAY ALSO BE PROTECTED BY COPYRIGHT (17 U.S.C.
+     SECTION 108(a)(3)).
+-->
+<!--
+playback timings (ms):
+  captures_list: 77.19
+  exclusion.robots: 0.069
+  exclusion.robots.policy: 0.062
+  RedisCDXSource: 0.875
+  esindex: 0.006
+  LoadShardBlock: 61.329 (3)
+  PetaboxLoader3.datanode: 164.423 (4)
+  CDXLines.iter: 12.621 (3)
+  load_resource: 150.937
+  PetaboxLoader3.resolve: 40.181
+-->

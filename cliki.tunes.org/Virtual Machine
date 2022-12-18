@@ -1,0 +1,42 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html><head><script src="//archive.org/includes/analytics.js?v=cf34f82" type="text/javascript"></script>
+<script type="text/javascript">window.addEventListener('DOMContentLoaded',function(){var v=archive_analytics.values;v.service='wb';v.server_name='wwwb-app215.us.archive.org';v.server_ms=513;archive_analytics.send_pageview({});});</script>
+<script type="text/javascript" src="/_static/js/bundle-playback.js?v=MzYkZ0TU" charset="utf-8"></script>
+<script type="text/javascript" src="/_static/js/wombat.js?v=UHAOicsW" charset="utf-8"></script>
+<script type="text/javascript">
+  __wm.init("https://web.archive.org/web");
+  __wm.wombat("http://cliki.tunes.org:80/Virtual%20Machine","20050309212810","https://web.archive.org/","web","/_static/",
+	      "1110403690");
+</script>
+<link rel="stylesheet" type="text/css" href="/_static/css/banner-styles.css?v=S1zqJCYt" />
+<link rel="stylesheet" type="text/css" href="/_static/css/iconochive.css?v=qtvMKcIJ" />
+<!-- End Wayback Rewrite JS Include -->
+<title>CTO : Virtual Machine</title><link rel="alternate" type="application/rss+xml" title="Recent Changes" href="https://web.archive.org/web/20050309212810/http://cliki.tunes.org/recent-changes.rdf"><link rel="stylesheet" href="https://web.archive.org/web/20050309212810cs_/http://cliki.tunes.org/admin/cliki.css"></head><body><div id="banner"><a title="CTO" class="logo" href="https://web.archive.org/web/20050309212810/http://cliki.tunes.org/">CTO</a> <span>CLiki for the TUNES project</span></div><div id="navbar"><a class="internal" href="https://web.archive.org/web/20050309212810/http://cliki.tunes.org/index">Home</a> <a class="internal" href="https://web.archive.org/web/20050309212810/http://cliki.tunes.org/Recent%20Changes">Recent Changes</a> <a class="internal" href="https://web.archive.org/web/20050309212810/http://cliki.tunes.org/CLiki">About CLiki</a> <a class="internal" href="https://web.archive.org/web/20050309212810/http://cliki.tunes.org/Text%20Formatting">Text Formatting</a> <a class="internal" onclick="if(name=window.prompt('New page name ([A-Za-z0-9 ])')) document.location='https://web.archive.org/web/20050309212810/http://cliki.tunes.org/edit/'+name ;return false;" href="/web/20050309212810/http://cliki.tunes.org/">Create New Page</a></div><div id="main"><h1>Virtual Machine</h1>The <a class="internal" href="https://web.archive.org/web/20050309212810/http://cliki.tunes.org/term">term</a> for a machine (<a class="internal" href="https://web.archive.org/web/20050309212810/http://cliki.tunes.org/computing%20system">computing system</a>) that is designed for and intended to be used only as software within another machine.  A virtual machine has a defined interface and behavior within its environment.  This interface is often, (but not necessarily) implemented using <a class="internal" href="https://web.archive.org/web/20050309212810/http://cliki.tunes.org/bytecode">bytecode</a>, which the virtual machine interprets as its own instructions.
+
+<p>Virtual machines are distinguished from <a class="internal" href="https://web.archive.org/web/20050309212810/http://cliki.tunes.org/programming%20languages">programming languages</a> by virtue of being active (<a class="internal" href="https://web.archive.org/web/20050309212810/http://cliki.tunes.org/Actor">Actor</a>s?) that provide the environment or <a class="internal" href="https://web.archive.org/web/20050309212810/http://cliki.tunes.org/context">context</a> for the programs that they run, while a programming language is a static entity, with a runtime environment or interpreter being required to actually use the programs.
+
+<p>Interpreters are in fact VMs, and may be implemented by on-the-fly translation to another <a class="internal" href="https://web.archive.org/web/20050309212810/http://cliki.tunes.org/low-level">lower-level</a> VM, and so on until you reach one machine that might be less virtual.
+
+<p><ul class="links" <li>Reviews of <a class="internal" href="https://web.archive.org/web/20050309212810/http://cliki.tunes.org/Virtual%20Machines">Virtual Machines</a>.
+</ul><hr><p><b>This page is linked from: </b> <a class="internal" href="https://web.archive.org/web/20050309212810/http://cliki.tunes.org/C%20Compiler%20%20%20dlopen%20VM">C Compiler   dlopen VM</a> &nbsp; <a class="internal" href="https://web.archive.org/web/20050309212810/http://cliki.tunes.org/Forth">Forth</a> &nbsp; <a class="internal" href="https://web.archive.org/web/20050309212810/http://cliki.tunes.org/IL">IL</a> &nbsp; <a class="internal" href="https://web.archive.org/web/20050309212810/http://cliki.tunes.org/Virtual%20Machines">Virtual Machines</a> &nbsp; <a class="internal" href="https://web.archive.org/web/20050309212810/http://cliki.tunes.org/VM">VM</a> &nbsp; </div><div id="footer"><form action="https://web.archive.org/web/20050309212810/http://cliki.tunes.org/admin/search"><a class="internal" href="https://web.archive.org/web/20050309212810/http://cliki.tunes.org/edit/Virtual%20Machine">Edit page</a> | <a class="internal" href="https://web.archive.org/web/20050309212810/http://cliki.tunes.org/Virtual%20Machine?source">View source</a> | Revisions: <b title="Mon, 24 Mar 2003 09:45:23 GMT">0</b>  | <input name="words" size="30"><input type="submit" value="search"></form><div id="disclaimer">CTO pages can be modified by anyone at anytime.
+Imagine an appropriate disclaimer. Double it. Add two.</div></body></html></div><!--
+     FILE ARCHIVED ON 21:28:10 Mar 09, 2005 AND RETRIEVED FROM THE
+     INTERNET ARCHIVE ON 06:17:48 Dec 18, 2022.
+     JAVASCRIPT APPENDED BY WAYBACK MACHINE, COPYRIGHT INTERNET ARCHIVE.
+
+     ALL OTHER CONTENT MAY ALSO BE PROTECTED BY COPYRIGHT (17 U.S.C.
+     SECTION 108(a)(3)).
+-->
+<!--
+playback timings (ms):
+  captures_list: 236.93
+  exclusion.robots: 0.099
+  exclusion.robots.policy: 0.089
+  cdx.remote: 0.077
+  esindex: 0.01
+  LoadShardBlock: 204.877 (3)
+  PetaboxLoader3.resolve: 249.764 (4)
+  PetaboxLoader3.datanode: 116.347 (4)
+  CDXLines.iter: 16.221 (3)
+  load_resource: 271.923
+-->

@@ -1,0 +1,196 @@
+<html><head><script src="//archive.org/includes/analytics.js?v=cf34f82" type="text/javascript"></script>
+<script type="text/javascript">window.addEventListener('DOMContentLoaded',function(){var v=archive_analytics.values;v.service='wb';v.server_name='wwwb-app223.us.archive.org';v.server_ms=326;archive_analytics.send_pageview({});});</script>
+<script type="text/javascript" src="/_static/js/bundle-playback.js?v=MzYkZ0TU" charset="utf-8"></script>
+<script type="text/javascript" src="/_static/js/wombat.js?v=UHAOicsW" charset="utf-8"></script>
+<script type="text/javascript">
+  __wm.init("https://web.archive.org/web");
+  __wm.wombat("http://cliki.tunes.org:80/Recent%20Changes?start=1590","20040106213231","https://web.archive.org/","web","/_static/",
+	      "1073424751");
+</script>
+<link rel="stylesheet" type="text/css" href="/_static/css/banner-styles.css?v=S1zqJCYt" />
+<link rel="stylesheet" type="text/css" href="/_static/css/iconochive.css?v=qtvMKcIJ" />
+<!-- End Wayback Rewrite JS Include -->
+<title>TUNES : Recent Changes</title>
+<link rel="alternate" type="application/rss+xml" title="Recent Changes" href="https://web.archive.org/web/20040106213231/http://cliki.tunes.org/recent-changes.rdf"></link>
+<link rel="stylesheet" href="https://web.archive.org/web/20040106213231cs_/http://cliki.tunes.org/admin/cliki.css"></link>
+<link rel="shortcut icon" type="image/x-icon" href="https://web.archive.org/web/20040106213231im_/http://cliki.tunes.org/favicon.ico"></link>
+</head>
+<body><div class="navbar"><table width="100%"><tr><td colspan="3" class="disclaimer">CLiki pages can be edited by anybody at any time.  Imagine a <i>scarily comprehensive legal disclaimer</i>.  Double it.  Add two.  <!-- Now shut your eyes.  Dark, isn't it? --></td>
+</tr>
+</table>
+<center><table><tr><td><a href="https://web.archive.org/web/20040106213231/http://cliki.tunes.org/index">Home</a>
+</td>
+<td><a href="https://web.archive.org/web/20040106213231/http://cliki.tunes.org/Recent%20Changes">Recent Changes</a>
+</td>
+<td><a href="https://web.archive.org/web/20040106213231/http://cliki.tunes.org/CLiki">About CLiki</a>
+</td>
+<td><a href="https://web.archive.org/web/20040106213231/http://cliki.tunes.org/Text%20Formatting">Text Formatting</a>
+</td>
+<td><a onclick="if(name=window.prompt('New page name ([A-Za-z0-9 ])')) document.location='https://web.archive.org/web/20040106213231/http://cliki.tunes.org/edit/'+name ;return false;" href="#">Create new page</a>
+</td>
+</tr>
+</table>
+</center>
+</div>
+<h1>Recent Changes</h1>
+<p>Older entries (starting at 1590)</p>
+</blockquote>
+<a name="3252984480"><h3>Friday 31 January 2003</h3></a>
+<blockquote><br><tt> 06:48 </tt><b><a class="internal" href="Reflection" onmouseover="window.status='Reflection'; return true" onmouseout="window.status='';">Reflection</a></b> : Added the Reflection'96 conference link. -- <a class="internal" href="water" onmouseover="window.status='water'; return true" onmouseout="window.status='';">water</a> 
+<br><tt> 06:44 </tt><b><a class="internal" href="Reflection%20101" onmouseover="window.status='Reflection 101'; return true" onmouseout="window.status='';">Reflection 101</a></b> : Added the behavioral reflection paper. -- <a class="internal" href="water" onmouseover="window.status='water'; return true" onmouseout="window.status='';">water</a> 
+<br><tt> 05:25 </tt><b><a class="internal" href="PL%20101" onmouseover="window.status='PL 101'; return true" onmouseout="window.status='';">PL 101</a></b> : what's wrong with SML? -- <a class="internal" href="Matthew%20Danish" onmouseover="window.status='Matthew Danish'; return true" onmouseout="window.status='';">Matthew Danish</a> 
+<br><tt> 04:34 </tt><b><a class="internal" href="Napier88" onmouseover="window.status='Napier88'; return true" onmouseout="window.status='';">Napier88</a></b> : Fixed the link to persistence. -- <a class="internal" href="water" onmouseover="window.status='water'; return true" onmouseout="window.status='';">water</a> 
+<br><tt> 02:35 </tt><b><a class="internal" href="OSKit" onmouseover="window.status='OSKit'; return true" onmouseout="window.status='';">OSKit</a></b> : Added the resource topic. -- <a class="internal" href="water" onmouseover="window.status='water'; return true" onmouseout="window.status='';">water</a> 
+<br><tt> 02:15 </tt><b><a class="internal" href="Programming%20Languages" onmouseover="window.status='Programming Languages'; return true" onmouseout="window.status='';">Programming Languages</a></b> : Removed the teaching list and added a list about implementation issues. -- <a class="internal" href="water" onmouseover="window.status='water'; return true" onmouseout="window.status='';">water</a> 
+<br><tt> 02:09 </tt><b><a class="internal" href="Dynamic%20Compilation" onmouseover="window.status='Dynamic Compilation'; return true" onmouseout="window.status='';">Dynamic Compilation</a></b> : Added with links from the old review. -- <a class="internal" href="water" onmouseover="window.status='water'; return true" onmouseout="window.status='';">water</a> 
+<br><tt> 00:44 </tt><b><a class="internal" href="Common%20Lisp" onmouseover="window.status='Common Lisp'; return true" onmouseout="window.status='';">Common Lisp</a></b> : Noted that GCL is not "excellent". -- <a class="internal" href="water" onmouseover="window.status='water'; return true" onmouseout="window.status='';">water</a> 
+</blockquote>
+<a name="3252956709"><h3>Thursday 30 January 2003</h3></a>
+<blockquote><br><tt> 23:05 </tt><b><a class="internal" href="Proof" onmouseover="window.status='Proof'; return true" onmouseout="window.status='';">Proof</a></b> : Moved over the living links from the old review page. -- <a class="internal" href="water" onmouseover="window.status='water'; return true" onmouseout="window.status='';">water</a> 
+<br><tt> 23:02 </tt><b><a class="internal" href="Persistence" onmouseover="window.status='Persistence'; return true" onmouseout="window.status='';">Persistence</a></b> : Moved over the links from the old review page. -- <a class="internal" href="water" onmouseover="window.status='water'; return true" onmouseout="window.status='';">water</a> 
+<br><tt> 22:55 </tt><b><a class="internal" href="Object-Oriented" onmouseover="window.status='Object-Oriented'; return true" onmouseout="window.status='';">Object-Oriented</a></b> : Moved over the living links from the old review page. -- <a class="internal" href="water" onmouseover="window.status='water'; return true" onmouseout="window.status='';">water</a> 
+<br><tt> 22:18 </tt><b><a class="internal" href="Agora" onmouseover="window.status='Agora'; return true" onmouseout="window.status='';">Agora</a></b> : Changed OO to a topic. -- <a class="internal" href="water" onmouseover="window.status='water'; return true" onmouseout="window.status='';">water</a> 
+<br><tt> 22:18 </tt><b><a class="internal" href="Dynamo" onmouseover="window.status='Dynamo'; return true" onmouseout="window.status='';">Dynamo</a></b> : Added the logic topic. -- <a class="internal" href="water" onmouseover="window.status='water'; return true" onmouseout="window.status='';">water</a> 
+<br><tt> 22:16 </tt><b><a class="internal" href="Maude" onmouseover="window.status='Maude'; return true" onmouseout="window.status='';">Maude</a></b> : Added the logic topic. -- <a class="internal" href="water" onmouseover="window.status='water'; return true" onmouseout="window.status='';">water</a> 
+<br><tt> 22:16 </tt><b><a class="internal" href="Mercury" onmouseover="window.status='Mercury'; return true" onmouseout="window.status='';">Mercury</a></b> : Added the logic topic. -- <a class="internal" href="water" onmouseover="window.status='water'; return true" onmouseout="window.status='';">water</a> 
+<br><tt> 22:16 </tt><b><a class="internal" href="Prolog" onmouseover="window.status='Prolog'; return true" onmouseout="window.status='';">Prolog</a></b> : Added the logic topic. -- <a class="internal" href="water" onmouseover="window.status='water'; return true" onmouseout="window.status='';">water</a> 
+<br><tt> 22:15 </tt><b><a class="internal" href="Programming%20Languages" onmouseover="window.status='Programming Languages'; return true" onmouseout="window.status='';">Programming Languages</a></b> : Added logic programming. -- <a class="internal" href="water" onmouseover="window.status='water'; return true" onmouseout="window.status='';">water</a> 
+<br><tt> 22:14 </tt><b><a class="internal" href="Logic" onmouseover="window.status='Logic'; return true" onmouseout="window.status='';">Logic</a></b> : Added with a link from the old review. -- <a class="internal" href="water" onmouseover="window.status='water'; return true" onmouseout="window.status='';">water</a> 
+<br><tt> 22:07 </tt><b><a class="internal" href="OCAML" onmouseover="window.status='OCAML'; return true" onmouseout="window.status='';">OCAML</a></b> : Added the functional topic. -- <a class="internal" href="water" onmouseover="window.status='water'; return true" onmouseout="window.status='';">water</a> 
+<br><tt> 22:01 </tt><b><a class="internal" href="Functional" onmouseover="window.status='Functional'; return true" onmouseout="window.status='';">Functional</a></b> : Moved all links over from the old review page. -- <a class="internal" href="water" onmouseover="window.status='water'; return true" onmouseout="window.status='';">water</a> 
+<br><tt> 21:52 </tt><b><a class="internal" href="PL%20101" onmouseover="window.status='PL 101'; return true" onmouseout="window.status='';">PL 101</a></b> : Linked to SICP instead of off-site. -- <a class="internal" href="water" onmouseover="window.status='water'; return true" onmouseout="window.status='';">water</a> 
+<br><tt> 21:45 </tt><b><a class="internal" href="Free%20Compilers%20Catalog" onmouseover="window.status='Free Compilers Catalog'; return true" onmouseout="window.status='';">Free Compilers Catalog</a></b> : Added. -- <a class="internal" href="water" onmouseover="window.status='water'; return true" onmouseout="window.status='';">water</a> 
+<br><tt> 21:41 </tt><b><a class="internal" href="Programming%20Languages" onmouseover="window.status='Programming Languages'; return true" onmouseout="window.status='';">Programming Languages</a></b> : Linked to LtU. -- <a class="internal" href="water" onmouseover="window.status='water'; return true" onmouseout="window.status='';">water</a> 
+<br><tt> 20:52 </tt><b><a class="internal" href="Resilient" onmouseover="window.status='Resilient'; return true" onmouseout="window.status='';">Resilient</a></b> : Fixed a typo. -- <a class="internal" href="water" onmouseover="window.status='water'; return true" onmouseout="window.status='';">water</a> 
+<br><tt> 05:09 </tt><b><a class="internal" href="OKE" onmouseover="window.status='OKE'; return true" onmouseout="window.status='';">OKE</a></b> : Removed the superfluous link to programming language. -- <a class="internal" href="water" onmouseover="window.status='water'; return true" onmouseout="window.status='';">water</a> 
+<br><tt> 05:09 </tt><b><a class="internal" href="APL" onmouseover="window.status='APL'; return true" onmouseout="window.status='';">APL</a></b> : Made programming language a topic. -- <a class="internal" href="water" onmouseover="window.status='water'; return true" onmouseout="window.status='';">water</a> 
+<br><tt> 05:07 </tt><b><a class="internal" href="Chuck%20Moore" onmouseover="window.status='Chuck Moore'; return true" onmouseout="window.status='';">Chuck Moore</a></b> : Removed the superfluous link to programming language. -- <a class="internal" href="water" onmouseover="window.status='water'; return true" onmouseout="window.status='';">water</a> 
+<br><tt> 05:06 </tt><b><a class="internal" href="Calvin%20N.%20Mooers" onmouseover="window.status='Calvin N. Mooers'; return true" onmouseout="window.status='';">Calvin N. Mooers</a></b> : Removed the superfluous link to programming language. -- <a class="internal" href="water" onmouseover="window.status='water'; return true" onmouseout="window.status='';">water</a> 
+<br><tt> 05:05 </tt><b><a class="internal" href="Valentin%20F.%20Turchin" onmouseover="window.status='Valentin F. Turchin'; return true" onmouseout="window.status='';">Valentin F. Turchin</a></b> : Removed the superfluous link to programming language. -- <a class="internal" href="water" onmouseover="window.status='water'; return true" onmouseout="window.status='';">water</a> 
+<br><tt> 05:04 </tt><b><a class="internal" href="Programming%20Language" onmouseover="window.status='Programming Language'; return true" onmouseout="window.status='';">Programming Language</a></b> : Linked to language. -- <a class="internal" href="water" onmouseover="window.status='water'; return true" onmouseout="window.status='';">water</a> 
+<p><center><table width="100%"><tr><td>Result page:  </td><td> </td><td>
+<a href="/web/20040106213231/http://cliki.tunes.org/Recent%20Changes?start=1560">Previous</a> 
+<a href="/web/20040106213231/http://cliki.tunes.org/Recent%20Changes?start=0">1</a> 
+<a href="/web/20040106213231/http://cliki.tunes.org/Recent%20Changes?start=30">2</a> 
+<a href="/web/20040106213231/http://cliki.tunes.org/Recent%20Changes?start=60">3</a> 
+<a href="/web/20040106213231/http://cliki.tunes.org/Recent%20Changes?start=90">4</a> 
+<a href="/web/20040106213231/http://cliki.tunes.org/Recent%20Changes?start=120">5</a> 
+<a href="/web/20040106213231/http://cliki.tunes.org/Recent%20Changes?start=150">6</a> 
+<a href="/web/20040106213231/http://cliki.tunes.org/Recent%20Changes?start=180">7</a> 
+<a href="/web/20040106213231/http://cliki.tunes.org/Recent%20Changes?start=210">8</a> 
+<a href="/web/20040106213231/http://cliki.tunes.org/Recent%20Changes?start=240">9</a> 
+<a href="/web/20040106213231/http://cliki.tunes.org/Recent%20Changes?start=270">10</a> 
+<a href="/web/20040106213231/http://cliki.tunes.org/Recent%20Changes?start=300">11</a> 
+<a href="/web/20040106213231/http://cliki.tunes.org/Recent%20Changes?start=330">12</a> 
+<a href="/web/20040106213231/http://cliki.tunes.org/Recent%20Changes?start=360">13</a> 
+<a href="/web/20040106213231/http://cliki.tunes.org/Recent%20Changes?start=390">14</a> 
+<a href="/web/20040106213231/http://cliki.tunes.org/Recent%20Changes?start=420">15</a> 
+<a href="/web/20040106213231/http://cliki.tunes.org/Recent%20Changes?start=450">16</a> 
+<a href="/web/20040106213231/http://cliki.tunes.org/Recent%20Changes?start=480">17</a> 
+<a href="/web/20040106213231/http://cliki.tunes.org/Recent%20Changes?start=510">18</a> 
+<a href="/web/20040106213231/http://cliki.tunes.org/Recent%20Changes?start=540">19</a> 
+<a href="/web/20040106213231/http://cliki.tunes.org/Recent%20Changes?start=570">20</a> 
+<a href="/web/20040106213231/http://cliki.tunes.org/Recent%20Changes?start=600">21</a> 
+<a href="/web/20040106213231/http://cliki.tunes.org/Recent%20Changes?start=630">22</a> 
+<a href="/web/20040106213231/http://cliki.tunes.org/Recent%20Changes?start=660">23</a> 
+<a href="/web/20040106213231/http://cliki.tunes.org/Recent%20Changes?start=690">24</a> 
+<a href="/web/20040106213231/http://cliki.tunes.org/Recent%20Changes?start=720">25</a> 
+<a href="/web/20040106213231/http://cliki.tunes.org/Recent%20Changes?start=750">26</a> 
+<a href="/web/20040106213231/http://cliki.tunes.org/Recent%20Changes?start=780">27</a> 
+<a href="/web/20040106213231/http://cliki.tunes.org/Recent%20Changes?start=810">28</a> 
+<a href="/web/20040106213231/http://cliki.tunes.org/Recent%20Changes?start=840">29</a> 
+<a href="/web/20040106213231/http://cliki.tunes.org/Recent%20Changes?start=870">30</a> 
+<a href="/web/20040106213231/http://cliki.tunes.org/Recent%20Changes?start=900">31</a> 
+<a href="/web/20040106213231/http://cliki.tunes.org/Recent%20Changes?start=930">32</a> 
+<a href="/web/20040106213231/http://cliki.tunes.org/Recent%20Changes?start=960">33</a> 
+<a href="/web/20040106213231/http://cliki.tunes.org/Recent%20Changes?start=990">34</a> 
+<a href="/web/20040106213231/http://cliki.tunes.org/Recent%20Changes?start=1020">35</a> 
+<a href="/web/20040106213231/http://cliki.tunes.org/Recent%20Changes?start=1050">36</a> 
+<a href="/web/20040106213231/http://cliki.tunes.org/Recent%20Changes?start=1080">37</a> 
+<a href="/web/20040106213231/http://cliki.tunes.org/Recent%20Changes?start=1110">38</a> 
+<a href="/web/20040106213231/http://cliki.tunes.org/Recent%20Changes?start=1140">39</a> 
+<a href="/web/20040106213231/http://cliki.tunes.org/Recent%20Changes?start=1170">40</a> 
+<a href="/web/20040106213231/http://cliki.tunes.org/Recent%20Changes?start=1200">41</a> 
+<a href="/web/20040106213231/http://cliki.tunes.org/Recent%20Changes?start=1230">42</a> 
+<a href="/web/20040106213231/http://cliki.tunes.org/Recent%20Changes?start=1260">43</a> 
+<a href="/web/20040106213231/http://cliki.tunes.org/Recent%20Changes?start=1290">44</a> 
+<a href="/web/20040106213231/http://cliki.tunes.org/Recent%20Changes?start=1320">45</a> 
+<a href="/web/20040106213231/http://cliki.tunes.org/Recent%20Changes?start=1350">46</a> 
+<a href="/web/20040106213231/http://cliki.tunes.org/Recent%20Changes?start=1380">47</a> 
+<a href="/web/20040106213231/http://cliki.tunes.org/Recent%20Changes?start=1410">48</a> 
+<a href="/web/20040106213231/http://cliki.tunes.org/Recent%20Changes?start=1440">49</a> 
+<a href="/web/20040106213231/http://cliki.tunes.org/Recent%20Changes?start=1470">50</a> 
+<a href="/web/20040106213231/http://cliki.tunes.org/Recent%20Changes?start=1500">51</a> 
+<a href="/web/20040106213231/http://cliki.tunes.org/Recent%20Changes?start=1530">52</a> 
+<a href="/web/20040106213231/http://cliki.tunes.org/Recent%20Changes?start=1560">53</a> 
+ 54
+<a href="/web/20040106213231/http://cliki.tunes.org/Recent%20Changes?start=1620">55</a> 
+<a href="/web/20040106213231/http://cliki.tunes.org/Recent%20Changes?start=1650">56</a> 
+<a href="/web/20040106213231/http://cliki.tunes.org/Recent%20Changes?start=1680">57</a> 
+<a href="/web/20040106213231/http://cliki.tunes.org/Recent%20Changes?start=1710">58</a> 
+<a href="/web/20040106213231/http://cliki.tunes.org/Recent%20Changes?start=1740">59</a> 
+<a href="/web/20040106213231/http://cliki.tunes.org/Recent%20Changes?start=1770">60</a> 
+<a href="/web/20040106213231/http://cliki.tunes.org/Recent%20Changes?start=1800">61</a> 
+<a href="/web/20040106213231/http://cliki.tunes.org/Recent%20Changes?start=1830">62</a> 
+<a href="/web/20040106213231/http://cliki.tunes.org/Recent%20Changes?start=1860">63</a> 
+<a href="/web/20040106213231/http://cliki.tunes.org/Recent%20Changes?start=1890">64</a> 
+<a href="/web/20040106213231/http://cliki.tunes.org/Recent%20Changes?start=1920">65</a> 
+<a href="/web/20040106213231/http://cliki.tunes.org/Recent%20Changes?start=1950">66</a> 
+<a href="/web/20040106213231/http://cliki.tunes.org/Recent%20Changes?start=1980">67</a> 
+<a href="/web/20040106213231/http://cliki.tunes.org/Recent%20Changes?start=2010">68</a> 
+<a href="/web/20040106213231/http://cliki.tunes.org/Recent%20Changes?start=2040">69</a> 
+<a href="/web/20040106213231/http://cliki.tunes.org/Recent%20Changes?start=2070">70</a> 
+<a href="/web/20040106213231/http://cliki.tunes.org/Recent%20Changes?start=2100">71</a> 
+<a href="/web/20040106213231/http://cliki.tunes.org/Recent%20Changes?start=2130">72</a> 
+<a href="/web/20040106213231/http://cliki.tunes.org/Recent%20Changes?start=2160">73</a> 
+<a href="/web/20040106213231/http://cliki.tunes.org/Recent%20Changes?start=2190">74</a> 
+<a href="/web/20040106213231/http://cliki.tunes.org/Recent%20Changes?start=2220">75</a> 
+<a href="/web/20040106213231/http://cliki.tunes.org/Recent%20Changes?start=2250">76</a> 
+<a href="/web/20040106213231/http://cliki.tunes.org/Recent%20Changes?start=2280">77</a> 
+<a href="/web/20040106213231/http://cliki.tunes.org/Recent%20Changes?start=2310">78</a> 
+<a href="/web/20040106213231/http://cliki.tunes.org/Recent%20Changes?start=2340">79</a> 
+<a href="/web/20040106213231/http://cliki.tunes.org/Recent%20Changes?start=2370">80</a> 
+<a href="/web/20040106213231/http://cliki.tunes.org/Recent%20Changes?start=2400">81</a> 
+<a href="/web/20040106213231/http://cliki.tunes.org/Recent%20Changes?start=2430">82</a> 
+<a href="/web/20040106213231/http://cliki.tunes.org/Recent%20Changes?start=2460">83</a> 
+<a href="/web/20040106213231/http://cliki.tunes.org/Recent%20Changes?start=2490">84</a> 
+<a href="/web/20040106213231/http://cliki.tunes.org/Recent%20Changes?start=2520">85</a> 
+<a href="/web/20040106213231/http://cliki.tunes.org/Recent%20Changes?start=2550">86</a> 
+<a href="/web/20040106213231/http://cliki.tunes.org/Recent%20Changes?start=2580">87</a> 
+<a href="/web/20040106213231/http://cliki.tunes.org/Recent%20Changes?start=2610">88</a> 
+<a href="/web/20040106213231/http://cliki.tunes.org/Recent%20Changes?start=2640">89</a> 
+<a href="/web/20040106213231/http://cliki.tunes.org/Recent%20Changes?start=2670">90</a> 
+<a href="/web/20040106213231/http://cliki.tunes.org/Recent%20Changes?start=2700">91</a> 
+<a href="/web/20040106213231/http://cliki.tunes.org/Recent%20Changes?start=2730">92</a> 
+<a href="/web/20040106213231/http://cliki.tunes.org/Recent%20Changes?start=2760">93</a> 
+<a href="/web/20040106213231/http://cliki.tunes.org/Recent%20Changes?start=2790">94</a> 
+<a href="/web/20040106213231/http://cliki.tunes.org/Recent%20Changes?start=2820">95</a> 
+<a href="/web/20040106213231/http://cliki.tunes.org/Recent%20Changes?start=2850">96</a> 
+<a href="/web/20040106213231/http://cliki.tunes.org/Recent%20Changes?start=2880">97</a> 
+<a href="/web/20040106213231/http://cliki.tunes.org/Recent%20Changes?start=2910">98</a> 
+<a href="/web/20040106213231/http://cliki.tunes.org/Recent%20Changes?start=2940">99</a> 
+<a href="/web/20040106213231/http://cliki.tunes.org/Recent%20Changes?start=2970">100</a> 
+<a href="/web/20040106213231/http://cliki.tunes.org/Recent%20Changes?start=3000">101</a> 
+<a href="/web/20040106213231/http://cliki.tunes.org/Recent%20Changes?start=3030">102</a> 
+<a href="/web/20040106213231/http://cliki.tunes.org/Recent%20Changes?start=3060">103</a> 
+<a href="/web/20040106213231/http://cliki.tunes.org/Recent%20Changes?start=1620">Next</a> </td></tr></table></center><!--
+     FILE ARCHIVED ON 21:32:31 Jan 06, 2004 AND RETRIEVED FROM THE
+     INTERNET ARCHIVE ON 06:22:48 Dec 18, 2022.
+     JAVASCRIPT APPENDED BY WAYBACK MACHINE, COPYRIGHT INTERNET ARCHIVE.
+
+     ALL OTHER CONTENT MAY ALSO BE PROTECTED BY COPYRIGHT (17 U.S.C.
+     SECTION 108(a)(3)).
+-->
+<!--
+playback timings (ms):
+  captures_list: 139.956
+  exclusion.robots: 0.067
+  exclusion.robots.policy: 0.06
+  RedisCDXSource: 0.7
+  esindex: 0.011
+  LoadShardBlock: 123.595 (3)
+  PetaboxLoader3.datanode: 122.184 (4)
+  CDXLines.iter: 13.169 (3)
+  load_resource: 178.775
+  PetaboxLoader3.resolve: 79.694
+-->

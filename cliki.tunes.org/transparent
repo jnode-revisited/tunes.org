@@ -1,0 +1,44 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html><head><script src="//archive.org/includes/analytics.js?v=cf34f82" type="text/javascript"></script>
+<script type="text/javascript">window.addEventListener('DOMContentLoaded',function(){var v=archive_analytics.values;v.service='wb';v.server_name='wwwb-app220.us.archive.org';v.server_ms=1326;archive_analytics.send_pageview({});});</script>
+<script type="text/javascript" src="/_static/js/bundle-playback.js?v=MzYkZ0TU" charset="utf-8"></script>
+<script type="text/javascript" src="/_static/js/wombat.js?v=UHAOicsW" charset="utf-8"></script>
+<script type="text/javascript">
+  __wm.init("https://web.archive.org/web");
+  __wm.wombat("http://cliki.tunes.org:80/Transparent","20050408225749","https://web.archive.org/","web","/_static/",
+	      "1113001069");
+</script>
+<link rel="stylesheet" type="text/css" href="/_static/css/banner-styles.css?v=S1zqJCYt" />
+<link rel="stylesheet" type="text/css" href="/_static/css/iconochive.css?v=qtvMKcIJ" />
+<!-- End Wayback Rewrite JS Include -->
+<title>CTO : Transparent</title><link rel="alternate" type="application/rss+xml" title="Recent Changes" href="https://web.archive.org/web/20050408225749/http://cliki.tunes.org/recent-changes.rdf"><link rel="stylesheet" href="https://web.archive.org/web/20050408225749cs_/http://cliki.tunes.org/admin/cliki.css"></head><body><div id="banner"><a title="CTO" class="logo" href="https://web.archive.org/web/20050408225749/http://cliki.tunes.org/">CTO</a> <span>CLiki for the TUNES project</span></div><div id="navbar"><a class="internal" href="https://web.archive.org/web/20050408225749/http://cliki.tunes.org/index">Home</a> <a class="internal" href="https://web.archive.org/web/20050408225749/http://cliki.tunes.org/Recent%20Changes">Recent Changes</a> <a class="internal" href="https://web.archive.org/web/20050408225749/http://cliki.tunes.org/CLiki">About CLiki</a> <a class="internal" href="https://web.archive.org/web/20050408225749/http://cliki.tunes.org/Text%20Formatting">Text Formatting</a> <a class="internal" onclick="if(name=window.prompt('New page name ([A-Za-z0-9 ])')) document.location='https://web.archive.org/web/20050408225749/http://cliki.tunes.org/edit/'+name ;return false;" href="/web/20050408225749/http://cliki.tunes.org/">Create New Page</a></div><div id="main"><h1>Transparent</h1>A <a class="internal" href="https://web.archive.org/web/20050408225749/http://cliki.tunes.org/term">term</a> indicating a feature of a software component whose behavior, i.e., whose <a class="internal" href="https://web.archive.org/web/20050408225749/http://cliki.tunes.org/semantics">semantics</a>, is not influenced by some aspect. Its opposite is <a class="internal" href="https://web.archive.org/web/20050408225749/http://cliki.tunes.org/aware">aware</a>.
+
+<p>For instance, remote procedure call/method invocation purposes to make procedure call/method invocation location-transparent. By converse, code <a class="internal" href="https://web.archive.org/web/20050408225749/http://cliki.tunes.org/migration">migration</a> is usually location-aware (you specify where you want to move code/state, or from where you want to pull it, often in the very same code which moves).
+
+<p>Often, transparency also means that you also cannot make it explicit, even though you may want to. Via <a class="internal" href="https://web.archive.org/web/20050408225749/http://cliki.tunes.org/reflection">reflection</a>, this kind of expressive limit can be overcome.  
+
+<p>A technique specifically thought to "isolate" different concerns, program them independently with a domain-specific language, and combine them in the final program is <a class="internal" href="https://web.archive.org/web/20050408225749/http://cliki.tunes.org/aspect-oriented%20programming">aspect-oriented programming</a>.
+
+<p><span class="comment">I've replaced the previous definition with one which seems to me more accurate. I report the previous one in the case someone does not agree: A term for a software feature that is implicit, in that you don't have to care about it or even ask for it. -- <a class="internal" href="https://web.archive.org/web/20050408225749/http://cliki.tunes.org/schizophonic">schizophonic</a>
+</span><hr><p><b>This page is linked from: </b> <a class="internal" href="https://web.archive.org/web/20050408225749/http://cliki.tunes.org/Argon">Argon</a> &nbsp; <a class="internal" href="https://web.archive.org/web/20050408225749/http://cliki.tunes.org/Aware">Aware</a> &nbsp; </div><div id="footer"><form action="https://web.archive.org/web/20050408225749/http://cliki.tunes.org/admin/search"><a class="internal" href="https://web.archive.org/web/20050408225749/http://cliki.tunes.org/edit/Transparent">Edit page</a> | <a class="internal" href="https://web.archive.org/web/20050408225749/http://cliki.tunes.org/Transparent?source">View source</a> | Revisions: <b title="Fri, 01 Aug 2003 17:17:12 GMT">0</b>  | <input name="words" size="30"><input type="submit" value="search"></form><div id="disclaimer">CTO pages can be modified by anyone at anytime.
+Imagine an appropriate disclaimer. Double it. Add two.</div></body></html></div><!--
+     FILE ARCHIVED ON 22:57:49 Apr 08, 2005 AND RETRIEVED FROM THE
+     INTERNET ARCHIVE ON 06:10:46 Dec 18, 2022.
+     JAVASCRIPT APPENDED BY WAYBACK MACHINE, COPYRIGHT INTERNET ARCHIVE.
+
+     ALL OTHER CONTENT MAY ALSO BE PROTECTED BY COPYRIGHT (17 U.S.C.
+     SECTION 108(a)(3)).
+-->
+<!--
+playback timings (ms):
+  captures_list: 1248.031
+  exclusion.robots: 0.084
+  exclusion.robots.policy: 0.075
+  RedisCDXSource: 7.143
+  esindex: 0.009
+  LoadShardBlock: 1226.101 (3)
+  PetaboxLoader3.datanode: 1086.154 (4)
+  CDXLines.iter: 12.561 (3)
+  load_resource: 73.781
+  PetaboxLoader3.resolve: 33.782
+-->

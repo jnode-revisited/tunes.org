@@ -1,0 +1,16 @@
+Plan9 *(OS), or what _(Unix) should have been (originally by _(Bell Labs) from where _(Unix) came). It's open source.
+
+It got everything right as for proposing a _(uniform) system interface (the _(dynamic), per-_(process) name->channel "_(file system)" thing) but is still wrong by using a _(low-level) _(programming language) with coarse-_(grain)ed system _(abstraction)s.
+
+See its successor, _(Inferno).
+
+<ul class="links">
+<li>The _(home page|http://plan9.bell-labs.com/plan9dist/).
+<li>_(The FAQ|http://ask.km.ru/3p/plan9faq.html).
+<LI>_("Acme: A User Interface for Programmers"
+     | http://plan9.bell-labs.com/sys/doc/acme/acme.html), its _(TUI).</li>
+<LI>_("Plumbing and Other Utilities"
+     | http://plan9.bell-labs.com/sys/doc/plumb.html),
+     "<CITE>Inter-process communication (_(IPC)) that enlivens the interactive _(user interface)</cite>".</li>
+<li> A _(comp.os.plan9 collection|http://www.well.com/~aleks/CompOsPlan9/index.html).
+</ul>

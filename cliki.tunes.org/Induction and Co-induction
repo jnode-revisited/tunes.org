@@ -1,0 +1,63 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html><head><script src="//archive.org/includes/analytics.js?v=cf34f82" type="text/javascript"></script>
+<script type="text/javascript">window.addEventListener('DOMContentLoaded',function(){var v=archive_analytics.values;v.service='wb';v.server_name='wwwb-app227.us.archive.org';v.server_ms=175;archive_analytics.send_pageview({});});</script>
+<script type="text/javascript" src="/_static/js/bundle-playback.js?v=MzYkZ0TU" charset="utf-8"></script>
+<script type="text/javascript" src="/_static/js/wombat.js?v=UHAOicsW" charset="utf-8"></script>
+<script type="text/javascript">
+  __wm.init("https://web.archive.org/web");
+  __wm.wombat("http://cliki.tunes.org:80/Induction%20and%20Co-induction","20050302132203","https://web.archive.org/","web","/_static/",
+	      "1109769723");
+</script>
+<link rel="stylesheet" type="text/css" href="/_static/css/banner-styles.css?v=S1zqJCYt" />
+<link rel="stylesheet" type="text/css" href="/_static/css/iconochive.css?v=qtvMKcIJ" />
+<!-- End Wayback Rewrite JS Include -->
+<title>CTO : Induction and Co-induction</title><link rel="alternate" type="application/rss+xml" title="Recent Changes" href="https://web.archive.org/web/20050302132203/http://cliki.tunes.org/recent-changes.rdf"><link rel="stylesheet" href="https://web.archive.org/web/20050302132203cs_/http://cliki.tunes.org/admin/cliki.css"></head><body><div id="banner"><a title="CTO" class="logo" href="https://web.archive.org/web/20050302132203/http://cliki.tunes.org/">CTO</a> <span>CLiki for the TUNES project</span></div><div id="navbar"><a class="internal" href="https://web.archive.org/web/20050302132203/http://cliki.tunes.org/index">Home</a> <a class="internal" href="https://web.archive.org/web/20050302132203/http://cliki.tunes.org/Recent%20Changes">Recent Changes</a> <a class="internal" href="https://web.archive.org/web/20050302132203/http://cliki.tunes.org/CLiki">About CLiki</a> <a class="internal" href="https://web.archive.org/web/20050302132203/http://cliki.tunes.org/Text%20Formatting">Text Formatting</a> <a class="internal" onclick="if(name=window.prompt('New page name ([A-Za-z0-9 ])')) document.location='https://web.archive.org/web/20050302132203/http://cliki.tunes.org/edit/'+name ;return false;" href="/web/20050302132203/http://cliki.tunes.org/">Create New Page</a></div><div id="main"><h1>Induction and Co-induction</h1>These are contrasting <a class="internal" href="https://web.archive.org/web/20050302132203/http://cliki.tunes.org/term">term</a>s for ways of describing a system. An inductive definition begins with some kernel or primitive types of <a class="internal" href="https://web.archive.org/web/20050302132203/http://cliki.tunes.org/object">object</a>s, and uses constructive operations on these to iteratively define a whole group of things <em>based on those primitives</em>. Datatypes such as lists, sets, records, and natural numbers all can be described this way (see <a class="internal" href="https://web.archive.org/web/20050302132203/http://cliki.tunes.org/algebra%20and%20coalgebra">algebra and coalgebra</a>).
+
+<p>By contrast, there are datatypes such as streams, graphs (including things that graphs describe, such as state machines), and the rational numbers, which elements can only be described in relation to each other, rather than to some core types. (Although there are obviously ways to implement these types in terms of other types, this is not the same as a definition.) Objects such as these without a well-founded means of deriving a definition have to be treated with a more general kind of <a class="internal" href="https://web.archive.org/web/20050302132203/http://cliki.tunes.org/logic">logic</a>, one that does not rely strictly on recursion, but may look for self-consistency instead.
+
+<p><style type="text/css">CODE { font-size: 150%; }</style>
+Formally, the induction and principle is defined as follows. An algebra is said to be minimal when it has no proper (i.e., different from itself) subalgebra. This is the induction principle for the algebra. For instance, natural numbers with zero (<code>0</code>) and successors (<code>'</code>)form a minimal algebra of the functor <code>1 + _</code>: then, any subalgebra (i.e., any subset of the naturals which is closed w.r.t. zero and successor) is the whole algebra of natural numbers. This yields the familiar proof by induction for naturals, when to prove that a property holds for all the naturals you just prove that holds for zero and that, if it holds on <code>x</code>, then it holds on its successor <code>x'</code>.
+
+<p>The coinduction principle is defined dually. A coalgebra is said to be simple when it has no proper quotients. This is the coinduction principle for the coalgebra, but usually its practical and equivalent formulation is: when two distinct states are not <a class="internal" href="https://web.archive.org/web/20050302132203/http://cliki.tunes.org/bisimulation">bisimilar</a>.
+
+<p>The induction and coinduction principle for <a class="internal" href="https://web.archive.org/web/20050302132203/http://cliki.tunes.org/initiality%20and%20finality">initial and final</a> can be also used to define functions. Initial algebras allow the exploitment of the induction principle to define functions from its carrier to the carrier of another algebra. Dually, final coalgebras allow the exploitment of the coinduction principle to define function from the carrier of another algebra to its carrier. If, for instance, we have an initial algebra <code>O</code> with signature <code>F</code> and carrier <code>A</code>, every function <code>f: A&rarr;B</code> which is also a homomorphism from the initial algebra to some <code>F</code>-algebra <code>P</code> is univocally defined. Dually for coinductive definitions of functions. An inductive definition has a typical flavour, where the effect of <code>f</code> on the constructors of <code>I</code> is defined in terms of the arguments of the constructors applied to <code>f</code>, where <code>P</code> has the role of defining the equational constraints which univocally determine <code>f</code>. Dually, a coinductive definition has a typical flavour, where the effect of the destructors of the final coalgebra <code>I</code> on an application of <code>f</code> is defined in terms of the arguments of this application applied in some way to <code>f</code>where <code>P</code> (the other coalgebra) defines the equational constraints which univocally determine <code>f</code>. For instance the inductive definition of the length of a list:
+
+<p><code>
+len(empty) = 0
+len(l1 # l2) = len(l1) + len(l2)
+</code>
+
+<p>and the coinductive definition of the "zipping" function which takes two streams and merges them by full shuffle:
+
+<p><code>
+head(zip(s1,s2)) = head(s1)
+tail(zip(s1,s2)) = zip(s2,tail(s1))
+</code>
+
+<p>In the first case, on the LHS we have the function on the outside, and on the RHS the function is "pushed inside", while on the outside the operators of <code>P</code> appear. In the second case, on the LHS we have the destructors on the outside, and on the RHS these destructors are "pushed inside", while on the outside some expression on <code>f</code> appears.
+
+<p><hr>
+
+<p>To edit this page see <a class="internal" href="https://web.archive.org/web/20050302132203/http://cliki.tunes.org/HTML%20special%20characters%20and%20symbols">HTML special characters and symbols</a>.
+<hr><p><b>This page is linked from: </b> <a class="internal" href="https://web.archive.org/web/20050302132203/http://cliki.tunes.org/Algebra%20and%20coalgebra">Algebra and coalgebra</a> &nbsp; <a class="internal" href="https://web.archive.org/web/20050302132203/http://cliki.tunes.org/Coinduction%20101">Coinduction 101</a> &nbsp; <a class="internal" href="https://web.archive.org/web/20050302132203/http://cliki.tunes.org/Duality">Duality</a> &nbsp; <a class="internal" href="https://web.archive.org/web/20050302132203/http://cliki.tunes.org/Initiality%20and%20finality">Initiality and finality</a> &nbsp; <a class="internal" href="https://web.archive.org/web/20050302132203/http://cliki.tunes.org/Lemon">Lemon</a> &nbsp; <a class="internal" href="https://web.archive.org/web/20050302132203/http://cliki.tunes.org/Morphism">Morphism</a> &nbsp; </div><div id="footer"><form action="https://web.archive.org/web/20050302132203/http://cliki.tunes.org/admin/search"><a class="internal" href="https://web.archive.org/web/20050302132203/http://cliki.tunes.org/edit/Induction%20and%20Co-induction">Edit page</a> | <a class="internal" href="https://web.archive.org/web/20050302132203/http://cliki.tunes.org/Induction%20and%20Co-induction?source">View source</a> | Revisions: <b title="Mon, 31 May 2004 19:24:27 GMT">1</b>  | <input name="words" size="30"><input type="submit" value="search"></form><div id="disclaimer">CTO pages can be modified by anyone at anytime.
+Imagine an appropriate disclaimer. Double it. Add two.</div></body></html></div><!--
+     FILE ARCHIVED ON 13:22:03 Mar 02, 2005 AND RETRIEVED FROM THE
+     INTERNET ARCHIVE ON 06:13:29 Dec 18, 2022.
+     JAVASCRIPT APPENDED BY WAYBACK MACHINE, COPYRIGHT INTERNET ARCHIVE.
+
+     ALL OTHER CONTENT MAY ALSO BE PROTECTED BY COPYRIGHT (17 U.S.C.
+     SECTION 108(a)(3)).
+-->
+<!--
+playback timings (ms):
+  captures_list: 94.228
+  exclusion.robots: 0.12
+  exclusion.robots.policy: 0.107
+  RedisCDXSource: 0.751
+  esindex: 0.01
+  LoadShardBlock: 73.383 (3)
+  PetaboxLoader3.datanode: 86.278 (4)
+  CDXLines.iter: 17.171 (3)
+  load_resource: 76.121
+  PetaboxLoader3.resolve: 39.31
+-->

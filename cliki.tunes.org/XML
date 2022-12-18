@@ -1,0 +1,72 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html><head><script src="//archive.org/includes/analytics.js?v=cf34f82" type="text/javascript"></script>
+<script type="text/javascript">window.addEventListener('DOMContentLoaded',function(){var v=archive_analytics.values;v.service='wb';v.server_name='wwwb-app218.us.archive.org';v.server_ms=218;archive_analytics.send_pageview({});});</script>
+<script type="text/javascript" src="/_static/js/bundle-playback.js?v=MzYkZ0TU" charset="utf-8"></script>
+<script type="text/javascript" src="/_static/js/wombat.js?v=UHAOicsW" charset="utf-8"></script>
+<script type="text/javascript">
+  __wm.init("https://web.archive.org/web");
+  __wm.wombat("http://cliki.tunes.org:80/XML","20050307202614","https://web.archive.org/","web","/_static/",
+	      "1110227174");
+</script>
+<link rel="stylesheet" type="text/css" href="/_static/css/banner-styles.css?v=S1zqJCYt" />
+<link rel="stylesheet" type="text/css" href="/_static/css/iconochive.css?v=qtvMKcIJ" />
+<!-- End Wayback Rewrite JS Include -->
+<title>CTO : XML</title><link rel="alternate" type="application/rss+xml" title="Recent Changes" href="https://web.archive.org/web/20050307202614/http://cliki.tunes.org/recent-changes.rdf"><link rel="stylesheet" href="https://web.archive.org/web/20050307202614cs_/http://cliki.tunes.org/admin/cliki.css"></head><body><div id="banner"><a title="CTO" class="logo" href="https://web.archive.org/web/20050307202614/http://cliki.tunes.org/">CTO</a> <span>CLiki for the TUNES project</span></div><div id="navbar"><a class="internal" href="https://web.archive.org/web/20050307202614/http://cliki.tunes.org/index">Home</a> <a class="internal" href="https://web.archive.org/web/20050307202614/http://cliki.tunes.org/Recent%20Changes">Recent Changes</a> <a class="internal" href="https://web.archive.org/web/20050307202614/http://cliki.tunes.org/CLiki">About CLiki</a> <a class="internal" href="https://web.archive.org/web/20050307202614/http://cliki.tunes.org/Text%20Formatting">Text Formatting</a> <a class="internal" onclick="if(name=window.prompt('New page name ([A-Za-z0-9 ])')) document.location='https://web.archive.org/web/20050307202614/http://cliki.tunes.org/edit/'+name ;return false;" href="/web/20050307202614/http://cliki.tunes.org/">Create New Page</a></div><div id="main"><h1>XML</h1>An <a class="internal" href="https://web.archive.org/web/20050307202614/http://cliki.tunes.org/acronym">acronym</a> for eXtensible Markup Language.
+
+<p>For other relevant links and comments about XML, see <a class="internal" href="https://web.archive.org/web/20050307202614/http://cliki.tunes.org/TUNES%20vs%20the%20WWW">TUNES vs the WWW</a>.
+
+<p><ul class="links">
+<li><a href="https://web.archive.org/web/20050307202614/http://www.w3.org/">W3C</a> <a href="https://web.archive.org/web/20050307202614/http://www.w3.org/XML/">eXtensible Markup Language</a>.
+</ul>
+
+<p><h4>On XML and markup languages in general</h4>
+<ul class="links">
+<li><a href="https://web.archive.org/web/20050307202614/http://www.cl.cam.ac.uk/users/sjm217/projects/markup/survey/">Markup language survey</a> by <a href="https://web.archive.org/web/20050307202614/http://www.cl.cam.ac.uk/users/sjm217/">Steven J. Murdoch</a>.
+<li><a href="https://web.archive.org/web/20050307202614/http://www.xml.com/pub/a/w3j/s3.nelson.html">Embedded Markup Considered Harmful</a> by Ted Nelson. See also <a class="internal" href="https://web.archive.org/web/20050307202614/http://cliki.tunes.org/LMNL">LMNL</a>.
+<li>An irreverent joke by Frank Atanassow <a href="https://web.archive.org/web/20050307202614/http://www.cs.uu.nl/people/franka/xml-treatise">The Essence of XML -- A modest proposal</a>: don't underestimate its seriousness.
+<li>A lot of propaganda by Philip Wadler:
+  <ul>
+    <li><a href="https://web.archive.org/web/20050307202614/http://homepages.inf.ed.ac.uk/wadler/xml/">XML: Some hyperlinks minus the hype</a>.
+    <li><a href="https://web.archive.org/web/20050307202614/http://homepages.inf.ed.ac.uk/wadler/topics/xml.html#xml-essence">The Essence of XML</a>.
+    <li><a href="https://web.archive.org/web/20050307202614/http://homepages.inf.ed.ac.uk/wadler/topics/xml.html#ettu">Et tu XML? The fall of the relational empire</a>: an inane rant. To understand why, constrast with <a href="https://web.archive.org/web/20050307202614/http://www.tdan.com/sms_issue24.htm">Setting Matters Straight - April 2003 -- A XML:DB.ORG Exchange: Reply to Bradford</a> and <a href="https://web.archive.org/web/20050307202614/http://www.google.com/search?q=XML+site:dbdebunk.com&amp;num=100&amp;hl=en&amp;lr=&amp;safe=off&amp;filter=0">other</a> writings by Fabian Pascal.
+  </ul>
+</ul>
+
+<p><h4>Some alternatives to XML</h4>
+(more at <a href="https://web.archive.org/web/20050307202614/http://www.xmlsuck.com/pault/pxml/xmlalternatives.html">www.XMLSuck.com</a>)
+<span class="comment"><strong>Note</strong>: these <em>probably</em> correct <strong>only</strong> some syntactic annoyance of XML. -- <a class="internal" href="https://web.archive.org/web/20050307202614/http://cliki.tunes.org/Mad70">Mad70</a></span>
+
+<p>
+<ul class="links">
+<li><a href="https://web.archive.org/web/20050307202614/http://www.bradfitz.com/bml/">BML - Better Markup Language</a> (<a href="https://web.archive.org/web/20050307202614/http://bettermarkup.com/">old link</a>).
+<li><a href="https://web.archive.org/web/20050307202614/http://sourceforge.net/projects/datalang">DL</a> a Data Language.
+<li><a href="https://web.archive.org/web/20050307202614/http://www.yaml.org/">YAML Ain't Markup Language</a>.
+<li><a class="internal" href="https://web.archive.org/web/20050307202614/http://cliki.tunes.org/LMNL">LMNL</a> Layered Markup and Annotation Language.
+<li><a href="https://web.archive.org/web/20050307202614/http://www.seairth.com/web/onx/onx.html">ONX: Open Node Syntax</a>.
+<li><a href="https://web.archive.org/web/20050307202614/http://www.langdale.com.au/SOX/">Simple Outline XML: SOX</a>.
+<li><a href="https://web.archive.org/web/20050307202614/http://www.scottsweeney.com/projects/slip">SLiP - a "Sorta Like Python" shorthand for XML</a>.
+<li><a href="https://web.archive.org/web/20050307202614/http://www.w3.org/XML/Binary/">XML Binary Characterization Working Group Public Page</a>: not really an alternative, but an implicit admission that the standard XML format is a useless waste of resources.
+<li><a href="https://web.archive.org/web/20050307202614/http://www.pault.com/XSLScript/">XSLScript and TerseXML</a>.
+</ul>
+<hr><p><b>This page is linked from: </b> <a class="internal" href="https://web.archive.org/web/20050307202614/http://cliki.tunes.org/MetaL">MetaL</a> &nbsp; <a class="internal" href="https://web.archive.org/web/20050307202614/http://cliki.tunes.org/Metatext">Metatext</a> &nbsp; <a class="internal" href="https://web.archive.org/web/20050307202614/http://cliki.tunes.org/Methods%20of%20Migration">Methods of Migration</a> &nbsp; <a class="internal" href="https://web.archive.org/web/20050307202614/http://cliki.tunes.org/Sand%20Box">Sand Box</a> &nbsp; <a class="internal" href="https://web.archive.org/web/20050307202614/http://cliki.tunes.org/Text%20Formatting">Text Formatting</a> &nbsp; <a class="internal" href="https://web.archive.org/web/20050307202614/http://cliki.tunes.org/Trotskyite%20Tunes">Trotskyite Tunes</a> &nbsp; <a class="internal" href="https://web.archive.org/web/20050307202614/http://cliki.tunes.org/TUNES%20vs%20the%20WWW">TUNES vs the WWW</a> &nbsp; <a class="internal" href="https://web.archive.org/web/20050307202614/http://cliki.tunes.org/Universal%20Binary%20Format">Universal Binary Format</a> &nbsp; <a class="internal" href="https://web.archive.org/web/20050307202614/http://cliki.tunes.org/Warren%20Abstract%20Machine">Warren Abstract Machine</a> &nbsp; </div><div id="footer"><form action="https://web.archive.org/web/20050307202614/http://cliki.tunes.org/admin/search"><a class="internal" href="https://web.archive.org/web/20050307202614/http://cliki.tunes.org/edit/XML">Edit page</a> | <a class="internal" href="https://web.archive.org/web/20050307202614/http://cliki.tunes.org/XML?source">View source</a> | Revisions: <a href="https://web.archive.org/web/20050307202614/http://cliki.tunes.org/XML?v=2" title="Fri, 12 Nov 2004 17:07:13 GMT">2</a> <a href="https://web.archive.org/web/20050307202614/http://cliki.tunes.org/XML?v=3" title="Fri, 12 Nov 2004 17:33:21 GMT">3</a> <a href="https://web.archive.org/web/20050307202614/http://cliki.tunes.org/XML?v=4" title="Fri, 12 Nov 2004 17:40:21 GMT">4</a> <a href="https://web.archive.org/web/20050307202614/http://cliki.tunes.org/XML?v=5" title="Fri, 12 Nov 2004 17:59:47 GMT">5</a> <b title="Fri, 12 Nov 2004 19:22:25 GMT">6</b>  | <input name="words" size="30"><input type="submit" value="search"></form><div id="disclaimer">CTO pages can be modified by anyone at anytime.
+Imagine an appropriate disclaimer. Double it. Add two.</div></body></html></div><!--
+     FILE ARCHIVED ON 20:26:14 Mar 07, 2005 AND RETRIEVED FROM THE
+     INTERNET ARCHIVE ON 06:07:52 Dec 18, 2022.
+     JAVASCRIPT APPENDED BY WAYBACK MACHINE, COPYRIGHT INTERNET ARCHIVE.
+
+     ALL OTHER CONTENT MAY ALSO BE PROTECTED BY COPYRIGHT (17 U.S.C.
+     SECTION 108(a)(3)).
+-->
+<!--
+playback timings (ms):
+  captures_list: 124.466
+  exclusion.robots: 0.068
+  exclusion.robots.policy: 0.062
+  cdx.remote: 0.054
+  esindex: 0.008
+  LoadShardBlock: 84.269 (3)
+  PetaboxLoader3.datanode: 98.728 (4)
+  CDXLines.iter: 15.513 (3)
+  load_resource: 86.159
+  PetaboxLoader3.resolve: 46.048
+-->

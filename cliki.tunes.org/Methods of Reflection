@@ -1,0 +1,109 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html><head><script src="//archive.org/includes/analytics.js?v=cf34f82" type="text/javascript"></script>
+<script type="text/javascript">window.addEventListener('DOMContentLoaded',function(){var v=archive_analytics.values;v.service='wb';v.server_name='wwwb-app220.us.archive.org';v.server_ms=297;archive_analytics.send_pageview({});});</script>
+<script type="text/javascript" src="/_static/js/bundle-playback.js?v=MzYkZ0TU" charset="utf-8"></script>
+<script type="text/javascript" src="/_static/js/wombat.js?v=UHAOicsW" charset="utf-8"></script>
+<script type="text/javascript">
+  __wm.init("https://web.archive.org/web");
+  __wm.wombat("http://cliki.tunes.org:80/Methods%20of%20Reflection","20050208011029","https://web.archive.org/","web","/_static/",
+	      "1107825029");
+</script>
+<link rel="stylesheet" type="text/css" href="/_static/css/banner-styles.css?v=S1zqJCYt" />
+<link rel="stylesheet" type="text/css" href="/_static/css/iconochive.css?v=qtvMKcIJ" />
+<!-- End Wayback Rewrite JS Include -->
+<title>CTO : Methods of Reflection</title><link rel="alternate" type="application/rss+xml" title="Recent Changes" href="https://web.archive.org/web/20050208011029/http://cliki.tunes.org/recent-changes.rdf"><link rel="stylesheet" href="https://web.archive.org/web/20050208011029cs_/http://cliki.tunes.org/admin/cliki.css"></head><body><div id="banner"><a title="CTO" class="logo" href="https://web.archive.org/web/20050208011029/http://cliki.tunes.org/">CTO</a> <span>CLiki for the TUNES project</span></div><div id="navbar"><a class="internal" href="https://web.archive.org/web/20050208011029/http://cliki.tunes.org/index">Home</a> <a class="internal" href="https://web.archive.org/web/20050208011029/http://cliki.tunes.org/Recent%20Changes">Recent Changes</a> <a class="internal" href="https://web.archive.org/web/20050208011029/http://cliki.tunes.org/CLiki">About CLiki</a> <a class="internal" href="https://web.archive.org/web/20050208011029/http://cliki.tunes.org/Text%20Formatting">Text Formatting</a> <a class="internal" onclick="if(name=window.prompt('New page name ([A-Za-z0-9 ])')) document.location='https://web.archive.org/web/20050208011029/http://cliki.tunes.org/edit/'+name ;return false;" href="/web/20050208011029/http://cliki.tunes.org/">Create New Page</a></div><div id="main"><h1>Methods of Reflection</h1><h3>Introduction</h3>
+Reflection is the ages old concept of someone thinking about oneself. Yes, there are other meanings to the word; this is the one we consider here. In Computer Science, Reflection is a powerful conceptual tool with such various applications as simplifying logical proofs enough to make them physically tractable, enabling dynamic (run-time) evolution of programming systems, transforming programs statically (at compile-time) to add and manage such features as concurrency, distribution, persistence, or object systems, or allowing expert systems to reason about and adapt their own behavior.
+
+<p><h3>Glossary References</h3>
+<ul>
+<li><a class="internal" href="https://web.archive.org/web/20050208011029/http://cliki.tunes.org/Meta-">Meta-</a>
+<li><a class="internal" href="https://web.archive.org/web/20050208011029/http://cliki.tunes.org/Meta-Circular">Meta-Circular</a>
+<li><a class="internal" href="https://web.archive.org/web/20050208011029/http://cliki.tunes.org/Meta-Level">Meta-Level</a>
+<li><a class="internal" href="https://web.archive.org/web/20050208011029/http://cliki.tunes.org/Meta-Object">Meta-Object</a>
+<li><a class="internal" href="https://web.archive.org/web/20050208011029/http://cliki.tunes.org/Meta-Object%20Protocol">Meta-Object Protocol</a>
+<li><a class="internal" href="https://web.archive.org/web/20050208011029/http://cliki.tunes.org/Metaprogramming">Metaprogramming</a>
+<li><a class="internal" href="https://web.archive.org/web/20050208011029/http://cliki.tunes.org/Open%20Implementation">Open Implementation</a>
+<li><a class="internal" href="https://web.archive.org/web/20050208011029/http://cliki.tunes.org/Partial%20Evaluation">Partial Evaluation</a>
+<li><a class="internal" href="https://web.archive.org/web/20050208011029/http://cliki.tunes.org/Reflection">Reflection</a>
+<li><a class="internal" href="https://web.archive.org/web/20050208011029/http://cliki.tunes.org/Reflective%20Tower">Reflective Tower</a>
+<li><a class="internal" href="https://web.archive.org/web/20050208011029/http://cliki.tunes.org/Reification">Reification</a>
+</ul>
+
+<p><h3>Foundations</h3>
+See <a class="internal" href="https://web.archive.org/web/20050208011029/http://cliki.tunes.org/Kurt%20G%F6del">Kurt Gödel</a>, Alan Turing<a class="internal" href="https://web.archive.org/web/20050208011029/http://cliki.tunes.org/edit/Alan%20Turing">?</a>, Douglas Hofstadter<a class="internal" href="https://web.archive.org/web/20050208011029/http://cliki.tunes.org/edit/Douglas%20Hofstadter">?</a> (see below).
+
+<p><a href="https://web.archive.org/web/20050208011029/http://www.cwi.nl/~tromp">John Tromp's</a> universal machine. The <a class="internal" href="https://web.archive.org/web/20050208011029/http://cliki.tunes.org/Principia%20Cybernetica">Principia Cybernetica</a> project.
+
+<p><h3><a class="internal" href="https://web.archive.org/web/20050208011029/http://cliki.tunes.org/Metalogical%20Reflection">Metalogical Reflection</a></h3>
+
+<p><h3>Self-References</h3>
+
+<p><a class="internal" href="https://web.archive.org/web/20050208011029/http://cliki.tunes.org/Quine">Quine</a>s
+
+<p><h3>Run-time Computational Reflection</h3>
+
+<p><a class="internal" href="https://web.archive.org/web/20050208011029/http://cliki.tunes.org/Brian%20C.%20Smith">Brian C. Smith</a>, <a class="internal" href="https://web.archive.org/web/20050208011029/http://cliki.tunes.org/Patti%20Maes">Patti Maes</a>, <a class="internal" href="https://web.archive.org/web/20050208011029/http://cliki.tunes.org/A.%20Yonezawa">A. Yonezawa</a>.
+
+<p><h3>Compile-Time (Computational) Reflection</h3>
+
+<p><a class="internal" href="https://web.archive.org/web/20050208011029/http://cliki.tunes.org/Shigeru%20Shiba">Shigeru Shiba</a>, Tim Sheard<a class="internal" href="https://web.archive.org/web/20050208011029/http://cliki.tunes.org/edit/Tim%20Sheard">?</a>, Rowan Davies<a class="internal" href="https://web.archive.org/web/20050208011029/http://cliki.tunes.org/edit/Rowan%20Davies">?</a>.
+
+<p><h3><a class="internal" href="https://web.archive.org/web/20050208011029/http://cliki.tunes.org/Partial%20Evaluation">Partial Evaluation</a></h3>
+
+<p>Olivier Danvy<a class="internal" href="https://web.archive.org/web/20050208011029/http://cliki.tunes.org/edit/Olivier%20Danvy">?</a> &amp; Andrzej Filinski<a class="internal" href="https://web.archive.org/web/20050208011029/http://cliki.tunes.org/edit/Andrzej%20Filinski">?</a> at BRICS<a class="internal" href="https://web.archive.org/web/20050208011029/http://cliki.tunes.org/edit/BRICS">?</a>; <a href="https://web.archive.org/web/20050208011029/http://www.diku.dk/people/NDJ.html">Neil D. Jones</a> at <a href="https://web.archive.org/web/20050208011029/http://www.diku.dk/">DIKU</a>; Charles Consel<a class="internal" href="https://web.archive.org/web/20050208011029/http://cliki.tunes.org/edit/Charles%20Consel">?</a> and Gilles Muller<a class="internal" href="https://web.archive.org/web/20050208011029/http://cliki.tunes.org/edit/Gilles%20Muller">?</a> at <a href="https://web.archive.org/web/20050208011029/http://www.irisa.fr/">IRISA</a> (<a class="internal" href="https://web.archive.org/web/20050208011029/http://cliki.tunes.org/COMPOSE%20group">COMPOSE group</a>); at OGI.
+
+<p><a href="https://web.archive.org/web/20050208011029/http://www.research.microsoft.com/~ruf/">Erik Ruf</a>'s <a href="https://web.archive.org/web/20050208011029/http://www.research.microsoft.com/~ruf/files/thesis">PhD thesis</a> on PE. PE courses have been taught using his dissertation.
+
+<p><ul>
+<li><a href="https://web.archive.org/web/20050208011029/http://www.cs.cmu.edu/afs/cs.cmu.edu/user/wls/www/sbpm.html">Semantics-based Program Analysis and Maipulation</a>
+<li><a href="https://web.archive.org/web/20050208011029/http://www.irisa.fr/pepm97">PEPM'97</a>: Partial Evaluation and Semantic-based Program Manipulation
+<li><a href="https://web.archive.org/web/20050208011029/http://www.diku.dk/research-groups/topps/activities/cmix/">cmix</a>
+<li><a href="https://web.archive.org/web/20050208011029/http://www.research.microsoft.com/~daniel/fuse-memos/README.html">FUSE</a>
+</ul>
+
+<p><h3><a class="internal" href="https://web.archive.org/web/20050208011029/http://cliki.tunes.org/Run-Time%20Code%20Generation">Run-Time Code Generation</a></h3>
+
+<p><h3>Reflective Expert Systems</h3>
+Jacques Pitrat and his team. <a href="https://web.archive.org/web/20050208011029/http://ai.eecs.umich.edu/cogarch3/CapabilLists/SelfReflect.html">Self Reflection in Cognitive Architectures</a>.
+
+<p><h3>Reflective Concurrent Programming</h3>
+<a class="internal" href="https://web.archive.org/web/20050208011029/http://cliki.tunes.org/Jos%E9%20Meseguer">José Meseguer</a>; <a href="https://web.archive.org/web/20050208011029/http://www-formal.stanford.edu/clt/home.html">Carol Talcott</a>; <a class="internal" href="https://web.archive.org/web/20050208011029/http://cliki.tunes.org/A.%20Yonezawa">A. Yonezawa</a>;
+
+<p><h3><a class="internal" href="https://web.archive.org/web/20050208011029/http://cliki.tunes.org/Meta-Object%20Protocol">Meta-Object Protocol</a>s</h3>
+
+<p>A classic book, <a class="internal" href="https://web.archive.org/web/20050208011029/http://cliki.tunes.org/AMOP">AMOP</a>.
+
+<p>A recent small project in <a class="internal" href="https://web.archive.org/web/20050208011029/http://cliki.tunes.org/Squeak">Squeak</a> by Henrik Gedenryd to develop a "Universal Composition" system for programs. It essentially involves a graph of meta-objects describing source-composition operations which can be eagerly or lazily (statically or dynamically) driven, resulting in <a class="internal" href="https://web.archive.org/web/20050208011029/http://cliki.tunes.org/partial%20evaluation">partial evaluation</a> or forms of dynamic composition such as <a class="internal" href="https://web.archive.org/web/20050208011029/http://cliki.tunes.org/AOP">AOP</a>. He provides <a href="https://web.archive.org/web/20050208011029/http://www.lucs.lu.se/People/Henrik.Gedenryd/Squeak/aspectblt.zip">a demonstration Squeak image</a> and <a href="https://web.archive.org/web/20050208011029/http://www.lucs.lu.se/People/Henrik.Gedenryd/Squeak/UC/UCpaper.pdf">a rough draft paper</a>.
+
+<p><h3><a class="internal" href="https://web.archive.org/web/20050208011029/http://cliki.tunes.org/Aspect-Oriented%20Programming">Aspect-Oriented Programming</a></h3>
+
+<p><a class="internal" href="https://web.archive.org/web/20050208011029/http://cliki.tunes.org/Gregor%20Kiczales">Gregor Kiczales</a>.
+
+<p>See also <a class="internal" href="https://web.archive.org/web/20050208011029/http://cliki.tunes.org/AspectJ">AspectJ</a> and <a class="internal" href="https://web.archive.org/web/20050208011029/http://cliki.tunes.org/AspectS">AspectS</a>.
+
+<p><h3>Reasoning Systems</h3>
+
+<p><a class="internal" href="https://web.archive.org/web/20050208011029/http://cliki.tunes.org/NuPrl">NuPrl</a> and <a class="internal" href="https://web.archive.org/web/20050208011029/http://cliki.tunes.org/Maude">Maude</a> perhaps?
+
+<p><h3><a class="internal" href="https://web.archive.org/web/20050208011029/http://cliki.tunes.org/Reflective%20Programming%20Languages">Reflective Programming Languages</a></h3><hr><p><b>This page is linked from: </b> <a class="internal" href="https://web.archive.org/web/20050208011029/http://cliki.tunes.org/index">index</a> &nbsp; <a class="internal" href="https://web.archive.org/web/20050208011029/http://cliki.tunes.org/Reflection">Reflection</a> &nbsp; <a class="internal" href="https://web.archive.org/web/20050208011029/http://cliki.tunes.org/Reflection%20101">Reflection 101</a> &nbsp; <a class="internal" href="https://web.archive.org/web/20050208011029/http://cliki.tunes.org/Review">Review</a> &nbsp; </div><div id="footer"><form action="https://web.archive.org/web/20050208011029/http://cliki.tunes.org/admin/search"><a class="internal" href="https://web.archive.org/web/20050208011029/http://cliki.tunes.org/edit/Methods%20of%20Reflection">Edit page</a> | <a class="internal" href="https://web.archive.org/web/20050208011029/http://cliki.tunes.org/Methods%20of%20Reflection?source">View source</a> | Revisions: <b title="Sun, 03 Oct 2004 10:54:21 GMT">1</b>  | <input name="words" size="30"><input type="submit" value="search"></form><div id="disclaimer">CTO pages can be modified by anyone at anytime.
+Imagine an appropriate disclaimer. Double it. Add two.</div></body></html></div><!--
+     FILE ARCHIVED ON 01:10:29 Feb 08, 2005 AND RETRIEVED FROM THE
+     INTERNET ARCHIVE ON 06:05:38 Dec 18, 2022.
+     JAVASCRIPT APPENDED BY WAYBACK MACHINE, COPYRIGHT INTERNET ARCHIVE.
+
+     ALL OTHER CONTENT MAY ALSO BE PROTECTED BY COPYRIGHT (17 U.S.C.
+     SECTION 108(a)(3)).
+-->
+<!--
+playback timings (ms):
+  captures_list: 222.435
+  exclusion.robots: 0.087
+  exclusion.robots.policy: 0.078
+  RedisCDXSource: 0.545
+  esindex: 0.008
+  LoadShardBlock: 200.221 (3)
+  PetaboxLoader3.resolve: 220.875 (4)
+  PetaboxLoader3.datanode: 42.803 (4)
+  CDXLines.iter: 17.61 (3)
+  load_resource: 67.311
+-->

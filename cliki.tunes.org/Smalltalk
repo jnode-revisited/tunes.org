@@ -1,0 +1,114 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html><head><script src="//archive.org/includes/analytics.js?v=cf34f82" type="text/javascript"></script>
+<script type="text/javascript">window.addEventListener('DOMContentLoaded',function(){var v=archive_analytics.values;v.service='wb';v.server_name='wwwb-app221.us.archive.org';v.server_ms=116;archive_analytics.send_pageview({});});</script>
+<script type="text/javascript" src="/_static/js/bundle-playback.js?v=MzYkZ0TU" charset="utf-8"></script>
+<script type="text/javascript" src="/_static/js/wombat.js?v=UHAOicsW" charset="utf-8"></script>
+<script type="text/javascript">
+  __wm.init("https://web.archive.org/web");
+  __wm.wombat("http://cliki.tunes.org:80/Smalltalk","20050324003240","https://web.archive.org/","web","/_static/",
+	      "1111624360");
+</script>
+<link rel="stylesheet" type="text/css" href="/_static/css/banner-styles.css?v=S1zqJCYt" />
+<link rel="stylesheet" type="text/css" href="/_static/css/iconochive.css?v=qtvMKcIJ" />
+<!-- End Wayback Rewrite JS Include -->
+<title>CTO : Smalltalk</title><link rel="alternate" type="application/rss+xml" title="Recent Changes" href="https://web.archive.org/web/20050324003240/http://cliki.tunes.org/recent-changes.rdf"><link rel="stylesheet" href="https://web.archive.org/web/20050324003240cs_/http://cliki.tunes.org/admin/cliki.css"></head><body><div id="banner"><a title="CTO" class="logo" href="https://web.archive.org/web/20050324003240/http://cliki.tunes.org/">CTO</a> <span>CLiki for the TUNES project</span></div><div id="navbar"><a class="internal" href="https://web.archive.org/web/20050324003240/http://cliki.tunes.org/index">Home</a> <a class="internal" href="https://web.archive.org/web/20050324003240/http://cliki.tunes.org/Recent%20Changes">Recent Changes</a> <a class="internal" href="https://web.archive.org/web/20050324003240/http://cliki.tunes.org/CLiki">About CLiki</a> <a class="internal" href="https://web.archive.org/web/20050324003240/http://cliki.tunes.org/Text%20Formatting">Text Formatting</a> <a class="internal" onclick="if(name=window.prompt('New page name ([A-Za-z0-9 ])')) document.location='https://web.archive.org/web/20050324003240/http://cliki.tunes.org/edit/'+name ;return false;" href="/web/20050324003240/http://cliki.tunes.org/">Create New Page</a></div><div id="main"><h1>Smalltalk</h1>Smalltalk is a class-based <a class="internal" href="https://web.archive.org/web/20050324003240/http://cliki.tunes.org/OO">OO</a>  <a class="internal" href="https://web.archive.org/web/20050324003240/http://cliki.tunes.org/programming%20language">programming language</a>
+with <a class="internal" href="https://web.archive.org/web/20050324003240/http://cliki.tunes.org/metaprogramming">reflective</a> capabilities.
+
+<p>Smalltalk can be viewed as an <a class="internal" href="https://web.archive.org/web/20050324003240/http://cliki.tunes.org/OS">OS</a> of sorts, more so if it is not running on another OS. It is fine grained, having 30,000-60,000 objects, rooted in some 200 classes; some big Smalltalk systems have over 1 million <a class="internal" href="https://web.archive.org/web/20050324003240/http://cliki.tunes.org/object">object</a>s. No differentiation-separation is made between System and Application software: it's all one big sea of objects. It has <a class="internal" href="https://web.archive.org/web/20050324003240/http://cliki.tunes.org/no-kernel">no-kernel</a> properties; but the <a class="internal" href="https://web.archive.org/web/20050324003240/http://cliki.tunes.org/VM">VM</a> serves a similar purpose. It has extensive, relentless boundary checking.
+
+<p>It is the most consistent <a class="internal" href="https://web.archive.org/web/20050324003240/http://cliki.tunes.org/OO">OO</a> language. Everything is an object, no exception: every number, letter. No object can directly affect the state of another object, only indirectly, by messages. No pointer arithmetic can occur.
+
+<p>Smalltalk was inspired by Simula. Smalltalk was developed under Alan Kay's team, at Xerox PARC in the 1970s and early 1980s. Xerox famously sat on some amazing technologies, throwing away many great opportunities, later developed instead by other companies: Ethernetworking (3com), Postscript (Adobe), laser printers (Apple), windowing graphic user interfaces (Apple, Microsoft), and Smalltalk (ParcPlace-Digitalk is now in much trouble due to overpricing Smalltalk).
+
+<p>Then Apple Computer's Steve Jobs got Kay and many of the PARC team to
+move to Apple. Some of the Smalltalk team moved to Digitalk. Then some
+Digitalkers moved to Apple. Sometime during all this, Apple licensed
+Smalltalk-80.
+
+<p>As corporate America often did and does, Apple sat on advanced stuff it
+had, and did nothing with it. In the meantime, IBM developed Visual Age,
+and now has 20,000-30,000 Smalltalk programmers.
+
+<p><ul class="links">
+<li><a href="https://web.archive.org/web/20050324003240/http://minnow.cc.gatech.edu/squeak/172">Draft ANSI Smalltalk</a> (<a href="https://web.archive.org/web/20050324003240/http://ns.math.rsu.ru/smalltalk/standard/index.html">.html</a>).</li>
+<li><a href="https://web.archive.org/web/20050324003240/http://www.cs.washington.edu/homes/dugan/history.html">Simula and Smalltalk: A Social and Political History</a></li>
+<li><a href="https://web.archive.org/web/20050324003240/http://www.squeak.org/us/ted/">Ted Kaehler's WWW Site</a></li>
+<li>Reflective frameworks for Smalltalk:
+<ul>
+<li><a href="https://web.archive.org/web/20050324003240/http://csl.ensm-douai.fr/MetaclassTalk">MetaClassTalk</a>
+<li><a href="https://web.archive.org/web/20050324003240/http://prog.vub.ac.be/research/DMP/soul/soul2.html">SOUL</a>: Logic <a class="internal" href="https://web.archive.org/web/20050324003240/http://cliki.tunes.org/metaprogramming">metaprogramming</a> as the Smalltalk Open Unification Language.
+<li><a class="internal" href="https://web.archive.org/web/20050324003240/http://cliki.tunes.org/AspectS">AspectS</a>: <a class="internal" href="https://web.archive.org/web/20050324003240/http://cliki.tunes.org/aspect-oriented%20programming">aspect-oriented programming</a> in Smalltalk.
+</ul>
+<li><a href="https://web.archive.org/web/20050324003240/http://www.smalltalkchronicles.net/">SmallTalk Chronicles</a>.</li>
+</ul>
+
+<p><ul class="implementations">
+<li><a class="internal" href="https://web.archive.org/web/20050324003240/http://cliki.tunes.org/Squeak">Squeak</a></li>
+<li><a href="https://web.archive.org/web/20050324003240/http://www.smalltalk.org/versions/GNUSmalltalk.html">GNU Smalltalk</a>
+<li><a href="https://web.archive.org/web/20050324003240/ftp://ftp.cs.orst.edu/pub/budd/little/ReadMe.html">Little Smalltalk</a>
+<li><a href="https://web.archive.org/web/20050324003240/http://www.cs.ucsb.edu/projects/strongtalk/pages/">Strongtalk</a>, an optionally strongly-typed Smalltalk dialect with a fast and light optimizing implementation.
+<li><a href="https://web.archive.org/web/20050324003240/http://www.exept.de/sites/exept/english/Smalltalk/frame_uebersicht.html">Smalltalk/X</a>
+
+<p></ul><ul class="links"><h4>Unsorted</h4>
+<li>(<a class="internal" href="https://web.archive.org/web/20050324003240/http://cliki.tunes.org/MIA">MIA</a>) <a href="https://web.archive.org/web/20050324003240/http://www.smalltickle.com/">Smalltickle</a> is a Smalltalk-like <a class="internal" href="https://web.archive.org/web/20050324003240/http://cliki.tunes.org/programming%20language">programming language</a>.</li>
+<li><a href="https://web.archive.org/web/20050324003240/http://smets.com/happygirl/research/STActalk/">Actalk for smalltalkagents</a>.</li>
+<li><a href="https://web.archive.org/web/20050324003240/http://www-poleia.lip6.fr/~briot/actalk/actalk.html">Actalk</a> is a Smalltalk framework for <a class="internal" href="https://web.archive.org/web/20050324003240/http://cliki.tunes.org/concurrent">concurrent</a> programming.</li>
+<li><a href="https://web.archive.org/web/20050324003240/http://www.cs.ubc.ca/labs/spl/projects/apostle/">Apostle</a> is an Smalltalk <a class="internal" href="https://web.archive.org/web/20050324003240/http://cliki.tunes.org/AOP">AOP</a> extension.</li>
+<li><a href="https://web.archive.org/web/20050324003240/http://bistro.sourceforge.net/">Bistro</a> is a <a class="internal" href="https://web.archive.org/web/20050324003240/http://cliki.tunes.org/Java">Java</a> based Smalltalk variation.</li>
+<li><a href="https://web.archive.org/web/20050324003240/http://users.ipa.net/~dwighth/smalltalk/bluebook/">Bluebook</a> is <u>Smalltalk-80: The Language and Its Implementation</u>.</li>
+<li><a href="https://web.archive.org/web/20050324003240/http://web.yl.is.s.u-tokyo.ac.jp/members/jeff/research/coda.html">Coda</a> is a meta-level architecture<a class="internal" href="https://web.archive.org/web/20050324003240/http://cliki.tunes.org/edit/meta-level%20architecture">?</a>. Implemented in Smalltalk.</li>
+<li><a href="https://web.archive.org/web/20050324003240/http://sourceforge.net/projects/cvstproj/">Cvst</a> is CVS<a class="internal" href="https://web.archive.org/web/20050324003240/http://cliki.tunes.org/edit/CVS">?</a> for Smalltalk projects.</li>
+<li><a href="https://web.archive.org/web/20050324003240/http://users.ipa.net/~dwighth/smalltalk/byte_aug81/design_principles_behind_smalltalk.html">DPBS</a> is "Design Principles Behind Smalltalk".</li>
+<li><a href="https://web.archive.org/web/20050324003240/http://www.advogato.org/proj/Delitalk/">Delitalk</a> is Delicate Smalltalk, a truly <a class="internal" href="https://web.archive.org/web/20050324003240/http://cliki.tunes.org/object-oriented">object-oriented</a> <a class="internal" href="https://web.archive.org/web/20050324003240/http://cliki.tunes.org/OS">OS</a>, based on the Smalltalk concept.</li>
+<li><a href="https://web.archive.org/web/20050324003240/http://www.cs.washington.edu/research/constraints/object-oriented/ecoop-87.html">Deltatalk</a> is "Deltatalk: An Empirically and Aesthetically Motivated Simplification of the Smalltalk-80 Language".</li>
+<li><a href="https://web.archive.org/web/20050324003240/ftp://st.cs.uiuc.edu/Smalltalk/MANCHESTER/manchester/4.1/lisp/">ELST</a> is Embedded Lisps in SmallTalk-80.</li>
+<li><a href="https://web.archive.org/web/20050324003240/http://www.iam.unibe.ch/~ducasse/FreeBooks.html">FSB</a> is Free Smalltalk Books.</li>
+<li><a href="https://web.archive.org/web/20050324003240/http://netjam.org/flow/">Flow</a> is a streaming framework for Smalltalk.</li>
+<li><a href="https://web.archive.org/web/20050324003240/http://www.gnu.org/software/smalltalk/smalltalk.html">Gnu SmallTalk</a>.</li>
+<li><a href="https://web.archive.org/web/20050324003240/http://www.smalltalkchronicles.net/edition2-1/st_compiler.htm">HHGTTSP</a> is "the Hitch Hiker's Guide to the Smalltalk Compiler".</li>
+<li><a href="https://web.archive.org/web/20050324003240/http://www.heeg.de/~hmm/projects/objman/HyperLiterate.html">HLPS</a> is HyperLiterate Programming in Smalltalk</li>
+<li><a href="https://web.archive.org/web/20050324003240/http://www.heeg.de/~hmm/">HMM</a> is Hans-Martin Mosner.</li>
+<li><a href="https://web.archive.org/web/20050324003240/http://hush.sourceforge.net/">Hush</a> is an <a class="internal" href="https://web.archive.org/web/20050324003240/http://cliki.tunes.org/object-oriented">object-oriented</a> <a class="internal" href="https://web.archive.org/web/20050324003240/http://cliki.tunes.org/programming%20language">programming language</a>, based loosely on Smalltalk.</li>
+<li><a href="https://web.archive.org/web/20050324003240/http://home.adelphia.net/~nikboyd/papers/jist/">Jist</a> is <a class="internal" href="https://web.archive.org/web/20050324003240/http://cliki.tunes.org/Java">Java</a> In Smalltalk.</li>
+<li><a href="https://web.archive.org/web/20050324003240/http://www.smalltalk.org/versions/LittleSmalltalk.html">Littlesmalltalk</a> is an open tiny version of Smalltalk.</li>
+<li><a href="https://web.archive.org/web/20050324003240/http://www.emn.fr/bouraqadi/MetaclassTalk/">Metaclasstalk</a> is a reflective extension for Smalltalk.</li>
+<li><a href="https://web.archive.org/web/20050324003240/http://www.emn.fr/cs/object/tools/neoclasstalk/">Neoclasstalk</a> is a Smalltalk with explicit metaclasses.</li>
+<li><a href="https://web.archive.org/web/20050324003240/http://web.yl.is.s.u-tokyo.ac.jp/members/jeff/research/po.html">PortedObjects</a>.</li>
+<li><a href="https://web.archive.org/web/20050324003240/http://www.lirmm.fr/~dony/prototalk/">Prototalk</a> is a SmallTalk-based platform for prototype-based programming language simulation.</li>
+<li><a href="https://web.archive.org/web/20050324003240/http://www.pocketsmalltalk.com/">PocketSmalltalk</a> is a Windows-based SmallTalk cross development environment for the Palm platform (and others?)</li>
+<li><a href="https://web.archive.org/web/20050324003240/http://www.zenspider.com/Satori/index.html">Satori</a> is a SmallTalk-80 superset.</li>
+<li><a href="https://web.archive.org/web/20050324003240/http://ist.unibw-muenchen.de/People/lothar/sic.html">Sic</a> is Smalltalk-based Interactive Compiler-compiler.</li>
+<li><a href="https://web.archive.org/web/20050324003240/http://www.chimu.com/publications/smallJava/">SmallJava</a> - Using Language Transformation to Show Language Differences.</li>
+<li><a href="https://web.archive.org/web/20050324003240/http://www.smallscript.net/">Smallscript</a> is a Smalltalk superset.</li>
+<li><a href="https://web.archive.org/web/20050324003240/http://www.phaidros.com/DIGITALIS/">Smalltalk online</a>.</li>
+<li><a href="https://web.archive.org/web/20050324003240/http://www.xmission.com/~georgeps/Smalltick/">Smalltick</a> is a Smalltalk-like object system in <a class="internal" href="https://web.archive.org/web/20050324003240/http://cliki.tunes.org/Tcl">Tcl</a>.</li>
+<li><a href="https://web.archive.org/web/20050324003240/http://prog.vub.ac.be/research/aop/soulaop.html">Soul/aop</a> is aspect-oriented logic meta programming in Smalltalk.</li>
+<li><a href="https://web.archive.org/web/20050324003240/http://prog.vub.ac.be/research/DMP/soul/soul2.html">Soul</a> is Smalltalk Open Unification Language, an open reflective logic meta programming language, aka Prolog in Smalltalk.</li>
+<li><a href="https://web.archive.org/web/20050324003240/http://members.fcc.net/panu/SRNC-ST.htm">Srnc-st</a> is Signature Revealing Naming Convention for Smalltalk.</li>
+<li><a href="https://web.archive.org/web/20050324003240/http://swiki.squeakfoundation.org/cookbook">St cookbook</a> is the Smalltalk cookbook</li>
+<li><a href="https://web.archive.org/web/20050324003240/http://sourceforge.net/projects/swazoo/">Swazoo</a> is Smalltalk Web Application ZOO.</li>
+<li><a href="https://web.archive.org/web/20050324003240/http://web.yl.is.s.u-tokyo.ac.jp/members/jeff/research/tj.html">Tj</a> is a distributed object system.</li>
+<li><a href="https://web.archive.org/web/20050324003240/http://web.yl.is.s.u-tokyo.ac.jp/members/jeff/research/vibes.html">Vibes</a> is a data analysis and visualization toolkit based on PortedObjects.</li>
+<li><a href="https://web.archive.org/web/20050324003240/http://www.heeg.de/~hmm/projects/WysiTeX/">Wysitex</a> is a WYSIWYG editor for TeX<a class="internal" href="https://web.archive.org/web/20050324003240/http://cliki.tunes.org/edit/TeX">?</a> written in Smalltalk.</li>
+</ul><hr><p><b>This page is linked from: </b> <a class="internal" href="https://web.archive.org/web/20050324003240/http://cliki.tunes.org/Abora">Abora</a> &nbsp; <a class="internal" href="https://web.archive.org/web/20050324003240/http://cliki.tunes.org/AspectS">AspectS</a> &nbsp; <a class="internal" href="https://web.archive.org/web/20050324003240/http://cliki.tunes.org/Caper">Caper</a> &nbsp; <a class="internal" href="https://web.archive.org/web/20050324003240/http://cliki.tunes.org/Cel">Cel</a> &nbsp; <a class="internal" href="https://web.archive.org/web/20050324003240/http://cliki.tunes.org/Design%20Pattern">Design Pattern</a> &nbsp; <a class="internal" href="https://web.archive.org/web/20050324003240/http://cliki.tunes.org/DWIM">DWIM</a> &nbsp; <a class="internal" href="https://web.archive.org/web/20050324003240/http://cliki.tunes.org/Inheritance">Inheritance</a> &nbsp; <a class="internal" href="https://web.archive.org/web/20050324003240/http://cliki.tunes.org/Io">Io</a> &nbsp; <a class="internal" href="https://web.archive.org/web/20050324003240/http://cliki.tunes.org/Java">Java</a> &nbsp; <a class="internal" href="https://web.archive.org/web/20050324003240/http://cliki.tunes.org/kew">kew</a> &nbsp; <a class="internal" href="https://web.archive.org/web/20050324003240/http://cliki.tunes.org/Linear%20Logic%20Comments">Linear Logic Comments</a> &nbsp; <a class="internal" href="https://web.archive.org/web/20050324003240/http://cliki.tunes.org/Model-View-Controller">Model-View-Controller</a> &nbsp; <a class="internal" href="https://web.archive.org/web/20050324003240/http://cliki.tunes.org/Object-Oriented">Object-Oriented</a> &nbsp; <a class="internal" href="https://web.archive.org/web/20050324003240/http://cliki.tunes.org/Objective-C">Objective-C</a> &nbsp; <a class="internal" href="https://web.archive.org/web/20050324003240/http://cliki.tunes.org/Parsing">Parsing</a> &nbsp; <a class="internal" href="https://web.archive.org/web/20050324003240/http://cliki.tunes.org/Python">Python</a> &nbsp; <a class="internal" href="https://web.archive.org/web/20050324003240/http://cliki.tunes.org/Reflective%20Programming%20Languages">Reflective Programming Languages</a> &nbsp; <a class="internal" href="https://web.archive.org/web/20050324003240/http://cliki.tunes.org/Resilient">Resilient</a> &nbsp; <a class="internal" href="https://web.archive.org/web/20050324003240/http://cliki.tunes.org/Ruby">Ruby</a> &nbsp; <a class="internal" href="https://web.archive.org/web/20050324003240/http://cliki.tunes.org/Self">Self</a> &nbsp; <a class="internal" href="https://web.archive.org/web/20050324003240/http://cliki.tunes.org/Sina">Sina</a> &nbsp; <a class="internal" href="https://web.archive.org/web/20050324003240/http://cliki.tunes.org/Slate">Slate</a> &nbsp; <a class="internal" href="https://web.archive.org/web/20050324003240/http://cliki.tunes.org/Slate%20101">Slate 101</a> &nbsp; <a class="internal" href="https://web.archive.org/web/20050324003240/http://cliki.tunes.org/Squeak">Squeak</a> &nbsp; <a class="internal" href="https://web.archive.org/web/20050324003240/http://cliki.tunes.org/Squeak%20VM">Squeak VM</a> &nbsp; <a class="internal" href="https://web.archive.org/web/20050324003240/http://cliki.tunes.org/The%20True%20Story%20of%20Ada">The True Story of Ada</a> &nbsp; <a class="internal" href="https://web.archive.org/web/20050324003240/http://cliki.tunes.org/Trotskyite%20Tunes">Trotskyite Tunes</a> &nbsp; </div><div id="footer"><form action="https://web.archive.org/web/20050324003240/http://cliki.tunes.org/admin/search"><a class="internal" href="https://web.archive.org/web/20050324003240/http://cliki.tunes.org/edit/Smalltalk">Edit page</a> | <a class="internal" href="https://web.archive.org/web/20050324003240/http://cliki.tunes.org/Smalltalk?source">View source</a> | Revisions: <a href="https://web.archive.org/web/20050324003240/http://cliki.tunes.org/Smalltalk?v=1" title="Thu, 03 Jun 2004 23:02:48 GMT">1</a> <a href="https://web.archive.org/web/20050324003240/http://cliki.tunes.org/Smalltalk?v=2" title="Wed, 09 Jun 2004 16:18:47 GMT">2</a> <b title="Mon, 13 Sep 2004 01:58:02 GMT">3</b>  | <input name="words" size="30"><input type="submit" value="search"></form><div id="disclaimer">CTO pages can be modified by anyone at anytime.
+Imagine an appropriate disclaimer. Double it. Add two.</div></body></html></div><!--
+     FILE ARCHIVED ON 00:32:40 Mar 24, 2005 AND RETRIEVED FROM THE
+     INTERNET ARCHIVE ON 06:08:16 Dec 18, 2022.
+     JAVASCRIPT APPENDED BY WAYBACK MACHINE, COPYRIGHT INTERNET ARCHIVE.
+
+     ALL OTHER CONTENT MAY ALSO BE PROTECTED BY COPYRIGHT (17 U.S.C.
+     SECTION 108(a)(3)).
+-->
+<!--
+playback timings (ms):
+  captures_list: 73.755
+  exclusion.robots: 0.095
+  exclusion.robots.policy: 0.086
+  RedisCDXSource: 4.048
+  esindex: 0.009
+  LoadShardBlock: 49.182 (3)
+  PetaboxLoader3.datanode: 56.614 (4)
+  CDXLines.iter: 11.762 (3)
+  load_resource: 34.022
+  PetaboxLoader3.resolve: 22.206
+-->

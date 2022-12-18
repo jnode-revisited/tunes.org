@@ -1,0 +1,64 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html><head><script src="//archive.org/includes/analytics.js?v=cf34f82" type="text/javascript"></script>
+<script type="text/javascript">window.addEventListener('DOMContentLoaded',function(){var v=archive_analytics.values;v.service='wb';v.server_name='wwwb-app210.us.archive.org';v.server_ms=162;archive_analytics.send_pageview({});});</script>
+<script type="text/javascript" src="/_static/js/bundle-playback.js?v=MzYkZ0TU" charset="utf-8"></script>
+<script type="text/javascript" src="/_static/js/wombat.js?v=UHAOicsW" charset="utf-8"></script>
+<script type="text/javascript">
+  __wm.init("https://web.archive.org/web");
+  __wm.wombat("http://cliki.tunes.org:80/Hypertext","20050412160302","https://web.archive.org/","web","/_static/",
+	      "1113321782");
+</script>
+<link rel="stylesheet" type="text/css" href="/_static/css/banner-styles.css?v=S1zqJCYt" />
+<link rel="stylesheet" type="text/css" href="/_static/css/iconochive.css?v=qtvMKcIJ" />
+<!-- End Wayback Rewrite JS Include -->
+<title>CTO : Hypertext</title><link rel="alternate" type="application/rss+xml" title="Recent Changes" href="https://web.archive.org/web/20050412160302/http://cliki.tunes.org/recent-changes.rdf"><link rel="stylesheet" href="https://web.archive.org/web/20050412160302cs_/http://cliki.tunes.org/admin/cliki.css"></head><body><div id="banner"><a title="CTO" class="logo" href="https://web.archive.org/web/20050412160302/http://cliki.tunes.org/">CTO</a> <span>CLiki for the TUNES project</span></div><div id="navbar"><a class="internal" href="https://web.archive.org/web/20050412160302/http://cliki.tunes.org/index">Home</a> <a class="internal" href="https://web.archive.org/web/20050412160302/http://cliki.tunes.org/Recent%20Changes">Recent Changes</a> <a class="internal" href="https://web.archive.org/web/20050412160302/http://cliki.tunes.org/CLiki">About CLiki</a> <a class="internal" href="https://web.archive.org/web/20050412160302/http://cliki.tunes.org/Text%20Formatting">Text Formatting</a> <a class="internal" onclick="if(name=window.prompt('New page name ([A-Za-z0-9 ])')) document.location='https://web.archive.org/web/20050412160302/http://cliki.tunes.org/edit/'+name ;return false;" href="/web/20050412160302/http://cliki.tunes.org/">Create New Page</a></div><div id="main"><h1>Hypertext</h1>A <a class="internal" href="https://web.archive.org/web/20050412160302/http://cliki.tunes.org/user%20interface">user interface</a> <a class="internal" href="https://web.archive.org/web/20050412160302/http://cliki.tunes.org/term">term</a> coined by Ted Nelson<a class="internal" href="https://web.archive.org/web/20050412160302/http://cliki.tunes.org/edit/Ted%20Nelson">?</a> to discuss text as a medium extended to support any kinds of internalized references to other pieces of text.
+
+<p>There are various levels of <a class="internal" href="https://web.archive.org/web/20050412160302/http://cliki.tunes.org/semantics">semantics</a> that fit into this description. The most common in use is obviously that used by HTML on the World-Wide Web, but in many ways this is the least common denominator of hypertext semantics: links are only made manually, link targets cannot be determined in any finer level than the target document's author allowed, link addressing is arbitrary, and there's no way to speak of versions or reliable persistence. (Ironically, the WWW was initially developed on the NeXT platform which had richer facilities as well.)
+
+<p>Ted Nelson's dream project <a class="internal" href="https://web.archive.org/web/20050412160302/http://cliki.tunes.org/Xanadu">Xanadu</a> attempted to bring to the world a rich form of hypertext, but seems too ill-defined to acheive many of its goals. Other systems have existed which are quite rich, such as the Concordia systems on <a class="internal" href="https://web.archive.org/web/20050412160302/http://cliki.tunes.org/Lisp%20Machine">Lisp Machine</a>s, but these have not reached a wide audience.
+
+<p><ul class="links">
+<li><a href="https://web.archive.org/web/20050412160302/http://www.foresight.org/WebEnhance/HPEK0.html">Hypertext Publishing and the Evolution of Knowledge</a> by the ForeSight Institute gives a decent overview of the social concepts behind hypertext.
+</ul>
+
+<p>Hypertext systems:
+<ul class="implementations">
+<li><a class="internal" href="https://web.archive.org/web/20050412160302/http://cliki.tunes.org/Xanadu">Xanadu</a></li>
+<li><a class="internal" href="https://web.archive.org/web/20050412160302/http://cliki.tunes.org/Memex">Memex</a></li>
+<li>World Wide Web<a class="internal" href="https://web.archive.org/web/20050412160302/http://cliki.tunes.org/edit/World%20Wide%20Web">?</a></li>
+<li>NLS/AUGMENT<a class="internal" href="https://web.archive.org/web/20050412160302/http://cliki.tunes.org/edit/NLS%2FAUGMENT">?</a></li>
+<li><a class="internal" href="https://web.archive.org/web/20050412160302/http://cliki.tunes.org/Abora">Abora</a></li>
+<li>Microcosm</li>
+<li>NoteCards</li>
+<li>Intermedia</li>
+<li>Trellis<a class="internal" href="https://web.archive.org/web/20050412160302/http://cliki.tunes.org/edit/Trellis">?</a></li>
+<li>KMS</li>
+<li><a class="internal" href="https://web.archive.org/web/20050412160302/http://cliki.tunes.org/Hyper-G">Hyper-G</a></li>
+<li><a class="internal" href="https://web.archive.org/web/20050412160302/http://cliki.tunes.org/Wiki">Wiki</a></li>
+<li><a class="internal" href="https://web.archive.org/web/20050412160302/http://cliki.tunes.org/GNU%20Info">GNU Info</a></li>
+<li>Hyperbole</li>
+<li>Concordia</li>
+<li>HyperCard<a class="internal" href="https://web.archive.org/web/20050412160302/http://cliki.tunes.org/edit/HyperCard">?</a></li>
+<li><a class="internal" href="https://web.archive.org/web/20050412160302/http://cliki.tunes.org/ZigZag">ZigZag</a></li>
+</ul><hr><p><b>Pages in this topic: </b> <a class="internal" href="https://web.archive.org/web/20050412160302/http://cliki.tunes.org/Abora">Abora</a> &nbsp; <a class="internal" href="https://web.archive.org/web/20050412160302/http://cliki.tunes.org/Robust%20Hyperlinks">Robust Hyperlinks</a> &nbsp; <a class="internal" href="https://web.archive.org/web/20050412160302/http://cliki.tunes.org/Wiki">Wiki</a> &nbsp; <hr><p><b>Also linked from: </b> <a class="internal" href="https://web.archive.org/web/20050412160302/http://cliki.tunes.org/Active%20Texts">Active Texts</a> &nbsp; <a class="internal" href="https://web.archive.org/web/20050412160302/http://cliki.tunes.org/Metatext">Metatext</a> &nbsp; <a class="internal" href="https://web.archive.org/web/20050412160302/http://cliki.tunes.org/Reverse%20Literate%20Programming">Reverse Literate Programming</a> &nbsp; </div><div id="footer"><form action="https://web.archive.org/web/20050412160302/http://cliki.tunes.org/admin/search"><a class="internal" href="https://web.archive.org/web/20050412160302/http://cliki.tunes.org/edit/Hypertext">Edit page</a> | <a class="internal" href="https://web.archive.org/web/20050412160302/http://cliki.tunes.org/Hypertext?source">View source</a> | Revisions: <b title="Sat, 26 Jul 2003 09:14:54 GMT">0</b>  | <input name="words" size="30"><input type="submit" value="search"></form><div id="disclaimer">CTO pages can be modified by anyone at anytime.
+Imagine an appropriate disclaimer. Double it. Add two.</div></body></html></div><!--
+     FILE ARCHIVED ON 16:03:02 Apr 12, 2005 AND RETRIEVED FROM THE
+     INTERNET ARCHIVE ON 06:13:25 Dec 18, 2022.
+     JAVASCRIPT APPENDED BY WAYBACK MACHINE, COPYRIGHT INTERNET ARCHIVE.
+
+     ALL OTHER CONTENT MAY ALSO BE PROTECTED BY COPYRIGHT (17 U.S.C.
+     SECTION 108(a)(3)).
+-->
+<!--
+playback timings (ms):
+  captures_list: 92.815
+  exclusion.robots: 0.08
+  exclusion.robots.policy: 0.072
+  cdx.remote: 0.07
+  esindex: 0.008
+  LoadShardBlock: 47.715 (3)
+  PetaboxLoader3.datanode: 51.33 (4)
+  CDXLines.iter: 17.023 (3)
+  load_resource: 64.299
+  PetaboxLoader3.resolve: 49.151
+-->

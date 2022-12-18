@@ -1,0 +1,3 @@
+The *(topic) of _(Glossary) terms.
+
+/("term" :attribute :topic :match :exact)

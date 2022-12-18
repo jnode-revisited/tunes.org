@@ -1,0 +1,47 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html><head><script src="//archive.org/includes/analytics.js?v=cf34f82" type="text/javascript"></script>
+<script type="text/javascript">window.addEventListener('DOMContentLoaded',function(){var v=archive_analytics.values;v.service='wb';v.server_name='wwwb-app200.us.archive.org';v.server_ms=523;archive_analytics.send_pageview({});});</script>
+<script type="text/javascript" src="/_static/js/bundle-playback.js?v=MzYkZ0TU" charset="utf-8"></script>
+<script type="text/javascript" src="/_static/js/wombat.js?v=UHAOicsW" charset="utf-8"></script>
+<script type="text/javascript">
+  __wm.init("https://web.archive.org/web");
+  __wm.wombat("http://cliki.tunes.org:80/Syntax","20050416153200","https://web.archive.org/","web","/_static/",
+	      "1113665520");
+</script>
+<link rel="stylesheet" type="text/css" href="/_static/css/banner-styles.css?v=S1zqJCYt" />
+<link rel="stylesheet" type="text/css" href="/_static/css/iconochive.css?v=qtvMKcIJ" />
+<!-- End Wayback Rewrite JS Include -->
+<title>CTO : Syntax</title><link rel="alternate" type="application/rss+xml" title="Recent Changes" href="https://web.archive.org/web/20050416153200/http://cliki.tunes.org/recent-changes.rdf"><link rel="stylesheet" href="https://web.archive.org/web/20050416153200cs_/http://cliki.tunes.org/admin/cliki.css"></head><body><div id="banner"><a title="CTO" class="logo" href="https://web.archive.org/web/20050416153200/http://cliki.tunes.org/">CTO</a> <span>CLiki for the TUNES project</span></div><div id="navbar"><a class="internal" href="https://web.archive.org/web/20050416153200/http://cliki.tunes.org/index">Home</a> <a class="internal" href="https://web.archive.org/web/20050416153200/http://cliki.tunes.org/Recent%20Changes">Recent Changes</a> <a class="internal" href="https://web.archive.org/web/20050416153200/http://cliki.tunes.org/CLiki">About CLiki</a> <a class="internal" href="https://web.archive.org/web/20050416153200/http://cliki.tunes.org/Text%20Formatting">Text Formatting</a> <a class="internal" onclick="if(name=window.prompt('New page name ([A-Za-z0-9 ])')) document.location='https://web.archive.org/web/20050416153200/http://cliki.tunes.org/edit/'+name ;return false;" href="/web/20050416153200/http://cliki.tunes.org/">Create New Page</a></div><div id="main"><h1>Syntax</h1>The <a class="internal" href="https://web.archive.org/web/20050416153200/http://cliki.tunes.org/term">term</a> and <a class="internal" href="https://web.archive.org/web/20050416153200/http://cliki.tunes.org/topic">topic</a> of the structure of expressions in a language. The specification for a syntax is a grammar.
+
+<p><ul class="links">
+<li><a href="https://web.archive.org/web/20050416153200/http://www.cs.vu.nl/grammarware/">Engineering of Grammarware</a>:
+  <ul><li><a href="https://web.archive.org/web/20050416153200/http://www.cs.vu.nl/grammarware/agenda/">Towards an engineering discipline for grammarware (Draft)</a> (research agenda)
+      <br><b>Abstract</b>
+      <blockquote>
+      Grammarware comprises grammars and all grammar-dependent software. The term grammar is meant here in the sense of all established grammar formalisms and grammar notations including context-free grammars, class dictionaries, XML schemas as well as some forms of tree and graph grammars. The term grammar-dependent software refers to all software that involves grammar knowledge in an essential manner. Archetypal examples of grammar-dependent software are parsers, program converters, and XML-based document processors. Despite the pervasive role of grammars in software systems, the engineering aspects of grammarware are insufficiently understood. We lay out an agenda that is meant to promote research on increasing the productivity of grammarware development and on improving the quality of grammarware. To this end, we identify the problems with the current grammarware practises, the barriers that currently hamper research, the promises of an engineering discipline for grammarware, its principles, and the research challenges that have to be addressed.
+      </blockquote>
+      </li>
+  </ul>    
+</ul>
+<hr><p><b>Pages in this topic: </b> <a class="internal" href="https://web.archive.org/web/20050416153200/http://cliki.tunes.org/Abstract%20Syntax%20Tree">Abstract Syntax Tree</a> &nbsp; <a class="internal" href="https://web.archive.org/web/20050416153200/http://cliki.tunes.org/Chomsky%20Hierarchy">Chomsky Hierarchy</a> &nbsp; <a class="internal" href="https://web.archive.org/web/20050416153200/http://cliki.tunes.org/Concatenative%20Syntax">Concatenative Syntax</a> &nbsp; <a class="internal" href="https://web.archive.org/web/20050416153200/http://cliki.tunes.org/Parsing">Parsing</a> &nbsp; <a class="internal" href="https://web.archive.org/web/20050416153200/http://cliki.tunes.org/Syntax%20in%20K">Syntax in K</a> &nbsp; <a class="internal" href="https://web.archive.org/web/20050416153200/http://cliki.tunes.org/Syntax%20in%20Lisp">Syntax in Lisp</a> &nbsp; <a class="internal" href="https://web.archive.org/web/20050416153200/http://cliki.tunes.org/Syntax%20in%20Maude">Syntax in Maude</a> &nbsp; <hr><p><b>Also linked from: </b> <a class="internal" href="https://web.archive.org/web/20050416153200/http://cliki.tunes.org/Combining%20Languages">Combining Languages</a> &nbsp; <a class="internal" href="https://web.archive.org/web/20050416153200/http://cliki.tunes.org/concatenative">concatenative</a> &nbsp; <a class="internal" href="https://web.archive.org/web/20050416153200/http://cliki.tunes.org/Configuration">Configuration</a> &nbsp; <a class="internal" href="https://web.archive.org/web/20050416153200/http://cliki.tunes.org/DERIVE">DERIVE</a> &nbsp; <a class="internal" href="https://web.archive.org/web/20050416153200/http://cliki.tunes.org/Language">Language</a> &nbsp; <a class="internal" href="https://web.archive.org/web/20050416153200/http://cliki.tunes.org/Lisp">Lisp</a> &nbsp; <a class="internal" href="https://web.archive.org/web/20050416153200/http://cliki.tunes.org/Macro">Macro</a> &nbsp; <a class="internal" href="https://web.archive.org/web/20050416153200/http://cliki.tunes.org/Sheep">Sheep</a> &nbsp; <a class="internal" href="https://web.archive.org/web/20050416153200/http://cliki.tunes.org/Slim%20Binaries">Slim Binaries</a> &nbsp; </div><div id="footer"><form action="https://web.archive.org/web/20050416153200/http://cliki.tunes.org/admin/search"><a class="internal" href="https://web.archive.org/web/20050416153200/http://cliki.tunes.org/edit/Syntax">Edit page</a> | <a class="internal" href="https://web.archive.org/web/20050416153200/http://cliki.tunes.org/Syntax?source">View source</a> | Revisions: <b title="Sun, 10 Apr 2005 23:52:16 GMT">1</b>  | <input name="words" size="30"><input type="submit" value="search"></form><div id="disclaimer">CTO pages can be modified by anyone at anytime.
+Imagine an appropriate disclaimer. Double it. Add two.</div></body></html></div><!--
+     FILE ARCHIVED ON 15:32:00 Apr 16, 2005 AND RETRIEVED FROM THE
+     INTERNET ARCHIVE ON 06:17:25 Dec 18, 2022.
+     JAVASCRIPT APPENDED BY WAYBACK MACHINE, COPYRIGHT INTERNET ARCHIVE.
+
+     ALL OTHER CONTENT MAY ALSO BE PROTECTED BY COPYRIGHT (17 U.S.C.
+     SECTION 108(a)(3)).
+-->
+<!--
+playback timings (ms):
+  captures_list: 407.194
+  exclusion.robots: 0.083
+  exclusion.robots.policy: 0.075
+  cdx.remote: 0.067
+  esindex: 0.01
+  LoadShardBlock: 97.024 (3)
+  PetaboxLoader3.datanode: 78.604 (4)
+  CDXLines.iter: 12.928 (3)
+  load_resource: 108.532
+  PetaboxLoader3.resolve: 77.743
+-->

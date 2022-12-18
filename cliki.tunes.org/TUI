@@ -1,0 +1,67 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html><head><script src="//archive.org/includes/analytics.js?v=cf34f82" type="text/javascript"></script>
+<script type="text/javascript">window.addEventListener('DOMContentLoaded',function(){var v=archive_analytics.values;v.service='wb';v.server_name='wwwb-app201.us.archive.org';v.server_ms=200;archive_analytics.send_pageview({});});</script>
+<script type="text/javascript" src="/_static/js/bundle-playback.js?v=MzYkZ0TU" charset="utf-8"></script>
+<script type="text/javascript" src="/_static/js/wombat.js?v=UHAOicsW" charset="utf-8"></script>
+<script type="text/javascript">
+  __wm.init("https://web.archive.org/web");
+  __wm.wombat("http://cliki.tunes.org:80/TUI","20050412160718","https://web.archive.org/","web","/_static/",
+	      "1113322038");
+</script>
+<link rel="stylesheet" type="text/css" href="/_static/css/banner-styles.css?v=S1zqJCYt" />
+<link rel="stylesheet" type="text/css" href="/_static/css/iconochive.css?v=qtvMKcIJ" />
+<!-- End Wayback Rewrite JS Include -->
+<title>CTO : TUI</title><link rel="alternate" type="application/rss+xml" title="Recent Changes" href="https://web.archive.org/web/20050412160718/http://cliki.tunes.org/recent-changes.rdf"><link rel="stylesheet" href="https://web.archive.org/web/20050412160718cs_/http://cliki.tunes.org/admin/cliki.css"></head><body><div id="banner"><a title="CTO" class="logo" href="https://web.archive.org/web/20050412160718/http://cliki.tunes.org/">CTO</a> <span>CLiki for the TUNES project</span></div><div id="navbar"><a class="internal" href="https://web.archive.org/web/20050412160718/http://cliki.tunes.org/index">Home</a> <a class="internal" href="https://web.archive.org/web/20050412160718/http://cliki.tunes.org/Recent%20Changes">Recent Changes</a> <a class="internal" href="https://web.archive.org/web/20050412160718/http://cliki.tunes.org/CLiki">About CLiki</a> <a class="internal" href="https://web.archive.org/web/20050412160718/http://cliki.tunes.org/Text%20Formatting">Text Formatting</a> <a class="internal" onclick="if(name=window.prompt('New page name ([A-Za-z0-9 ])')) document.location='https://web.archive.org/web/20050412160718/http://cliki.tunes.org/edit/'+name ;return false;" href="/web/20050412160718/http://cliki.tunes.org/">Create New Page</a></div><div id="main"><h1>TUI</h1>An <a class="internal" href="https://web.archive.org/web/20050412160718/http://cliki.tunes.org/acronym">acronym</a> for both <strong>Text</strong> and <strong>Textual</strong> <a class="internal" href="https://web.archive.org/web/20050412160718/http://cliki.tunes.org/User%20Interface">User Interface</a>.
+
+<p>In the first meaning is used to denote a <a class="internal" href="https://web.archive.org/web/20050412160718/http://cliki.tunes.org/user%20interface">user interface</a> that simply mimes a <a class="internal" href="https://web.archive.org/web/20050412160718/http://cliki.tunes.org/GUI">GUI</a>. An example is:
+
+<p><ul class="links">
+  <li><a href="https://web.archive.org/web/20050412160718/http://tvision.sourceforge.net/">Turbo Vision port to the GNU compiler</a>.</li>
+</ul>
+
+<p>In the second meaning, <strong>Textual</strong> <a class="internal" href="https://web.archive.org/web/20050412160718/http://cliki.tunes.org/UI">UI</a>, its peculiarity is the ability to embed, into an ordinary <em>text</em> precisely, commands which can be executed at user wish, usually positioning the cursor onto a word, which correspond to a command, and tapping a special key on the keyboard or clicking on it with a mouse (like an hypertextual link).
+
+<p>The <a class="internal" href="https://web.archive.org/web/20050412160718/http://cliki.tunes.org/output">output</a> of this command could be shown in another frame/window or near the word/command itself. In the latter case you can think to a TUI as a free-form spreadsheet which evaluate on demand (examples of this are <a class="internal" href="https://web.archive.org/web/20050412160718/http://cliki.tunes.org/CoSy">CoSy</a> NoteComputing Environment, which was based on <a class="internal" href="https://web.archive.org/web/20050412160718/http://cliki.tunes.org/APL">APL</a> and now on <a class="internal" href="https://web.archive.org/web/20050412160718/http://cliki.tunes.org/K">K</a> and <em>probably</em> <a class="internal" href="https://web.archive.org/web/20050412160718/http://cliki.tunes.org/The%20Humane%20Environment">The Humane Environment</a> by <a class="internal" href="https://web.archive.org/web/20050412160718/http://cliki.tunes.org/Jef%20Raskin">Jef Raskin</a>, based on <a class="internal" href="https://web.archive.org/web/20050412160718/http://cliki.tunes.org/Python">Python</a> and the <a class="internal" href="https://web.archive.org/web/20050412160718/http://cliki.tunes.org/Oberon">Oberon</a> <a class="internal" href="https://web.archive.org/web/20050412160718/http://cliki.tunes.org/UI">UI</a>).
+
+<p>See, from the <a class="internal" href="https://web.archive.org/web/20050412160718/http://cliki.tunes.org/Oberon">Oberon</a> <a class="internal" href="https://web.archive.org/web/20050412160718/http://cliki.tunes.org/FAQ">FAQ</a>:
+<ul class="links">
+  <li><a href="https://web.archive.org/web/20050412160718/http://www.oberon.ethz.ch/cli.html">CLI compared to TUI</a>.</li>
+</ul>
+
+<p>Here is a fragment of their quote from <strong>comp.lang.oberon</strong>:
+
+<p><blockquote>[..] At the base level a <a class="internal" href="https://web.archive.org/web/20050412160718/http://cliki.tunes.org/CLI">CLI</a> offers absolutely nothing over a TUI (Textual User Interface). What do I mean by "base level"? Does anybody here, besides me, go back far enough to remember <a class="internal" href="https://web.archive.org/web/20050412160718/http://cliki.tunes.org/CP%2FM">CP/M</a>? That's a "base level" <a class="internal" href="https://web.archive.org/web/20050412160718/http://cliki.tunes.org/CLI">CLI</a>. It has little, if any, scripting, no piping or redirection, etc. A <a class="internal" href="https://web.archive.org/web/20050412160718/http://cliki.tunes.org/CLI">CLI</a> means that when you press "ENTER" the command is executed. With a TUI you can do pretty much the same thing, except that the command isn't executed until you click on it. Someone raised the issue of "when" can you type in a command in a TUI. Answer? Anytime you feel like it! <strong>You don't have to open up a "blank window" and type your new command in.</strong> You don't have to put the new command into the log. <strong>You can put it in any document you happen to be working on.</strong> Say if you're editing a module and you want to test a new command. Just type it in and click on in the that same window. It's just that simple. Sure, it takes more to type in:
+
+<p><code>System.DeleteFiles file1.txt file2.txt file3.txt ~</code>
+
+<p>than:
+
+<p><br><code>del file1.txt</code>
+<br><code>del file2.txt</code>
+<br><code>del file3.txt</code>
+
+<p>But if that's all you can see, you're missing the point. Names in typical <a class="internal" href="https://web.archive.org/web/20050412160718/http://cliki.tunes.org/CLI">CLI</a>s are short (and cryptic) because you're likely to type them again, and again, and again. The <a class="internal" href="https://web.archive.org/web/20050412160718/http://cliki.tunes.org/Oberon">Oberon</a> TUI saves on typing, hence command names can be longer and more meaningful. [..]
+<br>-- J. M. Drake 
+</blockquote>
+<hr><p><b>This page is linked from: </b> <a class="internal" href="https://web.archive.org/web/20050412160718/http://cliki.tunes.org/CLI">CLI</a> &nbsp; <a class="internal" href="https://web.archive.org/web/20050412160718/http://cliki.tunes.org/CoSy">CoSy</a> &nbsp; <a class="internal" href="https://web.archive.org/web/20050412160718/http://cliki.tunes.org/Oberon">Oberon</a> &nbsp; <a class="internal" href="https://web.archive.org/web/20050412160718/http://cliki.tunes.org/Plan9">Plan9</a> &nbsp; <a class="internal" href="https://web.archive.org/web/20050412160718/http://cliki.tunes.org/The%20Humane%20Environment">The Humane Environment</a> &nbsp; <a class="internal" href="https://web.archive.org/web/20050412160718/http://cliki.tunes.org/Wily">Wily</a> &nbsp; </div><div id="footer"><form action="https://web.archive.org/web/20050412160718/http://cliki.tunes.org/admin/search"><a class="internal" href="https://web.archive.org/web/20050412160718/http://cliki.tunes.org/edit/TUI">Edit page</a> | <a class="internal" href="https://web.archive.org/web/20050412160718/http://cliki.tunes.org/TUI?source">View source</a> | Revisions: <b title="Mon, 26 Jan 2004 16:09:12 GMT">0</b>  | <input name="words" size="30"><input type="submit" value="search"></form><div id="disclaimer">CTO pages can be modified by anyone at anytime.
+Imagine an appropriate disclaimer. Double it. Add two.</div></body></html></div><!--
+     FILE ARCHIVED ON 16:07:18 Apr 12, 2005 AND RETRIEVED FROM THE
+     INTERNET ARCHIVE ON 06:19:01 Dec 18, 2022.
+     JAVASCRIPT APPENDED BY WAYBACK MACHINE, COPYRIGHT INTERNET ARCHIVE.
+
+     ALL OTHER CONTENT MAY ALSO BE PROTECTED BY COPYRIGHT (17 U.S.C.
+     SECTION 108(a)(3)).
+-->
+<!--
+playback timings (ms):
+  captures_list: 107.941
+  exclusion.robots: 0.131
+  exclusion.robots.policy: 0.122
+  cdx.remote: 0.106
+  esindex: 0.01
+  LoadShardBlock: 67.621 (3)
+  PetaboxLoader3.datanode: 115.369 (4)
+  CDXLines.iter: 18.294 (3)
+  load_resource: 87.173
+  PetaboxLoader3.resolve: 32.592
+-->

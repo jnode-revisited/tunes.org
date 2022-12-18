@@ -1,0 +1,65 @@
+<html><head><script src="//archive.org/includes/analytics.js?v=cf34f82" type="text/javascript"></script>
+<script type="text/javascript">window.addEventListener('DOMContentLoaded',function(){var v=archive_analytics.values;v.service='wb';v.server_name='wwwb-app225.us.archive.org';v.server_ms=212;archive_analytics.send_pageview({});});</script>
+<script type="text/javascript" src="/_static/js/bundle-playback.js?v=MzYkZ0TU" charset="utf-8"></script>
+<script type="text/javascript" src="/_static/js/wombat.js?v=UHAOicsW" charset="utf-8"></script>
+<script type="text/javascript">
+  __wm.init("https://web.archive.org/web");
+  __wm.wombat("http://cliki.tunes.org:80/Component%20Object%20Model","20031129155603","https://web.archive.org/","web","/_static/",
+	      "1070121363");
+</script>
+<link rel="stylesheet" type="text/css" href="/_static/css/banner-styles.css?v=S1zqJCYt" />
+<link rel="stylesheet" type="text/css" href="/_static/css/iconochive.css?v=qtvMKcIJ" />
+<!-- End Wayback Rewrite JS Include -->
+<title>TUNES : Component Object Model</title>
+<link rel="alternate" type="application/rss+xml" title="Recent Changes" href="https://web.archive.org/web/20031129155603/http://cliki.tunes.org/recent-changes.rdf"></link>
+<link rel="stylesheet" href="https://web.archive.org/web/20031129155603cs_/http://cliki.tunes.org/admin/cliki.css"></link>
+<link rel="shortcut icon" type="image/x-icon" href="https://web.archive.org/web/20031129155603im_/http://cliki.tunes.org/favicon.ico"></link>
+</head>
+<body><div class="navbar"><table width="100%"><tr><td colspan="3" class="disclaimer">CLiki pages can be edited by anybody at any time.  Imagine a <i>scarily comprehensive legal disclaimer</i>.  Double it.  Add two.  <!-- Now shut your eyes.  Dark, isn't it? --></td>
+</tr>
+</table>
+<center><table><tr><td><a href="https://web.archive.org/web/20031129155603/http://cliki.tunes.org/index">Home</a>
+</td>
+<td><a href="https://web.archive.org/web/20031129155603/http://cliki.tunes.org/Recent%20Changes">Recent Changes</a>
+</td>
+<td><a href="https://web.archive.org/web/20031129155603/http://cliki.tunes.org/CLiki">About CLiki</a>
+</td>
+<td><a href="https://web.archive.org/web/20031129155603/http://cliki.tunes.org/Text%20Formatting">Text Formatting</a>
+</td>
+<td><a onclick="if(name=window.prompt('New page name ([A-Za-z0-9 ])')) document.location='https://web.archive.org/web/20031129155603/http://cliki.tunes.org/edit/'+name ;return false;" href="#">Create new page</a>
+</td>
+</tr>
+</table>
+</center>
+</div>
+<h1>Component Object Model</h1>
+A <a class="internal" href="Microsoft" onmouseover="window.status='Microsoft'; return true" onmouseout="window.status='';">Microsoft</a> component system which promoted strongly-<a class="internal" href="type" onmouseover="window.status='type'; return true" onmouseout="window.status='';">type</a>d contractual interfaces, interface and class versioning, <a class="internal" href="distributed" onmouseover="window.status='distributed'; return true" onmouseout="window.status='';">distributed</a> programming (<a class="internal" href="Distributed" onmouseover="window.status='Distributed'; return true" onmouseout="window.status='';">Distributed</a> <a class="internal" href="COM" onmouseover="window.status='COM'; return true" onmouseout="window.status='';">COM</a> -- DCOM), and component-style code reuse (see <a class="internal" href="Combining%20Languages" onmouseover="window.status='Combining Languages'; return true" onmouseout="window.status='';">Combining Languages</a>). While <a class="internal" href="COM" onmouseover="window.status='COM'; return true" onmouseout="window.status='';">COM</a> did not support the full range of <a class="internal" href="OOP" onmouseover="window.status='OOP'; return true" onmouseout="window.status='';">OOP</a> methodologies, it was arguably the most successful component system ever created. It has since been replaced by the more flexible, secure, and easier-to-use component model in <a class="internal" href="Microsoft" onmouseover="window.status='Microsoft'; return true" onmouseout="window.status='';">Microsoft</a>'s <a class="internal" href=".NET" onmouseover="window.status='.NET'; return true" onmouseout="window.status='';">.NET</a> system. <a class="internal" href="COM" onmouseover="window.status='COM'; return true" onmouseout="window.status='';">COM</a> was derived from an older, obsolete <a class="internal" href="Microsoft" onmouseover="window.status='Microsoft'; return true" onmouseout="window.status='';">Microsoft</a> component system known as OLE.
+
+<p><ul class="links">
+<li><a href="https://web.archive.org/web/20031129155603/http://www.microsoft.com/com/default.asp">Microsoft COM Technologies</a>
+ - Information and Resources for the Component Object Model-based technologies.
+<li><a href="https://web.archive.org/web/20031129155603/http://msdn.microsoft.com/library/default.asp?url=/library/en-us/dnanchor/html/componentdevelopmentank.asp">Component Development</a>
+ at <a href="https://web.archive.org/web/20031129155603/http://msdn.microsoft.com/">MSDN</a>
+.
+</ul>
+<hr><b>This page is linked from: </b> <a class="internal" href="COM" onmouseover="window.status='COM'; return true" onmouseout="window.status='';">COM</a> &nbsp; <div class="footer"><form action="https://web.archive.org/web/20031129155603/http://cliki.tunes.org/admin/search"><a href="/web/20031129155603/http://cliki.tunes.org/view-source/Component%20Object%20Model" class="nav" onmouseover="window.status='View the source'; return true">Show</a>/<a href="/web/20031129155603/http://cliki.tunes.org/edit/Component%20Object%20Model" class="nav" onmouseover="window.status='Edit this page'; return true">Edit source</a> |  Last edit: Mon, 24 Nov 2003 15:56:48 | <a href="/web/20031129155603/http://cliki.tunes.org/history/Component%20Object%20Model" class="nav" onmouseover="window.status='Show page history'; return true">History</a> | <a href="CLiki+Search" class="nav" onmouseover="window.status='Search all pages'; return true">Search:</a>&nbsp;<input name="words" size="20"></form></div><!--
+     FILE ARCHIVED ON 15:56:03 Nov 29, 2003 AND RETRIEVED FROM THE
+     INTERNET ARCHIVE ON 06:20:52 Dec 18, 2022.
+     JAVASCRIPT APPENDED BY WAYBACK MACHINE, COPYRIGHT INTERNET ARCHIVE.
+
+     ALL OTHER CONTENT MAY ALSO BE PROTECTED BY COPYRIGHT (17 U.S.C.
+     SECTION 108(a)(3)).
+-->
+<!--
+playback timings (ms):
+  captures_list: 108.064
+  exclusion.robots: 0.095
+  exclusion.robots.policy: 0.087
+  RedisCDXSource: 0.976
+  esindex: 0.017
+  LoadShardBlock: 89.64 (3)
+  PetaboxLoader3.datanode: 94.62 (4)
+  CDXLines.iter: 15.014 (3)
+  load_resource: 100.203
+  PetaboxLoader3.resolve: 53.465
+-->

@@ -1,0 +1,44 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html><head><script src="//archive.org/includes/analytics.js?v=cf34f82" type="text/javascript"></script>
+<script type="text/javascript">window.addEventListener('DOMContentLoaded',function(){var v=archive_analytics.values;v.service='wb';v.server_name='wwwb-app203.us.archive.org';v.server_ms=384;archive_analytics.send_pageview({});});</script>
+<script type="text/javascript" src="/_static/js/bundle-playback.js?v=MzYkZ0TU" charset="utf-8"></script>
+<script type="text/javascript" src="/_static/js/wombat.js?v=UHAOicsW" charset="utf-8"></script>
+<script type="text/javascript">
+  __wm.init("https://web.archive.org/web");
+  __wm.wombat("http://cliki.tunes.org:80/Quine","20050416153124","https://web.archive.org/","web","/_static/",
+	      "1113665484");
+</script>
+<link rel="stylesheet" type="text/css" href="/_static/css/banner-styles.css?v=S1zqJCYt" />
+<link rel="stylesheet" type="text/css" href="/_static/css/iconochive.css?v=qtvMKcIJ" />
+<!-- End Wayback Rewrite JS Include -->
+<title>CTO : Quine</title><link rel="alternate" type="application/rss+xml" title="Recent Changes" href="https://web.archive.org/web/20050416153124/http://cliki.tunes.org/recent-changes.rdf"><link rel="stylesheet" href="https://web.archive.org/web/20050416153124cs_/http://cliki.tunes.org/admin/cliki.css"></head><body><div id="banner"><a title="CTO" class="logo" href="https://web.archive.org/web/20050416153124/http://cliki.tunes.org/">CTO</a> <span>CLiki for the TUNES project</span></div><div id="navbar"><a class="internal" href="https://web.archive.org/web/20050416153124/http://cliki.tunes.org/index">Home</a> <a class="internal" href="https://web.archive.org/web/20050416153124/http://cliki.tunes.org/Recent%20Changes">Recent Changes</a> <a class="internal" href="https://web.archive.org/web/20050416153124/http://cliki.tunes.org/CLiki">About CLiki</a> <a class="internal" href="https://web.archive.org/web/20050416153124/http://cliki.tunes.org/Text%20Formatting">Text Formatting</a> <a class="internal" onclick="if(name=window.prompt('New page name ([A-Za-z0-9 ])')) document.location='https://web.archive.org/web/20050416153124/http://cliki.tunes.org/edit/'+name ;return false;" href="/web/20050416153124/http://cliki.tunes.org/">Create New Page</a></div><div id="main"><h1>Quine</h1>The <a class="internal" href="https://web.archive.org/web/20050416153124/http://cliki.tunes.org/term">term</a> for a sentence that describes itself. Named after their inventor <a class="internal" href="https://web.archive.org/web/20050416153124/http://cliki.tunes.org/W.%20V.%20Quine">W. V. Quine</a>, in a programming setting, they are programs that output their own source code.
+
+<p>Here are a few pages on Quines:
+<ul class="links">
+<li><a href="https://web.archive.org/web/20050416153124/http://www.eleves.ens.fr:8080/~madore/computers/quine.html">David Madore's</a>
+<li><a href="https://web.archive.org/web/20050416153124/http://www.nyx.net/~gthompso/quine.htm">Gary Thompson's</a>
+<li><a href="https://web.archive.org/web/20050416153124/http://www.mines.edu/students/b/bolmstea/quines/">Ben Olmstead's</a>
+<li><a href="https://web.archive.org/web/20050416153124/http://www.cs.washington.edu/homes/csk/paper/">Craig S. Kaplan's</a>
+<li>Note also the quines in Ken Thompson's <a href="https://web.archive.org/web/20050416153124/http://cm.bell-labs.com/who/ken/trust.html">Turing Award lecture</a>.
+</ul><hr><p><b>This page is linked from: </b> <a class="internal" href="https://web.archive.org/web/20050416153124/http://cliki.tunes.org/Methods%20of%20Reflection">Methods of Reflection</a> &nbsp; </div><div id="footer"><form action="https://web.archive.org/web/20050416153124/http://cliki.tunes.org/admin/search"><a class="internal" href="https://web.archive.org/web/20050416153124/http://cliki.tunes.org/edit/Quine">Edit page</a> | <a class="internal" href="https://web.archive.org/web/20050416153124/http://cliki.tunes.org/Quine?source">View source</a> | Revisions: <b title="Fri, 10 Jan 2003 01:18:04 GMT">0</b>  | <input name="words" size="30"><input type="submit" value="search"></form><div id="disclaimer">CTO pages can be modified by anyone at anytime.
+Imagine an appropriate disclaimer. Double it. Add two.</div></body></html></div><!--
+     FILE ARCHIVED ON 15:31:24 Apr 16, 2005 AND RETRIEVED FROM THE
+     INTERNET ARCHIVE ON 06:16:21 Dec 18, 2022.
+     JAVASCRIPT APPENDED BY WAYBACK MACHINE, COPYRIGHT INTERNET ARCHIVE.
+
+     ALL OTHER CONTENT MAY ALSO BE PROTECTED BY COPYRIGHT (17 U.S.C.
+     SECTION 108(a)(3)).
+-->
+<!--
+playback timings (ms):
+  captures_list: 324.186
+  exclusion.robots: 0.098
+  exclusion.robots.policy: 0.088
+  cdx.remote: 0.08
+  esindex: 0.011
+  LoadShardBlock: 139.536 (3)
+  PetaboxLoader3.resolve: 115.405 (4)
+  PetaboxLoader3.datanode: 51.252 (4)
+  CDXLines.iter: 22.112 (3)
+  load_resource: 54.665
+-->

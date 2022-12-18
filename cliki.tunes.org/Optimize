@@ -1,0 +1,42 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html><head><script src="//archive.org/includes/analytics.js?v=cf34f82" type="text/javascript"></script>
+<script type="text/javascript">window.addEventListener('DOMContentLoaded',function(){var v=archive_analytics.values;v.service='wb';v.server_name='wwwb-app221.us.archive.org';v.server_ms=525;archive_analytics.send_pageview({});});</script>
+<script type="text/javascript" src="/_static/js/bundle-playback.js?v=MzYkZ0TU" charset="utf-8"></script>
+<script type="text/javascript" src="/_static/js/wombat.js?v=UHAOicsW" charset="utf-8"></script>
+<script type="text/javascript">
+  __wm.init("https://web.archive.org/web");
+  __wm.wombat("http://cliki.tunes.org:80/Optimize","20050414222834","https://web.archive.org/","web","/_static/",
+	      "1113517714");
+</script>
+<link rel="stylesheet" type="text/css" href="/_static/css/banner-styles.css?v=S1zqJCYt" />
+<link rel="stylesheet" type="text/css" href="/_static/css/iconochive.css?v=qtvMKcIJ" />
+<!-- End Wayback Rewrite JS Include -->
+<title>CTO : Optimize</title><link rel="alternate" type="application/rss+xml" title="Recent Changes" href="https://web.archive.org/web/20050414222834/http://cliki.tunes.org/recent-changes.rdf"><link rel="stylesheet" href="https://web.archive.org/web/20050414222834cs_/http://cliki.tunes.org/admin/cliki.css"></head><body><div id="banner"><a title="CTO" class="logo" href="https://web.archive.org/web/20050414222834/http://cliki.tunes.org/">CTO</a> <span>CLiki for the TUNES project</span></div><div id="navbar"><a class="internal" href="https://web.archive.org/web/20050414222834/http://cliki.tunes.org/index">Home</a> <a class="internal" href="https://web.archive.org/web/20050414222834/http://cliki.tunes.org/Recent%20Changes">Recent Changes</a> <a class="internal" href="https://web.archive.org/web/20050414222834/http://cliki.tunes.org/CLiki">About CLiki</a> <a class="internal" href="https://web.archive.org/web/20050414222834/http://cliki.tunes.org/Text%20Formatting">Text Formatting</a> <a class="internal" onclick="if(name=window.prompt('New page name ([A-Za-z0-9 ])')) document.location='https://web.archive.org/web/20050414222834/http://cliki.tunes.org/edit/'+name ;return false;" href="/web/20050414222834/http://cliki.tunes.org/">Create New Page</a></div><div id="main"><h1>Optimize</h1>In the commercial <a class="internal" href="https://web.archive.org/web/20050414222834/http://cliki.tunes.org/jargon">jargon</a>, the <a class="internal" href="https://web.archive.org/web/20050414222834/http://cliki.tunes.org/term">term</a> "to optimize" means to make better, quicker, smaller, less expensive, more efficient. As for computers, it is often used for compilers.
+
+<p>Now, this word is a lie in itself: "optimal" means "the best", and commercial liars use this word to make believe that their product is "the best" whereas it is only "better" than what they used to provide. And even then, not always. Because those liars are also the paranoid people who won't let you see what exactly their programs do. Hence, all you know is that the program is better when applied to their "<a class="internal" href="https://web.archive.org/web/20050414222834/http://cliki.tunes.org/holy">holy</a>" not-so-meaningful benchmarks. If you're using their "optimized" or "optimizing" stuff in a context similar to that the benchmarks were designed for, you're in luck. If not, beware, as anything can happen.
+
+<p>Thus, in general, don't trust the word, and just hope that natural selection should keep evolution in the rough general direction of increased welfare. As for computer software, it just means that code produced is better than what a quick cheap straightforward implementation would have been.
+
+<p>We do not mean that what is commonly called an "<a class="internal" href="https://web.archive.org/web/20050414222834/http://cliki.tunes.org/optimizer">optimizer</a>" are useless; some are bad, some are great. We are sorry that such a word has spread around as a common technical word in the computer community and increased the world's <a class="internal" href="https://web.archive.org/web/20050414222834/http://cliki.tunes.org/entropy">entropy</a>.
+<hr><p><b>This page is linked from: </b> <a class="internal" href="https://web.archive.org/web/20050414222834/http://cliki.tunes.org/Code%20Generation">Code Generation</a> &nbsp; <a class="internal" href="https://web.archive.org/web/20050414222834/http://cliki.tunes.org/Feature-Oriented%20Programming">Feature-Oriented Programming</a> &nbsp; <a class="internal" href="https://web.archive.org/web/20050414222834/http://cliki.tunes.org/Mozart">Mozart</a> &nbsp; <a class="internal" href="https://web.archive.org/web/20050414222834/http://cliki.tunes.org/Program%20Transformation">Program Transformation</a> &nbsp; </div><div id="footer"><form action="https://web.archive.org/web/20050414222834/http://cliki.tunes.org/admin/search"><a class="internal" href="https://web.archive.org/web/20050414222834/http://cliki.tunes.org/edit/Optimize">Edit page</a> | <a class="internal" href="https://web.archive.org/web/20050414222834/http://cliki.tunes.org/Optimize?source">View source</a> | Revisions: <b title="Tue, 31 Dec 2002 02:11:27 GMT">0</b>  | <input name="words" size="30"><input type="submit" value="search"></form><div id="disclaimer">CTO pages can be modified by anyone at anytime.
+Imagine an appropriate disclaimer. Double it. Add two.</div></body></html></div><!--
+     FILE ARCHIVED ON 22:28:34 Apr 14, 2005 AND RETRIEVED FROM THE
+     INTERNET ARCHIVE ON 06:15:36 Dec 18, 2022.
+     JAVASCRIPT APPENDED BY WAYBACK MACHINE, COPYRIGHT INTERNET ARCHIVE.
+
+     ALL OTHER CONTENT MAY ALSO BE PROTECTED BY COPYRIGHT (17 U.S.C.
+     SECTION 108(a)(3)).
+-->
+<!--
+playback timings (ms):
+  captures_list: 440.527
+  exclusion.robots: 0.064
+  exclusion.robots.policy: 0.058
+  RedisCDXSource: 0.962
+  esindex: 0.006
+  LoadShardBlock: 424.978 (3)
+  PetaboxLoader3.datanode: 396.085 (4)
+  CDXLines.iter: 12.587 (3)
+  PetaboxLoader3.resolve: 54.339
+  load_resource: 81.566
+-->

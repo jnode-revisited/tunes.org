@@ -1,0 +1,41 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html><head><script src="//archive.org/includes/analytics.js?v=cf34f82" type="text/javascript"></script>
+<script type="text/javascript">window.addEventListener('DOMContentLoaded',function(){var v=archive_analytics.values;v.service='wb';v.server_name='wwwb-app213.us.archive.org';v.server_ms=211;archive_analytics.send_pageview({});});</script>
+<script type="text/javascript" src="/_static/js/bundle-playback.js?v=MzYkZ0TU" charset="utf-8"></script>
+<script type="text/javascript" src="/_static/js/wombat.js?v=UHAOicsW" charset="utf-8"></script>
+<script type="text/javascript">
+  __wm.init("https://web.archive.org/web");
+  __wm.wombat("http://cliki.tunes.org:80/process%20migration","20050416153524","https://web.archive.org/","web","/_static/",
+	      "1113665724");
+</script>
+<link rel="stylesheet" type="text/css" href="/_static/css/banner-styles.css?v=S1zqJCYt" />
+<link rel="stylesheet" type="text/css" href="/_static/css/iconochive.css?v=qtvMKcIJ" />
+<!-- End Wayback Rewrite JS Include -->
+<title>CTO : process migration</title><link rel="alternate" type="application/rss+xml" title="Recent Changes" href="https://web.archive.org/web/20050416153524/http://cliki.tunes.org/recent-changes.rdf"><link rel="stylesheet" href="https://web.archive.org/web/20050416153524cs_/http://cliki.tunes.org/admin/cliki.css"></head><body><div id="banner"><a title="CTO" class="logo" href="https://web.archive.org/web/20050416153524/http://cliki.tunes.org/">CTO</a> <span>CLiki for the TUNES project</span></div><div id="navbar"><a class="internal" href="https://web.archive.org/web/20050416153524/http://cliki.tunes.org/index">Home</a> <a class="internal" href="https://web.archive.org/web/20050416153524/http://cliki.tunes.org/Recent%20Changes">Recent Changes</a> <a class="internal" href="https://web.archive.org/web/20050416153524/http://cliki.tunes.org/CLiki">About CLiki</a> <a class="internal" href="https://web.archive.org/web/20050416153524/http://cliki.tunes.org/Text%20Formatting">Text Formatting</a> <a class="internal" onclick="if(name=window.prompt('New page name ([A-Za-z0-9 ])')) document.location='https://web.archive.org/web/20050416153524/http://cliki.tunes.org/edit/'+name ;return false;" href="/web/20050416153524/http://cliki.tunes.org/">Create New Page</a></div><div id="main"><h1>process migration</h1>A <a class="internal" href="https://web.archive.org/web/20050416153524/http://cliki.tunes.org/term">term</a> for the ability of a <a class="internal" href="https://web.archive.org/web/20050416153524/http://cliki.tunes.org/distributed">distributed</a> <a class="internal" href="https://web.archive.org/web/20050416153524/http://cliki.tunes.org/operating%20system">operating system</a> to move processes from one workstation or subsystem to another around the network, automatically, according to demand.
+
+<p>Only a fully <a class="internal" href="https://web.archive.org/web/20050416153524/http://cliki.tunes.org/distributed">distributed</a> <a class="internal" href="https://web.archive.org/web/20050416153524/http://cliki.tunes.org/operating%20system">operating system</a> can support this functionality, since each process <em>must</em> see exactly the same environment on every subsystem it might be migrated to.
+<span class="comment">This requirement seems really debatable and misleading, <strong>especially for TUNES</strong>: when a process migrates from a source system to a target system is sufficient to recreate enough <a class="internal" href="https://web.archive.org/web/20050416153524/http://cliki.tunes.org/context">context</a> on the target so that the process can run. How much context is enough it depends from some selected arbitrarily criteria such as efficiency, security and so on. -- <a class="internal" href="https://web.archive.org/web/20050416153524/http://cliki.tunes.org/MaD70">MaD70</a></span>
+
+<p>Process migration allows a <a class="internal" href="https://web.archive.org/web/20050416153524/http://cliki.tunes.org/distributed">distributed</a> system to take advantage of idle subsystems, from moment to moment, in order to maximise usage of the processing resources of the network. This is a form of network-wide <a class="internal" href="https://web.archive.org/web/20050416153524/http://cliki.tunes.org/load%20balancing">load balancing</a>.
+<hr><p><b>This page is linked from: </b> <a class="internal" href="https://web.archive.org/web/20050416153524/http://cliki.tunes.org/Distributed">Distributed</a> &nbsp; </div><div id="footer"><form action="https://web.archive.org/web/20050416153524/http://cliki.tunes.org/admin/search"><a class="internal" href="https://web.archive.org/web/20050416153524/http://cliki.tunes.org/edit/process%20migration">Edit page</a> | <a class="internal" href="https://web.archive.org/web/20050416153524/http://cliki.tunes.org/process%20migration?source">View source</a> | Revisions: <b title="Wed, 14 Jan 2004 22:02:43 GMT">0</b>  | <input name="words" size="30"><input type="submit" value="search"></form><div id="disclaimer">CTO pages can be modified by anyone at anytime.
+Imagine an appropriate disclaimer. Double it. Add two.</div></body></html></div><!--
+     FILE ARCHIVED ON 15:35:24 Apr 16, 2005 AND RETRIEVED FROM THE
+     INTERNET ARCHIVE ON 06:16:08 Dec 18, 2022.
+     JAVASCRIPT APPENDED BY WAYBACK MACHINE, COPYRIGHT INTERNET ARCHIVE.
+
+     ALL OTHER CONTENT MAY ALSO BE PROTECTED BY COPYRIGHT (17 U.S.C.
+     SECTION 108(a)(3)).
+-->
+<!--
+playback timings (ms):
+  captures_list: 149.064
+  exclusion.robots: 0.086
+  exclusion.robots.policy: 0.077
+  cdx.remote: 0.067
+  esindex: 0.009
+  LoadShardBlock: 45.268 (3)
+  PetaboxLoader3.datanode: 62.258 (4)
+  CDXLines.iter: 15.816 (3)
+  load_resource: 57.94
+  PetaboxLoader3.resolve: 33.372
+-->

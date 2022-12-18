@@ -1,0 +1,63 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html><head><script src="//archive.org/includes/analytics.js?v=cf34f82" type="text/javascript"></script>
+<script type="text/javascript">window.addEventListener('DOMContentLoaded',function(){var v=archive_analytics.values;v.service='wb';v.server_name='wwwb-app222.us.archive.org';v.server_ms=163;archive_analytics.send_pageview({});});</script>
+<script type="text/javascript" src="/_static/js/bundle-playback.js?v=MzYkZ0TU" charset="utf-8"></script>
+<script type="text/javascript" src="/_static/js/wombat.js?v=UHAOicsW" charset="utf-8"></script>
+<script type="text/javascript">
+  __wm.init("https://web.archive.org/web");
+  __wm.wombat("http://cliki.tunes.org:80/Partial%20Evaluation","20050414222034","https://web.archive.org/","web","/_static/",
+	      "1113517234");
+</script>
+<link rel="stylesheet" type="text/css" href="/_static/css/banner-styles.css?v=S1zqJCYt" />
+<link rel="stylesheet" type="text/css" href="/_static/css/iconochive.css?v=qtvMKcIJ" />
+<!-- End Wayback Rewrite JS Include -->
+<title>CTO : Partial Evaluation</title><link rel="alternate" type="application/rss+xml" title="Recent Changes" href="https://web.archive.org/web/20050414222034/http://cliki.tunes.org/recent-changes.rdf"><link rel="stylesheet" href="https://web.archive.org/web/20050414222034cs_/http://cliki.tunes.org/admin/cliki.css"></head><body><div id="banner"><a title="CTO" class="logo" href="https://web.archive.org/web/20050414222034/http://cliki.tunes.org/">CTO</a> <span>CLiki for the TUNES project</span></div><div id="navbar"><a class="internal" href="https://web.archive.org/web/20050414222034/http://cliki.tunes.org/index">Home</a> <a class="internal" href="https://web.archive.org/web/20050414222034/http://cliki.tunes.org/Recent%20Changes">Recent Changes</a> <a class="internal" href="https://web.archive.org/web/20050414222034/http://cliki.tunes.org/CLiki">About CLiki</a> <a class="internal" href="https://web.archive.org/web/20050414222034/http://cliki.tunes.org/Text%20Formatting">Text Formatting</a> <a class="internal" onclick="if(name=window.prompt('New page name ([A-Za-z0-9 ])')) document.location='https://web.archive.org/web/20050414222034/http://cliki.tunes.org/edit/'+name ;return false;" href="/web/20050414222034/http://cliki.tunes.org/">Create New Page</a></div><div id="main"><h1>Partial Evaluation</h1>A <a class="internal" href="https://web.archive.org/web/20050414222034/http://cliki.tunes.org/term">term</a> for the metaprogramming technique that consists in <a class="internal" href="https://web.archive.org/web/20050414222034/http://cliki.tunes.org/program%20transformation">program transformation</a> into simpler programs specialized for execution in an environment where some information is known as compared to a generic environment. Typically, a function that takes many arguments is partially evaluated considering as known the values of some of the arguments (the static arguments) while some other arguments are still to be determined (the dynamic arguments).
+
+<p>See also <a class="internal" href="https://web.archive.org/web/20050414222034/http://cliki.tunes.org/Partial%20Evaluation%20101">Partial Evaluation 101</a>.
+
+<p><hr><style type="text/css">code { font-size: large; text-align: center; }</style>
+
+<p>Partial evaluation of a function <code>&lambda;s d &rarr; FOO</code> with a known value <code>BAR</code> for <code>s</code> is really just like optimizing function <code>&lambda;d &rarr; FOO</code> considering that known value. The most simple way of doing partial evaluation is to keep around partially curried closures, doing no optimization. Conversely, knowing how to partially evaluate a function automatically leads to optimization techniques in presence of same known information.
+
+<p>People like <a href="https://web.archive.org/web/20050414222034/http://www.brics.dk/~andrzej/">Andrzej Filinski</a> have used suitable type-systems to give nice formal models of what can be automatically partially-evaluated.
+
+<p>The Futamura projection<a class="internal" href="https://web.archive.org/web/20050414222034/http://cliki.tunes.org/edit/Futamura%20projection">?</a>s explain how to build a compiler for a language <code>L</code> written in language <code>M</code>, out of a specific interpreter of language <code>L</code> in language <code>M</code>, and a partial evaluator for language <code>M</code>, as well as other such tricks.
+
+<p>Partial evaluation is instrumental in allowing efficient implementation of deep <code>meta^n</code>-level descriptions of systems, by folding together all the statically known levels into a one interpreter or compiler.
+
+<p>Most computing systems do only static partial evaluation during compilation. People at project <a class="internal" href="https://web.archive.org/web/20050414222034/http://cliki.tunes.org/COMPOSE%20group">COMPOSE</a> also do partial evaluation at runtime from templates obtained at compile-time.
+
+<p>We at the <a class="internal" href="https://web.archive.org/web/20050414222034/http://cliki.tunes.org/TUNES%20project">TUNES project</a> would like to provide <a class="internal" href="https://web.archive.org/web/20050414222034/http://cliki.tunes.org/dynamic">dynamic</a> partial evaluation. Because we manipulate semantical objects, and thus have no such thing as "compile time". Instead, the user may explicitly and programmatically request some partial evaluation whenever he thinks it should be done.
+
+<p>Partial Evaluation is better understood in a framework of Staged Evaluation (that can be formalized with modal logic<a class="internal" href="https://web.archive.org/web/20050414222034/http://cliki.tunes.org/edit/modal%20logic">?</a>s), wherein total/traditional evaluation of programs is conceptually executed in several stages, the last of these stages being the final user-visible "run-time" (which obviously depends on who the users are, and what are their points of views).
+
+<p>Another way to look at it is that instead of simplifying programs using some kind of total generic single-minded reduction strategy, a more cunning strategy would be used. Now, even usual partial evaluation then looks like some kind of single-metaminded reduction, that only consists in single-minded binding analysis and inlining taking into account only one (very powerful, but still) kind of static information, statically determined by the partial evaluator (actually, software like the partial evaluators from <a class="internal" href="https://web.archive.org/web/20050414222034/http://cliki.tunes.org/COMPOSE%20group">COMPOSE</a> allow -- and require -- quite of bit of user parametrization of the PE). Instead of having a one static partial evaluator, it could be imagined that metaprograms be grown to manipulate and optimize other programs until they automatically solve problems at hands with minimal user concern for efficiency. The task is certainly daunting, and most everyone would say it's impossible but there is no reason to believe it is as stupid an ambition as some would pretend.
+
+<p>Indeed, this reminds me a Chinese story with Mister Smart, Mister Stupid, and the Mountain to move. Basically, there's a big mountain that is a real inconvenience to everybody; someday, Mr Smart sees Mr Stupid hitting the mountain with a pick, and asks him why he does it. Mr Stupid explains that everyday after his work, he does attack the mountain, so as to get rid of it. Hence Mister Smart laughs at Mr Stupid, finally, he tries to convince Mister Stupid that what he does is useless and wasteful, and will never succeed. But then, Mister Stupid replies that surely he'll never be able to see the end of this work personally. But after his death, his son eldest son would replace him, and so on, until the mountain would be vanquished.
+
+<p><ul class="links">
+<li><a href="https://web.archive.org/web/20050414222034/http://partial-eval.org/">An Online Bibliography of Partial Evaluation</a>.
+<li><a href="https://web.archive.org/web/20050414222034/http://citeseer.nj.nec.com/hatcliff97computational.html">A Computational Formalization for Partial Evaluation</a>.
+<li><a href="https://web.archive.org/web/20050414222034/http://www.cis.ksu.edu/~hatcliff/FPEPS/">Foundations of Partial Evaluation and Program Specialization course notes</a>.
+</ul>
+<hr><p><b>This page is linked from: </b> <a class="internal" href="https://web.archive.org/web/20050414222034/http://cliki.tunes.org/A%20taxonomy%20of%20program%20transformers">A taxonomy of program transformers</a> &nbsp; <a class="internal" href="https://web.archive.org/web/20050414222034/http://cliki.tunes.org/Code%20Generation">Code Generation</a> &nbsp; <a class="internal" href="https://web.archive.org/web/20050414222034/http://cliki.tunes.org/COMPOSE%20group">COMPOSE group</a> &nbsp; <a class="internal" href="https://web.archive.org/web/20050414222034/http://cliki.tunes.org/Descartes">Descartes</a> &nbsp; <a class="internal" href="https://web.archive.org/web/20050414222034/http://cliki.tunes.org/Java">Java</a> &nbsp; <a class="internal" href="https://web.archive.org/web/20050414222034/http://cliki.tunes.org/Max">Max</a> &nbsp; <a class="internal" href="https://web.archive.org/web/20050414222034/http://cliki.tunes.org/Methods%20of%20Reflection">Methods of Reflection</a> &nbsp; <a class="internal" href="https://web.archive.org/web/20050414222034/http://cliki.tunes.org/Partial%20Evaluation%20101">Partial Evaluation 101</a> &nbsp; <a class="internal" href="https://web.archive.org/web/20050414222034/http://cliki.tunes.org/Performance">Performance</a> &nbsp; <a class="internal" href="https://web.archive.org/web/20050414222034/http://cliki.tunes.org/Scheme">Scheme</a> &nbsp; <a class="internal" href="https://web.archive.org/web/20050414222034/http://cliki.tunes.org/Static">Static</a> &nbsp; <a class="internal" href="https://web.archive.org/web/20050414222034/http://cliki.tunes.org/Synthetix">Synthetix</a> &nbsp; </div><div id="footer"><form action="https://web.archive.org/web/20050414222034/http://cliki.tunes.org/admin/search"><a class="internal" href="https://web.archive.org/web/20050414222034/http://cliki.tunes.org/edit/Partial%20Evaluation">Edit page</a> | <a class="internal" href="https://web.archive.org/web/20050414222034/http://cliki.tunes.org/Partial%20Evaluation?source">View source</a> | Revisions: <a href="https://web.archive.org/web/20050414222034/http://cliki.tunes.org/Partial%20Evaluation?v=1" title="Mon, 13 Sep 2004 09:54:58 GMT">1</a> <a href="https://web.archive.org/web/20050414222034/http://cliki.tunes.org/Partial%20Evaluation?v=2" title="Mon, 25 Oct 2004 18:56:46 GMT">2</a> <b title="Wed, 27 Oct 2004 05:33:00 GMT">3</b>  | <input name="words" size="30"><input type="submit" value="search"></form><div id="disclaimer">CTO pages can be modified by anyone at anytime.
+Imagine an appropriate disclaimer. Double it. Add two.</div></body></html></div><!--
+     FILE ARCHIVED ON 22:20:34 Apr 14, 2005 AND RETRIEVED FROM THE
+     INTERNET ARCHIVE ON 06:15:52 Dec 18, 2022.
+     JAVASCRIPT APPENDED BY WAYBACK MACHINE, COPYRIGHT INTERNET ARCHIVE.
+
+     ALL OTHER CONTENT MAY ALSO BE PROTECTED BY COPYRIGHT (17 U.S.C.
+     SECTION 108(a)(3)).
+-->
+<!--
+playback timings (ms):
+  captures_list: 115.849
+  exclusion.robots: 0.075
+  exclusion.robots.policy: 0.067
+  RedisCDXSource: 50.275
+  esindex: 0.008
+  LoadShardBlock: 48.413 (3)
+  PetaboxLoader3.datanode: 50.742 (4)
+  CDXLines.iter: 14.436 (3)
+  load_resource: 43.68
+-->

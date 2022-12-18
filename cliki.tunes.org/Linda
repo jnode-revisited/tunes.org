@@ -1,0 +1,53 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html><head><script src="//archive.org/includes/analytics.js?v=cf34f82" type="text/javascript"></script>
+<script type="text/javascript">window.addEventListener('DOMContentLoaded',function(){var v=archive_analytics.values;v.service='wb';v.server_name='wwwb-app225.us.archive.org';v.server_ms=91;archive_analytics.send_pageview({});});</script>
+<script type="text/javascript" src="/_static/js/bundle-playback.js?v=MzYkZ0TU" charset="utf-8"></script>
+<script type="text/javascript" src="/_static/js/wombat.js?v=UHAOicsW" charset="utf-8"></script>
+<script type="text/javascript">
+  __wm.init("https://web.archive.org/web");
+  __wm.wombat("http://cliki.tunes.org:80/Linda","20050414223250","https://web.archive.org/","web","/_static/",
+	      "1113517970");
+</script>
+<link rel="stylesheet" type="text/css" href="/_static/css/banner-styles.css?v=S1zqJCYt" />
+<link rel="stylesheet" type="text/css" href="/_static/css/iconochive.css?v=qtvMKcIJ" />
+<!-- End Wayback Rewrite JS Include -->
+<title>CTO : Linda</title><link rel="alternate" type="application/rss+xml" title="Recent Changes" href="https://web.archive.org/web/20050414223250/http://cliki.tunes.org/recent-changes.rdf"><link rel="stylesheet" href="https://web.archive.org/web/20050414223250cs_/http://cliki.tunes.org/admin/cliki.css"></head><body><div id="banner"><a title="CTO" class="logo" href="https://web.archive.org/web/20050414223250/http://cliki.tunes.org/">CTO</a> <span>CLiki for the TUNES project</span></div><div id="navbar"><a class="internal" href="https://web.archive.org/web/20050414223250/http://cliki.tunes.org/index">Home</a> <a class="internal" href="https://web.archive.org/web/20050414223250/http://cliki.tunes.org/Recent%20Changes">Recent Changes</a> <a class="internal" href="https://web.archive.org/web/20050414223250/http://cliki.tunes.org/CLiki">About CLiki</a> <a class="internal" href="https://web.archive.org/web/20050414223250/http://cliki.tunes.org/Text%20Formatting">Text Formatting</a> <a class="internal" onclick="if(name=window.prompt('New page name ([A-Za-z0-9 ])')) document.location='https://web.archive.org/web/20050414223250/http://cliki.tunes.org/edit/'+name ;return false;" href="/web/20050414223250/http://cliki.tunes.org/">Create New Page</a></div><div id="main"><h1>Linda</h1>Linda is a <a class="internal" href="https://web.archive.org/web/20050414223250/http://cliki.tunes.org/programming%20language">programming language</a> from David Gelernter at Yale for parallel programming. The main idea is decoupling communication from effective presence of communicating <a class="internal" href="https://web.archive.org/web/20050414223250/http://cliki.tunes.org/Actor">Actor</a>s by defining a global tuple space where <a class="internal" href="https://web.archive.org/web/20050414223250/http://cliki.tunes.org/Actor">Actor</a>s may publish tuples. Tuples are persistently retained in the space, and are freely accessible by all the <a class="internal" href="https://web.archive.org/web/20050414223250/http://cliki.tunes.org/Actor">Actor</a>s, which have primitives to read and extract tuples from the space by <a class="internal" href="https://web.archive.org/web/20050414223250/http://cliki.tunes.org/pattern-matching">pattern-matching</a>.
+
+<p>The idea seems nice, but it's basically a very very particular case of what the <a class="internal" href="https://web.archive.org/web/20050414223250/http://cliki.tunes.org/pi%20calculus">pi calculus</a> in its asynchronous variant allows. The original Linda semantics has been proved underspecified in [1] by Busi, Gorrieri and Zavattaro at University of Bologna, as it is not clearly stated whether the emitting <a class="internal" href="https://web.archive.org/web/20050414223250/http://cliki.tunes.org/Actor">Actor</a> may continue before the tuple becomes visible to other <a class="internal" href="https://web.archive.org/web/20050414223250/http://cliki.tunes.org/Actor">Actor</a>s, or not. The difference is meaningful since <strong>the first semantics (named unordered) is not <a class="internal" href="https://web.archive.org/web/20050414223250/http://cliki.tunes.org/Turing%20Machine">Turing-complete</a>, while the second (named ordered) is</strong>.
+
+<p>Many implementations are available of the Linda <a class="internal" href="https://web.archive.org/web/20050414223250/http://cliki.tunes.org/paradigm">paradigm</a>, named "generative communication". The most relevant are IBM's TSpaces and Sun's JavaSpaces, in <a class="internal" href="https://web.archive.org/web/20050414223250/http://cliki.tunes.org/Java">Java</a>. The latter is also integrated in Jini. These also introduce reactive operations, whose semantics has been investigated at University of Bologna. Many extensions have been proposed to overcome the limits of having a global shared dataspace, like KLAIM and Lime. These introduce multiple tuple spaces and primitives for distributed tuple access (KLAIM) and transient sharing (Lime).
+
+<p><ol class="links"><h4>Bibliography</h4>
+<li><em>Nadia Busi, Roberto Gorrieri, Gianluigi Zavattaro</em>,<a href="https://web.archive.org/web/20050414223250/http://cs.unibo.it/%7Ezavattar/Publication/infcomp00.ps">On the Expressiveness of Linda Coordination Primitives</a> (.<a class="internal" href="https://web.archive.org/web/20050414223250/http://cliki.tunes.org/ps">ps</a>),  Information and Computation, 156(1/2):90-121, Academic Press, 2000
+</ol>
+
+<p><ul class="links">
+<li><a href="https://web.archive.org/web/20050414223250/http://www.cs.yale.edu/Linda/linda.html">The Linda Group</a> at Yale</li>
+<li><a href="https://web.archive.org/web/20050414223250/http://www.almaden.ibm.com/cs/TSpaces/">TSpaces</a></li>
+<li><a href="https://web.archive.org/web/20050414223250/http://java.sun.com/products/javaspaces/">JavaSpaces</a></li>
+<li><a href="https://web.archive.org/web/20050414223250/http://www.cs.unibo.it/~zavattar/">Gianluigi Zavattaro</a>'s home page, with papers on the formal semantics of Linda-like languages</li>
+<li><a href="https://web.archive.org/web/20050414223250/http://music.dsi.unifi.it/klaim.html">KLAIM</a> is a Kernel Language for <a class="internal" href="https://web.archive.org/web/20050414223250/http://cliki.tunes.org/Agent">Agent</a> Interaction and Mobility (<span class="comment">See <em>nota bene</em> in <a class="internal" href="https://web.archive.org/web/20050414223250/http://cliki.tunes.org/Agent">Agent</a> for correct use of the <a class="internal" href="https://web.archive.org/web/20050414223250/http://cliki.tunes.org/term">term</a>. -- <a class="internal" href="https://web.archive.org/web/20050414223250/http://cliki.tunes.org/MaD70">MaD70</a></span>)</li>
+<li><a href="https://web.archive.org/web/20050414223250/http://lime.sourceforge.net/">Lime</a> is Linda In a Mobile Environment. Homonymous tuple spaces at communicating <a class="internal" href="https://web.archive.org/web/20050414223250/http://cliki.tunes.org/Actor">Actor</a>s are transiently shared, and emitted tuple can be delivered to specific <a class="internal" href="https://web.archive.org/web/20050414223250/http://cliki.tunes.org/Actor">Actor</a>s as they become reachable. Reactive primitives are available</li>
+<li><a href="https://web.archive.org/web/20050414223250/http://lights.sourceforge.net/">LighTS</a> is a lightweight, fast, extensible and minimal implementation of the Linda tuple space idea, first created for Lime.</li>
+</ul>
+</div><div id="footer"><form action="https://web.archive.org/web/20050414223250/http://cliki.tunes.org/admin/search"><a class="internal" href="https://web.archive.org/web/20050414223250/http://cliki.tunes.org/edit/Linda">Edit page</a> | <a class="internal" href="https://web.archive.org/web/20050414223250/http://cliki.tunes.org/Linda?source">View source</a> | Revisions: <a href="https://web.archive.org/web/20050414223250/http://cliki.tunes.org/Linda?v=1" title="Sat, 29 May 2004 14:49:56 GMT">1</a> <a href="https://web.archive.org/web/20050414223250/http://cliki.tunes.org/Linda?v=2" title="Sat, 29 May 2004 17:42:42 GMT">2</a> <b title="Sat, 29 May 2004 18:06:36 GMT">3</b>  | <input name="words" size="30"><input type="submit" value="search"></form><div id="disclaimer">CTO pages can be modified by anyone at anytime.
+Imagine an appropriate disclaimer. Double it. Add two.</div></body></html></div><!--
+     FILE ARCHIVED ON 22:32:50 Apr 14, 2005 AND RETRIEVED FROM THE
+     INTERNET ARCHIVE ON 06:17:56 Dec 18, 2022.
+     JAVASCRIPT APPENDED BY WAYBACK MACHINE, COPYRIGHT INTERNET ARCHIVE.
+
+     ALL OTHER CONTENT MAY ALSO BE PROTECTED BY COPYRIGHT (17 U.S.C.
+     SECTION 108(a)(3)).
+-->
+<!--
+playback timings (ms):
+  captures_list: 59.511
+  exclusion.robots: 0.135
+  exclusion.robots.policy: 0.125
+  RedisCDXSource: 0.828
+  esindex: 0.009
+  LoadShardBlock: 36.637 (3)
+  PetaboxLoader3.datanode: 44.308 (4)
+  CDXLines.iter: 18.465 (3)
+  load_resource: 25.836
+-->

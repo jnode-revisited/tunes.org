@@ -1,0 +1,46 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html><head><script src="//archive.org/includes/analytics.js?v=cf34f82" type="text/javascript"></script>
+<script type="text/javascript">window.addEventListener('DOMContentLoaded',function(){var v=archive_analytics.values;v.service='wb';v.server_name='wwwb-app218.us.archive.org';v.server_ms=191;archive_analytics.send_pageview({});});</script>
+<script type="text/javascript" src="/_static/js/bundle-playback.js?v=MzYkZ0TU" charset="utf-8"></script>
+<script type="text/javascript" src="/_static/js/wombat.js?v=UHAOicsW" charset="utf-8"></script>
+<script type="text/javascript">
+  __wm.init("https://web.archive.org/web");
+  __wm.wombat("http://cliki.tunes.org:80/User%20Rights","20050416153056","https://web.archive.org/","web","/_static/",
+	      "1113665456");
+</script>
+<link rel="stylesheet" type="text/css" href="/_static/css/banner-styles.css?v=S1zqJCYt" />
+<link rel="stylesheet" type="text/css" href="/_static/css/iconochive.css?v=qtvMKcIJ" />
+<!-- End Wayback Rewrite JS Include -->
+<title>CTO : User Rights</title><link rel="alternate" type="application/rss+xml" title="Recent Changes" href="https://web.archive.org/web/20050416153056/http://cliki.tunes.org/recent-changes.rdf"><link rel="stylesheet" href="https://web.archive.org/web/20050416153056cs_/http://cliki.tunes.org/admin/cliki.css"></head><body><div id="banner"><a title="CTO" class="logo" href="https://web.archive.org/web/20050416153056/http://cliki.tunes.org/">CTO</a> <span>CLiki for the TUNES project</span></div><div id="navbar"><a class="internal" href="https://web.archive.org/web/20050416153056/http://cliki.tunes.org/index">Home</a> <a class="internal" href="https://web.archive.org/web/20050416153056/http://cliki.tunes.org/Recent%20Changes">Recent Changes</a> <a class="internal" href="https://web.archive.org/web/20050416153056/http://cliki.tunes.org/CLiki">About CLiki</a> <a class="internal" href="https://web.archive.org/web/20050416153056/http://cliki.tunes.org/Text%20Formatting">Text Formatting</a> <a class="internal" onclick="if(name=window.prompt('New page name ([A-Za-z0-9 ])')) document.location='https://web.archive.org/web/20050416153056/http://cliki.tunes.org/edit/'+name ;return false;" href="/web/20050416153056/http://cliki.tunes.org/">Create New Page</a></div><div id="main"><h1>User Rights</h1>Traditional systems enforce a "<a class="internal" href="https://web.archive.org/web/20050416153056/http://cliki.tunes.org/security">security</a>" <a class="internal" href="https://web.archive.org/web/20050416153056/http://cliki.tunes.org/paradigm">paradigm</a> of a finite number of <a class="internal" href="https://web.archive.org/web/20050416153056/http://cliki.tunes.org/user">user</a>s, each controlling his own files, and having no <em>right</em> (a semi-legal <a class="internal" href="https://web.archive.org/web/20050416153056/http://cliki.tunes.org/term">term</a>) on those from others. Though it is certainly more secure than systems with no <a class="internal" href="https://web.archive.org/web/20050416153056/http://cliki.tunes.org/security">security</a> at all (e.g. MS-<a class="internal" href="https://web.archive.org/web/20050416153056/http://cliki.tunes.org/DOS">DOS</a>), such finite <a class="internal" href="https://web.archive.org/web/20050416153056/http://cliki.tunes.org/security">security</a> systems are just as insecure as soon as arises the need to share any data: whenever programs want to share data, one must blindly trust the others, because the finite <a class="internal" href="https://web.archive.org/web/20050416153056/http://cliki.tunes.org/security">security</a> semantics cannot map the infinite semantics of actual problems.
+
+<p>To circumvent this difficulty, many propose that no sharing be done; but then it is sometimes (it especially was in the time when no free <a class="internal" href="https://web.archive.org/web/20050416153056/http://cliki.tunes.org/Unix">Unix</a> was available to the masses, and perhaps still is when few <a class="internal" href="https://web.archive.org/web/20050416153056/http://cliki.tunes.org/user">user</a>s are concerned) better and cheaper to get a smaller machine for each human <a class="internal" href="https://web.archive.org/web/20050416153056/http://cliki.tunes.org/user">user</a> than to get a big <a class="internal" href="https://web.archive.org/web/20050416153056/http://cliki.tunes.org/centralized">centralized</a> one bogusly shared between them. Others (see <a class="internal" href="https://web.archive.org/web/20050416153056/http://cliki.tunes.org/VSTa">VSTa</a>) have invented infinite protection systems, where <a class="internal" href="https://web.archive.org/web/20050416153056/http://cliki.tunes.org/user">user</a>s can have sub-<a class="internal" href="https://web.archive.org/web/20050416153056/http://cliki.tunes.org/user">user</a>s, which can in turn have sub-<a class="internal" href="https://web.archive.org/web/20050416153056/http://cliki.tunes.org/user">user</a>s, and so on, recursively.
+
+<p>While nobody can deny that such systems do restrict possible demises of the system, the kind of order enforced by such systems is very much that of a dictatorship, where power was left to a Leviathan to guarantee a civil peace, actually the peace of the dead.
+
+<p>None of these protection schemes tackle the essential problem of <a class="internal" href="https://web.archive.org/web/20050416153056/http://cliki.tunes.org/security">security</a>; they just add tremendous overhead to programming and program execution, without really solving anything, just postponing insecurity.
+
+<p>TUNES despises such non-solutions to problems.
+
+<p>Traditional systems also use the "<a class="internal" href="https://web.archive.org/web/20050416153056/http://cliki.tunes.org/user">user</a>" concept as a way to have multiple (but statically many) differently customized versions of the system. 
+In TUNES, there is no such concept of static "<a class="internal" href="https://web.archive.org/web/20050416153056/http://cliki.tunes.org/user">user</a>" erected as a fundamental axiom of the system. Instead, actual human <a class="internal" href="https://web.archive.org/web/20050416153056/http://cliki.tunes.org/user">user</a>s are free to define as many contexts as they like, to define variously specialized subcontexts indefinitely and dynamically. To the machine, no particular axiom is needed, the human <a class="internal" href="https://web.archive.org/web/20050416153056/http://cliki.tunes.org/user">user</a> being just a common attribute to some contexts. As for human-<a class="internal" href="https://web.archive.org/web/20050416153056/http://cliki.tunes.org/user">user</a>-wise <a class="internal" href="https://web.archive.org/web/20050416153056/http://cliki.tunes.org/security">security</a>, the system allows these contexts to arbitrarily define lists of signatures or <a class="internal" href="https://web.archive.org/web/20050416153056/http://cliki.tunes.org/capabilities">capabilities</a> as needed, and (dynamic)ally manage and share their resources at will. Again, <a class="internal" href="https://web.archive.org/web/20050416153056/http://cliki.tunes.org/dynamism">dynamism</a> and <a class="internal" href="https://web.archive.org/web/20050416153056/http://cliki.tunes.org/higher-order">higher-order</a> expressiveness, which allow adaptation, win over finite <a class="internal" href="https://web.archive.org/web/20050416153056/http://cliki.tunes.org/static">static</a> allocation.<hr><p><b>This page is linked from: </b> <a class="internal" href="https://web.archive.org/web/20050416153056/http://cliki.tunes.org/Capability">Capability</a> &nbsp; <a class="internal" href="https://web.archive.org/web/20050416153056/http://cliki.tunes.org/ITS">ITS</a> &nbsp; </div><div id="footer"><form action="https://web.archive.org/web/20050416153056/http://cliki.tunes.org/admin/search"><a class="internal" href="https://web.archive.org/web/20050416153056/http://cliki.tunes.org/edit/User%20Rights">Edit page</a> | <a class="internal" href="https://web.archive.org/web/20050416153056/http://cliki.tunes.org/User%20Rights?source">View source</a> | Revisions: <b title="Fri, 03 Jan 2003 10:28:25 GMT">0</b>  | <input name="words" size="30"><input type="submit" value="search"></form><div id="disclaimer">CTO pages can be modified by anyone at anytime.
+Imagine an appropriate disclaimer. Double it. Add two.</div></body></html></div><!--
+     FILE ARCHIVED ON 15:30:56 Apr 16, 2005 AND RETRIEVED FROM THE
+     INTERNET ARCHIVE ON 06:17:43 Dec 18, 2022.
+     JAVASCRIPT APPENDED BY WAYBACK MACHINE, COPYRIGHT INTERNET ARCHIVE.
+
+     ALL OTHER CONTENT MAY ALSO BE PROTECTED BY COPYRIGHT (17 U.S.C.
+     SECTION 108(a)(3)).
+-->
+<!--
+playback timings (ms):
+  captures_list: 117.063
+  exclusion.robots: 0.113
+  exclusion.robots.policy: 0.103
+  cdx.remote: 0.084
+  esindex: 0.011
+  LoadShardBlock: 37.542 (3)
+  PetaboxLoader3.datanode: 52.93 (4)
+  CDXLines.iter: 16.237 (3)
+  load_resource: 69.594
+  PetaboxLoader3.resolve: 47.663
+-->

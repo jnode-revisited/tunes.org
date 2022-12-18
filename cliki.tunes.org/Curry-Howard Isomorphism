@@ -1,0 +1,46 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html><head><script src="//archive.org/includes/analytics.js?v=cf34f82" type="text/javascript"></script>
+<script type="text/javascript">window.addEventListener('DOMContentLoaded',function(){var v=archive_analytics.values;v.service='wb';v.server_name='wwwb-app226.us.archive.org';v.server_ms=221;archive_analytics.send_pageview({});});</script>
+<script type="text/javascript" src="/_static/js/bundle-playback.js?v=MzYkZ0TU" charset="utf-8"></script>
+<script type="text/javascript" src="/_static/js/wombat.js?v=UHAOicsW" charset="utf-8"></script>
+<script type="text/javascript">
+  __wm.init("https://web.archive.org/web");
+  __wm.wombat("http://cliki.tunes.org:80/Curry-Howard%20Isomorphism","20050414222338","https://web.archive.org/","web","/_static/",
+	      "1113517418");
+</script>
+<link rel="stylesheet" type="text/css" href="/_static/css/banner-styles.css?v=S1zqJCYt" />
+<link rel="stylesheet" type="text/css" href="/_static/css/iconochive.css?v=qtvMKcIJ" />
+<!-- End Wayback Rewrite JS Include -->
+<title>CTO : Curry-Howard Isomorphism</title><link rel="alternate" type="application/rss+xml" title="Recent Changes" href="https://web.archive.org/web/20050414222338/http://cliki.tunes.org/recent-changes.rdf"><link rel="stylesheet" href="https://web.archive.org/web/20050414222338cs_/http://cliki.tunes.org/admin/cliki.css"></head><body><div id="banner"><a title="CTO" class="logo" href="https://web.archive.org/web/20050414222338/http://cliki.tunes.org/">CTO</a> <span>CLiki for the TUNES project</span></div><div id="navbar"><a class="internal" href="https://web.archive.org/web/20050414222338/http://cliki.tunes.org/index">Home</a> <a class="internal" href="https://web.archive.org/web/20050414222338/http://cliki.tunes.org/Recent%20Changes">Recent Changes</a> <a class="internal" href="https://web.archive.org/web/20050414222338/http://cliki.tunes.org/CLiki">About CLiki</a> <a class="internal" href="https://web.archive.org/web/20050414222338/http://cliki.tunes.org/Text%20Formatting">Text Formatting</a> <a class="internal" onclick="if(name=window.prompt('New page name ([A-Za-z0-9 ])')) document.location='https://web.archive.org/web/20050414222338/http://cliki.tunes.org/edit/'+name ;return false;" href="/web/20050414222338/http://cliki.tunes.org/">Create New Page</a></div><div id="main"><h1>Curry-Howard Isomorphism</h1>This is an observation that the simply-typed lambda calculus and  intuitionistic propositional <a class="internal" href="https://web.archive.org/web/20050414222338/http://cliki.tunes.org/logic">logic</a> correspond, or in a nutshell:
+<ul>
+<li>Types are logical formulas.
+<li>A term of a type is a proof of that type's formula.
+<li>Evaluation corresponds to proof resolution.
+</ul>
+Let's put it simply. If a program exists that accepts an integer as an input, and produces a character as an output, then the sentence "If I've an integer, then I also have a character" is (with caveats) true. Written simply this phrase sounds as Int -&gt; Char. The proof of this sentence is, precisely, the existence of the program. All the programs that consume an integer and produce a character are proofs of this sentence. Of course, a program is constructed by composing some elementary programs, the instructions, which are assumed as basic building blocks given a priori. This building blocks are our axioms, and the procedure to assemble them is, by its very nature, constructive. The nice thing is that the analogy can be reversed: If I create a novel logic, and I define for it a constructive (whatever the word means) proof system for it, then I can regard the proof system as a novel programming language.
+
+<p><ul class="links">
+<li>There are many online documents in postscript on this. Here is <a href="https://web.archive.org/web/20050414222338/http://www.cse.psu.edu/~catuscia/teaching/cg520/99Fall/lecture_notes/L11and12.html">one introduction</a> as a plain web page.
+</ul>
+<hr><p><b>This page is linked from: </b> <a class="internal" href="https://web.archive.org/web/20050414222338/http://cliki.tunes.org/Basic%20Computer%20Science">Basic Computer Science</a> &nbsp; <a class="internal" href="https://web.archive.org/web/20050414222338/http://cliki.tunes.org/Coq">Coq</a> &nbsp; <a class="internal" href="https://web.archive.org/web/20050414222338/http://cliki.tunes.org/Logic">Logic</a> &nbsp; </div><div id="footer"><form action="https://web.archive.org/web/20050414222338/http://cliki.tunes.org/admin/search"><a class="internal" href="https://web.archive.org/web/20050414222338/http://cliki.tunes.org/edit/Curry-Howard%20Isomorphism">Edit page</a> | <a class="internal" href="https://web.archive.org/web/20050414222338/http://cliki.tunes.org/Curry-Howard%20Isomorphism?source">View source</a> | Revisions: <b title="Mon, 09 Feb 2004 13:26:05 GMT">0</b>  | <input name="words" size="30"><input type="submit" value="search"></form><div id="disclaimer">CTO pages can be modified by anyone at anytime.
+Imagine an appropriate disclaimer. Double it. Add two.</div></body></html></div><!--
+     FILE ARCHIVED ON 22:23:38 Apr 14, 2005 AND RETRIEVED FROM THE
+     INTERNET ARCHIVE ON 06:14:09 Dec 18, 2022.
+     JAVASCRIPT APPENDED BY WAYBACK MACHINE, COPYRIGHT INTERNET ARCHIVE.
+
+     ALL OTHER CONTENT MAY ALSO BE PROTECTED BY COPYRIGHT (17 U.S.C.
+     SECTION 108(a)(3)).
+-->
+<!--
+playback timings (ms):
+  captures_list: 137.528
+  exclusion.robots: 0.069
+  exclusion.robots.policy: 0.062
+  RedisCDXSource: 40.314
+  esindex: 0.03
+  LoadShardBlock: 81.945 (3)
+  PetaboxLoader3.datanode: 80.681 (4)
+  CDXLines.iter: 12.807 (3)
+  load_resource: 78.231
+  PetaboxLoader3.resolve: 46.792
+-->
