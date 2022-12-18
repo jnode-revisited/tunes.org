@@ -12,11 +12,11 @@
       <li>Our <a href="generic.html">generic implementation</a> of the LLL.</li>
       <li>There is a page about the low-level issues of <a href="storage.html">Storage</a>: garbage collection, persistency, etc.</li>
       <li>There are two <a href="../subprojects.html#LLL"><b>sub-subprojects</b></a> below the LLL: the <a href="i386/index.html"><b>i386</b></a> and the <a href="OTOP/index.html"><b>O'TOP</b></a> subprojects.</li>
-      <li>A list of <a href="/cliki.tunes.org/Resource"><b>programming resources</b></a> available to build upon or translate.</li>
+      <li>A list of <a href="/tunes.org/cliki.tunes.org/Resource"><b>programming resources</b></a> available to build upon or translate.</li>
     </ul>
     <p class="comment">Relocate these to more appropriate places.</p>
     <p><em>NOTE:</em> existing code and corresponding technical comments lie in directory <tt>src/LLL</tt> of the source distribution.
-    <p>You may also want to look at the what <a href="/cliki.tunes.org/Review">Review</a> subproject said about implementations of other systems.</p>
+    <p>You may also want to look at the what <a href="/tunes.org/cliki.tunes.org/Review">Review</a> subproject said about implementations of other systems.</p>
 
 <h2><a href="goals.html">Goals</a></h2>
 <h2><a name="principles">Principles</a></h2>
@@ -28,7 +28,7 @@
     </ul>
 
 <h2><a name="semantics">Semantics</a></h2>
-    <p>At the core of the LLL, all the computation words of ANS <a href="/cliki.tunes.org/Forth">Forth</a>, excluding all that have to do with parsing, I/O and defining words; our version for these will be specialized. Above that, the LLL system provides some mechanism to do the memory management.</p>
+    <p>At the core of the LLL, all the computation words of ANS <a href="/tunes.org/cliki.tunes.org/Forth">Forth</a>, excluding all that have to do with parsing, I/O and defining words; our version for these will be specialized. Above that, the LLL system provides some mechanism to do the memory management.</p>
 
 <h3>Low-level objects</h3>
     <p>Objects must be uniquely identifiable in some way.</p>
@@ -42,7 +42,7 @@
 
 <h3>Annotations</h3>
     <p>Collect the standard mechanisms for annotations and their resolution.</p>
-    <p>Every annotation may have its own implementation, be it a hashtable of object-to-value associations, or an array of values, or some executable code. We can implement lazy evaluation and <a href="/cliki.tunes.org/Future">future</a>s, typing, UI interface, scoping through annotations. For example, an object's concrete type (relative to the GC mechanism) may be determined from bits in its address, whether statically or dynamically.</p>
+    <p>Every annotation may have its own implementation, be it a hashtable of object-to-value associations, or an array of values, or some executable code. We can implement lazy evaluation and <a href="/tunes.org/cliki.tunes.org/Future">future</a>s, typing, UI interface, scoping through annotations. For example, an object's concrete type (relative to the GC mechanism) may be determined from bits in its address, whether statically or dynamically.</p>
     <p>These goals require a framework to be developed to systematize this approach.
 
 <h2><a name="Issues">Issues</a></h2>
@@ -101,16 +101,16 @@
     <p>In simpler terms, cooperative multithreading is faster since the compiler performs the tasks of determining how to defer and save the computation, instead of providing a generic solution at run-time which has no access to the structure of the code, and therefore must act in as conservative manner as possible.</p>
     <h4>Solutions</h4>
     <p>Allow the HLL to be preemptively-multithreaded (or rather, it will manage seamlessly-concurrent objects), while the LLL is cooperatively-multithreaded.</p>
-    <p>Actually, if we define cooperation by the fact that you may rely on some software properties of code, and preemption by the fact that a thread may yield execution without having to poll the scheduler, then the two techniques are <em>not</em> incompatible, as we intend to show in <a href="/cliki.tunes.org/Preemption and Cooperation">this essay</a>.</p>
+    <p>Actually, if we define cooperation by the fact that you may rely on some software properties of code, and preemption by the fact that a thread may yield execution without having to poll the scheduler, then the two techniques are <em>not</em> incompatible, as we intend to show in <a href="/tunes.org/cliki.tunes.org/Preemption and Cooperation">this essay</a>.</p>
 
 <h2><a name="types">Modules to implement</a></h2>
     <h3>Foundational Object Types</h3>
     <p>This outlines the general collection of object types relevant to the LLL in its role as an implementational foundation:</p>
     <dl>
-      <dt><a href="/cliki.tunes.org/Bit">Bit</a></dt>
+      <dt><a href="/tunes.org/cliki.tunes.org/Bit">Bit</a></dt>
       <dt>Machine-Word</dt> <dd>Bit-field parametrized by size, and usually constant per architecture.</dd>
       <dt>Processor</dt> <dd>"Abstract" description of processing units, describing the instruction sets, internal state (all the registers), internal re-scheduling semantics (if any), and relation to the memory architecture.</dd>
-      <dt><a href="/cliki.tunes.org/Memory">Memory</a></dt> <dd>An abstraction over some piece of hardware which has some kind of performance and persistence semantics. For example,<br>
+      <dt><a href="/tunes.org/cliki.tunes.org/Memory">Memory</a></dt> <dd>An abstraction over some piece of hardware which has some kind of performance and persistence semantics. For example,<br>
 	<ul>
 	  <li>CPU cache</li>
 	  <li>RAM</li>
@@ -126,13 +126,13 @@
 	  <li>Memory-protection spaces</li>
 	  <li>Memory-mappings and memory addressing modes</li>
 	</ul>
-      <dt><a href="/cliki.tunes.org/Channel">Channel</a></dt> <dd>An abstraction over communications or input/output channels, which have state and modes, utilizing some cooperating concepts:<br>
+      <dt><a href="/tunes.org/cliki.tunes.org/Channel">Channel</a></dt> <dd>An abstraction over communications or input/output channels, which have state and modes, utilizing some cooperating concepts:<br>
 	<dl>
 	  <dt>Signal</dt> <dd>Information propagation and verification basics.</dd>
-	  <dt><a href="/cliki.tunes.org/Bus">Bus</a></dt> <dd>Shared resource for communication, which have state as well.</dd>
+	  <dt><a href="/tunes.org/cliki.tunes.org/Bus">Bus</a></dt> <dd>Shared resource for communication, which have state as well.</dd>
 	</dl>
       </dd>
-      <dt><a href="/cliki.tunes.org/Thread">Thread</a></dt> <dd>A voucher for a share of processor resources. This optionally contains additional aspects such as execution state and scheduling state. This definition is intentionally left abstract, so that there are various models that it can be extended into. In fact, this may turn into a specification for separate sub-object types.</dd>
+      <dt><a href="/tunes.org/cliki.tunes.org/Thread">Thread</a></dt> <dd>A voucher for a share of processor resources. This optionally contains additional aspects such as execution state and scheduling state. This definition is intentionally left abstract, so that there are various models that it can be extended into. In fact, this may turn into a specification for separate sub-object types.</dd>
     </dl>
     <h3>Generic Memory-Management</h3>
     <p>Here are some grand end-point goals:</p>
@@ -162,7 +162,7 @@
     </ul>
 
 <h2>Why GC</h2>
-<p class="comment">This essay has been moved <a href="/cliki.tunes.org/Why GC">to the Wiki</a>.</p>
+<p class="comment">This essay has been moved <a href="/tunes.org/cliki.tunes.org/Why GC">to the Wiki</a>.</p>
 
 <H2>To Do</H2>
 <UL>

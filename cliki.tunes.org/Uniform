@@ -2483,7 +2483,7 @@ body[unresolved] {opacity: 0; display: block; overflow: hidden; position: relati
 	    window.setTimeout(go,  5000);
 	  </script>
 	  <p class="code">Loading...</p>
-	  	  <p class="code shift target">http://cliki.tunes.org/Uniform |
+	  	  <p class="code shift target">http://tunes.org/cliki.tunes.org/Uniform |
 	    08:02:52 September 24, 2006</p>
 	  <p class="code shift red">Got an HTTP 301 response at crawl time</p>
 	  <p class="code">Redirecting to...</p>

@@ -7,23 +7,23 @@
   <body>
     <h1 align="center">HLL Principles</h1>
     <!--#include file="header.html" -->
-    <p>The HLL should be a way to transmit and manipulate <em><a href="/cliki.tunes.org/Information">information</a></em>, in its duality between freedom and security.</p>
+    <p>The HLL should be a way to transmit and manipulate <em><a href="/tunes.org/cliki.tunes.org/Information">information</a></em>, in its duality between freedom and security.</p>
 
     <h2>Founding Principles</h2>
     <h3>Genericity</h3>
-    <p>All the next features must be included in their fullest genericity. No arbitrary restriction should be added to the <a href="/cliki.tunes.org/Syntax">syntax</a> or <a href="/cliki.tunes.org/Semantics">semantics</a> of the language. In particular, the ability to use a feature must be actually independent of the ability to use another one whenever they are theoretically <a href="/cliki.tunes.org/Orthogonal">orthogonal</a>.</p>
+    <p>All the next features must be included in their fullest genericity. No arbitrary restriction should be added to the <a href="/tunes.org/cliki.tunes.org/Syntax">syntax</a> or <a href="/tunes.org/cliki.tunes.org/Semantics">semantics</a> of the language. In particular, the ability to use a feature must be actually independent of the ability to use another one whenever they are theoretically <a href="/tunes.org/cliki.tunes.org/Orthogonal">orthogonal</a>.</p>
     <p>We need genericity to obtain maximal software reuse and compression.</p>
     <p>Genericity is the expression of computing freedom;
       it naturally gives birth dually
-      to <a href="/cliki.tunes.org/Uniform">Uniformity</a> and <a href="/cliki.tunes.org/Orthogonal">Orthogonality</a>,
-      to <a href="/cliki.tunes.org/Abstraction">Abstraction</a> and <a href="/cliki.tunes.org/Reflection">Reflection</a>,
-      to <a href="/cliki.tunes.org/Hardware-Independent">Hardware Independence</a> and Hardware Access.</p>
+      to <a href="/tunes.org/cliki.tunes.org/Uniform">Uniformity</a> and <a href="/tunes.org/cliki.tunes.org/Orthogonal">Orthogonality</a>,
+      to <a href="/tunes.org/cliki.tunes.org/Abstraction">Abstraction</a> and <a href="/tunes.org/cliki.tunes.org/Reflection">Reflection</a>,
+      to <a href="/tunes.org/cliki.tunes.org/Hardware-Independent">Hardware Independence</a> and Hardware Access.</p>
     <h3>Precision</h3>
     <p>The HLL should enable programmers to specify precisely what they want, without having to either underspecify or overspecify it.</p>
     <p><em>Note:</em> This is not about floating point arithmetic precision, though a corollary in a very particular case.</p>
     </dl>
     <h3>Uniformity</h3>
-    <p>There is a <a href="/cliki.tunes.org/Unified">unified</a> way to manipulate computer abstractions. All computer abstractions are made equal in the same whole system, whether give them the name <a href="/cliki.tunes.org/Object"><em>object</em></a>, <em>function</em>, <em>term</em>, <em>pattern</em>, or whatever.</p>
+    <p>There is a <a href="/tunes.org/cliki.tunes.org/Unified">unified</a> way to manipulate computer abstractions. All computer abstractions are made equal in the same whole system, whether give them the name <a href="/tunes.org/cliki.tunes.org/Object"><em>object</em></a>, <em>function</em>, <em>term</em>, <em>pattern</em>, or whatever.</p>
     <p>Code chunks, functions, classes, symbols, attributes, are equally objects, which makes higher-order and reflective expression much more straightforward.</p>
     <p>Ultimately, uniformity's advantage is to allow for the simplest possible semantics for the system's parts.</p>
     <h3>Consistency and Orthogonality</h3>
@@ -36,48 +36,48 @@
 
     <h2>Basic Principles</h2>
     <h3>Dynamism</h3>
-    <p>A comput<em>ing</em> system is to evolve, to learn and to adapt, to interact with the human world, not to sit there and stay the same. Hence a deepest feature of its interaction language must be <em><a href="/cliki.tunes.org/Dynamism">dynamism</a></em>; that is, new objects of any kind (we saw already that somehow there was a generic kind) may appear or become obsolete at any time.</p>
+    <p>A comput<em>ing</em> system is to evolve, to learn and to adapt, to interact with the human world, not to sit there and stay the same. Hence a deepest feature of its interaction language must be <em><a href="/tunes.org/cliki.tunes.org/Dynamism">dynamism</a></em>; that is, new objects of any kind (we saw already that somehow there was a generic kind) may appear or become obsolete at any time.</p>
     <h4>Higher-Order</h4>
-    <p>You may abstract any subterm in any term of any order, to obtain a function of a <a href="/cliki.tunes.org/Higher-Order">higher order</a>. Variables, integers, types, or functions parameters, function return values can independently be of any kind and any type, including variables, integers, types, functions.</p>
+    <p>You may abstract any subterm in any term of any order, to obtain a function of a <a href="/tunes.org/cliki.tunes.org/Higher-Order">higher order</a>. Variables, integers, types, or functions parameters, function return values can independently be of any kind and any type, including variables, integers, types, functions.</p>
     <p>We need higher-order expressiveness to achieve maximal power, because if we don't, other systems will have to be built on top of ours nonetheless, and our system will be yet another sucker system.</p>
     <h3>Purity</h3>
-    <p><a href="/cliki.tunes.org/Pure">Pure</a> code (with no <a href="/cliki.tunes.org/Side-Effect">side effect</a>), and read-only data, should be recommended and favored. Also, The language semantics must not <em>depend</em> in any way on the peculiarities of today's computers (<em>e.g.</em>, size of binary words or characters), which does not mean it cannot <em>interface</em> to it, which it should do very easily.</p>
+    <p><a href="/tunes.org/cliki.tunes.org/Pure">Pure</a> code (with no <a href="/tunes.org/cliki.tunes.org/Side-Effect">side effect</a>), and read-only data, should be recommended and favored. Also, The language semantics must not <em>depend</em> in any way on the peculiarities of today's computers (<em>e.g.</em>, size of binary words or characters), which does not mean it cannot <em>interface</em> to it, which it should do very easily.</p>
     <p>Purity is to be encouraged, because it leads to much cleaner semantics and much more efficient implementations when it comes to distribution, object sharing, and parallel optimization.</p>
     <h3>Lazy evaluation</h3>
     <p>Evaluation can be done only as needed; it should be possible to leave this as an assumed evaluation context.</p>
-    <p><a href="/cliki.tunes.org/Lazy Evaluation">Lazy evaluation</a> is needed, because only it allows so much things that strict evaluation forbids, and simplifies many a program's structure; for the usual argument: if you don't implement it, people will reimplement it on top of the system, and you'll lose any advantage from having an integrated system.</p>
+    <p><a href="/tunes.org/cliki.tunes.org/Lazy Evaluation">Lazy evaluation</a> is needed, because only it allows so much things that strict evaluation forbids, and simplifies many a program's structure; for the usual argument: if you don't implement it, people will reimplement it on top of the system, and you'll lose any advantage from having an integrated system.</p>
 
     <h2>Extensibility</h2>
     <h3>Modularity</h3>
-    <p>Objects come in replaceable, upgradable modules. Modules are identified uniquely across the <a href="/cliki.tunes.org/Computing World">computing world</a>, and come with their specification.</p>
+    <p>Objects come in replaceable, upgradable modules. Modules are identified uniquely across the <a href="/tunes.org/cliki.tunes.org/Computing World">computing world</a>, and come with their specification.</p>
     <p>Modules and new semantics may be created and added dynamically to the system. Objects may be automatically relinked to upgrades or extensions, or translated into a new universe of values.</p>
     <p>Actually, extensibility is just the (important) combination of modularity, dynamism, and being-higher-order: modules of any abstraction order may be upgraded dynamically.</p>
     <p>Modularity is necessary for safe object sharing and fine grain software competition.</p>
     <h3>Quotienting</h3>
     <p>It is often found in theoretical textbooks in maths or CS that "it does not matter which (terms) are primitive and which are derived", which is a particular case of the principle according to which objects are to be considered "up to isomorphism". However, there currently exist no programming system that implements this principle.</p>
     <p>The Tunes HLL must enable programmers to specify what they want without specifying more, so they can express exactly what they need, and let it be optimized later, according to the needs that will arise of a representation suited to something else than the original coding.</p>
-    <p>Among the basic constructs of the language, there must be some way to <a href="/cliki.tunes.org/Quotienting">quotient</a> a structure by any given equivalence relation on that structure, and keep whatever operations on this structure with which the equivalence relation is compatible.</p>
+    <p>Among the basic constructs of the language, there must be some way to <a href="/tunes.org/cliki.tunes.org/Quotienting">quotient</a> a structure by any given equivalence relation on that structure, and keep whatever operations on this structure with which the equivalence relation is compatible.</p>
     <h3>Reflection</h3>
     <p>The language can talk about itself, manipulate code at any level: source code, intermediate representations or processor executable format, so that extensibility is at all computing levels.</p>
     <p>It means the language provides (direct or indirect) uniform access to the internal representation of objects, of which source code should merely be an external representation.</p>
-    <p>It allows easy <a href="/cliki.tunes.org/Metaprogramming">meta-programming</a> in the language: the compiler is its own preprocessor; the language is its own macro-command language.
-    <p><a href="/cliki.tunes.org/Reflection">Reflection</a> is a generalization of higher-order expressiveness: not only the universe is layered by abstractions, but it has standard embeddings into itself.</p>
+    <p>It allows easy <a href="/tunes.org/cliki.tunes.org/Metaprogramming">meta-programming</a> in the language: the compiler is its own preprocessor; the language is its own macro-command language.
+    <p><a href="/tunes.org/cliki.tunes.org/Reflection">Reflection</a> is a generalization of higher-order expressiveness: not only the universe is layered by abstractions, but it has standard embeddings into itself.</p>
     <h3>Security</h3>
     <p>Objects come with their full specification, so that system security is never endangered.</p>
     <p>Specification can be multi-level (<em>i.e.</em>, conditions for the object not to crash the system, conditions for it to work properly), may come with proofs assuming different assumptions (according to the level of trust you give to each module's providers), and may involve any kind of strong typing, from first-order typing to full computational logic. Code with side-effects will have pre/post conditions, or will be considered as iteration of pure code. Temporal logic may even be involved for time-aware proofs.
-    <p><a href="/cliki.tunes.org/Security">Security</a> is a must, because it's better to have no computer than a computer you cannot trust, especially when computer information is used in any critical work that may involve human lives or lots of money. <span class="comment">(Extrapolate on the rationale for totally generic security with examples, using whole-system metaphors.)</span></p>
+    <p><a href="/tunes.org/cliki.tunes.org/Security">Security</a> is a must, because it's better to have no computer than a computer you cannot trust, especially when computer information is used in any critical work that may involve human lives or lots of money. <span class="comment">(Extrapolate on the rationale for totally generic security with examples, using whole-system metaphors.)</span></p>
     <p>Extensibility without Security is not worth a penny (see C, Elisp, et al.). <span class="comment">(Explain these examples and some generic reason that extends beyond all of them to rationalize this.)</span></p>
     <h3>Parallelizability</h3>
-    <p>Modules are executed in parallel, and scheduled by the system (with directives from the programmer). Parallelized partial-lazy evaluation leads to <a href="/cliki.tunes.org/Future">future</a> values as in <a href="/cliki.tunes.org/Ellie">Ellie</a>.
+    <p>Modules are executed in parallel, and scheduled by the system (with directives from the programmer). Parallelized partial-lazy evaluation leads to <a href="/tunes.org/cliki.tunes.org/Future">future</a> values as in <a href="/tunes.org/cliki.tunes.org/Ellie">Ellie</a>.
       <p>Being able to easily parallelize a program is needed because parallel computers have important performance advantages over sequential ones, and a distributed system is inherently parallel.</p>
     <h3>Interactivity</h3>
-    <p>By means of reflexivity and dynamism, the language allows direct, interactive development of programs, without an inefficient edit-compile-debug cycle. It also allows any kind of direct interaction between the system and its human user, so that it replaces a shell (and its associated scripting languages). This <em>is</em> a feature of the language, because it means its semantics allow efficient semi-compilation and interpretation. This is also a feature of the standard library and environment. The rest follows from <a href="/cliki.tunes.org/Dynamism">dynamism</a>, <a href="/cliki.tunes.org/Self-Extensible">self-extensibility</a>, and reflexivity.</p>
+    <p>By means of reflexivity and dynamism, the language allows direct, interactive development of programs, without an inefficient edit-compile-debug cycle. It also allows any kind of direct interaction between the system and its human user, so that it replaces a shell (and its associated scripting languages). This <em>is</em> a feature of the language, because it means its semantics allow efficient semi-compilation and interpretation. This is also a feature of the standard library and environment. The rest follows from <a href="/tunes.org/cliki.tunes.org/Dynamism">dynamism</a>, <a href="/tunes.org/cliki.tunes.org/Self-Extensible">self-extensibility</a>, and reflexivity.</p>
     <p>Interactivity is needed, because otherwise other languages will have to be written and learned, limiting the commonality of this language.</p>
 
     <h2>Low-level awareness</h2>
     <h3><a name="scalability">Scalability</a></h3>
     <p>When you don't need features like higher-order programming, you can tell the system (if it doesn't find it by itself), so that it may scale down its power, and take advantage of the peculiarities of the restriction of the system to implement objects more efficiently, with less resources.</p>
-    <p><em>E.g.</em>, if a program explicitly handles virtual memory (using <tt>BLOCK</tt> statements as in <a href="/cliki.tunes.org/Forth">Forth</a>), it doesn't need a MMU processor; if it explicitly handles memory allocation/deallocation, it needn't run in an implicit garbage collecting environment; if it only uses 16 bit integers, it needn't use 32 bit integers on hardware where 16 bit is cheaper and as (or more) efficient; etc.</p>
+    <p><em>E.g.</em>, if a program explicitly handles virtual memory (using <tt>BLOCK</tt> statements as in <a href="/tunes.org/cliki.tunes.org/Forth">Forth</a>), it doesn't need a MMU processor; if it explicitly handles memory allocation/deallocation, it needn't run in an implicit garbage collecting environment; if it only uses 16 bit integers, it needn't use 32 bit integers on hardware where 16 bit is cheaper and as (or more) efficient; etc.</p>
     <p>We need scalability for efficiency, and adaptability to mobile computers and obsolete hardware.</p>
 
     <h3>Hardware consciousness</h3>
@@ -93,30 +93,30 @@
     <p><em>E.g.</em>, when an object '<code>1+1+x</code>' is seen, it's automatically evaluated as '<code>2+x</code>'. When a generic function is called with specific but incomplete parameters, it may get specialized and optimized accordingly.</p>
     <p>It's a little more precise than "eager evaluation" since it also applies to non-terminal objects (actually, all objects are equal, so the concept of terminal object isn't clear in Tunes as it is in lower-order, non-reflective systems).</p>
     <p>The compiler/interpreter might then be as simple as just a trivial (parametrizable) front end and then partial evaluation done on parsed objects.</p>
-    <p><a href="/cliki.tunes.org/Partial Evaluation">Partial evaluation</a> is needed because it involves such performance improvements. The programmer must be aware of it to help the system manage it better when he knows while the system doesn't (which will <em>always</em> eventually happen).</p>
+    <p><a href="/tunes.org/cliki.tunes.org/Partial Evaluation">Partial evaluation</a> is needed because it involves such performance improvements. The programmer must be aware of it to help the system manage it better when he knows while the system doesn't (which will <em>always</em> eventually happen).</p>
 
     <h3><a name="persistence">Persistence</a></h3>
-    <p>Object <a href="/cliki.tunes.org/Persistence">automatically persist</a> together with the system. There is no need to explicitly convert objects to and from unsafe persistent binary or ascii files. This <em>is</em> a language feature, as it greatly affects the language's standard library and programming habits.</p>
+    <p>Object <a href="/tunes.org/cliki.tunes.org/Persistence">automatically persist</a> together with the system. There is no need to explicitly convert objects to and from unsafe persistent binary or ascii files. This <em>is</em> a language feature, as it greatly affects the language's standard library and programming habits.</p>
     <p>Persistence is needed, because not granting it is wasting at least 30% of users' time, ignoring overheads for parsing or complex error recovery. <span class="comment">Include the citation for the software development study that produced this statistic.</span></p>
 
     <h3>Garbage Collection</h3>
     <p>This feature is the complement of <a href="principles.html#persistence">persistence</a>: objects are automatically destroyed when no more needed.</p>
-    <p><a href="/cliki.tunes.org/Garbage Collection">Garbage collection</a> is needed because no persistent higher-order expressiveness is possible without it: either space resources will explode, or low-level memory management will have to be done manually by the users.</p>
+    <p><a href="/tunes.org/cliki.tunes.org/Garbage Collection">Garbage collection</a> is needed because no persistent higher-order expressiveness is possible without it: either space resources will explode, or low-level memory management will have to be done manually by the users.</p>
     <p>Note that <a href="principles.html#scalability">Scalability</a> above means that GC should be implemented directly in the user program when both possible and simpler overall.</p>
 
 <h2>Nice Human Interface</h2>
 
-    <p>Syntax is purely for human convenience. <a href="/cliki.tunes.org/Lisp">Lisp</a> hasn't become a dominant force because it forgot that simple statement. Other languages focus on the convenience, but offer no nice semantics; they're worse, but better.</p>
+    <p>Syntax is purely for human convenience. <a href="/tunes.org/cliki.tunes.org/Lisp">Lisp</a> hasn't become a dominant force because it forgot that simple statement. Other languages focus on the convenience, but offer no nice semantics; they're worse, but better.</p>
 
     <h3>Automatic rewrite</h3>
-    <p>Conceptually, the semantics are everything; the syntax is only sugar for the human user. Thus the language system should automatically <a href="/cliki.tunes.org/Rewrite">rewrite</a> programs according to user-defined criteria.</p>
+    <p>Conceptually, the semantics are everything; the syntax is only sugar for the human user. Thus the language system should automatically <a href="/tunes.org/cliki.tunes.org/Rewrite">rewrite</a> programs according to user-defined criteria.</p>
     <p>Particularly, the human user completely controls the level of redundancy the language will provide or require when he reads or writes programs.</p>
     <p>Automatic rewrite is needed because different users have different understanding of computing at different moment and in different context, and the computer shall adapt the syntax to the user's concerns, not the converse.</p>
 
     <h3>Self-extensible Language</h3>
     <p>The syntax must be able to evolve according to the context, new syntaxes may be dynamically defined. This must be done in conjunction with the semantic aspect of things, with corresponding extensible grammars.</p>
     <p>Particularly, any language can be added in a module as a sublanguage of the HLL.</p>
-    <p><a href="/cliki.tunes.org/Self-extensible">Self-extensible</a> language is needed to dynamically allow all kind of objects to be equally well-interfaced between humans and computers.</p>
+    <p><a href="/tunes.org/cliki.tunes.org/Self-extensible">Self-extensible</a> language is needed to dynamically allow all kind of objects to be equally well-interfaced between humans and computers.</p>
 
     <h3>Implicitness</h3>
     <p>The human should never have to say more than they need. They should be constantly able to control which information to explicitly give to the system, and which to have the system find out by itself, and how the system will try to find out.</p>
@@ -126,9 +126,9 @@
 <h2>Non-Requirements</h2>
 
     <h3>Uniqueness</h3>
-    <p>The designer of <a href="/cliki.tunes.org/Eiffel">Eiffel</a>, Bertrand Meyer, says that a language should provide "Uniqueness". "The Principle of Uniqueness," Meyer says, "is easily expressed: the language should provide one good way to express every operation of interest; it should avoid providing two."</p>
+    <p>The designer of <a href="/tunes.org/cliki.tunes.org/Eiffel">Eiffel</a>, Bertrand Meyer, says that a language should provide "Uniqueness". "The Principle of Uniqueness," Meyer says, "is easily expressed: the language should provide one good way to express every operation of interest; it should avoid providing two."</p>
     <p>If this is meant syntactically, then it can only lead to absurd limitations of the language: a Turing-equivalent language can only have undecidably many equivalent ways to do the same things anyway.</p>
-    <p>The <a href="/cliki.tunes.org/Perl">Perl</a> motto seems righter: "There's more than one way to do it." Indeed, people should be allowed to do things in the way they like best and manage fastest, so they can adapt their programs to their needs, and not the other way around.</p>
+    <p>The <a href="/tunes.org/cliki.tunes.org/Perl">Perl</a> motto seems righter: "There's more than one way to do it." Indeed, people should be allowed to do things in the way they like best and manage fastest, so they can adapt their programs to their needs, and not the other way around.</p>
     <p>Of course, Perl is also wrong in a different manner, in that it can't unify those ways.</p>
     <p>By limiting the ways people can talk, you don't add information, only noise through redundancy. Meyer himself said later that software should help people do good, not forbid them from behaving badly, and there he was right.</p>
     <p>To add information would be not to forbid people from communicating simpler, more adapted syntax, but to allow them to communicate more complex, adapted meaning. That is, to allow implicit higher-order unification of different views on the "same" objects.</p>

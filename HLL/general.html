@@ -9,7 +9,7 @@
     <!--#include file="header.html" -->
     <h2><a name="object">Objects</a></h2>
     <ul>
-      <li>The language manipulates <a href="/cliki.tunes.org/Object">object</a>s.</li>
+      <li>The language manipulates <a href="/tunes.org/cliki.tunes.org/Object">object</a>s.</li>
       <li>Any identifiable abstraction in the system is an object.</li>
     </ul>
     <h2><a name="attribute">Attributes</a></h2>
@@ -21,12 +21,12 @@
     </ul>
     <p>In principle, a whole Tunes system can be described in terms of objects and these attribute relations, or <em>attribution</em> triples. The triple would then consist of:</p>
     <p><tt>&lt;key, object, value&gt;</tt></p>
-    <p>It is noteworthy that these do not have to have some fundamentally-sequential or otherwise structure: this is merely a notation for an object with some attributes. These are fundamental meta-objects within Tunes, although <a href="/cliki.tunes.org/Higher-Order">higher-order</a> of course (since attributes may have attributes).</p>
+    <p>It is noteworthy that these do not have to have some fundamentally-sequential or otherwise structure: this is merely a notation for an object with some attributes. These are fundamental meta-objects within Tunes, although <a href="/tunes.org/cliki.tunes.org/Higher-Order">higher-order</a> of course (since attributes may have attributes).</p>
     <h3><a name="bindings">Object-Attribute Implementation</a></h3>
     <p>The attribute concept is specified in an abstract way to intentionally allow for the implementation to vary on a case-by-case basis, or even to vary over time. Since the system is taken to be reflective, the compiler can be given suggestions via aspect-type assertions about what specific implementation style to choose or what heuristic should be taken for granted, so the programmer still has optional control.</p>
     <p>Some typical means:</p>
     <ul>
-      <li>As a "member" of a structure that implements the objects (<em>e.g.</em>, in C/C++ members of a structure or object; in <a href="/cliki.tunes.org/Lisp">Lisp</a>, <tt>car</tt> and <tt>cdr</tt> of a <tt>cons</tt> cell or elements of vectors, etc.).</li>
+      <li>As a "member" of a structure that implements the objects (<em>e.g.</em>, in C/C++ members of a structure or object; in <a href="/tunes.org/cliki.tunes.org/Lisp">Lisp</a>, <tt>car</tt> and <tt>cdr</tt> of a <tt>cons</tt> cell or elements of vectors, etc.).</li>
       <li>As some kind of structure external to objects: for instance an association list or hash-table, that contains a set of object to value association pairs, where only one pair can be retrieved with for a given object; or an array indexed by numbers otherwise associated to an object can also be used.</li>
       <li>As an arbitrary procedure that takes an object as a parameter, and computes and returns the value associated by the attribute to the object.</li>
       <li>As information nodes inserted into a structure.</li>
@@ -40,32 +40,32 @@
     <h3>Attributes vs. Functions</h3>
     <p>An attribute can be conceptually thought of as a memoized function: you have a function that associates some abstract value to some objects, but want to remember that value permanently without having to recompute it.</p>
     <ul>
-      <li>If the function is <a href="/cliki.tunes.org/Pure">pure</a>, then there is no semantical difference between an attribute and a function.</li>
+      <li>If the function is <a href="/tunes.org/cliki.tunes.org/Pure">pure</a>, then there is no semantical difference between an attribute and a function.</li>
       <li>If the attribute gets garbage collected,  then all the individual memoized information gets garbage collected; if an object gets garbage collected, its attribute disappears, too.</li>
-      <li>If you want to be able to associate varying values to objects, then use a reference as the attribute; that's the <a href="/cliki.tunes.org/ML">ML</a> way of making side-effects orthogonal to other computations.</li>
+      <li>If you want to be able to associate varying values to objects, then use a reference as the attribute; that's the <a href="/tunes.org/cliki.tunes.org/ML">ML</a> way of making side-effects orthogonal to other computations.</li>
     </ul>
     <h3>Examples</h3>
     <ul>
       <li>You've got a structure that you'd want to pretty-print, display, or edit. Then, you're going to define for every "node" in the structure attributes that describe <em>where</em> and <em>how</em> it will be displayed (font, indentation, size, color, whatever).</li>
-      <li>The system has a concept of "<a href="/cliki.tunes.org/User">user</a>", built in some module. You want to add some accounting/logging information about users. No need to rewrite the module that define users. Just define a new attribute of users. Same goes with password systems, etc.</li>
-      <li>You want to type a program. Give each node a <em>type</em> attribute. <span class="comment">Note: programs are stored <a href="/cliki.tunes.org/Abstract Syntax Tree">abstract structures</a>, not ASCII).</span></li>
+      <li>The system has a concept of "<a href="/tunes.org/cliki.tunes.org/User">user</a>", built in some module. You want to add some accounting/logging information about users. No need to rewrite the module that define users. Just define a new attribute of users. Same goes with password systems, etc.</li>
+      <li>You want to type a program. Give each node a <em>type</em> attribute. <span class="comment">Note: programs are stored <a href="/tunes.org/cliki.tunes.org/Abstract Syntax Tree">abstract structures</a>, not ASCII).</span></li>
       <li>You are not satisfied with the way the pretty printer manages parts of your program; you ask it to remember the <em>layout</em>, or particular layout <em>tactic</em> to use for such parts of the program.</li>
       <li>You want to comment a program. Annotate its structure with <em>comments</em> in French, German, Chinese, Martian.</li>
       <li>You want to translate a program. Annotate each node with all the meanings you could find about it, before you can understand it and synthetize a translation.</li>
     </ul>
 
 <h2><a name="context">Context</a></h2>
-    <p>An object is never considered alone, but in a <em><a href="/cliki.tunes.org/Context">context</a></em>, or space, that describes the meaningful aspects of the object: the context gives the full semantics of the object.</p>
+    <p>An object is never considered alone, but in a <em><a href="/tunes.org/cliki.tunes.org/Context">context</a></em>, or space, that describes the meaningful aspects of the object: the context gives the full semantics of the object.</p>
     <p>In fact, objects must be created <em>within</em> contexts, so for each object, there is some context that provides its identity: its identifiability. However, objects can exist in multiple contexts, but this naturally reduces the context association with an object to be like that of a view on it, so there are issues of consistency and coherency.</p>
     <p>Only meaningful constructors may be used on objects; for example, even if an object could be modified, by considering it in a context where modifying it is excluded, it is made read-only; by considering an object in a context which has a modifier method, the object is made read-write.</p>
     <p>The context may also explicitly define specifications of the object, so that the system may simplify programs in a way that will keep the semantics by doing transformations that let meaningful things unchanged, while limiting resource allocation in unmeaningful dependences. <em>E.g.</em>, if your methods for a list maintain a count of list elements that you don't need, it may be ripped off automatically by the system if not declared meaningful somewhere. Note that different views on the "same" object may consider different things as meaningful.</p>
     <p>Obviously, contexts are different in important ways from the bare concept of Tunes objects. What immediately comes into question is whether the objects created within a context are <em>attributes</em> of the context. Generally, the answer seems to be negative: contexts themselves have their own operations and attributes which are distinct semantically from the objects they engender. So, contexts are basically special kinds of meta-objects with protocols and behaviors for managing the identity of objects.</p>
 
 <h2><a name="meta-object">Meta-objects</a></h2>
-    <p>The prefix "<a href="/cliki.tunes.org/Meta-">meta-</a>" means "after" or "beyond" in a physical sense, but is often taken with its incidental meaning "about", and excessive use dilutes the effectiveness of the concept. Within Tunes, "<a href="/cliki.tunes.org/Meta-Object">meta-object</a>" refers to a broad category of objects whose sole purpose and attention is on other objects, rather than some domain that a user has in mind that relates to the outside world.</p>
+    <p>The prefix "<a href="/tunes.org/cliki.tunes.org/Meta-">meta-</a>" means "after" or "beyond" in a physical sense, but is often taken with its incidental meaning "about", and excessive use dilutes the effectiveness of the concept. Within Tunes, "<a href="/tunes.org/cliki.tunes.org/Meta-Object">meta-object</a>" refers to a broad category of objects whose sole purpose and attention is on other objects, rather than some domain that a user has in mind that relates to the outside world.</p>
     <p>In particular, these objects describe and relate to the existential or ontological status of normal program objects (or even other meta-objects), but there are many categories of this usage of the term. <span class="comment">This implies that wherever the term meta-object is used without qualification, that it is a place where additional specification is required.</span></p>
-    <p>For reference, the general use of the term in Tunes generally abides by the <a href="/cliki.tunes.org/CLOS">Common Lisp Object System</a>'s terminology (though it emphasizes <em>meta-classes</em>, which is relatively unique among languages but has a useful terminology in the logical sense. Basically, in this sense, an object's sole "non-meta" feature is its identity, its existence, even apart from its implementation. Attributes and contexts and methods or functions are all things considered "after" or "beyond" the point where one assumes that there is something that can be identified. In other words, the information that an indentifiable thing exists <em>must</em> be given <em>before</em> the thing can be given or queried for attributes or any other kinds of facts, and that is what makes the objects that encode these things, <em>meta-</em>objects. There is a type of logic that works this way, a slightly modified version of predicate logic called dynamic logic (as seen in <a href="/cliki.tunes.org/Dynamo">Dynamo</a>).</p>
-    <p>The usual <a href="/cliki.tunes.org/Meta-Object">meta-object</a> architecture for Tunes:</p>
+    <p>For reference, the general use of the term in Tunes generally abides by the <a href="/tunes.org/cliki.tunes.org/CLOS">Common Lisp Object System</a>'s terminology (though it emphasizes <em>meta-classes</em>, which is relatively unique among languages but has a useful terminology in the logical sense. Basically, in this sense, an object's sole "non-meta" feature is its identity, its existence, even apart from its implementation. Attributes and contexts and methods or functions are all things considered "after" or "beyond" the point where one assumes that there is something that can be identified. In other words, the information that an indentifiable thing exists <em>must</em> be given <em>before</em> the thing can be given or queried for attributes or any other kinds of facts, and that is what makes the objects that encode these things, <em>meta-</em>objects. There is a type of logic that works this way, a slightly modified version of predicate logic called dynamic logic (as seen in <a href="/tunes.org/cliki.tunes.org/Dynamo">Dynamo</a>).</p>
+    <p>The usual <a href="/tunes.org/cliki.tunes.org/Meta-Object">meta-object</a> architecture for Tunes:</p>
     <ul>
       <li>Any object is created within some theory, some space of possibilities. One meta-object exists to assert/pose that existence for the given object. As alluded to above, this meta-object will be directly related to the context within which the object was created.</li>
       <li>As more things are stated about an object, meta-objects are created to record this information and its behavior within the environment. The system will further make inferences to refine the possibilities and possibly detect incompatibilities (<em>i.e.</em>, contradictions).</li>
@@ -79,13 +79,13 @@
     <ul>
       <li>We need some way to express the fact that objects interact, and knowledge evolves. Specifically, we need update of attributes through time, and some notion of fact and even possible proof about these things. These notions of update and proof of fact should be unified as well.</li>
       <li>Maybe this means that we manipulate not only objects, but also <em>projects</em>: a concept covering both contexts and general systems. Specifically, we need to understand how objects and their updates fit within systems, and how multiple nested systems and objects interact.</li>
-      <li>Rewrite has <a href="/cliki.tunes.org/Higher-Order">Higher Order</a> semantics: the <a href="/cliki.tunes.org/Maude">Maude</a> programming language research has demonstrated that a certain kind of concurrent rewriting logic can express a very effective theory of itself, within which rewriting strategies can be expressed and specialized for particular problems or domains. Some of these domains importantly include other logical inference systems as well as distributed interacting processes. Maude is also significant in being both a specification language and concurrent programming language in a relatively unified way compared with other solutions, so it is very important to draw from this idea for Tunes.</li>
+      <li>Rewrite has <a href="/tunes.org/cliki.tunes.org/Higher-Order">Higher Order</a> semantics: the <a href="/tunes.org/cliki.tunes.org/Maude">Maude</a> programming language research has demonstrated that a certain kind of concurrent rewriting logic can express a very effective theory of itself, within which rewriting strategies can be expressed and specialized for particular problems or domains. Some of these domains importantly include other logical inference systems as well as distributed interacting processes. Maude is also significant in being both a specification language and concurrent programming language in a relatively unified way compared with other solutions, so it is very important to draw from this idea for Tunes.</li>
     </ul>
 
 <h2>Active annotations</h2>
     <ul>
       <li>Attributes/functions need not be statically-defined but are dynamically given (with or without side-effect, thanks to promises).</li>
-      <li>In some metaspaces, objects may have <a href="/cliki.tunes.org/Active">active</a> attributes, that are evaluated together with the object.
+      <li>In some metaspaces, objects may have <a href="/tunes.org/cliki.tunes.org/Active">active</a> attributes, that are evaluated together with the object.
 	<p>Examples:</p>
 	<ul>
 	  <li>Scheduling/usage information as call counter for a function</li>
@@ -94,7 +94,7 @@
       </li>
       <li>Actively annotating objects may be a fairly standard programming technique:
 	<p>Parsing a text may be accomplished by dynamically annotating it while reading it; active annotations to the byte reader may correspond to the program's state; it may then become trivial to write programs that depend on the past and <em>future</em> of the local input context.</p>
-	<p>However, this feature should be made <a href="/cliki.tunes.org/Static">static</a> (<em>i.e.</em>, removed from the dynamic context) whenever not needed, because it hampers good implementation. In fact, active annotation may mean that an object must notify others whenever it is evaluated; dynamic active annotations mean some space and/or time overhead so that such notification is done for every element in a dynamically-evolving list of objects.</p>
+	<p>However, this feature should be made <a href="/tunes.org/cliki.tunes.org/Static">static</a> (<em>i.e.</em>, removed from the dynamic context) whenever not needed, because it hampers good implementation. In fact, active annotation may mean that an object must notify others whenever it is evaluated; dynamic active annotations mean some space and/or time overhead so that such notification is done for every element in a dynamically-evolving list of objects.</p>
       </li>
     </ul>
     <!--#include virtual="/footer.html" -->

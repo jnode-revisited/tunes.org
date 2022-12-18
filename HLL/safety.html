@@ -40,14 +40,14 @@
       <li>In general, an elaborate type system is more expensive in its use, and some programs or just user actions shouldn't be expensive. So, to keep in line with providing an incremental range of power and suitability for the Tunes language, these type systems will be optional, as contracts that one voluntarily accepts to work with a system or program. The contracts will have to be enforcable when necessary, for security reasons in a distributed setting.</li>
       <li>Thus, objects that are to provide rich information and still run in a decidable way must include enough data to generate a proof of their specification together with this specification. Typechecking such objects can be done very efficiently in a deterministic way.</li>
       <li>Generating the proofs can be done with lots of tools, but we know (Godel, Turing, etc) that there will always be need for intervention of an intelligent being, because no deterministic generic algorithm exists to generate proofs.</li>
-      <li>Using the Curry-Howard isomorphism, that shows that proofs and programs have the same structure, we can also obtain proofs from programs and conversely, with just the proper annotations (see the <a href="/cliki.tunes.org/Coq">Coq</a> proof environment), programs can be made out of proofs.</li>
+      <li>Using the Curry-Howard isomorphism, that shows that proofs and programs have the same structure, we can also obtain proofs from programs and conversely, with just the proper annotations (see the <a href="/tunes.org/cliki.tunes.org/Coq">Coq</a> proof environment), programs can be made out of proofs.</li>
       <li>Specifications include invariant and variant part.</li>
       <li>The invariant describes statical information in the program, that is, what information is required, conserved, transformed and acquired by the program when it is run.</li>
       <li>The variant describes what informational magnitudes should be minimized or maximized by the program, according to some partial ordering. Typically, consumed system resources and unwanted side-effects are invoked here; but any information can be used here, so that the greater (or lesser) the magnitude, the more efficient the program, and the more satisfied the user.</li>
     </ul>
 
 <h2>Security</h2>
-    <p>See our definition of <a href="/cliki.tunes.org/Security">security</a>.</p>
+    <p>See our definition of <a href="/tunes.org/cliki.tunes.org/Security">security</a>.</p>
     <ul>
       <li><em>All</em> systems, from the poorest to the richest, rely on some number of axioms. The problem is to limit the number and unsecurity of these axioms, so we can trust the system as much as possible.</li>
       <li>Eventually, the list of such axioms will be made very small, so that the human user can control it. The most fundamental axioms, consistency of the most basic system components, will be very reliable because the whole world will be warrant for it, the sources being freely available, and bugs (or hopefully absence of known bugs) will be reported immediately on the Internet.
